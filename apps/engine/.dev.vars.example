@@ -1,0 +1,25 @@
+# Supabase
+SUPABASE_URL=https://YOUR_PROJECT.supabase.co
+SUPABASE_ANON_KEY=your-anon-key
+SUPABASE_SERVICE_ROLE_KEY=your-service-role-key
+
+# AI - Claude (Anthropic)
+ANTHROPIC_API_KEY=sk-ant-xxxxx
+
+# AI - Gemini (Google)
+GOOGLE_AI_API_KEY=xxxxx
+
+# Email - Resend
+RESEND_API_KEY=re_xxxxx
+RESEND_WEBHOOK_SECRET=whsec_xxxxx
+
+# Kakao
+KAKAO_API_KEY=xxxxx
+KAKAO_SENDER_KEY=xxxxx
+
+# App URLs
+ADMIN_URL=http://localhost:5174
+WEB_URL=http://localhost:4321
+
+# Environment
+ENVIRONMENT=development

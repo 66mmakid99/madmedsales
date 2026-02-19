@@ -1,0 +1,37 @@
+# MADMEDSALES - AI 코딩 어시스턴트 규칙
+
+## 핵심 원칙
+- 이 프로젝트의 모든 규칙은 CLAUDE.md에 정의되어 있음. 먼저 읽을 것.
+- 현재 작업 중인 Phase의 문서를 docs/ 폴더에서 확인할 것.
+- DB 스키마는 docs/01-SETUP.md가 유일한 진실의 원천(source of truth).
+
+## 기술 스택 (변경 금지)
+- Web: Astro 5 + React 19 + Tailwind 4
+- Admin: React 19 + Vite 7 + Tailwind 4 + Zustand
+- Engine: Hono + TypeScript on Cloudflare Workers
+- DB: Supabase (PostgreSQL)
+- AI: Claude API + Gemini Flash
+- Email: Resend
+- Messaging: 카카오 비즈메시지
+
+## 코드 스타일
+- TypeScript strict mode
+- any 타입 금지
+- 파일 300줄 이하
+- 파일명 kebab-case, 컴포넌트 PascalCase
+- DB 컬럼 snake_case
+- 라우트 핸들러에 비즈니스 로직 금지 → services/ 분리
+- AI 프롬프트는 services/ai/prompts/ 폴더에 별도 파일
+
+## API 응답 형식
+```json
+{ "success": true, "data": {} }
+{ "success": false, "error": { "code": "...", "message": "..." } }
+```
+
+## 하지 말 것
+- DB 테이블 임의 생성
+- 기술 스택 변경
+- 한 파일에 300줄 이상
+- 추측으로 코드 작성 (확인된 것만)
+- console.log 프로덕션 잔류

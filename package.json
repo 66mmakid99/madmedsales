@@ -1,0 +1,20 @@
+{
+  "name": "madmedsales",
+  "private": true,
+  "workspaces": ["apps/*", "packages/*"],
+  "scripts": {
+    "dev:web": "turbo run dev --filter=@madmedsales/web",
+    "dev:admin": "turbo run dev --filter=@madmedsales/admin",
+    "dev:engine": "turbo run dev --filter=@madmedsales/engine",
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "deploy:web": "turbo run deploy --filter=@madmedsales/web",
+    "deploy:admin": "turbo run deploy --filter=@madmedsales/admin",
+    "deploy:engine": "turbo run deploy --filter=@madmedsales/engine"
+  },
+  "packageManager": "npm@11.6.2",
+  "devDependencies": {
+    "turbo": "^2.0.0",
+    "typescript": "^5.5.0"
+  }
+}

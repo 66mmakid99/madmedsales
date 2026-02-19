@@ -1,0 +1,45 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build outputs
+dist/
+.output/
+.astro/
+.wrangler/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+.dev.vars
+
+# Supabase
+supabase/.temp/
+
+# IDE
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Turbo
+.turbo/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Crawler data (local only, don't commit raw data)
+scripts/data/hira-raw/
+scripts/data/naver-raw/
+scripts/data/web-raw/
+scripts/data/errors.json
+
+# Test
+coverage/

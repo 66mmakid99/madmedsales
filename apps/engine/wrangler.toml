@@ -1,0 +1,21 @@
+name = "madmedsales-engine"
+main = "src/index.ts"
+compatibility_date = "2024-12-01"
+
+[vars]
+ENVIRONMENT = "production"
+
+# Custom domain
+routes = [
+  { pattern = "api.madmedsales.com/*", zone_name = "madmedsales.com" }
+]
+
+# KV (설정 캐시용)
+[[kv_namespaces]]
+binding = "SETTINGS_KV"
+id = "xxx"
+
+# Queues (이메일 발송 큐 - Phase 3에서 사용)
+# [[queues.producers]]
+# binding = "EMAIL_QUEUE"
+# queue = "madmedsales-email-queue"
