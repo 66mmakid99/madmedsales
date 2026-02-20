@@ -27,6 +27,7 @@ supabase/.temp/
 # OS
 .DS_Store
 Thumbs.db
+desktop.ini
 
 # Turbo
 .turbo/

@@ -1,7 +1,10 @@
 {
   "name": "madmedsales",
   "private": true,
-  "workspaces": ["apps/*", "packages/*"],
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "scripts": {
     "dev:web": "turbo run dev --filter=@madmedsales/web",
     "dev:admin": "turbo run dev --filter=@madmedsales/admin",
@@ -14,6 +17,7 @@
   },
   "packageManager": "npm@11.6.2",
   "devDependencies": {
+    "pg": "^8.18.0",
     "turbo": "^2.0.0",
     "typescript": "^5.5.0"
   }

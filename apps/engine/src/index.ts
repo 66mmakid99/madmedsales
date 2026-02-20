@@ -37,8 +37,15 @@ app.use('*', cors({
   allowHeaders: ['Content-Type', 'Authorization'],
 }));
 
+// Error handler
+app.onError((err, c) => {
+  console.error(`[ERROR] ${c.req.method} ${c.req.path}:`, err.message, err.stack);
+  return c.json({ success: false, error: { code: 'INTERNAL_ERROR', message: err.message } }, 500);
+});
+
 // Health check
 app.get('/health', (c) => c.json({ status: 'ok', timestamp: new Date().toISOString() }));
+
 
 // Routes
 // Phase 1: Hospitals
