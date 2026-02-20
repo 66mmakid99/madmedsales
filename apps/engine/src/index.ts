@@ -1,11 +1,25 @@
 import { Hono } from 'hono';
 import { cors } from 'hono/cors';
+import hospitalsRoute from './routes/hospitals.js';
+import scoringRoute from './routes/scoring.js';
+import demosRoute from './routes/demos';
+import publicRoute from './routes/public';
+import reportsRoute from './routes/reports';
+import emailsRoute from './routes/emails';
+import sequencesRoute from './routes/sequences';
+import webhooksRoute from './routes/webhooks';
+import kakaoRoute from './routes/kakao';
+import { processEmailQueue } from './services/email/queue';
+import { processAllTriggers } from './services/automation/trigger-engine';
 
 type Bindings = {
   SUPABASE_URL: string;
   SUPABASE_SERVICE_ROLE_KEY: string;
   ANTHROPIC_API_KEY: string;
   RESEND_API_KEY: string;
+  RESEND_WEBHOOK_SECRET: string;
+  KAKAO_API_KEY: string;
+  KAKAO_SENDER_KEY: string;
   ADMIN_URL: string;
   WEB_URL: string;
   SETTINGS_KV: KVNamespace;
@@ -26,13 +40,42 @@ app.use('*', cors({
 // Health check
 app.get('/health', (c) => c.json({ status: 'ok', timestamp: new Date().toISOString() }));
 
-// Routes (Phase별로 추가)
-// Phase 1: app.route('/api/hospitals', hospitalsRoute);
-// Phase 2: app.route('/api/scoring', scoringRoute);
-// Phase 3: app.route('/api/emails', emailsRoute);
-// Phase 4: app.route('/api/tracking', trackingRoute);
-// Phase 5: app.route('/api/kakao', kakaoRoute);
-// Phase 5: app.route('/api/demos', demosRoute);
-// Phase 6: app.route('/api/reports', reportsRoute);
+// Routes
+// Phase 1: Hospitals
+app.route('/api/hospitals', hospitalsRoute);
+// Phase 2: Scoring
+app.route('/api/scoring', scoringRoute);
+// Phase 3: Email Automation
+app.route('/api/emails', emailsRoute);
+app.route('/api/sequences', sequencesRoute);
+// Phase 4: Webhooks, KakaoTalk (no auth on webhooks/public)
+app.route('/api/webhooks', webhooksRoute);
+app.route('/api/kakao', kakaoRoute);
 
-export default app;
+// Phase 5: Demos & Public
+app.route('/api/demos', demosRoute);
+app.route('/api/public', publicRoute);
+app.route('/api/reports', reportsRoute);
+
+export default {
+  fetch: app.fetch,
+  async scheduled(event: ScheduledEvent, env: Bindings): Promise<void> {
+    try {
+      // Process email queue (every 5 min during send hours)
+      const queueResult = await processEmailQueue(env);
+
+      // Process triggers (hourly)
+      const triggerResult = await processAllTriggers(env);
+
+      // eslint-disable-next-line no-console
+      console.log(
+        `Scheduled: emails sent=${queueResult.sent} failed=${queueResult.failed}, ` +
+        `triggers processed=${triggerResult.processed} actions=${triggerResult.actionsExecuted}`
+      );
+    } catch (error) {
+      const message = error instanceof Error ? error.message : 'Unknown error';
+      // eslint-disable-next-line no-console
+      console.error(`Scheduled handler error: ${message}`);
+    }
+  },
+};

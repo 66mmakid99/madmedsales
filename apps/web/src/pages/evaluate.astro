@@ -1,0 +1,193 @@
+---
+import Layout from '../layouts/Layout.astro';
+const API_URL = import.meta.env.PUBLIC_API_URL ?? '';
+---
+
+<Layout title="데모 평가 | MADMEDSALES">
+  <main class="py-12">
+    <div class="mx-auto max-w-xl px-6">
+      <div class="text-center">
+        <h1 class="text-3xl font-bold text-gray-900">데모 평가</h1>
+        <p class="mt-2 text-gray-600">
+          데모에 참여해주셔서 감사합니다. 아래 평가를 부탁드립니다.
+        </p>
+      </div>
+
+      <form id="eval-form" class="mt-8 space-y-6">
+        <div>
+          <label class="block text-sm font-medium text-gray-700">만족도 *</label>
+          <div class="mt-2 flex gap-2" id="star-container">
+            <button type="button" data-score="1" class="star-btn text-3xl text-gray-300 hover:text-yellow-400 transition-colors">&#9733;</button>
+            <button type="button" data-score="2" class="star-btn text-3xl text-gray-300 hover:text-yellow-400 transition-colors">&#9733;</button>
+            <button type="button" data-score="3" class="star-btn text-3xl text-gray-300 hover:text-yellow-400 transition-colors">&#9733;</button>
+            <button type="button" data-score="4" class="star-btn text-3xl text-gray-300 hover:text-yellow-400 transition-colors">&#9733;</button>
+            <button type="button" data-score="5" class="star-btn text-3xl text-gray-300 hover:text-yellow-400 transition-colors">&#9733;</button>
+          </div>
+          <input type="hidden" id="satisfaction_score" name="satisfaction_score" required />
+        </div>
+
+        <div>
+          <label for="purchase_intent" class="block text-sm font-medium text-gray-700">
+            구매 의향 *
+          </label>
+          <select
+            id="purchase_intent"
+            name="purchase_intent"
+            required
+            class="mt-1 w-full rounded-lg border px-4 py-2.5 text-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+          >
+            <option value="">선택해주세요</option>
+            <option value="immediate">즉시 구매를 원합니다</option>
+            <option value="considering">검토 중입니다</option>
+            <option value="hold">당분간 보류합니다</option>
+            <option value="no_interest">관심 없습니다</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="preferred_payment" class="block text-sm font-medium text-gray-700">
+            결제 방법 선호
+          </label>
+          <select
+            id="preferred_payment"
+            name="preferred_payment"
+            class="mt-1 w-full rounded-lg border px-4 py-2.5 text-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+          >
+            <option value="">선택해주세요</option>
+            <option value="lump_sum">일시불</option>
+            <option value="installment">할부</option>
+            <option value="rental">렌탈</option>
+            <option value="capital">캐피탈</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="additional_questions" class="block text-sm font-medium text-gray-700">
+            추가 질문
+          </label>
+          <textarea
+            id="additional_questions"
+            name="additional_questions"
+            rows="3"
+            class="mt-1 w-full rounded-lg border px-4 py-2.5 text-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+            placeholder="궁금한 점이 있으시면 입력해주세요."
+          ></textarea>
+        </div>
+
+        <div>
+          <label for="feedback" class="block text-sm font-medium text-gray-700">
+            피드백
+          </label>
+          <textarea
+            id="feedback"
+            name="feedback"
+            rows="3"
+            class="mt-1 w-full rounded-lg border px-4 py-2.5 text-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+            placeholder="데모에 대한 의견을 자유롭게 남겨주세요."
+          ></textarea>
+        </div>
+
+        <button
+          type="submit"
+          id="submit-btn"
+          class="w-full rounded-lg bg-blue-600 py-3 text-base font-semibold text-white hover:bg-blue-700 disabled:opacity-50"
+        >
+          평가 제출하기
+        </button>
+
+        <p id="form-message" class="hidden text-center text-sm"></p>
+      </form>
+
+      <p id="error-message" class="hidden mt-8 text-center text-red-600"></p>
+    </div>
+  </main>
+
+  <script define:vars={{ API_URL }}>
+    const params = new URLSearchParams(window.location.search);
+    const demoId = params.get('id');
+    const token = params.get('token');
+    const errorEl = document.getElementById('error-message');
+    const formEl = document.getElementById('eval-form');
+
+    if (!demoId || !token) {
+      formEl.style.display = 'none';
+      errorEl.textContent = '잘못된 평가 링크입니다. 이메일의 링크를 다시 확인해주세요.';
+      errorEl.className = 'mt-8 text-center text-red-600';
+    }
+
+    let selectedScore = 0;
+    const starBtns = document.querySelectorAll('.star-btn');
+    const scoreInput = document.getElementById('satisfaction_score');
+
+    starBtns.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        selectedScore = parseInt(btn.getAttribute('data-score'));
+        scoreInput.value = selectedScore;
+        starBtns.forEach((b) => {
+          const bScore = parseInt(b.getAttribute('data-score'));
+          if (bScore <= selectedScore) {
+            b.className = 'star-btn text-3xl text-yellow-400 transition-colors';
+          } else {
+            b.className = 'star-btn text-3xl text-gray-300 hover:text-yellow-400 transition-colors';
+          }
+        });
+      });
+    });
+
+    const submitBtn = document.getElementById('submit-btn');
+    const formMessage = document.getElementById('form-message');
+
+    formEl.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      if (!selectedScore) {
+        formMessage.textContent = '만족도를 선택해주세요.';
+        formMessage.className = 'mt-2 text-center text-sm text-red-600';
+        return;
+      }
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = '제출 중...';
+      formMessage.className = 'hidden';
+
+      const formData = new FormData(formEl);
+
+      const body = {
+        satisfaction_score: selectedScore,
+        purchase_intent: formData.get('purchase_intent'),
+        preferred_payment: formData.get('preferred_payment') || '',
+        additional_questions: formData.get('additional_questions') || undefined,
+        feedback: formData.get('feedback') || undefined,
+      };
+
+      try {
+        const res = await fetch(
+          `${API_URL}/api/public/demos/${demoId}/evaluate?token=${encodeURIComponent(token)}`,
+          {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(body),
+          }
+        );
+
+        const json = await res.json();
+
+        if (json.success) {
+          formEl.style.display = 'none';
+          formMessage.textContent = '평가를 제출해주셔서 감사합니다!';
+          formMessage.className = 'mt-8 text-center text-lg font-medium text-green-600';
+        } else {
+          formMessage.textContent = json.error?.message || '제출 중 오류가 발생했습니다.';
+          formMessage.className = 'mt-4 text-center text-sm text-red-600';
+          submitBtn.disabled = false;
+          submitBtn.textContent = '평가 제출하기';
+        }
+      } catch (err) {
+        formMessage.textContent = '네트워크 오류가 발생했습니다.';
+        formMessage.className = 'mt-4 text-center text-sm text-red-600';
+        submitBtn.disabled = false;
+        submitBtn.textContent = '평가 제출하기';
+      }
+    });
+  </script>
+</Layout>

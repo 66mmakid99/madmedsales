@@ -1,0 +1,25 @@
+{
+  "name": "@madmedsales/scripts",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "crawl:hira": "tsx crawler/crawl-hira.ts",
+    "crawl:naver": "tsx crawler/crawl-naver.ts",
+    "crawl:web": "tsx crawler/crawl-hospital-web.ts",
+    "analyze:web": "tsx analysis/analyze-web.ts",
+    "upload": "tsx upload/upload-to-db.ts",
+    "geocode": "tsx crawler/geocode.ts",
+    "pipeline": "npm run crawl:hira && npm run geocode && npm run crawl:naver && npm run upload"
+  },
+  "dependencies": {
+    "axios": "^1.7.0",
+    "cheerio": "^1.0.0",
+    "@supabase/supabase-js": "^2.45.0",
+    "dotenv": "^16.4.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.7.0",
+    "typescript": "^5.5.0",
+    "@types/node": "^22.0.0"
+  }
+}

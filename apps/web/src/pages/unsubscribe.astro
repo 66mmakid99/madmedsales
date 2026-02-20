@@ -1,0 +1,68 @@
+---
+import Layout from '../layouts/Layout.astro';
+const API_URL = import.meta.env.PUBLIC_API_URL ?? '';
+---
+
+<Layout title="수신 거부 | MADMEDSALES">
+  <main class="flex min-h-screen flex-col items-center justify-center px-6">
+    <div id="unsub-container" class="w-full max-w-md text-center">
+      <h1 class="text-2xl font-bold text-gray-900">수신 거부</h1>
+      <p id="unsub-status" class="mt-4 text-gray-600">수신 거부 처리 중입니다...</p>
+      <div id="unsub-result" class="hidden mt-6">
+        <p id="result-message" class="text-gray-700"></p>
+      </div>
+    </div>
+  </main>
+
+  <script define:vars={{ API_URL }}>
+    async function processUnsubscribe() {
+      const params = new URLSearchParams(window.location.search);
+      const lid = params.get('lid');
+      const token = params.get('token');
+      const statusEl = document.getElementById('unsub-status');
+      const resultEl = document.getElementById('unsub-result');
+      const messageEl = document.getElementById('result-message');
+
+      if (!lid || !token) {
+        statusEl.textContent = '';
+        resultEl.className = 'mt-6';
+        messageEl.textContent = '잘못된 수신 거부 링크입니다.';
+        messageEl.className = 'text-red-600';
+        return;
+      }
+
+      try {
+        const res = await fetch(`${API_URL}/api/public/unsubscribe`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            email: '',
+            lead_id: lid,
+            token: token,
+            reason: '이메일 수신 거부',
+          }),
+        });
+
+        const json = await res.json();
+
+        statusEl.textContent = '';
+        resultEl.className = 'mt-6';
+
+        if (json.success) {
+          messageEl.textContent = '수신 거부 처리가 완료되었습니다. 더 이상 이메일을 보내지 않겠습니다.';
+          messageEl.className = 'text-green-600 font-medium';
+        } else {
+          messageEl.textContent = json.error?.message || '처리 중 오류가 발생했습니다.';
+          messageEl.className = 'text-red-600';
+        }
+      } catch (err) {
+        statusEl.textContent = '';
+        resultEl.className = 'mt-6';
+        messageEl.textContent = '네트워크 오류가 발생했습니다.';
+        messageEl.className = 'text-red-600';
+      }
+    }
+
+    processUnsubscribe();
+  </script>
+</Layout>

@@ -15,6 +15,12 @@ routes = [
 binding = "SETTINGS_KV"
 id = "xxx"
 
+# Cron Triggers (Phase 3+4)
+# */5 12-19 * * 1-5: 이메일 큐 처리 (평일 12-19시 KST, 5분마다)
+# 0 * * * *: 트리거 엔진 실행 (매 시간)
+[triggers]
+crons = ["*/5 12-19 * * 1-5", "0 * * * *"]
+
 # Queues (이메일 발송 큐 - Phase 3에서 사용)
 # [[queues.producers]]
 # binding = "EMAIL_QUEUE"

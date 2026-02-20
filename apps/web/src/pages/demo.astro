@@ -1,0 +1,226 @@
+---
+import Layout from '../layouts/Layout.astro';
+const API_URL = import.meta.env.PUBLIC_API_URL ?? '';
+---
+
+<Layout title="TORR RF 데모 신청 | MADMEDSALES">
+  <header class="border-b bg-white">
+    <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+      <a href="/" class="text-xl font-bold text-gray-900">MADMEDSALES</a>
+      <nav class="flex items-center gap-6">
+        <a href="/product" class="text-sm text-gray-600 hover:text-gray-900">제품 소개</a>
+        <a href="/demo" class="text-sm font-medium text-blue-600">데모 신청</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="py-12">
+    <div class="mx-auto max-w-xl px-6">
+      <div class="text-center">
+        <h1 class="text-3xl font-bold text-gray-900">TORR RF 데모 신청</h1>
+        <p class="mt-2 text-gray-600">
+          아래 양식을 작성해주시면 전문 컨설턴트가 연락드립니다.
+        </p>
+      </div>
+
+      <form id="demo-form" class="mt-8 space-y-5">
+        <div>
+          <label for="hospital_name" class="block text-sm font-medium text-gray-700">병원명 *</label>
+          <input
+            type="text"
+            id="hospital_name"
+            name="hospital_name"
+            required
+            class="mt-1 w-full rounded-lg border px-4 py-2.5 text-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+            placeholder="예: OO피부과의원"
+          />
+        </div>
+
+        <div>
+          <label for="doctor_name" class="block text-sm font-medium text-gray-700">원장님 성함 *</label>
+          <input
+            type="text"
+            id="doctor_name"
+            name="doctor_name"
+            required
+            class="mt-1 w-full rounded-lg border px-4 py-2.5 text-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+            placeholder="예: 홍길동"
+          />
+        </div>
+
+        <div>
+          <label for="phone" class="block text-sm font-medium text-gray-700">연락처 *</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            required
+            class="mt-1 w-full rounded-lg border px-4 py-2.5 text-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+            placeholder="예: 010-1234-5678"
+          />
+        </div>
+
+        <div>
+          <label for="email" class="block text-sm font-medium text-gray-700">이메일 *</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            class="mt-1 w-full rounded-lg border px-4 py-2.5 text-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+            placeholder="예: doctor@hospital.com"
+          />
+        </div>
+
+        <div>
+          <label for="demo_type" class="block text-sm font-medium text-gray-700">데모 유형 *</label>
+          <select
+            id="demo_type"
+            name="demo_type"
+            required
+            class="mt-1 w-full rounded-lg border px-4 py-2.5 text-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+          >
+            <option value="">선택해주세요</option>
+            <option value="online">온라인 데모 (약 30분)</option>
+            <option value="visit">방문 데모 (약 1시간)</option>
+            <option value="self_video">셀프 영상 데모</option>
+          </select>
+        </div>
+
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <label for="preferred_date" class="block text-sm font-medium text-gray-700">희망 날짜 *</label>
+            <input
+              type="date"
+              id="preferred_date"
+              name="preferred_date"
+              required
+              class="mt-1 w-full rounded-lg border px-4 py-2.5 text-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+            />
+          </div>
+          <div>
+            <label for="preferred_time" class="block text-sm font-medium text-gray-700">희망 시간 *</label>
+            <select
+              id="preferred_time"
+              name="preferred_time"
+              required
+              class="mt-1 w-full rounded-lg border px-4 py-2.5 text-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+            >
+              <option value="">선택</option>
+              <option value="09:00">09:00</option>
+              <option value="10:00">10:00</option>
+              <option value="11:00">11:00</option>
+              <option value="13:00">13:00</option>
+              <option value="14:00">14:00</option>
+              <option value="15:00">15:00</option>
+              <option value="16:00">16:00</option>
+              <option value="17:00">17:00</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label for="interest_area" class="block text-sm font-medium text-gray-700">관심 분야</label>
+          <input
+            type="text"
+            id="interest_area"
+            name="interest_area"
+            class="mt-1 w-full rounded-lg border px-4 py-2.5 text-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+            placeholder="예: 리프팅, 모공 축소, 바디 컨투어링"
+          />
+        </div>
+
+        <div>
+          <label for="current_rf" class="block text-sm font-medium text-gray-700">현재 보유 RF 장비</label>
+          <input
+            type="text"
+            id="current_rf"
+            name="current_rf"
+            class="mt-1 w-full rounded-lg border px-4 py-2.5 text-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+            placeholder="예: 써마지, 인모드 등"
+          />
+        </div>
+
+        <div>
+          <label for="questions" class="block text-sm font-medium text-gray-700">추가 문의사항</label>
+          <textarea
+            id="questions"
+            name="questions"
+            rows="3"
+            class="mt-1 w-full rounded-lg border px-4 py-2.5 text-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+            placeholder="데모 시 궁금한 점이 있으시면 입력해주세요."
+          ></textarea>
+        </div>
+
+        <button
+          type="submit"
+          id="submit-btn"
+          class="w-full rounded-lg bg-blue-600 py-3 text-base font-semibold text-white hover:bg-blue-700 disabled:opacity-50"
+        >
+          데모 신청하기
+        </button>
+
+        <p id="form-message" class="hidden text-center text-sm"></p>
+      </form>
+    </div>
+  </main>
+
+  <footer class="border-t bg-gray-50 py-8">
+    <div class="mx-auto max-w-6xl px-6 text-center text-sm text-gray-500">
+      <p>MADMEDSALES - TORR RF 의료기기 영업 자동화 플랫폼</p>
+    </div>
+  </footer>
+
+  <script define:vars={{ API_URL }}>
+    const form = document.getElementById('demo-form');
+    const submitBtn = document.getElementById('submit-btn');
+    const formMessage = document.getElementById('form-message');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      submitBtn.disabled = true;
+      submitBtn.textContent = '신청 중...';
+      formMessage.className = 'hidden';
+
+      const formData = new FormData(form);
+      const body = {
+        hospital_name: formData.get('hospital_name'),
+        doctor_name: formData.get('doctor_name'),
+        phone: formData.get('phone'),
+        email: formData.get('email'),
+        demo_type: formData.get('demo_type'),
+        preferred_date: formData.get('preferred_date'),
+        preferred_time: formData.get('preferred_time'),
+        interest_area: formData.get('interest_area') || undefined,
+        current_rf: formData.get('current_rf') || undefined,
+        questions: formData.get('questions') || undefined,
+      };
+
+      try {
+        const res = await fetch(`${API_URL}/api/public/demos/request`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(body),
+        });
+
+        const json = await res.json();
+
+        if (json.success) {
+          form.style.display = 'none';
+          formMessage.textContent = '데모 신청이 완료되었습니다! 곧 전문 컨설턴트가 연락드리겠습니다.';
+          formMessage.className = 'mt-8 text-center text-lg font-medium text-green-600';
+        } else {
+          formMessage.textContent = json.error?.message || '신청 중 오류가 발생했습니다.';
+          formMessage.className = 'mt-4 text-center text-sm text-red-600';
+          submitBtn.disabled = false;
+          submitBtn.textContent = '데모 신청하기';
+        }
+      } catch (err) {
+        formMessage.textContent = '네트워크 오류가 발생했습니다. 다시 시도해주세요.';
+        formMessage.className = 'mt-4 text-center text-sm text-red-600';
+        submitBtn.disabled = false;
+        submitBtn.textContent = '데모 신청하기';
+      }
+    });
+  </script>
+</Layout>
