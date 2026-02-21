@@ -35,9 +35,10 @@ export interface HospitalEquipment {
   hospital_id: string;
   equipment_name: string;
   equipment_brand: string | null;
-  equipment_category: string; // rf, laser, ultrasound, ipl, other
+  equipment_category: string; // rf, hifu, laser, booster, body, lifting, other
   equipment_model: string | null;
   estimated_year: number | null;
+  manufacturer: string | null;
   is_confirmed: boolean;
   source: string | null;
   created_at: string;
@@ -51,12 +52,157 @@ export interface HospitalTreatment {
   treatment_category: string | null;
   price_min: number | null;
   price_max: number | null;
+  price: number | null;
+  price_event: number | null;
+  original_treatment_name: string | null;
   is_promoted: boolean;
   source: string | null;
   created_at: string;
 }
 
-// ─── Scoring ─────────────────────────────────────────
+export interface HospitalDoctor {
+  id: string;
+  hospital_id: string;
+  name: string;
+  title: string | null;
+  specialty: string | null;
+  career: string[];
+  education: string[];
+  source: string | null;
+  created_at: string;
+}
+
+// ─── Product ────────────────────────────────────────
+export interface Product {
+  id: string;
+  name: string;
+  code: string;
+  manufacturer: string;
+  category: string;        // equipment, consumable, service
+  subcategory: string | null;
+  description: string | null;
+  price_min: number | null;
+  price_max: number | null;
+  target_departments: string[];
+  target_hospital_types: string[];
+  scoring_criteria: ScoringCriteria;
+  email_guide: Record<string, unknown>;
+  demo_guide: Record<string, unknown> | null;
+  requires_equipment_keywords: string[] | null;
+  competing_keywords: string[] | null;
+  synergy_keywords: string[] | null;
+  status: string;
+  sort_order: number;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface ScoringRule {
+  condition: string;
+  score: number;
+  reason: string;
+}
+
+// v3.1 키워드 tier 구조
+export const KEYWORD_TIERS = ['primary', 'secondary'] as const;
+export type KeywordTier = (typeof KEYWORD_TIERS)[number];
+
+export interface SalesKeyword {
+  term: string;
+  tier: KeywordTier;
+  point: number;       // primary=20, secondary=10 기본
+}
+
+// v3.1 영업 각도 구조
+export interface SalesAngle {
+  id: string;
+  name: string;
+  label?: string;      // DB에서는 label로 저장됨 (name과 호환)
+  weight: number;
+  keywords: (SalesKeyword | string)[];  // SalesKeyword[] 신규, string[] 하위 호환
+  pitch?: string;
+  description?: string; // DB에서는 description으로 저장됨 (pitch와 호환)
+}
+
+export interface ComboSuggestion {
+  has_equipment: string;
+  torr_role: string;
+  pitch: string;
+}
+
+// sales_signals 규칙 (시그널 감지용)
+export interface SalesSignalRule {
+  trigger: string;              // equipment_removed, equipment_added, treatment_added, price_change
+  match_keywords: string[];
+  priority: 'HIGH' | 'MEDIUM' | 'LOW';
+  title_template: string;       // "{{item_name}} 철수 감지"
+  description_template: string;
+  related_angle: string;        // bridge_care, mens_target 등
+}
+
+export interface ScoringCriteriaV31 {
+  sales_angles: SalesAngle[];
+  combo_suggestions: ComboSuggestion[];
+  max_pitch_points: number;
+  exclude_if: string[];
+  sales_signals?: SalesSignalRule[];
+}
+
+// DEPRECATED: v3.0 구조 (need/fit/timing). 안정화 후 삭제 예정.
+export interface ScoringCriteriaLegacy {
+  need_rules: ScoringRule[];
+  fit_rules: ScoringRule[];
+  timing_rules: ScoringRule[];
+}
+
+export type ScoringCriteria = ScoringCriteriaV31 | ScoringCriteriaLegacy;
+
+// ─── Hospital Profile (1단계 스코어링) ──────────────
+export interface HospitalProfile {
+  id: string;
+  hospital_id: string;
+  investment_score: number;
+  portfolio_diversity_score: number;
+  practice_scale_score: number;
+  market_competition_score: number;
+  marketing_activity_score: number;
+  profile_score: number;
+  profile_grade: string | null;   // PRIME, HIGH, MID, LOW
+  ai_summary: string | null;
+  main_focus: string | null;
+  target_audience: string | null;
+  investment_tendency: string | null;
+  competitor_count: number;
+  naver_review_count: number;
+  analyzed_at: string;
+  analysis_version: string;
+}
+
+export const PROFILE_GRADES = ['PRIME', 'HIGH', 'MID', 'LOW'] as const;
+export type ProfileGrade = (typeof PROFILE_GRADES)[number];
+
+// ─── Product Match Score (2단계 스코어링) ────────────
+export interface ProductMatchScore {
+  id: string;
+  hospital_id: string;
+  product_id: string;
+  need_score: number;
+  fit_score: number;
+  timing_score: number;
+  total_score: number;
+  grade: string | null;          // S, A, B, C, EXCLUDE
+  ai_selling_points: string[] | null;
+  ai_risks: string[] | null;
+  ai_recommended_approach: string | null;
+  ai_recommended_payment: string | null;
+  // v3.1 영업 각도
+  sales_angle_scores: Record<string, number> | null;
+  top_pitch_points: string[] | null;
+  scored_at: string;
+  scoring_version: string;
+}
+
+// ─── Scoring (legacy) ───────────────────────────────
 export interface ScoringWeights {
   id: string;
   version: string;
@@ -138,6 +284,8 @@ export interface ScoringOutput {
 export interface Lead {
   id: string;
   hospital_id: string;
+  product_id: string | null;
+  match_score_id: string | null;
   scoring_result_id: string | null;
   stage: string;
   grade: string | null;

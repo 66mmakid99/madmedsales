@@ -1,3 +1,8 @@
+export { KEYWORD_DICTIONARY, KEYWORD_CATEGORIES, UNIT_TYPES, findStandardName, resolveAmbiguousUnit } from './keyword-dictionary';
+export type { KeywordEntry, KeywordCategory, UnitType } from './keyword-dictionary';
+export { COMPOUND_WORDS, decomposeCompoundWord } from './compound-words';
+export type { CompoundWordEntry } from './compound-words';
+
 export const LEAD_STAGES = [
   'new',
   'contacted',
@@ -19,7 +24,7 @@ export type Grade = (typeof GRADES)[number];
 export const INTEREST_LEVELS = ['cold', 'warming', 'warm', 'hot'] as const;
 export type InterestLevel = (typeof INTEREST_LEVELS)[number];
 
-export const EQUIPMENT_CATEGORIES = ['rf', 'laser', 'ultrasound', 'ipl', 'other'] as const;
+export const EQUIPMENT_CATEGORIES = ['rf', 'hifu', 'laser', 'booster', 'body', 'lifting', 'other'] as const;
 export type EquipmentCategory = (typeof EQUIPMENT_CATEGORIES)[number];
 
 export const DEMO_TYPES = ['online', 'visit', 'self_video'] as const;
