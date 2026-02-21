@@ -2,6 +2,9 @@ import { Hono } from 'hono';
 import { createSupabaseClient } from '../lib/supabase.js';
 import { getActiveWeights, createWeightVersion } from '../services/scoring/weights.js';
 import { runSingleScoring } from '../services/scoring/runner.js';
+import { profileSingleHospital } from '../services/scoring/profiler.js';
+import { matchSingleHospitalProduct } from '../services/scoring/matcher.js';
+import { autoCreateLeadFromMatch } from '../services/scoring/lead-generator.js';
 
 type Bindings = {
   SUPABASE_URL: string;
@@ -15,7 +18,154 @@ type Bindings = {
 
 const scoring = new Hono<{ Bindings: Bindings }>();
 
-// POST /run - Run scoring for a single hospital or batch
+// ═══════════════════════════════════════════════════════
+// 새 2단계 스코어링 API
+// ═══════════════════════════════════════════════════════
+
+// POST /profile - 1단계 병원 프로파일 생성
+scoring.post('/profile', async (c) => {
+  const supabase = createSupabaseClient(c.env);
+  const body: unknown = await c.req.json();
+
+  if (typeof body !== 'object' || body === null) {
+    return c.json(
+      { success: false, error: { code: 'INVALID_BODY', message: '유효하지 않은 요청입니다.' } },
+      400
+    );
+  }
+
+  const { hospital_id } = body as { hospital_id?: string };
+
+  if (!hospital_id) {
+    return c.json(
+      { success: false, error: { code: 'MISSING_ID', message: 'hospital_id가 필요합니다.' } },
+      400
+    );
+  }
+
+  const result = await profileSingleHospital(supabase, hospital_id);
+
+  if (!result.success) {
+    return c.json(
+      { success: false, error: { code: 'PROFILE_FAILED', message: result.error } },
+      500
+    );
+  }
+
+  return c.json({ success: true, data: result.profile });
+});
+
+// POST /match - 2단계 제품 매칭 스코어 산출
+scoring.post('/match', async (c) => {
+  const supabase = createSupabaseClient(c.env);
+  const body: unknown = await c.req.json();
+
+  if (typeof body !== 'object' || body === null) {
+    return c.json(
+      { success: false, error: { code: 'INVALID_BODY', message: '유효하지 않은 요청입니다.' } },
+      400
+    );
+  }
+
+  const { hospital_id, product_id, auto_lead } = body as {
+    hospital_id?: string;
+    product_id?: string;
+    auto_lead?: boolean;
+  };
+
+  if (!hospital_id || !product_id) {
+    return c.json(
+      { success: false, error: { code: 'MISSING_PARAMS', message: 'hospital_id와 product_id가 필요합니다.' } },
+      400
+    );
+  }
+
+  const matchResult = await matchSingleHospitalProduct(supabase, hospital_id, product_id);
+
+  if (!matchResult.success) {
+    return c.json(
+      { success: false, error: { code: 'MATCH_FAILED', message: matchResult.error } },
+      500
+    );
+  }
+
+  let leadResult = null;
+  if (auto_lead !== false && matchResult.matchScore) {
+    leadResult = await autoCreateLeadFromMatch(supabase, matchResult.matchScore);
+  }
+
+  return c.json({ success: true, data: { matchScore: matchResult.matchScore, lead: leadResult } });
+});
+
+// GET /profiles - 프로파일 목록
+scoring.get('/profiles', async (c) => {
+  const supabase = createSupabaseClient(c.env);
+
+  const grade = c.req.query('grade');
+  const minScore = c.req.query('min_score');
+  const page = parseInt(c.req.query('page') ?? '1', 10);
+  const limit = Math.min(parseInt(c.req.query('limit') ?? '20', 10), 100);
+  const offset = (page - 1) * limit;
+
+  let query = supabase
+    .from('hospital_profiles')
+    .select('*, hospitals(name, sido, sigungu, department, email)', { count: 'exact' });
+
+  if (grade) query = query.eq('profile_grade', grade);
+  if (minScore) query = query.gte('profile_score', parseInt(minScore, 10));
+
+  query = query.order('profile_score', { ascending: false }).range(offset, offset + limit - 1);
+
+  const { data, error, count } = await query;
+
+  if (error) {
+    return c.json({ success: false, error: { code: 'DB_ERROR', message: error.message } }, 500);
+  }
+
+  return c.json({
+    success: true,
+    data: data ?? [],
+    pagination: { page, limit, total: count ?? 0, totalPages: Math.ceil((count ?? 0) / limit) },
+  });
+});
+
+// GET /matches - 매칭 결과 목록
+scoring.get('/matches', async (c) => {
+  const supabase = createSupabaseClient(c.env);
+
+  const productId = c.req.query('product_id');
+  const grade = c.req.query('grade');
+  const page = parseInt(c.req.query('page') ?? '1', 10);
+  const limit = Math.min(parseInt(c.req.query('limit') ?? '20', 10), 100);
+  const offset = (page - 1) * limit;
+
+  let query = supabase
+    .from('product_match_scores')
+    .select('*, hospitals(name, sido, sigungu, email), products(name, code)', { count: 'exact' });
+
+  if (productId) query = query.eq('product_id', productId);
+  if (grade) query = query.eq('grade', grade);
+
+  query = query.order('total_score', { ascending: false }).range(offset, offset + limit - 1);
+
+  const { data, error, count } = await query;
+
+  if (error) {
+    return c.json({ success: false, error: { code: 'DB_ERROR', message: error.message } }, 500);
+  }
+
+  return c.json({
+    success: true,
+    data: data ?? [],
+    pagination: { page, limit, total: count ?? 0, totalPages: Math.ceil((count ?? 0) / limit) },
+  });
+});
+
+// ═══════════════════════════════════════════════════════
+// 기존 API (하위 호환, deprecated)
+// ═══════════════════════════════════════════════════════
+
+// POST /run - Run scoring for a single hospital or batch (LEGACY)
 scoring.post('/run', async (c) => {
   const supabase = createSupabaseClient(c.env);
   const body: unknown = await c.req.json();

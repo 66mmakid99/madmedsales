@@ -5,6 +5,7 @@ import scoringRoute from './routes/scoring.js';
 import demosRoute from './routes/demos';
 import publicRoute from './routes/public';
 import reportsRoute from './routes/reports';
+import costsRoute from './routes/costs';
 import emailsRoute from './routes/emails';
 import sequencesRoute from './routes/sequences';
 import webhooksRoute from './routes/webhooks';
@@ -30,6 +31,10 @@ const app = new Hono<{ Bindings: Bindings }>();
 // CORS
 app.use('*', cors({
   origin: (origin, c) => {
+    // 로컬 개발 환경: localhost 모든 포트 허용
+    if (origin && new URL(origin).hostname === 'localhost') {
+      return origin;
+    }
     const allowed = [c.env.ADMIN_URL, c.env.WEB_URL];
     return allowed.includes(origin) ? origin : '';
   },
@@ -63,6 +68,8 @@ app.route('/api/kakao', kakaoRoute);
 app.route('/api/demos', demosRoute);
 app.route('/api/public', publicRoute);
 app.route('/api/reports', reportsRoute);
+// Cost tracking
+app.route('/api/costs', costsRoute);
 
 export default {
   fetch: app.fetch,

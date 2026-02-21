@@ -1,3 +1,7 @@
+// DEPRECATED: replaced by products.scoring_criteria (제품별 동적 스코어링 기준)
+// 이 파일은 멀티 제품 전환 이전의 가중치 관리 로직입니다.
+// 새 코드에서는 사용하지 마세요.
+
 /**
  * Scoring weights management
  * Handles retrieving active weights and creating new versions.

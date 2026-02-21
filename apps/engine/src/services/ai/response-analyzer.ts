@@ -5,9 +5,13 @@ import {
   buildReplyAnalysisPrompt,
   type ReplyAnalysisOutput,
 } from './prompts/reply-analysis';
+import { logAiUsage } from './usage-logger';
+import { createSupabaseClient } from '../../lib/supabase';
 
 interface AnalyzerEnv {
   ANTHROPIC_API_KEY: string;
+  SUPABASE_URL: string;
+  SUPABASE_SERVICE_ROLE_KEY: string;
 }
 
 interface OurEmail {
@@ -88,6 +92,20 @@ export async function analyzeReply(
     }
 
     const data: unknown = await response.json();
+
+    // Extract and log token usage
+    const usage = (data as Record<string, unknown>)['usage'] as { input_tokens?: number; output_tokens?: number } | undefined;
+    if (usage) {
+      const supabase = createSupabaseClient(env);
+      await logAiUsage(supabase, {
+        service: 'claude',
+        model: 'claude-haiku-4-5',
+        purpose: 'reply_analysis',
+        inputTokens: usage.input_tokens ?? 0,
+        outputTokens: usage.output_tokens ?? 0,
+      });
+    }
+
     const text = extractTextContent(data);
     const jsonMatch = text.match(/\{[\s\S]*\}/);
 

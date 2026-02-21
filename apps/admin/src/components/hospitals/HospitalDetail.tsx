@@ -25,7 +25,7 @@ export function HospitalDetail(): ReactNode {
     );
   }
 
-  const { hospital, equipments, treatments } = data;
+  const { equipments, treatments, ...hospital } = data;
 
   return (
     <div>

@@ -1,3 +1,7 @@
+// DEPRECATED: replaced by profiler.ts + matcher.ts + lead-generator.ts
+// 이 파일은 멀티 제품 전환 이전의 단일 스코어링 파이프라인입니다.
+// 새 코드에서는 사용하지 마세요.
+
 /**
  * Scoring runner - orchestrates the full scoring pipeline for a hospital.
  * Extracted from routes/scoring.ts to keep route files under 300 lines.

@@ -13,6 +13,7 @@ import { DemoList } from './components/demos/DemoList';
 import { DemoDetail } from './components/demos/DemoDetail';
 import { HospitalList } from './components/hospitals/HospitalList';
 import { HospitalDetail } from './components/hospitals/HospitalDetail';
+import { CostManagement } from './routes/CostManagement';
 
 function SettingsPlaceholder(): ReactNode {
   return (
@@ -42,6 +43,7 @@ export function App(): ReactNode {
             <Route path="/demos/:id" element={<DemoDetail />} />
             <Route path="/hospitals" element={<HospitalList />} />
             <Route path="/hospitals/:id" element={<HospitalDetail />} />
+            <Route path="/costs" element={<CostManagement />} />
             <Route path="/settings" element={<SettingsPlaceholder />} />
             <Route path="*" element={<Navigate to="/" />} />
           </Route>

@@ -4,6 +4,8 @@
  */
 import type { CompetitorData, ScoringOutput } from '@madmedsales/shared';
 import { SCORING_ANALYSIS_PROMPT } from '../ai/prompts/scoring-analysis.js';
+import { logAiUsage } from '../ai/usage-logger';
+import { createSupabaseClient } from '../../lib/supabase';
 
 interface AIAnalysisInput {
   hospital: {
@@ -39,6 +41,8 @@ export interface AIAnalysisResult {
 
 interface Env {
   ANTHROPIC_API_KEY: string;
+  SUPABASE_URL: string;
+  SUPABASE_SERVICE_ROLE_KEY: string;
 }
 
 interface ClaudeMessage {
@@ -170,7 +174,20 @@ export async function generateAIAnalysis(
       throw new Error(`Claude API error ${response.status}: ${errorText}`);
     }
 
-    const result: ClaudeResponse = await response.json() as ClaudeResponse;
+    const rawResult: unknown = await response.json();
+    const result = rawResult as ClaudeResponse & { usage?: { input_tokens?: number; output_tokens?: number } };
+
+    // Log token usage
+    if (result.usage) {
+      const supabase = createSupabaseClient(env);
+      await logAiUsage(supabase, {
+        service: 'claude',
+        model: 'claude-haiku-4-5',
+        purpose: 'scoring',
+        inputTokens: result.usage.input_tokens ?? 0,
+        outputTokens: result.usage.output_tokens ?? 0,
+      });
+    }
 
     const textBlock = result.content.find((b) => b.type === 'text');
     if (!textBlock?.text) {

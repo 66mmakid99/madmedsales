@@ -1,6 +1,9 @@
 // v1.0 - 2026-02-20
 // Tone adaptation service for email content
 
+import { logAiUsage } from './usage-logger';
+import { createSupabaseClient } from '../../lib/supabase';
+
 export const TONES = [
   'professional',
   'friendly',
@@ -25,6 +28,8 @@ const TONE_INSTRUCTIONS: Record<Tone, string> = {
 
 interface ToneEnv {
   ANTHROPIC_API_KEY: string;
+  SUPABASE_URL: string;
+  SUPABASE_SERVICE_ROLE_KEY: string;
 }
 
 export async function adaptTone(
@@ -70,6 +75,20 @@ ${content}
     }
 
     const data: unknown = await response.json();
+
+    // Extract and log token usage
+    const usage = (data as Record<string, unknown>)['usage'] as { input_tokens?: number; output_tokens?: number } | undefined;
+    if (usage) {
+      const supabase = createSupabaseClient(env);
+      await logAiUsage(supabase, {
+        service: 'claude',
+        model: 'claude-haiku-4-5',
+        purpose: 'tone_adapt',
+        inputTokens: usage.input_tokens ?? 0,
+        outputTokens: usage.output_tokens ?? 0,
+      });
+    }
+
     return extractText(data);
   } catch (error) {
     const message = error instanceof Error ? error.message : 'Unknown error';

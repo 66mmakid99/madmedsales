@@ -1,3 +1,7 @@
+// DEPRECATED: replaced by profiler.ts (assignProfileGrade) + matcher.ts (assignMatchGrade)
+// 이 파일은 멀티 제품 전환 이전의 등급 산출 로직입니다.
+// 새 코드에서는 사용하지 마세요.
+
 /**
  * Grading module
  * Calculates total weighted score and assigns grade.

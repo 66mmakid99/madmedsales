@@ -14,6 +14,7 @@ const NAV_ITEMS: NavItem[] = [
   { to: '/emails', label: '이메일', icon: '✉️' },
   { to: '/demos', label: '데모', icon: '🎯' },
   { to: '/hospitals', label: '병원 DB', icon: '🏥' },
+  { to: '/costs', label: '비용 관리', icon: '💰' },
 ];
 
 function navLinkClass({ isActive }: { isActive: boolean }): string {

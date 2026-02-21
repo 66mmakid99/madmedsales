@@ -1,3 +1,7 @@
+// DEPRECATED: replaced by profiler.ts (1단계 프로파일) + matcher.ts (2단계 매칭)
+// 이 파일은 멀티 제품 전환 이전의 단일 스코어링 로직입니다.
+// 새 코드에서는 사용하지 마세요.
+
 /**
  * 5-axis scoring calculator
  * Each function calculates a score from 0-100 for a specific axis.

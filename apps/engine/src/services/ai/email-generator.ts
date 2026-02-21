@@ -5,6 +5,8 @@ import type { EmailPromptInput } from './prompts/email-s';
 import { buildSGradePrompt } from './prompts/email-s';
 import { buildAGradePrompt } from './prompts/email-a';
 import { buildBGradePrompt } from './prompts/email-b';
+import { logAiUsage } from './usage-logger';
+import { createSupabaseClient } from '../../lib/supabase';
 
 const AI_MODELS = {
   S: 'claude-sonnet-4-5-20250929',
@@ -45,6 +47,8 @@ interface Env {
   ANTHROPIC_API_KEY: string;
   WEB_URL: string;
   RESEND_API_KEY: string;
+  SUPABASE_URL: string;
+  SUPABASE_SERVICE_ROLE_KEY: string;
 }
 
 export async function generateUnsubscribeToken(
@@ -167,6 +171,21 @@ export async function generateEmail(
     }
 
     const data: unknown = await response.json();
+
+    // Extract and log token usage
+    const usage = (data as Record<string, unknown>)['usage'] as { input_tokens?: number; output_tokens?: number } | undefined;
+    if (usage) {
+      const supabase = createSupabaseClient(env);
+      await logAiUsage(supabase, {
+        service: 'claude',
+        model,
+        purpose: 'email_generation',
+        inputTokens: usage.input_tokens ?? 0,
+        outputTokens: usage.output_tokens ?? 0,
+        leadId: input.leadId,
+      });
+    }
+
     const content = extractTextContent(data);
     const jsonMatch = content.match(/\{[\s\S]*\}/);
     if (!jsonMatch) {
