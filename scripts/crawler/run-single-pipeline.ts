@@ -25,7 +25,7 @@ import {
 } from './html-extractor.js';
 import { findSubpageUrls } from './subpage-finder.js';
 import { filterLikelyContentImages, downloadImages } from './image-downloader.js';
-import { analyzeWithGemini } from '../analysis/analyze-web.js';
+import { analyzeWithGemini, type WebAnalysisResult } from '../analysis/analyze-web.js';
 import {
   analyzeAllImages,
   mergeOcrIntoAnalysis,
@@ -107,40 +107,63 @@ async function main(): Promise<void> {
   // PASS 1 — Text crawl + Gemini text analysis + image OCR
   // ═══════════════════════════════════════════════════════════════════
   log.info('\n══════ PASS 1: Text Crawl + Analysis ══════');
-  const mainHtml = await fetchPage(hospital.website);
-  if (!mainHtml) { log.error('Failed to fetch main page'); process.exit(1); }
 
-  const textParts = [extractTextFromHtml(mainHtml, MAX_TEXT)];
-  let allEmails = extractEmailsFromHtml(mainHtml);
-  const phones = extractPhonesFromHtml(mainHtml);
-  const allImages: string[] = extractImageUrls(mainHtml, hospital.website);
+  let textCrawlSuccess = false;
+  let combinedText = '';
+  let allEmails: string[] = [];
+  let phones: string[] = [];
+  let allImages: string[] = [];
   const crawledSubpages: string[] = [];
 
-  const subpages = findSubpageUrls(mainHtml, hospital.website);
-  log.info(`Found ${subpages.length} subpages`);
+  // 메인 페이지 텍스트 크롤링 (실패해도 Pass 2로 진행)
+  const mainHtml = await fetchPage(hospital.website);
+  if (!mainHtml) {
+    log.warn('[WARN] 텍스트 크롤링 실패. 스크린샷 OCR로 대체 시도.');
+  } else {
+    textCrawlSuccess = true;
+    const textParts = [extractTextFromHtml(mainHtml, MAX_TEXT)];
+    allEmails = extractEmailsFromHtml(mainHtml);
+    phones = extractPhonesFromHtml(mainHtml);
+    allImages = extractImageUrls(mainHtml, hospital.website);
 
-  for (const sp of subpages) {
-    const spHtml = await fetchPage(sp.url);
-    if (!spHtml) continue;
-    crawledSubpages.push(sp.url);
-    textParts.push(extractTextFromHtml(spHtml, MAX_TEXT));
-    allEmails = [...allEmails, ...extractEmailsFromHtml(spHtml)];
-    allImages.push(...extractImageUrls(spHtml, sp.url));
-    log.info(`  [${sp.type}] ${sp.label}`);
-    await delayWithJitter(500, 300);
+    const subpages = findSubpageUrls(mainHtml, hospital.website);
+    log.info(`Found ${subpages.length} subpages`);
+
+    for (const sp of subpages) {
+      const spHtml = await fetchPage(sp.url);
+      if (!spHtml) continue;
+      crawledSubpages.push(sp.url);
+      textParts.push(extractTextFromHtml(spHtml, MAX_TEXT));
+      allEmails = [...allEmails, ...extractEmailsFromHtml(spHtml)];
+      allImages.push(...extractImageUrls(spHtml, sp.url));
+      log.info(`  [${sp.type}] ${sp.label}`);
+      await delayWithJitter(500, 300);
+    }
+
+    combinedText = textParts.join('\n\n').slice(0, MAX_TEXT);
+    allEmails = [...new Set(allEmails)];
   }
 
-  const combinedText = textParts.join('\n\n').slice(0, MAX_TEXT);
-  allEmails = [...new Set(allEmails)];
   const uniqueImages = [...new Set(allImages)];
   const email = pickBestEmail(allEmails);
 
   log.info(`Combined: ${combinedText.length} chars, ${allEmails.length} emails, ${uniqueImages.length} images`);
 
-  // Gemini text analysis
-  log.info('\n--- Gemini Analysis (v4.0) ---');
-  const textAnalysis = await analyzeWithGemini(combinedText, hospital.id);
-  if (!textAnalysis) { log.error('Analysis failed'); process.exit(1); }
+  // Gemini text analysis (텍스트가 있을 때만)
+  const emptyAnalysis: WebAnalysisResult = { doctors: [], equipments: [], treatments: [], hospital_profile: { main_focus: '', target_audience: '' }, contact_info: { emails: [], phones: [], contact_page_url: null } };
+  let textAnalysis: WebAnalysisResult = emptyAnalysis;
+
+  if (combinedText.length > 100) {
+    log.info('\n--- Gemini Analysis ---');
+    const result = await analyzeWithGemini(combinedText, hospital.id);
+    if (result) {
+      textAnalysis = result;
+    } else {
+      log.warn('[WARN] Gemini 텍스트 분석 실패. 스크린샷 OCR로 보완 시도.');
+    }
+  } else {
+    log.warn('[WARN] 텍스트 부족 (< 100자). 스크린샷 OCR에 의존.');
+  }
 
   const pass1EqCount = textAnalysis.equipments.length;
   const pass1TrCount = textAnalysis.treatments.length;
@@ -149,7 +172,7 @@ async function main(): Promise<void> {
   // Image OCR (downloaded images)
   let finalAnalysis = textAnalysis;
   const filteredImages = filterLikelyContentImages(uniqueImages);
-  const downloaded = await downloadImages(filteredImages, 5);
+  const downloaded = await downloadImages(filteredImages, 20);
   if (downloaded.length > 0) {
     const imageInputs: ImageInput[] = downloaded.map((d) => ({
       base64: d.base64, mimeType: d.mimeType, url: d.url,
@@ -167,13 +190,18 @@ async function main(): Promise<void> {
   // ═══════════════════════════════════════════════════════════════════
   let pass2Stats = { newEquipments: 0, newTreatments: 0, updatedPrices: 0, updatedManufacturers: 0 };
 
+  // Pass 2 진입: 텍스트 부족하거나 장비/시술 미감지 시 무조건 OCR 실행
+  const shouldRunPass2 = !TEXT_ONLY && (!textCrawlSuccess || combinedText.length < 500 || (afterPass1Eq + afterPass1Tr) < 3);
   if (!TEXT_ONLY) {
     log.info('\n══════ PASS 2: Screenshot OCR ══════');
+    if (shouldRunPass2) {
+      log.info('Pass 2 강제 실행 (텍스트 부족 또는 파싱 결과 부족)');
+    }
 
-    // Select top pages for screenshots: main + treatment subpages
+    // Select top pages for screenshots: main + treatment subpages from crawled URLs
     const screenshotUrls = [
       hospital.website,
-      ...subpages.filter((s) => s.type === 'treatment').map((s) => s.url),
+      ...crawledSubpages.slice(0, 4),
     ];
     log.info(`Screenshotting ${Math.min(screenshotUrls.length, 5)} pages...`);
 
@@ -209,7 +237,7 @@ async function main(): Promise<void> {
     email,
     emails: allEmails,
     phones,
-    contactUrl: subpages.find((s) => s.type === 'contact')?.url ?? null,
+    contactUrl: null,
     imageUrls: uniqueImages,
     subpagesCrawled: crawledSubpages,
     crawledAt: new Date().toISOString(),

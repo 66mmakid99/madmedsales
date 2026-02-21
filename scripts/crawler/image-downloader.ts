@@ -15,13 +15,21 @@ const MAX_IMAGE_SIZE = 4 * 1024 * 1024; // 4MB
 const ALLOWED_TYPES = ['image/jpeg', 'image/png', 'image/webp'];
 const DOWNLOAD_TIMEOUT = 10000;
 
-/** Filter image URLs to prioritize content images (prices, menus, equipment) */
+/** Filter image URLs to prioritize content images (prices, menus, equipment)
+ * v2.0 - 2026-02-22: banner/popup을 제거하지 않고 우선순위만 조정.
+ * 한국 피부과 사이트에서 banner/popup에 가격표가 포함되는 경우가 많음.
+ */
 export function filterLikelyContentImages(urls: string[]): string[] {
-  // Priority keywords — images likely containing useful info
-  const priorityPattern = /price|가격|menu|메뉴|시술|장비|equipment|치료|비용|이벤트|event|할인/i;
-  // Depriority patterns — likely decorative
-  const depriority = /banner|slide|hero|main[-_]?visual|popup|modal|ad[-_]/i;
+  // Whitelist — 이 키워드가 포함되면 무조건 최우선 통과
+  const whitelistPattern = /price|가격|event|이벤트|banner|popup|팝업|시술|treatment|menu|메뉴|service|진료|equipment|장비/i;
+  // Priority keywords — content-related
+  const priorityPattern = /치료|비용|할인|promo|schedule|staff|doctor|의료진|before[-_]?after/i;
+  // Blacklist — 확실한 비콘텐츠만 제거
+  const blacklist = /favicon\.ico|spacer\.|1x1\.|pixel\.|tracking\.|beacon\.|blank\./i;
+  // SNS icons (typically tiny)
+  const snsIcons = /(?:facebook|instagram|youtube|kakao|naver|twitter|tiktok)[-_.](?:icon|logo|btn|badge)/i;
 
+  const whitelist: string[] = [];
   const priority: string[] = [];
   const normal: string[] = [];
 
@@ -29,16 +37,21 @@ export function filterLikelyContentImages(urls: string[]): string[] {
     const filename = url.split('/').pop() ?? '';
     const path = url.toLowerCase();
 
-    if (depriority.test(filename) || depriority.test(path)) continue;
+    // Hard blacklist: tracking pixels, spacers
+    if (blacklist.test(filename) || blacklist.test(path)) continue;
+    // SNS tiny icons
+    if (snsIcons.test(filename) || snsIcons.test(path)) continue;
 
-    if (priorityPattern.test(filename) || priorityPattern.test(path)) {
+    if (whitelistPattern.test(filename) || whitelistPattern.test(path)) {
+      whitelist.push(url);
+    } else if (priorityPattern.test(filename) || priorityPattern.test(path)) {
       priority.push(url);
     } else {
       normal.push(url);
     }
   }
 
-  return [...priority, ...normal];
+  return [...whitelist, ...priority, ...normal];
 }
 
 /** Download images and convert to base64 */

@@ -12,6 +12,7 @@ import axios from 'axios';
 import { createLogger } from '../utils/logger.js';
 import { logApiUsage } from '../utils/usage-logger.js';
 import { getAccessToken } from '../analysis/gemini-auth.js';
+import { getGeminiModel, getGeminiEndpoint } from '../utils/gemini-model.js';
 
 const log = createLogger('screenshot-ocr');
 
@@ -45,22 +46,40 @@ interface ScreenshotData {
 
 // ─── Constants ────────────────────────────────────────────────────────────
 
-const VIEWPORT = { width: 1280, height: 800 };
-const PAGE_TIMEOUT = 25_000;
+const VIEWPORT_DESKTOP = { width: 1280, height: 800 };
+const VIEWPORT_MOBILE = { width: 390, height: 844 };
+const PAGE_TIMEOUT = 30_000;
 const POPUP_WAIT = 2_000;
 const MAX_SCREENSHOT_BYTES = 10 * 1024 * 1024; // 10 MB per screenshot
 
-// v1.0 — structured extraction, not raw OCR
-const SCREENSHOT_PROMPT = `이 스크린샷은 한국 피부과/성형외과 병원 홈페이지입니다.
-페이지에 보이는 모든 의료기기/장비명과 시술명을 추출하세요.
+// v2.0 - 2026-02-22 - comprehensive extraction, dual classification, price focus
+const SCREENSHOT_PROMPT = `당신은 한국 피부과/성형외과 웹사이트의 스크린샷을 분석하는 전문가입니다.
+이 스크린샷에서 아래 정보를 최대한 빠짐없이 추출하세요.
 
-장비 참고 리스트:
-- rf: 인모드, 써마지, 올리지오, 포텐자, 시크릿, 스카젠, 테너, 빈센자, TORR, 세르프, 덴서티
-- hifu: 울쎄라, 슈링크, 리프테라, 더블로, 리니어지
-- laser: 피코슈어, 피코웨이, 레블라이트, 클라리티, 엑셀V, 젠틀맥스, 프락셀, CO2
-- booster: 리쥬란, 쥬베룩, 물광, 연어주사, 엑소좀
-- body: 쿨스컬프팅, 바넥스, 리포셀, 온다, 벨라콜린
-- lifting: 실리프팅, 민트실, PDO, 울핏
+1. **장비 (equipments)**: 페이지에 보이는 모든 의료 장비명.
+   메뉴, 배너, 이벤트 팝업, 본문 어디든 장비명이 보이면 추출.
+   이미지 안의 텍스트도 읽어야 합니다.
+
+2. **시술 (treatments)**: 제공하는 모든 시술/서비스명.
+
+3. **가격 (prices)**: 시술명+가격 세트. 이벤트가, 정가, 할인가 구분.
+   이미지 배너 안의 가격표를 특히 주의 깊게 확인하세요.
+   한국 피부과는 가격을 텍스트가 아닌 이미지(배너/표)로 표시하는 경우가 대부분입니다.
+   한국 가격 표기: "55만원"=550000, "39만"=390000, "550,000원"=550000
+
+4. **의료진 (doctors)**: 의사 이름, 전문의 여부, 경력
+
+5. **병원 정보**: 진료시간, 주소, 전화번호, 특화 분야
+
+6. **이벤트/프로모션**: 현재 진행 중인 이벤트, 할인, 패키지
+
+## 장비 이중 분류 규칙 (최우선 적용)
+한국 피부과에서는 "장비명 = 시술명"입니다. 아래 브랜드명이 보이면 반드시 equipments에 포함:
+써마지/Thermage/써마지FLX, 울쎄라/Ulthera, 인모드/Inmode, 슈링크/Shurink, 튠페이스,
+텐써마, 텐쎄라, 올리지오/Oligio, 리프테라, 포텐자/Potenza, 소프웨이브, 볼뉴머,
+울핏, 더블로, 리니어지, 리니어펌, 티타늄, 온다/Onda, 세르프/CERP, 시크릿RF,
+엑셀V/ExcelV, 피코슈어/PicoSure, 피코웨이/PicoWay, 레블라이트, 프락셀/Fraxel,
+클라리티/Clarity, 젠틀맥스/GentleMax, 쿨스컬프팅, 바넥스, 엠스컬프트, TORR, 스카젠
 
 JSON 응답:
 {
@@ -73,6 +92,7 @@ JSON 응답:
 - 가격은 KRW 정수 ("15만원" → 150000)
 - 확실하지 않은 값은 null
 - 해당 정보 없으면 빈 배열
+- 한 글자라도 놓치지 마세요. 이미지 안의 한글 텍스트를 정확하게 읽는 것이 핵심입니다.
 - JSON만 응답`;
 
 // ─── Browser Management ───────────────────────────────────────────────────
@@ -97,41 +117,68 @@ export async function closeBrowser(): Promise<void> {
 
 // ─── Popup Dismissal ──────────────────────────────────────────────────────
 
+// v2.0 - 2026-02-22: Enhanced popup dismissal for Korean clinic sites
 async function tryClosePopups(page: Page): Promise<void> {
-  try {
-    // Common close-button selectors
-    const selectors = [
-      'button:has-text("닫기")',
-      'button:has-text("Close")',
-      'button:has-text("X")',
-      '[class*="close"]',
-      '[class*="popup"] button',
-      '[class*="modal"] button',
-      '[aria-label="Close"]',
-      '[aria-label="닫기"]',
-    ];
+  const selectors = [
+    // Korean-specific popup close patterns
+    '[class*="popup"] [class*="close"]',
+    '[class*="modal"] [class*="close"]',
+    '[class*="layer"] [class*="close"]',
+    'a[href*="popup_close"]',
+    'button:has-text("닫기")',
+    'button:has-text("하루동안")',
+    'button:has-text("오늘 하루")',
+    'a:has-text("하루동안 보지 않기")',
+    'a:has-text("닫기")',
+    'button:has-text("Close")',
+    'button:has-text("X")',
+    '[id*="close"]',
+    '.btn_close',
+    '.close_btn',
+    '.popup_close',
+    '[class*="popup"] button',
+    '[class*="modal"] button',
+    '[aria-label="Close"]',
+    '[aria-label="닫기"]',
+  ];
 
-    for (const sel of selectors) {
-      const btn = page.locator(sel).first();
-      if (await btn.isVisible({ timeout: 500 }).catch(() => false)) {
-        await btn.click({ timeout: 1_000 }).catch(() => {});
-        await page.waitForTimeout(300);
+  for (const sel of selectors) {
+    try {
+      const elements = await page.locator(sel).all();
+      for (const el of elements) {
+        if (await el.isVisible({ timeout: 500 }).catch(() => false)) {
+          await el.click({ timeout: 1_000 }).catch(() => {});
+          await page.waitForTimeout(300);
+        }
       }
+    } catch {
+      // Non-critical — continue
     }
-  } catch {
-    // Non-critical — continue even if popup dismissal fails
   }
 }
 
 // ─── Screenshot Capture ───────────────────────────────────────────────────
 
-async function captureScreenshot(url: string): Promise<ScreenshotData | null> {
+interface ViewportConfig {
+  width: number;
+  height: number;
+}
+
+async function captureScreenshot(
+  url: string,
+  viewport: ViewportConfig = VIEWPORT_DESKTOP
+): Promise<ScreenshotData | null> {
   const browser = await getBrowser();
+  const isMobile = viewport.width < 500;
+  const userAgent = isMobile
+    ? 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1'
+    : 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36';
+
   const context = await browser.newContext({
-    viewport: VIEWPORT,
+    viewport,
     locale: 'ko-KR',
-    userAgent:
-      'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+    userAgent,
+    isMobile,
   });
   const page = await context.newPage();
 
@@ -153,9 +200,12 @@ async function captureScreenshot(url: string): Promise<ScreenshotData | null> {
       return null;
     }
 
+    const label = isMobile ? '[mobile]' : '[desktop]';
+    log.info(`${label} Screenshot: ${(buffer.length / 1024).toFixed(0)} KB — ${url.slice(0, 60)}`);
+
     return {
       base64: buffer.toString('base64'),
-      url,
+      url: `${url}${isMobile ? ' [mobile]' : ''}`,
       sizeBytes: buffer.length,
     };
   } catch (err) {
@@ -182,8 +232,10 @@ async function analyzeScreenshot(
   try {
     const token = await getAccessToken();
 
+    const geminiModel = getGeminiModel();
+    log.info(`Using model: ${geminiModel}`);
     const response = await axios.post(
-      'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent',
+      getGeminiEndpoint(geminiModel),
       {
         contents: [
           {
@@ -217,7 +269,7 @@ async function analyzeScreenshot(
 
     await logApiUsage({
       service: 'gemini',
-      model: 'gemini-2.0-flash',
+      model: geminiModel,
       purpose: 'screenshot_ocr',
       inputTokens,
       outputTokens,
@@ -244,6 +296,7 @@ async function analyzeScreenshot(
 
 /**
  * Run the full screenshot → Gemini Vision pipeline on a list of URLs.
+ * v2.0: Desktop + mobile dual viewport, enhanced popup handling.
  *
  * @param urls   Page URLs to screenshot (main + subpages)
  * @param hospitalId  Optional hospital ID for usage tracking
@@ -264,18 +317,33 @@ export async function screenshotOcr(
   const pagesToProcess = urls.slice(0, maxPages);
 
   for (const url of pagesToProcess) {
-    const screenshot = await captureScreenshot(url);
-    if (!screenshot) continue;
+    // Desktop screenshot
+    const desktopShot = await captureScreenshot(url, VIEWPORT_DESKTOP);
+    if (desktopShot) {
+      const ocrResult = await analyzeScreenshot(desktopShot, hospitalId);
+      if (ocrResult) {
+        result.pagesProcessed++;
+        result.tokensUsed.input += ocrResult.inputTokens;
+        result.tokensUsed.output += ocrResult.outputTokens;
+        result.equipments.push(...ocrResult.equipments);
+        result.treatments.push(...ocrResult.treatments);
+      }
+    }
 
-    const ocrResult = await analyzeScreenshot(screenshot, hospitalId);
-    if (!ocrResult) continue;
-
-    result.pagesProcessed++;
-    result.tokensUsed.input += ocrResult.inputTokens;
-    result.tokensUsed.output += ocrResult.outputTokens;
-
-    result.equipments.push(...ocrResult.equipments);
-    result.treatments.push(...ocrResult.treatments);
+    // Mobile screenshot (main page only — captures mobile-only content)
+    if (url === pagesToProcess[0]) {
+      const mobileShot = await captureScreenshot(url, VIEWPORT_MOBILE);
+      if (mobileShot) {
+        const ocrResult = await analyzeScreenshot(mobileShot, hospitalId);
+        if (ocrResult) {
+          result.pagesProcessed++;
+          result.tokensUsed.input += ocrResult.inputTokens;
+          result.tokensUsed.output += ocrResult.outputTokens;
+          result.equipments.push(...ocrResult.equipments);
+          result.treatments.push(...ocrResult.treatments);
+        }
+      }
+    }
   }
 
   // Deduplicate by equipment_name (case-insensitive)
