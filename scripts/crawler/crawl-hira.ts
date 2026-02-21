@@ -38,8 +38,8 @@ const CLINIC_TYPES = ['31', '21'] as const;
 // 수도권 우선 지역
 const PRIORITY_REGIONS = [
   { code: '110000', name: '서울' },
-  { code: '410000', name: '경기' },
-  { code: '280000', name: '인천' },
+  { code: '310000', name: '경기' },
+  { code: '220000', name: '인천' },
 ] as const;
 
 const DELAY_MS = 500;

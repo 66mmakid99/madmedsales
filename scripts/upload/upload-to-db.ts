@@ -1,9 +1,9 @@
 /**
  * DB Upload Pipeline
  * Reads collected data and uploads to Supabase:
- * - HIRA data -> hospitals
+ * - HIRA data -> hospitals (batch upsert)
  * - Naver data -> hospital_treatments
- * - Web analysis data -> hospital_equipments + hospital_treatments
+ * - Web analysis data -> hospital_doctors + hospital_equipments + hospital_treatments
  * - Data quality score calculation
  */
 import fs from 'fs/promises';
@@ -12,6 +12,7 @@ import { fileURLToPath } from 'url';
 import { supabase } from '../utils/supabase.js';
 import { createLogger } from '../utils/logger.js';
 import { updateDataQualityScores } from './quality-score.js';
+import { uploadWebData } from './upload-web.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -19,8 +20,9 @@ const log = createLogger('upload');
 
 const HIRA_DIR = path.resolve(__dirname, '../data/hira-raw');
 const NAVER_DIR = path.resolve(__dirname, '../data/naver-raw');
-const WEB_DIR = path.resolve(__dirname, '../data/web-raw');
 const ERRORS_PATH = path.resolve(__dirname, '../data/errors.json');
+
+const BATCH_SIZE = 500;
 
 interface UploadError {
   source: string;
@@ -47,19 +49,53 @@ interface HiraItem {
   emdongNm?: string;
   addr: string;
   telno: string;
-  estbDd: string;
+  estbDd: string | number;
   drTotCnt: number;
-  XPos?: string;
-  YPos?: string;
+  XPos?: string | number;
+  YPos?: string | number;
 }
 
-function parseEstbDate(estbDd: string): string | null {
-  if (!estbDd || estbDd.length < 8) return null;
-  return `${estbDd.slice(0, 4)}-${estbDd.slice(4, 6)}-${estbDd.slice(6, 8)}`;
+function parseEstbDate(estbDd: string | number | null | undefined): string | null {
+  if (!estbDd) return null;
+  const s = String(estbDd);
+  if (s.length < 8) return null;
+  return `${s.slice(0, 4)}-${s.slice(4, 6)}-${s.slice(6, 8)}`;
 }
 
 function extractPart(addr: string, index: number): string {
   return addr.split(' ')[index] ?? '';
+}
+
+const DEPT_CODE_MAP: Record<string, string> = {
+  '14': '피부과',
+  '09': '성형외과',
+};
+
+function deptFromFileName(fileName: string): string | null {
+  const match = fileName.match(/_(\d+)\.json$/);
+  return match ? DEPT_CODE_MAP[match[1]] ?? null : null;
+}
+
+function toHospitalRow(item: HiraItem, department: string | null) {
+  return {
+    business_number: String(item.ykiho),
+    name: item.yadmNm,
+    address: item.addr,
+    sido: item.sidoCdNm ?? extractPart(item.addr, 0),
+    sigungu: item.sgguCdNm ?? extractPart(item.addr, 1),
+    dong: item.emdongNm ?? extractPart(item.addr, 2),
+    phone: item.telno || null,
+    department,
+    hospital_type: item.clCdNm,
+    opened_at: parseEstbDate(item.estbDd),
+    source: 'hira',
+    crawled_at: new Date().toISOString(),
+    status: 'active',
+    is_target: true,
+    data_quality_score: 0,
+    latitude: item.YPos ? parseFloat(String(item.YPos)) : null,
+    longitude: item.XPos ? parseFloat(String(item.XPos)) : null,
+  };
 }
 
 async function uploadHiraData(): Promise<number> {
@@ -75,29 +111,27 @@ async function uploadHiraData(): Promise<number> {
     const raw = await fs.readFile(path.join(HIRA_DIR, file), 'utf-8');
     const items: HiraItem[] = JSON.parse(raw);
 
-    for (const item of items) {
-      const { error } = await supabase.from('hospitals').upsert({
-        business_number: item.ykiho,
-        name: item.yadmNm,
-        address: item.addr,
-        sido: item.sidoCdNm ?? extractPart(item.addr, 0),
-        sigungu: item.sgguCdNm ?? extractPart(item.addr, 1),
-        dong: item.emdongNm ?? extractPart(item.addr, 2),
-        phone: item.telno || null,
-        department: item.dgsbjtCdNm,
-        hospital_type: item.clCdNm,
-        opened_at: parseEstbDate(item.estbDd),
-        source: 'hira',
-        crawled_at: new Date().toISOString(),
-        status: 'active',
-        is_target: true,
-        data_quality_score: 0,
-        latitude: item.YPos ? parseFloat(item.YPos) : null,
-        longitude: item.XPos ? parseFloat(item.XPos) : null,
-      }, { onConflict: 'business_number' });
+    if (items.length === 0) continue;
 
-      if (error) recordError('hira', item.ykiho, error.message);
-      else total++;
+    const dept = deptFromFileName(file);
+    log.info(`Processing ${file}: ${items.length} records (dept: ${dept})`);
+
+    const rows = items.map((item) => toHospitalRow(item, dept));
+
+    for (let i = 0; i < rows.length; i += BATCH_SIZE) {
+      const batch = rows.slice(i, i + BATCH_SIZE);
+      const { error, count } = await supabase
+        .from('hospitals')
+        .upsert(batch, { onConflict: 'business_number', count: 'exact' });
+
+      if (error) {
+        log.error(`Batch error in ${file} (offset ${i}): ${error.message}`);
+        recordError('hira', `batch-${file}-${i}`, error.message);
+      } else {
+        total += count ?? batch.length;
+      }
+
+      log.info(`  ${file}: ${Math.min(i + BATCH_SIZE, rows.length)}/${rows.length} uploaded`);
     }
   }
 
@@ -119,13 +153,20 @@ async function uploadNaverData(): Promise<number> {
   let files: string[];
   try { files = await fs.readdir(NAVER_DIR); } catch { return 0; }
 
-  let total = 0;
-  for (const file of files.filter((f) => f.endsWith('.json'))) {
+  const jsonFiles = files.filter((f) => f.endsWith('.json'));
+  if (jsonFiles.length === 0) {
+    log.info('No Naver data files found');
+    return 0;
+  }
+
+  const allRows: Record<string, unknown>[] = [];
+
+  for (const file of jsonFiles) {
     const data: NaverData = JSON.parse(await fs.readFile(path.join(NAVER_DIR, file), 'utf-8'));
     if (!data.found || !data.treatments?.length) continue;
 
     for (const t of data.treatments) {
-      const { error } = await supabase.from('hospital_treatments').insert({
+      allRows.push({
         hospital_id: data.hospitalId,
         treatment_name: t.name,
         treatment_category: t.category,
@@ -134,67 +175,26 @@ async function uploadNaverData(): Promise<number> {
         is_promoted: false,
         source: 'naver',
       });
-      if (error) recordError('naver', data.hospitalId, error.message);
-      else total++;
+    }
+  }
+
+  let total = 0;
+  for (let i = 0; i < allRows.length; i += BATCH_SIZE) {
+    const batch = allRows.slice(i, i + BATCH_SIZE);
+    const { error, count } = await supabase
+      .from('hospital_treatments')
+      .insert(batch, { count: 'exact' });
+
+    if (error) {
+      log.error(`Naver batch error (offset ${i}): ${error.message}`);
+      recordError('naver', `batch-${i}`, error.message);
+    } else {
+      total += count ?? batch.length;
     }
   }
 
   log.info(`Naver upload complete: ${total} treatments`);
   return total;
-}
-
-// --- Web Analysis Upload ---
-
-interface WebData {
-  hospitalId: string;
-  success: boolean;
-  email?: string | null;
-  analysis?: {
-    equipments: { equipment_name: string; equipment_brand: string | null; equipment_category: string; equipment_model: string | null; estimated_year: number | null }[];
-    treatments: { treatment_name: string; treatment_category: string; price_min: number | null; price_max: number | null; is_promoted: boolean }[];
-  };
-}
-
-async function uploadWebData(): Promise<{ equipments: number; treatments: number }> {
-  log.info('Uploading web analysis data...');
-
-  let files: string[];
-  try { files = await fs.readdir(WEB_DIR); } catch { return { equipments: 0, treatments: 0 }; }
-
-  let eqTotal = 0;
-  let trTotal = 0;
-
-  for (const file of files.filter((f) => f.endsWith('.json'))) {
-    const data: WebData = JSON.parse(await fs.readFile(path.join(WEB_DIR, file), 'utf-8'));
-    if (!data.success || !data.analysis) continue;
-
-    if (data.email) {
-      const { error } = await supabase.from('hospitals').update({ email: data.email }).eq('id', data.hospitalId);
-      if (error) recordError('web-email', data.hospitalId, error.message);
-    }
-
-    for (const eq of data.analysis.equipments) {
-      const { error } = await supabase.from('hospital_equipments').insert({
-        hospital_id: data.hospitalId, equipment_name: eq.equipment_name, equipment_brand: eq.equipment_brand,
-        equipment_category: eq.equipment_category, equipment_model: eq.equipment_model, estimated_year: eq.estimated_year,
-        is_confirmed: false, source: 'web_analysis',
-      });
-      if (error) recordError('web-equipment', data.hospitalId, error.message);
-      else eqTotal++;
-    }
-
-    for (const t of data.analysis.treatments) {
-      const { error } = await supabase.from('hospital_treatments').insert({
-        hospital_id: data.hospitalId, treatment_name: t.treatment_name, treatment_category: t.treatment_category,
-        price_min: t.price_min, price_max: t.price_max, is_promoted: t.is_promoted, source: 'web_analysis',
-      });
-      if (error) recordError('web-treatment', data.hospitalId, error.message);
-      else trTotal++;
-    }
-  }
-
-  log.info(`Web upload complete: ${eqTotal} equipments, ${trTotal} treatments`);
-  return { equipments: eqTotal, treatments: trTotal };
 }
 
 // --- Main ---
@@ -204,7 +204,7 @@ async function main(): Promise<void> {
 
   const hiraCount = await uploadHiraData();
   const naverCount = await uploadNaverData();
-  const webCounts = await uploadWebData();
+  const webCounts = await uploadWebData(supabase, errors);
   await updateDataQualityScores(supabase, errors);
 
   if (errors.length > 0) {
@@ -213,7 +213,7 @@ async function main(): Promise<void> {
   }
 
   log.info('Upload pipeline complete');
-  log.info(`Summary: ${hiraCount} hospitals, ${naverCount} naver treatments, ${webCounts.equipments} equipments, ${webCounts.treatments} web treatments`);
+  log.info(`Summary: ${hiraCount} hospitals, ${naverCount} naver treatments, ${webCounts.doctors} doctors, ${webCounts.equipments} equipments, ${webCounts.treatments} web treatments, ${webCounts.emails} emails, ${webCounts.phones} phones`);
 }
 
 main().catch((err) => {
