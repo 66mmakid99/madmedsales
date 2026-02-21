@@ -41,6 +41,7 @@ scripts/data/hira-raw/
 scripts/data/naver-raw/
 scripts/data/web-raw/
 scripts/data/errors.json
+scripts/google-sa-key.json
 
 # Test
 coverage/

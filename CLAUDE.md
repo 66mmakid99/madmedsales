@@ -4,7 +4,13 @@
 
 ## 프로젝트 정체성
 
-MADMEDSALES는 한국 피부과/성형외과 병원에 TORR RF 의료기기를 AI가 자동으로 영업하는 시스템입니다.
+MADMEDSALES는 의료기기 제조유통사를 위한 **멀티 제품 자동화 영업 플랫폼**입니다.
+병원 공개 정보를 AI로 심층 분석하여, 등록된 제품별로 매칭 스코어를 산출하고, 맞춤 이메일 시퀀스를 자동 실행합니다.
+
+**특정 제품 하나를 파는 시스템이 아닙니다.**
+같은 병원이 제품 A에는 S등급, 제품 B에는 C등급일 수 있습니다.
+첫 고객사는 BRITZMEDI이지만, 구조적으로 어떤 의료기기든 등록하여 영업할 수 있습니다.
+
 3개의 앱(web, admin, engine)이 하나의 Supabase를 공유하는 모노레포 구조입니다.
 
 ## 반드시 읽어야 할 문서
@@ -23,6 +29,27 @@ docs/07-PAYMENT.md
 ```
 
 DB 테이블 구조가 필요하면 **항상 `docs/01-SETUP.md`** 를 참조하세요. 임의로 테이블을 만들지 마세요.
+
+## 핵심 데이터 모델 (꼭 이해해야 할 것)
+
+```
+products (제품 마스터)
+  └── 각 제품에 scoring_criteria, email_guide가 정의됨
+
+hospitals (병원 마스터)
+  ├── hospital_equipments (보유 장비)
+  ├── hospital_treatments (시술 메뉴)
+  └── hospital_profiles (1단계: 제품 무관 프로파일)
+
+product_match_scores (2단계: 제품 × 병원 매칭)
+  └── 1 hospital × 1 product = 1 score
+
+leads (영업 대상 = 병원 × 제품)
+  └── 1 hospital × 1 product = 1 lead
+  └── 같은 병원이 여러 제품의 리드일 수 있음
+```
+
+**이 구조를 절대 깨뜨리지 마세요.** 리드, 이메일, 데모 등 모든 영업 활동에는 반드시 `product_id`가 포함됩니다.
 
 ## 기술 스택 (절대 변경 금지)
 
@@ -50,8 +77,12 @@ DB 테이블 구조가 필요하면 **항상 `docs/01-SETUP.md`** 를 참조하�
 
 ```typescript
 // ✅ Good
-export const LEAD_STAGES = ['new', 'contacted', 'responded', 'demo_scheduled', 'closed_won', 'closed_lost', 'nurturing'] as const;
+export const LEAD_STAGES = ['new', 'contacted', 'responded', 'demo_scheduled', 'demo_done', 'proposal', 'negotiation', 'closed_won', 'closed_lost', 'nurturing'] as const;
 export type LeadStage = typeof LEAD_STAGES[number];
+
+// ✅ Good - 제품 카테고리
+export const PRODUCT_CATEGORIES = ['equipment', 'consumable', 'service'] as const;
+export type ProductCategory = typeof PRODUCT_CATEGORIES[number];
 
 // ❌ Bad
 enum LeadStage { NEW = 'new', CONTACTED = 'contacted' }
@@ -121,30 +152,34 @@ export async function getLeads(env: Bindings, filters: LeadFilters): Promise<Lea
 - 모든 프롬프트는 `services/ai/prompts/` 폴더에 별도 파일로 관리
 - 프롬프트에 `version` 주석 필수 (`// v1.0 - 2026-02-20`)
 - AI 응답은 반드시 try-catch + JSON 파싱 에러 핸들링
-- S등급 이메일은 Claude Sonnet, 나머지는 Claude Haiku
-- 웹페이지 분석은 Gemini Flash
+- **제품 정보를 프롬프트에 동적 주입** (하드코딩 절대 금지)
+- 모델 선택: S등급 고가장비 → Sonnet, 나머지 → Haiku
+- 웹페이지 분석 → Gemini Flash
 
 ```typescript
-// ✅ AI 호출 패턴
+// ✅ AI 호출 패턴 (제품 정보 동적 주입)
+const prompt = buildEmailPrompt({
+  product: await getProduct(lead.product_id),  // 제품 정보 동적 로드
+  hospital: await getHospital(lead.hospital_id),
+  matchScore: await getMatchScore(lead.match_score_id),
+  step: sequenceStep,
+});
+
 try {
+  const model = selectModel(product, lead.grade);
   const response = await anthropic.messages.create({
-    model: 'claude-haiku-4-5-20251001',
+    model,
     max_tokens: 500,
     messages: [{ role: 'user', content: prompt }]
   });
   const text = response.content[0].type === 'text' ? response.content[0].text : '';
   const parsed = JSON.parse(text);
-  // validate parsed...
 } catch (error) {
   console.error('AI API error:', error);
-  // fallback 로직 또는 에러 반환
 }
 ```
 
 ## 에러 핸들링
-
-- API: 모든 에러를 잡아서 구조화된 응답 반환
-- 절대 에러를 삼키지(swallow) 말 것
 
 ```typescript
 // ✅ API 에러 응답 형식
@@ -178,13 +213,15 @@ return c.json({
 4. **추측하지 마세요.** 잘 모르는 API나 라이브러리는 실제로 확인한 것만 사용.
 5. **안 되는 건 안 된다고 말해주세요.** 동작하지 않는 코드를 동작하는 것처럼 설명하지 말 것.
 6. **커밋 전에 빌드 테스트를 건너뛰지 마세요.**
-7. **console.log를 프로덕션 코드에 남기지 마세요.** 디버깅 후 제거 또는 적절한 로거 사용.
+7. **console.log를 프로덕션 코드에 남기지 마세요.**
+8. **제품 정보를 하드코딩하지 마세요.** 항상 products 테이블에서 동적으로 로드.
+9. **리드/이메일/데모에 product_id를 빠뜨리지 마세요.** 모든 영업 활동은 제품 단위.
 
 ## 커밋 메시지
 
 ```
-feat(engine): 스코어링 API 구현
-fix(admin): 리드 목록 필터 오류 수정
+feat(engine): 제품별 매칭 스코어 API 구현
+fix(admin): 제품 필터 리드 목록 오류 수정
 chore(scripts): 심평원 크롤러 에러 핸들링 추가
 docs: Phase 2 개발 명세 업데이트
 ```
@@ -196,7 +233,7 @@ type: feat, fix, chore, docs, refactor, style, test
 
 ```
 # Engine (apps/engine/.dev.vars)
-SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY
+SUPABASE_URL, SUPABASE_ANON_KEY, SUPABASE_SERVICE_ROLE_KEY
 ANTHROPIC_API_KEY, GOOGLE_AI_API_KEY
 RESEND_API_KEY, RESEND_WEBHOOK_SECRET
 KAKAO_API_KEY, KAKAO_SENDER_KEY
@@ -218,5 +255,5 @@ GOOGLE_AI_API_KEY, KAKAO_REST_API_KEY
 
 - DB 구조 → `docs/01-SETUP.md`
 - 특정 기능 스펙 → 해당 Phase의 `docs/0X-*.md`
-- 비즈니스 맥락 → `README.md` 하단
+- 비즈니스 맥락 → `README.md`
 - 기존 유사 코드 → MADMEDCHECK 프로젝트 패턴 참고 (Hono+TS+D1 → Hono+TS+Supabase로 전환)

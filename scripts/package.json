@@ -6,20 +6,30 @@
     "crawl:hira": "tsx crawler/crawl-hira.ts",
     "crawl:naver": "tsx crawler/crawl-naver.ts",
     "crawl:web": "tsx crawler/crawl-hospital-web.ts",
+    "crawl:web:enhanced": "tsx crawler/crawl-hospital-web.ts --enhanced",
+    "crawl:web:deep": "tsx crawler/crawl-hospital-web.ts --recrawl-no-email",
+    "sync:naver-web": "tsx crawler/sync-naver-websites.ts",
+    "crawl:kakao-web": "tsx crawler/crawl-kakao-websites.ts",
     "analyze:web": "tsx analysis/analyze-web.ts",
+    "test:enhanced": "tsx crawler/test-enhanced-crawl.ts",
+    "pipeline:single": "tsx crawler/run-single-pipeline.ts",
+    "pipeline:batch": "tsx crawler/run-batch-pipeline.ts",
+    "stats:email": "tsx analysis/email-stats.ts",
     "upload": "tsx upload/upload-to-db.ts",
     "geocode": "tsx crawler/geocode.ts",
-    "pipeline": "npm run crawl:hira && npm run geocode && npm run crawl:naver && npm run upload"
+    "pipeline": "npm run crawl:hira && npm run geocode && npm run crawl:naver && npm run upload",
+    "pipeline:email": "npm run sync:naver-web && npm run crawl:kakao-web && npm run crawl:web:deep && npm run crawl:web && npm run analyze:web && npm run upload"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.45.0",
     "axios": "^1.7.0",
     "cheerio": "^1.0.0",
-    "@supabase/supabase-js": "^2.45.0",
     "dotenv": "^16.4.0"
   },
   "devDependencies": {
+    "@types/node": "^22.0.0",
+    "playwright": "^1.58.2",
     "tsx": "^4.7.0",
-    "typescript": "^5.5.0",
-    "@types/node": "^22.0.0"
+    "typescript": "^5.5.0"
   }
 }

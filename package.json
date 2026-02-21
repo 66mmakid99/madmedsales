@@ -3,7 +3,8 @@
   "private": true,
   "workspaces": [
     "apps/*",
-    "packages/*"
+    "packages/*",
+    "scripts"
   ],
   "scripts": {
     "dev:web": "turbo run dev --filter=@madmedsales/web",
@@ -13,7 +14,13 @@
     "build": "turbo run build",
     "deploy:web": "turbo run deploy --filter=@madmedsales/web",
     "deploy:admin": "turbo run deploy --filter=@madmedsales/admin",
-    "deploy:engine": "turbo run deploy --filter=@madmedsales/engine"
+    "deploy:engine": "turbo run deploy --filter=@madmedsales/engine",
+    "crawl:hira": "npm run crawl:hira --workspace=@madmedsales/scripts",
+    "crawl:geocode": "npm run geocode --workspace=@madmedsales/scripts",
+    "crawl:naver": "npm run crawl:naver --workspace=@madmedsales/scripts",
+    "crawl:web": "npm run crawl:web --workspace=@madmedsales/scripts",
+    "analyze:web": "npm run analyze:web --workspace=@madmedsales/scripts",
+    "upload": "npm run upload --workspace=@madmedsales/scripts"
   },
   "packageManager": "npm@11.6.2",
   "devDependencies": {
