@@ -45,3 +45,4 @@ scripts/google-sa-key.json
 
 # Test
 coverage/
+snapshots/

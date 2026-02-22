@@ -190,7 +190,7 @@ export async function analyzeWithGemini(
         contents: [{ parts: [{ text: ANALYSIS_PROMPT + text }] }],
         generationConfig: {
           temperature: 0.1,
-          maxOutputTokens: 4000,
+          maxOutputTokens: 8000,
           responseMimeType: 'application/json',
         },
       },

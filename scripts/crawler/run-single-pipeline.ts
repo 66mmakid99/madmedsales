@@ -172,7 +172,7 @@ async function main(): Promise<void> {
   // Image OCR (downloaded images)
   let finalAnalysis = textAnalysis;
   const filteredImages = filterLikelyContentImages(uniqueImages);
-  const downloaded = await downloadImages(filteredImages, 20);
+  const downloaded = await downloadImages(filteredImages, 5);
   if (downloaded.length > 0) {
     const imageInputs: ImageInput[] = downloaded.map((d) => ({
       base64: d.base64, mimeType: d.mimeType, url: d.url,

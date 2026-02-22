@@ -142,7 +142,7 @@ async function runCrawlPipeline(hospitalName: string): Promise<{
   try {
     const stdout = execSync(cmd, {
       cwd: path.resolve(__dirname, '..'),
-      timeout: 300000,  // 5분
+      timeout: 600000,  // 10분 (gemini-2.5-pro는 2.0-flash보다 느림)
       encoding: 'utf-8',
       env: { ...process.env, NODE_OPTIONS: '--no-warnings' },
     });
@@ -697,10 +697,10 @@ async function main(): Promise<void> {
     const report = await runSingleTest(target);
     reports.push(report);
 
-    // 사이트 간 간격 (10초)
+    // 사이트 간 간격 (15초)
     if (target !== targets[targets.length - 1]) {
-      console.log(`\n  ⏳ 다음 병원까지 10초 대기...`);
-      await delay(10000);
+      console.log(`\n  ⏳ 다음 병원까지 15초 대기...`);
+      await delay(15000);
     }
   }
 
