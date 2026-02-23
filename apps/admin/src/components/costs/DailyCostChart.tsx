@@ -11,7 +11,7 @@ export function DailyCostChart({ data, loading }: Props): ReactNode {
   if (loading) {
     return (
       <div className="rounded-lg border bg-white p-4">
-        <h3 className="text-sm font-medium text-gray-700">일별 비용 추이</h3>
+        <h3 className="text-sm font-medium text-slate-800">일별 비용 추이</h3>
         <div className="mt-4 h-64 animate-pulse rounded bg-gray-50" />
       </div>
     );
@@ -20,8 +20,8 @@ export function DailyCostChart({ data, loading }: Props): ReactNode {
   if (!data || data.length === 0) {
     return (
       <div className="rounded-lg border bg-white p-4">
-        <h3 className="text-sm font-medium text-gray-700">일별 비용 추이</h3>
-        <p className="mt-8 text-center text-sm text-gray-400">데이터 없음</p>
+        <h3 className="text-sm font-medium text-slate-800">일별 비용 추이</h3>
+        <p className="mt-8 text-center text-sm text-slate-400">데이터 없음</p>
       </div>
     );
   }
@@ -34,7 +34,7 @@ export function DailyCostChart({ data, loading }: Props): ReactNode {
 
   return (
     <div className="rounded-lg border bg-white p-4">
-      <h3 className="text-sm font-medium text-gray-700">일별 비용 추이 (₩)</h3>
+      <h3 className="text-sm font-medium text-slate-800">일별 비용 추이 (₩)</h3>
       <div className="mt-4 h-64">
         <ResponsiveContainer width="100%" height="100%">
           <BarChart data={chartData}>

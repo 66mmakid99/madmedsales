@@ -19,7 +19,7 @@ export function AppLayout(): ReactNode {
         <header className="flex h-14 items-center justify-end border-b bg-white px-6">
           <button
             onClick={() => void handleLogout()}
-            className="text-sm text-gray-500 hover:text-gray-700"
+            className="text-sm text-slate-500 hover:text-slate-800"
           >
             로그아웃
           </button>

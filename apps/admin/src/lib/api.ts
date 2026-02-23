@@ -1,3 +1,5 @@
+import { useAuthStore } from '../stores/auth';
+
 const API_URL = import.meta.env.VITE_API_URL ?? '';
 
 export interface ApiResponse<T> {
@@ -12,6 +14,14 @@ export interface ApiResponse<T> {
   error?: { code: string; message: string };
 }
 
+function getAuthHeaders(): Record<string, string> {
+  const session = useAuthStore.getState().session;
+  if (session?.access_token) {
+    return { Authorization: `Bearer ${session.access_token}` };
+  }
+  return {};
+}
+
 export async function apiFetch<T>(
   path: string,
   options?: RequestInit
@@ -20,6 +30,7 @@ export async function apiFetch<T>(
     ...options,
     headers: {
       'Content-Type': 'application/json',
+      ...getAuthHeaders(),
       ...options?.headers,
     },
   });
@@ -50,6 +61,7 @@ export async function apiFetchWithPagination<T>(
     ...options,
     headers: {
       'Content-Type': 'application/json',
+      ...getAuthHeaders(),
       ...options?.headers,
     },
   });

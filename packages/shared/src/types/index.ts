@@ -464,3 +464,77 @@ export interface SystemSetting {
   description: string | null;
   updated_at: string;
 }
+
+// ===== Network / Franchise Verification =====
+
+export const NETWORK_CATEGORIES = ['franchise', 'network', 'group'] as const;
+export type NetworkCategory = typeof NETWORK_CATEGORIES[number];
+
+export const NETWORK_STATUSES = ['active', 'inactive', 'unverified'] as const;
+export type NetworkStatus = typeof NETWORK_STATUSES[number];
+
+export const BRANCH_ROLES = ['headquarter', 'branch'] as const;
+export type BranchRole = typeof BRANCH_ROLES[number];
+
+export const CONFIDENCE_LEVELS = ['confirmed', 'probable', 'candidate', 'unlikely'] as const;
+export type ConfidenceLevel = typeof CONFIDENCE_LEVELS[number];
+
+export const VERIFICATION_METHODS = ['official_site', 'domain_pattern', 'corporate', 'keyword', 'manual'] as const;
+export type VerificationMethod = typeof VERIFICATION_METHODS[number];
+
+export const VERIFICATION_RESULTS = ['match', 'no_match', 'error', 'inconclusive'] as const;
+export type VerificationResult = typeof VERIFICATION_RESULTS[number];
+
+export interface Network {
+  id: string;
+  name: string;
+  official_name: string | null;
+  headquarter_hospital_id: string | null;
+  official_site_url: string | null;
+  branch_page_url: string | null;
+  total_branches: number;
+  category: NetworkCategory;
+  status: NetworkStatus;
+  notes: string | null;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface NetworkBranch {
+  id: string;
+  network_id: string;
+  hospital_id: string;
+  branch_name: string | null;
+  role: BranchRole;
+  confidence: ConfidenceLevel;
+  confidence_score: number;
+  official_site_verified: boolean;
+  domain_pattern_score: number;
+  corporate_match_score: number;
+  keyword_match_score: number;
+  verified_at: string | null;
+  verified_by: string | null;
+  verification_notes: string | null;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface NetworkBranchWithHospital extends NetworkBranch {
+  hospital: Pick<Hospital, 'id' | 'name' | 'address' | 'sido' | 'sigungu' | 'phone' | 'website'>;
+}
+
+export interface NetworkWithStats extends Network {
+  confirmed_count: number;
+  probable_count: number;
+  candidate_count: number;
+}
+
+export interface NetworkVerificationLog {
+  id: string;
+  network_id: string | null;
+  branch_id: string | null;
+  verification_method: VerificationMethod;
+  result: VerificationResult;
+  detail: Record<string, unknown>;
+  created_at: string;
+}

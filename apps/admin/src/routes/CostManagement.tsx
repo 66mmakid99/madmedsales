@@ -14,8 +14,8 @@ export function CostManagement(): ReactNode {
   return (
     <div className="space-y-6">
       <div className="flex items-center justify-between">
-        <h2 className="text-lg font-bold text-gray-900">비용 관리</h2>
-        <p className="text-sm text-gray-500">AI API 사용량 및 비용 추적</p>
+        <h2 className="text-lg font-bold text-slate-800">비용 관리</h2>
+        <p className="text-sm text-slate-500">AI API 사용량 및 비용 추적</p>
       </div>
 
       <CostSummaryCards data={summary.data} loading={summary.loading} />

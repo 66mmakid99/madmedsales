@@ -9,9 +9,9 @@ interface Props {
 function Card({ title, value, sub, color }: { title: string; value: string; sub?: string; color: string }): ReactNode {
   return (
     <div className={`rounded-lg border p-4 ${color}`}>
-      <p className="text-sm font-medium text-gray-500">{title}</p>
+      <p className="text-sm font-medium text-slate-500">{title}</p>
       <p className="mt-1 text-2xl font-bold">{value}</p>
-      {sub && <p className="mt-1 text-xs text-gray-400">{sub}</p>}
+      {sub && <p className="mt-1 text-xs text-slate-400">{sub}</p>}
     </div>
   );
 }

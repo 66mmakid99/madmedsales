@@ -6,6 +6,7 @@ import demosRoute from './routes/demos';
 import publicRoute from './routes/public';
 import reportsRoute from './routes/reports';
 import costsRoute from './routes/costs';
+import networksRoute from './routes/networks';
 import emailsRoute from './routes/emails';
 import sequencesRoute from './routes/sequences';
 import webhooksRoute from './routes/webhooks';
@@ -70,6 +71,8 @@ app.route('/api/public', publicRoute);
 app.route('/api/reports', reportsRoute);
 // Cost tracking
 app.route('/api/costs', costsRoute);
+// Network verification
+app.route('/api/networks', networksRoute);
 
 export default {
   fetch: app.fetch,

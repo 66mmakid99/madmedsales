@@ -1,17 +1,39 @@
-import type { ReactNode } from 'react';
+import { useState, type ReactNode } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useHospitalDetail } from '../../hooks/use-hospitals';
+import { HospitalInfoTab } from './HospitalInfoTab';
+import { HospitalDataTab } from './HospitalDataTab';
+import { HospitalAnalysisTab } from './HospitalAnalysisTab';
+
+const TABS = ['기본 정보', '수집 데이터', '분석 결과'] as const;
+type TabName = typeof TABS[number];
+
+const GRADE_BADGE: Record<string, string> = {
+  PRIME: 'bg-purple-50 text-purple-700 border-purple-200',
+  HIGH: 'bg-blue-50 text-blue-700 border-blue-200',
+  MID: 'bg-green-50 text-green-700 border-green-200',
+  LOW: 'bg-gray-50 text-gray-500 border-gray-200',
+};
 
 export function HospitalDetail(): ReactNode {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
   const { data, loading, error } = useHospitalDetail(id);
+  const [activeTab, setActiveTab] = useState<TabName>('기본 정보');
+  const [toast, setToast] = useState<string | null>(null);
+
+  function showToast(msg: string): void {
+    setToast(msg);
+    setTimeout(() => setToast(null), 2000);
+  }
 
   if (loading) {
-    return <div className="animate-pulse space-y-4">
-      <div className="h-8 w-48 rounded bg-gray-200" />
-      <div className="h-64 rounded bg-gray-200" />
-    </div>;
+    return (
+      <div className="animate-pulse space-y-4">
+        <div className="h-8 w-48 rounded bg-gray-200" />
+        <div className="h-64 rounded bg-gray-200" />
+      </div>
+    );
   }
 
   if (error || !data) {
@@ -25,138 +47,89 @@ export function HospitalDetail(): ReactNode {
     );
   }
 
-  const { equipments, treatments, ...hospital } = data;
+  const { equipments, treatments, profile, scoreBreakdown, matchScores, pricing, crawlHistory, dataSummary, ...hospital } = data;
 
   return (
     <div>
-      <button
-        onClick={() => navigate('/hospitals')}
-        className="mb-4 text-sm text-blue-600 hover:underline"
-      >
-        &larr; 병원 목록
-      </button>
-
-      <h2 className="mb-6 text-xl font-bold text-gray-900">{hospital.name}</h2>
-
-      <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
-        <div className="rounded-lg border bg-white p-5 shadow-sm">
-          <h3 className="mb-3 text-sm font-semibold text-gray-700">기본 정보</h3>
-          <dl className="space-y-2 text-sm">
-            <div className="flex justify-between">
-              <dt className="text-gray-500">병원명</dt>
-              <dd className="font-medium">{hospital.name}</dd>
-            </div>
-            <div className="flex justify-between">
-              <dt className="text-gray-500">원장</dt>
-              <dd className="font-medium">{hospital.doctor_name ?? '-'}</dd>
-            </div>
-            <div className="flex justify-between">
-              <dt className="text-gray-500">진료과</dt>
-              <dd className="font-medium">{hospital.department ?? '-'}</dd>
-            </div>
-            <div className="flex justify-between">
-              <dt className="text-gray-500">전화</dt>
-              <dd className="font-medium">{hospital.phone ?? '-'}</dd>
-            </div>
-            <div className="flex justify-between">
-              <dt className="text-gray-500">이메일</dt>
-              <dd className="font-medium">{hospital.email ?? '-'}</dd>
-            </div>
-            <div className="flex justify-between">
-              <dt className="text-gray-500">주소</dt>
-              <dd className="text-right font-medium">
-                {hospital.address ?? '-'}
-              </dd>
-            </div>
-            <div className="flex justify-between">
-              <dt className="text-gray-500">지역</dt>
-              <dd className="font-medium">
-                {hospital.sido ?? '-'} {hospital.sigungu ?? ''} {hospital.dong ?? ''}
-              </dd>
-            </div>
-            <div className="flex justify-between">
-              <dt className="text-gray-500">웹사이트</dt>
-              <dd className="font-medium">
-                {hospital.website ? (
-                  <a
-                    href={hospital.website}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-600 hover:underline"
-                  >
-                    {hospital.website}
-                  </a>
-                ) : '-'}
-              </dd>
-            </div>
-            <div className="flex justify-between">
-              <dt className="text-gray-500">데이터 품질</dt>
-              <dd className="flex items-center gap-2">
-                <div className="h-2 w-20 rounded bg-gray-200">
-                  <div
-                    className="h-2 rounded bg-blue-500"
-                    style={{ width: `${hospital.data_quality_score}%` }}
-                  />
-                </div>
-                <span className="text-xs font-medium">{hospital.data_quality_score}</span>
-              </dd>
-            </div>
-          </dl>
-        </div>
-
-        <div className="space-y-4">
-          <div className="rounded-lg border bg-white p-5 shadow-sm">
-            <h3 className="mb-3 text-sm font-semibold text-gray-700">
-              보유 장비 ({equipments.length})
-            </h3>
-            {equipments.length === 0 ? (
-              <p className="text-sm text-gray-400">장비 정보 없음</p>
-            ) : (
-              <div className="space-y-2">
-                {equipments.map((eq, i) => (
-                  <div key={i} className="flex items-center justify-between rounded bg-gray-50 px-3 py-2">
-                    <div>
-                      <p className="text-sm font-medium text-gray-800">
-                        {String(eq.equipment_name ?? '-')}
-                      </p>
-                      <p className="text-xs text-gray-500">
-                        {String(eq.equipment_brand ?? '')} {String(eq.equipment_category ?? '')}
-                      </p>
-                    </div>
-                    {eq.estimated_year ? (
-                      <span className="text-xs text-gray-400">
-                        {String(eq.estimated_year)}년
-                      </span>
-                    ) : null}
-                  </div>
-                ))}
-              </div>
-            )}
-          </div>
-
-          <div className="rounded-lg border bg-white p-5 shadow-sm">
-            <h3 className="mb-3 text-sm font-semibold text-gray-700">
-              시술 목록 ({treatments.length})
-            </h3>
-            {treatments.length === 0 ? (
-              <p className="text-sm text-gray-400">시술 정보 없음</p>
-            ) : (
-              <div className="space-y-2">
-                {treatments.map((tr, i) => (
-                  <div key={i} className="flex items-center justify-between rounded bg-gray-50 px-3 py-2">
-                    <p className="text-sm font-medium text-gray-800">
-                      {String(tr.treatment_name ?? '-')}
-                    </p>
-                    <span className="text-xs text-gray-500">
-                      {tr.price_min ? `${Number(tr.price_min).toLocaleString()}원~` : '-'}
-                    </span>
-                  </div>
-                ))}
-              </div>
-            )}
-          </div>
-        </div>
+      <div className="mb-4 flex items-center justify-between">
+        <button
+          onClick={() => navigate('/hospitals')}
+          className="text-sm text-blue-600 hover:underline"
+        >
+          &larr; 병원 목록
+        </button>
+        <button
+          onClick={() => showToast('리드 전환은 Phase 3에서 활성화됩니다')}
+          className="rounded-lg border border-gray-200 px-3 py-1.5 text-xs font-medium text-slate-500 transition-colors hover:bg-gray-50"
+        >
+          → 리드로 전환
+        </button>
       </div>
+
+      <h2 className="mb-2 text-xl font-bold text-slate-800">{hospital.name}</h2>
+
+      {/* Toast */}
+      {toast && (
+        <div className="fixed bottom-6 left-1/2 z-50 -translate-x-1/2 rounded-lg bg-gray-900 px-4 py-2 text-sm text-white shadow-lg">
+          {toast}
+        </div>
+      )}
+
+      {/* 데이터 수집 요약 바 */}
+      <div className="mb-6 flex flex-wrap items-center gap-2 text-xs">
+        <span className="rounded bg-gray-100 px-2 py-1 text-slate-500">
+          장비 {dataSummary.equipmentCount}개
+        </span>
+        <span className="rounded bg-gray-100 px-2 py-1 text-slate-500">
+          시술 {dataSummary.treatmentCount}개
+        </span>
+        <span className="rounded bg-gray-100 px-2 py-1 text-slate-500">
+          가격 {dataSummary.pricingCount}건
+        </span>
+        <span className="rounded bg-gray-100 px-2 py-1 text-slate-500">
+          크롤 {dataSummary.crawlCount}회
+        </span>
+        {dataSummary.profileGrade ? (
+          <span className={`rounded border px-2 py-1 font-semibold ${GRADE_BADGE[dataSummary.profileGrade] ?? 'bg-gray-50 text-gray-500'}`}>
+            프로파일: {dataSummary.profileGrade}
+          </span>
+        ) : null}
+        {dataSummary.lastCrawledAt ? (
+          <span className="rounded bg-gray-50 px-2 py-1 text-slate-400">
+            마지막 크롤: {new Date(dataSummary.lastCrawledAt).toLocaleDateString('ko-KR')}
+          </span>
+        ) : null}
+      </div>
+
+      {/* 탭 네비게이션 */}
+      <div className="mb-6 border-b">
+        <nav className="-mb-px flex gap-6">
+          {TABS.map((tab) => (
+            <button
+              key={tab}
+              onClick={() => setActiveTab(tab)}
+              className={`border-b-2 pb-2 text-sm font-medium transition-colors ${
+                activeTab === tab
+                  ? 'border-indigo-500 text-indigo-600'
+                  : 'border-transparent text-slate-500 hover:border-gray-300 hover:text-slate-800'
+              }`}
+            >
+              {tab}
+            </button>
+          ))}
+        </nav>
+      </div>
+
+      {/* 탭 콘텐츠 */}
+      {activeTab === '기본 정보' ? (
+        <HospitalInfoTab hospital={hospital} profile={profile} scoreBreakdown={scoreBreakdown} />
+      ) : null}
+      {activeTab === '수집 데이터' ? (
+        <HospitalDataTab equipments={equipments} treatments={treatments} pricing={pricing} />
+      ) : null}
+      {activeTab === '분석 결과' ? (
+        <HospitalAnalysisTab matchScores={matchScores} crawlHistory={crawlHistory} />
+      ) : null}
     </div>
   );
 }
