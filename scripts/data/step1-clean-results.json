@@ -1,0 +1,370 @@
+[
+  {
+    "no": 2,
+    "name": "러블리피부과의원",
+    "region": "대전",
+    "url": "http://lovelyclinic.kr/default/",
+    "status": "valid",
+    "note": "naver_local [high]"
+  },
+  {
+    "no": 4,
+    "name": "부산CF강남의원",
+    "region": "부산",
+    "url": "",
+    "status": "no_website",
+    "note": "공식 웹사이트 미확인 (자동 검색 결과 무효)"
+  },
+  {
+    "no": 5,
+    "name": "미라벨의원",
+    "region": "약수",
+    "url": "",
+    "status": "no_website",
+    "note": "공식 웹사이트 미확인 (자동 검색 결과 무효)"
+  },
+  {
+    "no": 7,
+    "name": "부평포에버의원",
+    "region": "부평",
+    "url": "https://www.4-ever.co.kr/",
+    "status": "valid",
+    "note": "수동 보정: 포에버 체인 공식 (부평 지점 페이지 있을 수 있음)"
+  },
+  {
+    "no": 9,
+    "name": "메이린 압구정",
+    "region": "압구정",
+    "url": "https://maylincheongdam.com/",
+    "status": "valid",
+    "note": "naver_local [high]"
+  },
+  {
+    "no": 10,
+    "name": "더웰피부과",
+    "region": "대전",
+    "url": "http://www.wellpibu.net",
+    "status": "valid",
+    "note": "naver_local [medium]"
+  },
+  {
+    "no": 11,
+    "name": "분당오라클피부과",
+    "region": "성남",
+    "url": "https://oracle2u.com/",
+    "status": "valid",
+    "note": "naver_web [medium]"
+  },
+  {
+    "no": 13,
+    "name": "셀린피부과의원",
+    "region": "학동",
+    "url": "",
+    "status": "no_website",
+    "note": "공식 웹사이트 미확인 (자동 검색 결과 무효)"
+  },
+  {
+    "no": 14,
+    "name": "탐클리닉",
+    "region": "압구정",
+    "url": "http://www.tamclinic.co.kr/",
+    "status": "valid",
+    "note": "naver_web [medium]"
+  },
+  {
+    "no": 15,
+    "name": "에어리어88성형외과",
+    "region": "신사",
+    "url": "https://area88ps.com/ko/",
+    "status": "valid",
+    "note": "naver_local [medium]"
+  },
+  {
+    "no": 17,
+    "name": "천안이젠의원",
+    "region": "천안",
+    "url": "http://www.ezenskin.co.kr/",
+    "status": "valid",
+    "note": "수동 보정: 하위 페이지 → 루트로 보정"
+  },
+  {
+    "no": 18,
+    "name": "세마그린요양병원",
+    "region": "오산",
+    "url": "http://semagreen.com/",
+    "status": "valid",
+    "note": "naver_local [medium]"
+  },
+  {
+    "no": 19,
+    "name": "아가파퍼즐닥터의원",
+    "region": "강릉",
+    "url": "",
+    "status": "no_website",
+    "note": "공식 웹사이트 미확인 (자동 검색 결과 무효)"
+  },
+  {
+    "no": 20,
+    "name": "MH의원",
+    "region": "청담",
+    "url": "",
+    "status": "no_website",
+    "note": "공식 웹사이트 미확인 (자동 검색 결과 무효)"
+  },
+  {
+    "no": 21,
+    "name": "서희원클리닉",
+    "region": "청담",
+    "url": "",
+    "status": "no_website",
+    "note": "공식 웹사이트 미확인 (자동 검색 결과 무효)"
+  },
+  {
+    "no": 22,
+    "name": "울산메이린의원",
+    "region": "울산",
+    "url": "https://maylin.co.kr/ulsan/",
+    "status": "valid",
+    "note": "naver_local [high]"
+  },
+  {
+    "no": 23,
+    "name": "강남바롬의원",
+    "region": "강남",
+    "url": "https://www.varomclinic.co.kr/",
+    "status": "valid",
+    "note": "naver_web [medium]"
+  },
+  {
+    "no": 25,
+    "name": "닥터로빈의원",
+    "region": "대치",
+    "url": "http://robbin.co.kr",
+    "status": "valid",
+    "note": "naver_local [medium]"
+  },
+  {
+    "no": 26,
+    "name": "바로코의원",
+    "region": "강남",
+    "url": "https://baroko.co.kr",
+    "status": "valid",
+    "note": "naver_local [medium]"
+  },
+  {
+    "no": 27,
+    "name": "미라인피부과의원",
+    "region": "역삼",
+    "url": "",
+    "status": "no_website",
+    "note": "공식 웹사이트 미확인 (자동 검색 결과 무효)"
+  },
+  {
+    "no": 29,
+    "name": "세인트의원",
+    "region": "의정부",
+    "url": "https://www.saintclinic.com/",
+    "status": "valid",
+    "note": "naver_web [medium]"
+  },
+  {
+    "no": 31,
+    "name": "선이고운여성의원",
+    "region": "용인",
+    "url": "",
+    "status": "no_website",
+    "note": "공식 웹사이트 미확인 (자동 검색 결과 무효)"
+  },
+  {
+    "no": 32,
+    "name": "힐링수의원(강릉)",
+    "region": "강릉",
+    "url": "",
+    "status": "no_website",
+    "note": "공식 웹사이트 미확인 (자동 검색 결과 무효)"
+  },
+  {
+    "no": 34,
+    "name": "뷰티온메디",
+    "region": "부산",
+    "url": "",
+    "status": "no_website",
+    "note": "공식 웹사이트 미확인 (자동 검색 결과 무효)"
+  },
+  {
+    "no": 35,
+    "name": "프레쉬성형외과",
+    "region": "신사",
+    "url": "",
+    "status": "no_website",
+    "note": "공식 웹사이트 미확인 (자동 검색 결과 무효)"
+  },
+  {
+    "no": 38,
+    "name": "파라다이스의원(부산)",
+    "region": "부산",
+    "url": "http://paradiseclinic.co.kr/",
+    "status": "valid",
+    "note": "naver_local [medium]"
+  },
+  {
+    "no": 39,
+    "name": "동백제니스(부산)",
+    "region": "부산",
+    "url": "",
+    "status": "no_website",
+    "note": "공식 웹사이트 미확인 (자동 검색 결과 무효)"
+  },
+  {
+    "no": 43,
+    "name": "메이린일산",
+    "region": "일산",
+    "url": "https://maylin.co.kr/",
+    "status": "valid",
+    "note": "naver_web [medium]"
+  },
+  {
+    "no": 44,
+    "name": "인앤아웃의원(부산)",
+    "region": "부산",
+    "url": "http://innoutclinic.co.kr/",
+    "status": "valid",
+    "note": "naver_local [medium]"
+  },
+  {
+    "no": 45,
+    "name": "라뷰티의원",
+    "region": "성남",
+    "url": "https://labeauty.kr",
+    "status": "valid",
+    "note": "naver_local [medium]"
+  },
+  {
+    "no": 47,
+    "name": "벨버티의원(광주)",
+    "region": "광주",
+    "url": "http://velvety.co.kr/",
+    "status": "valid",
+    "note": "naver_local [medium]"
+  },
+  {
+    "no": 48,
+    "name": "청담리브의원(광주)",
+    "region": "광주",
+    "url": "http://www.reev.co.kr",
+    "status": "valid",
+    "note": "naver_local [medium]"
+  },
+  {
+    "no": 50,
+    "name": "이에스청담의원(청담)",
+    "region": "청담",
+    "url": "http://www.escheongdam.co.kr/",
+    "status": "valid",
+    "note": "naver_local [high]"
+  },
+  {
+    "no": 51,
+    "name": "디데이의원(부산)",
+    "region": "부산",
+    "url": "https://dday.clinic",
+    "status": "valid",
+    "note": "naver_local [medium]"
+  },
+  {
+    "no": 52,
+    "name": "울산제일병원",
+    "region": "울산",
+    "url": "http://www.ujh.co.kr/",
+    "status": "valid",
+    "note": "naver_local [medium]"
+  },
+  {
+    "no": 54,
+    "name": "강남수의원(대구)",
+    "region": "대구",
+    "url": "",
+    "status": "no_website",
+    "note": "공식 웹사이트 미확인 (자동 검색 결과 무효)"
+  },
+  {
+    "no": 56,
+    "name": "피어나의원",
+    "region": "논현",
+    "url": "",
+    "status": "no_website",
+    "note": "공식 웹사이트 미확인 (자동 검색 결과 무효)"
+  },
+  {
+    "no": 58,
+    "name": "크리미의원(유성)",
+    "region": "유성",
+    "url": "",
+    "status": "no_website",
+    "note": "공식 웹사이트 미확인 (자동 검색 결과 무효)"
+  },
+  {
+    "no": 60,
+    "name": "봉선화의원(청주)",
+    "region": "청주",
+    "url": "",
+    "status": "no_website",
+    "note": "공식 웹사이트 미확인 (자동 검색 결과 무효)"
+  },
+  {
+    "no": 61,
+    "name": "청담에프앤비의원(대구)",
+    "region": "대구",
+    "url": "",
+    "status": "no_website",
+    "note": "공식 웹사이트 미확인 (자동 검색 결과 무효)"
+  },
+  {
+    "no": 63,
+    "name": "르벨의원",
+    "region": "청담",
+    "url": "",
+    "status": "no_website",
+    "note": "공식 웹사이트 미확인 (자동 검색 결과 무효)"
+  },
+  {
+    "no": 65,
+    "name": "샤인빔의원 홍대",
+    "region": "홍대",
+    "url": "http://hongdae.shinebeam.co.kr/",
+    "status": "valid",
+    "note": "naver_local [high]"
+  },
+  {
+    "no": 66,
+    "name": "삼성웰내과의원",
+    "region": "옥수",
+    "url": "http://sswellclinic.co.kr",
+    "status": "valid",
+    "note": "naver_local [high]"
+  },
+  {
+    "no": 67,
+    "name": "나드라의원",
+    "region": "미확인",
+    "url": "",
+    "status": "no_website",
+    "note": "공식 웹사이트 미확인 (자동 검색 결과 무효)"
+  },
+  {
+    "no": 68,
+    "name": "리셋의원",
+    "region": "분당",
+    "url": "",
+    "status": "no_website",
+    "note": "공식 웹사이트 미확인 (자동 검색 결과 무효)"
+  },
+  {
+    "no": 69,
+    "name": "울산베러미의원",
+    "region": "울산",
+    "url": "https://ulsansamsan.bettermeclinic.co.kr/",
+    "status": "valid",
+    "note": "naver_local [high]"
+  }
+]

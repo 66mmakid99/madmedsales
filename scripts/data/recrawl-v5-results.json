@@ -1,0 +1,21 @@
+[
+  {
+    "no": 16,
+    "name": "동안중심의원",
+    "pages": 12,
+    "credits": 51,
+    "geminiCalls": 28,
+    "equip": 32,
+    "treat": 23,
+    "doctors": 2,
+    "events": 2,
+    "coverage": 43,
+    "status": "manual_review",
+    "v4": {
+      "equip": 28,
+      "treat": 139,
+      "doctors": 3,
+      "events": 3
+    }
+  }
+]

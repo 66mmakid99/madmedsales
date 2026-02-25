@@ -1,0 +1,4077 @@
+[
+  {
+    "crm_name": "강남타임의원",
+    "crm_grade": "A",
+    "crm_status": "green",
+    "crm_region": "서울 강남",
+    "hospital_name": "강남타임의원",
+    "website": "http://www.gangnamtime.com",
+    "region": "서울 강남구",
+    "department": "피부과",
+    "email": "timetime2022@naver.com",
+    "phone": "02-6953-0572",
+    "crawled_at": "2026-02-23T14:36:46.701+00:00",
+    "profile": {
+      "grade": "MID",
+      "score": 56,
+      "investment": 65,
+      "portfolio": 93,
+      "scale_trust": 37,
+      "marketing": 8,
+      "tendency": "aggressive"
+    },
+    "match_scores": [],
+    "equipments": [
+      {
+        "name": "디스커버리피코",
+        "category": "laser",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "아큐토닝",
+        "category": "laser",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "리니어지",
+        "category": "hifu",
+        "brand": null,
+        "model": null,
+        "manufacturer": "Jeisys",
+        "year": null
+      },
+      {
+        "name": "올리지오X",
+        "category": "rf",
+        "brand": null,
+        "model": null,
+        "manufacturer": "Wontech",
+        "year": null
+      },
+      {
+        "name": "레가토2",
+        "category": "other",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "튠바디",
+        "category": "body",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "콰트로스타",
+        "category": "laser",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "울쎄라",
+        "category": "hifu",
+        "brand": null,
+        "model": null,
+        "manufacturer": "Merz",
+        "year": null
+      },
+      {
+        "name": "인모드",
+        "category": "rf",
+        "brand": null,
+        "model": null,
+        "manufacturer": "Inmode",
+        "year": null
+      },
+      {
+        "name": "소프웨이브",
+        "category": "lifting",
+        "brand": null,
+        "model": null,
+        "manufacturer": "Sofwave",
+        "year": null
+      },
+      {
+        "name": "아그네스",
+        "category": "rf",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "벨라콜린",
+        "category": "body",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "클라리티",
+        "category": "laser",
+        "brand": null,
+        "model": null,
+        "manufacturer": "Lutronic",
+        "year": null
+      },
+      {
+        "name": "써마지FLX",
+        "category": "rf",
+        "brand": null,
+        "model": null,
+        "manufacturer": "Solta Medical",
+        "year": null
+      },
+      {
+        "name": "튠레이저",
+        "category": "lifting",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "세르프",
+        "category": "rf",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "LDM",
+        "category": "other",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "엑션2",
+        "category": "laser",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "덴서티",
+        "category": "rf",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "슈링크유니버스",
+        "category": "hifu",
+        "brand": null,
+        "model": null,
+        "manufacturer": "Classys",
+        "year": null
+      },
+      {
+        "name": "프락셀",
+        "category": "laser",
+        "brand": null,
+        "model": null,
+        "manufacturer": "Solta Medical",
+        "year": null
+      },
+      {
+        "name": "바디슈링크",
+        "category": "body",
+        "brand": null,
+        "model": null,
+        "manufacturer": "Classys",
+        "year": null
+      },
+      {
+        "name": "실펌",
+        "category": "rf",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "온다리프팅",
+        "category": "lifting",
+        "brand": null,
+        "model": null,
+        "manufacturer": "DEKA",
+        "year": null
+      },
+      {
+        "name": "티타늄리프팅",
+        "category": "laser",
+        "brand": null,
+        "model": null,
+        "manufacturer": "Alma",
+        "year": null
+      },
+      {
+        "name": "포텐자",
+        "category": "rf",
+        "brand": null,
+        "model": null,
+        "manufacturer": "Cynosure",
+        "year": null
+      },
+      {
+        "name": "바디인모드",
+        "category": "body",
+        "brand": null,
+        "model": null,
+        "manufacturer": "Inmode",
+        "year": null
+      }
+    ],
+    "treatments": [
+      {
+        "name": "콰트로점빼기",
+        "category": "laser",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "아이써마지FLX",
+        "category": "lifting",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "튠레이저리프팅",
+        "category": "lifting",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "엠페이스",
+        "category": "lifting",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "필로가135",
+        "category": "booster",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "다한증보톡스",
+        "category": "botox",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "튠바디",
+        "category": "body",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "포텐자",
+        "category": "lifting",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "디스커버리피코",
+        "category": "laser",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "덴서티",
+        "category": "lifting",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "슈링크유니버스",
+        "category": "lifting",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "세르프",
+        "category": "lifting",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "쥬베룩",
+        "category": "booster",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "문신제거",
+        "category": "laser",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "브이올렛",
+        "category": "body",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "라라필",
+        "category": "peeling",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "울쎄라2프라임",
+        "category": "lifting",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "하이온다리프팅",
+        "category": "lifting",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "티타늄리프팅",
+        "category": "lifting",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "엑소좀",
+        "category": "booster",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "울트라콜",
+        "category": "booster",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "바디온다",
+        "category": "body",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "바디티타늄",
+        "category": "body",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "아이울쎄라",
+        "category": "lifting",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "리니어지",
+        "category": "lifting",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "올리지오X",
+        "category": "lifting",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "물광주사",
+        "category": "booster",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "주름보톡스",
+        "category": "botox",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "바디슈링크",
+        "category": "body",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "벨라콜린",
+        "category": "body",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "써마지FLX",
+        "category": "lifting",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "인모드리프팅",
+        "category": "lifting",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "소프웨이브",
+        "category": "lifting",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "리쥬란",
+        "category": "booster",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "스킨보톡스",
+        "category": "botox",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "바디인모드",
+        "category": "body",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "프락셀듀얼",
+        "category": "laser",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      }
+    ],
+    "doctors": [
+      {
+        "name": "백나영",
+        "title": "대표원장",
+        "specialty": null,
+        "career": []
+      }
+    ]
+  },
+  {
+    "crm_name": "글래시피부과의원",
+    "crm_grade": "A",
+    "crm_status": "green",
+    "crm_region": "서울 청담",
+    "hospital_name": "청담글래시피부과의원",
+    "website": "https://booking.naver.com/booking/13/bizes/695390?theme=place&area=ple",
+    "region": "서울 강남구",
+    "department": "피부과",
+    "email": "joostyle99@naver.com",
+    "phone": "02-515-5255",
+    "crawled_at": "2026-02-20T08:45:14.226+00:00",
+    "profile": {
+      "grade": "LOW",
+      "score": 18,
+      "investment": 25,
+      "portfolio": 18,
+      "scale_trust": 0,
+      "marketing": 33,
+      "tendency": "conservative"
+    },
+    "match_scores": [],
+    "equipments": [],
+    "treatments": [
+      {
+        "name": "블랙홀 여드름 레이저",
+        "category": "레이저",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "듀얼 홍조 레이저",
+        "category": "레이저",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "피코 트리플 미백 레이저",
+        "category": "레이저",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "바디라인 레이저",
+        "category": "레이저",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "PL 리프팅",
+        "category": "리프팅",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "트리플 리프팅",
+        "category": "리프팅",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "콜라겐 볼륨리프팅",
+        "category": "리프팅",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "비수술 탈모 치료",
+        "category": "기타",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "두피크라이오테라피",
+        "category": "기타",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "안티에이징테라피",
+        "category": "기타",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "홍조민감관리",
+        "category": "기타",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "홍조탄력관리",
+        "category": "기타",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "비만디톡스 식단관리",
+        "category": "기타",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      }
+    ],
+    "doctors": []
+  },
+  {
+    "crm_name": "나드라의원",
+    "crm_grade": "B",
+    "crm_status": "green",
+    "crm_region": "미확인",
+    "hospital_name": "나드라의원",
+    "website": null,
+    "region": "경기 성남분당구",
+    "department": "피부과",
+    "email": null,
+    "phone": "031-607-7582",
+    "crawled_at": "2026-02-20T08:45:20.241+00:00",
+    "profile": {
+      "grade": "LOW",
+      "score": 4,
+      "investment": 12,
+      "portfolio": 0,
+      "scale_trust": 0,
+      "marketing": 0,
+      "tendency": "conservative"
+    },
+    "match_scores": [],
+    "equipments": [],
+    "treatments": [],
+    "doctors": []
+  },
+  {
+    "crm_name": "나의미래피부과의원",
+    "crm_grade": "A",
+    "crm_status": "green",
+    "crm_region": "서울 여의도",
+    "hospital_name": "나의미래피부과의원",
+    "website": "http://mymirae.co.kr/",
+    "region": "서울 영등포구",
+    "department": "피부과",
+    "email": null,
+    "phone": "01256185623",
+    "crawled_at": "2026-02-23T14:37:56.558+00:00",
+    "profile": {
+      "grade": "MID",
+      "score": 43,
+      "investment": 37,
+      "portfolio": 79,
+      "scale_trust": 22,
+      "marketing": 30,
+      "tendency": "moderate"
+    },
+    "match_scores": [],
+    "equipments": [
+      {
+        "name": "실펌X",
+        "category": "rf",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "애플레이저",
+        "category": "laser",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "써마지FLX",
+        "category": "rf",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "레블라이트",
+        "category": "laser",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "스컬트라",
+        "category": "booster",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "볼뉴머",
+        "category": "rf",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "노블렉스",
+        "category": "laser",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "리쥬란",
+        "category": "booster",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "리프테라",
+        "category": "hifu",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "제네시스",
+        "category": "laser",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "쥬베룩",
+        "category": "booster",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "브이빔 퍼펙타",
+        "category": "laser",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "울쎄라",
+        "category": "hifu",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      }
+    ],
+    "treatments": [
+      {
+        "name": "기미·잡티 클리닉",
+        "category": "색소",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "여드름•홍조•모공 클리닉",
+        "category": "여드름/홍조",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "멀티레이어 리프팅",
+        "category": "리프팅",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "리쥬란 힐러",
+        "category": "스킨부스터",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "리프테라2",
+        "category": "리프팅",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "실펌X",
+        "category": "모공/탄력",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "브이빔 퍼펙타",
+        "category": "홍조",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "디스포트",
+        "category": "보톡스",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "쥬베룩",
+        "category": "콜라겐부스터",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "보툴렉스",
+        "category": "보톡스",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "레블라이트",
+        "category": "색소",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "애플레이저",
+        "category": "모공/흉터",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "제오민",
+        "category": "보톡스",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "울쎄라",
+        "category": "리프팅",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "보톡스",
+        "category": "보톡스",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "노블렉스",
+        "category": "색소",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "골드 PTT",
+        "category": "여드름",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "벨로테로",
+        "category": "필러",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "써마지FLX",
+        "category": "리프팅",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "필러",
+        "category": "필러",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "제네시스",
+        "category": "모공/홍조",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "레블라이트 SI",
+        "category": "색소",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "스컬트라",
+        "category": "콜라겐부스터",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "볼뉴머",
+        "category": "리프팅",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      }
+    ],
+    "doctors": [
+      {
+        "name": "노효진",
+        "title": "대표원장",
+        "specialty": "피부과전문의",
+        "career": [
+          "연세대학교 의과대학 피부과학교실 조교수",
+          "연세대학교 의과대학 피부과학교실 강사",
+          "연세대학교 신촌세브란스병원 피부외과 수석전담의",
+          "연세대학교 신촌세브란스병원 레이저클리닉 수석전담의 (피부암, 피부미용수술, 레이저수술 전문의)",
+          "연세대학교 의과대학 피부과학교실 의학박사",
+          "대한피부과학회 상임이사 (the association of Korean Dermatologists)",
+          "前) 대한피부과의사회 학술간사 (the association of Korean Dermatologists)",
+          "前) 대한피부과의사회 학술위원 (the association of Korean Dermatologists)",
+          "대한피부교정치료학회 이사 (The Korean Academy of Corrective Dermatology)",
+          "대한피부과학회 정회원 (Korean Dermatological Association)",
+          "대한피부외과학회 정회원 (Korean Society of Dermatological Surgery)",
+          "대한미용외과학회 정회원 (Korean Society of Aesthetic Surgery)",
+          "대한모발학회 정회원 (Korea Society of Hair Restoration Surgery)",
+          "대한피부레이저학회 정회원"
+        ]
+      },
+      {
+        "name": "정진영",
+        "title": "원장",
+        "specialty": "피부과전문의",
+        "career": [
+          "피부과 전문의 시험 전국 수석",
+          "연세대학교 의과대학 피부과학교실 의학박사",
+          "연세대학교 의과대학 피부과학교실 의학석사",
+          "연세대학교 의과대학 졸업",
+          "연세대학교 신촌세브란스병원 인턴 레지던트 수련",
+          "前) 연세대학교 의과대학 피부과학교실 강사",
+          "前) 연세대학교 의과대학 피부과학교실 교수",
+          "前) 신촌세브란스병원 레이저센터/피부외과 수석전담의",
+          "前) 관동대학교 의과대학 명지병원 피부과/피부미용센터 교수",
+          "미국 토마스제퍼슨 의과대학 연수",
+          "미국 Northwestern 의과대학 피부과/피부외과센터 연수",
+          "영국 캠브리지 대학 Stem cell Clinical school 수료"
+        ]
+      }
+    ]
+  },
+  {
+    "crm_name": "노벨의원(신촌)",
+    "crm_grade": "A",
+    "crm_status": "green",
+    "crm_region": "서울 마포",
+    "hospital_name": "노벨의원",
+    "website": "http://novelclinic1.com/",
+    "region": "서울 영등포구",
+    "department": "피부과",
+    "email": null,
+    "phone": "02-841-7582",
+    "crawled_at": "2026-02-20T08:45:14.22+00:00",
+    "profile": {
+      "grade": "LOW",
+      "score": 5,
+      "investment": 12,
+      "portfolio": 0,
+      "scale_trust": 0,
+      "marketing": 5,
+      "tendency": "conservative"
+    },
+    "match_scores": [],
+    "equipments": [],
+    "treatments": [],
+    "doctors": []
+  },
+  {
+    "crm_name": "다인피부과",
+    "crm_grade": "B",
+    "crm_status": "green",
+    "crm_region": "서울 신사",
+    "hospital_name": "다인피부과의원",
+    "website": "http://www.dainskin.co.kr/",
+    "region": "서울 강남구",
+    "department": "피부과",
+    "email": null,
+    "phone": "0260223233",
+    "crawled_at": "2026-02-23T14:38:22.48+00:00",
+    "profile": {
+      "grade": "LOW",
+      "score": 5,
+      "investment": 12,
+      "portfolio": 0,
+      "scale_trust": 0,
+      "marketing": 5,
+      "tendency": "conservative"
+    },
+    "match_scores": [],
+    "equipments": [],
+    "treatments": [],
+    "doctors": []
+  },
+  {
+    "crm_name": "동안중심의원",
+    "crm_grade": "A",
+    "crm_status": "green",
+    "crm_region": "서울 신사",
+    "hospital_name": "동안중심의원",
+    "website": "http://www.dongancenter.com/",
+    "region": "서울 강남구",
+    "department": "피부과",
+    "email": null,
+    "phone": "02-542-7586",
+    "crawled_at": "2026-02-20T08:45:14.221+00:00",
+    "profile": {
+      "grade": "LOW",
+      "score": 11,
+      "investment": 18,
+      "portfolio": 0,
+      "scale_trust": 0,
+      "marketing": 30,
+      "tendency": "conservative"
+    },
+    "match_scores": [],
+    "equipments": [],
+    "treatments": [],
+    "doctors": []
+  },
+  {
+    "crm_name": "디에이성형외과의원",
+    "crm_grade": "A",
+    "crm_status": "green",
+    "crm_region": "서울 강남",
+    "hospital_name": "디에이성형외과의원",
+    "website": null,
+    "region": "서울 강남구",
+    "department": "피부과",
+    "email": null,
+    "phone": "02-515-4600",
+    "crawled_at": "2026-02-20T08:45:14.221+00:00",
+    "profile": {
+      "grade": "LOW",
+      "score": 4,
+      "investment": 12,
+      "portfolio": 0,
+      "scale_trust": 0,
+      "marketing": 0,
+      "tendency": "conservative"
+    },
+    "match_scores": [],
+    "equipments": [],
+    "treatments": [],
+    "doctors": []
+  },
+  {
+    "crm_name": "라마르프리미어의원",
+    "crm_grade": "A",
+    "crm_status": "green",
+    "crm_region": "대구 대구",
+    "hospital_name": "라마르프리미어의원",
+    "website": "http://www.pclamar.co.kr/new/",
+    "region": "경기 안양동안구",
+    "department": "피부과",
+    "email": null,
+    "phone": "031-387-0285",
+    "crawled_at": "2026-02-23T14:39:41.067+00:00",
+    "profile": {
+      "grade": "MID",
+      "score": 52,
+      "investment": 58,
+      "portfolio": 93,
+      "scale_trust": 32,
+      "marketing": 5,
+      "tendency": "moderate"
+    },
+    "match_scores": [],
+    "equipments": [
+      {
+        "name": "세르프",
+        "category": "rf",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "올리지오",
+        "category": "rf",
+        "brand": null,
+        "model": null,
+        "manufacturer": "Wontech",
+        "year": null
+      },
+      {
+        "name": "오니코V레이저",
+        "category": "laser",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "아쿠아필",
+        "category": "booster",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "3MAX",
+        "category": "body",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "울쎄라",
+        "category": "hifu",
+        "brand": null,
+        "model": null,
+        "manufacturer": "Merz",
+        "year": null
+      },
+      {
+        "name": "써마지",
+        "category": "rf",
+        "brand": null,
+        "model": null,
+        "manufacturer": "Solta Medical",
+        "year": null
+      },
+      {
+        "name": "뉴테라",
+        "category": "hifu",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "IPL",
+        "category": "laser",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "울쎄라피 프라임",
+        "category": "hifu",
+        "brand": null,
+        "model": null,
+        "manufacturer": "Merz",
+        "year": null
+      },
+      {
+        "name": "엑셀V 플러스",
+        "category": "laser",
+        "brand": null,
+        "model": null,
+        "manufacturer": "Cutera",
+        "year": null
+      },
+      {
+        "name": "컴포트듀얼",
+        "category": "rf",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "옐로우 레이저",
+        "category": "laser",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "인모드",
+        "category": "rf",
+        "brand": null,
+        "model": null,
+        "manufacturer": "Inmode",
+        "year": null
+      },
+      {
+        "name": "피코 레이저",
+        "category": "laser",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "프렉사",
+        "category": "other",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "인트라셀",
+        "category": "rf",
+        "brand": null,
+        "model": null,
+        "manufacturer": "Jeisys",
+        "year": null
+      },
+      {
+        "name": "슈링크 유니버스",
+        "category": "hifu",
+        "brand": null,
+        "model": null,
+        "manufacturer": "Classys",
+        "year": null
+      },
+      {
+        "name": "인라이튼 피코 레이저",
+        "category": "laser",
+        "brand": null,
+        "model": null,
+        "manufacturer": "Cutera",
+        "year": null
+      },
+      {
+        "name": "플젯 레이저",
+        "category": "laser",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "알레그로",
+        "category": "laser",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      }
+    ],
+    "treatments": [
+      {
+        "name": "세르프 리프팅",
+        "category": "리프팅",
+        "price": null,
+        "price_event": null,
+        "is_promoted": true
+      },
+      {
+        "name": "울써마지",
+        "category": "리프팅",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "피코 레이저",
+        "category": "피부",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "HIP라인업",
+        "category": "체형",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "여드름(염증)주사",
+        "category": "피부",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "부위별 지방흡입",
+        "category": "체형",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "울쎄라피 프라임",
+        "category": "리프팅",
+        "price": null,
+        "price_event": null,
+        "is_promoted": true
+      },
+      {
+        "name": "뉴테라 리프팅",
+        "category": "리프팅",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "엑셀V 플러스",
+        "category": "피부",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "기미/주근깨/잡티 치료",
+        "category": "피부",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "보톡스",
+        "category": "쁘띠",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "인모드 리프팅",
+        "category": "리프팅",
+        "price": null,
+        "price_event": null,
+        "is_promoted": true
+      },
+      {
+        "name": "컴포트듀얼",
+        "category": "리프팅",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "리쥬란힐러",
+        "category": "스킨부스터",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "안면홍조 치료",
+        "category": "피부",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "필러",
+        "category": "쁘띠",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "슈링크 유니버스",
+        "category": "리프팅",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "프렉사 리프팅",
+        "category": "리프팅",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "스컬트라",
+        "category": "스킨부스터",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "여드름 치료",
+        "category": "피부",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "윤곽주사",
+        "category": "쁘띠",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "올리지오 리프팅",
+        "category": "리프팅",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "실루엣 리프팅",
+        "category": "리프팅",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "룩팻",
+        "category": "체형",
+        "price": null,
+        "price_event": null,
+        "is_promoted": true
+      },
+      {
+        "name": "여드름 흉터 치료",
+        "category": "피부",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "눈밑지방 재배치",
+        "category": "성형",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      }
+    ],
+    "doctors": [
+      {
+        "name": "윤의상",
+        "title": "원장",
+        "specialty": null,
+        "career": [
+          "경희대학교 의과대학 졸업",
+          "경희대학교 의과대학원 의학석사",
+          "경희대학교 의료원 전문의",
+          "신촌 세브란스병원 전임의",
+          "전) 라마르 압구정 수술센터 원장",
+          "전) 라마르 서울본원 원장",
+          "전) 라마르 강남삼성점 원장",
+          "대한 미용외과학회 회원",
+          "대한 미용성형학회 회원",
+          "대한 의학레이저학회 회원",
+          "대한 비만미용치료학회 회원"
+        ]
+      },
+      {
+        "name": "김하중",
+        "title": "원장",
+        "specialty": null,
+        "career": [
+          "경희대학교 의과대학 졸업",
+          "경희대학교 의료원 전문의",
+          "경희대학교 외래교수",
+          "전) 디올클리닉 수술센터장",
+          "전) 디올메디컬허브 원장",
+          "전) 디오네 원장",
+          "대한 비만체형학회 회원",
+          "대한 미용웰빙학회 회원",
+          "대한 미용외과학회 회원"
+        ]
+      },
+      {
+        "name": "최원진",
+        "title": "원장",
+        "specialty": null,
+        "career": [
+          "한양대학교 의과대학 졸업",
+          "한양대학교 의과대학원 박사과정",
+          "한양대학교 의료원 전문의",
+          "한양대학교 외래교수",
+          "전) 닥터포유클리닉 강남점 원장",
+          "전) 메디라인 원장",
+          "전) 라인라마르 원장",
+          "대한 비만성형학회 회원",
+          "대한 비만체형학회 회원",
+          "대한 의학레이저학회 회원"
+        ]
+      },
+      {
+        "name": "유준환",
+        "title": "원장",
+        "specialty": null,
+        "career": [
+          "중앙대학교 의학전문대학원 졸업",
+          "강남세브란스병원 전문의",
+          "전) 뷰티엠의원 인계점 부원장",
+          "대한미용성형레이저학회 회원",
+          "대한레이저피부모발학회 회원",
+          "대한비만미용치료학회 회원",
+          "대한미용의사회 회원",
+          "대한비만연구의사회 회원"
+        ]
+      }
+    ]
+  },
+  {
+    "crm_name": "라뷰티의원",
+    "crm_grade": "A",
+    "crm_status": "green",
+    "crm_region": "경기 성남",
+    "hospital_name": "라뷰티의원(LA BEAUTY)",
+    "website": null,
+    "region": "경기 성남수정구",
+    "department": "피부과",
+    "email": null,
+    "phone": "031-759-2337",
+    "crawled_at": "2026-02-20T08:45:20.241+00:00",
+    "profile": {
+      "grade": "LOW",
+      "score": 6,
+      "investment": 18,
+      "portfolio": 0,
+      "scale_trust": 0,
+      "marketing": 0,
+      "tendency": "conservative"
+    },
+    "match_scores": [],
+    "equipments": [],
+    "treatments": [],
+    "doctors": []
+  },
+  {
+    "crm_name": "르벨의원",
+    "crm_grade": "B",
+    "crm_status": "green",
+    "crm_region": "서울 청담",
+    "hospital_name": "청담르벨의원",
+    "website": "https://www.instagram.com/dr.hwang_wonuk_lebelleclinic",
+    "region": "서울 강남구",
+    "department": "피부과",
+    "email": null,
+    "phone": "02-515-9003",
+    "crawled_at": "2026-02-20T08:45:14.226+00:00",
+    "profile": {
+      "grade": "LOW",
+      "score": 11,
+      "investment": 18,
+      "portfolio": 0,
+      "scale_trust": 0,
+      "marketing": 30,
+      "tendency": "conservative"
+    },
+    "match_scores": [],
+    "equipments": [],
+    "treatments": [],
+    "doctors": []
+  },
+  {
+    "crm_name": "리노보의원(부산)",
+    "crm_grade": "B",
+    "crm_status": "green",
+    "crm_region": "부산 부산",
+    "hospital_name": "리노보의원",
+    "website": "http://www.renovo.co.kr/",
+    "region": "서울 강남구",
+    "department": "피부과",
+    "email": null,
+    "phone": "0378557300",
+    "crawled_at": "2026-02-23T14:40:42.683+00:00",
+    "profile": {
+      "grade": "MID",
+      "score": 47,
+      "investment": 45,
+      "portfolio": 93,
+      "scale_trust": 30,
+      "marketing": 5,
+      "tendency": "moderate"
+    },
+    "match_scores": [],
+    "equipments": [
+      {
+        "name": "써마지",
+        "category": "rf",
+        "brand": null,
+        "model": null,
+        "manufacturer": "Solta Medical",
+        "year": null
+      },
+      {
+        "name": "IPL",
+        "category": "laser",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "오투덤",
+        "category": "other",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "슈링크 유니버스",
+        "category": "hifu",
+        "brand": null,
+        "model": null,
+        "manufacturer": "Classys",
+        "year": null
+      },
+      {
+        "name": "프락셀",
+        "category": "laser",
+        "brand": null,
+        "model": null,
+        "manufacturer": "Solta Medical",
+        "year": null
+      },
+      {
+        "name": "인모드",
+        "category": "rf",
+        "brand": null,
+        "model": null,
+        "manufacturer": "Inmode",
+        "year": null
+      },
+      {
+        "name": "BB라비앙",
+        "category": "laser",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "아쿠아필",
+        "category": "other",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "트리플바디",
+        "category": "body",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "에어샤인",
+        "category": "booster",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "코레지",
+        "category": "rf",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "아그네스",
+        "category": "rf",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "비너스비바",
+        "category": "rf",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "엘리 레이저",
+        "category": "laser",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "마크뷰",
+        "category": "other",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "엑셀브이",
+        "category": "laser",
+        "brand": null,
+        "model": null,
+        "manufacturer": "Cutera",
+        "year": null
+      },
+      {
+        "name": "울트라 듀오",
+        "category": "booster",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "인트라셀",
+        "category": "rf",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "노블렉스",
+        "category": "laser",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "레이저토닝",
+        "category": "laser",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "크라이오셀",
+        "category": "other",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "MCL31",
+        "category": "laser",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "울쎄라",
+        "category": "hifu",
+        "brand": null,
+        "model": null,
+        "manufacturer": "Merz",
+        "year": null
+      }
+    ],
+    "treatments": [
+      {
+        "name": "눈밑조각술",
+        "category": "lifting",
+        "price": null,
+        "price_event": null,
+        "is_promoted": true
+      },
+      {
+        "name": "엑셀브이",
+        "category": "pigmentation",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "울트라 듀오 물방울리프팅",
+        "category": "lifting",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "인트라셀",
+        "category": "pore_scar",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "노블렉스 제모",
+        "category": "hair_removal",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "에어샤인",
+        "category": "booster",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "입가 주름지우개",
+        "category": "lifting",
+        "price": null,
+        "price_event": null,
+        "is_promoted": true
+      },
+      {
+        "name": "레이저토닝",
+        "category": "pigmentation",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "크라이오",
+        "category": "skin_care",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "MCL31",
+        "category": "pore_scar",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "울쎄라리프팅",
+        "category": "lifting",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "아베난테라피",
+        "category": "redness",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "써마지",
+        "category": "lifting",
+        "price": null,
+        "price_event": null,
+        "is_promoted": true
+      },
+      {
+        "name": "IPL",
+        "category": "pigmentation",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "오투덤 산소테라피",
+        "category": "skin_care",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "슈링크 유니버스",
+        "category": "lifting",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "밀크필",
+        "category": "peeling",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "코레지피부재생술",
+        "category": "lifting",
+        "price": null,
+        "price_event": null,
+        "is_promoted": true
+      },
+      {
+        "name": "BB라비앙",
+        "category": "pigmentation",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "아쿠아필",
+        "category": "skin_care",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "트리플바디",
+        "category": "body",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "라라필",
+        "category": "peeling",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "인모드리프팅",
+        "category": "lifting",
+        "price": null,
+        "price_event": null,
+        "is_promoted": true
+      },
+      {
+        "name": "아그네스",
+        "category": "acne",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "비너스비바",
+        "category": "pore_scar",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "엘리 레이저 제모",
+        "category": "hair_removal",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "프락셀",
+        "category": "pore_scar",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      }
+    ],
+    "doctors": [
+      {
+        "name": "김승준",
+        "title": "대표원장",
+        "specialty": null,
+        "career": []
+      }
+    ]
+  },
+  {
+    "crm_name": "리셋의원",
+    "crm_grade": "B",
+    "crm_status": "green",
+    "crm_region": "경기 분당",
+    "hospital_name": "리셋의원",
+    "website": "http://pf.kakao.com/_xbsWQj",
+    "region": "경기 성남분당구",
+    "department": "피부과",
+    "email": null,
+    "phone": "031-709-6644",
+    "crawled_at": "2026-02-20T08:45:20.242+00:00",
+    "profile": {
+      "grade": "LOW",
+      "score": 7,
+      "investment": 18,
+      "portfolio": 0,
+      "scale_trust": 0,
+      "marketing": 5,
+      "tendency": "conservative"
+    },
+    "match_scores": [],
+    "equipments": [],
+    "treatments": [],
+    "doctors": []
+  },
+  {
+    "crm_name": "뮤즈의원 안산",
+    "crm_grade": "B",
+    "crm_status": "green",
+    "crm_region": "경기 안산",
+    "hospital_name": "뮤즈의원 안산",
+    "website": "http://ansan.museclinic.co.kr/",
+    "region": "경기도 안산시",
+    "department": "피부과",
+    "email": null,
+    "phone": "08480974181",
+    "crawled_at": "2026-02-23T14:41:33.886+00:00",
+    "profile": {
+      "grade": "MID",
+      "score": 54,
+      "investment": 33,
+      "portfolio": 70,
+      "scale_trust": 86,
+      "marketing": 23,
+      "tendency": "conservative"
+    },
+    "match_scores": [],
+    "equipments": [
+      {
+        "name": "울쎄라 프라임",
+        "category": "hifu",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "써마지 FLX",
+        "category": "rf",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "피코슈어",
+        "category": "laser",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "리쥬란",
+        "category": "booster",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "슈링크유니버스",
+        "category": "hifu",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "쥬베룩",
+        "category": "booster",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "올리지오",
+        "category": "rf",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      }
+    ],
+    "treatments": [
+      {
+        "name": "아이리쥬란 2cc",
+        "category": "booster",
+        "price": 462000,
+        "price_event": 298000,
+        "is_promoted": true
+      },
+      {
+        "name": "리쥬란힐러 2cc",
+        "category": "booster",
+        "price": 318000,
+        "price_event": 205000,
+        "is_promoted": true
+      },
+      {
+        "name": "슈링크 유니버스 리프팅",
+        "category": "lifting",
+        "price": 78000,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "얼굴 필러",
+        "category": "other",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "풀페이스 메가 리쥬란힐러 6cc",
+        "category": "booster",
+        "price": 954000,
+        "price_event": 550000,
+        "is_promoted": true
+      },
+      {
+        "name": "무통 리쥬란 HB+ 1cc",
+        "category": "booster",
+        "price": 243000,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "피코 레이저토닝",
+        "category": "laser",
+        "price": 110000,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "올리지오 리프팅",
+        "category": "lifting",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "리쥬베룩패키지",
+        "category": "booster",
+        "price": 638000,
+        "price_event": 410000,
+        "is_promoted": true
+      },
+      {
+        "name": "무통 리쥬란 HB+ 2cc",
+        "category": "booster",
+        "price": 462000,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "마크뷰 피부측정",
+        "category": "other",
+        "price": 34000,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "울쎄라 프라임",
+        "category": "lifting",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "리쥬란아이 1cc",
+        "category": "booster",
+        "price": 243000,
+        "price_event": 157000,
+        "is_promoted": true
+      },
+      {
+        "name": "리쥬란힐러 2cc 3회",
+        "category": "booster",
+        "price": 905000,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "에토좀 골드 PTT",
+        "category": "other",
+        "price": 233000,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "써마지 FLX",
+        "category": "lifting",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "리쥬란HB 1cc",
+        "category": "booster",
+        "price": 243000,
+        "price_event": 157000,
+        "is_promoted": true
+      },
+      {
+        "name": "리쥬란 아이 1cc 3회",
+        "category": "booster",
+        "price": 693000,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "아쿠아필",
+        "category": "other",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      }
+    ],
+    "doctors": [
+      {
+        "name": "정윤용",
+        "title": "원장",
+        "specialty": null,
+        "career": []
+      },
+      {
+        "name": "김재민",
+        "title": "대표원장",
+        "specialty": null,
+        "career": []
+      },
+      {
+        "name": "조경훈",
+        "title": "원장",
+        "specialty": null,
+        "career": []
+      },
+      {
+        "name": "김시우",
+        "title": "원장",
+        "specialty": null,
+        "career": []
+      },
+      {
+        "name": "이상재",
+        "title": "원장",
+        "specialty": null,
+        "career": []
+      }
+    ]
+  },
+  {
+    "crm_name": "미라벨의원",
+    "crm_grade": "A",
+    "crm_status": "green",
+    "crm_region": "서울 약수",
+    "hospital_name": "미라벨의원",
+    "website": null,
+    "region": "서울 중구",
+    "department": "피부과",
+    "email": null,
+    "phone": "02-2038-0070",
+    "crawled_at": "2026-02-20T08:45:14.222+00:00",
+    "profile": {
+      "grade": "LOW",
+      "score": 6,
+      "investment": 18,
+      "portfolio": 0,
+      "scale_trust": 0,
+      "marketing": 0,
+      "tendency": "conservative"
+    },
+    "match_scores": [],
+    "equipments": [],
+    "treatments": [],
+    "doctors": []
+  },
+  {
+    "crm_name": "비에비스나무병원",
+    "crm_grade": "A",
+    "crm_status": "green",
+    "crm_region": "서울 논현",
+    "hospital_name": "비에비스나무병원",
+    "website": "https://www.vievisnamuh.com",
+    "region": "서울 강남구",
+    "department": "성형외과",
+    "email": null,
+    "phone": "02602101026",
+    "crawled_at": "2026-02-23T14:42:40.63+00:00",
+    "profile": {
+      "grade": "LOW",
+      "score": 25,
+      "investment": 12,
+      "portfolio": 41,
+      "scale_trust": 40,
+      "marketing": 5,
+      "tendency": "conservative"
+    },
+    "match_scores": [],
+    "equipments": [
+      {
+        "name": "128 slice CT",
+        "category": "other",
+        "brand": null,
+        "model": null,
+        "manufacturer": "GE",
+        "year": null
+      },
+      {
+        "name": "복강경 수술장비",
+        "category": "other",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "올림푸스 EVIS X1",
+        "category": "other",
+        "brand": null,
+        "model": null,
+        "manufacturer": "Olympus",
+        "year": null
+      },
+      {
+        "name": "CO2 주입 장비",
+        "category": "other",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "내시경 AI프로그램 ENAD",
+        "category": "other",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "초음파내시경",
+        "category": "other",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "맘모톰",
+        "category": "other",
+        "brand": null,
+        "model": null,
+        "manufacturer": "Johnson&Johnson",
+        "year": null
+      }
+    ],
+    "treatments": [
+      {
+        "name": "건강검진",
+        "category": "검진",
+        "price": null,
+        "price_event": null,
+        "is_promoted": true
+      },
+      {
+        "name": "담석수술",
+        "category": "수술",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "경동맥초음파",
+        "category": "초음파",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "위내시경",
+        "category": "내시경",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "복부초음파",
+        "category": "초음파",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "대장내시경",
+        "category": "내시경",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "갑상선 초음파",
+        "category": "초음파",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "용종/조기암 내시경절제술",
+        "category": "내시경시술",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "유방 초음파",
+        "category": "초음파",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "단일통로 복강경 수술",
+        "category": "수술",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "심장초음파",
+        "category": "초음파",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      }
+    ],
+    "doctors": [
+      {
+        "name": "민영일",
+        "title": "대표원장",
+        "specialty": "내과 전문의 / 의학박사",
+        "career": [
+          "서울아산병원 소화기센터장 역임",
+          "현 서울아산병원 명예교수",
+          "서울대학교 내과학 석사/박사",
+          "前 한양대학교 의과대 의학과 교수",
+          "前 경희대학교 의과대 의학과 부교수",
+          "대한 소화기 내시경학회 회장 역임",
+          "대한 소화기 병학회 회장 역임"
+        ]
+      },
+      {
+        "name": "홍성수",
+        "title": "병원장",
+        "specialty": "내과 전문의 / 의학박사",
+        "career": [
+          "서울 아산병원 소화기내과 전공의 / 의학박사",
+          "前 동국대학교 일산병원 조교수",
+          "前 서울아산병원 소화기 내과 외래교수",
+          "대한병원장협의회 학술이사",
+          "대한 헬리코박터 및 상부위장관 연구학회 편집위원"
+        ]
+      },
+      {
+        "name": "이영상",
+        "title": "원장",
+        "specialty": "내과전문의/의학박사",
+        "career": [
+          "서울대학교 내과학 석사/박사",
+          "서울아산병원 소화기내과 교수",
+          "서울아산병원 소화기센터장 역임",
+          "2016 대한간학회 회장",
+          "현 서울아산병원 명예교수"
+        ]
+      },
+      {
+        "name": "오태훈",
+        "title": "원장",
+        "specialty": "내과전문의 / 의학박사",
+        "career": [
+          "서울아산병원 내과전문의, 의학박사",
+          "인제대학교 상계백병원 교수",
+          "대한위대장내시경학회 부회장",
+          "대한소화기내시경학회 학술이사"
+        ]
+      },
+      {
+        "name": "박현주",
+        "title": "원장",
+        "specialty": "내과전문의",
+        "career": [
+          "서울아산병원 내과 전공의",
+          "前 서울아산병원 소화기내과 외래교수",
+          "보스턴 Beth Israel Deaconess Medical Center소화기내과 연수",
+          "대한소화기내시경학회 내시경 세부전문의"
+        ]
+      },
+      {
+        "name": "이준석",
+        "title": "원장",
+        "specialty": "내과전문의",
+        "career": [
+          "연세의대 졸업·세브란스병원 수련의",
+          "가톨릭의대 성모병원 전공의·임상강사·외래교수",
+          "소화기내과 분과전문의",
+          "소화기내시경 세부전문의",
+          "2022 대한내과학회 최우수 내과전문의"
+        ]
+      },
+      {
+        "name": "노선희",
+        "title": "원장",
+        "specialty": "내과전문의",
+        "career": [
+          "이화여자대학교 의과대학 졸업",
+          "이화여자대학교 목동병원 소화기내과 전임의",
+          "소화기내과 분과 전문의",
+          "대한소화기내시경학회 내시경 세부전문의"
+        ]
+      },
+      {
+        "name": "이정윤",
+        "title": "원장",
+        "specialty": "내과전문의",
+        "career": [
+          "가톨릭의대 성모병원 전공의",
+          "가톨릭의대 성모병원 전임의•임상강사",
+          "소화기내과 분과전문의",
+          "소화기내시경 세부전문의"
+        ]
+      },
+      {
+        "name": "유재상",
+        "title": "원장",
+        "specialty": "내과전문의",
+        "career": [
+          "단국대학교 의과대학 학사",
+          "은평 성모병원 내과 전공의",
+          "강남차병원 소화기내과 외래교수",
+          "대한소화기내시경학회 정회원"
+        ]
+      },
+      {
+        "name": "백수영",
+        "title": "원장",
+        "specialty": "내과전문의",
+        "career": [
+          "한양대학교 의과대학 학사, 석사",
+          "한양대학교 서울병원 내과 전공의",
+          "대한소화기내시경학회 내시경 세부전문의",
+          "대한 내과학회 소화기내과 분과전문의"
+        ]
+      },
+      {
+        "name": "노세희",
+        "title": "원장",
+        "specialty": "내과전문의",
+        "career": [
+          "울산대학교 의과대학 석사",
+          "서울아산병원 내과 전공의",
+          "서울아산병원 소화기내과 외래교수",
+          "대한소화기내시경학회 내시경 세부전문의"
+        ]
+      },
+      {
+        "name": "송대근",
+        "title": "원장",
+        "specialty": "소화기 외과",
+        "career": [
+          "을지대병원 외과 전공의",
+          "서울아산병원 간, 담, 췌 전임의",
+          "서울대학병원 간, 담, 췌 전임의",
+          "한국간담췌외과학회 정회원"
+        ]
+      },
+      {
+        "name": "정우길",
+        "title": "건강검진센터장",
+        "specialty": "가정의학과 전문의",
+        "career": [
+          "서울 아산병원 가정의학과 전공의",
+          "서울대학교 보건대학원 석사",
+          "차의과대학 통합의학 박사 과정",
+          "전 이종구 심장내과 부원장"
+        ]
+      },
+      {
+        "name": "함정호",
+        "title": "원장",
+        "specialty": "가정의학과 전문의",
+        "career": [
+          "연세대학교 의과대학 학사",
+          "세브란스병원 가정의학과 전공의",
+          "연세세브란스 '최우수 전공의' 수상",
+          "대한가정의학회 정회원"
+        ]
+      },
+      {
+        "name": "장희순",
+        "title": "원장",
+        "specialty": "유방·갑상선센터",
+        "career": [
+          "건국대학교 의학전문대학원 졸업",
+          "건국대학교병원 유방·갑상선센터 전임의",
+          "대한외과학회 정회원",
+          "대한외과초음파학회 정회원"
+        ]
+      },
+      {
+        "name": "김연희",
+        "title": "원장",
+        "specialty": "부인과",
+        "career": [
+          "중앙대학교 의과대학 학사",
+          "중앙대학교병원 산부인과 전공의",
+          "강북삼성병원 서울건진센터 근무",
+          "순천향대부속 서울건진센터 근무"
+        ]
+      },
+      {
+        "name": "김지연",
+        "title": "원장",
+        "specialty": "영상의학과",
+        "career": [
+          "서울아산병원 영상의학과 전공의",
+          "서울아산병원 영상의학과 임상강사",
+          "대한영상의학회 정회원",
+          "대한복부영상의학회 정회원"
+        ]
+      },
+      {
+        "name": "김지현",
+        "title": "원장",
+        "specialty": "영상의학과",
+        "career": [
+          "한양대학교 의학과 졸업",
+          "한강성심병원 영상의학과 전공의",
+          "대항병원 영상의학과 과장"
+        ]
+      },
+      {
+        "name": "김정주",
+        "title": "원장",
+        "specialty": "영상의학과",
+        "career": [
+          "성균관대학교 의과대학 학사",
+          "삼성서울병원 영상의학과 전공의",
+          "삼성서울병원 임상강사",
+          "대한영상의학회 정회원"
+        ]
+      }
+    ]
+  },
+  {
+    "crm_name": "빈센트의원",
+    "crm_grade": "A",
+    "crm_status": "green",
+    "crm_region": "서울 강서",
+    "hospital_name": "빈센트의원",
+    "website": "http://vincent.kr/",
+    "region": "경기 안양만안구",
+    "department": "피부과",
+    "email": null,
+    "phone": "031-476-8888",
+    "crawled_at": "2026-02-20T08:45:20.243+00:00",
+    "profile": {
+      "grade": "LOW",
+      "score": 5,
+      "investment": 12,
+      "portfolio": 0,
+      "scale_trust": 0,
+      "marketing": 5,
+      "tendency": "conservative"
+    },
+    "match_scores": [],
+    "equipments": [],
+    "treatments": [],
+    "doctors": []
+  },
+  {
+    "crm_name": "삼성웰내과의원",
+    "crm_grade": "B",
+    "crm_status": "green",
+    "crm_region": "서울 옥수",
+    "hospital_name": "삼성웰내과의원",
+    "website": null,
+    "region": "서울 성동구",
+    "department": "피부과",
+    "email": null,
+    "phone": "02-6925-4552",
+    "crawled_at": "2026-02-20T08:45:14.222+00:00",
+    "profile": {
+      "grade": "LOW",
+      "score": 6,
+      "investment": 18,
+      "portfolio": 0,
+      "scale_trust": 0,
+      "marketing": 0,
+      "tendency": "conservative"
+    },
+    "match_scores": [],
+    "equipments": [],
+    "treatments": [],
+    "doctors": []
+  },
+  {
+    "crm_name": "세인트의원",
+    "crm_grade": "A",
+    "crm_status": "green",
+    "crm_region": "경기 의정부",
+    "hospital_name": "세인트의원",
+    "website": "https://blog.naver.com/dngmlgp32358",
+    "region": "경기 의정부시",
+    "department": "피부과",
+    "email": null,
+    "phone": "031-829-1004",
+    "crawled_at": "2026-02-20T08:45:20.243+00:00",
+    "profile": {
+      "grade": "LOW",
+      "score": 5,
+      "investment": 12,
+      "portfolio": 0,
+      "scale_trust": 0,
+      "marketing": 5,
+      "tendency": "conservative"
+    },
+    "match_scores": [],
+    "equipments": [],
+    "treatments": [],
+    "doctors": []
+  },
+  {
+    "crm_name": "셀린피부과의원",
+    "crm_grade": "A",
+    "crm_status": "green",
+    "crm_region": "서울 학동",
+    "hospital_name": "셀린피부과의원",
+    "website": "https://blog.naver.com/cellinskin",
+    "region": "서울 강남구",
+    "department": "피부과",
+    "email": null,
+    "phone": "02-516-1211",
+    "crawled_at": "2026-02-20T08:45:14.223+00:00",
+    "profile": {
+      "grade": "LOW",
+      "score": 7,
+      "investment": 18,
+      "portfolio": 0,
+      "scale_trust": 0,
+      "marketing": 5,
+      "tendency": "conservative"
+    },
+    "match_scores": [],
+    "equipments": [],
+    "treatments": [],
+    "doctors": []
+  },
+  {
+    "crm_name": "아가파의원",
+    "crm_grade": "A",
+    "crm_status": "green",
+    "crm_region": "경기 성남",
+    "hospital_name": "아가파의원",
+    "website": "http://www.agafarclinic.com/",
+    "region": "경기 성남수정구",
+    "department": "피부과",
+    "email": null,
+    "phone": "013909529",
+    "crawled_at": "2026-02-23T14:43:15.501+00:00",
+    "profile": {
+      "grade": "LOW",
+      "score": 21,
+      "investment": 12,
+      "portfolio": 30,
+      "scale_trust": 18,
+      "marketing": 30,
+      "tendency": "conservative"
+    },
+    "match_scores": [],
+    "equipments": [
+      {
+        "name": "M22",
+        "category": "laser",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "슈링크",
+        "category": "hifu",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      }
+    ],
+    "treatments": [
+      {
+        "name": "잡티/주근깨/검버섯 치료",
+        "category": "pigmentation",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "엠투투 (M22)",
+        "category": "laser",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "기미 치료",
+        "category": "pigmentation",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "슈링크 리프팅",
+        "category": "lifting",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "점빼기",
+        "category": "laser",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "윤곽주사",
+        "category": "lifting",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "안면홍조 개선",
+        "category": "redness",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      }
+    ],
+    "doctors": []
+  },
+  {
+    "crm_name": "엔의원",
+    "crm_grade": "A",
+    "crm_status": "green",
+    "crm_region": "경기 동탄",
+    "hospital_name": "엔의원",
+    "website": "http://www.nskin.kr",
+    "region": "경기 화성동탄구",
+    "department": "피부과",
+    "email": null,
+    "phone": "16686499",
+    "crawled_at": "2026-02-23T14:44:16.553+00:00",
+    "profile": {
+      "grade": "MID",
+      "score": 44,
+      "investment": 51,
+      "portfolio": 100,
+      "scale_trust": 0,
+      "marketing": 5,
+      "tendency": "moderate"
+    },
+    "match_scores": [],
+    "equipments": [
+      {
+        "name": "아스트로돔",
+        "category": "other",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "토르 컴포트 듀얼",
+        "category": "rf",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "콴타585",
+        "category": "laser",
+        "brand": null,
+        "model": null,
+        "manufacturer": "Quanta System",
+        "year": null
+      },
+      {
+        "name": "울핏",
+        "category": "body",
+        "brand": null,
+        "model": null,
+        "manufacturer": "Classys",
+        "year": null
+      },
+      {
+        "name": "에어녹스",
+        "category": "other",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "피코슈어",
+        "category": "laser",
+        "brand": null,
+        "model": null,
+        "manufacturer": "Cynosure",
+        "year": null
+      },
+      {
+        "name": "시크릿",
+        "category": "rf",
+        "brand": null,
+        "model": null,
+        "manufacturer": "Ilooda",
+        "year": null
+      },
+      {
+        "name": "울쎄라",
+        "category": "hifu",
+        "brand": null,
+        "model": null,
+        "manufacturer": "Merz",
+        "year": null
+      },
+      {
+        "name": "스타워커MaQX",
+        "category": "laser",
+        "brand": null,
+        "model": null,
+        "manufacturer": "Fotona",
+        "year": null
+      },
+      {
+        "name": "헤스티아",
+        "category": "rf",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "인모드",
+        "category": "rf",
+        "brand": null,
+        "model": null,
+        "manufacturer": "Inmode",
+        "year": null
+      },
+      {
+        "name": "LDM 트리플 골드",
+        "category": "lifting",
+        "brand": null,
+        "model": null,
+        "manufacturer": "Wellcomet",
+        "year": null
+      },
+      {
+        "name": "액션2",
+        "category": "laser",
+        "brand": null,
+        "model": null,
+        "manufacturer": "Lutronic",
+        "year": null
+      },
+      {
+        "name": "슈링크 유니버스",
+        "category": "hifu",
+        "brand": null,
+        "model": null,
+        "manufacturer": "Classys",
+        "year": null
+      },
+      {
+        "name": "클라리티2",
+        "category": "laser",
+        "brand": null,
+        "model": null,
+        "manufacturer": "Lutronic",
+        "year": null
+      },
+      {
+        "name": "더마샤인 프로",
+        "category": "booster",
+        "brand": null,
+        "model": null,
+        "manufacturer": "Hugel",
+        "year": null
+      }
+    ],
+    "treatments": [
+      {
+        "name": "첫방문 이벤트 디스포트 리쥬란",
+        "category": "이벤트",
+        "price": null,
+        "price_event": null,
+        "is_promoted": true
+      },
+      {
+        "name": "디스포트",
+        "category": "쁘띠",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "윤곽주사",
+        "category": "쁘띠",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "인모드",
+        "category": "리프팅",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "울핏",
+        "category": "바디",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "검버섯/오타모반",
+        "category": "색소/토닝",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "건선/켈로이드",
+        "category": "피부질환",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "10주 솔루션",
+        "category": "프로그램",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "필러",
+        "category": "쁘띠",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "리쥬란",
+        "category": "스킨부스터",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "슈링크 유니버스",
+        "category": "리프팅",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "실루엣주사",
+        "category": "바디",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "기미/잡티",
+        "category": "색소/토닝",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "무좀",
+        "category": "피부질환",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "탈모주사",
+        "category": "탈모",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "스킨부스터",
+        "category": "스킨부스터",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "물광주사",
+        "category": "스킨부스터",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "토르 리프팅",
+        "category": "리프팅",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "엔바디팻",
+        "category": "바디",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "안면홍조",
+        "category": "홍조",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "탈모",
+        "category": "탈모",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "남자제모",
+        "category": "제모",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "레디어스",
+        "category": "필러",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "울쎄라",
+        "category": "리프팅",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "피코슈어",
+        "category": "색소/토닝",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "아토피/알레르기",
+        "category": "피부질환",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "모공/흉터",
+        "category": "모공/흉터",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "키오머3",
+        "category": "피부재생",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "보톡스",
+        "category": "쁘띠",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "리즈네",
+        "category": "스킨부스터",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "실리프팅",
+        "category": "리프팅",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "클라리티2 제모",
+        "category": "제모",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "사마귀/티눈",
+        "category": "피부질환",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "여드름",
+        "category": "여드름",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      }
+    ],
+    "doctors": []
+  },
+  {
+    "crm_name": "엠레드의원",
+    "crm_grade": "A",
+    "crm_status": "green",
+    "crm_region": "서울 청담",
+    "hospital_name": "엠레드의원",
+    "website": "https://amredclinic.com/ko",
+    "region": "서울 강남구",
+    "department": "피부과",
+    "email": "amredworld@gmail.com",
+    "phone": "18115199",
+    "crawled_at": "2026-02-23T14:45:34.081+00:00",
+    "profile": {
+      "grade": "LOW",
+      "score": 8,
+      "investment": 18,
+      "portfolio": 0,
+      "scale_trust": 0,
+      "marketing": 8,
+      "tendency": "conservative"
+    },
+    "match_scores": [],
+    "equipments": [],
+    "treatments": [],
+    "doctors": []
+  },
+  {
+    "crm_name": "연세팜스의원",
+    "crm_grade": "A",
+    "crm_status": "green",
+    "crm_region": "서울 은평",
+    "hospital_name": "연세팜스의원",
+    "website": "http://yonseifams.co.kr/",
+    "region": "서울 은평구",
+    "department": "피부과",
+    "email": "yonseifams@naver.com",
+    "phone": "02-387-2755",
+    "crawled_at": "2026-02-23T14:46:20.856+00:00",
+    "profile": {
+      "grade": "LOW",
+      "score": 29,
+      "investment": 12,
+      "portfolio": 81,
+      "scale_trust": 12,
+      "marketing": 8,
+      "tendency": "conservative"
+    },
+    "match_scores": [],
+    "equipments": [
+      {
+        "name": "프락셀",
+        "category": "laser",
+        "brand": null,
+        "model": null,
+        "manufacturer": "Solta Medical",
+        "year": null
+      },
+      {
+        "name": "써니RF",
+        "category": "rf",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "인피니",
+        "category": "rf",
+        "brand": null,
+        "model": null,
+        "manufacturer": "Lutronic",
+        "year": null
+      },
+      {
+        "name": "LDM",
+        "category": "lifting",
+        "brand": null,
+        "model": null,
+        "manufacturer": "Wellcomet",
+        "year": null
+      },
+      {
+        "name": "스펙트라",
+        "category": "laser",
+        "brand": null,
+        "model": null,
+        "manufacturer": "Lutronic",
+        "year": null
+      },
+      {
+        "name": "A-one",
+        "category": "other",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "미라젯",
+        "category": "booster",
+        "brand": null,
+        "model": null,
+        "manufacturer": "JK Medical Group",
+        "year": null
+      },
+      {
+        "name": "뉴튼",
+        "category": "lifting",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "reepot",
+        "category": "laser",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      },
+      {
+        "name": "콜샤인",
+        "category": "other",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      }
+    ],
+    "treatments": [
+      {
+        "name": "뉴튼 리프팅",
+        "category": "리프팅",
+        "price": null,
+        "price_event": null,
+        "is_promoted": true
+      },
+      {
+        "name": "리팟레이저",
+        "category": "색소/토닝",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "PDT",
+        "category": "여드름",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "콜샤인",
+        "category": "리프팅",
+        "price": null,
+        "price_event": null,
+        "is_promoted": true
+      },
+      {
+        "name": "오존필",
+        "category": "여드름",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "제네시스",
+        "category": "토닝/홍조",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "써니RF",
+        "category": "리프팅",
+        "price": null,
+        "price_event": null,
+        "is_promoted": true
+      },
+      {
+        "name": "스펙트라 레이저필",
+        "category": "여드름",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "샤이닝필",
+        "category": "필링",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "미라젯",
+        "category": "흉터/재생",
+        "price": null,
+        "price_event": null,
+        "is_promoted": true
+      },
+      {
+        "name": "프락셀",
+        "category": "흉터/모공",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "755&1064 제모",
+        "category": "제모",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "reepot 레이저",
+        "category": "색소/토닝",
+        "price": null,
+        "price_event": null,
+        "is_promoted": true
+      },
+      {
+        "name": "프락셔널RF(인피니)",
+        "category": "흉터/모공",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "LDM",
+        "category": "재생/진정",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      }
+    ],
+    "doctors": [
+      {
+        "name": "윤정현",
+        "title": "대표원장",
+        "specialty": null,
+        "career": []
+      }
+    ]
+  },
+  {
+    "crm_name": "웰스킨의원",
+    "crm_grade": "A",
+    "crm_status": "green",
+    "crm_region": "서울 반포",
+    "hospital_name": "웰스킨의원",
+    "website": "http://www.wellskinclinic.net/",
+    "region": "서울 서초구",
+    "department": "피부과",
+    "email": "scrtgarden@hanmail.net",
+    "phone": "15741777",
+    "crawled_at": "2026-02-23T14:47:08.189+00:00",
+    "profile": {
+      "grade": "LOW",
+      "score": 19,
+      "investment": 12,
+      "portfolio": 23,
+      "scale_trust": 30,
+      "marketing": 8,
+      "tendency": "conservative"
+    },
+    "match_scores": [],
+    "equipments": [
+      {
+        "name": "CO2레이저",
+        "category": "laser",
+        "brand": null,
+        "model": null,
+        "manufacturer": null,
+        "year": null
+      }
+    ],
+    "treatments": [
+      {
+        "name": "윤곽주사",
+        "category": "face",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "체형조각주사",
+        "category": "body",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "필러",
+        "category": "face",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "초음파 지방분해시술",
+        "category": "body",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "보톡스",
+        "category": "face",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "실 리프팅",
+        "category": "lifting",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "초음파 리프팅",
+        "category": "lifting",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      }
+    ],
+    "doctors": [
+      {
+        "name": "황용호",
+        "title": "대표원장",
+        "specialty": "의사·한의사 복수면허",
+        "career": [
+          "전) 동국한방병원 진료과장",
+          "전) 이화피부과 원장",
+          "경희대학교 의과대학 임상실습지도 교수",
+          "대한미용성형레이저의학회 수석학술이사",
+          "대한의사한의사 복수면허의사협회 학술이사",
+          "대한동서의학회 학술이사",
+          "대한임상레이저의학회 학술이사"
+        ]
+      }
+    ]
+  },
+  {
+    "crm_name": "청담아티젠의원",
+    "crm_grade": "A",
+    "crm_status": "green",
+    "crm_region": "서울 청담",
+    "hospital_name": "청담아티젠의원",
+    "website": "http://www.artisanclinic.co.kr",
+    "region": "서울특별시 강남구",
+    "department": "피부과",
+    "email": null,
+    "phone": "02-6224-8000",
+    "crawled_at": "2026-02-23T14:48:10.448+00:00",
+    "profile": {
+      "grade": "MID",
+      "score": 41,
+      "investment": 25,
+      "portfolio": 79,
+      "scale_trust": 37,
+      "marketing": 23,
+      "tendency": "conservative"
+    },
+    "match_scores": [],
+    "equipments": [
+      {
+        "name": "울쎄라",
+        "category": "hifu",
+        "brand": null,
+        "model": null,
+        "manufacturer": "Merz",
+        "year": null
+      },
+      {
+        "name": "온다",
+        "category": "rf",
+        "brand": null,
+        "model": null,
+        "manufacturer": "",
+        "year": null
+      },
+      {
+        "name": "써마지 FLX",
+        "category": "rf",
+        "brand": null,
+        "model": null,
+        "manufacturer": "Solta Medical",
+        "year": null
+      },
+      {
+        "name": "볼뉴머",
+        "category": "rf",
+        "brand": null,
+        "model": null,
+        "manufacturer": "Jeisys Medical",
+        "year": null
+      },
+      {
+        "name": "지니어스",
+        "category": "rf",
+        "brand": null,
+        "model": null,
+        "manufacturer": "",
+        "year": null
+      },
+      {
+        "name": "프렉사",
+        "category": "other",
+        "brand": null,
+        "model": null,
+        "manufacturer": "",
+        "year": null
+      },
+      {
+        "name": "토르",
+        "category": "rf",
+        "brand": null,
+        "model": null,
+        "manufacturer": "",
+        "year": null
+      },
+      {
+        "name": "소프웨이브",
+        "category": "hifu",
+        "brand": null,
+        "model": null,
+        "manufacturer": "",
+        "year": null
+      },
+      {
+        "name": "슈링크 유니버스",
+        "category": "hifu",
+        "brand": null,
+        "model": null,
+        "manufacturer": "Classys",
+        "year": null
+      },
+      {
+        "name": "LDM",
+        "category": "booster",
+        "brand": null,
+        "model": null,
+        "manufacturer": "",
+        "year": null
+      }
+    ],
+    "treatments": [
+      {
+        "name": "울써마지",
+        "category": "lifting",
+        "price": null,
+        "price_event": null,
+        "is_promoted": true
+      },
+      {
+        "name": "슈링크 유니버스",
+        "category": "lifting",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "실리프팅",
+        "category": "lifting",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "LDM (물방울 리프팅)",
+        "category": "lifting",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "윤곽주사",
+        "category": "filler_botox",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "여드름·흉터",
+        "category": "skin",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "울쎄라",
+        "category": "lifting",
+        "price": null,
+        "price_event": null,
+        "is_promoted": true
+      },
+      {
+        "name": "온다 리프팅",
+        "category": "lifting",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "리쥬란힐러",
+        "category": "booster",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "브이올렛",
+        "category": "body",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "기미/주근깨/잡티",
+        "category": "laser",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "바디리프팅",
+        "category": "body",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "써마지 FLX",
+        "category": "lifting",
+        "price": null,
+        "price_event": null,
+        "is_promoted": true
+      },
+      {
+        "name": "볼뉴머 리프팅",
+        "category": "lifting",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "리쥬란HB",
+        "category": "booster",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "필러",
+        "category": "filler_botox",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "안면홍조",
+        "category": "laser",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "지방분해",
+        "category": "body",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "지니어스 리프팅",
+        "category": "lifting",
+        "price": null,
+        "price_event": null,
+        "is_promoted": true
+      },
+      {
+        "name": "프렉사",
+        "category": "lifting",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "쥬베룩",
+        "category": "booster",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "보톡스",
+        "category": "filler_botox",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "모공·블랙헤드",
+        "category": "skin",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "제모",
+        "category": "other",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "토르 RF 리프팅",
+        "category": "lifting",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "소프웨이브",
+        "category": "lifting",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "엑소좀",
+        "category": "booster",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "하이코",
+        "category": "filler_botox",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      },
+      {
+        "name": "점·문신제거",
+        "category": "laser",
+        "price": null,
+        "price_event": null,
+        "is_promoted": false
+      }
+    ],
+    "doctors": [
+      {
+        "name": "윤 원장",
+        "title": "원장",
+        "specialty": "피부과",
+        "career": []
+      }
+    ]
+  },
+  {
+    "crm_name": "크리미의원(유성)",
+    "crm_grade": "B",
+    "crm_status": "green",
+    "crm_region": "대전 유성",
+    "hospital_name": "닥터크리미의원",
+    "website": "http://cafe.naver.com/apinkatudia",
+    "region": "서울 강남구",
+    "department": "피부과",
+    "email": null,
+    "phone": "02-544-0035",
+    "crawled_at": "2026-02-20T08:45:14.221+00:00",
+    "profile": {
+      "grade": "LOW",
+      "score": 5,
+      "investment": 12,
+      "portfolio": 0,
+      "scale_trust": 0,
+      "marketing": 5,
+      "tendency": "conservative"
+    },
+    "match_scores": [],
+    "equipments": [],
+    "treatments": [],
+    "doctors": []
+  },
+  {
+    "crm_name": "클럽미즈라미체의원",
+    "crm_grade": "A",
+    "crm_status": "green",
+    "crm_region": "서울 잠실",
+    "hospital_name": "클럽미즈라미체의원",
+    "website": "http://www.lamiche.co.kr/index.php",
+    "region": "서울 송파구",
+    "department": "피부과",
+    "email": "support@dable.io",
+    "phone": "16593430",
+    "crawled_at": "2026-02-23T14:49:18.046+00:00",
+    "profile": {
+      "grade": "LOW",
+      "score": 5,
+      "investment": 12,
+      "portfolio": 0,
+      "scale_trust": 0,
+      "marketing": 8,
+      "tendency": "conservative"
+    },
+    "match_scores": [],
+    "equipments": [],
+    "treatments": [],
+    "doctors": []
+  },
+  {
+    "crm_name": "포에버의원(신사)",
+    "crm_grade": "A",
+    "crm_status": "green",
+    "crm_region": "서울 신사",
+    "hospital_name": "포에버의원",
+    "website": "https://as.4-ever.co.kr",
+    "region": "경기 안산단원구",
+    "department": "피부과",
+    "email": null,
+    "phone": "15006524",
+    "crawled_at": "2026-02-23T14:50:36.337+00:00",
+    "profile": {
+      "grade": "LOW",
+      "score": 11,
+      "investment": 18,
+      "portfolio": 0,
+      "scale_trust": 0,
+      "marketing": 30,
+      "tendency": "conservative"
+    },
+    "match_scores": [],
+    "equipments": [],
+    "treatments": [],
+    "doctors": []
+  },
+  {
+    "crm_name": "피어나의원",
+    "crm_grade": "A",
+    "crm_status": "green",
+    "crm_region": "서울 논현",
+    "hospital_name": "피어나의원",
+    "website": "https://blog.naver.com/femaleuro",
+    "region": "서울 강남구",
+    "department": "피부과",
+    "email": null,
+    "phone": "02-555-2121",
+    "crawled_at": "2026-02-20T08:45:14.226+00:00",
+    "profile": {
+      "grade": "LOW",
+      "score": 5,
+      "investment": 12,
+      "portfolio": 0,
+      "scale_trust": 0,
+      "marketing": 5,
+      "tendency": "conservative"
+    },
+    "match_scores": [],
+    "equipments": [],
+    "treatments": [],
+    "doctors": []
+  },
+  {
+    "crm_name": "휴먼피부과(용산)",
+    "crm_grade": "B",
+    "crm_status": "green",
+    "crm_region": "서울 용산",
+    "hospital_name": "파스텔휴먼피부과의원",
+    "website": "http://pastelskin.com/",
+    "region": "서울특별시 성동구",
+    "department": "피부과",
+    "email": null,
+    "phone": null,
+    "crawled_at": null,
+    "profile": null,
+    "match_scores": [],
+    "equipments": [],
+    "treatments": [],
+    "doctors": []
+  },
+  {
+    "crm_name": "휴먼피부과(평택)",
+    "crm_grade": "B",
+    "crm_status": "green",
+    "crm_region": "경기 평택",
+    "hospital_name": "파스텔휴먼피부과의원",
+    "website": "http://pastelskin.com/",
+    "region": "서울특별시 성동구",
+    "department": "피부과",
+    "email": null,
+    "phone": null,
+    "crawled_at": null,
+    "profile": null,
+    "match_scores": [],
+    "equipments": [],
+    "treatments": [],
+    "doctors": []
+  }
+]

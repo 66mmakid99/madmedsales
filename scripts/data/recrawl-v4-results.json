@@ -1,0 +1,38 @@
+[
+  {
+    "no": 1,
+    "name": "안산엔비의원",
+    "pages": 1,
+    "credits": 2,
+    "geminiCalls": 1,
+    "visionCalls": 0,
+    "equip": 0,
+    "treat": 6,
+    "doctors": 0,
+    "events": 2
+  },
+  {
+    "no": 16,
+    "name": "동안중심의원",
+    "pages": 5,
+    "credits": 6,
+    "geminiCalls": 10,
+    "visionCalls": 5,
+    "equip": 2,
+    "treat": 6,
+    "doctors": 2,
+    "events": 0
+  },
+  {
+    "no": 24,
+    "name": "포에버의원(신사)",
+    "pages": 3,
+    "credits": 4,
+    "geminiCalls": 3,
+    "visionCalls": 0,
+    "equip": 0,
+    "treat": 59,
+    "doctors": 47,
+    "events": 16
+  }
+]

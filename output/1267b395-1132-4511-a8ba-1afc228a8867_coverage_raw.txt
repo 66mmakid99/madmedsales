@@ -1,0 +1,19 @@
+{
+  "missing_equipments": [],
+  "missing_treatments": [
+    "NB 반영구 두피문신 EVENT"
+  ],
+  "missing_doctors": [],
+  "missing_prices": [],
+  "coverage_score": {
+    "equipment": 100,
+    "treatment": 86,
+    "doctor": 100,
+    "overall": 94
+  },
+  "issues": [
+    "원본 마크다운에 'NB 여드름 실속 패키지'와 'NB 반영구 두피문신 EVENT' 등 동일한 시술/이벤트 문구가 여러 번 반복되어 나타납니다.",
+    "원본 마크다운에 '탈모책출간', '학회활동', '탈모클리닉' 등 시술이 아닌 정보가 포함되어 있습니다. (추출 결과에서는 올바르게 제외됨)",
+    "추출 결과의 의사 '기문상'은 제공된 원본 마크다운에는 명시되어 있지 않습니다."
+  ]
+}

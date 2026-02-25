@@ -1,0 +1,147 @@
+{
+  "hospital": "동안중심의원",
+  "hospital_id": "7b169807-6d76-4796-a31b-7b35f0437899",
+  "exported_at": "2026-02-24T08:07:01.301Z",
+  "summary": {
+    "pages": 5,
+    "doctors": 2,
+    "treatments": 6,
+    "equipments": 2,
+    "events": 0
+  },
+  "crawl_pages": [
+    {
+      "url": "http://www.dongancenter.com/",
+      "page_type": "main",
+      "char_count": 26171,
+      "screenshot_url": "https://grtkcrzgwapsjcqkxlmj.supabase.co/storage/v1/object/public/hospital-screenshots/7b169807-6d76-4796-a31b-7b35f0437899/main___20260224.webp",
+      "analysis_method": "both",
+      "gemini_analyzed": true
+    },
+    {
+      "url": "http://www.dongancenter.com/info/dintro.htm",
+      "page_type": "other",
+      "char_count": 22304,
+      "screenshot_url": "https://grtkcrzgwapsjcqkxlmj.supabase.co/storage/v1/object/public/hospital-screenshots/7b169807-6d76-4796-a31b-7b35f0437899/other__info_dintro_htm_20260224.webp",
+      "analysis_method": "both",
+      "gemini_analyzed": true
+    },
+    {
+      "url": "http://www.dongancenter.com/info/doctor.htm",
+      "page_type": "doctor",
+      "char_count": 22531,
+      "screenshot_url": "https://grtkcrzgwapsjcqkxlmj.supabase.co/storage/v1/object/public/hospital-screenshots/7b169807-6d76-4796-a31b-7b35f0437899/doctor__info_doctor_htm_20260224.webp",
+      "analysis_method": "both",
+      "gemini_analyzed": true
+    },
+    {
+      "url": "http://www.dongancenter.com/info/hintro.htm",
+      "page_type": "other",
+      "char_count": 22764,
+      "screenshot_url": "https://grtkcrzgwapsjcqkxlmj.supabase.co/storage/v1/object/public/hospital-screenshots/7b169807-6d76-4796-a31b-7b35f0437899/other__info_hintro_htm_20260224.webp",
+      "analysis_method": "both",
+      "gemini_analyzed": true
+    },
+    {
+      "url": "http://www.dongancenter.com/info/view.htm",
+      "page_type": "other",
+      "char_count": 22510,
+      "screenshot_url": "https://grtkcrzgwapsjcqkxlmj.supabase.co/storage/v1/object/public/hospital-screenshots/7b169807-6d76-4796-a31b-7b35f0437899/other__info_view_htm_20260224.webp",
+      "analysis_method": "both",
+      "gemini_analyzed": true
+    }
+  ],
+  "doctors": [
+    {
+      "name": "조창환",
+      "title": "원장",
+      "specialty": null,
+      "career": [
+        "서울 삼성의료원 인턴 및 전문의 수련",
+        "국립중앙의료원 근무",
+        "동안중심클리닉 대표원장"
+      ],
+      "education": [
+        "서울대의학과 졸업"
+      ],
+      "academic_activity": "대한미용성형레이지의학회 부회장"
+    },
+    {
+      "name": "구소연",
+      "title": "원장",
+      "specialty": null,
+      "career": [
+        "동안중심클리닉 대표원장"
+      ],
+      "education": [
+        "서울대학교 전문의 수련"
+      ],
+      "academic_activity": "대한가정의학회 정회원, 대한미용성형레이저의학회 정회원, 대한미용외과학회 정회원"
+    }
+  ],
+  "treatments": [
+    {
+      "treatment_name": "흉터시술",
+      "treatment_category": "skin",
+      "price": null,
+      "price_note": null,
+      "combo_with": null,
+      "is_promoted": false
+    },
+    {
+      "treatment_name": "트루스컬프",
+      "treatment_category": "body",
+      "price": null,
+      "price_note": null,
+      "combo_with": null,
+      "is_promoted": false
+    },
+    {
+      "treatment_name": "LDM관리",
+      "treatment_category": "skin",
+      "price": null,
+      "price_note": null,
+      "combo_with": null,
+      "is_promoted": false
+    },
+    {
+      "treatment_name": "엑소스마트 줄기세포",
+      "treatment_category": "skin",
+      "price": null,
+      "price_note": null,
+      "combo_with": null,
+      "is_promoted": false
+    },
+    {
+      "treatment_name": "티타늄시술",
+      "treatment_category": "skin",
+      "price": null,
+      "price_note": null,
+      "combo_with": null,
+      "is_promoted": false
+    },
+    {
+      "treatment_name": "엠페이스",
+      "treatment_category": "skin",
+      "price": null,
+      "price_note": null,
+      "combo_with": null,
+      "is_promoted": false
+    }
+  ],
+  "equipments": [
+    {
+      "equipment_name": "Thermage FLX",
+      "equipment_brand": null,
+      "equipment_category": "rf",
+      "manufacturer": null
+    },
+    {
+      "equipment_name": "EMSCULPT NEO",
+      "equipment_brand": null,
+      "equipment_category": "body",
+      "manufacturer": null
+    }
+  ],
+  "events": []
+}

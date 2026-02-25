@@ -1,0 +1,756 @@
+{
+  "hospital_name": "동안중심의원",
+  "doctors": [
+    {
+      "name": "조정환",
+      "title": "대표원장님",
+      "specialty": "색소치료",
+      "career": [
+        "대한미용성형레이저학회 수석학술이사",
+        "이태리 콴타사 30주년 기념일 한국대표 키닥터 초청",
+        "이태리 콴타사 Vice president Zoran Latinovic, Luca Cemi와 함께 콰트로빔세미나 참석",
+        "동안중심 청담점 대표원장"
+      ],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "구소연",
+      "title": "대표원장님",
+      "specialty": "색소치료",
+      "career": [
+        "이태리 콴타사 30주년 기념일 한국대표 키닥터 초청",
+        "이태리 콴타사 Vice president Zoran Latinovic, Luca Cemi와 함께 콰트로빔세미나 참석",
+        "동안중심 청담점 대표원장"
+      ],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    }
+  ],
+  "academic_activities": [
+    {
+      "type": "학회발표",
+      "title": "국내 의료진 대상 색소레이저 강연",
+      "year": null,
+      "doctor_name": "조정환",
+      "source_text": "조창현 대표원장님이 수석학술이사로 활동하고 있는 대한미용성형레이저학회에서 국내의료진들을 대상으로 색소레이저강연을하고있는모습"
+    },
+    {
+      "type": "학회발표",
+      "title": "2016 대한피부과의사회 춘계학술대회",
+      "year": 2016,
+      "doctor_name": "구소연",
+      "source_text": "2016 대한피부과의사회 춘계학술대회"
+    },
+    {
+      "type": "기타",
+      "title": "이태리 콴타사 30주년 기념일 한국대표 키닥터 초청",
+      "year": null,
+      "doctor_name": "조정환, 구소연",
+      "source_text": "피코, 큐트론로밍 등을 제작하는 이태리 콴타사 30주년 기념일에 한국대표 키닥터로 초청된 조창화, 구소연 대표원장님"
+    },
+    {
+      "type": "학회발표",
+      "title": "이태리 콴타사 콰트로빔세미나 참석",
+      "year": null,
+      "doctor_name": "조정환, 구소연",
+      "source_text": "동안중심 정담점에서 개최한 콰트로빔세미나에 직접 참석한 이태리 콴타사의 Vice president Zoran Latinovic, Luca Cemi와 조창화, 구소연 대표원장님"
+    },
+    {
+      "type": "학회발표",
+      "title": "각종 레이저 학회 연구 및 발표",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "각종 레이저 학회 연구 및 발표"
+    },
+    {
+      "type": "기타",
+      "title": "다수의 방송매체 자문 출연",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "다수의 방송매체 자문 출연"
+    },
+    {
+      "type": "학회발표",
+      "title": "홍조기미치료에 우수한 콰트로토닝 뷰티클래스",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "홍조기미치료에 우수한 콰트로토닝 뷰티클래스"
+    },
+    {
+      "type": "기타",
+      "title": "다수의 학회 및 잡지 피부시술 관련 자문",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "다수의 학회 및 잡지 피부시술관련 자문"
+    }
+  ],
+  "medical_devices": [
+    {
+      "name": "Ulthera",
+      "korean_name": "울쎄라",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": "주름개선, 탄력관리, 리프팅, V라인, 색소까지 한번에 (Penta System의 일부). '근막'까지 초음파가 도달하는 리프팅 장비. 피부층 모니터링으로 정확한 시술 가능. 다운타임 없음. 단 1회 시술로 탁월한 효과. 유지기간 기존 울쎄라 효과보다 1~2년 정도 더 김. 짧은 시술시간, 마취 및 대기시간 필요 없음, 빠른 회복.",
+      "source": "image_banner"
+    },
+    {
+      "name": "Thermage",
+      "korean_name": "써마지",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF",
+      "description": "주름개선, 탄력관리, 리프팅, V라인, 색소까지 한번에 (Penta System의 일부).",
+      "source": "image_banner"
+    },
+    {
+      "name": "REMOVE플러스",
+      "korean_name": null,
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": "어려웠던 여드름흉터의 완치를 위해 한층 더 업그레이드된 새로운 프로그램.",
+      "source": "image_banner"
+    },
+    {
+      "name": "Liposonic",
+      "korean_name": "리포소닉",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": "1번 1사이즈 감소, 지방세포 DOWN, 사이즈 Down.",
+      "source": "image_banner"
+    },
+    {
+      "name": "REMOVER SEASON 3",
+      "korean_name": null,
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": "차원이 다른 리얼리티, ResurfX 도입. 한번 생기면 개선이 어렵다는 튼살! 긁지 않아 리얼 '튼살' 치료를 한번에~",
+      "source": "image_banner"
+    },
+    {
+      "name": "Discovery PICO",
+      "korean_name": "디스커버리 피코",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "난치성 기미, 잡티, 문신까지 클리어. 옅은 주근깨 제거, 미백, 피부톤 개선, 난치성 기미 제거. 다양한 파장의 레이저를 피부에 조사하여 주변 피부조직에 열손상이 거의 없이 안전하고 효과적인 색소치료 가능. 재발 및 복합기미에 효과적, 옅은 색소 치료 가능, 다양한 컬러의 문신 제거.",
+      "source": "text"
+    },
+    {
+      "name": "Absolute Gigapico",
+      "korean_name": "앱솔루트 기가피코",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "2세대 앱솔루트 기가피코. 문신 제거 가능, 깔끔 클리어, 적은 통증. 일반 레이저 토닝 및 피코 시술에 비해 약 2배~5배 이상 높고 약 100배 빠른 단위로 레이저를 문신부위에 조사, 부작용은 최소화하면서도 효과가 탁월한 문신제거 시술 제공. 다양한 문신색소 제거 (1064nm, 694nm, 532nm), 피부 손상이 적은 치료, 정밀하고 세밀한 시술.",
+      "source": "text"
+    },
+    {
+      "name": "실크토닝",
+      "korean_name": null,
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF",
+      "description": "혈관질환과 색소질환 치료를 위한 미국 실리콘밸리에서 연구 개발된 최신 고주파 레이저. 홍조, 붉은 기미, 잡티, 주근깨 치료에 큰 효과가 있는 전반적인 색소치료를 위한 레이저. 시술 시 SR3에너지를 진피층 전체에 작용하여 피부의 이상 발달로 인해 홍조, 기미, 잡티, 주근깨가 생기는 근본적인 원인을 치료하고 예방. 재발가능성 매우 낮음.",
+      "source": "text"
+    },
+    {
+      "name": "SR3 Energy",
+      "korean_name": null,
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF",
+      "description": "특정부위를 재생하게 만드는 고주파 에너지. 실크토닝에서 SR3에너지를 진피층까지 도달시켜 피부기저막과 표피층의 재생을 자연스럽게 유도.",
+      "source": "text"
+    },
+    {
+      "name": "Snow Queen Cell",
+      "korean_name": "스노우퀸셀",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "booster",
+      "description": "PDRN(연어DNA)을 통한 피부재생, Glutathione(글루타치온GSH)을 통한 미백효과, Retinic acid(레티노익산)을 통한 주름 및 잡티개선.",
+      "source": "text"
+    },
+    {
+      "name": "PDRN",
+      "korean_name": "연어DNA",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "booster",
+      "description": "인체의 DNA와 유사한 DNA 조각으로서 피부자체의 재생능력을 향상. 성장인자(Growth Factor)를 지속적으로 생산할 수 있게 자극하여 손상된 조직을 재생하는데 도움. 섬유아세포(Fibroblast)를 자극하여 풍부한 콜라겐과 엘라스틴, 히알루론산을 생산하도록 하여 주름개선 및 모공축소 효과, 피부보습효과 제공. 시술 후 회복기간 짧음.",
+      "source": "text"
+    },
+    {
+      "name": "Glutathione",
+      "korean_name": "글루타치온GSH",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "booster",
+      "description": "환원형 글루타치온은 피부의 색깔과 색소침착을 유도하는 멜라닌의 생성을 억제 시키는 작용을 효과적으로 하여 피부톤을 지속적으로 맑고 밝게 유지시켜 줍니다.",
+      "source": "text"
+    },
+    {
+      "name": "Retinic acid",
+      "korean_name": "레티노익산",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "other_injectable",
+      "description": "미성숙한 각질세포의 분화를 유도하여 성숙한 상피세포가 정상적인 구조와 기능을 유지하도록 해 여드름과 트러블을 개선하고 섬유아세포의 수를 증가시켜 잔주름개선과 함께 김, 주근깨, 흑자 와 같은 색소성 반점에서 멜라닌 색소를 감소시켜주는 효과로 피부톤 개선과 미백효과를 제공합니다.",
+      "source": "text"
+    },
+    {
+      "name": "RevLite SI",
+      "korean_name": "레블라이트SI",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Excel V",
+      "korean_name": "엑셀V",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "LDM",
+      "korean_name": null,
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "GentleMax",
+      "korean_name": "젠틀맥스",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Long Pulse Nd:YAG",
+      "korean_name": "롱펄스엔디야그",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Q-Switch Nd:YAG",
+      "korean_name": "큐스위치엔디야그",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Fraxel",
+      "korean_name": "프락셀",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "CO2 Laser",
+      "korean_name": "CO2",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "IPL",
+      "korean_name": null,
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "IPL",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Agnes",
+      "korean_name": "아그네스",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Scarlet S",
+      "korean_name": "스칼렛",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "microneedle",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Potenza",
+      "korean_name": "포텐자",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "microneedle",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Exosome",
+      "korean_name": "엑소좀",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "booster",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Rejuran",
+      "korean_name": "리쥬란",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "booster",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Juvelook",
+      "korean_name": "쥬베룩",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "booster",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Sculptra",
+      "korean_name": "스컬트라",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "collagen_stimulator",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Ellanse",
+      "korean_name": "엘란쎄",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "collagen_stimulator",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Filler",
+      "korean_name": "필러",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "filler",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Botox",
+      "korean_name": "보톡스",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "botox",
+      "description": null,
+      "source": "text"
+    }
+  ],
+  "treatments": [
+    {
+      "name": "울써마지 펜타시스템",
+      "price": null,
+      "price_display": null,
+      "is_package": true,
+      "package_detail": {
+        "included_treatments": [
+          "Ulthera",
+          "Thermage"
+        ],
+        "estimated_unit_prices": null,
+        "estimation_method": null
+      },
+      "session_info": null,
+      "body_part": null,
+      "category": "리프팅, 탄력, 색소, 주름개선, V라인"
+    },
+    {
+      "name": "동안줄기세포 여드름흉터 REMOVE플러스 Upgrade",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": null,
+      "category": "여드름, 흉터"
+    },
+    {
+      "name": "동안중심 리포소닉",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": "1번",
+      "body_part": "바디",
+      "category": "바디, 지방분해"
+    },
+    {
+      "name": "동안줄기세포 튼살 REMOVER SEASON 3",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": null,
+      "category": "튼살"
+    },
+    {
+      "name": "디스커버리 피코 이용시술",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": null,
+      "category": "색소, 문신제거, 기미, 잡티, 주근깨, 미백, 피부톤 개선"
+    },
+    {
+      "name": "앱솔루트 기가피코 이용시술",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": null,
+      "category": "문신제거, 색소"
+    },
+    {
+      "name": "실크토닝",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": null,
+      "category": "홍조, 색소, 혈관질환, 기미, 잡티, 주근깨"
+    },
+    {
+      "name": "눈꽃힐쎄라",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": "얼굴 전체, 목",
+      "category": "미백, 리프팅, 피부재생, 탄력, 주름, 볼륨, 잡티"
+    },
+    {
+      "name": "스노우퀸셀 이용시술",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": null,
+      "category": "피부재생, 미백, 주름개선, 모공축소, 피부보습, 잡티개선"
+    },
+    {
+      "name": "울쎄라 이용시술",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": "1회",
+      "body_part": null,
+      "category": "리프팅"
+    },
+    {
+      "name": "윤곽주사",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": null,
+      "category": "지방분해, 윤곽"
+    },
+    {
+      "name": "물광주사",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": null,
+      "category": "피부보습, 피부결개선"
+    },
+    {
+      "name": "리프팅",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": null,
+      "category": "리프팅"
+    },
+    {
+      "name": "실리프팅",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": null,
+      "category": "리프팅"
+    },
+    {
+      "name": "동안주사",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": null,
+      "category": "안티에이징"
+    },
+    {
+      "name": "지방이식",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": null,
+      "category": "볼륨, 성형"
+    },
+    {
+      "name": "제모",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": null,
+      "category": "제모"
+    },
+    {
+      "name": "바디리프팅",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": "바디",
+      "category": "바디, 리프팅"
+    },
+    {
+      "name": "바디탄력",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": "바디",
+      "category": "바디, 탄력"
+    },
+    {
+      "name": "바디색소",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": "바디",
+      "category": "바디, 색소"
+    },
+    {
+      "name": "바디제모",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": "바디",
+      "category": "바디, 제모"
+    },
+    {
+      "name": "바디비만",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": "바디",
+      "category": "바디, 비만"
+    },
+    {
+      "name": "바디라인",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": "바디",
+      "category": "바디, 라인개선"
+    }
+  ],
+  "events": [
+    {
+      "title": "동안줄기세포 여드름흉터 REMOVE플러스 Upgrade",
+      "type": "기타",
+      "period": null,
+      "discount_info": null,
+      "original_price": null,
+      "event_price": null,
+      "conditions": [],
+      "source": "image_banner"
+    },
+    {
+      "title": "동안줄기세포 튼살 REMOVER SEASON 3",
+      "type": "기타",
+      "period": null,
+      "discount_info": null,
+      "original_price": null,
+      "event_price": null,
+      "conditions": [],
+      "source": "image_banner"
+    }
+  ],
+  "clinic_categories": [
+    {
+      "name": "레이저 이용시술",
+      "treatments": [
+        "디스커버리 피코 이용시술",
+        "앱솔루트 기가피코 이용시술",
+        "실크토닝",
+        "울쎄라 이용시술",
+        "제모",
+        "바디제모"
+      ]
+    },
+    {
+      "name": "동안쁘띠클리닉",
+      "treatments": [
+        "윤곽주사",
+        "물광주사",
+        "실리프팅",
+        "동안주사",
+        "지방이식"
+      ]
+    },
+    {
+      "name": "페이스동안",
+      "treatments": [
+        "눈꽃힐쎄라",
+        "스노우퀸셀 이용시술",
+        "울써마지 펜타시스템"
+      ]
+    },
+    {
+      "name": "바디동안",
+      "treatments": [
+        "동안중심 리포소닉",
+        "동안줄기세포 튼살 REMOVER SEASON 3",
+        "바디리프팅",
+        "바디탄력",
+        "바디색소",
+        "바디비만",
+        "바디라인"
+      ]
+    },
+    {
+      "name": "동안스페셜",
+      "treatments": [
+        "동안줄기세포 여드름흉터 REMOVE플러스 Upgrade"
+      ]
+    },
+    {
+      "name": "동안LIFE",
+      "treatments": []
+    }
+  ],
+  "contact_info": {
+    "email": [
+      {
+        "address": "dongancenter@gmail.com",
+        "type": "대표",
+        "source": "header"
+      }
+    ],
+    "phone": [
+      {
+        "number": "02-542-7586",
+        "type": "대표"
+      },
+      {
+        "number": "02-542-7587",
+        "type": "상담"
+      },
+      {
+        "number": "02-542-7589",
+        "type": "팩스"
+      },
+      {
+        "number": "010.2538.7722",
+        "type": "기타"
+      }
+    ],
+    "address": {
+      "full_address": "서울시 강남구 압구정로48길 26",
+      "sido": "서울시",
+      "sigungu": "강남구"
+    },
+    "kakao_channel": "https://pf.kakao.com/_XxoybE",
+    "naver_booking": null,
+    "naver_place": null,
+    "instagram": null,
+    "facebook": null,
+    "youtube": null,
+    "blog": null,
+    "website_url": "http://www.dongancenter.com/",
+    "operating_hours": {
+      "weekday": "월 ~ 목 오전 10:00 ~ 오후 07:00, 금 요일 오후 12:00 ~ 오후 09:00",
+      "saturday": "오전 10:00 ~ 오후 04:00",
+      "sunday": null,
+      "lunch_break": null
+    }
+  },
+  "extraction_summary": {
+    "total_doctors": 2,
+    "total_academic": 8,
+    "total_equipment": 21,
+    "total_devices": 21,
+    "total_injectables": 11,
+    "total_treatments": 23,
+    "total_events": 2,
+    "total_categories": 6,
+    "total_contact_channels": 6,
+    "has_email": true,
+    "has_phone": true,
+    "has_kakao": true,
+    "has_sns": false,
+    "price_available_ratio": "0/23"
+  }
+}

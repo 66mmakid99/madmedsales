@@ -1,0 +1,94 @@
+{
+  "hospital": "안산엔비의원",
+  "hospital_id": "1267b395-1132-4511-a8ba-1afc228a8867",
+  "exported_at": "2026-02-24T08:07:00.334Z",
+  "summary": {
+    "pages": 1,
+    "doctors": 0,
+    "treatments": 6,
+    "equipments": 0,
+    "events": 2
+  },
+  "crawl_pages": [
+    {
+      "url": "http://talmostop.com",
+      "page_type": "main",
+      "char_count": 8254,
+      "screenshot_url": "https://grtkcrzgwapsjcqkxlmj.supabase.co/storage/v1/object/public/hospital-screenshots/1267b395-1132-4511-a8ba-1afc228a8867/main___20260224.webp",
+      "analysis_method": "text",
+      "gemini_analyzed": true
+    }
+  ],
+  "doctors": [],
+  "treatments": [
+    {
+      "treatment_name": "윤곽조각주사",
+      "treatment_category": "body",
+      "price": null,
+      "price_note": null,
+      "combo_with": null,
+      "is_promoted": false
+    },
+    {
+      "treatment_name": "스킨부스터",
+      "treatment_category": "booster",
+      "price": null,
+      "price_note": null,
+      "combo_with": null,
+      "is_promoted": false
+    },
+    {
+      "treatment_name": "모발이식",
+      "treatment_category": "hair",
+      "price": null,
+      "price_note": null,
+      "combo_with": null,
+      "is_promoted": false
+    },
+    {
+      "treatment_name": "두피문신",
+      "treatment_category": "hair",
+      "price": null,
+      "price_note": null,
+      "combo_with": null,
+      "is_promoted": false
+    },
+    {
+      "treatment_name": "탈모클리닉",
+      "treatment_category": "hair",
+      "price": null,
+      "price_note": null,
+      "combo_with": null,
+      "is_promoted": false
+    },
+    {
+      "treatment_name": "G팡 DIET",
+      "treatment_category": "body",
+      "price": null,
+      "price_note": null,
+      "combo_with": null,
+      "is_promoted": false
+    }
+  ],
+  "equipments": [],
+  "events": [
+    {
+      "title": "NB 여드름 실속 패키지",
+      "description": null,
+      "discount_type": "package",
+      "discount_value": null,
+      "related_treatments": [
+        "여드름"
+      ]
+    },
+    {
+      "title": "NB 반영구 두피문신 EVENT",
+      "description": null,
+      "discount_type": "other",
+      "discount_value": null,
+      "related_treatments": [
+        "두피문신"
+      ]
+    }
+  ]
+}

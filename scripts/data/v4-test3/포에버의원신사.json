@@ -1,0 +1,1075 @@
+{
+  "hospital": "포에버의원(신사)",
+  "hospital_id": "92f7b52a-66e9-4b1c-a118-6058f89db92e",
+  "exported_at": "2026-02-24T08:07:02.251Z",
+  "summary": {
+    "pages": 3,
+    "doctors": 47,
+    "treatments": 59,
+    "equipments": 0,
+    "events": 16
+  },
+  "crawl_pages": [
+    {
+      "url": "https://as.4-ever.co.kr",
+      "page_type": "main",
+      "char_count": 22633,
+      "screenshot_url": "https://grtkcrzgwapsjcqkxlmj.supabase.co/storage/v1/object/public/hospital-screenshots/92f7b52a-66e9-4b1c-a118-6058f89db92e/main___20260224.webp",
+      "analysis_method": "text",
+      "gemini_analyzed": true
+    },
+    {
+      "url": "https://as.4-ever.co.kr/community/event_new.php",
+      "page_type": "event",
+      "char_count": 7207,
+      "screenshot_url": "https://grtkcrzgwapsjcqkxlmj.supabase.co/storage/v1/object/public/hospital-screenshots/92f7b52a-66e9-4b1c-a118-6058f89db92e/event__community_event_new_php_20260224.webp",
+      "analysis_method": "text",
+      "gemini_analyzed": true
+    },
+    {
+      "url": "https://as.4-ever.co.kr/intro/doctor.php",
+      "page_type": "doctor",
+      "char_count": 6051,
+      "screenshot_url": "https://grtkcrzgwapsjcqkxlmj.supabase.co/storage/v1/object/public/hospital-screenshots/92f7b52a-66e9-4b1c-a118-6058f89db92e/doctor__intro_doctor_php_20260224.webp",
+      "analysis_method": "text",
+      "gemini_analyzed": true
+    }
+  ],
+  "doctors": [
+    {
+      "name": "이건민",
+      "title": "대표원장",
+      "specialty": null,
+      "career": [
+        "현 포에버의원 안산점 원장",
+        "전 포에버의원 구로점 원장",
+        "전 미앤미의원 인천 부평점"
+      ],
+      "education": [],
+      "academic_activity": "국제미용항노화학회 이사, 한국미용외과의학회 정회원, 대한비만미용치료학회 정회원, 대한레이저피부모발학회 정회원"
+    },
+    {
+      "name": "이충일",
+      "title": "원장",
+      "specialty": null,
+      "career": [
+        "현 포에버의원 안산점 원장"
+      ],
+      "education": [],
+      "academic_activity": "대한미용성형레이저학회 정회원, 대한레이저피부모발학회 정회원, 대한비만학회 정회원, 대한미용의사회 정회원"
+    },
+    {
+      "name": "임형우",
+      "title": "원장",
+      "specialty": null,
+      "career": [],
+      "education": [],
+      "academic_activity": null
+    },
+    {
+      "name": "임소희",
+      "title": "원장",
+      "specialty": null,
+      "career": [],
+      "education": [],
+      "academic_activity": null
+    },
+    {
+      "name": "강진희",
+      "title": "원장",
+      "specialty": null,
+      "career": [],
+      "education": [],
+      "academic_activity": null
+    },
+    {
+      "name": "허정식",
+      "title": "원장",
+      "specialty": null,
+      "career": [],
+      "education": [],
+      "academic_activity": null
+    },
+    {
+      "name": "신성호",
+      "title": "원장",
+      "specialty": null,
+      "career": [],
+      "education": [],
+      "academic_activity": null
+    },
+    {
+      "name": "김곤수",
+      "title": "원장",
+      "specialty": null,
+      "career": [],
+      "education": [],
+      "academic_activity": null
+    },
+    {
+      "name": "김지혜",
+      "title": "원장",
+      "specialty": null,
+      "career": [],
+      "education": [],
+      "academic_activity": null
+    },
+    {
+      "name": "이현규",
+      "title": "원장",
+      "specialty": null,
+      "career": [],
+      "education": [],
+      "academic_activity": null
+    },
+    {
+      "name": "전인기",
+      "title": "대표원장",
+      "specialty": null,
+      "career": [],
+      "education": [],
+      "academic_activity": null
+    },
+    {
+      "name": "박용삼",
+      "title": "원장",
+      "specialty": null,
+      "career": [],
+      "education": [],
+      "academic_activity": null
+    },
+    {
+      "name": "권인혁",
+      "title": "원장",
+      "specialty": null,
+      "career": [],
+      "education": [],
+      "academic_activity": null
+    },
+    {
+      "name": "배병제",
+      "title": "원장",
+      "specialty": null,
+      "career": [],
+      "education": [],
+      "academic_activity": null
+    },
+    {
+      "name": "정한빈",
+      "title": "원장",
+      "specialty": null,
+      "career": [],
+      "education": [],
+      "academic_activity": null
+    },
+    {
+      "name": "이치상",
+      "title": "대표원장",
+      "specialty": null,
+      "career": [],
+      "education": [],
+      "academic_activity": null
+    },
+    {
+      "name": "유현준",
+      "title": "원장",
+      "specialty": null,
+      "career": [],
+      "education": [],
+      "academic_activity": null
+    },
+    {
+      "name": "전근화",
+      "title": "원장",
+      "specialty": null,
+      "career": [],
+      "education": [],
+      "academic_activity": null
+    },
+    {
+      "name": "송재명",
+      "title": "대표원장",
+      "specialty": null,
+      "career": [],
+      "education": [],
+      "academic_activity": null
+    },
+    {
+      "name": "한태호",
+      "title": "원장",
+      "specialty": null,
+      "career": [],
+      "education": [],
+      "academic_activity": null
+    },
+    {
+      "name": "백기석",
+      "title": "원장",
+      "specialty": null,
+      "career": [],
+      "education": [],
+      "academic_activity": null
+    },
+    {
+      "name": "김재성",
+      "title": "원장",
+      "specialty": null,
+      "career": [],
+      "education": [],
+      "academic_activity": null
+    },
+    {
+      "name": "황성훈",
+      "title": "원장",
+      "specialty": null,
+      "career": [],
+      "education": [],
+      "academic_activity": null
+    },
+    {
+      "name": "박소연",
+      "title": "원장",
+      "specialty": null,
+      "career": [],
+      "education": [],
+      "academic_activity": null
+    },
+    {
+      "name": "금제훈",
+      "title": "원장",
+      "specialty": null,
+      "career": [],
+      "education": [],
+      "academic_activity": null
+    },
+    {
+      "name": "박재현",
+      "title": "원장",
+      "specialty": null,
+      "career": [],
+      "education": [],
+      "academic_activity": null
+    },
+    {
+      "name": "옥순정",
+      "title": "원장",
+      "specialty": null,
+      "career": [],
+      "education": [],
+      "academic_activity": null
+    },
+    {
+      "name": "이영로",
+      "title": "원장",
+      "specialty": null,
+      "career": [],
+      "education": [],
+      "academic_activity": null
+    },
+    {
+      "name": "송원용",
+      "title": "원장",
+      "specialty": null,
+      "career": [],
+      "education": [],
+      "academic_activity": null
+    },
+    {
+      "name": "한가현",
+      "title": "원장",
+      "specialty": null,
+      "career": [],
+      "education": [],
+      "academic_activity": null
+    },
+    {
+      "name": "한승욱",
+      "title": "원장",
+      "specialty": null,
+      "career": [],
+      "education": [],
+      "academic_activity": null
+    },
+    {
+      "name": "강민철",
+      "title": "원장",
+      "specialty": null,
+      "career": [],
+      "education": [],
+      "academic_activity": null
+    },
+    {
+      "name": "김수훈",
+      "title": "원장",
+      "specialty": null,
+      "career": [],
+      "education": [],
+      "academic_activity": null
+    },
+    {
+      "name": "신다은",
+      "title": "원장",
+      "specialty": null,
+      "career": [],
+      "education": [],
+      "academic_activity": null
+    },
+    {
+      "name": "양형석",
+      "title": "원장",
+      "specialty": null,
+      "career": [],
+      "education": [],
+      "academic_activity": null
+    },
+    {
+      "name": "한해성",
+      "title": "원장",
+      "specialty": null,
+      "career": [],
+      "education": [],
+      "academic_activity": null
+    },
+    {
+      "name": "김도훈",
+      "title": "원장",
+      "specialty": null,
+      "career": [],
+      "education": [],
+      "academic_activity": null
+    },
+    {
+      "name": "백두산",
+      "title": "원장",
+      "specialty": null,
+      "career": [],
+      "education": [],
+      "academic_activity": null
+    },
+    {
+      "name": "손민규",
+      "title": "원장",
+      "specialty": null,
+      "career": [],
+      "education": [],
+      "academic_activity": null
+    },
+    {
+      "name": "노태호",
+      "title": "원장",
+      "specialty": null,
+      "career": [],
+      "education": [],
+      "academic_activity": null
+    },
+    {
+      "name": "양훈철",
+      "title": "원장",
+      "specialty": null,
+      "career": [],
+      "education": [],
+      "academic_activity": null
+    },
+    {
+      "name": "한안나",
+      "title": "원장",
+      "specialty": null,
+      "career": [],
+      "education": [],
+      "academic_activity": null
+    },
+    {
+      "name": "안상은",
+      "title": "원장",
+      "specialty": null,
+      "career": [],
+      "education": [],
+      "academic_activity": null
+    },
+    {
+      "name": "서영한",
+      "title": "원장",
+      "specialty": null,
+      "career": [],
+      "education": [],
+      "academic_activity": null
+    },
+    {
+      "name": "이찬종",
+      "title": "원장",
+      "specialty": null,
+      "career": [],
+      "education": [],
+      "academic_activity": null
+    },
+    {
+      "name": "박소정",
+      "title": "원장",
+      "specialty": null,
+      "career": [],
+      "education": [],
+      "academic_activity": null
+    },
+    {
+      "name": "이원진",
+      "title": "원장",
+      "specialty": null,
+      "career": [],
+      "education": [],
+      "academic_activity": null
+    }
+  ],
+  "treatments": [
+    {
+      "treatment_name": "울쎄라 리프팅(고강도 집속 초음파) 100샷 - 한정가",
+      "treatment_category": "lifting",
+      "price": 190000,
+      "price_note": null,
+      "combo_with": null,
+      "is_promoted": true
+    },
+    {
+      "treatment_name": "울쎄라 리프팅(고강도 집속 초음파) 100샷",
+      "treatment_category": "lifting",
+      "price": 290000,
+      "price_note": null,
+      "combo_with": null,
+      "is_promoted": false
+    },
+    {
+      "treatment_name": "울쎄라 리프팅(고강도 집속 초음파) 300샷",
+      "treatment_category": "lifting",
+      "price": 790000,
+      "price_note": null,
+      "combo_with": null,
+      "is_promoted": false
+    },
+    {
+      "treatment_name": "LDM 프리미엄 관리 1회",
+      "treatment_category": "skin",
+      "price": 40000,
+      "price_note": null,
+      "combo_with": "울쎄라 리프팅",
+      "is_promoted": false
+    },
+    {
+      "treatment_name": "턱라인 스킨보톡스(국산) 1부위",
+      "treatment_category": "filler_botox",
+      "price": 19000,
+      "price_note": null,
+      "combo_with": "울쎄라 리프팅",
+      "is_promoted": false
+    },
+    {
+      "treatment_name": "레블라이트SI 토닝(PTP 프리미엄 토닝) 1회 - 체험가",
+      "treatment_category": "laser",
+      "price": 25000,
+      "price_note": null,
+      "combo_with": null,
+      "is_promoted": true
+    },
+    {
+      "treatment_name": "레블라이트SI 토닝(PTP 프리미엄 토닝) 1회",
+      "treatment_category": "laser",
+      "price": 79000,
+      "price_note": null,
+      "combo_with": null,
+      "is_promoted": false
+    },
+    {
+      "treatment_name": "레블라이트SI 토닝(PTP 프리미엄 토닝) 10회",
+      "treatment_category": "laser",
+      "price": 590000,
+      "price_note": null,
+      "combo_with": null,
+      "is_promoted": false
+    },
+    {
+      "treatment_name": "레블라이트SI 토닝(PTP 프리미엄 토닝) 10회 + 진정관리 10회 + 모델링팩 10회",
+      "treatment_category": "laser",
+      "price": 690000,
+      "price_note": null,
+      "combo_with": null,
+      "is_promoted": false
+    },
+    {
+      "treatment_name": "아쿠아필/비타민관리/진정관리/보습관리 10회",
+      "treatment_category": "skin",
+      "price": 150000,
+      "price_note": null,
+      "combo_with": "레블라이트SI 토닝",
+      "is_promoted": false
+    },
+    {
+      "treatment_name": "LDM 프리미엄 수분관리 10회",
+      "treatment_category": "skin",
+      "price": 250000,
+      "price_note": null,
+      "combo_with": "레블라이트SI 토닝",
+      "is_promoted": false
+    },
+    {
+      "treatment_name": "제네시스 10회",
+      "treatment_category": "laser",
+      "price": 400000,
+      "price_note": null,
+      "combo_with": "레블라이트SI 토닝",
+      "is_promoted": false
+    },
+    {
+      "treatment_name": "볼륨필러(국산 아띠에르) 1cc",
+      "treatment_category": "filler_botox",
+      "price": 69000,
+      "price_note": null,
+      "combo_with": null,
+      "is_promoted": false
+    },
+    {
+      "treatment_name": "볼륨필러(독일 아말리안) 1cc",
+      "treatment_category": "filler_botox",
+      "price": 189000,
+      "price_note": null,
+      "combo_with": null,
+      "is_promoted": false
+    },
+    {
+      "treatment_name": "볼륨필러(스웨덴 레스틸렌/독일 벨로테로) 1cc",
+      "treatment_category": "filler_botox",
+      "price": 270000,
+      "price_note": null,
+      "combo_with": null,
+      "is_promoted": false
+    },
+    {
+      "treatment_name": "슈링크 유니버스 100샷",
+      "treatment_category": "lifting",
+      "price": 14500,
+      "price_note": null,
+      "combo_with": null,
+      "is_promoted": true
+    },
+    {
+      "treatment_name": "울쎄라 리프팅 100샷",
+      "treatment_category": "lifting",
+      "price": 190000,
+      "price_note": null,
+      "combo_with": null,
+      "is_promoted": true
+    },
+    {
+      "treatment_name": "텐쎄라 300라인 + 원쎄라 2000샷",
+      "treatment_category": "lifting",
+      "price": 220000,
+      "price_note": null,
+      "combo_with": null,
+      "is_promoted": true
+    },
+    {
+      "treatment_name": "온다 4만줄 1회",
+      "treatment_category": "body",
+      "price": 249000,
+      "price_note": null,
+      "combo_with": null,
+      "is_promoted": true
+    },
+    {
+      "treatment_name": "덴서티 300샷 + 얼굴전체 타이트닝 주사",
+      "treatment_category": "lifting",
+      "price": 790000,
+      "price_note": null,
+      "combo_with": null,
+      "is_promoted": true
+    },
+    {
+      "treatment_name": "민트실 4줄 + 잼버실 2줄 + 타이트닝주사 - 한정가",
+      "treatment_category": "lifting",
+      "price": 290000,
+      "price_note": null,
+      "combo_with": null,
+      "is_promoted": true
+    },
+    {
+      "treatment_name": "베이직 화이트닝 (레이저토닝 + 재생레이저) 10회 - 한정가",
+      "treatment_category": "laser",
+      "price": 99000,
+      "price_note": null,
+      "combo_with": null,
+      "is_promoted": true
+    },
+    {
+      "treatment_name": "색소올클리어 (엑셀V 색소모드 + 크라이오 + 미백팩) 1회",
+      "treatment_category": "laser",
+      "price": 169000,
+      "price_note": null,
+      "combo_with": null,
+      "is_promoted": true
+    },
+    {
+      "treatment_name": "레이저토닝 5회 + 제네시스 5회 + 홍조 OR 혈관레이저 1회 + 보습팩 5회",
+      "treatment_category": "laser",
+      "price": 390000,
+      "price_note": null,
+      "combo_with": null,
+      "is_promoted": true
+    },
+    {
+      "treatment_name": "울트라콜 100 + 물광주사 + 스킨보톡스 + 보습팩",
+      "treatment_category": "booster",
+      "price": 159000,
+      "price_note": null,
+      "combo_with": null,
+      "is_promoted": true
+    },
+    {
+      "treatment_name": "리쥬란힐러 2cc + 얼굴전체 스킨보톡스 + 콜라겐팩 1회",
+      "treatment_category": "booster",
+      "price": 239000,
+      "price_note": null,
+      "combo_with": null,
+      "is_promoted": true
+    },
+    {
+      "treatment_name": "레티젠 2cc + 콜라겐관리 - 체험가",
+      "treatment_category": "filler_botox",
+      "price": 399000,
+      "price_note": null,
+      "combo_with": null,
+      "is_promoted": true
+    },
+    {
+      "treatment_name": "래디어스 1실린지 + 얼굴전체 스킨보톡스",
+      "treatment_category": "filler_botox",
+      "price": 749000,
+      "price_note": null,
+      "combo_with": null,
+      "is_promoted": true
+    },
+    {
+      "treatment_name": "NO!피지 패키지 (플래티넘 PTT + SONO 관리 + 제네시스 + 진정팩 - 압출별도)",
+      "treatment_category": "skin",
+      "price": 150000,
+      "price_note": null,
+      "combo_with": null,
+      "is_promoted": true
+    },
+    {
+      "treatment_name": "내성적은 국산 항노화톡신 주름 3부위",
+      "treatment_category": "filler_botox",
+      "price": 69000,
+      "price_note": null,
+      "combo_with": null,
+      "is_promoted": true
+    },
+    {
+      "treatment_name": "설날 복주머니 P!CK (슈링크 200샷/인모드 FX 1부위/턱보톡스/주름보톡스 1부위/비타민관리/아쿠아필1,2제/보습관리/면역수액/아큐주사 3cc 中 5가지)",
+      "treatment_category": "other",
+      "price": 99000,
+      "price_note": null,
+      "combo_with": null,
+      "is_promoted": true
+    },
+    {
+      "treatment_name": "얼굴 점, 사마귀, 비립종 30개",
+      "treatment_category": "skin",
+      "price": 179000,
+      "price_note": null,
+      "combo_with": null,
+      "is_promoted": true
+    },
+    {
+      "treatment_name": "엑셀V 1회 + 레블라이트 3회 + 비타민 관리 3회 + 재생광선 3회 + 보습팩 3회",
+      "treatment_category": "laser",
+      "price": 299000,
+      "price_note": null,
+      "combo_with": null,
+      "is_promoted": true
+    },
+    {
+      "treatment_name": "울쎄라 100샷 + 온다 6만줄 + 턱라인 스킨보톡스",
+      "treatment_category": "lifting",
+      "price": 590000,
+      "price_note": null,
+      "combo_with": null,
+      "is_promoted": true
+    },
+    {
+      "treatment_name": "울트라콜 + 물광주사 + 스킨보톡스",
+      "treatment_category": "booster",
+      "price": 159000,
+      "price_note": null,
+      "combo_with": null,
+      "is_promoted": true
+    },
+    {
+      "treatment_name": "턱보톡스 + 윤곽주사 3cc",
+      "treatment_category": "filler_botox",
+      "price": 22000,
+      "price_note": null,
+      "combo_with": null,
+      "is_promoted": true
+    },
+    {
+      "treatment_name": "각질정리 + 비타민 OR 보습관리 + 보습팩",
+      "treatment_category": "skin",
+      "price": 22000,
+      "price_note": null,
+      "combo_with": null,
+      "is_promoted": true
+    },
+    {
+      "treatment_name": "프리미엄 관리(LDM/다이아필링/라라필/오투덤) 1회",
+      "treatment_category": "skin",
+      "price": 39000,
+      "price_note": null,
+      "combo_with": null,
+      "is_promoted": true
+    },
+    {
+      "treatment_name": "인모드 FX 얼굴전체",
+      "treatment_category": "lifting",
+      "price": 69000,
+      "price_note": null,
+      "combo_with": null,
+      "is_promoted": true
+    },
+    {
+      "treatment_name": "리쥬란힐러 2cc",
+      "treatment_category": "booster",
+      "price": 139000,
+      "price_note": null,
+      "combo_with": null,
+      "is_promoted": true
+    },
+    {
+      "treatment_name": "주름보톡스 1부위",
+      "treatment_category": "filler_botox",
+      "price": 2500,
+      "price_note": null,
+      "combo_with": null,
+      "is_promoted": true
+    },
+    {
+      "treatment_name": "턱보톡스 1부위",
+      "treatment_category": "filler_botox",
+      "price": 7900,
+      "price_note": null,
+      "combo_with": null,
+      "is_promoted": true
+    },
+    {
+      "treatment_name": "비타민관리/아쿠아필/보습관리",
+      "treatment_category": "skin",
+      "price": 4500,
+      "price_note": null,
+      "combo_with": null,
+      "is_promoted": true
+    },
+    {
+      "treatment_name": "레이저토닝(화이트닝 레이저)",
+      "treatment_category": "laser",
+      "price": 5000,
+      "price_note": null,
+      "combo_with": null,
+      "is_promoted": true
+    },
+    {
+      "treatment_name": "인모드 리프팅(고강도 양극성 고주파) 1부위",
+      "treatment_category": "lifting",
+      "price": 6900,
+      "price_note": null,
+      "combo_with": null,
+      "is_promoted": true
+    },
+    {
+      "treatment_name": "원쎄라 리프팅(롱펄스 초음파) 펜타입 1000샷",
+      "treatment_category": "lifting",
+      "price": 29000,
+      "price_note": null,
+      "combo_with": null,
+      "is_promoted": true
+    },
+    {
+      "treatment_name": "텐쎄라 리프팅 100라인",
+      "treatment_category": "lifting",
+      "price": 49000,
+      "price_note": null,
+      "combo_with": null,
+      "is_promoted": true
+    },
+    {
+      "treatment_name": "[여자제모] 인중/겨드랑이 1회",
+      "treatment_category": "hair",
+      "price": 1000,
+      "price_note": null,
+      "combo_with": null,
+      "is_promoted": true
+    },
+    {
+      "treatment_name": "[남자제모] 인중/겨드랑이 1회",
+      "treatment_category": "hair",
+      "price": 3000,
+      "price_note": null,
+      "combo_with": null,
+      "is_promoted": true
+    },
+    {
+      "treatment_name": "슬림바디 패키지(대용량 걸그룹주사 600cc + 고주파관리)",
+      "treatment_category": "body",
+      "price": 99000,
+      "price_note": null,
+      "combo_with": null,
+      "is_promoted": true
+    },
+    {
+      "treatment_name": "슬림라인 패키지(컨투어핏주사 60cc + 바디 온다 리프팅 10만줄)",
+      "treatment_category": "body",
+      "price": 490000,
+      "price_note": null,
+      "combo_with": null,
+      "is_promoted": true
+    },
+    {
+      "treatment_name": "바디 S라인주사 1부위",
+      "treatment_category": "body",
+      "price": 79000,
+      "price_note": null,
+      "combo_with": null,
+      "is_promoted": true
+    },
+    {
+      "treatment_name": "베이직 스킨케어(각질정리/블랙헤드관리/보습관리/비타민관리/수분팩/재생광선) 10회",
+      "treatment_category": "skin",
+      "price": 99000,
+      "price_note": null,
+      "combo_with": null,
+      "is_promoted": true
+    },
+    {
+      "treatment_name": "영양 면역주사(신데렐라주사/슈퍼비타민주사/마늘주사/와인주사) 5회",
+      "treatment_category": "booster",
+      "price": 99000,
+      "price_note": null,
+      "combo_with": null,
+      "is_promoted": true
+    },
+    {
+      "treatment_name": "울쎄라 리프팅",
+      "treatment_category": "lifting",
+      "price": 190000,
+      "price_note": "~",
+      "combo_with": null,
+      "is_promoted": true
+    },
+    {
+      "treatment_name": "레블라이트SI 토닝",
+      "treatment_category": "laser",
+      "price": 25000,
+      "price_note": "~",
+      "combo_with": null,
+      "is_promoted": true
+    },
+    {
+      "treatment_name": "볼륨필러(국산 아띠에르)",
+      "treatment_category": "filler_botox",
+      "price": 69000,
+      "price_note": "~",
+      "combo_with": null,
+      "is_promoted": true
+    },
+    {
+      "treatment_name": "볼륨필러(독일 아말리안)",
+      "treatment_category": "filler_botox",
+      "price": 189000,
+      "price_note": "~",
+      "combo_with": null,
+      "is_promoted": true
+    },
+    {
+      "treatment_name": "볼륨필러(스웨덴 레스틸렌/독일 벨로테로)",
+      "treatment_category": "filler_botox",
+      "price": 270000,
+      "price_note": "~",
+      "combo_with": null,
+      "is_promoted": true
+    }
+  ],
+  "equipments": [],
+  "events": [
+    {
+      "title": "월간포에버 ❄️2월❄️",
+      "description": "나에게 주는 최고의 설 선물, 지친 피부에 휴식을 더하세요!\n\n#2월#설날#특가#피부#혜택#월간#깜짝#세일#할인",
+      "discount_type": "percent",
+      "discount_value": "~49%",
+      "related_treatments": [
+        "슈링크 유니버스 100샷",
+        "울쎄라 리프팅 100샷",
+        "텐쎄라 300라인 + 원쎄라 2000샷",
+        "온다 4만줄 1회",
+        "덴서티 300샷 + 얼굴전체 타이트닝 주사",
+        "민트실 4줄 + 잼버실 2줄 + 타이트닝주사 - 한정가",
+        "베이직 화이트닝 (레이저토닝 + 재생레이저) 10회 - 한정가",
+        "색소올클리어 (엑셀V 색소모드 + 크라이오 + 미백팩) 1회",
+        "레이저토닝 5회 + 제네시스 5회 + 홍조 OR 혈관레이저 1회 + 보습팩 5회",
+        "울트라콜 100 + 물광주사 + 스킨보톡스 + 보습팩",
+        "리쥬란힐러 2cc + 얼굴전체 스킨보톡스 + 콜라겐팩 1회",
+        "레티젠 2cc + 콜라겐관리 - 체험가",
+        "래디어스 1실린지 + 얼굴전체 스킨보톡스",
+        "NO!피지 패키지 (플래티넘 PTT + SONO 관리 + 제네시스 + 진정팩 - 압출별도)",
+        "내성적은 국산 항노화톡신 주름 3부위"
+      ]
+    },
+    {
+      "title": "🎊 설맞이 한정 이벤트 🎊",
+      "description": "포에버 안산점만의 스페'설' 이벤트!\n\n#2월#설날#한정#이벤트#점#보톡스#물광#주름#온다#피부관리",
+      "discount_type": "percent",
+      "discount_value": "~49%",
+      "related_treatments": [
+        "설날 복주머니 P!CK (슈링크 200샷/인모드 FX 1부위/턱보톡스/주름보톡스 1부위/비타민관리/아쿠아필1,2제/보습관리/면역수액/아큐주사 3cc 中 5가지)",
+        "얼굴 점, 사마귀, 비립종 30개",
+        "엑셀V 1회 + 레블라이트 3회 + 비타민 관리 3회 + 재생광선 3회 + 보습팩 3회",
+        "울쎄라 100샷 + 온다 6만줄 + 턱라인 스킨보톡스",
+        "울트라콜 + 물광주사 + 스킨보톡스"
+      ]
+    },
+    {
+      "title": "💖 발렌타인데이 특가 💖",
+      "description": "초콜렛보다 더 달콤한 발렌타인데이 한정 이벤트!\n\n#발렌타인데이#2월#보톡스#윤관#피부관리#비타민",
+      "discount_type": "percent",
+      "discount_value": "~49%",
+      "related_treatments": [
+        "턱보톡스 + 윤곽주사 3cc",
+        "각질정리 + 비타민 OR 보습관리 + 보습팩"
+      ]
+    },
+    {
+      "title": "✨화수목✨ 한정가 이벤트",
+      "description": "매주 화요일, 수요일, 목요일에는 혜택이 팡팡\n\n#화#수#목#한정#특가#혜택",
+      "discount_type": "percent",
+      "discount_value": "~49%",
+      "related_treatments": [
+        "프리미엄 관리(LDM/다이아필링/라라필/오투덤) 1회",
+        "인모드 FX 얼굴전체",
+        "리쥬란힐러 2cc"
+      ]
+    },
+    {
+      "title": "✨첫시술✨ 체험전",
+      "description": "포에버가 준비한 설레는 첫시술 혜택~♥\n\n#첫시술# 체험이벤트",
+      "discount_type": "percent",
+      "discount_value": "~49%",
+      "related_treatments": [
+        "주름보톡스 1부위",
+        "턱보톡스 1부위",
+        "비타민관리/아쿠아필/보습관리",
+        "레이저토닝(화이트닝 레이저)",
+        "슈링크 유니버스 100샷",
+        "인모드 리프팅(고강도 양극성 고주파) 1부위",
+        "원쎄라 리프팅(롱펄스 초음파) 펜타입 1000샷",
+        "텐쎄라 리프팅 100라인",
+        "[여자제모] 인중/겨드랑이 1회",
+        "[남자제모] 인중/겨드랑이 1회"
+      ]
+    },
+    {
+      "title": "다이어트 솔루션",
+      "description": "여름준비 지금부터, 날씬하게!\n\n#다이어트#여름준비#체형관리",
+      "discount_type": "percent",
+      "discount_value": "~49%",
+      "related_treatments": [
+        "슬림바디 패키지(대용량 걸그룹주사 600cc + 고주파관리)",
+        "슬림라인 패키지(컨투어핏주사 60cc + 바디 온다 리프팅 10만줄)",
+        "바디 S라인주사 1부위"
+      ]
+    },
+    {
+      "title": "평일 해피타임 이벤트",
+      "description": "붙잡으면 해피해지는 특별한 혜택♥\n\n#게랄라# 타임이벤트# 특가전",
+      "discount_type": "percent",
+      "discount_value": "~49%",
+      "related_treatments": [
+        "베이직 스킨케어(각질정리/블랙헤드관리/보습관리/비타민관리/수분팩/재생광선) 10회",
+        "영양 면역주사(신데렐라주사/슈퍼비타민주사/마늘주사/와인주사) 5회"
+      ]
+    },
+    {
+      "title": "울쎄라 리프팅",
+      "description": "FDA 승인 정품팁, 프리미엄 초음파 리프팅\n\n#탄력#고강도#초음파#주름#턱라인#안티에이징",
+      "discount_type": "percent",
+      "discount_value": "~49%",
+      "related_treatments": [
+        "울쎄라 리프팅(고강도 집속 초음파) 100샷 - 한정가",
+        "울쎄라 리프팅(고강도 집속 초음파) 100샷"
+      ]
+    },
+    {
+      "title": "레블라이트SI 토닝",
+      "description": "더욱 강력한 PTP 방식의 프리미엄 토닝\n\n#화이트닝# 미백# 피부보정# 피부톤# 색소# 톤업# 기미",
+      "discount_type": "percent",
+      "discount_value": "~49%",
+      "related_treatments": [
+        "레블라이트SI 토닝(PTP 프리미엄 토닝) 1회 - 체험가"
+      ]
+    },
+    {
+      "title": "볼륨필러(국산 아띠에르)",
+      "description": "어느 각도에서든 볼륨감 있는 얼굴\n\n#동안얼굴# 얼굴볼륨# 주름개선# 히알루론산필러",
+      "discount_type": "percent",
+      "discount_value": "~49%",
+      "related_treatments": [
+        "볼륨필러(국산 아띠에르) 1cc"
+      ]
+    },
+    {
+      "title": "볼륨필러(독일 아말리안)",
+      "description": "안전성 높은 안과용 HA원료를 사용한 독일산 HA필러\n\n#동안얼굴# 얼굴볼륨# 주름개선# 수입필러#히알루론산필러",
+      "discount_type": "percent",
+      "discount_value": "~49%",
+      "related_treatments": [
+        "볼륨필러(독일 아말리안) 1cc"
+      ]
+    },
+    {
+      "title": "볼륨필러(스웨덴 레스틸렌/독일 벨로테로)",
+      "description": "뛰어난 효과와 안전성이 검증된 HA필러\n\n#동안얼굴# 얼굴볼륨# 주름개선# 수입필러#히알루론산필러",
+      "discount_type": "percent",
+      "discount_value": "~49%",
+      "related_treatments": [
+        "볼륨필러(스웨덴 레스틸렌/독일 벨로테로) 1cc"
+      ]
+    },
+    {
+      "title": "보톡스(국산 일반형)",
+      "description": "검증받은 국산 보톡스로 빠르고 간편하게 톡~\n\n_~ 2026-02-28_\n\n#주름# 사각턱# 스킨보톡스# 다한증# 승모근# 종아리",
+      "discount_type": "fixed",
+      "discount_value": "10,000 원~",
+      "related_treatments": [
+        "보톡스"
+      ]
+    },
+    {
+      "title": "보톡스(국산 고순도)",
+      "description": "내성과 부작용을 최소화한 국산 보톡스\n\n_~ 2026-02-28_\n\n#주름# 사각턱# 스킨보톡스# 다한증# 승모근# 종아리",
+      "discount_type": "fixed",
+      "discount_value": "25,000 원~",
+      "related_treatments": [
+        "보톡스"
+      ]
+    },
+    {
+      "title": "보톡스(독일산 고순도)",
+      "description": "내성이 적은 독일 멀츠社의 명품 보톡스\n\n_~ 2026-02-28_\n\n#주름# 사각턱# 스킨보톡스# 다한증# 승모근# 종아리",
+      "discount_type": "fixed",
+      "discount_value": "45,000 원~",
+      "related_treatments": [
+        "보톡스"
+      ]
+    },
+    {
+      "title": "윤곽주사",
+      "description": "내 얼굴의 숨은 라인을 되찾자\n\n_~ 2026-02-28_\n\n#아큐주사# 브이라인# 이중턱# 턱선# 심부볼# 작은얼굴",
+      "discount_type": "fixed",
+      "discount_value": "29,000 원~",
+      "related_treatments": []
+    }
+  ]
+}
