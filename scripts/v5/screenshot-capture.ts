@@ -216,6 +216,33 @@ export async function captureScreenshots(
         }));
       });
 
+      // iframe 프레임 텍스트 추출 (vincent.kr 같은 iframe 기반 사이트 대응)
+      if (result.pageText.length < 100) {
+        const frames = page.frames();
+        const frameTexts: string[] = [];
+        const frameLinks: PageLink[] = [];
+        for (const frame of frames) {
+          if (frame === page.mainFrame()) continue;
+          try {
+            const ft = await frame.evaluate(() => document.body?.innerText || '');
+            if (ft.length > 20) frameTexts.push(ft);
+            const fl = await frame.evaluate(() =>
+              Array.from(document.querySelectorAll('a[href]')).map(a => ({
+                text: (a.textContent || '').trim().slice(0, 100),
+                href: a.getAttribute('href') || '',
+              })),
+            );
+            frameLinks.push(...fl);
+          } catch {
+            // cross-origin 프레임 등 접근 불가 — 무시
+          }
+        }
+        if (frameTexts.length > 0) {
+          result.pageText = frameTexts.join('\n\n');
+          result.links.push(...frameLinks);
+        }
+      }
+
       // SNS/연락처 링크를 텍스트 끝에 추가 (contact-extractor가 URL 패턴을 찾을 수 있도록)
       const snsPatterns = /kakao|naver|instagram|facebook|youtube|blog\.naver|pf\.kakao|channel\.io|line\.me/i;
       const snsLinks = result.links.filter(l => snsPatterns.test(l.href));
