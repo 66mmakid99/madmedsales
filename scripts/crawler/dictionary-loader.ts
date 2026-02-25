@@ -2,14 +2,14 @@
  * MADMEDSALES 데이터 사전 로더
  * JSON 사전을 한 번만 읽고 캐시하여 Gemini 프롬프트에 주입
  *
- * v1.0 - 2026-02-25
+ * v1.1 - 2026-02-26
  */
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const DICT_PATH = path.resolve(__dirname, 'MADMEDSALES_dictionary_v1.0.json');
+const DICT_PATH = path.resolve(__dirname, 'MADMEDSALES_dictionary_v1.1.json');
 
 // ── 타입 ──
 
@@ -18,6 +18,7 @@ interface EquipmentEntry {
   ko: string[];
   en: string[];
   gen: string[];
+  subtype?: string;
 }
 
 interface PriceUnit {
@@ -74,7 +75,33 @@ export function getEquipmentPromptSection(): string {
   lines.push('R1-2. 정규화: 한글 변형 → 표준 영문명으로 변환. 모델/세대(FLX, CPT, Prime 등)는 분리 보존.');
   lines.push('R1-3. TORR RF 특별 감지: "토르", "TORR", "MPR", "토로이달" 중 하나라도 있으면 반드시 포함.');
   lines.push('R1-4. 미등록 장비: 사전에 없는 장비명도 equipments에 원문 포함 + unregistered_equipment에 추가. 절대 버리지 마라.');
+  lines.push('R1-5. INJECTABLE 약제도 장비 사전에 포함됨. 보톡스/필러 브랜드명 발견 시 반드시 equipments에 포함.');
   lines.push('');
+
+  // 카테고리별 장비 목록 명시 (작업 6: subcategory 검증)
+  lines.push('### 카테고리별 장비 목록 (subcategory 분류 기준)');
+  lines.push('');
+  const categoryDescriptions: Record<string, string> = {
+    RF_TIGHTENING: 'RF 타이트닝 장비',
+    HIFU: 'HIFU 장비',
+    RF_MICRONEEDLE: 'RF 마이크로니들 장비',
+    LASER: '레이저 장비',
+    IPL: 'IPL 장비',
+    BODY: '바디 장비',
+    SKINBOOSTER: '스킨부스터',
+    INJECTOR: '약물주입 장비',
+    INJECTABLE: '약제 (보톡스/필러)',
+  };
+  for (const [category, entries] of Object.entries(d.equipment)) {
+    if (category.startsWith('_')) continue;
+    const desc = categoryDescriptions[category] || category;
+    const names = (entries as EquipmentEntry[]).map(e => `${e.ko[0] || e.standard}(${e.standard})`).join(', ');
+    lines.push(`- **${desc}**: ${names}`);
+  }
+  lines.push('');
+  lines.push('장비의 subcategory를 분류할 때 위 목록을 기준으로 하세요. 예: FairTitanium은 RF_TIGHTENING입니다 (LASER 아님).');
+  lines.push('');
+
   lines.push('### 장비 사전 (정규화 테이블)');
   lines.push('');
   lines.push('| 표준명 | 한글 키워드 | 영문 키워드 | 모델/세대 | 카테고리 |');
@@ -86,7 +113,8 @@ export function getEquipmentPromptSection(): string {
       const ko = e.ko.join(', ');
       const en = e.en.filter(x => x !== e.standard).join(', ');
       const gen = e.gen.length > 0 ? e.gen.join(', ') : '-';
-      lines.push(`| ${e.standard} | ${ko} | ${en || '-'} | ${gen} | ${category} |`);
+      const subtypeStr = e.subtype ? ` (${e.subtype})` : '';
+      lines.push(`| ${e.standard} | ${ko} | ${en || '-'} | ${gen} | ${category}${subtypeStr} |`);
     }
   }
 
@@ -203,6 +231,28 @@ export function getEquipmentNormalizationMap(): Map<string, string> {
           map.set(`${ko} ${gen}`.toLowerCase(), `${e.standard} ${gen}`);
         }
       }
+    }
+  }
+
+  return map;
+}
+
+/**
+ * 장비 표준명 → 카테고리 매핑.
+ * INJECTABLE의 subtype도 포함.
+ */
+export function getEquipmentCategoryMap(): Map<string, { category: string; subtype?: string }> {
+  const d = loadDict();
+  const map = new Map<string, { category: string; subtype?: string }>();
+
+  for (const [category, entries] of Object.entries(d.equipment)) {
+    if (category.startsWith('_')) continue;
+    if (!Array.isArray(entries)) continue;
+    for (const e of entries) {
+      map.set(e.standard.toLowerCase(), {
+        category,
+        subtype: e.subtype,
+      });
     }
   }
 

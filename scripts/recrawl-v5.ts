@@ -602,6 +602,79 @@ async function extractTextFromImage(imageBuffer: Buffer, retryCount = 0): Promis
 }
 
 // ============================================================
+// [v5.6] 비급여항목표 전처리 — 비급여 섹션을 텍스트에서 분리하여 끝에 명시적 배치
+// ============================================================
+function extractNongeubyeoSection(allText: string): { mainText: string; nongeubyeoSection: string | null } {
+  const NONGEUBYEO_KEYWORDS = ['비급여항목안내', '비급여항목', '비급여안내', '비급여 진료비', '비급여진료비'];
+  const lines = allText.split('\n');
+  const tableBlocks: string[] = [];
+
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+    const hasNongeubyeoKeyword = NONGEUBYEO_KEYWORDS.some(kw => line.includes(kw));
+
+    if (hasNongeubyeoKeyword) {
+      // 비급여 키워드 발견 → 이후 테이블 행 수집 (최대 500줄 탐색)
+      const block: string[] = [line];
+      let tableStarted = false;
+      let emptyLineCount = 0;
+
+      for (let j = i + 1; j < Math.min(i + 500, lines.length); j++) {
+        const nextLine = lines[j];
+        const isTableRow = nextLine.trim().startsWith('|') && nextLine.includes('|');
+        const isSeparator = /^\|[\s\-|]+\|$/.test(nextLine.trim());
+
+        if (isTableRow || isSeparator) {
+          block.push(nextLine);
+          tableStarted = true;
+          emptyLineCount = 0;
+        } else if (nextLine.trim() === '') {
+          emptyLineCount++;
+          if (tableStarted && emptyLineCount > 2) break; // 테이블 끝
+          block.push(nextLine);
+        } else if (!tableStarted) {
+          block.push(nextLine); // 테이블 시작 전 맥락
+        } else {
+          break; // 테이블 중간에 비테이블 행 → 종료
+        }
+      }
+
+      // 테이블 행이 3줄 이상이면 유효
+      const tableRows = block.filter(l => l.trim().startsWith('|') && l.includes('|'));
+      if (tableRows.length >= 3) {
+        tableBlocks.push(block.join('\n'));
+      }
+    }
+  }
+
+  if (tableBlocks.length === 0) {
+    return { mainText: allText, nongeubyeoSection: null };
+  }
+
+  // 중복 제거: 첫 5줄이 동일하면 중복
+  const uniqueBlocks: string[] = [];
+  for (const block of tableBlocks) {
+    const blockLines = block.split('\n').filter(l => l.trim().startsWith('|')).slice(0, 5).join('|');
+    const isDuplicate = uniqueBlocks.some(existing => {
+      const existingLines = existing.split('\n').filter(l => l.trim().startsWith('|')).slice(0, 5).join('|');
+      return blockLines === existingLines;
+    });
+    if (!isDuplicate) uniqueBlocks.push(block);
+  }
+
+  const nongeubyeoText = uniqueBlocks.join('\n\n');
+  console.log(`  [v5.6] 비급여표 전처리: ${uniqueBlocks.length}개 블록, ${nongeubyeoText.split('\n').filter(l => l.trim().startsWith('|')).length}행`);
+
+  const nongeubyeoSection = `
+========================================
+★★★ 아래는 비급여항목 가격표입니다. 모든 행을 추출하세요. ★★★
+========================================
+${nongeubyeoText}`;
+
+  return { mainText: allText, nongeubyeoSection };
+}
+
+// ============================================================
 // [v5.4] Step 2: 분류/구조화 — 전체 텍스트 → 6-category JSON
 // ============================================================
 async function classifyHospitalData(
@@ -616,10 +689,18 @@ async function classifyHospitalData(
 
   const prompt = buildClassifyPrompt(hospitalName, navMenuText);
 
-  // 100K자 초과 시 앞뒤 유지
-  const truncated = allText.length > 100000
-    ? allText.substring(0, 50000) + '\n\n...(중략)...\n\n' + allText.substring(allText.length - 50000)
-    : allText;
+  // [v5.6] 비급여항목표 전처리: truncation 전에 전체 텍스트에서 비급여 섹션 추출
+  const { mainText: preprocessedText, nongeubyeoSection } = extractNongeubyeoSection(allText);
+
+  // 메인 텍스트만 100K자 truncate (비급여표는 별도 유지)
+  const truncatedMain = preprocessedText.length > 100000
+    ? preprocessedText.substring(0, 50000) + '\n\n...(중략)...\n\n' + preprocessedText.substring(preprocessedText.length - 50000)
+    : preprocessedText;
+
+  // 비급여표를 텍스트 끝에 별도 섹션으로 삽입
+  const truncated = nongeubyeoSection
+    ? truncatedMain + '\n\n' + nongeubyeoSection
+    : truncatedMain;
 
   // parts 구성: 텍스트 + (있으면) 스크린샷 이미지
   const parts: Array<Record<string, unknown>> = [];
@@ -1193,6 +1274,11 @@ const COMMON_PATHS: Record<string, string[]> = {
     '/treatment.php', '/program.php', '/menu.php',
     '/price.php', '/skin', '/lifting', '/laser',
     '/가격', '/비용', '/menu',
+    // [v5.6] 랜딩/이벤트/프로모션 페이지 (이벤트 가격 포함 가능)
+    '/landing', '/landing/', '/special', '/campaign',
+    '/event', '/promotion', '/이벤트', '/프로모션',
+    // 비급여 안내 페이지
+    '/nongeubyeo', '/비급여', '/비급여안내', '/비급여항목',
   ],
 };
 

@@ -22,7 +22,7 @@ export interface SubpageUrl {
 const TEXT_PATTERNS: Record<SubpageType, RegExp> = {
   doctor: /의료진|원장|doctor|about.*소개|인사말|대표.*소개|의사/i,
   treatment:
-    /시술|treatment|program|menu|진료|서비스|클리닉|프로그램|피부|리프팅|레이저|탄력|주름|볼륨|체형|모공|여드름|제모|두피|윤곽|보톡스|필러|procedure/i,
+    /시술|treatment|program|menu|진료|서비스|클리닉|프로그램|피부|리프팅|레이저|탄력|주름|볼륨|체형|모공|여드름|제모|두피|윤곽|보톡스|필러|procedure|이벤트|event|프로모션|promotion|특가|할인|랜딩|landing|비급여|가격/i,
   equipment: /장비|equipment|시설|보유.*장비|첨단|기기/i,
   contact: /contact|문의|오시는.*길|찾아오|상담|예약|위치|map|location|consult/i,
 };
@@ -31,7 +31,7 @@ const TEXT_PATTERNS: Record<SubpageType, RegExp> = {
 const URL_PATH_PATTERNS: Record<SubpageType, RegExp> = {
   doctor: /\/(doctor|about|staff|team|인사말|의료진)(\/|$)/i,
   treatment:
-    /\/(procedure|treatment|program|clinic|시술|진료|skin|lifting|laser|filler|botox|contour|wrinkle|acne|pore|scar|hair|body|scalp|fat|volume|hydration|pigment|tone|sagging|neck|face|eye|nose|forehead|cheek|temple|cellulite|leg|weight|hyperhidrosis|tattoo|removal|redness|vessels|sensitive|stem.?cell|double.?chin)(s?)(\/|$)/i,
+    /\/(procedure|treatment|program|clinic|시술|진료|skin|lifting|laser|filler|botox|contour|wrinkle|acne|pore|scar|hair|body|scalp|fat|volume|hydration|pigment|tone|sagging|neck|face|eye|nose|forehead|cheek|temple|cellulite|leg|weight|hyperhidrosis|tattoo|removal|redness|vessels|sensitive|stem.?cell|double.?chin|landing|special|campaign|event|promotion|이벤트|프로모션|비급여|price|가격)(s?)(\/|$)/i,
   equipment: /\/(equipment|device|장비|시설|기기)(\/|$)/i,
   contact: /\/(contact|consult|map|location|예약|문의|상담)(\/|$)/i,
 };

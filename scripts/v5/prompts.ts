@@ -19,6 +19,13 @@
  * - 규칙사전(R1~R8) + 데이터사전(JSON) 동적 주입
  * - 하드코딩 장비 정규화 테이블 → dictionary-loader 동적 로드
  * - unregistered_equipment, unregistered_treatments, raw_price_texts 필드 추가
+ *
+ * v5.6 핵심 변경:
+ * - 가격 스키마 v2: regular_price/event_price/min/max/quantity/unit/source
+ * - 비급여항목표 전수 추출 규칙 + 전처리 분리 섹션
+ * - unregistered 필드 강화: source: website|academic_paper
+ * - SNS 감지 보강: instagram/youtube/blog URL 패턴
+ * - 장비 subcategory 검증: 카테고리별 장비 목록 명시
  */
 import {
   getEquipmentPromptSection,
@@ -228,19 +235,32 @@ ${navSection}
 
 ⚠️ 네비게이션 메뉴 텍스트는 "UI 요소"가 아니라 "콘텐츠"다. 메뉴에 나열된 모든 장비/시술을 빠짐없이 추출하라.
 
-### 4. treatments (시술 정보)
+### 4. treatments (시술 정보) — 가격 스키마 v2
 각 시술 항목별:
-- name: 시술명 (정규화: 공백 통일)
-- price: 정가 (숫자, 원 단위)
-- price_display: 원문 표기 ("15만원", "150,000원" 등)
+- name: 시술명 (정규화: 공백 통일, 원문 그대로)
+- regular_price: 정가 (숫자, 원 단위). 비급여표 가격 또는 취소선 가격.
+- event_price: 이벤트가/할인가 (숫자, 원 단위). 실제 결제가.
+- min_price: 가격 범위일 때 최소가 (예: 보톡스 30,000~180,000의 30,000)
+- max_price: 가격 범위일 때 최대가
+- price_type: "regular" | "event" | "discount"
+- quantity: 수량 (300샷이면 300, 없으면 null)
+- unit: "shot" | "cc" | "unit" | "vial" | "syringe" | "session" | "area" | "kJ" | null
+- price_per_unit: price ÷ quantity (계산 가능하면)
+- event_period: 이벤트 기간 ("2월 한정" 등, 없으면 null)
+- includes: 패키지 구성 항목 (배열)
 - is_package: boolean (패키지/세트?)
-- package_detail: (패키지인 경우)
-  - included_treatments: 포함 개별 시술 (배열)
-  - estimated_unit_prices: 추정 개별 단가 (배열, 불가능하면 null)
-  - estimation_method: 추정 근거 설명
+- is_addon: boolean ("추가시" 가격 여부)
+- source: "website" | "nongeubyeo" | "landing" | "academic"
+- category: 아래 분류 기준 참고
+- price_display: 원문 표기 ("15만원", "150,000원" 등)
 - session_info: 회차 정보 ("1회", "10회 기준" 등, 있으면)
 - body_part: 시술 부위 (있으면)
-- category: 아래 분류 기준 참고
+
+source 필드 설명:
+- "website": 시술 소개/메뉴 페이지의 가격
+- "nongeubyeo": 비급여항목안내 테이블의 가격 (병원 공식 정가)
+- "landing": 이벤트/프로모션 랜딩페이지의 가격
+- "academic": 학술논문에서만 언급된 가격 (참고용)
 
 > 시술 분류 기준:
 >   - "~클리닉"은 **카테고리**이지 시술이 아님 (예: "탈모클리닉" → 카테고리)
@@ -248,9 +268,10 @@ ${navSection}
 >   - 복합 시술 (예: "울쎄라+써마지") → is_package: true로 처리
 
 > 가격 추출 주의:
->   - "~부터", "~이상" → price에 숫자, price_note에 "최소가격" 표시
->   - "상담 후 결정", "전화문의" → price: null, price_display: "상담필요"
->   - VAT 포함/별도 표기 → price_note에 기록
+>   - "~부터", "~이상" → min_price에 숫자
+>   - "상담 후 결정", "전화문의" → 가격 필드 모두 null, price_display: "상담필요"
+>   - VAT 포함/별도 표기 → price_display에 기록
+>   - 정가와 이벤트가가 모두 보이면 반드시 둘 다 기록 (이벤트가만 넣고 정가를 버리지 마세요)
 
 ### 5. events (이벤트/할인/프로모션)
 - title: 이벤트명
@@ -318,6 +339,73 @@ ${getPricePromptSection()}
 
 ${getExcludePromptSection()}
 
+## ★ 비급여항목표 추출 (절대 건너뛰지 마세요) ★
+
+크롤링 텍스트에 "비급여", "비급여항목", "비급여안내", "비급여 진료비" 키워드와
+함께 테이블(마크다운 |...|...| 형태 또는 명칭-비용 나열)이 있으면:
+
+1. 테이블의 모든 행을 빠짐없이 추출하세요
+2. 각 행 형태: { name: "시술명", regular_price: 금액, price_type: "regular", source: "nongeubyeo" }
+3. 가격 범위 "30,000~180,000" → min_price: 30000, max_price: 180000
+4. 동일 테이블이 여러 페이지에 중복이면 1벌만 추출
+5. 비급여표는 병원의 공식 정가이므로 가장 신뢰도가 높습니다
+
+비급여표가 50페이지 텍스트 중간에 있어도 반드시 찾아서 전수 추출하세요.
+이 테이블 하나가 보통 80~100건의 가격 데이터를 포함합니다.
+
+## 이벤트 가격 추출 규칙
+
+1. 취소선 가격 또는 큰 숫자 → 작은 숫자 패턴:
+   - 큰 숫자 = regular_price (정가)
+   - 작은 숫자 = event_price (이벤트가)
+   - price_type = "event"
+   하나의 시술에 정가와 이벤트가 모두 보이면 반드시 둘 다 기록하세요.
+   이벤트가만 넣고 정가를 버리지 마세요.
+
+2. 수량+단위 파싱:
+   "울쎄라 300샷 79만원" → quantity: 300, unit: "shot"
+   "리쥬란 2CC 25만원" → quantity: 2, unit: "cc"
+   "티타늄 50KJ" → quantity: 50, unit: "kJ"
+   price_per_unit = price ÷ quantity
+
+3. 패키지 구성 분리:
+   "텐텐리프팅 1500 = 텐트리플 300샷 + 텐써마 600샷"
+   → includes: ["텐트리플 300샷", "텐써마 600샷"], is_package: true
+
+4. "추가시" 가격:
+   "★써마지FLX ONLY★ 쥬베룩물광 2.5cc 220,000원"
+   → is_addon: true
+
+## 미등록 장비/시술 처리 (필수)
+
+[장비 사전]에 없는 장비나 약제를 발견하면:
+
+1. medical_devices 배열에 정상 포함 (절대 제외하지 마세요)
+2. unregistered_equipment 배열에도 추가:
+{
+  "name": "영문명 또는 원문",
+  "korean_name": "한글명",
+  "suggested_category": "RF_TIGHTENING|HIFU|LASER|SKINBOOSTER|INJECTABLE|DEVICE",
+  "source": "website|academic_paper",
+  "reason": "판단 근거 한줄"
+}
+
+source 구분:
+- "website": 시술 메뉴, 이벤트, 가격표, 장비 소개에 있는 것
+- "academic_paper": 학술활동, 논문, 연구발표에서만 언급된 것 (IFU, CPMHA 등)
+
+시술도 동일: [시술 키워드]에 없는 시술명 → unregistered_treatments에 추가.
+사전에 없다고 버리지 마세요. 반드시 양쪽 모두에 넣으세요.
+
+## SNS 채널 추출
+
+아래 URL 패턴이 보이면 해당 필드에 기록하세요:
+- instagram.com/계정명 → instagram 필드
+- youtube.com/ 또는 youtu.be/ → youtube 필드
+- blog.naver.com/ → blog 필드
+- "유튜브 바로보기" 같은 텍스트 + youtube 링크도 포함
+- [![alt](img)](URL) 패턴의 URL도 반드시 확인
+
 ## 출력 규칙
 1. 유효한 JSON만 출력. 설명 텍스트 없음.
 2. 텍스트 근거 없는 정보 추가 금지.
@@ -348,8 +436,8 @@ ${getExcludePromptSection()}
     "website_url": string,
     "operating_hours": {...} | null
   },
-  "unregistered_equipment": [{"name": "사전에 없는 장비명 원문", "source": "text|image|ocr", "context": "발견 문맥 (짧게)"}],
-  "unregistered_treatments": [{"name": "사전에 없는 시술명 원문", "source": "text|image|ocr", "context": "발견 문맥 (짧게)"}],
+  "unregistered_equipment": [{"name": "영문명 또는 원문", "korean_name": "한글명", "suggested_category": "RF_TIGHTENING|HIFU|LASER|SKINBOOSTER|INJECTABLE|DEVICE", "source": "website|academic_paper", "reason": "판단 근거 한줄"}],
+  "unregistered_treatments": [{"name": "사전에 없는 시술명 원문", "source": "website|academic_paper", "context": "발견 문맥 (짧게)"}],
   "raw_price_texts": ["파싱 실패한 가격 원문 텍스트"],
   "extraction_summary": {
     "total_doctors": number,
