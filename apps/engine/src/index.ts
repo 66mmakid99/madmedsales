@@ -7,6 +7,7 @@ import publicRoute from './routes/public';
 import reportsRoute from './routes/reports';
 import costsRoute from './routes/costs';
 import networksRoute from './routes/networks';
+import crmRoute from './routes/crm/index';
 import emailsRoute from './routes/emails';
 import sequencesRoute from './routes/sequences';
 import webhooksRoute from './routes/webhooks';
@@ -36,7 +37,12 @@ app.use('*', cors({
     if (origin && new URL(origin).hostname === 'localhost') {
       return origin;
     }
-    const allowed = [c.env.ADMIN_URL, c.env.WEB_URL];
+    const allowed = [
+      c.env.ADMIN_URL,
+      c.env.WEB_URL,
+      'https://admin.madmedsales.com',
+      'https://madmedsales.pages.dev',
+    ];
     return allowed.includes(origin) ? origin : '';
   },
   allowMethods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
@@ -73,6 +79,8 @@ app.route('/api/reports', reportsRoute);
 app.route('/api/costs', costsRoute);
 // Network verification
 app.route('/api/networks', networksRoute);
+// CRM
+app.route('/api/crm', crmRoute);
 
 export default {
   fetch: app.fetch,

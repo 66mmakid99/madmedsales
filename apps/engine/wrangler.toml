@@ -1,6 +1,7 @@
 name = "madmedsales-engine"
 main = "src/index.ts"
 compatibility_date = "2024-12-01"
+workers_dev = true
 
 # Custom domain
 routes = [
@@ -17,14 +18,14 @@ RESEND_API_KEY = "re_xxxxx"
 RESEND_WEBHOOK_SECRET = "whsec_xxxxx"
 KAKAO_API_KEY = "xxxxx"
 KAKAO_SENDER_KEY = "xxxxx"
-ADMIN_URL = "http://localhost:5174"
+ADMIN_URL = "https://madmedsales.pages.dev"
 WEB_URL = "http://localhost:4321"
 
 # KV (설정 캐시용)
 [[kv_namespaces]]
 binding = "SETTINGS_KV"
-id = "xxx"
+id = "ac81b46223de457ca7431e625def6bf2"
 
-# Cron Triggers
-[triggers]
-crons = ["*/5 12-19 * * 1-5", "0 * * * *"]
+# Cron Triggers (disabled - Free plan 5 cron limit exceeded)
+# [triggers]
+# crons = ["*/5 12-19 * * 1-5", "0 * * * *"]

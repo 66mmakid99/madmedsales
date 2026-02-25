@@ -538,3 +538,136 @@ export interface NetworkVerificationLog {
   detail: Record<string, unknown>;
   created_at: string;
 }
+
+// ===== CRM =====
+
+export const TENANT_PLANS = ['basic', 'pro', 'enterprise'] as const;
+export type TenantPlan = (typeof TENANT_PLANS)[number];
+
+export const USER_ROLES = ['admin', 'manager', 'member'] as const;
+export type UserRole = (typeof USER_ROLES)[number];
+
+export const CUSTOMER_GRADES = ['VIP', 'A', 'B', 'C'] as const;
+export type CustomerGrade = (typeof CUSTOMER_GRADES)[number];
+
+export const HEALTH_STATUSES = ['green', 'yellow', 'orange', 'red'] as const;
+export type HealthStatus = (typeof HEALTH_STATUSES)[number];
+
+export const EQUIPMENT_STATUSES = ['active', 'inactive', 'maintenance', 'sold', 'disposed'] as const;
+export type EquipmentStatus = (typeof EQUIPMENT_STATUSES)[number];
+
+export const CONTACT_PREFERRED_CHANNELS = ['kakao', 'phone', 'email', 'visit'] as const;
+export type ContactPreferredChannel = (typeof CONTACT_PREFERRED_CHANNELS)[number];
+
+export interface CrmConsumableSpec {
+  name: string;
+  cycle_days: number | null;
+  price: number;
+}
+
+export interface Tenant {
+  id: string;
+  name: string;
+  domain: string | null;
+  logo_url: string | null;
+  plan: TenantPlan;
+  admin_name: string | null;
+  admin_email: string | null;
+  admin_phone: string | null;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface TenantUser {
+  id: string;
+  tenant_id: string;
+  name: string;
+  email: string;
+  role: UserRole;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface CrmFranchise {
+  id: string;
+  tenant_id: string;
+  name: string;
+  total_branches: number | null;
+  equipped_branches: number;
+  notes: string | null;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface CrmProduct {
+  id: string;
+  tenant_id: string;
+  name: string;
+  model_variants: string[] | null;
+  price_range: string | null;
+  warranty_months: number;
+  consumables: CrmConsumableSpec[] | null;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface CrmHospital {
+  id: string;
+  tenant_id: string;
+  name: string;
+  branch_name: string | null;
+  address: string | null;
+  region: string | null;
+  district: string | null;
+  phone: string | null;
+  email: string | null;
+  website: string | null;
+  kakao_channel: string | null;
+  customer_grade: CustomerGrade;
+  health_status: HealthStatus;
+  health_score: number;
+  franchise_id: string | null;
+  assigned_to: string | null;
+  report_enabled: boolean;
+  report_tier: string;
+  hospital_ref_id: string | null;
+  tags: string[] | null;
+  notes: string | null;
+  last_contacted_at: string | null;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface CrmContact {
+  id: string;
+  hospital_id: string;
+  tenant_id: string;
+  name: string;
+  role: string | null;
+  is_primary: boolean;
+  phone: string | null;
+  email: string | null;
+  kakao_id: string | null;
+  interests: string[] | null;
+  personality_notes: string | null;
+  preferred_contact: ContactPreferredChannel;
+  birthday: string | null;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface CrmEquipment {
+  id: string;
+  hospital_id: string;
+  tenant_id: string;
+  product_id: string | null;
+  serial_number: string | null;
+  model_variant: string | null;
+  delivered_at: string | null;
+  warranty_end: string | null;
+  firmware_version: string | null;
+  status: EquipmentStatus;
+  condition: string;
+  created_at: string;
+  updated_at: string;
+}

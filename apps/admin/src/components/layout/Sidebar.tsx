@@ -27,6 +27,17 @@ const NAV_GROUPS: NavGroup[] = [
     ],
   },
   {
+    label: 'CRM',
+    items: [
+      { to: '/crm', label: '고객 대시보드', icon: '🏥' },
+      { to: '/crm/hospitals', label: '병원 관리', icon: '🏢' },
+      { to: '/crm/products', label: '제품 관리', icon: '📦' },
+      { to: '/crm/equipment', label: '장비/소모품', icon: '🔧', disabled: true },
+      { to: '/crm/activities', label: '활동 기록', icon: '📝', disabled: true },
+      { to: '/crm/reports', label: 'MADMEDCHECK 리포트', icon: '📋', disabled: true },
+    ],
+  },
+  {
     label: '영업',
     items: [
       { to: '/leads', label: '리드', icon: '👤', disabled: true },
@@ -61,14 +72,13 @@ function SidebarItem({ item }: { item: NavItem }): ReactNode {
 
   if (item.disabled) {
     return (
-      <button
-        onClick={() => navigate(item.to)}
-        className="flex w-full items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium text-slate-500 transition-colors hover:bg-slate-800"
+      <span
+        className="flex w-full items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium text-slate-500 cursor-not-allowed opacity-60"
       >
         <span className="text-base">{item.icon}</span>
         <span>{item.label}</span>
-        <span className="ml-auto text-[10px]">🔒</span>
-      </button>
+        <span className="ml-auto rounded bg-slate-700 px-1.5 py-0.5 text-[9px] text-slate-400">준비중</span>
+      </span>
     );
   }
 
