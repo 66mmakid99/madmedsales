@@ -97,6 +97,81 @@ const EMPTY_RESULT: AnalysisResult = { equipments: [], treatments: [], doctors: 
 // ============================================================
 interface CrawlTarget { no: number; name: string; region: string; url: string; source: string; }
 
+// ============================================================
+// [v5.5] 위치명 검증 + 프랜차이즈 감지 (결함 6)
+// ============================================================
+const SIDO_SHORT: Record<string, string> = {
+  '서울특별시': '서울', '부산광역시': '부산', '대구광역시': '대구', '인천광역시': '인천',
+  '광주광역시': '광주', '대전광역시': '대전', '울산광역시': '울산', '세종특별자치시': '세종',
+  '경기도': '경기', '강원특별자치도': '강원', '강원도': '강원',
+  '충청북도': '충북', '충청남도': '충남', '전라북도': '전북', '전북특별자치도': '전북',
+  '전라남도': '전남', '경상북도': '경북', '경상남도': '경남', '제주특별자치도': '제주',
+};
+
+interface ResolvedRegion {
+  region: string;           // 최종 위치명 (예: "안산", "강남")
+  source: 'address' | 'db' | 'url';
+  mismatch: boolean;        // DB 등록 region과 불일치 여부
+  dbRegion: string;         // DB 등록 region
+  crawledAddress?: string;  // Gemini 추출 주소
+  franchise?: { domain: string; branch: string; totalBranches?: number };
+}
+
+function resolveRegionFromAddress(
+  fullAddress: string | undefined | null,
+  sido: string | undefined | null,
+  sigungu: string | undefined | null,
+  dbRegion: string,
+  url: string,
+): ResolvedRegion {
+  const base: ResolvedRegion = { region: dbRegion, source: 'db', mismatch: false, dbRegion, crawledAddress: fullAddress || undefined };
+
+  // 1순위: 주소에서 시군구 추출
+  if (fullAddress) {
+    // "경기도 안산시 단원구 ..." → "안산"
+    // "서울특별시 강남구 ..." → "강남"
+    const sigunguName = sigungu || extractSigungu(fullAddress);
+    if (sigunguName) {
+      const short = sigunguName.replace(/시$|구$|군$/, '').trim();
+      if (short && short !== dbRegion) {
+        base.mismatch = true;
+      }
+      base.region = short || dbRegion;
+      base.source = 'address';
+    } else if (sido) {
+      const short = SIDO_SHORT[sido] || sido.replace(/특별시$|광역시$|특별자치시$|도$|특별자치도$/, '').trim();
+      if (short && short !== dbRegion) base.mismatch = true;
+      base.region = short || dbRegion;
+      base.source = 'address';
+    }
+  }
+
+  // 프랜차이즈 감지: 서브도메인 패턴 (xx.domain.com)
+  try {
+    const hostname = new URL(url).hostname;
+    const parts = hostname.split('.');
+    if (parts.length >= 3 && parts[0].length <= 4 && /^[a-z]{2,4}$/.test(parts[0])) {
+      const mainDomain = parts.slice(1).join('.');
+      base.franchise = { domain: mainDomain, branch: parts[0] };
+    }
+  } catch { /* ignore */ }
+
+  return base;
+}
+
+function extractSigungu(fullAddress: string): string | null {
+  // "서울특별시 강남구 도산대로 107" → "강남구"
+  // "경기도 안산시 단원구 고잔로 76" → "안산시"
+  const match = fullAddress.match(/(?:서울|부산|대구|인천|광주|대전|울산|세종|경기|강원|충[청남북]|전[라남북]|경[상남북]|제주)[^\s]*\s+(\S+[시구군])/);
+  if (match) return match[1];
+  // fallback: 두 번째 단어가 시/구/군
+  const words = fullAddress.split(/\s+/);
+  for (const w of words.slice(1)) {
+    if (/[시구군]$/.test(w)) return w;
+  }
+  return null;
+}
+
 function buildTargets(): CrawlTarget[] {
   const targetsPath = path.resolve(__dirname, 'data', 'step2-crawl-targets.json');
   const existing: CrawlTarget[] = JSON.parse(fs.readFileSync(targetsPath, 'utf-8'));
@@ -2010,8 +2085,9 @@ async function generateReport(params: {
   v4Counts: { equip: number; treat: number; doctors: number; events: number };
   elapsedMs: number;
   torrResult?: TorrDetectionResult;
+  resolvedRegion?: ResolvedRegion;
 }): Promise<void> {
-  const { hospitalId, hospitalName, region, url, pages, analysis, ocrResults, geminiCalls, credits, coverageOverall, status, v4Counts, elapsedMs, torrResult } = params;
+  const { hospitalId, hospitalName, region, url, pages, analysis, ocrResults, geminiCalls, credits, coverageOverall, status, v4Counts, elapsedMs, torrResult, resolvedRegion } = params;
   const v54 = analysis._v54;
   const ci = v54?.contact_info;
   const now = new Date().toISOString().replace('T', ' ').substring(0, 16);
@@ -2061,12 +2137,20 @@ async function generateReport(params: {
   // SNS 채널 카운트
   const snsChannels = [ci?.instagram, ci?.youtube, ci?.blog, ci?.facebook, ci?.kakao_channel, ci?.naver_booking, ci?.naver_place].filter(Boolean);
 
+  // [v5.5] 위치명 경고 + 프랜차이즈 정보
+  const regionWarning = resolvedRegion?.mismatch
+    ? `\n| ⚠️ 위치 불일치 | DB="${resolvedRegion.dbRegion}" → 주소="${resolvedRegion.region}" (${resolvedRegion.crawledAddress || 'N/A'}) |`
+    : '';
+  const franchiseInfo = resolvedRegion?.franchise
+    ? `\n| 프랜차이즈 | ${resolvedRegion.franchise.domain} [${resolvedRegion.franchise.branch}점] |`
+    : '';
+
   let report = `# 크롤링 보고서: ${hospitalName}
 
 | 항목 | 결과 |
 |------|------|
 | 병원명 | ${hospitalName} (${region}) |
-| URL | ${url} |
+| URL | ${url} |${regionWarning}${franchiseInfo}
 | 실행 버전 | v5.5 |
 | 실행 일시 | ${now} |
 | 총 소요 시간 | ${elapsed} |
@@ -2284,12 +2368,28 @@ ${(() => {
     const emptyLine = (): Paragraph => new Paragraph({ children: [] });
 
     // ── 요약 테이블 ──
+    // [v5.5] 위치/프랜차이즈 경고 행
+    const regionRows: TableRow[] = [];
+    if (resolvedRegion?.mismatch) {
+      regionRows.push(makeRow([
+        '위치 불일치',
+        `DB="${resolvedRegion.dbRegion}" → 주소="${resolvedRegion.region}" (${resolvedRegion.crawledAddress || 'N/A'})`,
+      ], regionRows.length % 2 === 1));
+    }
+    if (resolvedRegion?.franchise) {
+      regionRows.push(makeRow([
+        '프랜차이즈',
+        `${resolvedRegion.franchise.domain} [${resolvedRegion.franchise.branch}점]`,
+      ], regionRows.length % 2 === 1));
+    }
+
     const summaryTable = new Table({
       width: { size: 100, type: WidthType.PERCENTAGE },
       rows: [
         makeHeaderRow(['항목', '결과']),
         makeRow(['병원명', `${hospitalName} (${region})`]),
         makeRow(['URL', url], true),
+        ...regionRows,
         makeRow(['실행 버전', 'v5.5']),
         makeRow(['실행 일시', now], true),
         makeRow(['소요 시간', elapsed]),
@@ -2950,6 +3050,7 @@ async function main(): Promise<void> {
     let geminiCalls = 0;
     const ocrResults: OcrResult[] = [];
     let analysis: AnalysisResult & { _v54?: HospitalAnalysisV54 };
+    let resolvedRegion: ResolvedRegion | undefined;
 
     if (!skipGemini) {
       // ── Step 1: OCR (이미지 → 텍스트) ──
@@ -3014,7 +3115,7 @@ async function main(): Promise<void> {
         console.log(`    Step 2 결과: 의사 ${summary54?.total_doctors || 0} | 학술 ${summary54?.total_academic || 0} | 의료기기 ${totalMedDev} (장비${devCount}+주사${injCount}) | 시술 ${summary54?.total_treatments || 0} | 이벤트 ${summary54?.total_events || 0} | 카테고리 ${summary54?.total_categories || 0}`);
         console.log(`    가격 확보율: ${summary54?.price_available_ratio || 'N/A'}`);
 
-        // [v5.5] 병원명 불일치 감지 (Defect 7)
+        // [v5.5] 병원명 불일치 감지 (Defect 7) + 위치명 검증 (Defect 6)
         const crawledName = v54Result.hospital_name;
         if (crawledName) {
           const dbName = t.name.replace(/\([^)]*\)/g, '').trim();
@@ -3028,6 +3129,23 @@ async function main(): Promise<void> {
             console.log(`    → DB URL 확인 필요: ${t.url}`);
           }
         }
+
+        // [v5.5] 위치명 검증 (Defect 6): 주소 기반 region 우선
+        resolvedRegion = resolveRegionFromAddress(
+          v54Result.contact_info?.address?.full_address,
+          v54Result.contact_info?.address?.sido,
+          v54Result.contact_info?.address?.sigungu,
+          t.region,
+          t.url,
+        );
+        if (resolvedRegion.mismatch) {
+          console.log(`  ⚠️ [v5.5] 위치명 불일치: DB="${t.region}" → 주소 기반="${resolvedRegion.region}" (${resolvedRegion.crawledAddress})`);
+        }
+        if (resolvedRegion.franchise) {
+          console.log(`  🏢 [v5.5] 프랜차이즈 감지: ${resolvedRegion.franchise.domain} [${resolvedRegion.franchise.branch}점]`);
+        }
+        // region을 주소 기반으로 교체 (보고서에 반영)
+        t.region = resolvedRegion.region;
 
         // [v5.5] 연락처 코드 레벨 패턴 매칭 → Gemini 결과 보완
         const codeContacts = extractContactsFromText(allText);
@@ -3616,6 +3734,7 @@ async function main(): Promise<void> {
           coverageOverall, status, v4Counts,
           elapsedMs: Date.now() - hospitalStartTime,
           torrResult,
+          resolvedRegion,
         });
       } catch (err) {
         console.log(`  ⚠️ 보고서 생성 실패: ${err}`);
