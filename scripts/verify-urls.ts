@@ -142,7 +142,9 @@ function detectFranchise(url: string): { domain: string; branch: string } | null
   try {
     const hostname = new URL(url).hostname;
     const parts = hostname.split('.');
-    if (parts.length >= 3 && parts[0].length <= 4 && /^[a-z]{2,4}$/.test(parts[0])) {
+    // www, m, mobile 등 일반 서브도메인은 프랜차이즈가 아님
+    const COMMON_SUBS = new Set(['www', 'm', 'mobile', 'app', 'api', 'mail', 'ftp', 'blog']);
+    if (parts.length >= 3 && parts[0].length <= 4 && /^[a-z]{2,4}$/.test(parts[0]) && !COMMON_SUBS.has(parts[0])) {
       return { domain: parts.slice(1).join('.'), branch: parts[0] };
     }
   } catch { /* ignore */ }
@@ -162,11 +164,24 @@ function namesMatch(dbName: string, crawledName: string | null): boolean {
 // ============================================================
 // 위치명 비교 (유연)
 // ============================================================
-function regionsMatch(dbRegion: string | null, crawledRegion: string | null): boolean {
+function regionsMatch(dbRegion: string | null, crawledRegion: string | null, crawledAddress: string | null): boolean {
   if (!dbRegion || !crawledRegion) return true; // 비교 불가 → 일단 OK
   const a = dbRegion.replace(/[시구군도]$/, '').trim();
   const b = crawledRegion.replace(/[시구군도]$/, '').trim();
-  return a === b || b.includes(a) || a.includes(b);
+  if (a === b || b.includes(a) || a.includes(b)) return true;
+
+  // DB가 시도 레벨(서울, 부산 등)이면 주소의 시도와 비교
+  if (crawledAddress) {
+    const sidoValues = Object.values(SIDO_SHORT);
+    if (sidoValues.includes(a)) {
+      for (const [full, short] of Object.entries(SIDO_SHORT)) {
+        if (short === a && (crawledAddress.includes(full) || crawledAddress.startsWith(a))) return true;
+      }
+      // "서울시" 같은 축약형도 허용
+      if (crawledAddress.includes(a + '시') || crawledAddress.includes(a + '특별시') || crawledAddress.includes(a + '광역시')) return true;
+    }
+  }
+  return false;
 }
 
 // ============================================================
@@ -252,7 +267,7 @@ async function main(): Promise<void> {
         result.crawledRegion = result.crawledAddress ? addressToRegion(result.crawledAddress) : null;
 
         result.nameMatch = namesMatch(h.name, result.crawledTitle);
-        result.regionMatch = regionsMatch(h.region, result.crawledRegion);
+        result.regionMatch = regionsMatch(h.region, result.crawledRegion, result.crawledAddress);
 
         if (result.nameMatch && result.regionMatch) {
           result.status = 'ok';

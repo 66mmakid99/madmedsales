@@ -150,7 +150,8 @@ function resolveRegionFromAddress(
   try {
     const hostname = new URL(url).hostname;
     const parts = hostname.split('.');
-    if (parts.length >= 3 && parts[0].length <= 4 && /^[a-z]{2,4}$/.test(parts[0])) {
+    const COMMON_SUBS = new Set(['www', 'm', 'mobile', 'app', 'api', 'mail', 'ftp', 'blog']);
+    if (parts.length >= 3 && parts[0].length <= 4 && /^[a-z]{2,4}$/.test(parts[0]) && !COMMON_SUBS.has(parts[0])) {
       const mainDomain = parts.slice(1).join('.');
       base.franchise = { domain: mainDomain, branch: parts[0] };
     }
