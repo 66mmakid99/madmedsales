@@ -1,7 +1,10 @@
 /**
  * v5.5 TORR RF 전용 감지 모듈
  * Gemini 분류와 독립으로, 크롤링 전체 텍스트에서 TORR RF 키워드를 직접 검색
+ *
+ * v5.5: 키워드를 dictionary-loader에서 동적 로드
  */
+import { getTorrKeywords } from '../crawler/dictionary-loader.js';
 
 export interface TorrEvidence {
   keyword: string;
@@ -17,21 +20,41 @@ export interface TorrDetectionResult {
   confidence: 'high' | 'medium' | 'low';
 }
 
-// TORR RF 키워드 (대소문자 무관 매칭)
-const TORR_KEYWORDS: Array<{ pattern: RegExp; product: string }> = [
-  { pattern: /토르\s*RF/gi, product: 'TORR RF' },
-  { pattern: /TORR\s*RF/gi, product: 'TORR RF' },
-  { pattern: /토르\s*리프팅/gi, product: 'TORR RF' },
-  { pattern: /토르\s*엔드/gi, product: 'TORR END' },
-  { pattern: /토르엔드/gi, product: 'TORR END' },
-  { pattern: /토르쎄라/gi, product: 'TORR RF' },
-  { pattern: /TORR\s*Comfort/gi, product: 'TORR Comfort Dual' },
-  { pattern: /토르\s*컴포트/gi, product: 'TORR Comfort Dual' },
-  { pattern: /컴포트\s*듀얼/gi, product: 'TORR Comfort Dual' },
-  { pattern: /MPR\s*리프팅/gi, product: 'TORR RF' },
-  { pattern: /토로이달/gi, product: 'TORR RF' },
-  { pattern: /Toroidal/gi, product: 'TORR RF' },
-];
+// TORR RF 키워드 — dictionary에서 동적 로드 + 추가 패턴
+function buildTorrPatterns(): Array<{ pattern: RegExp; product: string }> {
+  const dictKeywords = getTorrKeywords();
+  const patterns: Array<{ pattern: RegExp; product: string }> = [];
+
+  // 사전 키워드에서 RegExp 생성
+  for (const kw of dictKeywords) {
+    const escaped = kw.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/\s+/g, '\\s*');
+    patterns.push({ pattern: new RegExp(escaped, 'gi'), product: 'TORR RF' });
+  }
+
+  // 사전에 없는 추가 패턴 (복합 제품명)
+  const extraPatterns: Array<{ pattern: RegExp; product: string }> = [
+    { pattern: /토르\s*엔드/gi, product: 'TORR END' },
+    { pattern: /토르엔드/gi, product: 'TORR END' },
+    { pattern: /토르쎄라/gi, product: 'TORR RF' },
+    { pattern: /TORR\s*Comfort/gi, product: 'TORR Comfort Dual' },
+    { pattern: /토르\s*컴포트/gi, product: 'TORR Comfort Dual' },
+    { pattern: /컴포트\s*듀얼/gi, product: 'TORR Comfort Dual' },
+    { pattern: /Toroidal/gi, product: 'TORR RF' },
+  ];
+
+  // 중복 방지: 사전에서 이미 커버된 패턴은 제외
+  for (const extra of extraPatterns) {
+    const source = extra.pattern.source.toLowerCase();
+    const isDuplicate = patterns.some(p => p.pattern.source.toLowerCase() === source);
+    if (!isDuplicate) {
+      patterns.push(extra);
+    }
+  }
+
+  return patterns;
+}
+
+const TORR_KEYWORDS = buildTorrPatterns();
 
 // 오탐 제외
 const TORR_EXCLUDE: RegExp[] = [

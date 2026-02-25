@@ -13,6 +13,7 @@ import { createLogger } from '../utils/logger.js';
 import { logApiUsage } from '../utils/usage-logger.js';
 import { getAccessToken } from '../analysis/gemini-auth.js';
 import { getGeminiModel, getGeminiEndpoint } from '../utils/gemini-model.js';
+import { getEquipmentBrandList } from './dictionary-loader.js';
 
 const log = createLogger('screenshot-ocr');
 
@@ -52,8 +53,10 @@ const PAGE_TIMEOUT = 30_000;
 const POPUP_WAIT = 2_000;
 const MAX_SCREENSHOT_BYTES = 10 * 1024 * 1024; // 10 MB per screenshot
 
-// v2.0 - 2026-02-22 - comprehensive extraction, dual classification, price focus
-const SCREENSHOT_PROMPT = `당신은 한국 피부과/성형외과 웹사이트의 스크린샷을 분석하는 전문가입니다.
+// v3.0 - 2026-02-26 - 데이터 사전 동적 로드, unregistered 필드 추가
+function buildScreenshotPrompt(): string {
+  const brandList = getEquipmentBrandList();
+  return `당신은 한국 피부과/성형외과 웹사이트의 스크린샷을 분석하는 전문가입니다.
 이 스크린샷에서 아래 정보를 최대한 빠짐없이 추출하세요.
 
 1. **장비 (equipments)**: 페이지에 보이는 모든 의료 장비명.
@@ -73,15 +76,13 @@ const SCREENSHOT_PROMPT = `당신은 한국 피부과/성형외과 웹사이트�
 
 6. **이벤트/프로모션**: 현재 진행 중인 이벤트, 할인, 패키지
 
-## 장비 이중 분류 규칙 (최우선 적용)
+## 장비 이중 분류 규칙 (R1-1, 최우선 적용)
 한국 피부과에서는 "장비명 = 시술명"입니다. 아래 브랜드명이 보이면 반드시 equipments에 포함:
-써마지/Thermage/써마지FLX, 울쎄라/Ulthera, 인모드/Inmode, 슈링크/Shurink, 튠페이스,
-텐써마, 텐쎄라, 올리지오/Oligio, 리프테라, 포텐자/Potenza, 소프웨이브, 볼뉴머,
-울핏, 더블로, 리니어지, 리니어펌, 티타늄, 온다/Onda, 세르프/CERP, 시크릿RF,
-엑셀V/ExcelV, 피코슈어/PicoSure, 피코웨이/PicoWay, 레블라이트, 프락셀/Fraxel,
-클라리티/Clarity, 젠틀맥스/GentleMax, 쿨스컬프팅, 바넥스, 엠스컬프트, TORR, 스카젠
+${brandList}
 
-JSON 응답:
+★ 위 목록에 없는 장비도 발견하면 반드시 추출. 절대 버리지 마라.
+
+JSON 응답:`;
 {
   "equipments": [{"equipment_name":"","equipment_category":"rf|hifu|laser|booster|body|lifting|other","manufacturer":""}],
   "treatments": [{"treatment_name":"","treatment_category":"","price":null,"price_event":null}]
@@ -94,6 +95,9 @@ JSON 응답:
 - 해당 정보 없으면 빈 배열
 - 한 글자라도 놓치지 마세요. 이미지 안의 한글 텍스트를 정확하게 읽는 것이 핵심입니다.
 - JSON만 응답`;
+}
+
+const SCREENSHOT_PROMPT = buildScreenshotPrompt();
 
 // ─── Browser Management ───────────────────────────────────────────────────
 

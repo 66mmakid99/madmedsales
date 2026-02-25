@@ -1,0 +1,2114 @@
+{
+  "hospital_name": "바노바기피부과",
+  "doctors": [
+    {
+      "name": "반 재 용",
+      "title": "피부과 전문의",
+      "specialty": null,
+      "career": [
+        "태국 왓슨스 3년 연속 마스크팩 1위",
+        "바노바기 코스메틱 개발",
+        "세계 10여 개 국 코스메틱 수출",
+        "치료 후 효과적인 데일리 케어를 위한 기능성 화장품 개발"
+      ],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "전 희 대",
+      "title": "피부과 전문의",
+      "specialty": null,
+      "career": [
+        "인디언주름 필러, 목주름 리프팅, 이미지 필러 3개 특허기술",
+        "국내외 유수 강연 및 학술대회 발표 120회",
+        "끝없는 기술 연마로 최신 뷰티 트랜드 선도"
+      ],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    }
+  ],
+  "academic_activities": [
+    {
+      "type": "기타",
+      "title": "인디언주름 필러, 목주름 리프팅, 이미지 필러 3개 특허기술",
+      "year": null,
+      "doctor_name": "전 희 대",
+      "source_text": "인디언주름 필러, 목주름 리프팅, 이미지 필러 3개 특허기술"
+    },
+    {
+      "type": "학회발표",
+      "title": "국내외 유수 강연 및 학술대회 발표",
+      "year": null,
+      "doctor_name": "전 희 대",
+      "source_text": "국내외 유수 강연 및 학술대회 발표 120회"
+    },
+    {
+      "type": "논문",
+      "title": "IFU, CPMHA, 보톡스를 활용한 목주름 치료 연구 논문",
+      "year": null,
+      "doctor_name": "전 희 대",
+      "source_text": "IFU, CPMHA, 보톡스를 활용한 목주름 치료 연구 논문"
+    },
+    {
+      "type": "수상",
+      "title": "태국 왓슨스 3년 연속 마스크팩 1위",
+      "year": null,
+      "doctor_name": "반 재 용",
+      "source_text": "태국 왓슨스 3년 연속 마스크팩 1위"
+    },
+    {
+      "type": "기타",
+      "title": "바노바기 코스메틱 개발",
+      "year": null,
+      "doctor_name": "반 재 용",
+      "source_text": "바노바기 코스메틱 개발"
+    },
+    {
+      "type": "기타",
+      "title": "세계 10여 개 국 코스메틱 수출",
+      "year": null,
+      "doctor_name": "반 재 용",
+      "source_text": "세계 10여 개 국 코스메틱 수출"
+    },
+    {
+      "type": "기타",
+      "title": "기능성 화장품 개발",
+      "year": null,
+      "doctor_name": "반 재 용",
+      "source_text": "치료 후 효과적인 데일리 케어를 위한 기능성 화장품 개발"
+    }
+  ],
+  "medical_devices": [
+    {
+      "name": "Juvelook Volume",
+      "korean_name": "쥬베룩 볼륨",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "booster",
+      "description": "콜라겐 생성 촉진을 돕는 자가 콜라겐 부스터. PLA와 HA 성분을 결합한 자가조직재생 콜라겐 부스터. 피부 속 빈 공간을 콜라겐으로 채워 볼륨감, 탄력 있는 피부로 만듦.",
+      "source": "text"
+    },
+    {
+      "name": "Rejuran Healer",
+      "korean_name": "리쥬란 힐러",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "booster",
+      "description": "연어 DNA에서 추출한 생체적합물질인 폴리뉴클레오티드(PN)를 주성분으로 한 스킨 부스터. 얇고 늘어진 진피층의 근본적인 재생을 통해 피부 구조부터 개선하고 피부 속부터 건강하고 탄력 있게 만듦.",
+      "source": "text"
+    },
+    {
+      "name": "Skinvive",
+      "korean_name": "스킨바이브",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "booster",
+      "description": "일반 히알루론산보다 더 높은 지속력과 보습력을 가진 프리미엄 물광주사. 진피층에 직접 주입하는 히알루론산으로 피부의 건조, 탄력 저하를 개선. 국소마취제 리도카인 함유.",
+      "source": "text"
+    },
+    {
+      "name": "PRP",
+      "korean_name": null,
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "booster",
+      "description": "혈액에서 추출한 PRP(Platelet Rich Plasma)를 이용해 만드는 피부세포 재생 및 회복. 콜라겐, 엘라스틴을 생성해 피부 재생, 모공, 흉터 개선 등 전반적인 문제를 개선.",
+      "source": "text"
+    },
+    {
+      "name": "Youtheal",
+      "korean_name": "유스힐",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "booster",
+      "description": "철갑상어와 연어에서 추출한 듀얼 PDRN과 식물 유래 듀얼 엑소좀의 만남. 다양한 성분으로 피부 재생과 함께 피부톤, 피부결, 모공까지 개선해주는 올인원 스킨 부스터.",
+      "source": "text"
+    },
+    {
+      "name": "Dermashine",
+      "korean_name": "더마샤인",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "microneedle",
+      "description": "미세한 멀티니들을 이용해 약물을 주입하는 장비. 시술 시 통증과 약물 손실을 최소한으로 줄이고 효과는 그대로 가져갈 수 있음.",
+      "source": "text"
+    },
+    {
+      "name": "FairTitanium",
+      "korean_name": "페어티타늄",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "피부 타입과 상태에 따른 2가지 모드와 3파장 동시 조사. 사파이어 컨택 쿨링 시스템으로 다운타임 감소. 리프팅, 타이트닝, 화이트닝을 동시에 해결하는 올인원 리프팅. 국내 최초로 두 대의 장비로 두 배의 효과를 내는 페어티타늄.",
+      "source": "text"
+    },
+    {
+      "name": "Belotero Soft",
+      "korean_name": "벨로테로 소프트",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "filler",
+      "description": "주름개선에 최적화된 필러. 주입 직후 자연스럽게 밀착되는 4세대 히알루론산 필러. 럼프현상 최소화, 오래 지속되는 효과.",
+      "source": "text"
+    },
+    {
+      "name": "Xeomin",
+      "korean_name": "제오민",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "botox",
+      "description": "내성 걱정 줄인 독일 명품 보톡스. 복합단백질이 제거된 순수톡신. 넓은 목근밴드와 목주름 주변의 장력을 줄여 극대화하는 효과.",
+      "source": "text"
+    },
+    {
+      "name": "IFU",
+      "korean_name": null,
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": "Intense Focused Ultrasound (고강도 집속 초음파). (목주름 치료 연구 논문에 언급)",
+      "source": "text"
+    },
+    {
+      "name": "CPMHA",
+      "korean_name": null,
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "filler",
+      "description": "(목주름 치료 연구 논문에 언급)",
+      "source": "text"
+    },
+    {
+      "name": "Botox",
+      "korean_name": "보톡스",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "botox",
+      "description": "(목주름 치료 연구 논문에 언급)",
+      "source": "text"
+    },
+    {
+      "name": "백옥주사",
+      "korean_name": null,
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "other_injectable",
+      "description": "강력한 항산화 기능과 미백 효과. 글루타치온과 비타민C를 체내에 빠르게 흡수시켜 노폐물 제거, 노화 방지, 피부톤 및 탄력 개선.",
+      "source": "text"
+    },
+    {
+      "name": "Bahn’s Myers Treatment",
+      "korean_name": "반’s 마이어스주사",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "other_injectable",
+      "description": "피로한 일상을 단기간에 회복. 비타민, 미네랄, 셀레늄 등 맞춤 영양성분 배합. 면역력 강화, 만성 피로 해소, 질병 예방.",
+      "source": "text"
+    },
+    {
+      "name": "Shurink",
+      "korean_name": "슈링크",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": "고강도 집속형 초음파를 피부 속에 전달해 탄력을 잃은 피부를 효과적으로 개선하는 초음파 리프팅. 진피층부터 근막(SMAS)층까지 고강도 초음파(HIFU)를 이용해 열응고점을 만들고 콜라겐 재생을 활발하게 만듦.",
+      "source": "text"
+    },
+    {
+      "name": "Tensera",
+      "korean_name": "텐써마",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF",
+      "description": "더욱 강력해진 5세대 고주파 리프팅. 피부 깊은 곳까지 균일하게 열에너지를 전달하는 모노폴라 방식의 고주파 사용. 즉각적인 콜라겐 수축 및 증가, 리모델링. 스마트 쿨링 시스템.",
+      "source": "text"
+    },
+    {
+      "name": "Ulthera Prime",
+      "korean_name": "울쎄라피 프라임",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": "초음파로 근막을 재생하는 것을 넘어 탄력의 중심을 바로 잡아 피부 구조를 건강하게 복원. 고강도 초음파를 근막층에 조사하여 늘어진 인대를 강화. AmplifyⅡ 울쎄라 정품, 정품팁 사용.",
+      "source": "text"
+    },
+    {
+      "name": "3DEEP",
+      "korean_name": "쓰리딥",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF",
+      "description": "세계 최초 3쌍의 양극성 고주파 레이저. 피부층에 균일하게 전달되는 열에너지. 피부 깊숙한 곳부터 엘라스틴을 생성해 탄력을 이끌어내고 주름을 개선. 6개의 제너레이터와 6개의 전극. 미국 FDA 승인.",
+      "source": "text"
+    },
+    {
+      "name": "Laetigen",
+      "korean_name": "레티젠",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "collagen_stimulator",
+      "description": "순도 99.9% 콜라겐. 피부와 동일한 구조의 고순도 콜라겐을 직접 진피에 주입해 근본적인 피부 재생을 촉진. 높은 체내융화력, 6개월 이상 지속. Hybrid Collagen. GMP 청정 사육시설에서 무항생제 Miniature Pig 돈피 사용. 불순물 ZERO.",
+      "source": "text"
+    },
+    {
+      "name": "TuneFace",
+      "korean_name": "튠페이스",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF",
+      "description": "피부 속 콜라겐을 채워주는 가장 이상적인 주파수 40.68MHz로 기존의 고주파 시술보다 더 깊고 효과적인 에너지를 전달. 다양한 어플리케이터 (튠블루, 튠레드). 독자적인 유니폴라 기술. 이중쿨링 방식. KFDA 허가.",
+      "source": "text"
+    },
+    {
+      "name": "TuneLiner",
+      "korean_name": "튠라이너",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": "지방 세포만 골라서 파괴하는 능력. 이중턱과 심부볼에 자리잡은 불필요한 지방세포만 선택적으로 파괴하고 사이즈를 감소시켜 근본적인 얼굴 라인을 개선. 3D 입체초음파로 지방을 파괴. 이중쿨링 방식. KFDA 허가.",
+      "source": "text"
+    },
+    {
+      "name": "InMode",
+      "korean_name": "인모드",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF",
+      "description": "두가지 모드(MINI FX, FORMA)의 기기로 피부의 상태에 맞게 지방은 파괴하고 탄력은 채워 수술없이 완벽한 V라인을 만드는 고주파 리프팅. MINI FX는 양극성 고주파(Bipolar RF)와 고전압 전기자극(HVP) 사용, 지방세포 파괴. FORMA는 다극성 고주파(Multipolar RF) 사용, 피부 리모델링. FDA, KFDA 승인.",
+      "source": "text"
+    },
+    {
+      "name": "Tenssera",
+      "korean_name": "텐쎄라",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": "콜라겐 재생부터 리프팅까지 진피층부터 근막층까지 안전하고 정확하게 시술이 가능한 HIFU(고강도집속초음파) 리프팅. 2LINE HIFU로 한 샷에 2라인, 2배 효과. 한국 식약처 인증.",
+      "source": "text"
+    },
+    {
+      "name": "Fraxel Dual",
+      "korean_name": "프락셀 듀얼",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "(유스힐 시술 시 1차 흡수를 위해 사용되는 전문 장비)",
+      "source": "text"
+    },
+    {
+      "name": "Needle RF",
+      "korean_name": "니들RF",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "microneedle",
+      "description": "(유스힐 시술 시 1차 흡수를 위해 사용되는 전문 장비)",
+      "source": "text"
+    },
+    {
+      "name": "Thermage FLX",
+      "korean_name": "써마지 FLX",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF",
+      "description": "강력한 고주파(RF) 에너지를 진피층에 전달해서 조직을 수축. 4세대 써마지 FLX 정품, 정품팁 사용. 피부 표면 쿨링 시스템, 전방향 진동 기능. 미국 FDA, 한국 식약처 허가.",
+      "source": "text"
+    },
+    {
+      "name": "Soprano Titanium",
+      "korean_name": "소프라노 티타늄",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "빛을 이용한 리프팅 장비. KFDA 허가. 세계 최초 3파장(755nm, 810nm, 1064nm)이 동시에 조사되는 핸드피스.",
+      "source": "text"
+    },
+    {
+      "name": "TenTriple",
+      "korean_name": "텐트리플",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": "효과빠른 3LINE HIFU.",
+      "source": "text"
+    },
+    {
+      "name": "Sylfirm",
+      "korean_name": "실펌",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "microneedle",
+      "description": "매끄러운 모공 & 탄력있는 피부결 완성템.",
+      "source": "text"
+    },
+    {
+      "name": "엑소좀",
+      "korean_name": null,
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "booster",
+      "description": "항염 No.1 엑소좀. (유스힐의 식물 유래 듀얼 엑소좀과 동일)",
+      "source": "text"
+    },
+    {
+      "name": "스킨보톡스",
+      "korean_name": null,
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "botox",
+      "description": "잔주름 종결.",
+      "source": "text"
+    }
+  ],
+  "treatments": [
+    {
+      "name": "쥬베룩 볼륨",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": [
+        "얼굴"
+      ],
+      "category": [
+        "스킨부스터",
+        "필러·볼륨"
+      ]
+    },
+    {
+      "name": "리쥬란 힐러",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": [
+        "피부 전반"
+      ],
+      "category": [
+        "스킨부스터"
+      ]
+    },
+    {
+      "name": "스킨바이브",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": [
+        "얼굴"
+      ],
+      "category": [
+        "스킨부스터"
+      ]
+    },
+    {
+      "name": "PRP",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": [
+        "피부 전반"
+      ],
+      "category": [
+        "스킨부스터"
+      ]
+    },
+    {
+      "name": "유스힐",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": [
+        "피부 전반"
+      ],
+      "category": [
+        "스킨부스터"
+      ]
+    },
+    {
+      "name": "물광치료",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": [
+        "피부 전반"
+      ],
+      "category": [
+        "스킨케어",
+        "미백/면역주사"
+      ]
+    },
+    {
+      "name": "물광주사",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": [
+        "피부 전반"
+      ],
+      "category": [
+        "스킨케어",
+        "미백/면역주사"
+      ]
+    },
+    {
+      "name": "물광 PRP",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": [
+        "피부 전반"
+      ],
+      "category": [
+        "스킨케어",
+        "미백/면역주사"
+      ]
+    },
+    {
+      "name": "목주름치료",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": [
+        "목"
+      ],
+      "category": [
+        "리프팅"
+      ]
+    },
+    {
+      "name": "프리미엄 광채토닝",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": [
+        "얼굴"
+      ],
+      "category": [
+        "피부레이저/프로그램",
+        "미백/면역주사"
+      ]
+    },
+    {
+      "name": "백옥주사",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": [
+        "전신"
+      ],
+      "category": [
+        "미백/면역주사",
+        "항산화·면역IV"
+      ]
+    },
+    {
+      "name": "반’s 마이어스주사",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": [
+        "전신"
+      ],
+      "category": [
+        "미백/면역주사",
+        "항산화·면역IV"
+      ]
+    },
+    {
+      "name": "슈링크",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": [
+        "얼굴"
+      ],
+      "category": [
+        "리프팅"
+      ]
+    },
+    {
+      "name": "슈링크 + 텐써마",
+      "price": null,
+      "price_display": null,
+      "is_package": true,
+      "package_detail": {
+        "included_treatments": [
+          "슈링크",
+          "텐써마"
+        ],
+        "estimated_unit_prices": null,
+        "estimation_method": null
+      },
+      "session_info": null,
+      "body_part": null,
+      "category": [
+        "리프팅"
+      ]
+    },
+    {
+      "name": "슈링크 + 페어티타늄",
+      "price": null,
+      "price_display": null,
+      "is_package": true,
+      "package_detail": {
+        "included_treatments": [
+          "슈링크",
+          "페어티타늄"
+        ],
+        "estimated_unit_prices": null,
+        "estimation_method": null
+      },
+      "session_info": null,
+      "body_part": null,
+      "category": [
+        "리프팅"
+      ]
+    },
+    {
+      "name": "슈링크 + 인모드",
+      "price": null,
+      "price_display": null,
+      "is_package": true,
+      "package_detail": {
+        "included_treatments": [
+          "슈링크",
+          "인모드"
+        ],
+        "estimated_unit_prices": null,
+        "estimation_method": null
+      },
+      "session_info": null,
+      "body_part": null,
+      "category": [
+        "리프팅"
+      ]
+    },
+    {
+      "name": "텐써마",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": [
+        "얼굴"
+      ],
+      "category": [
+        "리프팅"
+      ]
+    },
+    {
+      "name": "텐써마 + 텐쎄라",
+      "price": null,
+      "price_display": null,
+      "is_package": true,
+      "package_detail": {
+        "included_treatments": [
+          "텐써마",
+          "텐쎄라"
+        ],
+        "estimated_unit_prices": null,
+        "estimation_method": null
+      },
+      "session_info": null,
+      "body_part": null,
+      "category": [
+        "리프팅"
+      ]
+    },
+    {
+      "name": "텐써마 + 울쎄라",
+      "price": null,
+      "price_display": null,
+      "is_package": true,
+      "package_detail": {
+        "included_treatments": [
+          "텐써마",
+          "울쎄라"
+        ],
+        "estimated_unit_prices": null,
+        "estimation_method": null
+      },
+      "session_info": null,
+      "body_part": null,
+      "category": [
+        "리프팅"
+      ]
+    },
+    {
+      "name": "텐써마 + 스킨부스터",
+      "price": null,
+      "price_display": null,
+      "is_package": true,
+      "package_detail": {
+        "included_treatments": [
+          "텐써마",
+          "스킨부스터"
+        ],
+        "estimated_unit_prices": null,
+        "estimation_method": null
+      },
+      "session_info": null,
+      "body_part": null,
+      "category": [
+        "리프팅",
+        "스킨부스터"
+      ]
+    },
+    {
+      "name": "쓰리딥",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": [
+        "얼굴",
+        "목"
+      ],
+      "category": [
+        "리프팅"
+      ]
+    },
+    {
+      "name": "쓰리딥 + 울쎄라",
+      "price": null,
+      "price_display": null,
+      "is_package": true,
+      "package_detail": {
+        "included_treatments": [
+          "쓰리딥",
+          "울쎄라"
+        ],
+        "estimated_unit_prices": null,
+        "estimation_method": null
+      },
+      "session_info": null,
+      "body_part": null,
+      "category": [
+        "리프팅"
+      ]
+    },
+    {
+      "name": "쓰리딥 + 페어티타늄",
+      "price": null,
+      "price_display": null,
+      "is_package": true,
+      "package_detail": {
+        "included_treatments": [
+          "쓰리딥",
+          "페어티타늄"
+        ],
+        "estimated_unit_prices": null,
+        "estimation_method": null
+      },
+      "session_info": null,
+      "body_part": null,
+      "category": [
+        "리프팅"
+      ]
+    },
+    {
+      "name": "쓰리딥 + 물광주사",
+      "price": null,
+      "price_display": null,
+      "is_package": true,
+      "package_detail": {
+        "included_treatments": [
+          "쓰리딥",
+          "물광주사"
+        ],
+        "estimated_unit_prices": null,
+        "estimation_method": null
+      },
+      "session_info": null,
+      "body_part": null,
+      "category": [
+        "리프팅",
+        "스킨케어"
+      ]
+    },
+    {
+      "name": "레티젠",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": [
+        "피부 전반"
+      ],
+      "category": [
+        "스킨부스터"
+      ]
+    },
+    {
+      "name": "페어티타늄",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": [
+        "얼굴"
+      ],
+      "category": [
+        "리프팅",
+        "피부레이저/프로그램",
+        "미백/면역주사"
+      ]
+    },
+    {
+      "name": "티타늄 리프팅",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": [
+        "얼굴"
+      ],
+      "category": [
+        "리프팅",
+        "피부레이저/프로그램",
+        "미백/면역주사"
+      ]
+    },
+    {
+      "name": "티타늄리프팅 + 스킨부스터",
+      "price": null,
+      "price_display": null,
+      "is_package": true,
+      "package_detail": {
+        "included_treatments": [
+          "티타늄 리프팅",
+          "스킨부스터"
+        ],
+        "estimated_unit_prices": null,
+        "estimation_method": null
+      },
+      "session_info": null,
+      "body_part": null,
+      "category": [
+        "리프팅",
+        "스킨부스터"
+      ]
+    },
+    {
+      "name": "티타늄리프팅 + 튠페이스",
+      "price": null,
+      "price_display": null,
+      "is_package": true,
+      "package_detail": {
+        "included_treatments": [
+          "티타늄 리프팅",
+          "튠페이스"
+        ],
+        "estimated_unit_prices": null,
+        "estimation_method": null
+      },
+      "session_info": null,
+      "body_part": null,
+      "category": [
+        "리프팅"
+      ]
+    },
+    {
+      "name": "티타늄리프팅 + 울쎄라",
+      "price": null,
+      "price_display": null,
+      "is_package": true,
+      "package_detail": {
+        "included_treatments": [
+          "티타늄 리프팅",
+          "울쎄라"
+        ],
+        "estimated_unit_prices": null,
+        "estimation_method": null
+      },
+      "session_info": null,
+      "body_part": null,
+      "category": [
+        "리프팅"
+      ]
+    },
+    {
+      "name": "마스터 써마지 FLX",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": [
+        "얼굴",
+        "눈가"
+      ],
+      "category": [
+        "리프팅"
+      ]
+    },
+    {
+      "name": "아이 써마지",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": [
+        "눈가"
+      ],
+      "category": [
+        "리프팅"
+      ]
+    },
+    {
+      "name": "써마지 + 3DEEP",
+      "price": null,
+      "price_display": null,
+      "is_package": true,
+      "package_detail": {
+        "included_treatments": [
+          "써마지",
+          "쓰리딥"
+        ],
+        "estimated_unit_prices": null,
+        "estimation_method": null
+      },
+      "session_info": null,
+      "body_part": null,
+      "category": [
+        "리프팅"
+      ]
+    },
+    {
+      "name": "써마지 + 물광주사",
+      "price": null,
+      "price_display": null,
+      "is_package": true,
+      "package_detail": {
+        "included_treatments": [
+          "써마지",
+          "물광주사"
+        ],
+        "estimated_unit_prices": null,
+        "estimation_method": null
+      },
+      "session_info": null,
+      "body_part": null,
+      "category": [
+        "리프팅",
+        "스킨케어"
+      ]
+    },
+    {
+      "name": "튠페이스",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": [
+        "얼굴"
+      ],
+      "category": [
+        "리프팅"
+      ]
+    },
+    {
+      "name": "튠블루",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": [
+        "앞볼",
+        "심부볼",
+        "팔자주름",
+        "턱라인"
+      ],
+      "category": [
+        "리프팅"
+      ]
+    },
+    {
+      "name": "튠레드",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": [
+        "눈가",
+        "입가 주름",
+        "이마",
+        "관자놀이",
+        "눈밑",
+        "팔자주름",
+        "입가주변"
+      ],
+      "category": [
+        "리프팅"
+      ]
+    },
+    {
+      "name": "튠페이스 + 튠라이너",
+      "price": null,
+      "price_display": null,
+      "is_package": true,
+      "package_detail": {
+        "included_treatments": [
+          "튠페이스",
+          "튠라이너"
+        ],
+        "estimated_unit_prices": null,
+        "estimation_method": null
+      },
+      "session_info": null,
+      "body_part": null,
+      "category": [
+        "리프팅",
+        "윤곽·바디"
+      ]
+    },
+    {
+      "name": "튠페이스 + 티타늄리프팅",
+      "price": null,
+      "price_display": null,
+      "is_package": true,
+      "package_detail": {
+        "included_treatments": [
+          "튠페이스",
+          "티타늄 리프팅"
+        ],
+        "estimated_unit_prices": null,
+        "estimation_method": null
+      },
+      "session_info": null,
+      "body_part": null,
+      "category": [
+        "리프팅"
+      ]
+    },
+    {
+      "name": "튠페이스 + 스킨부스터",
+      "price": null,
+      "price_display": null,
+      "is_package": true,
+      "package_detail": {
+        "included_treatments": [
+          "튠페이스",
+          "스킨부스터"
+        ],
+        "estimated_unit_prices": null,
+        "estimation_method": null
+      },
+      "session_info": null,
+      "body_part": null,
+      "category": [
+        "리프팅",
+        "스킨부스터"
+      ]
+    },
+    {
+      "name": "튠라이너",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": [
+        "얼굴"
+      ],
+      "category": [
+        "윤곽·바디"
+      ]
+    },
+    {
+      "name": "튠라이너 + 튠페이스",
+      "price": null,
+      "price_display": null,
+      "is_package": true,
+      "package_detail": {
+        "included_treatments": [
+          "튠라이너",
+          "튠페이스"
+        ],
+        "estimated_unit_prices": null,
+        "estimation_method": null
+      },
+      "session_info": null,
+      "body_part": null,
+      "category": [
+        "윤곽·바디",
+        "리프팅"
+      ]
+    },
+    {
+      "name": "튠라이너 + 티타늄리프팅",
+      "price": null,
+      "price_display": null,
+      "is_package": true,
+      "package_detail": {
+        "included_treatments": [
+          "튠라이너",
+          "티타늄 리프팅"
+        ],
+        "estimated_unit_prices": null,
+        "estimation_method": null
+      },
+      "session_info": null,
+      "body_part": null,
+      "category": [
+        "윤곽·바디",
+        "리프팅"
+      ]
+    },
+    {
+      "name": "튠라이너 + 울쎄라",
+      "price": null,
+      "price_display": null,
+      "is_package": true,
+      "package_detail": {
+        "included_treatments": [
+          "튠라이너",
+          "울쎄라"
+        ],
+        "estimated_unit_prices": null,
+        "estimation_method": null
+      },
+      "session_info": null,
+      "body_part": null,
+      "category": [
+        "윤곽·바디",
+        "리프팅"
+      ]
+    },
+    {
+      "name": "인모드",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": [
+        "얼굴"
+      ],
+      "category": [
+        "리프팅",
+        "윤곽·바디"
+      ]
+    },
+    {
+      "name": "인모드 + 울쎄라",
+      "price": null,
+      "price_display": null,
+      "is_package": true,
+      "package_detail": {
+        "included_treatments": [
+          "인모드",
+          "울쎄라"
+        ],
+        "estimated_unit_prices": null,
+        "estimation_method": null
+      },
+      "session_info": null,
+      "body_part": null,
+      "category": [
+        "리프팅"
+      ]
+    },
+    {
+      "name": "인모드 + 페어티타늄",
+      "price": null,
+      "price_display": null,
+      "is_package": true,
+      "package_detail": {
+        "included_treatments": [
+          "인모드",
+          "페어티타늄"
+        ],
+        "estimated_unit_prices": null,
+        "estimation_method": null
+      },
+      "session_info": null,
+      "body_part": null,
+      "category": [
+        "리프팅",
+        "미백/면역주사"
+      ]
+    },
+    {
+      "name": "인모드 + 텐쎄라",
+      "price": null,
+      "price_display": null,
+      "is_package": true,
+      "package_detail": {
+        "included_treatments": [
+          "인모드",
+          "텐쎄라"
+        ],
+        "estimated_unit_prices": null,
+        "estimation_method": null
+      },
+      "session_info": null,
+      "body_part": null,
+      "category": [
+        "리프팅"
+      ]
+    },
+    {
+      "name": "텐쎄라",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": [
+        "얼굴"
+      ],
+      "category": [
+        "리프팅"
+      ]
+    },
+    {
+      "name": "텐쎄라 + 텐써마",
+      "price": null,
+      "price_display": null,
+      "is_package": true,
+      "package_detail": {
+        "included_treatments": [
+          "텐쎄라",
+          "텐써마"
+        ],
+        "estimated_unit_prices": null,
+        "estimation_method": null
+      },
+      "session_info": null,
+      "body_part": null,
+      "category": [
+        "리프팅"
+      ]
+    },
+    {
+      "name": "텐쎄라 + 페어티타늄",
+      "price": null,
+      "price_display": null,
+      "is_package": true,
+      "package_detail": {
+        "included_treatments": [
+          "텐쎄라",
+          "페어티타늄"
+        ],
+        "estimated_unit_prices": null,
+        "estimation_method": null
+      },
+      "session_info": null,
+      "body_part": null,
+      "category": [
+        "리프팅",
+        "미백/면역주사"
+      ]
+    },
+    {
+      "name": "텐쎄라 + 스킨부스터",
+      "price": null,
+      "price_display": null,
+      "is_package": true,
+      "package_detail": {
+        "included_treatments": [
+          "텐쎄라",
+          "스킨부스터"
+        ],
+        "estimated_unit_prices": null,
+        "estimation_method": null
+      },
+      "session_info": null,
+      "body_part": null,
+      "category": [
+        "리프팅",
+        "스킨부스터"
+      ]
+    },
+    {
+      "name": "울쎄라피 프라임",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": [
+        "얼굴",
+        "눈꺼풀",
+        "눈가주름",
+        "목주름",
+        "입가주름",
+        "팔자주름"
+      ],
+      "category": [
+        "리프팅"
+      ]
+    },
+    {
+      "name": "울쎄라피 + 튠라이너",
+      "price": null,
+      "price_display": null,
+      "is_package": true,
+      "package_detail": {
+        "included_treatments": [
+          "울쎄라피",
+          "튠라이너"
+        ],
+        "estimated_unit_prices": null,
+        "estimation_method": null
+      },
+      "session_info": null,
+      "body_part": null,
+      "category": [
+        "리프팅",
+        "윤곽·바디"
+      ]
+    },
+    {
+      "name": "울쎄라피 + 써마지",
+      "price": null,
+      "price_display": null,
+      "is_package": true,
+      "package_detail": {
+        "included_treatments": [
+          "울쎄라피",
+          "써마지"
+        ],
+        "estimated_unit_prices": null,
+        "estimation_method": null
+      },
+      "session_info": null,
+      "body_part": null,
+      "category": [
+        "리프팅"
+      ]
+    },
+    {
+      "name": "울쎄라피 + 3DEEP",
+      "price": null,
+      "price_display": null,
+      "is_package": true,
+      "package_detail": {
+        "included_treatments": [
+          "울쎄라피",
+          "쓰리딥"
+        ],
+        "estimated_unit_prices": null,
+        "estimation_method": null
+      },
+      "session_info": null,
+      "body_part": null,
+      "category": [
+        "리프팅"
+      ]
+    },
+    {
+      "name": "올인원 올모공",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": [
+        "얼굴"
+      ],
+      "category": [
+        "피부레이저/프로그램",
+        "스킨케어"
+      ]
+    },
+    {
+      "name": "올인원 테라피",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": [
+        "얼굴"
+      ],
+      "category": [
+        "피부레이저/프로그램",
+        "스킨케어"
+      ]
+    },
+    {
+      "name": "올인원 리프팅",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": [
+        "얼굴"
+      ],
+      "category": [
+        "리프팅"
+      ]
+    },
+    {
+      "name": "컴포트 써마지FLX",
+      "price": 1290000,
+      "price_display": "129만원~",
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": [
+        "눈가",
+        "피부 전반"
+      ],
+      "category": [
+        "리프팅"
+      ]
+    },
+    {
+      "name": "속광케어 리쥬란 컬렉션",
+      "price": 250000,
+      "price_display": "25만원~",
+      "is_package": true,
+      "package_detail": {
+        "included_treatments": [
+          "리쥬란",
+          "스킨보톡스"
+        ],
+        "estimated_unit_prices": null,
+        "estimation_method": null
+      },
+      "session_info": null,
+      "body_part": null,
+      "category": [
+        "스킨부스터",
+        "보톡스"
+      ]
+    },
+    {
+      "name": "피부힐링 엑소좀 패키지",
+      "price": 190000,
+      "price_display": "19만원~",
+      "is_package": true,
+      "package_detail": {
+        "included_treatments": [
+          "엑소좀"
+        ],
+        "estimated_unit_prices": null,
+        "estimation_method": null
+      },
+      "session_info": null,
+      "body_part": null,
+      "category": [
+        "스킨부스터"
+      ]
+    },
+    {
+      "name": "실펌 패키지",
+      "price": 200000,
+      "price_display": "20만원~",
+      "is_package": true,
+      "package_detail": {
+        "included_treatments": [
+          "실펌"
+        ],
+        "estimated_unit_prices": null,
+        "estimation_method": null
+      },
+      "session_info": null,
+      "body_part": null,
+      "category": [
+        "피부레이저/프로그램"
+      ]
+    },
+    {
+      "name": "텐텐 스페셜",
+      "price": 390000,
+      "price_display": "39만원~",
+      "is_package": true,
+      "package_detail": {
+        "included_treatments": [
+          "텐트리플",
+          "텐써마"
+        ],
+        "estimated_unit_prices": null,
+        "estimation_method": null
+      },
+      "session_info": null,
+      "body_part": null,
+      "category": [
+        "리프팅"
+      ]
+    },
+    {
+      "name": "울쎄라피 프라임 패키지",
+      "price": 1650000,
+      "price_display": "165만원~",
+      "is_package": true,
+      "package_detail": {
+        "included_treatments": [
+          "울쎄라피 프라임"
+        ],
+        "estimated_unit_prices": null,
+        "estimation_method": null
+      },
+      "session_info": null,
+      "body_part": null,
+      "category": [
+        "리프팅"
+      ]
+    },
+    {
+      "name": "필러 EVENT",
+      "price": 250000,
+      "price_display": "25만원~",
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": [
+        "얼굴"
+      ],
+      "category": [
+        "필러·볼륨"
+      ]
+    },
+    {
+      "name": "리프팅",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": null,
+      "category": [
+        "리프팅"
+      ]
+    },
+    {
+      "name": "스킨부스터",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": null,
+      "category": [
+        "스킨부스터"
+      ]
+    },
+    {
+      "name": "보톡스",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": null,
+      "category": [
+        "보톡스"
+      ]
+    },
+    {
+      "name": "필러",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": null,
+      "category": [
+        "필러·볼륨"
+      ]
+    },
+    {
+      "name": "피부레이저/프로그램",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": null,
+      "category": [
+        "피부레이저/프로그램"
+      ]
+    },
+    {
+      "name": "스킨케어",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": null,
+      "category": [
+        "스킨케어"
+      ]
+    },
+    {
+      "name": "바디케어",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": null,
+      "category": [
+        "바디케어"
+      ]
+    },
+    {
+      "name": "미백/면역주사",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": null,
+      "category": [
+        "미백/면역주사"
+      ]
+    },
+    {
+      "name": "프리미엄 리프팅",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": null,
+      "category": [
+        "리프팅"
+      ]
+    },
+    {
+      "name": "베이직 리프팅",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": null,
+      "category": [
+        "리프팅"
+      ]
+    },
+    {
+      "name": "프리미엄 스킨부스터",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": null,
+      "category": [
+        "스킨부스터"
+      ]
+    },
+    {
+      "name": "베이직 스킨부스터",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": null,
+      "category": [
+        "스킨부스터"
+      ]
+    },
+    {
+      "name": "필러·볼륨",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": null,
+      "category": [
+        "필러·볼륨"
+      ]
+    },
+    {
+      "name": "메디컬 스킨케어",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": null,
+      "category": [
+        "스킨케어"
+      ]
+    },
+    {
+      "name": "윤곽·바디",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": null,
+      "category": [
+        "윤곽·바디"
+      ]
+    },
+    {
+      "name": "항산화·면역IV",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": null,
+      "category": [
+        "항산화·면역IV"
+      ]
+    },
+    {
+      "name": "2026 바노바기 SIGNATURE",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": null,
+      "category": [
+        "기타"
+      ]
+    },
+    {
+      "name": "스킨보톡스",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": [
+        "피부 전반"
+      ],
+      "category": [
+        "보톡스",
+        "스킨부스터"
+      ]
+    },
+    {
+      "name": "엑소좀",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": [
+        "피부 전반"
+      ],
+      "category": [
+        "스킨부스터"
+      ]
+    },
+    {
+      "name": "텐트리플",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": [
+        "얼굴"
+      ],
+      "category": [
+        "리프팅"
+      ]
+    },
+    {
+      "name": "실펌",
+      "price": null,
+      "price_display": null,
+      "is_package": false,
+      "package_detail": null,
+      "session_info": null,
+      "body_part": [
+        "모공",
+        "피부결"
+      ],
+      "category": [
+        "피부레이저/프로그램"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "title": "2월 한정혜택 RSVP",
+      "type": "시즌",
+      "period": "2월",
+      "discount_info": null,
+      "original_price": null,
+      "event_price": null,
+      "conditions": [],
+      "source": "banner"
+    },
+    {
+      "title": "만나서 BAN가워",
+      "type": "신규고객",
+      "period": null,
+      "discount_info": null,
+      "original_price": null,
+      "event_price": null,
+      "conditions": [
+        "첫방문"
+      ],
+      "source": "text"
+    },
+    {
+      "title": "바노데이 Happy Price",
+      "type": "시즌",
+      "period": "화수목",
+      "discount_info": null,
+      "original_price": null,
+      "event_price": null,
+      "conditions": [],
+      "source": "text"
+    },
+    {
+      "title": "2026 ALL-TIME 특가",
+      "type": "할인",
+      "period": "2026",
+      "discount_info": null,
+      "original_price": null,
+      "event_price": null,
+      "conditions": [],
+      "source": "text"
+    },
+    {
+      "title": "설맞이 GIFT 컴포트 써마지FLX",
+      "type": "시즌",
+      "period": null,
+      "discount_info": "1,700,000원 -> 1,290,000원~",
+      "original_price": 1700000,
+      "event_price": 1290000,
+      "conditions": [],
+      "source": "text"
+    },
+    {
+      "title": "설맞이 GIFT 속광케어 리쥬란 컬렉션",
+      "type": "시즌",
+      "period": null,
+      "discount_info": "350,000원 -> 250,000원~",
+      "original_price": 350000,
+      "event_price": 250000,
+      "conditions": [],
+      "source": "text"
+    },
+    {
+      "title": "GLOW 특집 피부힐링 엑소좀 패키지",
+      "type": "패키지",
+      "period": null,
+      "discount_info": "325,000원 -> 190,000원~",
+      "original_price": 325000,
+      "event_price": 190000,
+      "conditions": [],
+      "source": "text"
+    },
+    {
+      "title": "피부결 미인 실펌 패키지",
+      "type": "패키지",
+      "period": null,
+      "discount_info": "250,000원 -> 200,000원~",
+      "original_price": 250000,
+      "event_price": 200000,
+      "conditions": [],
+      "source": "text"
+    },
+    {
+      "title": "Bestseller : 텐텐 스페셜",
+      "type": "패키지",
+      "period": null,
+      "discount_info": "450,000원 -> 390,000원~",
+      "original_price": 450000,
+      "event_price": 390000,
+      "conditions": [],
+      "source": "text"
+    },
+    {
+      "title": "올라운더 울쎄라피 프라임 패키지",
+      "type": "패키지",
+      "period": null,
+      "discount_info": "2,520,000원 -> 1,650,000원~",
+      "original_price": 2520000,
+      "event_price": 1650000,
+      "conditions": [],
+      "source": "text"
+    },
+    {
+      "title": "NEW 컨투어링 특집 필러 EVENT",
+      "type": "할인",
+      "period": null,
+      "discount_info": "500,000원 -> 250,000원~",
+      "original_price": 500000,
+      "event_price": 250000,
+      "conditions": [],
+      "source": "text"
+    }
+  ],
+  "clinic_categories": [
+    {
+      "name": "리프팅",
+      "treatments": [
+        "쥬베룩 볼륨",
+        "목주름치료",
+        "슈링크",
+        "슈링크 + 텐써마",
+        "슈링크 + 페어티타늄",
+        "슈링크 + 인모드",
+        "텐써마",
+        "텐써마 + 텐쎄라",
+        "텐써마 + 울쎄라",
+        "텐써마 + 스킨부스터",
+        "쓰리딥",
+        "쓰리딥 + 울쎄라",
+        "쓰리딥 + 페어티타늄",
+        "쓰리딥 + 물광주사",
+        "페어티타늄",
+        "티타늄 리프팅",
+        "티타늄리프팅 + 스킨부스터",
+        "티타늄리프팅 + 튠페이스",
+        "티타늄리프팅 + 울쎄라",
+        "마스터 써마지 FLX",
+        "아이 써마지",
+        "써마지 + 3DEEP",
+        "써마지 + 물광주사",
+        "튠페이스",
+        "튠블루",
+        "튠레드",
+        "튠페이스 + 튠라이너",
+        "튠페이스 + 티타늄리프팅",
+        "튠페이스 + 스킨부스터",
+        "인모드",
+        "인모드 + 울쎄라",
+        "인모드 + 페어티타늄",
+        "인모드 + 텐쎄라",
+        "텐쎄라",
+        "텐쎄라 + 텐써마",
+        "텐쎄라 + 페어티타늄",
+        "텐쎄라 + 스킨부스터",
+        "울쎄라피 프라임",
+        "울쎄라피 + 튠라이너",
+        "울쎄라피 + 써마지",
+        "울쎄라피 + 3DEEP",
+        "올인원 리프팅",
+        "컴포트 써마지FLX",
+        "텐텐 스페셜",
+        "울쎄라피 프라임 패키지",
+        "프리미엄 리프팅",
+        "베이직 리프팅",
+        "리프팅",
+        "텐트리플"
+      ]
+    },
+    {
+      "name": "스킨부스터",
+      "treatments": [
+        "쥬베룩 볼륨",
+        "리쥬란 힐러",
+        "스킨바이브",
+        "PRP",
+        "유스힐",
+        "텐써마 + 스킨부스터",
+        "레티젠",
+        "티타늄리프팅 + 스킨부스터",
+        "튠페이스 + 스킨부스터",
+        "텐쎄라 + 스킨부스터",
+        "속광케어 리쥬란 컬렉션",
+        "피부힐링 엑소좀 패키지",
+        "프리미엄 스킨부스터",
+        "베이직 스킨부스터",
+        "스킨부스터",
+        "스킨보톡스",
+        "엑소좀"
+      ]
+    },
+    {
+      "name": "보톡스",
+      "treatments": [
+        "속광케어 리쥬란 컬렉션",
+        "보톡스",
+        "스킨보톡스"
+      ]
+    },
+    {
+      "name": "필러·볼륨",
+      "treatments": [
+        "쥬베룩 볼륨",
+        "필러 EVENT",
+        "필러",
+        "필러·볼륨"
+      ]
+    },
+    {
+      "name": "피부레이저/프로그램",
+      "treatments": [
+        "프리미엄 광채토닝",
+        "페어티타늄",
+        "티타늄 리프팅",
+        "올인원 올모공",
+        "올인원 테라피",
+        "실펌 패키지",
+        "피부레이저/프로그램",
+        "실펌"
+      ]
+    },
+    {
+      "name": "스킨케어",
+      "treatments": [
+        "물광치료",
+        "물광주사",
+        "물광 PRP",
+        "쓰리딥 + 물광주사",
+        "써마지 + 물광주사",
+        "올인원 올모공",
+        "올인원 테라피",
+        "스킨케어",
+        "메디컬 스킨케어"
+      ]
+    },
+    {
+      "name": "바디케어",
+      "treatments": [
+        "튠라이너",
+        "튠페이스 + 튠라이너",
+        "튠라이너 + 튠페이스",
+        "튠라이너 + 티타늄리프팅",
+        "튠라이너 + 울쎄라",
+        "바디케어",
+        "윤곽·바디"
+      ]
+    },
+    {
+      "name": "미백/면역주사",
+      "treatments": [
+        "프리미엄 광채토닝",
+        "백옥주사",
+        "반’s 마이어스주사",
+        "페어티타늄",
+        "티타늄 리프팅",
+        "인모드 + 페어티타늄",
+        "텐쎄라 + 페어티타늄",
+        "미백/면역주사",
+        "항산화·면역IV"
+      ]
+    },
+    {
+      "name": "윤곽·바디",
+      "treatments": [
+        "튠라이너",
+        "튠페이스 + 튠라이너",
+        "튠라이너 + 튠페이스",
+        "튠라이너 + 티타늄리프팅",
+        "튠라이너 + 울쎄라",
+        "인모드",
+        "윤곽·바디"
+      ]
+    },
+    {
+      "name": "항산화·면역IV",
+      "treatments": [
+        "백옥주사",
+        "반’s 마이어스주사",
+        "항산화·면역IV"
+      ]
+    },
+    {
+      "name": "2026 바노바기 SIGNATURE",
+      "treatments": []
+    }
+  ],
+  "contact_info": {
+    "email": [],
+    "phone": [
+      {
+        "number": "02-3288-3322",
+        "type": "대표"
+      }
+    ],
+    "address": {
+      "full_address": "서울 강남구 봉은사로 219 (논현동, 두남빌딩)",
+      "sido": "서울",
+      "sigungu": "강남구"
+    },
+    "kakao_channel": "https://pf.kakao.com/_Gxfpnxb",
+    "naver_booking": null,
+    "naver_place": "https://naver.me/501o2x8E",
+    "instagram": null,
+    "youtube": null,
+    "blog": null,
+    "website_url": "https://www.skinbanobagi.com/",
+    "operating_hours": {
+      "weekday": "10:00 - 19:00",
+      "saturday": "10:00 - 15:00",
+      "sunday": "휴진",
+      "lunch_break": "13:00 - 14:00 (평일)"
+    }
+  },
+  "unregistered_equipment": [],
+  "unregistered_treatments": [],
+  "raw_price_texts": [
+    "1,700,000 원",
+    "129만원~",
+    "350,000 원",
+    "25만원~",
+    "325,000 원",
+    "19만원~",
+    "250,000 원",
+    "20만원~",
+    "450,000 원",
+    "39만원~",
+    "2,520,000 원",
+    "165만원~",
+    "500,000 원",
+    "25만원~",
+    "0원"
+  ],
+  "extraction_summary": {
+    "total_doctors": 2,
+    "total_academic": 7,
+    "total_equipment": 31,
+    "total_devices": 17,
+    "total_injectables": 14,
+    "total_treatments": 60,
+    "total_events": 11,
+    "total_categories": 11,
+    "total_contact_channels": 6,
+    "has_email": false,
+    "has_phone": true,
+    "has_kakao": true,
+    "has_sns": false,
+    "price_available_ratio": "7/60",
+    "unregistered_equipment_count": 0,
+    "unregistered_treatments_count": 0
+  }
+}

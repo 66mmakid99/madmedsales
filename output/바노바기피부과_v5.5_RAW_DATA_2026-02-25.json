@@ -1,0 +1,367 @@
+{
+  "_meta": {
+    "hospital": "바노바기피부과",
+    "version": "v5.5",
+    "generated": "2026-02-25T15:34:03.211Z",
+    "source_pages": 50,
+    "source_chars": 150000,
+    "gemini_model": "gemini-2.5-flash",
+    "gemini_tokens_in": 84711,
+    "gemini_tokens_out": 16843,
+    "elapsed_sec": 213.4
+  },
+  "statistics": {
+    "total_devices": 31,
+    "device_count": 17,
+    "injectable_count": 14,
+    "matched_count": 11,
+    "unmatched_count": 20,
+    "match_rate": "35%",
+    "total_treatments": 87,
+    "single_treatments": 53,
+    "package_treatments": 34,
+    "priced_treatments": 7,
+    "total_doctors": 2,
+    "total_academics": 7,
+    "total_events": 11,
+    "raw_price_texts_count": 15
+  },
+  "matched_devices": [
+    {
+      "name": "Juvelook Volume",
+      "normalized": "Juvelook Volume",
+      "type": "injectable",
+      "subcategory": "booster"
+    },
+    {
+      "name": "Rejuran Healer",
+      "normalized": "Rejuran Healer",
+      "type": "injectable",
+      "subcategory": "booster"
+    },
+    {
+      "name": "FairTitanium",
+      "normalized": "FairTitanium",
+      "type": "device",
+      "subcategory": "laser"
+    },
+    {
+      "name": "Shurink",
+      "normalized": "Shurink",
+      "type": "device",
+      "subcategory": "HIFU"
+    },
+    {
+      "name": "Tensera",
+      "normalized": "Tensera",
+      "type": "device",
+      "subcategory": "RF"
+    },
+    {
+      "name": "Ulthera Prime",
+      "normalized": "Ulthera Prime",
+      "type": "device",
+      "subcategory": "HIFU"
+    },
+    {
+      "name": "3DEEP",
+      "normalized": "3DEEP",
+      "type": "device",
+      "subcategory": "RF"
+    },
+    {
+      "name": "TuneFace",
+      "normalized": "TuneFace",
+      "type": "device",
+      "subcategory": "RF"
+    },
+    {
+      "name": "InMode",
+      "normalized": "InMode",
+      "type": "device",
+      "subcategory": "RF"
+    },
+    {
+      "name": "Thermage FLX",
+      "normalized": "Thermage FLX",
+      "type": "device",
+      "subcategory": "RF"
+    },
+    {
+      "name": "Sylfirm",
+      "normalized": "Sylfirm",
+      "type": "device",
+      "subcategory": "microneedle"
+    }
+  ],
+  "unmatched_devices": [
+    {
+      "name": "Skinvive",
+      "korean_name": "스킨바이브",
+      "type": "injectable",
+      "subcategory": "booster",
+      "description": "일반 히알루론산보다 더 높은 지속력과 보습력을 가진 프리미엄 물광주사. 진피층에 직접 주입하는 히알루론산으로 피부의 건조, 탄력 저하를 개선. 국소마취제 리도카인 함유."
+    },
+    {
+      "name": "PRP",
+      "korean_name": null,
+      "type": "injectable",
+      "subcategory": "booster",
+      "description": "혈액에서 추출한 PRP(Platelet Rich Plasma)를 이용해 만드는 피부세포 재생 및 회복. 콜라겐, 엘라스틴을 생성해 피부 재생, 모공, 흉터 개선 등 전반적인 문제를 개선."
+    },
+    {
+      "name": "Youtheal",
+      "korean_name": "유스힐",
+      "type": "injectable",
+      "subcategory": "booster",
+      "description": "철갑상어와 연어에서 추출한 듀얼 PDRN과 식물 유래 듀얼 엑소좀의 만남. 다양한 성분으로 피부 재생과 함께 피부톤, 피부결, 모공까지 개선해주는 올인원 스킨 부스터."
+    },
+    {
+      "name": "Dermashine",
+      "korean_name": "더마샤인",
+      "type": "device",
+      "subcategory": "microneedle",
+      "description": "미세한 멀티니들을 이용해 약물을 주입하는 장비. 시술 시 통증과 약물 손실을 최소한으로 줄이고 효과는 그대로 가져갈 수 있음."
+    },
+    {
+      "name": "Belotero Soft",
+      "korean_name": "벨로테로 소프트",
+      "type": "injectable",
+      "subcategory": "filler",
+      "description": "주름개선에 최적화된 필러. 주입 직후 자연스럽게 밀착되는 4세대 히알루론산 필러. 럼프현상 최소화, 오래 지속되는 효과."
+    },
+    {
+      "name": "Xeomin",
+      "korean_name": "제오민",
+      "type": "injectable",
+      "subcategory": "botox",
+      "description": "내성 걱정 줄인 독일 명품 보톡스. 복합단백질이 제거된 순수톡신. 넓은 목근밴드와 목주름 주변의 장력을 줄여 극대화하는 효과."
+    },
+    {
+      "name": "IFU",
+      "korean_name": null,
+      "type": "device",
+      "subcategory": "HIFU",
+      "description": "Intense Focused Ultrasound (고강도 집속 초음파). (목주름 치료 연구 논문에 언급)"
+    },
+    {
+      "name": "CPMHA",
+      "korean_name": null,
+      "type": "injectable",
+      "subcategory": "filler",
+      "description": "(목주름 치료 연구 논문에 언급)"
+    },
+    {
+      "name": "Botox",
+      "korean_name": "보톡스",
+      "type": "injectable",
+      "subcategory": "botox",
+      "description": "(목주름 치료 연구 논문에 언급)"
+    },
+    {
+      "name": "백옥주사",
+      "korean_name": null,
+      "type": "injectable",
+      "subcategory": "other_injectable",
+      "description": "강력한 항산화 기능과 미백 효과. 글루타치온과 비타민C를 체내에 빠르게 흡수시켜 노폐물 제거, 노화 방지, 피부톤 및 탄력 개선."
+    },
+    {
+      "name": "Bahn’s Myers Treatment",
+      "korean_name": "반’s 마이어스주사",
+      "type": "injectable",
+      "subcategory": "other_injectable",
+      "description": "피로한 일상을 단기간에 회복. 비타민, 미네랄, 셀레늄 등 맞춤 영양성분 배합. 면역력 강화, 만성 피로 해소, 질병 예방."
+    },
+    {
+      "name": "Laetigen",
+      "korean_name": "레티젠",
+      "type": "injectable",
+      "subcategory": "collagen_stimulator",
+      "description": "순도 99.9% 콜라겐. 피부와 동일한 구조의 고순도 콜라겐을 직접 진피에 주입해 근본적인 피부 재생을 촉진. 높은 체내융화력, 6개월 이상 지속. Hybrid Collagen. GMP 청정 사육시설에서 무항생제 Miniature Pig 돈피 사용. 불순물 ZERO."
+    },
+    {
+      "name": "TuneLiner",
+      "korean_name": "튠라이너",
+      "type": "device",
+      "subcategory": "HIFU",
+      "description": "지방 세포만 골라서 파괴하는 능력. 이중턱과 심부볼에 자리잡은 불필요한 지방세포만 선택적으로 파괴하고 사이즈를 감소시켜 근본적인 얼굴 라인을 개선. 3D 입체초음파로 지방을 파괴. 이중쿨링 방식. KFDA 허가."
+    },
+    {
+      "name": "Tenssera",
+      "korean_name": "텐쎄라",
+      "type": "device",
+      "subcategory": "HIFU",
+      "description": "콜라겐 재생부터 리프팅까지 진피층부터 근막층까지 안전하고 정확하게 시술이 가능한 HIFU(고강도집속초음파) 리프팅. 2LINE HIFU로 한 샷에 2라인, 2배 효과. 한국 식약처 인증."
+    },
+    {
+      "name": "Fraxel Dual",
+      "korean_name": "프락셀 듀얼",
+      "type": "device",
+      "subcategory": "laser",
+      "description": "(유스힐 시술 시 1차 흡수를 위해 사용되는 전문 장비)"
+    },
+    {
+      "name": "Needle RF",
+      "korean_name": "니들RF",
+      "type": "device",
+      "subcategory": "microneedle",
+      "description": "(유스힐 시술 시 1차 흡수를 위해 사용되는 전문 장비)"
+    },
+    {
+      "name": "Soprano Titanium",
+      "korean_name": "소프라노 티타늄",
+      "type": "device",
+      "subcategory": "laser",
+      "description": "빛을 이용한 리프팅 장비. KFDA 허가. 세계 최초 3파장(755nm, 810nm, 1064nm)이 동시에 조사되는 핸드피스."
+    },
+    {
+      "name": "TenTriple",
+      "korean_name": "텐트리플",
+      "type": "device",
+      "subcategory": "HIFU",
+      "description": "효과빠른 3LINE HIFU."
+    },
+    {
+      "name": "엑소좀",
+      "korean_name": null,
+      "type": "injectable",
+      "subcategory": "booster",
+      "description": "항염 No.1 엑소좀. (유스힐의 식물 유래 듀얼 엑소좀과 동일)"
+    },
+    {
+      "name": "스킨보톡스",
+      "korean_name": null,
+      "type": "injectable",
+      "subcategory": "botox",
+      "description": "잔주름 종결."
+    }
+  ],
+  "priced_treatments": [
+    {
+      "name": "컴포트 써마지FLX",
+      "price": 1290000,
+      "price_display": "129만원~",
+      "is_package": false,
+      "category": [
+        "리프팅"
+      ]
+    },
+    {
+      "name": "속광케어 리쥬란 컬렉션",
+      "price": 250000,
+      "price_display": "25만원~",
+      "is_package": true,
+      "category": [
+        "스킨부스터",
+        "보톡스"
+      ]
+    },
+    {
+      "name": "피부힐링 엑소좀 패키지",
+      "price": 190000,
+      "price_display": "19만원~",
+      "is_package": true,
+      "category": [
+        "스킨부스터"
+      ]
+    },
+    {
+      "name": "실펌 패키지",
+      "price": 200000,
+      "price_display": "20만원~",
+      "is_package": true,
+      "category": [
+        "피부레이저/프로그램"
+      ]
+    },
+    {
+      "name": "텐텐 스페셜",
+      "price": 390000,
+      "price_display": "39만원~",
+      "is_package": true,
+      "category": [
+        "리프팅"
+      ]
+    },
+    {
+      "name": "울쎄라피 프라임 패키지",
+      "price": 1650000,
+      "price_display": "165만원~",
+      "is_package": true,
+      "category": [
+        "리프팅"
+      ]
+    },
+    {
+      "name": "필러 EVENT",
+      "price": 250000,
+      "price_display": "25만원~",
+      "is_package": false,
+      "category": [
+        "필러·볼륨"
+      ]
+    }
+  ],
+  "raw_price_texts": [
+    "1,700,000 원",
+    "129만원~",
+    "350,000 원",
+    "25만원~",
+    "325,000 원",
+    "19만원~",
+    "250,000 원",
+    "20만원~",
+    "450,000 원",
+    "39만원~",
+    "2,520,000 원",
+    "165만원~",
+    "500,000 원",
+    "25만원~",
+    "0원"
+  ],
+  "extraction_summary": {
+    "total_doctors": 2,
+    "total_academic": 7,
+    "total_equipment": 31,
+    "total_devices": 17,
+    "total_injectables": 14,
+    "total_treatments": 60,
+    "total_events": 11,
+    "total_categories": 11,
+    "total_contact_channels": 6,
+    "has_email": false,
+    "has_phone": true,
+    "has_kakao": true,
+    "has_sns": false,
+    "price_available_ratio": "7/60",
+    "unregistered_equipment_count": 0,
+    "unregistered_treatments_count": 0
+  },
+  "contact_info": {
+    "email": [],
+    "phone": [
+      {
+        "number": "02-3288-3322",
+        "type": "대표"
+      }
+    ],
+    "address": {
+      "full_address": "서울 강남구 봉은사로 219 (논현동, 두남빌딩)",
+      "sido": "서울",
+      "sigungu": "강남구"
+    },
+    "kakao_channel": "https://pf.kakao.com/_Gxfpnxb",
+    "naver_booking": null,
+    "naver_place": "https://naver.me/501o2x8E",
+    "instagram": null,
+    "youtube": null,
+    "blog": null,
+    "website_url": "https://www.skinbanobagi.com/",
+    "operating_hours": {
+      "weekday": "10:00 - 19:00",
+      "saturday": "10:00 - 15:00",
+      "sunday": "휴진",
+      "lunch_break": "13:00 - 14:00 (평일)"
+    }
+  }
+}

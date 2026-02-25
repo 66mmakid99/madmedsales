@@ -1,5 +1,5 @@
 /**
- * v5.4 Gemini 프롬프트
+ * v5.5 Gemini 프롬프트
  * 시스템 지침서 섹션 3-3, 4-1 구현
  *
  * v5 핵심 변경:
@@ -14,7 +14,19 @@
  * - 7-category: doctors, academic_activities, equipment, treatments, events, clinic_categories, contact_info
  * - 시술명 공백 정규화 + ~클리닉 카테고리 분리
  * - 패키지 시술 단가 분석
+ *
+ * v5.5 핵심 변경:
+ * - 규칙사전(R1~R8) + 데이터사전(JSON) 동적 주입
+ * - 하드코딩 장비 정규화 테이블 → dictionary-loader 동적 로드
+ * - unregistered_equipment, unregistered_treatments, raw_price_texts 필드 추가
  */
+import {
+  getEquipmentPromptSection,
+  getTreatmentPromptSection,
+  getPricePromptSection,
+  getExcludePromptSection,
+  getEquipmentNormalizationTable,
+} from '../crawler/dictionary-loader.js';
 
 // ============================================================
 // 추출 프롬프트 (v5)
@@ -76,36 +88,12 @@ ${branchNote}
 2. 팝업 배너, 슬라이드 배너의 이벤트도 추출
 3. 기간 정보가 있으면 description에 포함
 
-## 장비명 정규화
+## 장비명 정규화 (데이터 사전에서 동적 로드)
 
-| 한글/약어 | 정규화 |
-|-----------|--------|
-| 써마지, 써마지FLX | Thermage FLX |
-| 써마지CPT | Thermage CPT |
-| 울쎄라, 울쎄라프라임 | Ulthera / Ulthera Prime |
-| 슈링크, 슈링크유니버스 | Shrink Universe |
-| 인모드, 인모드FX | InMode |
-| 토르, 토르RF, TORR | TORR RF |
-| 토르 컴포트 듀얼, 컴포트듀얼 | TORR Comfort Dual |
-| 텐쎄라 | Tensera |
-| 텐써마 | Tensurma |
-| 스칼렛S | Scarlet S |
-| 레블라이트SI | RevLite SI |
-| 엑셀V | Excel V |
-| 피코슈어 | PicoSure |
-| 제네시스 | Genesis |
-| 온다 | Onda |
-| 젤틱 | CoolSculpting (Zeltiq) |
-| LDM | LDM |
-| 에너젯 | E-Jet |
-| 리포소닉 | Liposonic |
-| 포텐자 | Potenza |
-| 올리지오 | Oligio |
-| 아그네스 | Agnes |
-| 덴서티 | Density |
-| 원쎄라 | Wonsera |
+${getEquipmentNormalizationTable()}
 
 ★ "토르", "TORR", "컴포트듀얼" 관련 언급은 반드시 포함.
+★ 사전에 없는 장비명도 반드시 추출 (절대 버리지 마라).
 ★ 가격 정보가 있으면 반드시 추출. "~부터", "VAT별도" 등 조건도 price_note에.
 ★ 학술활동, 학회 참가, 강연, 저서 정보가 있으면 반드시 추출.
 
@@ -320,34 +308,15 @@ ${navSection}
 4. 페이스북, 트위터/X URL도 있으면 수집 (facebook 필드 없으면 contact_info에 추가)
 5. "없음"으로 판단하기 전에 마크다운 전체에서 URL 패턴을 한 번 더 검색할 것
 
-## 장비명 정규화 테이블
+## 장비/시술/가격 분류 규칙 (데이터 사전 기반)
 
-| 한글/약어 | 정규화 |
-|-----------|--------|
-| 써마지, 써마지FLX | Thermage FLX |
-| 써마지CPT | Thermage CPT |
-| 울쎄라, 울쎄라프라임 | Ulthera / Ulthera Prime |
-| 슈링크, 슈링크유니버스 | Shrink Universe |
-| 인모드, 인모드FX | InMode |
-| 토르, 토르RF, TORR | TORR RF |
-| 토르 컴포트 듀얼, 컴포트듀얼 | TORR Comfort Dual |
-| 텐쎄라 | Tensera |
-| 텐써마 | Tensurma |
-| 스칼렛S | Scarlet S |
-| 레블라이트SI | RevLite SI |
-| 엑셀V | Excel V |
-| 피코슈어 | PicoSure |
-| 제네시스 | Genesis |
-| 온다 | Onda |
-| 젤틱 | CoolSculpting (Zeltiq) |
-| LDM | LDM |
-| 에너젯 | E-Jet |
-| 리포소닉 | Liposonic |
-| 포텐자 | Potenza |
-| 올리지오 | Oligio |
-| 아그네스 | Agnes |
-| 덴서티 | Density |
-| 원쎄라 | Wonsera |
+${getEquipmentPromptSection()}
+
+${getTreatmentPromptSection()}
+
+${getPricePromptSection()}
+
+${getExcludePromptSection()}
 
 ## 출력 규칙
 1. 유효한 JSON만 출력. 설명 텍스트 없음.
@@ -379,6 +348,9 @@ ${navSection}
     "website_url": string,
     "operating_hours": {...} | null
   },
+  "unregistered_equipment": [{"name": "사전에 없는 장비명 원문", "source": "text|image|ocr", "context": "발견 문맥 (짧게)"}],
+  "unregistered_treatments": [{"name": "사전에 없는 시술명 원문", "source": "text|image|ocr", "context": "발견 문맥 (짧게)"}],
+  "raw_price_texts": ["파싱 실패한 가격 원문 텍스트"],
   "extraction_summary": {
     "total_doctors": number,
     "total_academic": number,
@@ -393,7 +365,9 @@ ${navSection}
     "has_phone": boolean,
     "has_kakao": boolean,
     "has_sns": boolean,
-    "price_available_ratio": "가격 있는 시술 / 전체 시술 (예: 15/23)"
+    "price_available_ratio": "가격 있는 시술 / 전체 시술 (예: 15/23)",
+    "unregistered_equipment_count": number,
+    "unregistered_treatments_count": number
   }
 }`;
 }
@@ -423,21 +397,10 @@ export function buildImageBannerPrompt(
 ★ 장비 사진이 있으면 장비명을 식별하세요.
 ★ 학술대회 사진이 있으면 발표자/참가자 이름을 읽으세요.
 
-## 장비명 정규화
-| 한글/약어 | 정규화 |
-|-----------|--------|
-| 써마지, 써마지FLX | Thermage FLX |
-| 울쎄라 | Ulthera |
-| 슈링크 | Shrink Universe |
-| 인모드 | InMode |
-| 토르, TORR | TORR RF |
-| 텐쎄라 | Tensera |
-| 스칼렛S | Scarlet S |
-| 엑셀V | Excel V |
-| 피코슈어 | PicoSure |
-| 온다 | Onda |
-| 포텐자 | Potenza |
-| 올리지오 | Oligio |
+## 장비명 정규화 (데이터 사전)
+${getEquipmentNormalizationTable()}
+
+★ 사전에 없는 장비도 원문 그대로 추출. 절대 버리지 마라.
 
 JSON으로 응답:
 {

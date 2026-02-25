@@ -11,6 +11,12 @@ import { fileURLToPath } from 'url';
 import dotenv from 'dotenv';
 import { getGeminiEndpoint, getGeminiModel } from '../utils/gemini-model.js';
 import { getAccessToken } from '../analysis/gemini-auth.js';
+import {
+  getEquipmentPromptSection,
+  getTreatmentPromptSection,
+  getPricePromptSection,
+  getExcludePromptSection,
+} from './dictionary-loader.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 dotenv.config({ path: path.resolve(__dirname, '../.env') });
@@ -119,16 +125,23 @@ async function analyzeWithGemini(
 
 ### 1. 보유 장비 (equipments)
 - 장비명, 브랜드, 카테고리(리프팅/레이저/바디/스킨부스터/기타), 제조사
-- 한국 피부과 장비 이중분류: 써마지FLX, 울쎄라, 슈링크, 인모드, 포텐자, 실펌X, 온다 등은 장비이면서 동시에 시술명
-- 중요: 텍스트에서 장비/기기 관련 키워드 적극적으로 찾기
+- 한국 피부과 장비 이중분류: 장비명 = 시술명. 장비명이 시술/이벤트/가격표 어디에든 등장하면 equipments에 반드시 포함.
+- 사전에 없는 장비도 발견하면 반드시 추출 (unregistered_equipment에 추가).
+
+${getEquipmentPromptSection()}
 
 ### 2. 시술 메뉴 (treatments)
 - 시술명, 카테고리, 가격 (있으면)
 - is_promoted: 이벤트/할인 여부
+- 사전에 없는 시술도 추출 (unregistered_treatments에 추가).
+
+${getTreatmentPromptSection()}
 
 ### 3. 가격 정보 (prices)
 - 한국 가격 패턴: "55만원"=550000, "39만"=390000, "5.5만"=55000
 - 이벤트 가격도 포함
+
+${getPricePromptSection()}
 
 ### 4. 의료진 (doctors)
 - 이름, 직함 (원장/부원장/전문의), 전문분야
@@ -182,7 +195,10 @@ async function analyzeWithGemini(
     "main_focus": "안티에이징 리프팅",
     "target_audience": "30-50대 여성",
     "investment_level": "high"
-  }
+  },
+  "unregistered_equipment": ["사전에 없는 장비명 원문"],
+  "unregistered_treatments": ["사전에 없는 시술명 원문"],
+  "raw_price_texts": ["파싱 실패한 가격 원문 텍스트"]
 }
 \`\`\`
 

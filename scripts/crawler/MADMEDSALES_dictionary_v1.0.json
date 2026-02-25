@@ -1,0 +1,122 @@
+{
+  "_meta": {
+    "version": "1.0.0",
+    "updated": "2026-02-25",
+    "description": "MADMEDSALES 데이터 분류 사전 - 코드에서 로드하여 Gemini 프롬프트에 주입",
+    "usage": "이 파일의 내용을 Gemini 프롬프트 system instruction에 포함시켜 분류 정확도를 높임"
+  },
+
+  "equipment": {
+    "_description": "장비 사전. 새 장비 발견 시 여기에 추가하면 R1 규칙이 자동 적용됨",
+    
+    "RF_TIGHTENING": [
+      { "standard": "Thermage", "ko": ["써마지"], "en": ["Thermage", "THERMAGE"], "gen": ["FLX", "CPT"] },
+      { "standard": "InMode", "ko": ["인모드"], "en": ["Inmode", "INMODE"], "gen": ["FX", "미니FX"] },
+      { "standard": "Oligio", "ko": ["올리지오"], "en": ["Oligio", "OLIGIO"], "gen": ["X"] },
+      { "standard": "TuneFace", "ko": ["튠페이스"], "en": ["TuneFace", "TUNEFACE"], "gen": [] },
+      { "standard": "Tensera", "ko": ["텐써마", "텐쎄라"], "en": ["Tensera"], "gen": [] },
+      { "standard": "Volnewmer", "ko": ["볼뉴머"], "en": ["Volnewmer"], "gen": [] },
+      { "standard": "Linearge", "ko": ["리니어지"], "en": ["Linearge"], "gen": [] },
+      { "standard": "LinearFirm", "ko": ["리니어펌"], "en": ["LinearFirm"], "gen": [] },
+      { "standard": "Titanium", "ko": ["티타늄", "티타늄리프팅"], "en": ["Titanium"], "gen": [] },
+      { "standard": "Onda", "ko": ["온다", "온다리프팅"], "en": ["Onda", "ONDA"], "gen": [] },
+      { "standard": "CERP", "ko": ["세르프"], "en": ["CERP"], "gen": [] },
+      { "standard": "3DEEP", "ko": ["쓰리딥"], "en": ["3DEEP"], "gen": [] },
+      { "standard": "FairTitanium", "ko": ["페어티타늄"], "en": ["FairTitanium"], "gen": [] },
+      { "standard": "Exilis", "ko": ["엑실리스"], "en": ["Exilis"], "gen": [] },
+      { "standard": "TORR RF", "ko": ["토르", "토르RF", "토르리프팅", "토로이달"], "en": ["TORR", "Torr", "TORR RF", "MPR"], "gen": [] }
+    ],
+
+    "HIFU": [
+      { "standard": "Ulthera", "ko": ["울쎄라", "유쎄라", "울쎄라피"], "en": ["Ulthera", "ULTHERA"], "gen": ["Prime", "프라임"] },
+      { "standard": "Shurink", "ko": ["슈링크"], "en": ["Shurink", "SHURINK"], "gen": ["유니버스", "Universe"] },
+      { "standard": "Liftera", "ko": ["리프테라"], "en": ["Liftera", "LIFTERA"], "gen": [] },
+      { "standard": "Doublo", "ko": ["더블로"], "en": ["Doublo", "DOUBLO"], "gen": ["골드", "Gold"] },
+      { "standard": "Sofwave", "ko": ["소프웨이브"], "en": ["Sofwave", "SOFWAVE"], "gen": [] },
+      { "standard": "Ulfit", "ko": ["울핏"], "en": ["Ulfit", "ULFIT"], "gen": [] },
+      { "standard": "Ultraformer", "ko": ["울트라포머"], "en": ["Ultraformer"], "gen": ["MPT"] }
+    ],
+
+    "RF_MICRONEEDLE": [
+      { "standard": "Potenza", "ko": ["포텐자"], "en": ["Potenza", "POTENZA"], "gen": [] },
+      { "standard": "Sylfirm", "ko": ["실펌"], "en": ["Sylfirm", "SYLFIRM"], "gen": ["X"] },
+      { "standard": "Agnes", "ko": ["아그네스"], "en": ["Agnes", "AGNES"], "gen": [] },
+      { "standard": "Scarlet", "ko": ["스카렛", "스카젠"], "en": ["Scarlet"], "gen": [] },
+      { "standard": "SecretRF", "ko": ["시크릿RF"], "en": ["SecretRF", "Secret RF"], "gen": [] },
+      { "standard": "Vivace", "ko": ["비바체"], "en": ["Vivace"], "gen": [] },
+      { "standard": "Profound", "ko": ["프로파운드"], "en": ["Profound"], "gen": [] }
+    ],
+
+    "LASER": [
+      { "standard": "ExcelV", "ko": ["엑셀브이", "엑셀V"], "en": ["ExcelV", "Excel V"], "gen": [] },
+      { "standard": "PicoSure", "ko": ["피코슈어"], "en": ["PicoSure", "PICOSURE"], "gen": [] },
+      { "standard": "PicoWay", "ko": ["피코웨이"], "en": ["PicoWay", "PICOWAY"], "gen": [] },
+      { "standard": "PicoPlus", "ko": ["피코플러스"], "en": ["PicoPlus"], "gen": [] },
+      { "standard": "RevLite", "ko": ["레블라이트"], "en": ["RevLite", "REVLITE"], "gen": [] },
+      { "standard": "Fraxel", "ko": ["프락셀"], "en": ["Fraxel", "FRAXEL"], "gen": [] },
+      { "standard": "Clarity", "ko": ["클라리티"], "en": ["Clarity", "CLARITY"], "gen": ["II"] },
+      { "standard": "GentleMax", "ko": ["젠틀맥스"], "en": ["GentleMax", "GENTLEMAX"], "gen": ["Pro"] },
+      { "standard": "StellarM22", "ko": ["스텔라M22"], "en": ["StellarM22", "Stellar M22"], "gen": [] },
+      { "standard": "Accufit", "ko": ["아큐핏"], "en": ["Accufit", "ACCUFIT"], "gen": [] },
+      { "standard": "Spectra", "ko": ["스펙트라"], "en": ["Spectra"], "gen": [] },
+      { "standard": "Genesis", "ko": ["제네시스"], "en": ["Genesis"], "gen": [] },
+      { "standard": "SopranoICE", "ko": ["소프라노"], "en": ["Soprano", "SopranoICE"], "gen": ["Titanium"] }
+    ],
+
+    "IPL": [
+      { "standard": "IPL", "ko": ["아이피엘"], "en": ["IPL"], "gen": [] },
+      { "standard": "BBL", "ko": ["비비엘"], "en": ["BBL"], "gen": [] },
+      { "standard": "LDM", "ko": ["엘디엠"], "en": ["LDM"], "gen": [] }
+    ],
+
+    "BODY": [
+      { "standard": "CoolSculpting", "ko": ["쿨스컬프팅", "쿨스컬프팅엘리트"], "en": ["CoolSculpting"], "gen": ["Elite"] },
+      { "standard": "Vanquish", "ko": ["바넥스"], "en": ["Vanquish"], "gen": [] },
+      { "standard": "Emsculpt", "ko": ["엠스컬프트"], "en": ["Emsculpt", "EMSCULPT"], "gen": ["NEO"] },
+      { "standard": "LipoCell", "ko": ["리포셀"], "en": ["LipoCell"], "gen": [] }
+    ],
+
+    "SKINBOOSTER": [
+      { "standard": "Juvelook", "ko": ["쥬베룩"], "en": ["Juvelook"], "gen": ["볼륨", "울트라", "Volume", "Ultra"] },
+      { "standard": "Rejuran", "ko": ["리쥬란"], "en": ["Rejuran"], "gen": ["힐러", "아이", "HB", "톤", "Healer", "i"] },
+      { "standard": "Sculptra", "ko": ["스컬트라"], "en": ["Sculptra"], "gen": [] },
+      { "standard": "Ellanse", "ko": ["엘란쎄"], "en": ["Ellanse"], "gen": ["S", "M", "L", "E"] },
+      { "standard": "Profhilo", "ko": ["프로파일로"], "en": ["Profhilo"], "gen": [] }
+    ]
+  },
+
+  "treatment_keywords": {
+    "_description": "시술 키워드. 크롤링에서 새 시술명 발견 시 여기에 추가",
+    
+    "hifu": ["울쎄라", "슈링크", "슈링크유니버스", "리프테라", "더블로", "더블로골드", "울트라포머", "울트라포머MPT", "유쎄라", "하이푸", "울핏", "HIFU"],
+    "rf": ["써마지", "써마지FLX", "써마지CPT", "올리지오", "인모드", "인모드FX", "인모드미니FX", "텐써마", "엑실리스", "토르RF", "아그네스", "스카렛", "시크릿RF", "인피니", "포텐자", "비바체", "볼뉴머", "실펌", "실펌X"],
+    "skinbooster": ["리쥬란", "리쥬란힐러", "리쥬란아이", "리쥬란HB", "리쥬란톤", "쥬베룩", "쥬베룩볼륨", "쥬베룩울트라", "물광주사", "연어주사", "아기주사", "스킨보톡스", "윤광주사", "핑크주사", "백옥주사", "신데렐라주사", "비타민주사", "엑소좀", "줄기세포주사", "프로파일로", "스컬트라", "엘란쎄", "레디에스", "리투오", "PDRN", "태반주사"],
+    "botox": ["보톡스", "제오민", "나보타", "보툴렉스", "디스포트", "리즈톡스", "코어톡스", "이노톡스", "메디톡신", "스킨보톡스", "미소보톡스", "턱보톡스", "광대보톡스", "승모근보톡스", "종아리보톡스", "이마보톡스", "미간보톡스"],
+    "filler": ["쥬비덤", "쥬비덤볼륨", "쥬비덤볼루마", "쥬비덤볼벨라", "레스틸렌", "레스틸렌리도", "벨로테로", "테오시알", "이브아르", "클레비엘", "스타일레이지", "프린세스", "코필러", "팔자필러", "볼필러", "턱필러", "이마필러", "입술필러", "눈밑필러", "애교살필러"],
+    "laser": ["피코레이저", "피코슈어", "피코웨이", "피코플러스", "피코토닝", "레이저토닝", "클라리티", "제네시스", "프락셀", "스펙트라", "레블라이트", "IPL", "BBL", "LDM", "아쿠아필", "제트필", "탄소레이저", "블랙돌", "레이저제모", "젠틀맥스", "소프라노", "엑셀브이", "루비레이저"],
+    "thread": ["실리프팅", "미니실리프팅", "민트실", "녹는실", "코그실", "브이리프팅", "아큐리프트", "애플라인", "미스코실", "PDO실", "PCL실", "PLLA실", "코그리프팅", "울핏리프팅"],
+    "other": ["여드름압출", "여드름치료", "MTS", "더마펜", "모공치료", "흉터치료", "기미치료", "색소치료", "지방분해주사", "지방흡입", "카복시", "LLD", "동안주사", "물방울리프팅"]
+  },
+
+  "price_units": {
+    "_description": "가격 단위. 새 단위 발견 시 여기에 추가",
+    "shot": { "ko": ["샷"], "en": ["shot", "shots"], "typical_equipment": ["울쎄라", "슈링크", "올리지오", "볼뉴머"] },
+    "cc": { "ko": ["cc", "씨씨"], "en": ["cc"], "typical_equipment": ["리쥬란", "필러", "물광주사"] },
+    "line": { "ko": ["줄", "만줄"], "en": ["line", "kJ"], "typical_equipment": ["온다"] },
+    "unit": { "ko": ["유닛", "단위"], "en": ["unit", "units", "U"], "typical_equipment": ["보톡스", "나보타", "제오민"] },
+    "vial": { "ko": ["바이알"], "en": ["vial"], "typical_equipment": ["스컬트라", "엘란쎄"] },
+    "syringe": { "ko": ["시린지"], "en": ["syringe"], "typical_equipment": ["필러"] },
+    "session": { "ko": ["회", "차"], "en": ["session", "time"], "typical_equipment": [] },
+    "area": { "ko": ["부위"], "en": ["area"], "typical_equipment": ["보톡스"] }
+  },
+
+  "exclude": {
+    "_description": "제외 대상",
+    "non_derma_categories": ["한의원", "한방", "침", "뜸", "부항", "추나", "정형외과", "내과", "소아과", "이비인후과", "비뇨기과", "산부인과", "치과", "안과", "정신과", "신경과"],
+    "noise_patterns": ["전후 사진", "효과를 확인", "영상으로 보는", "지금 예약", "이벤트 진행중"],
+    "blacklist_domains": ["sungyesa.com", "modoodoc.com", "babitalk.com", "gangnamunni.com", "yeoshin.co.kr", "goodoc.co.kr"],
+    "non_content_signals": ["자동등록방지", "Please prove that you are human", "보안절차", "서비스를 종료하였습니다"]
+  },
+
+  "torr_rf_keywords": ["토르", "TORR", "Torr", "torr", "토르리프팅", "토르RF", "TORR RF", "MPR", "토로이달"]
+}
