@@ -118,12 +118,27 @@ interface OcrEntry {
   text: string;
 }
 
+interface SalesProfile {
+  overallScore: number;
+  grade: 'S' | 'A' | 'B' | 'C';
+  axisScores: { investment: number; portfolio: number; scale: number; marketing: number };
+  primaryAngle: { angle: string; score: number; reason: string };
+  salesAngles: Array<{ angle: string; score: number; reason: string }>;
+  rfDevices: string[];
+  hifuDevices: string[];
+  liftingTreatmentCount: number;
+  avgPrice: number | null;
+  snsChannels: string[];
+  hasTorrRf: boolean;
+}
+
 interface ReportInput {
   hospitalId: string;
   hospitalName: string;
   analysis: AnalysisData;
   ocrRaw: OcrEntry[];
   coverageRaw: string | null;
+  sales: SalesProfile | null;
 }
 
 interface ReportConfig {
@@ -193,97 +208,317 @@ function buildRawDataTxt(input: ReportInput): string {
 }
 
 // ═══════════════════════════════════════════
-// 2. 마크다운 보고서 생성 (골격 — 포맷 미정)
+// 2. 마크다운 보고서 생성
 // ═══════════════════════════════════════════
 
+const ANGLE_LABELS: Record<string, string> = {
+  upgrade: '업그레이드',
+  portfolio_expand: '포트폴리오 확장',
+  premium: '프리미엄 포지셔닝',
+  cost_efficiency: '비용 효율',
+  new_adoption: '신규 도입',
+};
+
+function fmtPrice(p: number | null | undefined): string {
+  if (!p) return '-';
+  return `${p.toLocaleString()}원`;
+}
+
 function buildMarkdownReport(input: ReportInput, config: ReportConfig): string {
-  const { analysis } = input;
+  const { analysis, sales } = input;
+  const L: string[] = [];
 
-  // TODO: 사용자가 보고서 포맷을 확정하면 여기에 구현
-  // 현재는 기본 골격만 생성
-
-  const lines: string[] = [];
-
-  lines.push(`# ${input.hospitalName} 분석 보고서`);
-  lines.push('');
-  lines.push(`> 생성일: ${config.date} | 테스트: ${config.testName}`);
-  lines.push('');
-
-  // 요약
-  const summary = analysis.extraction_summary;
-  if (summary) {
-    lines.push('## 요약');
-    lines.push('');
-    lines.push(`| 항목 | 수량 |`);
-    lines.push(`|------|------|`);
-    lines.push(`| 의사 | ${summary.total_doctors ?? '-'} |`);
-    lines.push(`| 장비 | ${summary.total_equipment ?? '-'} |`);
-    lines.push(`| 시술 | ${summary.total_treatments ?? '-'} |`);
-    lines.push(`| 이벤트 | ${summary.total_events ?? '-'} |`);
-    lines.push(`| 가격 공개 | ${summary.price_available_ratio ?? '-'} |`);
-    lines.push('');
+  // ────────────────────────────
+  // 헤더
+  // ────────────────────────────
+  L.push(`# ${input.hospitalName}`);
+  L.push('');
+  L.push(`| 항목 | 내용 |`);
+  L.push(`|------|------|`);
+  L.push(`| 생성일 | ${config.date} |`);
+  L.push(`| 테스트 | ${config.testName} |`);
+  if (sales) {
+    L.push(`| 등급 | **${sales.grade}** (${sales.overallScore}점) |`);
+    L.push(`| 추천 앵글 | ${ANGLE_LABELS[sales.primaryAngle.angle] || sales.primaryAngle.angle} |`);
   }
+  const ci = analysis.contact_info;
+  if (ci?.website_url) L.push(`| 웹사이트 | ${ci.website_url} |`);
+  if (ci?.address) {
+    const addr = typeof ci.address === 'string' ? ci.address : (ci.address as { full_address?: string }).full_address || '';
+    if (addr) L.push(`| 주소 | ${addr} |`);
+  }
+  L.push('');
 
-  // 의사
-  if (analysis.doctors.length > 0) {
-    lines.push('## 의료진');
-    lines.push('');
-    for (const doc of analysis.doctors) {
-      lines.push(`- **${doc.name}** ${doc.title || ''} ${doc.specialty || ''}`);
+  // ────────────────────────────
+  // 1. 세일즈 브리핑
+  // ────────────────────────────
+  if (sales) {
+    L.push('---');
+    L.push('');
+    L.push('## 1. 세일즈 브리핑');
+    L.push('');
+
+    // 4축 스코어 바
+    const ax = sales.axisScores;
+    L.push('### 4축 프로파일');
+    L.push('');
+    L.push(`| 축 | 점수 | 바 |`);
+    L.push(`|-----|------|-----|`);
+    L.push(`| 투자성향 (35%) | ${ax.investment} | ${'█'.repeat(Math.round(ax.investment / 5))}${'░'.repeat(20 - Math.round(ax.investment / 5))} |`);
+    L.push(`| 포트폴리오 (25%) | ${ax.portfolio} | ${'█'.repeat(Math.round(ax.portfolio / 5))}${'░'.repeat(20 - Math.round(ax.portfolio / 5))} |`);
+    L.push(`| 규모 (25%) | ${ax.scale} | ${'█'.repeat(Math.round(ax.scale / 5))}${'░'.repeat(20 - Math.round(ax.scale / 5))} |`);
+    L.push(`| 마케팅 (15%) | ${ax.marketing} | ${'█'.repeat(Math.round(ax.marketing / 5))}${'░'.repeat(20 - Math.round(ax.marketing / 5))} |`);
+    L.push('');
+
+    // 앵글
+    L.push('### 추천 영업 앵글');
+    L.push('');
+    for (let i = 0; i < sales.salesAngles.length; i++) {
+      const sa = sales.salesAngles[i];
+      const label = ANGLE_LABELS[sa.angle] || sa.angle;
+      const prefix = i === 0 ? '**[1순위]**' : `[${i + 1}순위]`;
+      L.push(`- ${prefix} **${label}** (${sa.score}점)`);
+      L.push(`  - ${sa.reason}`);
     }
-    lines.push('');
-  }
+    L.push('');
 
-  // 장비
-  if (analysis.medical_devices.length > 0) {
-    lines.push('## 보유 장비');
-    lines.push('');
-    lines.push('| 장비명 | 카테고리 | 타입 | 제조사 |');
-    lines.push('|--------|----------|------|--------|');
-    for (const dev of analysis.medical_devices) {
-      lines.push(`| ${dev.name} | ${dev.subcategory || '-'} | ${dev.device_type} | ${dev.manufacturer || '-'} |`);
+    // TORR RF 현황
+    if (sales.hasTorrRf) {
+      L.push('> **TORR RF 이미 보유** — 소모품/추가기 영업 또는 다른 지점 확대 타겟');
     }
-    lines.push('');
+    L.push('');
   }
 
-  // 시술
+  // ────────────────────────────
+  // 2. 장비 현황
+  // ────────────────────────────
+  const devices = analysis.medical_devices.filter(d => d.device_type === 'device');
+  const injectables = analysis.medical_devices.filter(d => d.device_type === 'injectable');
+
+  if (devices.length > 0 || injectables.length > 0) {
+    L.push('---');
+    L.push('');
+    L.push('## 2. 장비 현황');
+    L.push('');
+  }
+
+  if (devices.length > 0) {
+    // 카테고리별 그룹핑
+    const grouped = new Map<string, typeof devices>();
+    for (const d of devices) {
+      const cat = d.subcategory || 'other';
+      if (!grouped.has(cat)) grouped.set(cat, []);
+      grouped.get(cat)!.push(d);
+    }
+
+    const catOrder = ['RF_TIGHTENING', 'HIFU', 'RF_MICRONEEDLE', 'LASER', 'IPL', 'BODY', 'SKINBOOSTER', 'OTHER_DEVICE'];
+    const catLabels: Record<string, string> = {
+      RF_TIGHTENING: 'RF 타이트닝', HIFU: 'HIFU', RF_MICRONEEDLE: 'RF 마이크로니들',
+      LASER: '레이저', IPL: 'IPL', BODY: '바디', SKINBOOSTER: '스킨부스터',
+      OTHER_DEVICE: '기타', rf: 'RF', hifu: 'HIFU', laser: '레이저', ipl: 'IPL',
+      body: '바디', other: '기타', rf_tightening: 'RF',
+    };
+
+    L.push(`**보유 장비 ${devices.length}종** (injectable 제외)`);
+    L.push('');
+
+    const sortedCats = [...grouped.keys()].sort((a, b) => {
+      const ia = catOrder.indexOf(a) >= 0 ? catOrder.indexOf(a) : catOrder.indexOf(a.toUpperCase());
+      const ib = catOrder.indexOf(b) >= 0 ? catOrder.indexOf(b) : catOrder.indexOf(b.toUpperCase());
+      return (ia >= 0 ? ia : 99) - (ib >= 0 ? ib : 99);
+    });
+
+    for (const cat of sortedCats) {
+      const devs = grouped.get(cat)!;
+      const label = catLabels[cat] || catLabels[cat.toLowerCase()] || cat;
+      const names = devs.map(d => {
+        const kr = d.korean_name ? ` (${d.korean_name})` : '';
+        return `${d.name}${kr}`;
+      }).join(', ');
+      L.push(`- **${label}**: ${names}`);
+    }
+    L.push('');
+
+    // RF/HIFU 상세 (영업 핵심)
+    if (sales && (sales.rfDevices.length > 0 || sales.hifuDevices.length > 0)) {
+      L.push('**리프팅 장비 상세**');
+      L.push('');
+      L.push('| 장비 | 카테고리 | 설명 |');
+      L.push('|------|----------|------|');
+      for (const d of devices) {
+        const cat = (d.subcategory || '').toUpperCase();
+        if (cat.includes('RF') || cat.includes('HIFU')) {
+          L.push(`| ${d.name} | ${d.subcategory} | ${d.description || '-'} |`);
+        }
+      }
+      L.push('');
+    }
+  }
+
+  if (injectables.length > 0) {
+    L.push(`**주사제/약제 ${injectables.length}종**`);
+    L.push('');
+    const injNames = injectables.map(d => {
+      const kr = d.korean_name ? ` (${d.korean_name})` : '';
+      return `${d.name}${kr}`;
+    }).join(', ');
+    L.push(injNames);
+    L.push('');
+  }
+
+  // ────────────────────────────
+  // 3. 시술 메뉴
+  // ────────────────────────────
   if (analysis.treatments.length > 0) {
-    lines.push('## 시술 메뉴');
-    lines.push('');
-    lines.push('| 시술명 | 카테고리 | 정가 | 이벤트가 |');
-    lines.push('|--------|----------|------|----------|');
-    for (const t of analysis.treatments) {
-      const reg = t.regular_price ? `${t.regular_price.toLocaleString()}원` : '-';
-      const evt = t.event_price ? `${t.event_price.toLocaleString()}원` : '-';
-      lines.push(`| ${t.name} | ${t.category || '-'} | ${reg} | ${evt} |`);
+    L.push('---');
+    L.push('');
+    L.push('## 3. 시술 메뉴');
+    L.push('');
+
+    // 가격 있는 시술 먼저
+    const priced = analysis.treatments.filter(t => t.regular_price || t.event_price);
+    const unpriced = analysis.treatments.filter(t => !t.regular_price && !t.event_price);
+
+    if (priced.length > 0) {
+      L.push(`### 가격 공개 시술 (${priced.length}건)`);
+      L.push('');
+      L.push('| 시술명 | 카테고리 | 정가 | 이벤트가 | 단위 |');
+      L.push('|--------|----------|------|----------|------|');
+      for (const t of priced) {
+        const unit = t.quantity && t.unit ? `${t.quantity}${t.unit}` : t.unit || '-';
+        L.push(`| ${t.name} | ${t.category || '-'} | ${fmtPrice(t.regular_price)} | ${fmtPrice(t.event_price)} | ${unit} |`);
+      }
+      L.push('');
     }
-    lines.push('');
+
+    if (unpriced.length > 0) {
+      // 카테고리별로 묶어서 간결하게
+      const catGroups = new Map<string, string[]>();
+      for (const t of unpriced) {
+        const cat = t.category || 'other';
+        if (!catGroups.has(cat)) catGroups.set(cat, []);
+        catGroups.get(cat)!.push(t.name);
+      }
+      L.push(`### 기타 시술 (${unpriced.length}건, 가격 미공개)`);
+      L.push('');
+      for (const [cat, names] of catGroups) {
+        L.push(`- **${cat}**: ${names.join(', ')}`);
+      }
+      L.push('');
+    }
+
+    // 리프팅 관련 시술 하이라이트
+    const liftingKeywords = ['리프팅', '타이트닝', '써마지', '울쎄라', '슈링크', '더블로', '인모드', '올리지오', '텐쎄라', '온다'];
+    const liftingTreatments = analysis.treatments.filter(t =>
+      liftingKeywords.some(k => t.name.includes(k))
+    );
+    if (liftingTreatments.length > 0) {
+      L.push(`### RF/리프팅 관련 시술 (${liftingTreatments.length}건)`);
+      L.push('');
+      for (const t of liftingTreatments) {
+        const price = t.event_price || t.regular_price;
+        L.push(`- ${t.name}${price ? ` — ${fmtPrice(price)}` : ''}`);
+      }
+      L.push('');
+    }
   }
 
-  // 이벤트
+  // ────────────────────────────
+  // 4. 의료진
+  // ────────────────────────────
+  if (analysis.doctors.length > 0) {
+    L.push('---');
+    L.push('');
+    L.push('## 4. 의료진');
+    L.push('');
+    L.push('| 이름 | 직위 | 전문분야 | 신뢰도 |');
+    L.push('|------|------|----------|--------|');
+    for (const doc of analysis.doctors) {
+      const career = doc.career && doc.career.length > 0 ? doc.career.slice(0, 3).join(', ') : '';
+      L.push(`| ${doc.name} | ${doc.title || '-'} | ${doc.specialty || '-'}${career ? ` (${career})` : ''} | ${doc.confidence || '-'} |`);
+    }
+    L.push('');
+  }
+
+  // ────────────────────────────
+  // 5. 이벤트/프로모션
+  // ────────────────────────────
   if (analysis.events.length > 0) {
-    lines.push('## 이벤트');
-    lines.push('');
+    L.push('---');
+    L.push('');
+    L.push('## 5. 이벤트/프로모션');
+    L.push('');
+    L.push('| 이벤트명 | 유형 | 기간 | 할인 |');
+    L.push('|----------|------|------|------|');
     for (const evt of analysis.events) {
-      lines.push(`- **${evt.title}** (${evt.type || '-'}) ${evt.period || ''}`);
+      const discount = evt.discount_info || (evt.event_price ? fmtPrice(evt.event_price) : '-');
+      L.push(`| ${evt.title} | ${evt.type || '-'} | ${evt.period || '-'} | ${discount} |`);
     }
-    lines.push('');
+    L.push('');
   }
 
-  // 연락처
-  if (analysis.contact_info) {
-    const ci = analysis.contact_info;
-    lines.push('## 연락처');
-    lines.push('');
-    if (ci.website_url) lines.push(`- 웹사이트: ${ci.website_url}`);
-    if (ci.instagram) lines.push(`- Instagram: ${ci.instagram}`);
-    if (ci.blog) lines.push(`- 블로그: ${ci.blog}`);
-    if (ci.kakao_channel) lines.push(`- 카카오: ${ci.kakao_channel}`);
-    if (ci.youtube) lines.push(`- YouTube: ${ci.youtube}`);
-    lines.push('');
+  // ────────────────────────────
+  // 6. 클리닉 카테고리
+  // ────────────────────────────
+  if (analysis.clinic_categories && analysis.clinic_categories.length > 0) {
+    L.push('---');
+    L.push('');
+    L.push('## 6. 클리닉 구성');
+    L.push('');
+    for (const cat of analysis.clinic_categories) {
+      const treats = cat.treatments ? cat.treatments.join(', ') : '';
+      L.push(`- **${cat.name}**: ${treats}`);
+    }
+    L.push('');
   }
 
-  return lines.join('\n');
+  // ────────────────────────────
+  // 7. 연락처
+  // ────────────────────────────
+  if (ci) {
+    L.push('---');
+    L.push('');
+    L.push('## 7. 연락처');
+    L.push('');
+
+    const phones = ci.phone || [];
+    if (phones.length > 0) {
+      const phoneStr = phones.map(p => typeof p === 'string' ? p : p.number).join(', ');
+      L.push(`- **전화**: ${phoneStr}`);
+    }
+    if (ci.kakao_channel) L.push(`- **카카오**: ${ci.kakao_channel}`);
+    if (ci.instagram) L.push(`- **Instagram**: ${ci.instagram}`);
+    if (ci.youtube) L.push(`- **YouTube**: ${ci.youtube}`);
+    if (ci.blog) L.push(`- **블로그**: ${ci.blog}`);
+    if (ci.naver_booking) L.push(`- **네이버 예약**: ${ci.naver_booking}`);
+    if (ci.facebook) L.push(`- **Facebook**: ${ci.facebook}`);
+
+    const oh = ci.operating_hours;
+    if (oh) {
+      L.push('');
+      L.push('**운영시간**');
+      L.push('');
+      if (typeof oh === 'string') {
+        L.push(oh);
+      } else {
+        const hours = oh as Record<string, string | null>;
+        if (hours.weekday) L.push(`- 평일: ${hours.weekday}`);
+        if (hours.saturday) L.push(`- 토요일: ${hours.saturday}`);
+        if (hours.sunday) L.push(`- 일요일: ${hours.sunday}`);
+        if (hours.lunch_break) L.push(`- 점심: ${hours.lunch_break}`);
+      }
+    }
+    L.push('');
+  }
+
+  // ────────────────────────────
+  // 푸터
+  // ────────────────────────────
+  L.push('---');
+  L.push('');
+  L.push(`*Generated by MADMEDSALES v2 | ${config.date} | ${config.testName}*`);
+
+  return L.join('\n');
 }
 
 // ═══════════════════════════════════════════
@@ -437,6 +672,34 @@ async function main(): Promise<void> {
   if (skipCaptures) console.log(`   캡쳐 다운로드: 스킵`);
   console.log('');
 
+  // 세일즈 리포트 로드 (병원ID → SalesProfile 매핑)
+  const salesMap = new Map<string, SalesProfile>();
+  const salesPath = path.resolve(OUTPUT_DIR, 'v57-sales-report.json');
+  if (fs.existsSync(salesPath)) {
+    try {
+      const salesData = JSON.parse(fs.readFileSync(salesPath, 'utf-8')) as Array<Record<string, unknown>>;
+      for (const s of salesData) {
+        salesMap.set(s.hospitalId as string, {
+          overallScore: s.overallScore as number,
+          grade: s.grade as 'S' | 'A' | 'B' | 'C',
+          axisScores: s.axisScores as SalesProfile['axisScores'],
+          primaryAngle: s.primaryAngle as SalesProfile['primaryAngle'],
+          salesAngles: s.salesAngles as SalesProfile['salesAngles'],
+          rfDevices: s.rfDevices as string[],
+          hifuDevices: s.hifuDevices as string[],
+          liftingTreatmentCount: s.liftingTreatmentCount as number,
+          avgPrice: s.avgPrice as number | null,
+          snsChannels: s.snsChannels as string[],
+          hasTorrRf: s.hasTorrRf as boolean,
+        });
+      }
+      console.log(`   세일즈 데이터: ${salesMap.size}개 병원 로드`);
+    } catch {
+      console.log('   ⚠️ v57-sales-report.json 로드 실패 — 세일즈 섹션 생략');
+    }
+  }
+  console.log('');
+
   // output 디렉토리에서 *_analysis.json 파일 수집
   const analysisFiles = fs.readdirSync(OUTPUT_DIR)
     .filter(f => f.endsWith('_analysis.json'))
@@ -495,6 +758,7 @@ async function main(): Promise<void> {
       analysis,
       ocrRaw,
       coverageRaw,
+      sales: salesMap.get(hospitalId) || null,
     };
 
     await generateReport(input, config, seqNo);
