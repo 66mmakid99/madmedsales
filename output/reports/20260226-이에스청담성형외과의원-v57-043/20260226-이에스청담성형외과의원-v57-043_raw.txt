@@ -1,0 +1,1689 @@
+═══════════════════════════════════════════════════
+  이에스청담성형외과의원 — 추출 원본 데이터
+═══════════════════════════════════════════════════
+
+──── [1] analysis.json (Gemini 분류 결과) ────
+{
+  "hospital_name": "이에스청담성형외과의원",
+  "doctors": [
+    {
+      "name": "이준호",
+      "title": "대표원장",
+      "specialty": "성형외과 전문의",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    }
+  ],
+  "academic_activities": [],
+  "medical_devices": [
+    {
+      "name": "Juvederm",
+      "korean_name": "쥬비덤",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "filler",
+      "description": "쥬비덤 줄기세포 지방이식 시술에 사용되는 필러",
+      "source": "website"
+    },
+    {
+      "name": "줄기세포주사",
+      "korean_name": "줄기세포주사",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "booster",
+      "description": "DNA셀포인트 줄기세포주사 시술에 사용되는 주사제",
+      "source": "website"
+    },
+    {
+      "name": "실",
+      "korean_name": "실",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "thread",
+      "description": "실리프팅 시술에 사용되는 실",
+      "source": "website"
+    }
+  ],
+  "treatments": [
+    {
+      "name": "내마음대로 ES.특화수술라인",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "제니캣쌍꺼풀[끝라인올리기]",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "눈"
+    },
+    {
+      "name": "1석2조 코끝성형&돌출입교정",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "코, 입"
+    },
+    {
+      "name": "얼굴소멸 V술",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "얼굴"
+    },
+    {
+      "name": "DNA셀포인트 줄기세포주사",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "skinbooster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "ES.Pick 플러스EYE 이마거상",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "이마"
+    },
+    {
+      "name": "자연유착/매몰법/절개법",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "눈"
+    },
+    {
+      "name": "눈매교정",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "눈"
+    },
+    {
+      "name": "올킬 눈재수술",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "눈"
+    },
+    {
+      "name": "이마거상",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "이마"
+    },
+    {
+      "name": "트임성형",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "눈"
+    },
+    {
+      "name": "눈밑지방재배치",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "눈밑"
+    },
+    {
+      "name": "남자무쌍 쌍꺼풀수술",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "눈"
+    },
+    {
+      "name": "볼륨동안 눈꺼풀지방이식",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "눈꺼풀"
+    },
+    {
+      "name": "촉촉눈가 눈건강 프로그램",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "눈가"
+    },
+    {
+      "name": "더블입체 인중코성형",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "인중, 코"
+    },
+    {
+      "name": "콧볼축소",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "콧볼"
+    },
+    {
+      "name": "더블체크 코재수술",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "코"
+    },
+    {
+      "name": "남자코성형",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "코"
+    },
+    {
+      "name": "외상 후 복원 코수술",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "코"
+    },
+    {
+      "name": "쥬비덤 줄기세포 지방이식",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "filler",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "트리플거상",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "얼굴"
+    },
+    {
+      "name": "내시경 이마주름",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "이마"
+    },
+    {
+      "name": "실리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "thread",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "얼굴"
+    },
+    {
+      "name": "중안면거상술",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "중안면"
+    },
+    {
+      "name": "골반&힙 지방이식",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "골반, 힙"
+    },
+    {
+      "name": "부위별 지방흡입",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "가슴확대/축소",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "가슴"
+    },
+    {
+      "name": "처진가슴교정",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "가슴"
+    },
+    {
+      "name": "가슴재수술",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "가슴"
+    },
+    {
+      "name": "유두/유륜수술",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "유두, 유륜"
+    },
+    {
+      "name": "남자 여유증수술",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "가슴"
+    },
+    {
+      "name": "ES. V라인 패키지",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": true,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "얼굴"
+    },
+    {
+      "name": "밀착 리프팅 레이저",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "얼굴"
+    },
+    {
+      "name": "피부질환개선 레이저",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "탱탱얼굴재생 프로그램",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "얼굴"
+    },
+    {
+      "name": "스킨부스터",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "skinbooster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "얼굴"
+    },
+    {
+      "name": "ES.수액테라피",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other_injectable",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "보톡스/필러",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "botox",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "얼굴"
+    },
+    {
+      "name": "10대눈성형",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "눈"
+    },
+    {
+      "name": "눈썹하거상",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "눈썹"
+    },
+    {
+      "name": "눈위지방제거",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "눈위"
+    },
+    {
+      "name": "뒤트임",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "눈"
+    },
+    {
+      "name": "밑트임",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "눈"
+    },
+    {
+      "name": "앞트임",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "눈"
+    },
+    {
+      "name": "윗트임",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "눈"
+    },
+    {
+      "name": "절개쌍꺼풀",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "눈"
+    },
+    {
+      "name": "자연유착",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "눈"
+    }
+  ],
+  "events": [],
+  "clinic_categories": [
+    {
+      "name": "성형센터",
+      "treatments": []
+    },
+    {
+      "name": "ES.특화수술",
+      "treatments": [
+        "내마음대로 ES.특화수술라인",
+        "제니캣쌍꺼풀[끝라인올리기]",
+        "1석2조 코끝성형&돌출입교정",
+        "얼굴소멸 V술",
+        "DNA셀포인트 줄기세포주사"
+      ]
+    },
+    {
+      "name": "눈성형",
+      "treatments": [
+        "ES.Pick 플러스EYE 이마거상",
+        "자연유착/매몰법/절개법",
+        "눈매교정",
+        "올킬 눈재수술",
+        "이마거상",
+        "트임성형",
+        "눈밑지방재배치",
+        "남자무쌍 쌍꺼풀수술",
+        "볼륨동안 눈꺼풀지방이식",
+        "촉촉눈가 눈건강 프로그램",
+        "10대눈성형",
+        "눈썹하거상",
+        "눈위지방제거",
+        "뒤트임",
+        "밑트임",
+        "앞트임",
+        "윗트임",
+        "절개쌍꺼풀",
+        "자연유착"
+      ]
+    },
+    {
+      "name": "코성형",
+      "treatments": [
+        "더블입체 인중코성형",
+        "콧볼축소",
+        "더블체크 코재수술",
+        "남자코성형",
+        "외상 후 복원 코수술"
+      ]
+    },
+    {
+      "name": "동안성형",
+      "treatments": [
+        "쥬비덤 줄기세포 지방이식",
+        "트리플거상",
+        "내시경 이마주름",
+        "실리프팅",
+        "중안면거상술"
+      ]
+    },
+    {
+      "name": "체형성형",
+      "treatments": [
+        "골반&힙 지방이식",
+        "부위별 지방흡입",
+        "가슴확대/축소",
+        "처진가슴교정",
+        "가슴재수술",
+        "유두/유륜수술",
+        "남자 여유증수술"
+      ]
+    },
+    {
+      "name": "안티에이징센터",
+      "treatments": []
+    },
+    {
+      "name": "페이스라인",
+      "treatments": [
+        "ES. V라인 패키지",
+        "밀착 리프팅 레이저",
+        "피부질환개선 레이저",
+        "탱탱얼굴재생 프로그램",
+        "스킨부스터",
+        "ES.수액테라피",
+        "보톡스/필러"
+      ]
+    },
+    {
+      "name": "After.ES",
+      "treatments": []
+    },
+    {
+      "name": "피부과",
+      "treatments": []
+    }
+  ],
+  "contact_info": {
+    "email": [
+      {
+        "address": "esps1001@naver.com",
+        "type": "대표",
+        "source": "footer"
+      }
+    ],
+    "phone": [
+      {
+        "number": "02-540-6042",
+        "type": "대표",
+        "source": "footer"
+      }
+    ],
+    "address": {
+      "full_address": "서울특별시 강남구 도산대로 435 삼이빌딩 6층, 이에스청담성형외과&피부과의원",
+      "sido": "서울특별시",
+      "sigungu": "강남구"
+    },
+    "kakao_channel": "https://pf.kakao.com/_JxncxjG",
+    "naver_booking": null,
+    "naver_place": null,
+    "instagram": "https://www.instagram.com/escheongdam.pl/",
+    "facebook": null,
+    "youtube": "https://m.youtube.com/@esplasticderma",
+    "blog": "https://blog.naver.com/escheongdam_dr-lee",
+    "website_url": "http://www.escheongdam.co.kr",
+    "operating_hours": null
+  },
+  "unregistered_equipment": [],
+  "unregistered_treatments": [],
+  "raw_price_texts": [],
+  "extraction_summary": {
+    "total_doctors": 1,
+    "total_academic": 0,
+    "total_equipment": 3,
+    "total_devices": 0,
+    "total_injectables": 3,
+    "total_treatments": 48,
+    "total_events": 0,
+    "total_categories": 10,
+    "total_contact_channels": 6,
+    "has_email": true,
+    "has_phone": true,
+    "has_kakao": true,
+    "has_sns": true,
+    "price_available_ratio": "0/48",
+    "unregistered_equipment_count": 0,
+    "unregistered_treatments_count": 0
+  }
+}
+
+──── [2] ocr_raw.json (이미지 OCR 원본) ────
+
+--- page_1_other_capture_0 ---
+ES 이예스청담성형외과의원
+ES CHEONGDAM PLASTIC SURGERY
+ES.청담 [성형센터] ES.특화수술 눈성형 코성형 동안성형 체형성형 [안티에이징센터] 페이스라인 After.ES 상담예약
+로그인 회원가입
+
+AGREEMENT
+회원가입약관 및 개인정보 수집 및 이용의 내용에 동의하셔야 회원가입 하실 수 있습니다.
+
+SNS 계정으로 가입
+N 네이버 로그인
+카카오 로그인
+
+회원가입약관
+제1조(목적)
+이 약관은 이예스청담성형외과의원 회사(전자상거래 사업자)가 운영하는 이예스청담성형외과의원 사이버 몰(이하 “몰”이라 한다)에서 제공하는 인터넷 관련 서비스(이하 “서비스”
+라 한다)를 이용함에 있어 사이버 몰과 이용자의 권리,의무 및 책임사항을 규정함을 목적으로 합니다.
+※PC통신, 무선 등을 이용하는 전자상거래에 대해서도 그 성질에 반하지 않는 한 이 약관을 준용합니다.
+
+개인정보 수집 및 이용
+목적
+항목
+보유기간
+이용자 식별 및 본인여부 확인
+아이디, 닉네임, 비밀번호
+회원 탈퇴 시까지
+이용에 관한 통지,
+한 이용자 식별
+연락처 (이메일)
+회원 탈퇴 시까지
+
+WhatsApp
+LINE
+WeChat
+회원가입 약관에 모두 동의합니다
+취소
+회원가입
+
+닥터스노트
+01
+온라인예약
+TALK
+카톡상담
+전후사진
+
+--- page_1_other_capture_1 ---
+ES 이예스청담성형외과의원
+ES CHEONGDAM PLASTIC SURGERY
+로그인 회원가입
+ES.청담 [성형센터] ES.특화수술 눈성형 코성형 동안성형 체형성형 [안티에이징센터] 페이스라인 After.ES 상담예약
+
+ES CHEONGDAM Shorts
+
+ES 이예스청담성형외과의원
+ES CHEONGDAM PLASTIC SURGERY
+BEFORE
+ES 이예스청담성형외과의원
+ES CHEONGDAM PLASTIC SURGERY
+BEFORE
+ES 이예스청담성형외과의원
+ES CHEONGDAM PLASTIC SURGERY
+BEFORE
+AFTER 1M
+AFTER 1M
+AFTER 1M
+성형 [#자연유착 + #윗트임]
+10대눈성형 [#자연유착 + #앞트임 + 눈밑지
+방재배치]
+쌍수후기 : 눈재수술 [#절개쌍꺼풀 + #윗트임
+]
+닥터스노트
+01
+온라인예약
+카톡상담
+전후사진
+WhatsApp
+LINE
+WeChat
+
+--- page_1_other_capture_2 ---
+ES
+이메스청담성형외과의원
+ES CHEONGDAM PLASTIC SURGERY
+
+ES.청담 [성형센터] ES.특화수술 눈성형 동안성형 체형성형 [안티에이징센터] 페이스라인 After.ES 상담예약
+로그인 회원가입
+
+Insta
+Collction
+
+닥터스노트
+01
+온라인예약
+TALK
+카톡상담
+전후사진
+
+WhatsApp
+LINE
+WeChat
+
+--- page_1_other_capture_3 ---
+ES 이메스청담성형외과의원
+ES CHEONGDAM PLASTIC SURGERY
+ES.청담 [성형센터] ES.특화수술 눈성형 코성형 동안성형 체형성형 [안티에이징센터] 페이스라인 After.ES 상담예약
+로그인 회원가입
+
+상담을 위한 신청자 정보를 입력해주세요.
+
+성함
+
+휴대폰
+
+상담부위
+
+개인정보처리방침 동의 [자세히 보기]
+SMS 수신 동의
+
+카카오톡 상담신청
+
+빠른 상담신청
+
+blog
+
+및 염증 등이 있을 수 있으며 만족도는 개개인마다 차이가 있을 수 있습니다.
+닥터스노트
+01
+온라인예약
+개인정보처리방침 | 이용약관 | 비급여진료
+카톡상담
+전후사진
+성형외과의원
+WhatsApp
+주소: 서울시 강남구 도산대로 435 6층(삼이빌딩)
+LINE 전화: 02-540-6042
+메일: esps1001@naver.com
+WeChat
+COPYRIGHT (C) 2024 ES CHEONGDAM Plastic Surgery. ALL RIGHTS RESERVED.
+
+--- page_1_other_capture_4 ---
+ES 이예스청담성형외과의원
+ES CHEONGDAM PLASTIC SURGERY
+₩ 로그인 회원가입
+ES.청담 [성형센터] ES.특화수술 눈성형 코성형 동안성형 체형성형 [안티에이징센터] 페이스라인 After.ES 상담예약
+휴대폰
+TALK 기기소속 상담신청
+상담부위
+빠른 상담신청
+FOLLOW US
+blog
+ㅇㅇㅇ 수술 후, 감염 및 염증 등이 있을 수 있으며 만족도는 개개인마다 차이가 있을 수 있습니다.
+닥터스노트
+병원명 : 이예스청담성형외과의원
+개인정보처리방침 | 이용약관 | 비급여진료비용
+대표자명 : 이주호
+01
+572-36-01240
+온라인예약
+WhatsApp
+구 도산대로 435 6층(삼이빌딩)
+0-6042
+카톡상담
+1@naver.com
+LINE
+COPYRIGHT (C) 2024 ES CHEONGDAM Plastic Surgery. ALL RIGHTS RESERVED.
+전후사진
+WeChat
+
+--- page_2_main_capture_0 ---
+ES
+이에스청담성형외과의원
+ES CHEONGDAM PLASTIC SURGERY
+
+💬
+이에스청담 상담 지연 안내
+현재 수술 예약 및 내원 상담 증가로 인하여
+상담 대기 시간이 30분 이상 발생할 수 있는 점 양해 부탁 드립니다.
+모두에게 만족스러운 상담이 될 수 있도록 진정성 있는 상담과 치료를 제공하는
+이에스청담성형외과 피부과가 되겠습니다.
+
+이에스청담성형외과·피부과는
+1:1 상담
+수술 집도
+치료
+결과
+까지
+성형외과전문의 원장님의 책임 진료로 진행되고 있습니다.
+ES 이에스청담성형외과의원
+ES CHEONGDAM PLASTIC SURGERY
+
+오늘 하루 보지 않기
+닫기
+
+💬
+WhatsApp
+LINE
+WeChat
+
+닥터스노트
+01
+온라인예약
+TALK
+카톡상담
+전후사진
+
+--- page_2_main_capture_1 ---
+이예스청담성형외과의원
+ES CHEONGDAM PLASTIC SURGERY
+
+blog
+Dr.이준호의 성형기록서
+
+이예스청담 상담 지연 안내
+현재 수술 예약 및 내원 상담 증가로 인하여
+상담 대기 시간이 30분 이상 발생할 수 있는 점 양해 부탁드립니다.
+모두에게 만족스러운 상담이 될 수 있도록 진정성 있는 상담과 치료를 제공하는
+이예스청담성형외과 피부과가 되겠습니다.
+
+이예스청담성형외과·피부과는
+1:1 상담
+수술 집도
+치료
+결과
+까지
+성형외과전문의 원장님의 책임 진료로 진행되고 있습니다.
+ES 이예스청담성형외과피부과의원
+
+오늘 하루 보지 않기
+닫기
+
+WhatsApp
+
+LINE
+
+WeChat
+
+닥터스노트
+01
+온라인예약
+TALK
+카톡상담
+전후사진
+
+--- page_2_main_capture_2 ---
+이예스청담성형외과피부과의원
+ES CHEONGDAM PLASTIC SURGERY
+EYE
+NOSE
+이예스청담성형외과피부과의원
+ES CHEONGDAM PLASTIC SURGERY & DERMATOLOGY CLINIC
+3월 진료 안내
+SUN MON TUE WED THU FRI SAT
+1
+2
+정상 진료
+3
+4
+휴진
+5
+6
+7
+8
+9
+10
+11
+휴진
+12
+13
+14
+15
+16
+17
+18
+휴진
+19
+20
+21
+22
+23
+24
+25
+휴진
+26
+27
+28
+29
+30
+31
+진료 예약 및 내원 시 착오 없으시길 바랍니다.
+오늘 하루 보지 않기
+닫기
+WhatsApp
+LINE
+WeChat
+닥터스노트
+01
+온라인예약
+TALK
+카톡상담
+전후사진
+
+--- page_2_main_capture_3 ---
+1:1 성형외과 전문의의
+과 다양한 장비,
+를 제공합니다.
+
+IS
+이에스정담성형외과피부과의원
+
+3월 진료 안내
+
+SUN MON TUE WED THU FRI SAT
+1 2 3 4 5 6 7
+정상 진료 휴진
+8 9 10 11 12 13 14
+휴진
+15 16 17 18 19 20 21
+휴진
+22 23 24 25 26 27 28
+휴진
+29 30 31
+
+WhatsApp
+
+ES CHEON
+LINE
+WeChat
+
+진료 예약 및 내원 시 착오 없으시길 바랍니다.
+
+오늘 하루 보지 않기
+닫기
+
+IS
+이에스정담성형외과피부과의원
+BEFORE
+
+IS
+이에스정담성형외과피부과의원
+BEFORE
+
+IS
+이에스정담성형외과피부과의원
+BEFORE
+
+닥터스노트
+
+01
+온라인예약
+
+카톡상담
+
+전후사진
+
+--- page_2_main_capture_4 ---
+정담성형외과
+NGDAM PLASTIC S
+AFTER 1M
+AFTER 1M
+AFTER 1M
+눈성형 [#자연유착 + #윗트임]
+10대눈성형 [#자연유착 + #윗트임 + 눈밑지]
+쌍수후기 : 눈재수술[ #절개쌍꺼풀 + #윗트임
+IS
+이에스정담성형외과피부과의원
+3월 진료 안내
+SUN MON TUE WED THU FRI SAT
+1
+2
+정상 진료
+3
+4
+휴진
+5
+6
+7
+8
+9
+10
+11
+휴진
+12
+13
+14
+15
+16
+17
+18
+휴진
+19
+20
+21
+22
+23
+24
+25
+휴진
+26
+27
+28
+29
+30
+31
+진료 예약 및 내원 시 착오 없으시길 바랍니다.
+오늘 하루 보지 않기
+닫기
+WhatsApp
+WhatsApp
+LINE
+LINE
+WeChat
+WeChat
+닥터스노트
+01
+온라인예약
+TALK
+카톡상담
+전후사진
+
+--- page_2_main_capture_5 ---
+이에스청담성형외과의원
+ES CHEONGDAM PLASTIC SURGERY
+WhatsApp
+LINE
+WeChat
+이에스청담성형외과&피부과의원
+3월 진료 안내
+SUN MON TUE WED THU FRI SAT
+1
+2 정상 진료
+3
+4 휴진
+5
+6
+7
+8
+9
+10
+11 휴진
+12
+13
+14
+15
+16
+17
+18 휴진
+19
+20
+21
+22
+23
+24
+25 휴진
+26
+27
+28
+29
+30
+31
+상담을 위한 선정적 정보
+진료 예약 및 내원 시 착오 없으시길 바랍니다.
+오늘 하루 보지 않기
+닫기
+카카오톡 상담신청
+네이버 상담신청
+닥터스노트
+01
+온라인예약
+카톡상담
+전후사진
+
+--- page_2_main_capture_6 ---
+성함
+ES CHEONGDAM PLASTIC SURGERY
+휴대폰
+상담부위
+SMS 수신 동의
+TALK 카카오톡 상담신청
+빠른 상담신청
+FOLLOW
+ES 이예스청담성형외과피부과의원
+3월 진료 안내
+SUN MON TUE WED THU FRI SAT
+1 2 3 4 5 6 7
+정상진료 휴진
+8 9 10 11 12 13 14
+휴진
+15 16 17 18 19 20 21
+휴진
+22 23 24 25 26 27 28
+휴진
+29 30 31
+진료 예약 및 내원 시 착오 없으시길 바랍니다.
+오늘 하루 보지 않기 닫기
+ㅇㅇㅇ수술 후, 감염 및 염증 등이 있을 수 있으며 만족
+ㅇㅇㅇ
+병원명 : 이예스청담성형외과피부과의원
+대표자명 : 이주호
++ 572-36-01240
+구 도산대로 435 6층(삼이빌딩)
+0-6042
+1@naver.com
+WhatsApp
+LINE
+WeChat
+닥터스노트
+처리방침 | 이용약관 | 비급여진료비
+01
+온라인예약
+TALK
+카톡상담
+전후사진
+
+──── [3] coverage_raw.txt (커버리지 검증 로그) ────
+{
+  "missing_equipments": [],
+  "missing_treatments": [],
+  "missing_doctors": [],
+  "missing_prices": [],
+  "coverage_score": {
+    "equipment": 100,
+    "treatment": 100,
+    "doctor": 100,
+    "overall": 100
+  },
+  "issues": []
+}

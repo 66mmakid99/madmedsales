@@ -1,0 +1,1763 @@
+═══════════════════════════════════════════════════
+  연세팜스의원 은평점 — 추출 원본 데이터
+═══════════════════════════════════════════════════
+
+──── [1] analysis.json (Gemini 분류 결과) ────
+{
+  "hospital_name": "연세팜스의원 은평점",
+  "doctors": [
+    {
+      "name": "윤정현",
+      "title": "대표원장",
+      "specialty": null,
+      "career": [
+        "한국미용성형의학회 회장",
+        "대한레이저피부모발학회 부회장",
+        "대한미용성형레이저의학회 총무이사",
+        "한국레이저연구회 부회장"
+      ],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "조희숙",
+      "title": "원장님",
+      "specialty": null,
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    }
+  ],
+  "academic_activities": [
+    {
+      "type": "학회발표",
+      "title": "2023 대한레이저피부모발학회 제45차 추계 국제학술대회",
+      "year": 2023,
+      "doctor_name": "윤정현",
+      "source_text": "2023 대한레이저피부모발학회 제45차 추계 국제학술대회"
+    },
+    {
+      "type": "세미나",
+      "title": "Noncontour PDO thread lift and MPR",
+      "year": 2019,
+      "doctor_name": "윤정현",
+      "source_text": "부산세미나 2019 Noncontour PDO thread lift and MPR"
+    },
+    {
+      "type": "세미나",
+      "title": "Basic principles of noncontour PDO thread lift..",
+      "year": null,
+      "doctor_name": "윤정현",
+      "source_text": "부산세미나 Basic principles of noncontour PDO thread lift.."
+    },
+    {
+      "type": "세미나",
+      "title": "Introduce N-Scaffold & N-Fix",
+      "year": 2018,
+      "doctor_name": null,
+      "source_text": "부산세미나 2018 Introduce N-Scaffold & N-Fix"
+    }
+  ],
+  "medical_devices": [
+    {
+      "name": "레이저",
+      "korean_name": "레이저",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "General category for laser treatments",
+      "source": "text"
+    },
+    {
+      "name": "필러",
+      "korean_name": "필러",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "filler",
+      "description": "General category for filler treatments",
+      "source": "text"
+    },
+    {
+      "name": "보톡스",
+      "korean_name": "보톡스",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "botox",
+      "description": "General category for botox treatments",
+      "source": "text"
+    },
+    {
+      "name": "ASTERASYS",
+      "korean_name": null,
+      "manufacturer": "ASTERASYS",
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "CLASSYS",
+      "korean_name": "클래시스",
+      "manufacturer": "CLASSYS",
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "ilooda",
+      "korean_name": "이루다",
+      "manufacturer": "ilooda",
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "DAEWOONG",
+      "korean_name": "대웅",
+      "manufacturer": "DAEWOONG",
+      "device_type": "injectable",
+      "subcategory": "botox",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "BRPHARM",
+      "korean_name": "비알팜",
+      "manufacturer": "BRPHARM",
+      "device_type": "injectable",
+      "subcategory": "booster",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "LENT",
+      "korean_name": "렌트",
+      "manufacturer": "LENT",
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "파마리서치",
+      "korean_name": "파마리서치",
+      "manufacturer": "파마리서치",
+      "device_type": "injectable",
+      "subcategory": "booster",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "뉴튼 리프팅",
+      "korean_name": "뉴튼 리프팅",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "쿨사인",
+      "korean_name": "쿨사인",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "써니RF",
+      "korean_name": "써니RF",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_TIGHTENING",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "미라젯",
+      "korean_name": "미라젯",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "OTHER_DEVICE",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "reepot 레이저",
+      "korean_name": "reepot 레이저",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "엔파인더스",
+      "korean_name": "엔파인더스",
+      "manufacturer": "엔파인더스",
+      "device_type": "injectable",
+      "subcategory": "thread",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "레젠보겐",
+      "korean_name": "레젠보겐",
+      "manufacturer": "레젠보겐",
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "바즈바이오",
+      "korean_name": "바즈바이오",
+      "manufacturer": "바즈바이오",
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "BMI",
+      "korean_name": null,
+      "manufacturer": "BMI",
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "화인엑",
+      "korean_name": "화인엑",
+      "manufacturer": "화인엑",
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "대화제약",
+      "korean_name": "대화제약",
+      "manufacturer": "대화제약",
+      "device_type": "injectable",
+      "subcategory": "other_injectable",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "프리모리스",
+      "korean_name": "프리모리스",
+      "manufacturer": "프리모리스",
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "유벤타",
+      "korean_name": "유벤타",
+      "manufacturer": "유벤타",
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "유니온",
+      "korean_name": "유니온",
+      "manufacturer": "유니온",
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "아일글로벌",
+      "korean_name": "아일글로벌",
+      "manufacturer": "아일글로벌",
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "메디톡스",
+      "korean_name": "메디톡스",
+      "manufacturer": "메디톡스",
+      "device_type": "injectable",
+      "subcategory": "botox",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "RF바이오",
+      "korean_name": "RF바이오",
+      "manufacturer": "RF바이오",
+      "device_type": "device",
+      "subcategory": "RF_TIGHTENING",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "루트로닉",
+      "korean_name": "루트로닉",
+      "manufacturer": "루트로닉",
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "수도그룹",
+      "korean_name": "수도그룹",
+      "manufacturer": "수도그룹",
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "숲",
+      "korean_name": "숲",
+      "manufacturer": "숲",
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "Noncontour",
+      "korean_name": null,
+      "manufacturer": "Noncontour",
+      "device_type": "injectable",
+      "subcategory": "thread",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "PDO thread",
+      "korean_name": null,
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "thread",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "MPR",
+      "korean_name": null,
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_TIGHTENING",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "PDLA EMULSION",
+      "korean_name": null,
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "collagen_stimulator",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "N-Scaffold",
+      "korean_name": null,
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "thread",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "N-Fix",
+      "korean_name": null,
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "thread",
+      "description": null,
+      "source": "ocr"
+    }
+  ],
+  "treatments": [
+    {
+      "name": "뉴튼 리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "ocr",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "쿨사인",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "ocr",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "써니RF",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "ocr",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "미라젯",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "ocr",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "reepot 레이저",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "ocr",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "여드름 치료",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "image_banner",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "기미 치료 솔루션",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "image_banner",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "색소 치료",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "image_banner",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "안티에이징",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "image_banner",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "탈모집중 치료",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "image_banner",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "Noncontour PDO thread lift and MPR",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [
+        "Noncontour PDO thread lift",
+        "MPR"
+      ],
+      "is_package": true,
+      "is_addon": false,
+      "source": "ocr",
+      "category": "thread",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "Basic principles of noncontour PDO thread lift",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "ocr",
+      "category": "thread",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "Introduce N-Scaffold & N-Fix",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [
+        "N-Scaffold",
+        "N-Fix"
+      ],
+      "is_package": true,
+      "is_addon": false,
+      "source": "ocr",
+      "category": "thread",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    }
+  ],
+  "events": [
+    {
+      "title": "연세팜스 BEST 5 프로그램",
+      "type": "패키지",
+      "period": null,
+      "discount_info": "고객만족도가 가장 높은 시술입니다.",
+      "original_price": null,
+      "event_price": null,
+      "conditions": [],
+      "source": "text"
+    },
+    {
+      "title": "부산세미나 2019 Noncontour PDO thread lift and MPR",
+      "type": "기타",
+      "period": "2019.10.05 (토) 오후 6:30",
+      "discount_info": null,
+      "original_price": null,
+      "event_price": null,
+      "conditions": [],
+      "source": "ocr"
+    },
+    {
+      "title": "부산세미나 Basic principles of noncontour PDO thread lift..",
+      "type": "기타",
+      "period": "April 4/3 19:00",
+      "discount_info": null,
+      "original_price": null,
+      "event_price": null,
+      "conditions": [],
+      "source": "ocr"
+    },
+    {
+      "title": "부산세미나 2018 Introduce N-Scaffold & N-Fix",
+      "type": "기타",
+      "period": "2018.06.09 (토) 오후 6:30",
+      "discount_info": null,
+      "original_price": null,
+      "event_price": null,
+      "conditions": [],
+      "source": "ocr"
+    }
+  ],
+  "clinic_categories": [
+    {
+      "name": "피부클리닉",
+      "treatments": [
+        "여드름 치료",
+        "기미 치료 솔루션",
+        "색소 치료"
+      ]
+    },
+    {
+      "name": "주름리프팅",
+      "treatments": [
+        "뉴튼 리프팅",
+        "써니RF",
+        "Noncontour PDO thread lift and MPR",
+        "Basic principles of noncontour PDO thread lift",
+        "Introduce N-Scaffold & N-Fix"
+      ]
+    },
+    {
+      "name": "레이저",
+      "treatments": [
+        "reepot 레이저",
+        "기미 치료 솔루션",
+        "색소 치료"
+      ]
+    },
+    {
+      "name": "부스터 칵테일",
+      "treatments": []
+    },
+    {
+      "name": "탈모",
+      "treatments": [
+        "탈모집중 치료"
+      ]
+    },
+    {
+      "name": "필러/보톡스",
+      "treatments": []
+    },
+    {
+      "name": "스킨케어",
+      "treatments": []
+    },
+    {
+      "name": "안티에이징",
+      "treatments": [
+        "안티에이징"
+      ]
+    }
+  ],
+  "contact_info": {
+    "email": [
+      {
+        "address": "yonseifams@naver.com",
+        "type": "상담",
+        "source": "footer"
+      },
+      {
+        "address": "urohyun@hanmail.net",
+        "type": "대표",
+        "source": "text"
+      },
+      {
+        "address": "chauveau@naver.com",
+        "type": "상담",
+        "source": "text"
+      }
+    ],
+    "phone": [
+      {
+        "number": "02-387-2755",
+        "type": "상담",
+        "source": "text"
+      },
+      {
+        "number": "02-387-2750",
+        "type": "기타",
+        "source": "ocr"
+      }
+    ],
+    "address": {
+      "full_address": "서울특별시 은평구 통일로 767 호반베르디움스테이원 아파트 104동 226호",
+      "sido": "서울특별시",
+      "sigungu": "은평구"
+    },
+    "kakao_channel": "https://pf.kakao.com/_tIFsG",
+    "naver_booking": null,
+    "naver_place": null,
+    "instagram": null,
+    "facebook": null,
+    "youtube": null,
+    "blog": "http://blog.naver.com/polyp99",
+    "website_url": "http://yonseifams.co.kr/",
+    "operating_hours": {
+      "weekday": "월/목 오전 10시 ~ 오후 7시, 화/금 오전 10시 ~ 오후 8시",
+      "saturday": "오전 10시 ~ 오후 3시 (점심시간 없음)",
+      "sunday": "휴진",
+      "lunch_break": "오후 1시 ~ 오후 2시"
+    }
+  },
+  "unregistered_equipment": [
+    {
+      "name": "ASTERASYS",
+      "korean_name": null,
+      "suggested_category": "other_device",
+      "source": "ocr",
+      "reason": "manufacturer, likely device, but specific type unknown"
+    },
+    {
+      "name": "LENT",
+      "korean_name": "렌트",
+      "suggested_category": "other_device",
+      "source": "ocr",
+      "reason": "manufacturer, likely device, but specific type unknown"
+    },
+    {
+      "name": "뉴튼 리프팅",
+      "korean_name": "뉴튼 리프팅",
+      "suggested_category": "DEVICE",
+      "source": "ocr",
+      "reason": "sounds like a device, not in dictionary"
+    },
+    {
+      "name": "쿨사인",
+      "korean_name": "쿨사인",
+      "suggested_category": "DEVICE",
+      "source": "ocr",
+      "reason": "sounds like a device, not in dictionary"
+    },
+    {
+      "name": "reepot 레이저",
+      "korean_name": "reepot 레이저",
+      "suggested_category": "LASER",
+      "source": "ocr",
+      "reason": "contains \"레이저\", not in dictionary"
+    },
+    {
+      "name": "레젠보겐",
+      "korean_name": "레젠보겐",
+      "suggested_category": "other_device",
+      "source": "ocr",
+      "reason": "manufacturer, likely device, but specific type unknown"
+    },
+    {
+      "name": "바즈바이오",
+      "korean_name": "바즈바이오",
+      "suggested_category": "other_device",
+      "source": "ocr",
+      "reason": "manufacturer, likely device, but specific type unknown"
+    },
+    {
+      "name": "BMI",
+      "korean_name": null,
+      "suggested_category": "other_device",
+      "source": "ocr",
+      "reason": "manufacturer, likely device, but specific type unknown"
+    },
+    {
+      "name": "화인엑",
+      "korean_name": "화인엑",
+      "suggested_category": "other_device",
+      "source": "ocr",
+      "reason": "manufacturer, likely device, but specific type unknown"
+    },
+    {
+      "name": "대화제약",
+      "korean_name": "대화제약",
+      "suggested_category": "other_injectable",
+      "source": "ocr",
+      "reason": "manufacturer, likely injectable, but specific type unknown"
+    },
+    {
+      "name": "프리모리스",
+      "korean_name": "프리모리스",
+      "suggested_category": "other_device",
+      "source": "ocr",
+      "reason": "manufacturer, likely device, but specific type unknown"
+    },
+    {
+      "name": "유벤타",
+      "korean_name": "유벤타",
+      "suggested_category": "other_device",
+      "source": "ocr",
+      "reason": "manufacturer, likely device, but specific type unknown"
+    },
+    {
+      "name": "유니온",
+      "korean_name": "유니온",
+      "suggested_category": "other_device",
+      "source": "ocr",
+      "reason": "manufacturer, likely device, but specific type unknown"
+    },
+    {
+      "name": "아일글로벌",
+      "korean_name": "아일글로벌",
+      "suggested_category": "other_device",
+      "source": "ocr",
+      "reason": "manufacturer, likely device, but specific type unknown"
+    },
+    {
+      "name": "수도그룹",
+      "korean_name": "수도그룹",
+      "suggested_category": "other_device",
+      "source": "ocr",
+      "reason": "manufacturer, likely device, but specific type unknown"
+    },
+    {
+      "name": "숲",
+      "korean_name": "숲",
+      "suggested_category": "other_device",
+      "source": "ocr",
+      "reason": "manufacturer, likely device, but specific type unknown"
+    },
+    {
+      "name": "Noncontour",
+      "korean_name": null,
+      "suggested_category": "INJECTABLE",
+      "source": "ocr",
+      "reason": "manufacturer, implied by \"PDO thread lift\""
+    }
+  ],
+  "unregistered_treatments": [
+    {
+      "name": "Noncontour PDO thread lift and MPR",
+      "source": "ocr",
+      "context": "seminar title, package treatment"
+    },
+    {
+      "name": "Basic principles of noncontour PDO thread lift",
+      "source": "ocr",
+      "context": "seminar title, treatment technique"
+    },
+    {
+      "name": "Introduce N-Scaffold & N-Fix",
+      "source": "ocr",
+      "context": "seminar title, package treatment"
+    }
+  ],
+  "raw_price_texts": [],
+  "extraction_summary": {
+    "total_doctors": 2,
+    "total_academic": 4,
+    "total_equipment": 36,
+    "total_devices": 23,
+    "total_injectables": 13,
+    "total_treatments": 13,
+    "total_events": 4,
+    "total_categories": 8,
+    "total_contact_channels": 8,
+    "has_email": true,
+    "has_phone": true,
+    "has_kakao": true,
+    "has_sns": true,
+    "price_available_ratio": "0/13",
+    "unregistered_equipment_count": 17,
+    "unregistered_treatments_count": 3
+  }
+}
+
+──── [2] ocr_raw.json (이미지 OCR 원본) ────
+
+--- page_1_main_capture_0 ---
+전후사진
+상담문의
+이벤트
+오시는길
+회원가입
+로그인
+blog
+온라인상담
+연세팜스의원
+은평점
+진료안내 >
+연세팜스
+TALK 카톡상담
+오시는 길
+blog 네이버 블로그
+네이버 카페
+피부클리닉
+주름리프팅
+레이저
+부스터 칵테일
+탈모
+필러/보톡스
+스킨케어
+안티에이징
+YouTube
+의사선생 윤정현
+연세팜스TV
+피부학개론 · 비만학개론 · 임상학개론
+파마리서치
+ASTERASYS
+CLASSYS
+ilooda
+리치앤렉스
+DAEWOONG
+BRPHARM
+LENT
+KALDAT
+2023
+대한레이저피부모발학회
+제45차 추계 국제학술대회
+^ 접기
+1 진료실
+윤정현 원장님
+진료대기 발생할 수
+있습니다.
+양해 부탁드립니다.
+2 진료실
+조희숙 원장님
+매주 월요일 오전 휴진
+매일 6시까지만 진료합니다.
+진료는 10시부터
+시작합니다.
+의사선생 윤정현
+뉴튼 리프팅
+쿨사인
+써니RF
+미라젯
+reepot 레
+연세팜스 BEST 5 프로그램
+고객만족도가 가장 높은 시술입니다.
+카톡상담 yon6427
+
+--- page_1_main_capture_1 ---
+국내외 학회에서 학술상까지 획득
+여드름 완전정복 치료법 BEST3
+여드름 치료
+VIEW
+기미,색소제거를 위한 연세팜스
+기미 치료 솔루션
+색소 치료
+VIEW
+온라인상담
+카톡상담
+오시는 길
+네이버 블로그
+네이버 카페
+^ 접기
+연세팜스 클리닉의
+전문적인 안티에이징 프로그램
+안티에이징
+VIEW
+Before & After
+VIEW
+체질, 원인, 유형, 상태 모두
+고려한 맞춤 진단
+탈모집중 치료
+VIEW
+1 진료실
+윤정현 원장님
+진료대기 발생할수
+있습니다.
+양해 부탁드립니다.
+2 진료실
+조희숙 원장님
+매주 월요일 오전 휴진
+매일 6시까지만 진료합니다.
+진료는 10시부터
+시작합니다.
+연세팜스's 세미나
+Noncontour
+PDO thread
+lift and MPR
+윤정현 연세팜스클리닉
+2019
+10.05 (토)
+오후 6:30
+부산세미나 2019
+Noncontour PDO thread lift
+and MPR
+PDLA EMULSION
+April
+4/3
+19:00
+윤정현 원장님
+부산세미나
+Basic principles of noncontour
+PDO thread lift..
+N-Scaffold & N-Fix
+Why &
+How
+2018.06.09 (토)
+오후 6:30
+부산세미나 2018
+Introduce N-Scaffold & N-Fix
+카톡상담 yon6427
+
+--- page_1_main_capture_2 ---
+온라인상담
+카톡상담
+오시는 길
+네이버 블로그
+네이버 카페
+
+숙련된 의료진의 바른시술
+연세팜스은평본점
+한국미용성형의학회 회장
+대한레이저피부모발학회 부회장
+대한미용성형레이저의학회 총무이사
+한국레이저연구회 부회장
+대표원장 윤정현
+
+카카오톡 채널
+연세팜스의원
+
+윤정현 원장님 키닥터 & 스피커
+• 엔파인더스
+• 레젠보겐
+• 바즈바이오
+• BMI
+• 화인엑
+• 쎄라덤
+• 대화제약
+• 프리모리스
+• 유벤타
+• 이루다
+• 유니온
+• 아일글로벌
+• 메디톡스
+• 오가논
+• RF바이오
+• 루트로닉
+• 수도그룹
+• 숲
+^ 접기
+1 진료실
+윤정현 원장님
+진료대기 발생할 수
+있습니다.
+양해 부탁드립니다.
+2 진료실
+조희숙 원장님
+매주 월요일 오전 휴진
+매일 6시까지만 진료합니다.
+진료는 10시부터
+시작합니다.
+
+호반베르디움스테이원 아파트
+104동 226호(2층)
+연세팜스의원
+은평점
+Anti-aging & Aesthetic
+네비주소
+통일로 767 호반베르디움스테이원
+아파트 104동 226호
+구,연세팜스의원
+NC백화점
+
+연신내 방향
+미성아파트
+롯데하이마트
+삼성디지털프라자
+200m
+국민은행
+독바위역
+방향
+3 6
+불광역
+6 9
+녹번동 방향
+
+상담 및 예약
+고객상담실 02.387.2755
+스킨케어실 02.387.2750
+진료시간안내
+월/목 오전 10시 ~ 오후 7.
+화/금 오전 10시 ~ 오후 8시
+토요일 오전 10시 ~ 오후 3시
+(점심시간 없음)
+점심시간 오후 1시 ~ 오후 2시
+휴진일 수요일, 공휴일 휴진
+
+카톡상담 yon6427
+
+언제든지 물어보세요!
+지금 바로 상담하기
+
+--- page_1_main_capture_3 ---
+한국미용성형의학회 회장
+대한레이저피부모발학회 부회장
+대한미용성형레이저의학회 총무이사
+한국레이저연구회 부회장
+
+대표원장 윤정현
+
+카카오톡 채널
+연세팜스의원
+
+엔파인더스
+레젠보젠
+바즈바이오
+BMI
+화인엑
+쎄라덤
+
+대화제약
+프리모리스
+유벤타
+유니온
+아일글로벌
+
+메디톡스
+오가는
+RF바이오
+루트로닉
+수도그룹
+
+온라인상담
+카톡상담
+오시는 길
+네이버 블로그
+네이버 카페
+
+^ 접기
+
+상담 및 예약
+
+고객상담실 02.2387.2755
+스킨케어실 02.2387.2750
+
+진료시간안내
+월/목 오전 10시 ~ 오후 7시
+화/금 오전 10시 ~ 오후 8시
+토요일 오전 10시 ~ 오후 3시
+(점심시간 없음)
+점심시간 오후 1시 ~ 오후 2시
+휴진일 수요일, 공휴일 휴진
+
+1 진료실
+윤정현 원장님
+진료대기 발생할수
+있습니다.
+양해 부탁드립니다.
+
+2 진료실
+조희숙 원장님
+매주 월요일 오전 휴진
+매일 6시까지만 진료합니다.
+진료는 10시부터
+시작합니다.
+
+호반베르디움스테이원 아파트
+104동 226호(2층)
+연세팜스의원
+은평점
+Anti-aging & Aesthetic
+
+네비주소
+통일로 767 호반베르디움스테이원
+아파트 104동 226호
+
+구, 연세팜스의원
+
+연신내 방향
+미성아파트
+롯데하이마트
+삼성디지털프라자
+국민은행
+200m
+7 3 6 8
+불광역
+6 9
+녹번동 방향
+독바위역
+방향
+NC백화점
+
+언제든지 물어보세요!
+지금 바로 상담하기
+신속하고 정확하게! 고객님의 궁금한 점을 항상 친절하게 상담해드리겠습니다.
+
+개인정보취급방침
+서비스이용약관
+이메일수집거부
+사이트맵
+
+연세팜스 네트워크 >
+
+연세팜스의원 TEL. 02-387-2755 서울특별시 은평구 통일로 767 호반베르디움스테이원 아파트 104동 226호
+대표:윤정현 사업자등록번호: 110-20-37331 개인정보관리책임자:박정화
+Copyright © 연세팜스의원. All rights reserved.
+카톡상담 yon6427
+
+--- page_2_other_capture_0 ---
+전후사진 상담문의 이벤트 오시는길
+회원가입 로그인 blog
+온라인상담
+TALK 카톡상담
+오시는 길
+blog 네이버 블로그
+네이버 카페
+
+연세팜스 의원
+은평점
+Anti aging & Aesthetic
+진료안내 > 연세팜스:
+피부클리닉 주름리프팅 레이저 부스터 칵테일 탈모 필러/보톡스 스킨케어 안티에
+
+찾아오시는길
+
+의료진소개 진료안내 병원둘러보기 찾아오시는 길
+
+연신내 방향
+호반베르디움스테이원 아파트
+104동 226호(2층)
+연세팜스의원
+은평점
+Anti aging & Aesthetic
+네비주소
+통일로 767 호반베르디움스테이원
+아파트 104동 226호
+200m
+미성아파트
+롯데하이마트
+삼성디지털프라자
+국민은행
+불광역
+NC백화점
+녹번동 방향
+ln번동 방향
+
+^ 접기
+1 진료실
+윤정현 원장님
+진료대기 발생할수
+있습니다.
+양해 부탁드립니다.
+2 진료실
+조희숙 원장님
+매주 월요일 오전 휴진
+매일 6시까지만 진료합니다.
+진료는 10시부터
+시작합니다.
+
+Location Information
+은평점 정보안내
+서울시 은평구 통일로 767
+호반베르디움스테이원아파트
+104동 226호 (2층)
+TEL 02.387.2755
+상세보기
+
+지하철 안내
+지하철 3호선, 6호선 불광역 7번 출구로 나오셔서 연신내방향 도보로 약 200m 직진후, 호반베르디움스테이원아파트 104
+카톡상담 yon6427
+주차 이용 안내
+아파트 상가 지하 주차장에 주차가능합니다.
+
+--- page_2_other_capture_1 ---
+피부클리닉 주름리프팅 레이저 부스터 칵테일 탈모 필러/보톡스 스킨케어 안티에이징 온라인상담
+카톡상담
+오시는 길
+네이버 블로그
+네이버 카페
+
+연신내 방향
+미성아파트
+롯데하이마트
+삼성디지털프라자
+국민은행
+불광역
+NC백화점
+녹번동 방향
+
+Location Information
+은평점 정보안내
+서울시 은평구 통일로 767
+호반베르디움스테이원아파트
+104동 226호 (2층)
+TEL 02.387.2755
+상세보기
+
+네비주소
+통일로 767 호반베르디움스테이원
+아파트 104동 226호
+구, 연세팜스의원
+
+^ 접기
+1 진료실
+윤정현 원장님
+진료대기 발생할 수
+있습니다.
+양해 부탁드립니다.
+2 진료실
+조희숙 원장님
+매주 월요일 오전 휴진
+매일 6시까지만 진료합니다.
+진료는 10시부터
+시작합니다.
+
+○ 지하철 안내
+지하철 3호선, 6호선 불광역 7번 출구로 나오셔서 연신내방향 도보로 약 200m 직진후, 호반베르디움스테이원아파트 104
+
+○ 주차 이용 안내
+1 아파트 상가 지하 주차장에 주차가능합니다.
+
+언제든지 물어보세요!
+지금 바로 상담하기
+신속하고 정확하게! 고객님의 궁금한 점을 항상 친절하게 상담해드리겠습니다.
+
+개인정보취급방침 서비스이용약관 이메일수집거부 사이트맵
+연세팜스 네트워크 >
+카톡상담 yon6427
+연세팜스의원 TEL. 02-387-2755 서울특별시 은평구 통일로 767 호반베르디움스테이원 아파트 104동 226호
+대표:윤정현 사업자등록번호: 110-20-37331 개인정보관리책임자:박정화
+Copyright ⓒ 연세팜스의원. All rights reserved.
+
+--- page_3_other_capture_0 ---
+전후사진 상담문의 이벤트 오시는길
+회원가입 로그인 blog
+온라인상담
+연세팜스의원
+은평점
+Anti aging & Aesthetic
+피부클리닉 주름리프팅 레이저 부스터 칵테일 탈모 필러/보톡스 스킨케어 안티에이징
+진료안내 > 연세팜:
+카톡상담
+오시는 길
+네이버 블로그
+네이버 카페
+^ 접기
+회원가입약관
+회원가입약관 및 개인정보처리방침의 내용에 동의하셔야 회원가입 하실 수 있습니다.
+회원가입약관
+◆ 제1조 (목적)
+이 약관은 연세팜스의원이 제공하는 인터넷 기반의 홈페이지로서
+저희 사이트를 이용하는 이용자와 서비스의 이용에 관한 기본적인 사항을 규정하는 것을 목적으로 합니다.
+◆ 제2조 (약관의 효력과 변경)
+1 진료실
+윤정현 원장님
+진료대기 발생할 수
+있습니다.
+양해 부탁드립니다.
+개인정보처리방침안내
+1) 총칙
+① 개인정보란 생존하는 개인에 관한 정보로서 성명, 주민등록번호 등에 의하여 당해 개인을 알아볼 수 있는 부호, 문자, 음성, 음향, 영상 및 생체특성 등에 관한 정보
+만으로는 특정 개인을 알아볼 수 없는 경우에도 다른 정보와 용이하게 결합하여 알아볼 수 있는 것을 포함한다)를 말합니다.
+② 연세팜스의원(이하 "병원"이라 한다)은 고객님의 개인정보를 중요시하며, 『정보통신망이용촉진및정보보호에관한법률』 상의 개인정보보호규정 및 정보통신부가 제정한
+2 진료실
+조희숙 원장님
+매주 월요일 오전 휴진
+매일 6시까지만 진료합니다.
+진료는 10시부터
+시작합니다.
+회원가입약관의 내용에 동의합니다.
+개인정보처리방침안내의 내용에 동의합니다.
+회원가입
+카톡상담 yon6427
+
+--- page_3_other_capture_1 ---
+피부클리닉 주름리프팅 레이저 부스터 칵테일 탈모 필러/보톡스 스킨케어 안티에이징 온라인상담
+카톡상담
+오시는 길
+네이버 블로그
+네이버 카페
+^ 접기
+회원가입약관
+◆ 제1조 (목적)
+이 약관은 연세팜스 의원이 제공하는 인터넷 기반의 홈페이지로서
+저희 사이트를 이용하는 이용자와 서비스의 이용에 관한 기본적인 사항을 규정하는 것을 목적으로 합니다.
+회원가입약관의 내용에 동의
+◆ 제2조 (약관의 효력과 변경)
+1 진료실
+윤정현 원장님
+진료대기 발생할 수
+있습니다.
+양해 부탁드립니다.
+개인정보처리방침안내
+1) 총칙
+① 개인정보란 생존하는 개인에 관한 정보로서 성명, 주민등록번호 등에 의하여 당해 개인을 알아볼 수 있는 부호, 문자, 음성, 음향, 영상 및 생체특성 등에 관한 정보
+만으로는 특정 개인을 알아볼 수 없는 경우에도 다른 정보와 용이하게 결합하여 알아볼 수 있는 것을 포함한다)를 말합니다.
+② 연세팜스 의원(이하 "병원"이라 한다)은 고객님의 개인정보를 중요시하며, 『정보통신망이용촉진및정보보호에관한법률』 상의 개인정보보호규정 및 정보통신부
+2 진료실
+조희숙 원장님
+매주 월요일 오전 휴진
+매일 6시까지만 진료합니다.
+진료는 10시부터
+시작합니다.
+개인정보처리방침내용에 동의
+회원가입
+언제든지 물어보세요!
+지금 바로 상담하기
+신속하고 정확하게! 고객님의 궁금한 점을 항상 친절하게 상담해드리겠습니다.
+개인정보취급방침 서비스이용약관 이메일수집거부 사이트맵
+연세팜스 네트워크 >
+연세팜스 의원 TEL. 02-387-2755 서울특별시 은평구 통일로 767 베르디움스테이104동 226호
+대표:윤정현 사업자등록번호: 110-20-37331 개인정보관리책임자:박정화
+Copyright ⓒ 연세팜스 의원. All rights reserved.
+카톡상담 yon6427
+
+--- page_4_other_capture_0 ---
+전후사진 상담문의 이벤트 오시는길
+회원가입 로그인 blog 온라인상담
+연세팜스의원
+Anti aging & Aesthetic
+은평점
+진료안내 > 연세팜:
+피부클리닉 주름리프팅 레이저 부스터 칵테일 탈모 필러/보톡스 스킨케어 안티에
+카톡상담
+오시는 길
+blog
+네이버 블로그
+네이버 카페
+^ 접기
+서비스 이용약관
+◆ 제1조 (목적)
+이 약관은 연세팜스의원이 제공하는 인터넷 기반의 홈페이지에서
+저희 사이트를 이용하는 이용자와 서비스의 이용에 관한 기본적인 사항을 규정하는 것을 목적으로 합니다.
+
+◆ 제2조 (약관의 효력과 변경)
+① 이 약관은 연세팜스의원 홈페이지에 게재하거나 공지사항을 통해 이용자에게 공지함으로써 효력이 발생합니다.
+② 연세팜스의원은 이 약관을 변경할 수 있으며, 변경된 약관은 변경된 약관 적용일 7일간 연세팜스의원 홈페이지를 통해 이용자에게 온라인으로 공지
+함으로써 효력이 발생됩니다.
+③ 이용자는 변경된 약관에 대해 동의하지 않을 권리가 있으며, 변경된 약관에 동의하지 않을 경우에는 서비스 이용을 중단하고 탈퇴할 수 있습니다. 다만, 이용자가 변경된 약관의 적용일로부터 15일 이내에 연세팜스의원에 대해 "거부"의 의사표시를 하지 아니하는 경우에는 변경된 약관에 동의한 것으로 간주됩니다.
+
+◆ 제3조 (약관 외 준칙)
+① 약관에 명시되지 않은 사항은 관계법령 및 일반 관례에 따릅니다.
+② 약관에 명시되지 않은 세부사항은 별도 이용안내 및 사이트정책의 형태로 운영될 수 있으며, 본 약관에서 정한 것으로 간주됩니다.
+③ 이용자와 개인정보보호에 관해서는 관련법령 및 사이트가 정하는 "개인정보보호정책"에 정한 바에 의합니다.
+
+◆ 제4조 (이용계약의 성립 및 체결)
+"회원가입"을 작성 후 "가입" 버튼을 클릭하시면 이용 약관에 동의하는 것으로 간주합니다.
+
+◆ 제5조 (서비스 이용신청)
+이용신청은 온라인으로 다음 사항을 가입신청 양식에 기록하여 신청합니다.
+(이름, 아이디(ID), 비밀번호, 주민등록번호, 주소, 전화번호, E-mail 주소 등)
+
+◆ 제6조 (서비스 이용신청의 승낙)
+사이트는 제 5조에서 정한 모든 사항을 이용고객이 정확히 기재하여 이용신청을 하였을 때 승낙합니다.
+
+◆ 제7조 (계약사항의 변경)
+회원의 정보가 이용 신청시 기재한 내용과 변경되었을 경우에는 온라인으로 회원이 직접 수정하여야 합니다.
+
+◆ 제8조 (사이트의 의무)
+① 사이트는 서비스 제공과 관련하여 취득한 회원의 신상정보를 본인의 승낙없이 타인에게 누설, 배포하지 않습니다. 단, 관계법령의 규정에 의해 국가기관의 요구가 있는
+경우 또는 기타 관계법령에서 정한 절차에 따른 요청이 있는 경우에는 그러하지 않습니다.
+② 회원에게 부여된 아이디(ID)와 비밀번호의 관리소홀, 부정사용에 의하여 발생하는 모든 결과에 대한 책임은 회원에게 있습니다.
+1 진료실
+윤정현 원장님
+진료대기 발생할수
+있습니다.
+양해 부탁드립니다.
+2 진료실
+조희숙 원장님
+매주 월요일 오전 휴진
+매일 6시까지만 진료합니다.
+진료는 10시부터
+시작합니다.
+카톡상담 yon6427
+
+--- page_4_other_capture_1 ---
+피부클리닉 주름리프팅 레이저 부스터 칵테일 탈모 필러/보톡스 스킨케어 안티에이징 온라인상담
+
+◆ 제 9 조 (서비스 이용시간)
+① 서비스의 이용은 사이트의 업무상 또는 기술상 특별한 지장이 없는 한 연중무휴 1일 24시간을 원칙으로 합니다.
+② 병원 정기 점검과 기타 사이트가 별도로 정한 날이나 시간은 그러하지 않습니다.
+③ 사이트는 각 서비스별로 이용가능시간을 별도로 정할 수 있으며 이 경우 그 내용을 사전에 공지합니다.
+
+◆ 제 10 조 (정보의 제공)
+사이트는 회원에게 필요하다고 인정되는 다양한 정보에 대해서 전자우편이나 서신우편 등의 방법으로 회원에게 제공할 수 있습니다.
+
+◆ 제 11 조 (회원의 게시물)
+사이트는 회원이 게시하거나 등록하는 서비스내의 내용물이 다음 각 호에 해당한다고 판단되는 경우에는 사전통지 없이 삭제할 수 있습니다.
+① 제 3 자를 비방하거나 중상모략으로 명예를 손상시키는 내용인 경우
+② 공공질서 및 미풍양속에 위반되는 내용인 경우
+③ 범죄적 행위에 관련된다고 인정되는 내용인 경우
+④ 제 3 자의 저작권 등 기타 권리를 침해하는 내용인 경우
+⑤ 기타 관계 법령에 위반된다고 판단되는 경우
+⑥ 기타 사이트가 정한 이용조건에 위반한 경우
+⑦ 각주의 게시물의 성격에 맞지 않는 경우
+
+◆ 제 12 조 (게시물의 저작권)
+게재된 정보에 대한 권리는 다음 각 호와 같습니다.
+① 게시물에 대한 권리와 책임은 게시자에게 있습니다.
+② 사이트는 게시자의 동의 없이는 이를 영리적 목적으로 사용할 수 없습니다.
+다만, 비영리적인 게시물의 경우는 서비스내의 게재권을 갖습니다.
+③ 회원은 서비스를 이용하여 얻은 정보를 가공, 판매하는 행위 등 서비스에 게재된 자료를 사이트의 동의 없이 상업적으로 사용할 수 없습니다.
+
+◆ 제 13 조 (서비스 제공의 중지)
+사이트는 다음 각 호에 해당하는 경우 서비스 제공을 중지할 수 있습니다.
+① 서비스용 설비의 보수 등 공사로 인한 부득이한 경우
+② 전기통신사업법에 규정된 기간통신사업자가 전기통신서비스를 중지했을 경우
+③ 국가비상사태, 정전, 서비스 설비의 장애 또는 서비스 이용의 폭주 등으로 정상적인 서비스 이용에 지장이 있는 때에는 서비스의 전부 또는 일부를 제한하거나 정지
+습니다.
+
+◆ 제 14 조 (서비스 해지 및 이용제한)
+① 회원이 이용계약을 해지하고자 하는 때에는 회원 본인이 온라인을 통해 사이트에 해지신청을 하여야 합니다.
+② 사이트는 회원이 다음 각 호의 1에 해당하는 행위를 하였을 경우 사전통지 없이 이용계약을 해지하거나 또는 기간을 정하여 서비스 이용을 중지할 수 있습니다.
+1. 타인의 서비스 ID 및 비밀번호를 도용한 경우
+2. 서비스 운영을 고의로 방해한 경우
+3. 가입한 이름이 실명이 아닌 경우
+4. 같은 사용자가 다른 ID로 이중등록을 한 경우
+5. 공공질서 및 미풍양속에 저해되는 내용을 고의로 유포시킨 경우
+6. 회원이 국익 또는 사회적 공익을 저해할 목적으로 서비스 이용을 계획 또는 실행하는 경우
+7. 타인의 명예를 손상시키거나 불이익을 주는 행위를 한 경우
+8. 기타 사이트가 정한 이용조건에 위반한 경우
+
+◆ 제 15 조 (손해배상)
+사이트는 무료 서비스를 이용하는 회원에게 발생한 어떠한 손해에 관하여도 책임을 지지 않습니다.
+
+◆ 제 16 조 (면책조항)
+
+카톡상담
+오시는 길
+네이버 블로그
+네이버 카페
+∧ 접기
+1 진료실
+윤정현 원장님
+진료대기 발생할수
+있습니다.
+양해 부탁드립니다.
+2 진료실
+조희숙 원장님
+매주 월요일 오전 휴진
+매일 6시까지만 진료합니다.
+진료는 10시부터
+시작합니다.
+카톡상담 yon6427
+
+--- page_4_other_capture_2 ---
+피부클리닉 주름리프팅 레이저 부스터 칵테일 탈모 필러/보톡스 스킨케어 안티에이징 온라인상담
+TALK 카톡상담
+오시는 길
+blog 네이버 블로그
+네이버 카페
+^ 접기
+① 게시물에 대한 권리와 책임은 게시자에게 있습니다.
+② 게시자는 게시물의 내용과 불이익이 되는 상업적 목적으로 사용할 수 없습니다.
+③ 게시물에 대한 권리와 책임은 게시자에게 있습니다.
+④ 회원은 서비스를 이용하여 얻은 정보를 가공, 판매하는 행위 등 서비스에 게재된 자료를 사이트의 동의 없이 상업적으로 사용할 수 없습니다.
+
+◆ 제 13 조 (서비스 제공의 중지)
+사이트는 다음 각 호에 해당하는 경우 서비스 제공을 중지할 수 있습니다.
+① 서비스용 설비의 보수 등 공사로 인한 부득이한 경우
+② 전기통신사업법에 규정된 기간통신사업자가 전기통신서비스를 중지했을 경우.
+③ 국가비상사태, 정전, 서비스 설비의 장애 또는 서비스 이용의 폭주 등으로 정상적인 서비스 이용에 지장이 있는 때에는 서비스의 전부 또는 일부를 제한하거나 정지할 수 있습니다.
+
+◆ 제 14 조 (서비스 해지 및 이용제한)
+① 회원이 이용계약을 해지하고자 하는 때에는 회원 본인이 온라인을 통해 사이트에 해지신청을 하여야 합니다.
+② 사이트는 회원이 다음 각 호 1에 해당하는 행위를 하였을 경우 사전통지 없이 이용계약을 해지하거나 또는 기간을 정하여 서비스 이용을 중지할 수 있습니다.
+1. 타인의 서비스 ID 및 비밀번호를 도용한 경우
+2. 서비스 운영을 고의로 방해한 경우
+3. 가입한 이름이 실명이 아닌 경우
+4. 같은 사용자가 다른 ID로 이중등록을 한 경우
+5. 공공질서 및 미풍양속에 저해되는 내용을 고의로 유포시킨 경우
+6. 회원이 국익 또는 사회적 공익을 저해할 목적으로 서비스 이용을 계획 또는 실행하는 경우
+7. 타인의 명예를 손상시키거나 불이익을 주는 행위를 한 경우
+8. 기타 사이트가 정한 이용조건에 위반한 경우
+
+◆ 제 15 조 (손해배상)
+사이트는 무료 서비스를 이용하는 회원에게 발생한 어떠한 손해에 관하여도 책임을 지지 않습니다.
+
+◆ 제 16 조 (면책조항)
+① 사이트는 천재지변 또는 이에 준하는 불가항력으로 인하여 서비스를 제공할 수 없는 경우에는 서비스 제공에 관한 책임이 면제됩니다.
+② 사이트는 회원이 게재한 정보, 자료, 사실의 신뢰도, 정확성 등 내용에 관하여는 책임을 지지 않습니다.
+③ 사이트는 회원의 귀책사유로 인한 서비스 이용의 장애에 대하여 책임을 지지 않습니다.
+④ 사이트는 회원이 서비스를 이용하여 기대하는 손익이나 서비스를 통하여 얻은 자료로 인한 손해에 관하여 책임을 지지 않습니다.
+
+1 진료실
+윤정현 원장님
+진료대기 발생할수
+있습니다.
+양해 부탁드립니다.
+2 진료실
+조희숙 원장님
+매주 월요일 오전 휴진
+매일 6시까지만 진료합니다.
+진료는 10시부터
+시작합니다.
+
+지금 바로 상담하기
+언제든지 물어보세요!
+신속하고 정확하게! 고객님의 궁금한 점을 항상 친절하게 상담해드리겠습니다.
+
+개인정보취급방침 서비스이용약관 이메일수집거부 사이트맵
+연세팜스 네트워크 >
+연세팜스 의원 TEL. 02-387-2755 서울특별시 은평구 통일로 767 호반베르디움스테이원 아파트 104동 226호
+대표:윤정현 사업자등록번호: 110-20-37331 개인정보관리책임자:박정화
+Copyright ⓒ 연세팜스의원. All rights reserved.
+카톡상담 yon6427
+
+--- page_6_other_capture_0 ---
+전후사진
+상담문의
+이벤트
+오시는길
+회원가입
+로그인
+blog
+온라인상담
+카톡상담
+오시는 길
+네이버 블로그
+네이버 카페
+접기
+연세팜스 의원
+은평점
+Anti aging & Aesthetic
+진료안내 >
+연세팜스:
+피부클리닉
+주름리프팅
+레이저
+부스터 칵테일
+탈모
+필러/보톡스
+스킨케어
+안티에
+이메일무단수집거부
+연세팜스 은평점은 우리 웹사이트 회원의 이메일 주소가
+무단으로 수집되는 모든 프로그램이나 기술적 장치를 거부하며
+이를 위반 시 정보통신망법에 의해 형사 처벌됨을 유념하시기 바랍니다.
+1진료실
+윤정현 원장님
+진료대기 발생할수
+있습니다.
+양해 부탁드립니다.
+2진료실
+조희숙 원장님
+매주 월요일 오전 휴진
+매일 6시까지만 진료합니다.
+진료는 10시부터
+시작합니다.
+언제든지 물어보세요!
+지금 바로 상담하기
+신속하고 정확하게! 고객님의 궁금한 점을 항상 친절하게 상담해드리겠습니다.
+개인정보취급방침
+서비스이용약관
+이메일수집거부
+사이트맵
+연세팜스 의원 TEL. 02-387-2755 서울특별시 은평구 통일로 767 후반베르디움스테이원 아파트 104동 226호
+대표:윤정현 사업자등록번호: 110-20-37331 개인정보관리책임자:박정화
+Copyright © 연세팜스 의원. All rights reserved.
+연세팜스 네트워크
+B
+f
+카톡상담 yon6427
+
+──── [3] coverage_raw.txt (커버리지 검증 로그) ────
+{
+  "missing_equipments": [
+    "콜샤인"
+  ],
+  "missing_treatments": [
+    "콜샤인",
+    "코필러",
+    "TAN 시술",
+    "부스터 칵테일"
+  ],
+  "missing_doctors": [],
+  "missing_prices": [],
+  "coverage_score": {
+    "equipment": 100,
+    "treatment": 80,
+    "doctor": 100,
+    "overall": 92
+  },
+  "issues": [
+    "장비/시술 '콜샤인'이 추출 결과에서 '쿨사인'으로 오기되었습니다."
+  ]
+}

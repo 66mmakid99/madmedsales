@@ -1,0 +1,77 @@
+═══════════════════════════════════════════════════
+  인앤아웃의원 — 추출 원본 데이터
+═══════════════════════════════════════════════════
+
+──── [1] analysis.json (Gemini 분류 결과) ────
+{
+  "hospital_name": "인앤아웃의원",
+  "doctors": [],
+  "academic_activities": [],
+  "medical_devices": [],
+  "treatments": [],
+  "events": [],
+  "clinic_categories": [
+    {
+      "name": "레이저클리닉",
+      "treatments": []
+    },
+    {
+      "name": "쁘띠클리닉",
+      "treatments": []
+    },
+    {
+      "name": "피부관리클리닉",
+      "treatments": []
+    }
+  ],
+  "contact_info": {
+    "email": [],
+    "phone": [],
+    "address": null,
+    "kakao_channel": null,
+    "naver_booking": null,
+    "naver_place": null,
+    "instagram": null,
+    "facebook": null,
+    "youtube": null,
+    "blog": null,
+    "website_url": null,
+    "operating_hours": null
+  },
+  "unregistered_equipment": [],
+  "unregistered_treatments": [],
+  "raw_price_texts": [],
+  "extraction_summary": {
+    "total_doctors": 0,
+    "total_academic": 0,
+    "total_equipment": 0,
+    "total_devices": 0,
+    "total_injectables": 0,
+    "total_treatments": 0,
+    "total_events": 0,
+    "total_categories": 3,
+    "total_contact_channels": 0,
+    "has_email": false,
+    "has_phone": false,
+    "has_kakao": false,
+    "has_sns": false,
+    "price_available_ratio": "0/0",
+    "unregistered_equipment_count": 0,
+    "unregistered_treatments_count": 0
+  }
+}
+
+──── [2] ocr_raw.json (이미지 OCR 원본) ────
+
+--- page_1_main_capture_0 ---
+INNOUT
+인앤아웃의원
+맞춤 디자인, 맞춤 관리로
+아름답고 건강한 피부로 개선시켜 드립니다.
+레이저클리닉 쁘띠클리닉 피부관리클리닉
+
+INNOUT
+인앤아웃한의원
+정확한 진단에 따른 양·한방 협진 통증치료의
+체계적인 맞춤 프로그램을 통해 통증을 치료합니다.
+양방통증클리닉 한방통증클리닉 다이어트클리닉

@@ -1,0 +1,756 @@
+═══════════════════════════════════════════════════
+  베러미의원 울산 삼산점 — 추출 원본 데이터
+═══════════════════════════════════════════════════
+
+──── [1] analysis.json (Gemini 분류 결과) ────
+{
+  "hospital_name": "베러미의원 울산 삼산점",
+  "doctors": [
+    {
+      "name": "이인홍",
+      "title": "대표",
+      "specialty": null,
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    }
+  ],
+  "academic_activities": [],
+  "medical_devices": [
+    {
+      "name": "Shurink Universe",
+      "korean_name": "슈링크 유니버스",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "InMode",
+      "korean_name": "인모드",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "PicoSure",
+      "korean_name": "피코슈어",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Rejuran",
+      "korean_name": "리쥬란 힐러",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "booster",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Filler",
+      "korean_name": "필러",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "filler",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "NeoBeam",
+      "korean_name": "네오빔",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "AquaPeel",
+      "korean_name": "아쿠아필",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Virtu",
+      "korean_name": "버츄리프팅",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Liftera",
+      "korean_name": "리프테라",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": null,
+      "source": "image_banner"
+    },
+    {
+      "name": "Onda",
+      "korean_name": "온다",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF",
+      "description": null,
+      "source": "image_banner"
+    },
+    {
+      "name": "V-RO",
+      "korean_name": "브이로",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "image_banner"
+    },
+    {
+      "name": "Aurora Ampoule",
+      "korean_name": "오로라앰플",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "other_injectable",
+      "description": null,
+      "source": "image_banner"
+    },
+    {
+      "name": "Tensera",
+      "korean_name": "텐쎄라",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF",
+      "description": null,
+      "source": "image_banner"
+    },
+    {
+      "name": "ExcelV",
+      "korean_name": "엑셀V",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": null,
+      "source": "image_banner"
+    },
+    {
+      "name": "LDM",
+      "korean_name": "LDM",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "IPL",
+      "description": null,
+      "source": "image_banner"
+    },
+    {
+      "name": "Elravie",
+      "korean_name": "엘라비에",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "filler",
+      "description": null,
+      "source": "image_banner"
+    }
+  ],
+  "treatments": [
+    {
+      "name": "아쿠아필",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "인모드리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "브이라인"
+    },
+    {
+      "name": "피코슈어토닝",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "피부"
+    },
+    {
+      "name": "버츄리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "피부"
+    },
+    {
+      "name": "슈링크유니버스",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "hifu",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "라인"
+    },
+    {
+      "name": "피코토닝",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "기미 주근깨 색소"
+    },
+    {
+      "name": "남성 레이저 제모",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "여성 레이저 제모",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "리쥬란 힐러",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "skinbooster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "필러",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "filler",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "인모드fx(1부위)+슈링크100샷",
+      "regular_price": null,
+      "event_price": 99000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": 100,
+      "unit": "shot",
+      "price_per_unit": null,
+      "event_period": "2월 한정",
+      "includes": [
+        "인모드fx(1부위)",
+        "슈링크100샷"
+      ],
+      "is_package": true,
+      "is_addon": false,
+      "source": "image_banner",
+      "category": "rf",
+      "price_display": "9.9만원 (-VAT 별도)",
+      "session_info": null,
+      "body_part": "얼굴"
+    },
+    {
+      "name": "인모드fx(얼굴전체)+리프테라3000샷",
+      "regular_price": null,
+      "event_price": 199000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": 3000,
+      "unit": "shot",
+      "price_per_unit": null,
+      "event_period": "2월 한정",
+      "includes": [
+        "인모드fx(얼굴전체)",
+        "리프테라3000샷"
+      ],
+      "is_package": true,
+      "is_addon": false,
+      "source": "image_banner",
+      "category": "rf",
+      "price_display": "19.9만원 (-VAT 별도)",
+      "session_info": null,
+      "body_part": "얼굴전체"
+    },
+    {
+      "name": "온다5만줄+브이로(라인타입)300샷",
+      "regular_price": null,
+      "event_price": 490000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": 300,
+      "unit": "shot",
+      "price_per_unit": null,
+      "event_period": "2월 한정",
+      "includes": [
+        "온다5만줄",
+        "브이로(라인타입)300샷"
+      ],
+      "is_package": true,
+      "is_addon": false,
+      "source": "image_banner",
+      "category": "rf",
+      "price_display": "49만원 (-VAT 별도)",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "브이로(600+4000)+오로라앰플5cc",
+      "regular_price": null,
+      "event_price": 699000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": 5,
+      "unit": "cc",
+      "price_per_unit": null,
+      "event_period": "2월 한정",
+      "includes": [
+        "브이로(600+4000)",
+        "오로라앰플5cc"
+      ],
+      "is_package": true,
+      "is_addon": false,
+      "source": "image_banner",
+      "category": "hifu",
+      "price_display": "69.9만원 (-VAT 별도)",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "텐쎄라300샷+엑셀V제네시스+인모드forma 1회",
+      "regular_price": null,
+      "event_price": 790000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": 300,
+      "unit": "shot",
+      "price_per_unit": null,
+      "event_period": "2월 한정",
+      "includes": [
+        "텐쎄라300샷",
+        "엑셀V제네시스",
+        "인모드forma 1회"
+      ],
+      "is_package": true,
+      "is_addon": false,
+      "source": "image_banner",
+      "category": "rf",
+      "price_display": "79만원 (-VAT 별도)",
+      "session_info": "1회",
+      "body_part": null
+    },
+    {
+      "name": "엘라비에 리투오 1시린지+텐쎄라600샷+LDM(탄력)",
+      "regular_price": null,
+      "event_price": 1590000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": 1,
+      "unit": "syringe",
+      "price_per_unit": null,
+      "event_period": "2월 한정",
+      "includes": [
+        "엘라비에 리투오 1시린지",
+        "텐쎄라600샷",
+        "LDM(탄력)"
+      ],
+      "is_package": true,
+      "is_addon": false,
+      "source": "image_banner",
+      "category": "filler",
+      "price_display": "159만원 (-VAT 별도)",
+      "session_info": null,
+      "body_part": null
+    }
+  ],
+  "events": [
+    {
+      "title": "2월한정특가 설프라이즈 혜택",
+      "type": "시즌",
+      "period": "2월 한정",
+      "discount_info": null,
+      "original_price": null,
+      "event_price": null,
+      "conditions": [],
+      "source": "popup"
+    }
+  ],
+  "clinic_categories": [],
+  "contact_info": {
+    "email": [],
+    "phone": [
+      {
+        "number": "1660-1023",
+        "type": "대표"
+      }
+    ],
+    "address": {
+      "full_address": "울산광역시 남구 삼산로 266 (삼산동), 7층",
+      "sido": "울산광역시",
+      "sigungu": "남구"
+    },
+    "kakao_channel": "http://pf.kakao.com/_MfxhCG",
+    "naver_booking": null,
+    "naver_place": null,
+    "instagram": null,
+    "facebook": null,
+    "youtube": null,
+    "blog": null,
+    "website_url": "https://ulsansamsan.bettermeclinic.co.kr",
+    "operating_hours": null
+  },
+  "unregistered_equipment": [
+    {
+      "name": "NeoBeam",
+      "korean_name": "네오빔",
+      "suggested_category": "LASER",
+      "source": "website",
+      "reason": "Sounds like a laser device, common in dermatology."
+    },
+    {
+      "name": "Virtu",
+      "korean_name": "버츄리프팅",
+      "suggested_category": "RF_TIGHTENING",
+      "source": "website",
+      "reason": "Context '탱탱한 피부탄력' suggests a tightening device, often RF."
+    },
+    {
+      "name": "V-RO",
+      "korean_name": "브이로",
+      "suggested_category": "HIFU",
+      "source": "image_banner",
+      "reason": "Context '라인타입', '초음파와 고주파 동시 시술' suggests a HIFU-like device, similar to Ulthera/Shurink."
+    },
+    {
+      "name": "Aurora Ampoule",
+      "korean_name": "오로라앰플",
+      "suggested_category": "booster",
+      "source": "image_banner",
+      "reason": "Ampoule suggests an injectable skin booster."
+    }
+  ],
+  "unregistered_treatments": [],
+  "raw_price_texts": [],
+  "extraction_summary": {
+    "total_doctors": 1,
+    "total_academic": 0,
+    "total_equipment": 16,
+    "total_devices": 12,
+    "total_injectables": 4,
+    "total_treatments": 16,
+    "total_events": 1,
+    "total_categories": 0,
+    "total_contact_channels": 3,
+    "has_email": false,
+    "has_phone": true,
+    "has_kakao": true,
+    "has_sns": false,
+    "price_available_ratio": "6/16",
+    "unregistered_equipment_count": 4,
+    "unregistered_treatments_count": 0
+  }
+}
+
+──── [2] ocr_raw.json (이미지 OCR 원본) ────
+
+--- page_1_main_capture_0 ---
+BETTER ME CLINIC
+베러미의원 울산 삼산점
+소개 가격/시술안내 ★이벤트★ 칭찬/불만 상담/예약
+Better Me 울산 삼산점
+0
+로그인/회원
+가입
+한국어
+- 02.28
+2월한정특가
+설프라이즈 혜택
+
+인모드fx(1부위)+슈링크100샷 9.9만원
+부분적으로 얼굴 살 정리와 매끈한 라인관리!
+
+인모드fx(얼굴전체)+리프테라3000샷 19.9만원
+불필요한 지방 세포수 감소 확실한 리프팅 효과
+
+온다5만줄+브이로(라인타입)300샷 49만원
+피부 타이트닝 & 콜라겐 리모델링, 강력한 리프팅 효과
+
+브이로(600+4000)+오로라앰플5cc 69.9만원
+초음파와 고주파 동시 시술로 더욱 강력하게
+
+텐쎄라300샷+엑셀V제네시스 79만원
++인모드forma 1회
+피부 탄력 증가, 결개선, 반짝반짝 빛나는 피부
+
+엘라비에 리투오 1시린지 159만원
++텐쎄라600샷+LDM(탄력)
+피부 타이트닝 & 콜라겐 생성, 얼굴라인 & 볼륨 완성
+
+-VAT 별도-
+
+다시 보지 않기
+닫기
+
+--- page_1_main_capture_1 ---
+BETTER ME CLINIC
+베러미의원 울산 삼산점
+소개 가격/시술안내 ★이벤트★ 칭찬/불만 상담/예약 Better Me 울산 삼산
+Q
+0
+로그인/회원가입
+한국어
+- 02.28
+2월한정특가
+설프라이즈 혜택
+인모드fx(1부위)+슈링크100샷 9.9만원
+부분적으로 얼굴 살 정리와 매끈한 라인관리!
+인모드fx(얼굴전체)+리프테라3000샷 19.9만원
+불필요한 지방 세포수 감소 확실한 리프팅 효과
+온다5만줄+브이로(라인타입)300샷 49만원
+피부 타이트닝 &콜라겐 리모델링, 강력한 리프팅 효과
+슈링크 유니버스
+브이로(600+4000)+오로라앰플5cc 69.9만원
+초음파와 고주파 동시 시술로 더욱 강력하게
+리쥬란 힐러 필러
+TALK
+텐쎄라300샷+엑셀V제네시스 79만원
++인모드forma 1회
+피부 탄력 증가, 결개선, 반짝반짝 빛나는 피부
+엘라비에 리투오 1시린지
++텐쎄라600샷+LDM(탄력) 159만원
+피부 타이트닝 &콜라겐 생성, 얼굴라인 & 볼륨 완성
+-VAT 별도-
+다시 보지 않기
+닫기
+
+--- page_1_main_capture_2 ---
+BETTER ME CLINIC
+베러미의원 울산 삼산점
+소개 가격/시술안내 ★이벤트★ 칭찬/불만 상담/예약 Better Me 울산 삼산
+0
+로그인/회원 가입
+한국어
+이달의 추천시술
+이벤트
+- 02.28
+2월한정특가
+설프라이즈 혜택
+소중한 나를 위한
+인모드fx(1부위)+슈링크100샷 9.9만원
+부분적으로 얼굴 살 정리와 매끈한 라인관리!
+인모드fx(얼굴전체)+리프테라3000샷 19.9만원
+불필요한 지방 세포수 감소 확실한 리프팅 효과
+온다5만줄+브이로(라인타입)300샷 49만원
+피부 타이트닝 & 콜라겐 리모델링, 강력한 리프팅 효과
+브이로(600+4000)+오로라앰플5cc 69.9만원
+초음파와 고주파 동시 시술로 더욱 강력하게
+텐쎄라300샷+엑셀V제네시스 79만원
++인모드forma 1회
+피부 탄력 증가, 결개선, 반짝반짝 빛나는 피부
+엘라비에 리투오 1시린지 159만원
++텐쎄라600샷+LDM(탄력)
+피부 타이트닝 & 콜라겐 생성, 얼굴라인 & 볼륨 완성
+인모드리프팅
+탄력있는 브이라인
+슈링크유니버스
+작블라인을 위한
+-VAT 별도-
+다시 보지 않기
+닫기
+TALK
+
+--- page_1_main_capture_3 ---
+BETTER ME CLINIC
+베러미의원 울산 삼산점
+소개 가격/시술안내 ★이벤트★ 칭찬/불만 상담/예약 Better Me 울산 삼산
+0
+로그인/회원
+가입
+한국어
+- 02.28
+개인정보 처리방침 | 이용 약관
+2월한정특가
+설프라이즈 혜택
+베러미 울산
+TALK
+인모드fx(1부위)+슈링크100샷 9.9만원
+부분적으로 얼굴 살 정리와 매끈한 라인관리!
+인모드fx(얼굴전체)+리프테라3000샷 19.9만원
+불필요한 지방 세포수 감소 확실한 리프팅 효과
+온다5만줄+브이로(라인타입)300샷 49만원
+피부 타이트닝 & 콜라겐 리모델링, 강력한 리프팅 효과
+브이로(600+4000)+오로라앰플5cc 69.9만원
+초음파와 고주파 동시 시술로 더욱 강력하게
+텐쎄라300샷+엑셀V제네시스 79만원
++인모드forma 1회
+피부 탄력 증가, 결개선, 반짝반짝 빛나는 피부
+Better Me 울산 삼산
+엘라비에 리투오 1시린지 159만원
++텐쎄라600샷+LDM(탄력)
+피부 타이트닝 & 콜라겐 생성, 얼굴라인 & 볼륨 완성
+상호명 베러미의원 울산 삼산
+카카오톡 @베러미의원 울산
+울산 삼산점 대표 이인홍
+사업자등록번호 109-28-54
+주소 울산광역시 남구 삼산로
+-VAT 별도-
+대표전화 1660-1023
+다시 보지 않기
+닫기
+
+──── [3] coverage_raw.txt (커버리지 검증 로그) ────
+{
+  "missing_equipments": [],
+  "missing_treatments": [],
+  "missing_doctors": [],
+  "missing_prices": [],
+  "coverage_score": {
+    "equipment": 100,
+    "treatment": 100,
+    "doctor": 100,
+    "overall": 100
+  },
+  "issues": []
+}

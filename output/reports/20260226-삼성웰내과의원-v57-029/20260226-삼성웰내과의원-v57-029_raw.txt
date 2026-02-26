@@ -1,0 +1,1367 @@
+═══════════════════════════════════════════════════
+  삼성웰내과의원 — 추출 원본 데이터
+═══════════════════════════════════════════════════
+
+──── [1] analysis.json (Gemini 분류 결과) ────
+{
+  "hospital_name": "삼성웰내과의원",
+  "doctors": [
+    {
+      "name": "정대준",
+      "title": "대표원장",
+      "specialty": "내분비내과전문의",
+      "career": [
+        "삼성서울병원 내분비내과 외래교수",
+        "전) 삼성서울병원 내분비내과 전임의",
+        "전) 평택성모병원 내분비내과 과장",
+        "전) 메디스캔검진내과 원장",
+        "전) 연세내과 원장",
+        "전) 동화약품 신의약개발팀 이사",
+        "전) 메이퓨어 피부과 원장",
+        "전) 아이스타 피부과 대표원장",
+        "현) 삼성웰내과 원장"
+      ],
+      "education": [],
+      "certifications": [
+        "대한 내과학회 정회원",
+        "대한 내분비내과학회 정회원",
+        "대한 갑상선학회 정회원",
+        "대한 당뇨병학회 정회원",
+        "대한 골다공증학회 정회원",
+        "대한 비만학회 정회원",
+        "대한 피부미용성형레이저학회 정회원",
+        "대한 피부 모발 학회 정회원",
+        "대한 비만 체형학회 정회원"
+      ],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "변윤선",
+      "title": "대표원장",
+      "specialty": "피부과전문의",
+      "career": [
+        "한림대학교 강남성심병원 피부과 외래교수",
+        "전) 임이석테마피부과 원장",
+        "전) 삼성미소가인피부과 원장",
+        "전) 삼성웰내과 피부과 원장"
+      ],
+      "education": [],
+      "certifications": [
+        "대한 피부과학회 정회원",
+        "대한 피부외과학회 정회원",
+        "대한 레이저학회 정회원",
+        "대한 코스메틱피부과학회 정회원",
+        "대한 모발학회 정회원",
+        "피부항노화연구학회 정회원",
+        "대한 피부미용학회 정회원"
+      ],
+      "confidence": "confirmed"
+    }
+  ],
+  "academic_activities": [],
+  "medical_devices": [
+    {
+      "name": "유착주사",
+      "korean_name": "유착주사",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "other_injectable",
+      "description": "울퉁불퉁한 피부 유착 개선하는 주사. 피부유착이나 패임, 흉살, 결절 등 각종 성형 및 시술 후 부작용 개선을 위해 시술. 비스테로이드 성분의 안전한 유착주사.",
+      "source": "text"
+    },
+    {
+      "name": "여우각 페이스·바디주사",
+      "korean_name": "여우각 페이스·바디주사",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "lipolytic",
+      "description": "피하지방을 직접 파괴하는 특허받은 지방분해주사. 특허받은 지방분해약물 및 효소약물을 이용하여 안전하고 효과적으로 지방을 제거해주는 주사 시술.",
+      "source": "text"
+    },
+    {
+      "name": "성장호르몬 주사",
+      "korean_name": "성장호르몬 주사",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "other_injectable",
+      "description": "성인 건강에도 꼭 필요한 항노화 성장호르몬 주사시술요법. 노화로 인해 떨어진 신체 기능을 회복시켜주는 주사.",
+      "source": "text"
+    },
+    {
+      "name": "수액솔루션",
+      "korean_name": "수액솔루션",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "other_injectable",
+      "description": "맞춤영양 조합으로 시술하는 수액솔루션. 면역증강, 영양수액주사, 마이어스 칵테일주사, 메가비타민 주사 등.",
+      "source": "text"
+    },
+    {
+      "name": "초음파검사 장비",
+      "korean_name": "초음파검사 장비",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": "다양한 신체 내부적 질환검사에 효과적인 초음파검사. 간편하고 검사 시 환자가 편안하며, X-ray의 방사능이 없어 인체에 해가 없는 검사법.",
+      "source": "text"
+    },
+    {
+      "name": "HS50",
+      "korean_name": "삼성 HS50",
+      "manufacturer": "삼성",
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": "최신형 고가 초음파 장비 중 최고인 HS50. 갑상선 부위를 보다 선명하게 볼 수 있으며, 조직을 균일하게 보여주면서도 혈관 내 혈류 변화를 확인할 수 있어 다양한 질환을 민감하게 발견해 낼 수 있는 장비.",
+      "source": "text"
+    },
+    {
+      "name": "웰줄기세포",
+      "korean_name": "웰줄기세포",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "other_injectable",
+      "description": "줄기세포 치료.",
+      "source": "text"
+    },
+    {
+      "name": "무빙하이푸 바디레이저",
+      "korean_name": "무빙하이푸 바디레이저",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": "여우각 페이스·바디주사 시술 시 지방분해 효과를 부스팅하고 탄력 증진을 위해 함께 시술될 수 있는 바디 레이저.",
+      "source": "text"
+    }
+  ],
+  "treatments": [
+    {
+      "name": "주사 피부염, 홍조",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "유착주사",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "여우각 페이스·바디주사",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "lipolytic",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "얼굴, 바디 (볼살, 심부볼, 앞광대, 턱선, 부유방, 팔뚝, 옆구리, 복부, 러브핸들, 허벅지)"
+    },
+    {
+      "name": "대사증후군 진단 및 치료",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "호흡기 / 알레르기질환 치료",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "갑상선질환 치료",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "대상포진 치료",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "대상포진 예방접종",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "두드러기 치료",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "항노화 성장호르몬 주사시술요법",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "skinbooster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "복부, 대퇴부, 팔뚝"
+    },
+    {
+      "name": "수액솔루션",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "면역증강 · 영양수액주사",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "장건강수액",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "통증영양수액",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "간해독수액",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "브레인수액",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "면역증강수액",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "만성피로영양수액",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "갱년기수액",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "대상포진영양수액",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "감기·알러지 영양수액",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "마이어스 칵테일주사",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "메가비타민 주사",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "초음파검진",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "갑상선, 경동맥, 복부, 유방, 근골격, 피부"
+    },
+    {
+      "name": "고혈압 / 당뇨 / 임신성당뇨 진료",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "웰줄기세포",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    }
+  ],
+  "events": [],
+  "clinic_categories": [
+    {
+      "name": "피부과진료",
+      "treatments": [
+        "주사 피부염, 홍조",
+        "유착주사",
+        "여우각 페이스·바디주사"
+      ]
+    },
+    {
+      "name": "내과진료",
+      "treatments": [
+        "대사증후군 진단 및 치료",
+        "호흡기 / 알레르기질환 치료",
+        "갑상선질환 치료",
+        "대상포진 치료",
+        "두드러기 치료",
+        "고혈압 / 당뇨 / 임신성당뇨 진료"
+      ]
+    },
+    {
+      "name": "웰클리닉",
+      "treatments": []
+    },
+    {
+      "name": "초음파검사",
+      "treatments": [
+        "초음파검진"
+      ]
+    },
+    {
+      "name": "수액솔루션",
+      "treatments": [
+        "수액솔루션",
+        "면역증강 · 영양수액주사",
+        "장건강수액",
+        "통증영양수액",
+        "간해독수액",
+        "브레인수액",
+        "면역증강수액",
+        "만성피로영양수액",
+        "갱년기수액",
+        "대상포진영양수액",
+        "감기·알러지 영양수액",
+        "마이어스 칵테일주사",
+        "메가비타민 주사"
+      ]
+    },
+    {
+      "name": "항노화 성장호르몬",
+      "treatments": [
+        "항노화 성장호르몬 주사시술요법"
+      ]
+    },
+    {
+      "name": "웰줄기세포",
+      "treatments": [
+        "웰줄기세포"
+      ]
+    }
+  ],
+  "contact_info": {
+    "email": [],
+    "phone": [
+      {
+        "number": "02-6925-4552",
+        "type": "대표"
+      }
+    ],
+    "address": {
+      "full_address": "서울특별시 성동구 독서당로 223 래미안옥수리버젠상가 3층 (지211호) 옥수동 리버젠상가",
+      "sido": "서울특별시",
+      "sigungu": "성동구"
+    },
+    "kakao_channel": "https://pf.kakao.com/_xoxbxbxb",
+    "naver_booking": null,
+    "naver_place": null,
+    "instagram": "https://www.instagram.com/sswellclinic/",
+    "facebook": null,
+    "youtube": null,
+    "blog": "https://blog.naver.com/sswellclinic",
+    "website_url": "http://sswellclinic.co.kr",
+    "operating_hours": {
+      "weekday": "AM 09:00 - PM 06:30 (월-목), AM 09:00 - PM 07:30 (금)",
+      "saturday": "AM 09:00 - PM 02:00 (점심시간 없이 진료)",
+      "sunday": "휴진",
+      "lunch_break": "PM 01:00 - PM 02:00 (토요일 제외)"
+    }
+  },
+  "unregistered_equipment": [
+    {
+      "name": "무빙하이푸 바디레이저",
+      "korean_name": "무빙하이푸 바디레이저",
+      "suggested_category": "HIFU",
+      "source": "website",
+      "reason": "Mentioned as an optional add-on for 여우각 페이스·바디주사, but not a primary device and not in the predefined list."
+    }
+  ],
+  "unregistered_treatments": [],
+  "raw_price_texts": [],
+  "extraction_summary": {
+    "total_doctors": 2,
+    "total_academic": 0,
+    "total_equipment": 8,
+    "total_devices": 3,
+    "total_injectables": 5,
+    "total_treatments": 26,
+    "total_events": 0,
+    "total_categories": 7,
+    "total_contact_channels": 7,
+    "has_email": false,
+    "has_phone": true,
+    "has_kakao": true,
+    "has_sns": true,
+    "price_available_ratio": "0/26",
+    "unregistered_equipment_count": 1,
+    "unregistered_treatments_count": 0
+  }
+}
+
+──── [2] ocr_raw.json (이미지 OCR 원본) ────
+
+--- page_0_main_capture_0 ---
+삼성열린내과 피부과
+비만 · 체형 · 항노화 전문 클리닉
+병원소개 내과·피부과질환 웰클리닉 여우각주사 유착주사 초음파검사 수액솔루션 줄기세포 항노화성장호르몬
+Naturalism;
+자연주의[自然主義]
+내과 · 피부과
+비만 · 체형 · 항노화 전문 클리닉
+당신의 있는 모습을 그대로-
+자연을 닮은, 마음을 담는 섬세한 진료
+
+--- page_0_main_capture_1 ---
+편안하고 건강한 아름다움을 추구하는
+삼성웰내과 피부과
+병원소개 내과·피부과질환 웰클리닉 여우각주사 유착주사 초음파검사 수액솔루션 웰줄기세포 항노화성장호르몬
+
+SSWELL CLINIC Well-Clinic
+
+삼성웰클리닉은 당신의
+있는 모습 그대로를 지향합니다.
+
+SSWELL CLINIC
+Dermatology 피부과진료
+TOP
+< >
+
+--- page_0_main_capture_2 ---
+비만 당뇨 항노화 전문클리닉
+삼성웰내과·피부과
+병원소개 내과·피부과질환 웰클리닉 여우각주사 유착주사 초음파검사 수액솔루션 웰줄기세포 항노화성장호르몬
+≡
+Safe Skin
+Injection
+울퉁불퉁 피부유착,
+2차적 유착을 줄인 유착주사
+Lifting &
+Fat Melting Injection
+진료의 2인 협진으로 탄생한
+트리플 시너지 리프팅 & 지방분해주사
+Rosac
+Treat
+붉어진 피부, 발진,
+주사피부염의 재
+유착주사
+>
+여우각주사
+>
+주사피부염, 홍조
+SSWELL CLINIC
+Internal
+Medicine 내과진료
+<
+>
+TOP
+
+--- page_0_main_capture_3 ---
+비만 하이힐 항노화클리닉
+삼성웰내과·피부과
+병원소개 내과·피부과질환 웰클리닉 여우각주사 유착주사 초음파검사 수액솔루션 웰줄기세포 항노화성장호르몬
+
+SSWELL CLINIC
+Speciality
+
+자연주의의 원칙으로
+삶을 더 건강하고 아름답게
+
+“건강하고 아름다운 삶으로 변화하기 위한
+유일한 방법은 당신 스스로를 사랑하는 것이
+다.”
+
+당신의 있는 모습 그대로를 더 사랑할 수 있도
+록.
+
+병원·의료진소개 >
+
+TOP
+
+--- page_0_main_capture_4 ---
+삼성웰내과·피부과
+병원소개 내과·피부과질환 웰클리닉 여우각주사 유착주사 초음파검사 수액솔루션 혈줄기세포 항노화성장호르몬
+
+진료시간
+월 - 목 AM 09:00 - PM 06:30
+금 요일 AM 09:00 - PM 07:30
+토 요일 AM 09:00 - PM 02:00 일·공휴일은 휴진입니다.
+점심시간 PM 01:00 - PM 02:00 토요일은 점심시간 없이 진료합니다.
+
+오시는길
+옥
+
+--- page_0_main_capture_5 ---
+삼성웰내과·피부과
+병원소개 내과·피부과질환 웰클리닉 여우각시주사 유착주사 초음파검사 수액솔루션 혈관기세포 항노화성장호르몬
+
+월 ~ 목 AM 09:00 - PM 06:30
+금 요일 AM 09:00 - PM 07:30
+토 요일 AM 09:00 - PM 02:00 일·공휴일은 휴진입니다.
+점심시간 PM 01:00 - PM 02:00 토요일은 점심시간 없이 진료합니다.
+
+오시는길
+
+옥
+
+--- page_2_other_capture_0 ---
+비만 체형 노화치료중심
+삼성열린내과·피부과
+병원소개 내과·피부과질환 웰니스클리닉 여우각주사 유착주사 초음파검사 수액솔루션 웰즐기세포 항노화성장호르몬
+
+Acne·Rosacea
+여드름·주사피부염
+피부 염증 반응으로 발생하는 여드름, 주사.
+
+--- page_2_other_capture_1 ---
+비만 체형 항노화 클리닉
+삼성엘내과 피부과
+병원소개 내과·피부과질환 웰클리닉 여우각주사 유착주사 초음파검사 수액솔루션 웰줄기세포 항노화성장호르몬
+
+여드름과 주사피부염, 어떻게 다를까?
+
+TOP
+
+--- page_2_other_capture_2 ---
+비만 대사 항노화클리닉
+삼성열내과 피부과
+병원소개 내과·피부과질환 웰클리닉 여우각주사 유착주사 초음파검사 수액솔루션 웰줄기세포 항노화성장호르몬
+
+ACNE·ROSACEA
+여드름
+
+ACNE·ROSACEA
+주사피부염
+
+피부가 붉어지는
+안면홍조
+피부가 예민하고
+건조함
+TOP
+
+--- page_2_other_capture_3 ---
+비만 체형 노화 피부 클리닉
+삼성엘내과 피부과
+병원소개 내과·피부과질환 웰클리닉 여우각주사 유착주사 초음파검사 수액솔루션 웰줄기세포 항노화성장호르몬
+
+TOP
+
+--- page_2_other_capture_4 ---
+비만 체형 항노화 전문클리닉
+삼성웰내과·피부과
+병원소개 내과·피부과질환 웰클리닉 여우각주사 유착주사 초음파검사 수액솔루션 웰줄기세포 항노화성장호르몬
+
+"화장품이 자주 안 맞거나 나이가 들수록 여드름과 같은 트러블이
+잦아지고 있다면 주사의 초기 증상일 수 있어 조기 진료를 필요로 합니다."
+
+개인정보처리방침 이용약관 비급여항목안내
+병원명 : 삼성웰내과 의원 | 주소 : 서울특별시 성동구 독서당로 223 래미안옥수리버젠상가 3층 (지211호) 옥수동 리버젠상가 | Tel.02.6925-4552 | 대표 : 정대준 | 사업자번호 : 821-65-
+00293
+TOP Copyright © 2020 삼성웰내과 All right reserved.
+비만 체형 항노화 전문클리닉
+삼성웰내과·피부과
+
+--- page_3_other_capture_0 ---
+삼성웰내과 피부과
+병원소개 내과·피부과질환 웰클리닉 여우각주사 유착주사 초음파검사 수액솔루션 웰빙기세포 항노화성장호르몬
+
+skin adhesion injection
+피부유착주사
+울퉁불퉁한 피부 유착 개선하는 유착주사
+
+--- page_3_other_capture_1 ---
+비만 대사 항노화 전문클리닉
+삼성열 내과·피부과
+병원소개 내과·피부과질환 웰클리닉 여우각주사 유착주사 초음파검사 수액솔루션 웰줄기세포 항노화성장호르몬
+표피
+진피
+SKIN ADHESION INJECTION
+피하지방
+근막과 진피가 맞붙는 현상
+피부유착
+근막
+근육층
+TOP
+
+--- page_3_other_capture_2 ---
+비만 체형 전문의료기관
+삼성웰내과·피부과
+병원소개 내과·피부과질환 웰클리닉 여우각주사 유착주사 초음파검사 수액솔루션 웰줄기세포 항노화성장호르몬
+≡
+
+SKIN ADHESION INJECTION
+
+지방흡입 후 발생하는 피부유착, 확실히 잡는
+삼성웰 유착주사
+
+유착해결
+피부유착이나 패임, 흉살,
+결절 등 각종 성형 및 시술 후
+부작용 개선을 위한 시술
+
+NO 부작용
+유착, 2차 부작용
+걱정없는 안전한 시술
+
+TOP
+01
+
+--- page_3_other_capture_3 ---
+삼성웰내과피부과
+병원소개 내과·피부과질환 웰클리닉 여우각주사 유착주사 초음파검사 수액솔루션 웰줄기세포 항노화성장호르몬
+
+지방흡입 후 울퉁불퉁해진
+유착을 확실하게 해결하는
+단 하나의 솔루션
+
+SKIN ADHESION INJECTION
+피부유착 고민 해결
+유착주사 Advantage
+
+삼성웰클리닉 유착주사는 피부가 직접적으로 받는
+부담이 없어 부작용 개선에 효과적이며, 얼굴은 물론
+바디에도
+제약을 받지 않는 시술이 가능합니다. 부작용 개선
+외에 얼굴
+윤곽, 군살 등을 정돈하는 미용 효과를 동시에 가지
+고 있습니다.
+
+02
+믿을 수 있는 치료
+
+내과 전문의와 피부과 전문의
+협진하에 이루어지는
+삼성웰내과피부과만의 노하우
+
+TOP
+
+--- page_3_other_capture_4 ---
+비만 체형 안티에이징 클리닉
+삼성웰내과·피부과
+병원소개 내과·피부과질환 웰니스클리닉 여우각주사 유착주사 초음파검사 수액솔루션 웰줄기세포 항노화성장호르몬
+성형수술 후 부작용 및 흉살치료
+뿐만 아니라 불필요한 얼굴 군살까지
+효과적으로 교정이 가능
+
+SKIN ADHESION INJECTION
+피부유착 고민 해결
+유착주사 Advantage
+
+삼성웰클리닉 유착주사는 피부가 직접적으로 받는
+부담이 없어 부작용 개선에 효과적이며, 얼굴은 물론
+바디에도
+제약을 받지 않는 시술이 가능합니다. 부작용 개선
+외에 얼굴
+윤곽, 군살 등을 정돈하는 미용 효과를 동시에 가지
+고 있습니다.
+04
+안전한 성분의 약물 사용
+천연 성분의 약물 사용으로
+피부에 부담이 없으며,
+효과가 빠르고 오래 지속
+TOP
+
+--- page_3_other_capture_5 ---
+비만 체형 노화 안티에이징 클리닉
+삼성웰내과 피부과
+병원소개 내과·피부과질환 웰클리닉 여우각주사 유착주사 초음파검사 수액솔루션 웰줄기세포 항노화성장호르몬
+고 있습니다.
+피부타입, 부작용의 명확한 증상 파악으로
+부담감이 현저히 적은
+피부 회복(유착증상회복)이 가능
+
+"부작용 개선 시술 반드시 안전해야 합니다."
+
+삼성웰클리닉에서는 한 번의 잘못된 시술을 바로잡기 위해 더 안전한 유착주사를
+통해 마음의 상처까지 치유해 드리고 있습니다.
+본원에서 피부유착 해결주사를 통해 더욱 안전성 있는 피부 개선 효과를 누려보시길 바랍니다.
+TOP
+
+--- page_3_other_capture_6 ---
+비만 체형 노화예방 클리닉
+삼성엘내과피부과
+병원소개 내과·피부과질환 웰클리닉 여우각주사 유착주사 초음파검사 수액솔루션 웰줄기세포 항노화성장호르몬
+
+SKIN ADHESION INJECTION
+
+유착주사,
+이런 분들께 추천합니다
+지방흡입 후 피부가 울퉁불퉁해진 경우
+
+지방흡입 후 유착 증상이 생긴 경우
+
+재시술 후 더 울퉁불퉁해질까 두려운 경우
+
+여러가지 개선 시술에도 유착 개선 효과가 없었던 경우
+
+다양한 부위에 발생한 유착 증상을 해결하고자 하는 경우
+
+수술이 두려운 경우
+TOP
+
+--- page_3_other_capture_7 ---
+비만 체형 맞춤진료 클리닉
+삼성웰내과·피부과
+병원소개 내과·피부과질환 웰클리닉 여우각주사 유착주사 초음파검사 수액솔루션 웰줄기세포 항노화성장호르몬
+유착주사,
+이런 분들께 추천합니다
+지방흡입 후 피부가 울퉁불퉁해진 경우
+지방흡입 후 유착 증상이 생긴 경우
+재시술 후 더 울퉁불퉁해질까 두려운 경우
+여러가지 개선 시술에도 유착 개선 효과가 없었던 경우
+다양한 부위에 발생한 유착 증상을 해결하고자 하는 경우
+수술이 두려운 경우
+개인정보처리방침 이용약관 비급여항목안내
+병원명: 삼성웰내과피부과 | 주소: 서울특별시 성동구 독서당로 223 래미안옥수리버젠상가 3층 (지211호) 옥수동 리버젠상가 | Tel.02.6925-4552 | 대표:정대준 | 사업자번호: 821-85-
+00293
+TOP Copyright ⓒ 2020 삼성웰내과 All right reserved
+비만 체형 맞춤진료 클리닉
+삼성웰내과·피부과
+
+--- page_4_other_capture_0 ---
+피부과 전문의 진료
+삼성열린내과 피부과
+병원소개 내과·피부과질환 웰클리닉 여우각주사 유착주사 초음파검사 수액솔루션 갱년기세포 항노화성장호르몬
+
+fox face & body injection
+여우각 페이스·바디주사
+피하지방을 직접 파괴하는 특허받은 지방분해주사
+
+--- page_4_other_capture_1 ---
+비만 체형 항노화 전문클리닉
+삼성웰내과·피부과
+병원소개 내과·피부과질환 웰클리닉 여우각주사 유착주사 초음파검사 수액솔루션 웰줄기세포 항노화성장호르몬
+
+fox face & body injection
+"내가 좋았던 시술만이 환자에게 만족을 준다."
+
+의사인 저희가 직접 받았을 때 좋았던 시술만이 환자에게도
+만족을 줄 수 있다는 생각들 합니다.
+삼성웰클리닉에서는 이러한 사명감을 바탕으로
+시간이 지나도 변함없는, 더 건강한 시술만을 추구합니다.
+
+'특허받은' 여우각 페이스·바디
+주 TOP
+
+--- page_4_other_capture_2 ---
+상상내과피부과
+병원소개 내과·피부과질환 웰클리닉 여우각주사 유착주사 초음파검사 수액솔루션 웰즐기세포 항노화성장호르몬
+그 기술력을 인정받고 특허청 특허를 획득한 시술입니
+다.
+상표등록증
+특허증
+여우각
+특허청
+반천추
+특허청
+김동래
+여우각 페이스·바디주사 특허증 & 상표등록증
+피부과전문의 변윤선 원장
+내분비내과전문의 정대준 원장
+"슬리밍", 피하지방을 직접 분해해야 완벽한 효과!
+TOP
+
+--- page_4_other_capture_3 ---
+비만 체형 전문클리닉
+삼성엘내과·피부과
+병원소개 내과·피부과질환 웰클리닉 여우각주사 유착주사 초음파검사 수액솔루션 웰줄기세포 항노화성장호르몬
+
+FOX FACE & BODY INJECTION
+
+슬리밍, 왜 피하지방을 직접
+파괴해야 될까요?
+지방세포를 단순히 줄이는 슬리밍과 고정된 위치에 있는
+피하지방을 직접적으로 분해하거나 파괴하는 슬리밍은 큰 차이가 있습니다.
+
+TOP
+
+--- page_4_other_capture_4 ---
+비만 한방 항노화 전문클리닉
+삼성열내과 피부과
+병원소개 내과·피부과질환 웰클리닉 여우각주사 유착주사 초음파검사 수액솔루션 웰줄기세포 항노화성장호르몬
+
+fox face & body injection
+"페이스와 바디 모두에 적용 가능한 여우각 페이스·바디주사"
+
+TOP
+스테로이드 없는 안전함
+유착없는 지방분해효과
+수술없이 안전한 지방분해, 비
+페이스 & 바디 모두 적용 가
+단단했던 지방을 부드럽게
+
+--- page_4_other_capture_5 ---
+비만 체형 항노화클리닉
+삼성엘내과 피부과
+병원소개 내과·피부과질환 웰클리닉 여우각주사 유착주사 초음파검사 수액솔루션 웰줄기세포 항노화성장호르몬
+≡
+
+FOX FACE & BODY INJECTION
+
+여우각 페이스·바디주사 원리
+여우각 페이스&바디주사는 특허 받은 지방분해 및 효소약물을
+이용하여 안전하고 효과적으로 지방을 제거해주는 주사 시술입니다.
+
+TOP
+
+--- page_4_other_capture_6 ---
+비만 체형 안티에이징 클리닉
+삼성열린내과·피부과 병원소개 내과·피부과질환 웰니스클리닉 여우각주사 유착주사 초음파검사 수액솔루션 웰즐기세포 항노화성장호르몬
+
+여우각 페이스·바디주사 시술부위
+여우각 페이스&바디주사는 기존의 지방분해 방법으로 해결이 어려웠거나
+잘 빠지지 않는 부위에 탁월한 효과를 보입니다.
+
+볼살 해결
+심부볼(볼독살) 개선
+앞광대 해결
+늘어진 턱선 교정
+
+부유방
+팔뚝
+옆구리
+복부
+러브핸들
+허벅지
+
+TOP
+
+--- page_4_other_capture_7 ---
+삼성열린내과·피부과
+병원소개 내과·피부과질환 웰클리닉 여우각주사 유착주사 초음파검사 수액솔루션 웰줄기세포 항노화성장호르몬
+≡
+
+FOX FACE & BODY INJECTION
+
+여우각 페이스·바디주사
+기존 지방분해주사 시술과의 차별화
+
+지방흡입 레이저 지방분해 여우각 페이스·바디주사
+원리 피부절개 후 지방층에 캐뉼라 삽입 후 흡입하여 저온, 고주파 등 다양한 원리를 이용한 지방분해 특허받은 지방분해약물 및 효소약물
+지방 제거
+회복속도 수술 후 통증, 일상생활 불편함 일상생활 가능 일상생활 가능
+마취여부 수면마취 / 전신마취 별도의 마취 불필요 환자에 따라 마취여부 상이
+수술 즉시 효과를 볼 수 있지만 경우에 따라 경우에 따라 한 달 이상 소요, 1-2개월 후 효과 떨어 시술 후 즉각적인 효과, 1-2개월 후 더 효과적, 요요
+효과 수술 후 통증과 유착 부작용, 탄력 등이 떨어질 질 수 있음 현상 없음
+수 있음
+장점 보편적 지방제거수술 편안한 시술 가능 시술 후 즉각 효과, 높은 유지기간
+
+삼성열린클리닉에서는 필요 시 지방제거와 바디레이저를 함께 시술하여 여우각 페이스·바디주사 시술 시
+지방분해 효과를 부스팅하고 탄력도 함께 증진시킨 결과를 볼 수 있습니다.
+
+TOP
+
+--- page_4_other_capture_8 ---
+편안하고 따뜻한 진료를 추구하는
+삼성열린내과&피부과
+병원소개 내과·피부과질환 웰니스클리닉 여우각주사 유착주사 초음파검사 수액솔루션 웰줄기세포 항노화성장호르몬
+
+입소문에는 이유가 있다!
+특허받은 약물로 더 효과적인 여우각 페이스·바디주사
+
+01
+입소문으로도 유명한
+여우각 페이스&바디주사
+TOP
+
+--- page_4_other_capture_9 ---
+비만 체형 항노화전문클리닉
+삼성웰내과·피부과
+병원소개 내과·피부과질환 웰클리닉 여우각주사 유착주사 초음파검사 수액솔루션 웰줄기세포 항노화성장호르몬
+
+01
+입소문으로도 유명한
+여우각 페이스&바디주사
+
+여우각 페이스&바디주사는 그 효과가 뛰어나
+입소문을 탄 시술인 만큼 지방분해주사로
+해결이 어려웠거나 효과적인 부분에 대해
+고민을 가지고 계신 분들에게 적합합니다.
+
+개인정보처리방침 이용약관 비급여항목안내
+
+병원명 : 삼성웰내과피부과 | 주소 : 서울특별시 성동구 독서당로 223 래미안옥수리버젠상가 3층 (지211호) 옥수동 리버젠상가 | Tel.02.6925-4552 | 대표 : 정대준 | 사업자번호 : 821-65-
+00293
+TOP Copyright © 2020 삼성웰내과 All right reserved.
+비만 체형 항노화전문클리닉
+삼성웰내과·피부과
+
+--- page_5_other_capture_0 ---
+비만 체형 만성질환 클리닉
+삼성열린내과·피부과
+병원소개 내과·피부과질환 웰니스클리닉 여우각주사 유착주사 초음파검사 수액솔루션 웰줄기세포 항노화성장호르몬
+
+Metabolic syndrome
+대사증후군
+여러 성인병이 복합적으로 나타나는 대사증후군
+
+--- page_5_other_capture_1 ---
+비만 당뇨 고혈압 전문클리닉
+삼성엘내과·피부과
+병원소개 내과·피부과질환 웰클리닉 여우각주사 유착주사 초음파검사 수액솔루션 웰줄기세포 항노화성장호르몬
+Metabolic syndrome
+여러 신진대사 관련 질환이 동반되는 대사증후군
+TOP
+
+--- page_5_other_capture_2 ---
+비만 체형 항노화 클리닉
+삼성엘내과 피부과
+병원소개
+내과·피부과질환
+웰클리닉
+여우각주사
+유착주사
+초음파검사
+수액솔루션
+웰줄기세포
+항노화성장호르몬
+≡
+
+METABOLIC SYNDROME
+
+대사증후군의 다양한 합병증
+
+고중성지방혈증
+
+낮은 고밀도 콜레스테롤
+
+TOP
+
+METABOLIC SYNDROME
+
+--- page_5_other_capture_3 ---
+비만 체형 및 노화클리닉
+삼성웰내과·피부과 병원소개 내과·피부과질환 웰클리닉 여우각주사 유착주사 초음파검사 수액솔루션 웰줄기세포 항노화성장호르몬
+
+아래의 구성 요소 중 3가지 이상이 있는 경우
+대사증후군으로 정의할 수 있습니다.
+
+복부비만
+고중성지방혈증
+낮은 HDL 콜레스테롤혈증
+높은 혈압
+혈당 장애
+
+TOP 개인정보처리방침 이용약관 비급여항목안내
+
+--- page_5_other_capture_4 ---
+비만·체형·항노화·솔루션
+삼성웰내과·피부과
+병원소개 내과·피부과질환 웰클리닉 여우각주사 유착주사 초음파검사 수액솔루션 웰줄기세포 항노화성장호르몬
+
+복부비만
+고중성지방혈증
+낮은 HDL 콜레스테롤혈증
+높은 혈압
+혈당 장애
+
+개인정보처리방침 이용약관 비급여항목안내
+
+병원명: 삼성웰내과피부과 | 주소 : 서울특별시 성동구 독서당로 223 래미안옥수리버젠상가 3층 (지211호) 옥수동 리버젠상가 | Tel.02.6925-4552 | 대표 : 정대준 | 사업자번호 821-65-00293
+Copyright ⓒ 2020 삼성웰내과 All right reserved
+비만·체형·항노화·솔루션
+삼성웰내과·피부과
+
+──── [3] coverage_raw.txt (커버리지 검증 로그) ────
+{
+  "missing_equipments": [],
+  "missing_treatments": [
+    "갑상선 초음파",
+    "경동맥 초음파",
+    "복부 초음파",
+    "유방 초음파",
+    "근골격 초음파",
+    "피부 초음파"
+  ],
+  "missing_doctors": [],
+  "missing_prices": [],
+  "coverage_score": {
+    "equipment": 100,
+    "treatment": 73,
+    "doctor": 100,
+    "overall": 89
+  },
+  "issues": [
+    "추출 결과의 '장비' 항목에 '유착주사', '여우각 페이스·바디주사', '성장호르몬 주사', '수액솔루션', '웰줄기세포', '무빙하이푸 바디레이저'는 시술로 분류되어야 합니다.",
+    "추출 결과의 '장비' 항목에 '초음파검사 장비'는 구체적인 장비명이 아닌 일반적인 명칭입니다.",
+    "추출 결과에 '대상포진 예방접종', '면역증강 · 영양수액주사', '장건강수액', '통증영양수액', '간해독수액', '브레인수액', '면역증강수액', '만성피로영양수액', '갱년기수액', '대상포진영양수액', '감기·알러지 영양수액', '웰줄기세포', '무빙하이푸 바디레이저'는 원본 마크다운에 없는 시술/장비가 추출되었습니다.",
+    "추출 결과에 '변윤선' 의사는 원본 마크다운에 언급되지 않았습니다."
+  ]
+}

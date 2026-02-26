@@ -1,0 +1,445 @@
+═══════════════════════════════════════════════════
+  로빈의원 — 추출 원본 데이터
+═══════════════════════════════════════════════════
+
+──── [1] analysis.json (Gemini 분류 결과) ────
+{
+  "hospital_name": "로빈의원",
+  "doctors": [
+    {
+      "name": "구경완",
+      "title": "대표원장",
+      "specialty": null,
+      "career": [
+        "20년 이상의 풍부한 임상경험 (source: screenshot)",
+        "20년 이상 전문의 (source: text)"
+      ],
+      "education": null,
+      "certifications": null,
+      "confidence": "confirmed"
+    },
+    {
+      "name": "나공찬",
+      "title": "대표원장",
+      "specialty": null,
+      "career": [
+        "20년 이상 전문의 (source: text)"
+      ],
+      "education": null,
+      "certifications": null,
+      "confidence": "confirmed"
+    }
+  ],
+  "academic_activities": [],
+  "medical_devices": [
+    {
+      "name": "필러",
+      "korean_name": "필러",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "filler",
+      "description": "쁘띠시술의 일종으로, 볼륨 개선 및 주름 개선에 사용되는 주사제입니다.",
+      "source": "text"
+    },
+    {
+      "name": "보톡스",
+      "korean_name": "보톡스",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "botox",
+      "description": "쁘띠시술의 일종으로, 주름 개선 및 윤곽 교정에 사용되는 주사제입니다.",
+      "source": "text"
+    },
+    {
+      "name": "양악필러",
+      "korean_name": "양악필러",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "filler",
+      "description": "돌출입 뿐만 아니라, 주걱턱도 교정하는 필러 시술입니다.",
+      "source": "text,image_banner"
+    },
+    {
+      "name": "수술코필러",
+      "korean_name": "수술코필러",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "filler",
+      "description": "재수술없이 예쁜 코로 변신할 수 있는 필러 시술입니다.",
+      "source": "text,image_banner"
+    },
+    {
+      "name": "엉덩이필러",
+      "korean_name": "엉덩이필러",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "filler",
+      "description": "수술없이 자연스럽게 엉덩이 볼륨을 만들어주는 필러 시술입니다.",
+      "source": "text,image_banner"
+    },
+    {
+      "name": "눈두덩이필러",
+      "korean_name": "눈두덩이필러",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "filler",
+      "description": "눈두덩이 부위의 볼륨을 개선하는 필러 시술입니다.",
+      "source": "text"
+    },
+    {
+      "name": "주름필러",
+      "korean_name": "주름필러",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "filler",
+      "description": "주름 개선을 위한 필러 시술입니다.",
+      "source": "text"
+    },
+    {
+      "name": "스킨부스터",
+      "korean_name": "스킨부스터",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "booster",
+      "description": "피부케어의 일종으로, 피부 개선을 위한 주사제입니다.",
+      "source": "text"
+    },
+    {
+      "name": "녹는실",
+      "korean_name": "녹는실",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "thread",
+      "description": "탄력·리프팅 시술에 사용되는 녹는 실입니다.",
+      "source": "text"
+    },
+    {
+      "name": "레이저",
+      "korean_name": "레이저",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "기미, 색소 등 피부 문제를 복합적으로 치료하는 장비입니다.",
+      "source": "image_banner"
+    },
+    {
+      "name": "고주파",
+      "korean_name": "고주파",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF",
+      "description": "주사 없이 얼굴라인을 교정하는 윤곽 시술에 사용되는 장비입니다.",
+      "source": "image_banner"
+    },
+    {
+      "name": "특수필러",
+      "korean_name": "특수필러",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "filler",
+      "description": "특수한 목적을 위한 필러 시술입니다.",
+      "source": "text"
+    }
+  ],
+  "treatments": [
+    {
+      "name": "특수필러",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "filler",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "비절개 이물질제거",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "필러",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "filler",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "보톡스",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "botox",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "양악필러",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "filler",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "양악"
+    },
+    {
+      "name": "수술코필러",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "filler",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "코"
+    },
+    {
+      "name": "엉덩이필러",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "filler",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "엉덩이"
+    },
+    {
+      "name": "눈두덩이필러",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "filler",
+      "price_display": null
+    }
+  ]
+}
+
+──── [2] ocr_raw.json (이미지 OCR 원본) ────
+
+--- page_0_main_capture_0 ---
+ROBBIN
+ROBBIN 쁘띠시술 특수필러 비절개 이물질제거 피부케어 탄력·리프팅
+커뮤니티
+
+로빈은 다릅니다
+20년동안 원장님만의 풍부한 임상경험과
+차별화된 노하우를 자신합니다.
+
+진료안내 바로가기 +
+
+Make Your Beautiful Dream
+로빈피부과에서 만날 수 있는 특별한 경험
+
+엉덩이 볼륨필러
+수술없이 자연스럽게 자신있게
+
+수술코필러
+재수술없이, 예쁜코로 변신
+
+--- page_0_main_capture_1 ---
+기미 색소 레이저
+복합적인 레이저로 색소를 흐리게
+View more
+양악필러
+돌출입 뿐만 아니라, 주걱턱도 교정!
+View more
+윤곽 고주파
+주사 없이 교정되는 얼굴라인
+View more
+
+Robbin's News
+로빈피부과의 새소식
+
+Robbin's MIND
+아름다움을 가꾸는 당신을 위한 특별한 선택
+
+로빈은 진료경력 20년 이상 전문의들이 치료 노하우를 공유하고 연구하던 중 새로운 미용 패러다임 아래 모인 닥터클리닉으로서,
+오랜 치료경험의 바탕 위에 환자에게 보다 정확한 의료서비스를 제공할 것을 약속드리며
+모든 치료 과정은 충분한 설명과 고객과의 소통을 통해 최선의 결과를 이끌 수 있도록 하겠습니다.
+또한 로빈의 자연·웰빙 모토에 따라 새롭고 안전한 치료방법 개선 시술을 약속드립니다.
+
+대표 상담 전화 02-552-9784~5
+온라인상담신청 바로가기
+
+--- page_0_main_capture_2 ---
+벤버만인벤트
+낫지
+코인아구찜
+파리바게뜨
+아이리스
+떡볶이
+초가집삼계탕
+스타벅스
+마초갈비
+CU
+아이리스
+해남
+CU
+크리오프라스빌
+점심24시
+현대자동차
+젠부르스
+HUG주차장공유
+서울동부지사
+스타벅스
+우리랑형외과
+신한
+원대구탕
+헌법재판소
+헌법재판연구원
+HUG주택도시보증공사
+서울동부지사
+올리브영
+신한
+강남타워
+동신오피스텔
+역삼동우정
+에르
+
+--- page_0_main_capture_3 ---
+덴버베인만두
+찜지
+GS25
+에클라트아파트
+삼성동에스트로
+아파트
+GS25
+에클라트아파트
+삼성동
+한섬아파트
+해남
+GS25
+나리식당한의원
+한국토지주택공사
+서울남부권주거복지사
+CU
+아이리스
+우리옛떡
+떡볶이
+초가집삼계탕
+파리바게뜨
+퀸덤아파트
+더휴헤딩룸
+GS25
+코리아구이찜
+파리바게뜨
+스타벅스
+GS25
+신한은행
+원당구탕
+현대제판소
+현대제판연구원
+
+──── [3] coverage_raw.txt (커버리지 검증 로그) ────
+{
+  "missing_equipments": [],
+  "missing_treatments": [
+    "주름필러",
+    "필러제거",
+    "이물질제거",
+    "스킨부스터",
+    "녹는실",
+    "로빈리프팅",
+    "레이져리프팅"
+  ],
+  "missing_doctors": [],
+  "missing_prices": [],
+  "coverage_score": {
+    "equipment": 100,
+    "treatment": 53,
+    "doctor": 100,
+    "overall": 81
+  },
+  "issues": [
+    "추출된 '장비' 목록에 '양악필러, 수술코필러, 엉덩이필러, 눈두덩이필러, 주름필러' 등 시술로 분류되어야 할 항목들이 포함되어 있습니다. 원본 마크다운에는 구체적인 의료기기(예: 써마지 FLX) 명칭이 없습니다."
+  ]
+}

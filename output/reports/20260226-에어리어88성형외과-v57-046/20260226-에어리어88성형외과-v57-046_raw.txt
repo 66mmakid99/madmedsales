@@ -1,0 +1,259 @@
+═══════════════════════════════════════════════════
+  에어리어88성형외과 — 추출 원본 데이터
+═══════════════════════════════════════════════════
+
+──── [1] analysis.json (Gemini 분류 결과) ────
+{
+  "hospital_name": "에어리어88성형외과",
+  "doctors": [
+    {
+      "name": "최정호",
+      "title": "박사",
+      "specialty": "레이저 치료, 오타 반점, 고도 안검하수 교정, 안면거상, 목거상, 이마거상, 박피",
+      "career": [
+        "32년 간의 레이저 치료 경력",
+        "오타 반점 세계 최초 레이저 완치",
+        "한국성형외과의 존경받는 인물",
+        "22년의 경력 (고도안검하수 재수술)",
+        "대한민국 TOP 100 BEST DOCTOR 선정 (고도 안검하수 교정 부문)",
+        "탑어워즈 안면거상부문"
+      ],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    }
+  ],
+  "academic_activities": [
+    {
+      "type": "학회발표",
+      "title": "지속적인 연구와 학회의 발표, 심포지엄 개최",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "지속적인 연구와 학회의 발표, 심포지엄 개최"
+    },
+    {
+      "type": "기타",
+      "title": "오타 반점 세계 최초 레이저 완치",
+      "year": null,
+      "doctor_name": "최정호",
+      "source_text": "오타 반점 세계 최초 레이저 완치"
+    },
+    {
+      "type": "수상",
+      "title": "탑어워즈 안면거상부문",
+      "year": null,
+      "doctor_name": "최정호",
+      "source_text": "탑어워즈 안면거상부문"
+    },
+    {
+      "type": "수상",
+      "title": "대한민국 TOP 100 BEST DOCTOR 선정 (고도 안검하수 교정 부문)",
+      "year": null,
+      "doctor_name": "최정호",
+      "source_text": "대한민국 TOP 100 BEST DOCTOR 선정 (고도 안검하수 교정 부문)"
+    }
+  ],
+  "medical_devices": [
+    {
+      "name": "레이저",
+      "korean_name": "레이저",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": null,
+      "source": "screenshot"
+    }
+  ],
+  "treatments": [
+    {
+      "name": "안면거상",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "얼굴"
+    },
+    {
+      "name": "목거상",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "목"
+    },
+    {
+      "name": "이마거상",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "이마"
+    },
+    {
+      "name": "레이저",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "박피",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    }
+  ],
+  "events": [],
+  "clinic_categories": [
+    {
+      "name": "안면분석",
+      "treatments": []
+    },
+    {
+      "name": "거상술",
+      "treatments": [
+        "안면거상",
+        "목거상",
+        "이마거상"
+      ]
+    },
+    {
+      "name": "레이저/박피",
+      "treatments": [
+        "레이저",
+        "박피"
+      ]
+    }
+  ],
+  "contact_info": {
+    "email": [],
+    "phone": [],
+    "address": null,
+    "kakao_channel": null,
+    "naver_booking": null,
+    "naver_place": null,
+    "instagram": null,
+    "facebook": null,
+    "youtube": null,
+    "blog": null,
+    "website_url": "https://area88ps.com/ko",
+    "operating_hours": null
+  },
+  "unregistered_equipment": [],
+  "unregistered_treatments": [],
+  "raw_price_texts": [],
+  "extraction_summary": {
+    "total_doctors": 1,
+    "total_academic": 4,
+    "total_equipment": 1,
+    "total_devices": 1,
+    "total_injectables": 0,
+    "total_treatments": 5,
+    "total_events": 0,
+    "total_categories": 3,
+    "total_contact_channels": 1,
+    "has_email": false,
+    "has_phone": false,
+    "has_kakao": false,
+    "has_sns": false,
+    "price_available_ratio": "0/5",
+    "unregistered_equipment_count": 0,
+    "unregistered_treatments_count": 0
+  }
+}
+
+──── [2] ocr_raw.json (이미지 OCR 원본) ────
+
+--- page_1_main_capture_0 ---
+에어리어88 심포지엄 & 세미나 안면분석
+안면거상, 목거상, 이마거상
+레이저 및 박피 SPECIALIST
+88
+AREA
+PLASTIC SURGERY
+
+지속적인 연구와 학회의 발표, 심포지엄 개최
+
+온라인 문의
+
+──── [3] coverage_raw.txt (커버리지 검증 로그) ────
+{
+  "missing_equipments": [],
+  "missing_treatments": [
+    "고도안검하수 재수술",
+    "고도 안검하수 교정",
+    "안면분석"
+  ],
+  "missing_doctors": [],
+  "missing_prices": [],
+  "coverage_score": {
+    "equipment": 100,
+    "treatment": 62.5,
+    "doctor": 100,
+    "overall": 85
+  },
+  "issues": []
+}

@@ -1,0 +1,2821 @@
+═══════════════════════════════════════════════════
+  파스텔휴먼피부과 — 추출 원본 데이터
+═══════════════════════════════════════════════════
+
+──── [1] analysis.json (Gemini 분류 결과) ────
+{
+  "hospital_name": "파스텔휴먼피부과",
+  "doctors": [
+    {
+      "name": "하재원",
+      "title": "대표원장",
+      "specialty": "피부과 전문의",
+      "career": [
+        "前) 리뉴미피부과 원장",
+        "前) 하이엔드피부과 원장",
+        "前) 국군대전병원 피부과 과장"
+      ],
+      "education": [],
+      "certifications": [
+        "대한피부과학회 정회원",
+        "대한피부과의사회 정회원",
+        "대한임상피부치료연구회 정회원",
+        "대한피부레이저학회 정회원",
+        "대한여드름학회 정회원",
+        "대한피부항노화연구회 정회원",
+        "대한아토피피부염학회 정회원",
+        "대한건선학회 정회원",
+        "대한백반증학회 정회원"
+      ],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "김지영",
+      "title": "원장",
+      "specialty": "피부과 전문의",
+      "career": [
+        "前) 리더스피부과 원장",
+        "前) 차앤박피부과 원장",
+        "前) 오킴스피부과 원장"
+      ],
+      "education": [],
+      "certifications": [
+        "대한피부과학회 정회원",
+        "대한피부과의사회 정회원",
+        "대한임상피부치료연구회 정회원",
+        "대한여드름학회 정회원",
+        "대한백반증학회 정회원",
+        "대한피부레이저학회 정회원",
+        "대한피부항노화연구회 정회원",
+        "대한아토피피부염학회 정회원"
+      ],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "노성민",
+      "title": "원장님",
+      "specialty": "피부관리 전문가",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    }
+  ],
+  "academic_activities": [],
+  "medical_devices": [
+    {
+      "name": "Healite",
+      "korean_name": "힐라이트",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": "Low Level Light Therapy(LLLT) 는 낮은 레벨의 입사광선을 Photosequencing 테크놀로지를 이용해 조사하는 치료법으로서 Atraumatic and Athermal Photoactivation 을 사용합니다. 힐라이트의 LLLT 는 조사시 감염을 막기 위한 목적으로 노란색 그리고 적외선 근처의 빛을 순차적으로 조사하는 방식을 사용합니다.",
+      "source": "text"
+    },
+    {
+      "name": "PALLAS PREMIUM",
+      "korean_name": "팔라스 프리미엄",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "기존 팔라스 보다 3배 더 빠르고 강력해진 백반증/건선 치료기입니다. 세계 최초 고체형 레이저로 유독가스가 나오지 않아영·유아부터 노인까지 안전하고 효과적인 백반증/건선 치료 가능합니다. 미국 FDA, 국내 KFDA에서 승인받은 저자극 레이저로 노출 부위 적용에 보험 적용이 가능합니다.",
+      "source": "text"
+    },
+    {
+      "name": "UV LIGHT",
+      "korean_name": "UV 광선치료기",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": "피부의 염증을 줄여주는 자외선을 전신에 조사하여 백반증/건선/아토피/접촉성 피부염 등 다양한 피부질환을 치료 합니다. 높은 에너지 조사로 짧은 시간에 치료가 가능하여 효율적이고 편리한 자외선 치료 장비 입니다.",
+      "source": "text"
+    },
+    {
+      "name": "Vbeam",
+      "korean_name": "브이빔",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "혈관에 선택적으로 작용하는 595nm 파장을 통해 혈관과 붉은 자국에 대한 시술이 가능한 대표적인 레이저로 안면홍조, 여드름 자국, 멍제거 등에 탁월한 효과를 보여줍니다. 또한 화염상 모반, 혈관종 등 혈관성 질환에도 가장 효과적인 레이저 입니다.",
+      "source": "text"
+    },
+    {
+      "name": "SecretRF",
+      "korean_name": "시크릿RF",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_microneedle",
+      "description": "미세바늘을 통해 진피층에 고주파 에너지를 전달하여 피부 재생을 유도하는 장비입니다. 콜라겐과 엘라스틴 생성을 촉진, 주름 완화, 탄력 증가, 피부 톤 개선, 여드름 완화, 흉터개선에 효과적입니다.",
+      "source": "text"
+    },
+    {
+      "name": "PicoPlus",
+      "korean_name": "피코플러스",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "피코플러스 레이저는 1064nm 및 532nm 두 가지 파장을 이용해, 기미, 잡티, 문신 제거 등 다양한 피부 색소를 효과적으로 치료할 수 있습니다. 짧은 시간동안 높은 파워를 전달하여 문신제거에 큰 효과를 보입니다. MLA 피코프락셀 모드를 이용해 흉터, 모공, 피부결 개선에 이용되는 장비입니다.",
+      "source": "text"
+    },
+    {
+      "name": "Hollywood Spectra",
+      "korean_name": "헐리우드 스펙트라",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "큐 스위치 엔디야그 레이저로 기미, 주근깨 등의 색소치료는 물론 콜라겐 재생을 통한여드름 흉터, 모공 축소, 여드름자국 개선 효과를 유도합니다. 기미, 잡티, 흑자, 밀크커피모반, 이소성 몽고반점, 문신제거 등 다양한 색소 질환을 치료하는데 사용됩니다.",
+      "source": "text"
+    },
+    {
+      "name": "AquaPeel",
+      "korean_name": "아쿠아필",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": "모공속에 존재하는 잔여물과 피지, 노폐물 등을 자연적인 물을 소재로한 필링으로 제거하여 모공의 크기축소, 피지가 감소하여 피부결 개선, 여드름 완화 등에 효과적",
+      "source": "text"
+    },
+    {
+      "name": "Tensera",
+      "korean_name": "텐써마",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_tightening",
+      "description": "모노폴라 RF 고주파 장비로, 진피내 콜라겐의 증식을 유도하여 타이트닝, 모공개선, 주름개선에 큰 도움을 줍니다.",
+      "source": "text"
+    },
+    {
+      "name": "DUAL ACCENTO-N",
+      "korean_name": "듀얼악센토 N",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "755nm 알렉산드라이트와 1064nm 엔디야그 레이저를 이용하여 피부조직에 선택적으로 열에너지를 전달합니다. 맞춤파장을 이용하여 안전하게 원하는 색소 및 모낭만을 선택적으로 파괴하며 DCD 냉각시스템으로 피부를 보호하고 통증을 줄여줍니다. 완벽한 제모를 위해서는 반복적인 치료가 필요하며 신체 모든 부위의 털이 제모 가능합니다.",
+      "source": "text"
+    },
+    {
+      "name": "N-Pulse",
+      "korean_name": "엔펄스",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "고출력 에너지를 이용해 통증과 시술 시간을 줄인 co2 레이저로 모공/흉터/주름 개선 및 점/검버섯/사마귀 등 다양한 피부 질환 치료에 이용됩니다. 주변 피부 손상이 적고 다운타임 짧아 빠른 일상 복귀 가능 합니다.",
+      "source": "text"
+    },
+    {
+      "name": "Thermage FLX",
+      "korean_name": "써마지 FLX",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF",
+      "description": "미국 솔타메디컬사에서 개발한 리프팅 장비로 고주파 에너지를 전달하여 콜라겐 재생을 촉진하고 피부 탄력 개선, 주름 완화, 리프팅을 유도 합니다. 시술 후 일상생활에 지장이 없고, 특히 잔주름 완화와 탄력 개선에 효과적이며, 시간이 지날수록 콜라겐 재생으로 더욱 개선된 효과를 기대할 수 있습니다.",
+      "source": "text"
+    },
+    {
+      "name": "Ulthera",
+      "korean_name": "울쎄라",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": "안면거상 리프팅레이저로 초음파를 이용해 피부 깊숙한 근막층을 자극합니다.실시간 피부층 초음파영상을 통해 안전하면서도 효과적인 시술이 가능하고, 시술후 콜라겐이 생성됨에 따라 시간이 지날수록 차오르는 탄력과 리프팅 효과를 보여줍니다.",
+      "source": "text"
+    },
+    {
+      "name": "Shurink",
+      "korean_name": "슈링크",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": "슈링크는 뛰어난 기술력과 혁신적인 초음파 기술을 결합한 차세대 리프팅 시스템입니다. 이 놀라운 기계는 부드럽게 하지만 강력하게 늘어진 피부, 쳐진 피부 및 탄력이 부족한 피부에 도움을 주어 건강하고 젊은 외모를 찾을 수 있도록 도와줍니다.",
+      "source": "text"
+    },
+    {
+      "name": "InMode",
+      "korean_name": "인모드",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF",
+      "description": "고전압 전기자극으로 피부의 깊은 층까지 관리해주며, 불필요한 지방세포를 제거하고 콜라겐 및 엘라스틴을 촉진합니다.",
+      "source": "text"
+    },
+    {
+      "name": "V-Ro",
+      "korean_name": "브이로",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "image_page"
+    }
+  ],
+  "treatments": [
+    {
+      "name": "색조 및 홍조",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "탄력 및 리프팅 및 주름",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "쥬베룩 스킨부스터",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "skinbooster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "여드름 및 여드름흉터 및 모공",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "문신제거",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "탈모 및 제모",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "hairloss",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "흉터 및 멍",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "백반증 및 건선",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "점, 검버섯 및 사마귀",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "피부질환 및 종양수술",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "여성 맞춤형 치료",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "hairloss",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "PRP",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "skinbooster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "PDRN",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "skinbooster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "힐라이트",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "hairloss",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "레이저제모",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "마이핏 필러",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "filler",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "벨로테로 필러",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "filler",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "뉴라미스 필러",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "filler",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "필러 시술",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "filler",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "백반증 치료",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "건선 치료",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "팔라스 프리미엄",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "UV 광선치료",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "여드름 치료",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "흉터 치료",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "모공 치료",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "쿼드러플 (4중) 치료",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [
+        "DNA 조직 재생술",
+        "Cicu-F 프랙셔널 레이저",
+        "Dot Peeling",
+        "Subcision",
+        "Needle RF"
+      ],
+      "is_package": true,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "DNA 조직 재생술",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "skinbooster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "Cicu-F 프랙셔널 레이저",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "Dot Peeling",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "Subcision",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "Needle RF",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "rf_microneedle",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "경구약 및 도포제",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "압출 및 스케일링 각질 제거",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "혈관 레이저",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "크로스 (CROSS)",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "프랙셔널 레이저",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "씨크릿 RF",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "rf_microneedle",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "피코프락셀 레이저",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "아쿠아필",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "텐써마",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "탈모 치료",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "hairloss",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "메조테라피",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "hairloss",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "모낭주사",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "hairloss",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "저출력 광선치료",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "hairloss",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "사이토카인 치료",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "hairloss",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "PRP 자가혈소판치료",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "skinbooster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "듀얼악센토 N",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "색소 치료",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "홍조 치료",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "트리플토닝",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": true,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "PTP토닝",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "필링 및 비타민 미백 관리",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "피코플러스 레이저",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "헐리우드 스펙트라",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "브이빔 퍼펙타",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "엔펄스",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "점 제거",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "검버섯 제거",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "사마귀 치료",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "피부질환 치료",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "백선 및 무좀",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "아토피피부염",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "접촉피부염",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "대상포진",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "바이러스성 사마귀",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "지루성피부염",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "양성종양 수술",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "흉터 재생술",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "멍 치료",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "브이빔 레이저",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "쥬베룩",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "skinbooster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "PDRN 주사",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "skinbooster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "프렉타투",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "R0 테크닉",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "리프팅 시술",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "써마지 FLX",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "울쎄라",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "hifu",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "시크릿RF",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "rf_microneedle",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "제오민 보톡스",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "botox",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "안티에이징",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "슈링크",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "hifu",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "인모드",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "슈링크 유니버스",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "hifu",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "인모드 리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "스킨 부스터",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "skinbooster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "레디어스",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "collagen_stimulator",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "리쥬란",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "skinbooster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "리쥬란HB",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "skinbooster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "리투오",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other_injectable",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "매쿰",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "skinbooster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "물광주사",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "skinbooster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "FACE thermage",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "얼굴"
+    },
+    {
+      "name": "EYE thermage",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "눈가"
+    },
+    {
+      "name": "BODY thermage",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "복부, 팔뚝, 허벅지"
+    }
+  ],
+  "events": [
+    {
+      "title": "1~2월 이벤트 텐써마 이벤트",
+      "type": "시즌",
+      "period": "1~2월",
+      "discount_info": null,
+      "original_price": null,
+      "event_price": null,
+      "conditions": [],
+      "source": "popup"
+    }
+  ],
+  "clinic_categories": [
+    {
+      "name": "색소 & 홍조",
+      "treatments": [
+        "색조 치료",
+        "홍조 치료",
+        "트리플토닝",
+        "PTP토닝",
+        "필링 및 비타민 미백 관리",
+        "피코플러스 레이저",
+        "헐리우드 스펙트라",
+        "브이빔 퍼펙타",
+        "듀얼악센토 N",
+        "엔펄스"
+      ]
+    },
+    {
+      "name": "탄력 & 리프팅 & 주름",
+      "treatments": [
+        "리프팅 시술",
+        "써마지 FLX",
+        "울쎄라",
+        "텐써마",
+        "시크릿RF",
+        "제오민 보톡스",
+        "벨로테로 필러",
+        "FACE thermage",
+        "EYE thermage",
+        "BODY thermage",
+        "안티에이징",
+        "슈링크",
+        "인모드",
+        "슈링크 유니버스",
+        "인모드 리프팅"
+      ]
+    },
+    {
+      "name": "스킨부스터",
+      "treatments": [
+        "쥬베룩 스킨부스터",
+        "스킨 부스터",
+        "쥬베룩",
+        "리쥬란",
+        "매쿰",
+        "레디어스",
+        "리쥬란HB",
+        "리투오",
+        "물광주사"
+      ]
+    },
+    {
+      "name": "여드름 & 여드름흉터 & 모공",
+      "treatments": [
+        "여드름 치료",
+        "흉터 치료",
+        "모공 치료",
+        "쿼드러플 (4중) 치료",
+        "DNA 조직 재생술",
+        "Cicu-F 프랙셔널 레이저",
+        "Dot Peeling",
+        "Subcision",
+        "Needle RF",
+        "경구약 및 도포제",
+        "압출 및 스케일링 각질 제거",
+        "혈관 레이저",
+        "크로스 (CROSS)",
+        "프랙셔널 레이저",
+        "씨크릿 RF",
+        "피코프락셀 레이저",
+        "아쿠아필",
+        "텐써마"
+      ]
+    },
+    {
+      "name": "문신제거",
+      "treatments": [
+        "문신제거",
+        "피코플러스 레이저",
+        "헐리우드 스펙트라",
+        "프렉타투",
+        "R0 테크닉"
+      ]
+    },
+    {
+      "name": "탈모 & 제모",
+      "treatments": [
+        "여성 맞춤형 치료",
+        "PRP",
+        "PDRN",
+        "힐라이트",
+        "레이저제모",
+        "탈모 치료",
+        "메조테라피",
+        "모낭주사",
+        "저출력 광선치료",
+        "사이토카인 치료",
+        "PRP 자가혈소판치료",
+        "듀얼악센토 N"
+      ]
+    },
+    {
+      "name": "흉터 & 멍",
+      "treatments": [
+        "흉터 재생술",
+        "멍 치료",
+        "브이빔 레이저",
+        "쥬베룩",
+        "서브시전",
+        "PDRN 주사"
+      ]
+    },
+    {
+      "name": "백반증 & 건선",
+      "treatments": [
+        "백반증 치료",
+        "건선 치료",
+        "팔라스 프리미엄",
+        "UV 광선치료"
+      ]
+    },
+    {
+      "name": "점 & 검버섯 & 사마귀",
+      "treatments": [
+        "점 제거",
+        "검버섯 제거",
+        "사마귀 치료",
+        "엔펄스",
+        "피코플러스 레이저",
+        "헐리우드 스펙트라",
+        "듀얼악센토 N"
+      ]
+    },
+    {
+      "name": "피부질환 & 종양수술",
+      "treatments": [
+        "피부질환 치료",
+        "백선 및 무좀",
+        "건선",
+        "아토피피부염",
+        "접촉피부염",
+        "대상포진",
+        "바이러스성 사마귀",
+        "지루성피부염",
+        "양성종양 수술"
+      ]
+    }
+  ],
+  "contact_info": {
+    "email": [],
+    "phone": [
+      {
+        "number": "02 6953 7771",
+        "type": "대표"
+      },
+      {
+        "number": "02 2296 7007",
+        "type": "대표"
+      }
+    ],
+    "address": {
+      "full_address": "서울특별시 성동구 왕십리로 410, 상가L동 2층 (224~6호 / 하왕십리동, 센트라스)",
+      "sido": "서울특별시",
+      "sigungu": "성동구"
+    },
+    "kakao_channel": null,
+    "naver_booking": null,
+    "naver_place": null,
+    "instagram": null,
+    "facebook": null,
+    "youtube": "https://www.youtube.com/@dr.no_SkinTraveler/",
+    "blog": null,
+    "website_url": "http://pastelskin.com",
+    "operating_hours": {
+      "weekday": "10:00am - 07:00pm (야간 화, 금 10:00am - 08:00pm)",
+      "saturday": "09:30am - 03:00pm",
+      "sunday": "휴진",
+      "lunch_break": "01:00pm - 02:00pm"
+    }
+  },
+  "unregistered_equipment": [
+    {
+      "name": "PALLAS PREMIUM",
+      "korean_name": "팔라스 프리미엄",
+      "suggested_category": "LASER",
+      "source": "website",
+      "reason": "Described as a solid-state laser for vitiligo/psoriasis treatment."
+    },
+    {
+      "name": "UV LIGHT",
+      "korean_name": "UV 광선치료기",
+      "suggested_category": "OTHER_DEVICE",
+      "source": "website",
+      "reason": "Described as a light therapy device for various skin diseases."
+    },
+    {
+      "name": "V-Ro",
+      "korean_name": "브이로",
+      "suggested_category": "OTHER_DEVICE",
+      "source": "image_page",
+      "reason": "Appears as a device in the anti-aging section alongside other known devices."
+    }
+  ],
+  "unregistered_treatments": [
+    {
+      "name": "쿼드러플 (4중) 치료",
+      "source": "website",
+      "context": "고유의 쿼드러플 (4중) 치료를 제공합니다."
+    },
+    {
+      "name": "Dot Peeling",
+      "source": "website",
+      "context": "쿼드러플 (4중) 치료의 구성 요소"
+    },
+    {
+      "name": "크로스 (CROSS)",
+      "source": "website",
+      "context": "파스텔에서는 일반적인 CROSS에서 사용하는 바늘이 아닌 초미세바늘을 사용하기 때문에 1mm크기 이하의 모공 및 미세흉터도 치료가 가능"
+    },
+    {
+      "name": "Cicu-F 프랙셔널 레이저",
+      "source": "website",
+      "context": "쿼드러플 (4중) 치료의 구성 요소"
+    },
+    {
+      "name": "사이토카인 치료",
+      "source": "website",
+      "context": "파스텔피부과에서는 모낭 줄기세포(Stem cell)을 활성화 할 수 있는 SCF, IGF-1, KGF 등을 사이토카인 치료에 활용하고 있습니다"
+    },
+    {
+      "name": "프렉타투",
+      "source": "website",
+      "context": "프렉타투란 프락셔널빔을 먼저 사용후 풀빔 문신제거 시술 방식으로, 풀빔 단독 시술보다 문신제거의 효과를 높혀 줍니다."
+    },
+    {
+      "name": "R0 테크닉",
+      "source": "website",
+      "context": "R0 기법은 PFD(Perfluorodecalin) 약물을 이용하여 문신제거시 발생하는 가스버블을 빠르게 제거, 치료의 효율을 높히는 방식입니다."
+    },
+    {
+      "name": "트리플토닝",
+      "source": "website",
+      "context": "파스텔만의 트리플토닝과 PTP토닝을 조합하여 피부의 다양한 층에 있는 색소를 타게팅하고 진피층의 재생을 통해 피부 노화를 근본적으로 치료해드립니다."
+    },
+    {
+      "name": "PTP토닝",
+      "source": "website",
+      "context": "파스텔만의 트리플토닝과 PTP토닝을 조합하여 피부의 다양한 층에 있는 색소를 타게팅하고 진피층의 재생을 통해 피부 노화를 근본적으로 치료해드립니다."
+    },
+    {
+      "name": "필링 및 비타민 미백 관리",
+      "source": "website",
+      "context": "이온자임 기계를 활용한 비타민 침투 관리로 피부에 활력을 더하고 미백 효과를 극대화합니다."
+    },
+    {
+      "name": "FACE thermage",
+      "source": "website",
+      "context": "얼굴에 탄력이 떨어지기 시작해요."
+    },
+    {
+      "name": "EYE thermage",
+      "source": "website",
+      "context": "눈가에 주름이 생겼다면?"
+    },
+    {
+      "name": "BODY thermage",
+      "source": "website",
+      "context": "복부, 팔뚝, 허벅지 쪽의 처지고 늘어진 살이 싫어요."
+    },
+    {
+      "name": "물광주사",
+      "source": "website",
+      "context": "히알루론산을 미세바늘을 이용해 피부 진피층에 고르게 주입하는 시술입니다."
+    }
+  ],
+  "raw_price_texts": [],
+  "extraction_summary": {
+    "total_doctors": 3,
+    "total_academic": 0,
+    "total_equipment": 16,
+    "total_devices": 16,
+    "total_injectables": 0,
+    "total_treatments": 61,
+    "total_events": 1,
+    "total_categories": 10,
+    "total_contact_channels": 4,
+    "has_email": false,
+    "has_phone": true,
+    "has_kakao": true,
+    "has_sns": true,
+    "price_available_ratio": "0/61",
+    "unregistered_equipment_count": 3,
+    "unregistered_treatments_count": 14
+  }
+}
+
+──── [2] ocr_raw.json (이미지 OCR 원본) ────
+
+--- page_1_main_capture_0 ---
+파스텔휴먼피부과
+PASTEL HUMAN DERMATOLOGY CLINIC
+
+의료진소개 색소&홍조 탄력&리프팅&주름 스킨부스터 여드름&여드름흉터&모공 문신제거 탈모&제모 흉터&점 백반증&건선 점&검버섯 피부질환&중앙수술 상담예약 이벤트
+
+음소거 해제
+
+YONSEI PASTEL
+DERMATOLOGY CLINIC
+
+CCTV 녹화중
+피부과전문의 인증
+피부 건강
+지킴이
+(logo)
+
+Certificate of Training
+Certificate of Training
+
+TALK
+(phone icon)
+(calendar icon)
+TOP
+
+--- page_1_main_capture_1 ---
+파스텔휴먼피부과
+PASTEL HUMAN DERMATOLOGY CLINIC
+의료진소개 색소&홍조 탄력&리프팅&주름 스킨부스터 여드름&여드름흉터&모공 문신제거 탈모&제모 흉터&멍 백반증&건선 점&검버섯 사마귀 피부질환&중앙수술 상담예약 이벤트
+
+집중하는 치료를 지향합니다.
+
+대한민국 의사 중 2%인 피부과 전문의로만 구성된 파스텔휴먼
+피부과는 박리다매식 시술을 하지 않습니다.
+
+한 분 한 분 꼼꼼하게, 깊이가 다른 전문성과 진정성을 가지고
+진료합니다.
+
+색소 | 홍조
+탄력 | 리프팅 | 주름
+쥬베룩 | 스킨부스터
+여드름 | 여드름흉터 |
+모공
+문신제거
+
+탈모 | 제모
+흉터 | 멍
+백반증 | 건선
+점,검버섯 | 사마귀
+TALK
+피부질환 | 수술
+
+TOP
+
+--- page_1_main_capture_2 ---
+파스텔휴먼피부과
+PASTEL HUMAN DERMATOLOGY CLINIC
+의료진소개 색소&홍조 탄력&리프팅&주름 스킨부스터 여드름&여드름흉터&모공 문신제거 탈모&제모 흉터&점 백반증&건선 점&검버섯 피부질환&중앙수술 상담예약 이벤트
+
+CONTACT
+PASTEL HUMAN
+
+피부를 치료해 드리는 것은 마음을 치료해 드리는 것
+
+피부과 의사의 역할은 단지 환자의 외관만을 변화시키는 것이 아닌
+피부로 인해 움츠러들었던 마음까지 보듬어 드리는 것이라고 생각합니다.
+피부 때문에 스트레스를 받고 계신가요?
+함께 고민하며 최선의 방법을 찾아드리겠습니다.
+지금 바로 내원하시거나, 우측 카톡 버튼 클릭으로
+문의 주시면 친절하게 상담해 드리겠습니다!
+
+* 파스텔휴먼 피부과 채널을 스마트폰으로도 바로 접속 하실 수 있습니다.
+
+TALK
+
+TOP
+
+청계천두산위브
+더제니스아파트
+센트럴오피스텔
+서울중앙시장
+스테이 페스포트
+청계아델리아2
+오피스텔
+황학동
+주민센터
+스타벅스
+황학금아루
+아파트
+이마트24
+왕십리도선동
+주민센터
+성동장애인
+자립생활센터
+정호유소
+한국전력공사
+성동전력지사
+서울숭신
+초등학교
+마장동
+청계
+정
+마장
+
+--- page_1_main_capture_3 ---
+파스텔휴먼피부과
+PASTEL HUMAN DERMATOLOGY CLINIC
+
+의료진소개 색소&홍조 탄력&리프팅&주름 스킨부스터 여드름&여드름흉터&모공 문신제거 탈모&제모 흉터&점 백반증&건선 점&검버섯 피부질환&중앙수술 상담예약 이벤트
+
+신당동
+우리은행
+성동구청
+성동광진교육지원청
+성동광진교육지원청
+성동광진교육지원청
+성동광진교육지원청
+성동광진교육지원청
+성동광진교육지원청
+성동광진교육지원청
+성동광
+
+--- page_2_other_capture_0 ---
+파스텔휴먼피부과
+PASTEL HUMAN DERMATOLOGY CLINIC
+
+의료진소개 색소&홍조 탄력&리프팅&주름 스킨부스터 여드름&여드름흉터&모공 문신제거 탈모&제모 흉터&점 백반증&건선 점&검버섯 피부질환&중앙수술 상담예약 이벤트
+
+PASTEL
+About Us
+Lifting
+Fillers & Botox
+Anti-aging
+Skin Tone
+Acne & Scar
+Hair Loss
+Other Skin
+Youtube
+Price
+Contact
+
+PASTEL
+LOGY CLINIC
+
+TALK
+
+TOP
+
+SPECIAL
+PROGRA
+
+스킨부스터 & 필러
+모공 & 흉터
+
+--- page_2_other_capture_1 ---
+파스텔휴먼피부과
+PASTEL HUMAN DERMATOLOGY CLINIC
+
+의료진소개 색소&홍조 탄력&리프팅&주름 스킨부스터 여드름&여드름흉터&모공 문신제거 탈모&제모 백반증&건선 점&검버섯 피부질환&중앙수술 상담예약 이벤트
+
+여드름 | 흉터
+색소 | 홍조
+탄력 | 리프팅
+탈모
+
+YONSEI
+PASTEL
+DERMATOL
+OGY
+CLINIC
+TALK
+
+TOP
+
+--- page_2_other_capture_2 ---
+파스텔휴먼피부과
+PASTEL HUMAN DERMATOLOGY CLINIC
+의료진소개 색소&홍조 탄력&리프팅&주름 스킨부스터 여드름&여드름흉터&모공 문신제거 탈모&제모 흉터&점 백반증&건선 점&검버섯 피부질환&중앙수술 상담예약 이벤트
+
+내안민국 최상위 피부과 신뢰가 느껴집니다! 당신의 피부를
+완벽하게 탈바꿈 시켜 드립니다!
+
+PASTEL 피부과는 대한민국 최상위 2%의 피부과
+전문의들로 구성되어 있어, 피부의 모든 문제에 대한 최고의
+해결책을 제공합니다. 여기서는 개인별로 맞춤형으로
+최적의 리프팅 기법을 선택하여, 피부 타입과 부위에 따른
+최상의 결과를 도출해내고 있습니다.
+
+당신의 피부는 PASTEL 피부과의 전문적인 관리와 맞춤형
+치료로 이제까지 경험하지 못한 차원의 맑고 환한 빛을 발할
+것입니다! 우리의 탁월한 서비스로 여러분의 피부를
+건강하고 아름답게 만들어 드리며, 이로 인해 여러분의
+자신감이 더욱 성장할 것입니다.
+
+PASTEL 피부과에서는 당신의 피부를 위한 최고의
+전문가들이 기다리고 있습니다. 지금 바로 우리와 함께
+아름답고 건강한 피부를 만들어 가세요!
+
+TALK
+
+TOP
+
+--- page_2_other_capture_3 ---
+파스텔휴먼피부과
+PASTEL HUMAN DERMATOLOGY CLINIC
+의료진소개 색소&홍조 탄력&리프팅&주름 스킨부스터 여드름&여드름흉터&모공 문신제거 탈모&제모 흉터&건선 백반증&건선 점&검버섯 피부질환&중앙수술 상담예약 이벤트
+피부 연출!
+지친 피부에 에너지와 생기를
+불어넣어주는 최고의 리프팅 경험!
+트렌드
+진정한 탈모 전문가들의 정확한 진단과
+베스킨라빈스 왕십리센트라스
+서울특별시 성동구 왕십리로 410 상
+가 L
+
+--- page_2_other_capture_4 ---
+파스텔휴먼피부과
+PASTEL HUMAN DERMATOLOGY CLINIC
+
+의료진소개 색소&홍조 탄력&리프팅&주름 스킨부스터 여드름&여드름흉터&모공 문신제거 탈모&모모 흉터&점 백반증&건선 점&검버섯 피부질환&중앙수술 상담예약 이벤트
+
+피부과
+- 전문의
+저도 후회할 거예요
+피부과 전문의도 각성하게 만든
+피부케어 1 순위!
+
+YOUTUBE
+구독자 13.7만명
+@dr.no_SkinTraveler
+
+고객님들을 위한 파스텔피부과의 놀라운 선물
+파스텔피부과의 대표이자 유명한 연예인들의 피부관리
+전문가, Dr. No 노성민 원장님의 유튜브 채널에서 최신
+피부관리 정보와 뷰티 팁을 누구보다 빠르게
+전해드립니다!
+여러분를 위한 다양한 콘텐츠와 영상들로 가득 찬 Dr.
+No의 채널을 지금 확인하세요!
+당신의 피부를 위한 만남, 지금 당장 Dr. No의 유튜브
+채널을 구독하고, 파스텔피부과와 함께 건강한
+아름다움을 찾아가세요!
+
+MORE
+
+TOP
+
+YONSEI PASTEL
+CONTACT
+휴먼파스텔피부과 상담예약
+
+--- page_2_other_capture_5 ---
+파스텔휴먼피부과
+PASTEL HUMAN DERMATOLOGY CLINIC
+의료진소개 색소&홍조 탄력&리프팅&주름 스킨부스터 여드름&여드름흉터&모공 문신제거 탈모&모모 흉터&점 백반증&건선 점&검버섯 피부질환&중앙수술 상담예약 이벤트
+
+CLINIC
+
+파스텔 피부과, 당신의 아름다움을 극대화하는
+행복의 시작입니다.
+
+파스텔피부과는 마음과 피부 모두 빛나게 가꾸어 드리죠.
+당신만을 위한 맞춤형 피부 관리로 완벽한 아름다움을 선물해드리는 파스텔
+피부과
+상왕십리 최고의 피부 전문가들이 모인 파스텔 피부과와 함께하세요.
+상담을 원하신다면 문의를 남겨주세요.
+파스텔 피부과에서 정확하고 친절한 상담을 제공해 드립니다.
+궁금한 마음, 두려운 마음, 모두 맡겨주세요.
+왜냐하면 파스텔이기에, 파스텔이라서.
+감사합니다.
+
+카테고리 선택
+
+이름
+
+연락처
+
+상담하실 내용
+
+개인정보수집 동의 (오로지 상담으로만
+사용됩니다.)
+
+문의하기
+
+TALK
+
+파스텔휴먼피부과
+PASTEL HUMAN DERMATOLOGY CLINIC
+
+Company : 파스텔휴먼피부과의원 | Owner : 허재원 | Business Number : 146-10-02701
+Location : 서울특별시 성동구 왕십리로 410, 상가L동 2층 (224-6호 / 하왕십리동, 센트라스)
+Tel : 02-6953-7771
+
+TOP
+Copyright ⓒ 파스텔휴먼피부과. all rights reserved.
+
+--- page_19_other_capture_0 ---
+파스텔휴먼피부과
+PASTEL HUMAN DERMATOLOGY CLINIC
+
+의료진소개 색소&홍조 탄력&리프팅&주름 스킨부스터 여드름&여드름흉터&모공 문신제거 탈모&제모 흉터&점 백반증&건선 점&검버섯 피부질환&중앙수술 상담예약 이벤트
+
+register
+
+파스텔휴먼피부과
+PASTEL HUMAN DERMATOLOGY CLINIC
+
+Company : 파스텔휴먼피부과의원 | Owner : 하재원 | Business Number : 146-10-02701
+Location : 서울특별시 성동구 왕십리로 410, 상가L동 2층 (224-6호 / 하왕십리동, 센트라스)
+Tel : 02-6953-7771
+
+Copyright ⓒ 파스텔휴먼피부과. all rights reserved.
+
+TALK
+
+TOP
+
+--- page_20_other_capture_0 ---
+파스텔휴먼피부과
+PASTEL HUMAN DERMATOLOGY CLINIC
+의료진소개 색소&홍조 탄력&리프팅&주름 스킨부스터 여드름&여드름흉터&모공 문신제거 탈모&제모 백반증&건선 점&검버섯 피부질환&중앙수술 상담예약 이벤트
+
+news
+
+파스텔휴먼피부과
+PASTEL HUMAN DERMATOLOGY CLINIC
+
+Company : 파스텔휴먼피부과의원 | Owner : 하재원 | Business Number : 146-10-02701
+Location : 서울특별시 성동구 왕십리로 410, 상가L동 2층 (224-6호 / 하왕십리동, 센트라스)
+Tel : 02-6953-7771
+
+TALK
+
+Copyright ⓒ 파스텔휴먼피부과. all rights reserved.
+
+TOP
+
+--- page_21_other_capture_0 ---
+파스텔휴먼피부과
+PASTEL HUMAN DERMATOLOGY CLINIC
+의료진소개 색소&홍조 탄력&리프팅&주름 스킨부스터 여드름&여드름흉터&모공 문신제거 탈모&제모 흉터&점 백반증&건선 점&검버섯 피부질환&중앙수술 상담예약 이벤트
+
+현재 페이지 준비중입니다.
+TALK
+
+파스텔휴먼피부과
+PASTEL HUMAN DERMATOLOGY CLINIC
+Company : 파스텔휴먼피부과의원 | Owner : 하재원 | Business Number : 146-10-02701
+Location : 서울특별시 성동구 왕십리로 410, 상가L동 2층 (224-6호 / 하왕십리동, 센트라스)
+Tel : 02-6953-7771
+TOP
+
+--- page_21_other_capture_1 ---
+파스텔휴먼피부과
+PASTEL HUMAN DERMATOLOGY CLINIC
+의료진소개 색소&홍조 탄력&리프팅&주름 스킨부스터 여드름&여드름흉터&모공 문신제거 탈모&제모 흉터&점 백반증&건선 점&검버섯 피부질환&중앙수술 상담예약 이벤트
+
+현재 페이지 준비중입니다.
+TALK
+
+파스텔휴먼피부과
+PASTEL HUMAN DERMATOLOGY CLINIC
+Company : 파스텔휴먼피부과의원 | Owner : 하재원 | Business Number : 146-10-02701
+Location : 서울특별시 성동구 왕십리로 410, 상가L동 2층 (224-6호 / 하왕십리동, 센트라스)
+Tel : 02-6953-7771
+TOP
+
+──── [3] coverage_raw.txt (커버리지 검증 로그) ────
+{
+  "missing_equipments": [
+    "VBEAM PERFECTA",
+    "10THERMA"
+  ],
+  "missing_treatments": [
+    "스킨 토닝",
+    "여드름 및 흉터 제로 프로젝트",
+    "매끈한 피부 톤업! 색조 및 홍조 개선",
+    "탄력 강화 및 리프팅 프로그램",
+    "탈모 관리의 새로운 트렌드"
+  ],
+  "missing_doctors": [],
+  "missing_prices": [],
+  "coverage_score": {
+    "equipment": 71,
+    "treatment": 83,
+    "doctor": 100,
+    "overall": 85
+  },
+  "issues": [
+    "원본 마크다운에 'PASTEL HUMAN DERMATOLOGY CLINIC (파스텔휴먼 피부과)'와 'yonsei pastel dermatology clinic (연세파스텔피부과)' 두 가지 다른 병원 이름이 혼용되어 사용되었습니다. 이는 데이터 출처의 불일치 또는 명칭의 일관성 부족을 나타낼 수 있습니다.",
+    "장비 'VBEAM PERFECTA'는 추출 결과에 'Vbeam'으로 부분적으로만 추출되어 'Perfecta' 부분이 누락되었습니다.",
+    "장비 '10THERMA'는 추출 결과에 'Tensera'로 추출되어 공식 명칭과 철자 차이가 있습니다.",
+    "일부 시술 프로그램 ('여드름 및 흉터 제로 프로젝트', '매끈한 피부 톤업! 색조 및 홍조 개선', '탄력 강화 및 리프팅 프로그램', '탈모 관리의 새로운 트렌드')은 추출 결과에 핵심 시술명(예: '여드름 치료', '흉터 치료')만 포함되고 전체 프로그램 명칭은 누락되었습니다."
+  ]
+}

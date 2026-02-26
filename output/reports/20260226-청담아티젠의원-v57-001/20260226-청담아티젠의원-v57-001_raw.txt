@@ -1,0 +1,1735 @@
+═══════════════════════════════════════════════════
+  청담아티젠의원 — 추출 원본 데이터
+═══════════════════════════════════════════════════
+
+──── [1] analysis.json (Gemini 분류 결과) ────
+{
+  "hospital_name": "청담아티젠의원",
+  "doctors": [
+    {
+      "name": "윤승환",
+      "title": "대표 원장님",
+      "specialty": null,
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    }
+  ],
+  "academic_activities": [],
+  "medical_devices": [
+    {
+      "name": "Ulthera",
+      "korean_name": "울쎄라",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": "초음파 에너지로 강력한 리프팅 효과. 외과적인 절개 수술 없이 고강도 초음파를 이용한 주름 및 리프팅 레이저. 정품팁 사용, 정품 인증서 발급. 미국 FDA승인.",
+      "source": "text"
+    },
+    {
+      "name": "Thermage FLX",
+      "korean_name": "써마지 FLX",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF",
+      "description": "진정한 프리미엄 안티에이징. 전 세계 100개국에서 200만명 이상이 경험한 현존하는 가장 강력한 피부 타이트닝 레이저. 정품팁 사용, 정품 인증서 발급. 시간을 다스리는 강력한 피부 타이트닝. 통증까지 컨트롤하며 또 한 번 진화한 4세대 써마지 FLX. 피부 진피층의 콜라겐을 생성하여 주름을 개선해주고 피부를 매끄럽고 탄탄하게 잡아주는 현존하는 가장 강력한 피부 타이트닝 시술입니다.",
+      "source": "text"
+    },
+    {
+      "name": "Genius",
+      "korean_name": "지니어스",
+      "manufacturer": "LUTRONIC",
+      "device_type": "device",
+      "subcategory": "RF_MICRONEEDLE",
+      "description": "AI 기반의 고주파 리프팅. 미국 FDA, 유럽 CE에서 안전성 입증. 맞춤형 정밀시술로 피부 표면 손상 없이 얇고 힘없는 피부를 건강하고 탄력 있게! 엘라스틴 생성, 탄력 증가, 볼륨 향상, 모공 축소, 목주름 개선. 실시간 AI 스킨 테크놀로지 기술을 탑재한 지니어스 리프팅은 피부 탄력을 관장하는 콜라겐 세포가 자가 치유 과정에서 스스로 활성 되도록 도와줍니다. 피부 속 환경 및 저항값의 실시간 탐지가 가능한 분석된 정보에 맞춰 필요한 지점에 정확하게 최적의 고주파 에너지를 조사할 수 있습니다. 피부의 자가 치유 능력을 활용하는 시술이기 때문에 부작용 및 이물감이 거의 없이 자연스러운 리프팅 효과를 확인할 수 있습니다.",
+      "source": "text"
+    },
+    {
+      "name": "Volnewmer",
+      "korean_name": "볼뉴머",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF",
+      "description": "내일의 나를 기대해! 시간이 흐를수록 단단하게, 당당하게!",
+      "source": "screenshot"
+    },
+    {
+      "name": "Shurink Universe",
+      "korean_name": "슈링크 유니버스",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": "2세대 최신버전",
+      "source": "text"
+    }
+  ],
+  "treatments": [
+    {
+      "name": "울쎄라 Ulthera",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "hifu",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "4세대 써마지 FLX",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "지니어스 Genius Lifting",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "써마지 FLX",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "아이써마지",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "눈가"
+    },
+    {
+      "name": "지니어스 리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "울쎄라 리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "hifu",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "아이울쎄라",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "hifu",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "눈가"
+    },
+    {
+      "name": "퍼스널 써마지 FLX",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "ADD SHOT 리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "discount",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": true,
+      "source": "website",
+      "category": "other",
+      "price_display": "45% 할인",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "퍼스널 울쎄라 리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "hifu",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "볼륨어",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    }
+  ],
+  "events": [
+    {
+      "title": "새해 첫 프로모션",
+      "type": "시즌",
+      "period": null,
+      "discount_info": null,
+      "original_price": null,
+      "event_price": null,
+      "conditions": [],
+      "source": "popup"
+    },
+    {
+      "title": "ADD SHOT 리프팅",
+      "type": "할인",
+      "period": null,
+      "discount_info": "45% 할인",
+      "original_price": null,
+      "event_price": null,
+      "conditions": [
+        "리프팅 유지 기간 연장을 위해 시술 8개월 후 속부터 차오르는 슈링크 유니버스 (2세대 최신버전)"
+      ],
+      "source": "website"
+    }
+  ],
+  "clinic_categories": [
+    {
+      "name": "리프팅 클리닉",
+      "treatments": [
+        "울쎄라 Ulthera",
+        "4세대 써마지 FLX",
+        "지니어스 Genius Lifting",
+        "써마지 FLX",
+        "아이써마지",
+        "지니어스 리프팅",
+        "울쎄라 리프팅",
+        "아이울쎄라",
+        "퍼스널 써마지 FLX",
+        "ADD SHOT 리프팅",
+        "퍼스널 울쎄라 리프팅",
+        "볼륨어"
+      ]
+    },
+    {
+      "name": "색소·모공 클리닉",
+      "treatments": []
+    },
+    {
+      "name": "여드름·흉터 클리닉",
+      "treatments": []
+    },
+    {
+      "name": "안티에이징 부스터 클리닉",
+      "treatments": []
+    },
+    {
+      "name": "바디 클리닉",
+      "treatments": []
+    }
+  ],
+  "contact_info": {
+    "email": [],
+    "phone": [
+      {
+        "number": "02-6224-8000",
+        "type": "대표"
+      },
+      {
+        "number": "02-522-3839",
+        "type": "팩스"
+      }
+    ],
+    "address": {
+      "full_address": "서울 강남구 선릉로 818, (청담동 85-4) 디자이너클럽 빌딩 3층",
+      "sido": "서울",
+      "sigungu": "강남구"
+    },
+    "kakao_channel": "https://pf.kakao.com/_hNizV/chat",
+    "naver_booking": null,
+    "naver_place": null,
+    "instagram": "https://www.instagram.com/artisanclinic_",
+    "facebook": null,
+    "youtube": "https://www.youtube.com/channel/UCZZw3Ncmew0yTY7-CiVh8zA",
+    "blog": null,
+    "website_url": "http://www.artisanclinic.co.kr",
+    "operating_hours": {
+      "weekday": "월 수 금: 10:00~19:00, 화 목: 10:00~20:30 (야간진료)",
+      "saturday": "9:30~15:00",
+      "sunday": null,
+      "lunch_break": "13:00~14:00 (토요일은 점심시간 없이 진료)"
+    }
+  },
+  "unregistered_equipment": [],
+  "unregistered_treatments": [],
+  "raw_price_texts": [],
+  "extraction_summary": {
+    "total_doctors": 1,
+    "total_academic": 0,
+    "total_equipment": 5,
+    "total_devices": 5,
+    "total_injectables": 0,
+    "total_treatments": 12,
+    "total_events": 2,
+    "total_categories": 5,
+    "total_contact_channels": 6,
+    "has_email": false,
+    "has_phone": true,
+    "has_kakao": true,
+    "has_sns": true,
+    "price_available_ratio": "0/12",
+    "unregistered_equipment_count": 0,
+    "unregistered_treatments_count": 0
+  }
+}
+
+──── [2] ocr_raw.json (이미지 OCR 원본) ────
+
+--- page_0_main_capture_0 ---
+Artisan Clinic
+at CHEONGDAM
+청담아티젠 닥터윤 울써마지 리프팅 색소·모공 여드름·흉터 안티에이징 부스터 바디 회원가입 로그인 🇺🇸 🇯🇵 ☰
+
+Wannabe Young
+Artisan Clinic
+at Cheongdam
+아름다워지는 시간 청담아티젠
+
+카톡상담
+전화상담
+방문예약
+오시는길
+유튜브
+인스타
+왓츠앱
+
+Artisan
+Signature
+청담아티젠에서만 가능한
+
+현존하는 가장 강력한
+피부 타이트닝
+닥터윤
+써마지
+FLX
+#리프팅 #주름개선 #
+
+--- page_0_main_capture_1 ---
+Artisan Clinic
+AT CHEONGDAM
+청담아티젠 닥터윤울쎄라 리프팅 색소·모공 여드름·흉터 안티에이징·부스터 바디 회원가입 로그인 🇺🇸 🇯🇵 ☰
+
+Artisan
+Signature
+청담아티젠에서만 가능한
+시그니처 프로그램입니다.
+
+에서
+안전성이 입증된
+닥터윤
+지니어스
+#리프팅, 탄력 한번에
+#콜라겐&엘라스틴
+재생
+View More +
+
+리프팅 책임 보증제
+볼 꺼짐, 볼 패임, 얼굴 처짐... 리프팅 부작용이 고민이라면 안심하세요.
+시술 후, 부작용에 대한 리프팅 1년 책임 보증제를 운영합니다.
+실력에 대한 자신감!
+리프팅 시술 후 발생할 수 있는 부작용에 대한
+리프팅 1년 책임 보증제를 시행하는 이유입니다.
+ARTISAN CLINIC
+AT CHEONGDAM
+Yun Seunghwan
+리프팅
+1년
+책임보증제
+view more +
+
+울쎄라 Ulthera | 초음파 에너지로 강력한 리프팅 효과
+외과적인 절개 수술 없이 고강도 초음파를 이용한 주름 및 리프팅
+레이저
+#정품팁 사용 #정품 인증서 발급
+
+4세대 써마지 FLX | 진정한 프리미엄 안티에이징
+전 세계 100개국에서 200만명 이상이 경험한 현존하는 가장 강력한
+피부 타이트닝 레이저
+#정품팁 사용 #정품 인증서 발급
+
+지니어스 Genius Lifting | AI 기반의 고주파 리프팅
+★미국 FDA, 유럽 CE에서 안전성 입증 ★ 맞춤형 정밀시술로 피부
+표면 손상 없이 얇고 힘없는 피부를 건강하고 탄력 있게!
+#엘라스틴생성 #탄력증가 #볼륨향상 #모공축소 #목주름개선
+
+빠른메뉴
+
+--- page_1_other_capture_0 ---
+Not Found
+The requested URL /<Base64-Image-Removed> was not found on this server.
+
+--- page_2_other_capture_0 ---
+Artisan Clinic
+at CHEONGDAM
+청담아티젠 닥터올써마지 리프팅 색소·모공 여드름·흉터 안티에이징 부스터 바디 회원가입 로그인
+thermage®
+FLX
+시간을 다스리는 강력한 피부 타이트닝
+써마지 FLX
+Thermage FLX
+써마지 FLX
+전속모델 김성령
+통증까지 컨트롤하며 또 한 번 진화한
+4세대
+써마지 FLX
+피부 진피층의 콜라겐을 생성하여 주름을 개선해주고 피부를 매끄럽고
+탄탄하게 잡아주는 현존하는 가장 강력한 피부 타이트닝 시술입니다.
+카톡상담
+전화상담
+방문예약
+오시는길
+유튜브
+인스타
+왓츠앱
+
+--- page_2_other_capture_1 ---
+Artisan Clinic
+AT CHEONGDAM
+청담아티젠 닥터윤울써마지 리프팅 색소·모공 여드름·흉터 안티에이징 부스터 바디 회원가입 로그인
+
+타이트닝, 리프팅 효과, 잔주름 개선 등 다양한 효과를 경험하실 수 있습니다.
+
+Faster
+더 커진 토탈팁으로 기존보다
+25% 더 빨라진 시술 속도로
+더 빠르고, 효과 부위는 더 넓게!
+
+aLgorithm
+최적화된 에너지를 전달하는
+자동 조절 알고리즘 기술을 적용해
+시술의 효과를 최대로!
+
+eXperience
+Pulse RF. Cooling burst 등
+다양한 통증 완화 기술로
+통증 없이 편안하게!
+
+Thermage FLX
+
+2022 경험할수록, 써마지FLX [20s]
+thermage
+FLX
+
+빠른메뉴
+
+--- page_2_other_capture_2 ---
+Artisan Clinic
+AT CHEONGDAM
+청담아티젠 닥터윤 울쎄라써마지 리프팅 색소·모공 여드름·흉터 안티에이징 부스터 바디 회원가입 로그인
+수술 시술 리프팅
+(당일 세안 가능)
+써마지 FLX 추천 대상
+수술 없이
+자연스러운 리프팅과
+주름 개선을
+원하시는 분
+피부 탄력이 떨어져
+고민이신 분
+볼과 턱선이 처져
+팔자주름과
+이중턱으로
+고민이신 분
+눈꺼풀이 얇고
+눈가 잔주름이 많아
+고민이신 분
+잔주름과 모공,
+피부 결 개선을
+원하시는 분
+
+써마지 FLX
+현존하는 가장 강력한 피부 타이트닝 리프팅
+
+주름개선
+잔주름은 물론 처진 피부, 눈가,
+눈꺼풀 등 주름 개선
+타이트닝
+시술 2-3개월 후 콜라겐이 생성 및
+주름 개선 6개월 후 최대 효과
+최대 2년까지 유지
+피부 리모델링
+콜라겐 재생과 생성을 통해
+전반적인 피부 결 개선
+빠른메뉴
+
+--- page_2_other_capture_3 ---
+Artisan Clinic
+at CHEONGDAM
+청담아티젠 닥터울쎄마지 리프팅 색소·모공 여드름·흉터 안티에이징 부스터 바디 회원가입 로그인
+써마지 FLX 시술 원리
+표피를 냉각시키고 진피 조직에 열을 발생시키는 써마지 원리를 사용하여 고주파 에너지를 전달함으로써
+콜라겐 섬유의 변성 및 수축을 일으켜 콜라겐 재생 및 주름 개선 효과를 나타냅니다.
+늘어진 콜라겐
+써마지 고주파
+콜라겐 재생 촉진
+써마지 FLX 지속시간
+1년 주기로 재시술 시, 효과가 더욱 오래 지속됩니다.
+시술 직후
+진피까지 열이 전달
+진피층 콜라겐 변성이
+즉시 나타남
+1~2개월 후
+콜라겐이
+점차 생성되며
+주름개선
+6개월 후
+써마지 FLX
+최대 효과를
+경험
+10개월 후
+리프팅
+효과 유지
+2년 후
+콜라겐이
+서서히 감소
+빠른메뉴
+
+--- page_2_other_capture_4 ---
+Artisan Clinic
+AT CHEONGDAM
+청담아티젠
+닥터윤울쎄마지
+리프팅
+색소·모공
+여드름·흉터
+안티에이징 부스터
+바디
+회원가입
+로그인
+써마지 FLX
+시술부위
+고주파 에너지를 이용해 주름의
+원인으로 꼽히는
+처진 콜라겐을 재생시켜
+피부 탄력을 개선해 줍니다.
+thermage
+얼굴 전체
+이마, 미간 주름
+눈가, 눈 밑 주름
+팔자주름, 처진 얼굴
+목주름, 목 처짐
+
+눈가 주름 집중 솔루션 아이써마지
+눈가 주름 탄력을 개선하는 아이써마지는
+예민한 눈가 전용 아이팁을 사용하여 동안의 핵심, 눈가 주름을 책임집니다.
+
+thermage®
+FLX
+처진 눈꺼풀 타이트닝
+눈가 주름 & 탄력 개선
+눈 밑 다크서클 개선
+
+빠른메뉴
+눈가 전용 아이팁
+눈가 주름 완화와 눈가 및 눈꺼풀 콜라겐 재생에 최적화된 팁으로,
+
+--- page_2_other_capture_5 ---
+A Artisan Clinic
+at CHEONGDAM
+청담아티젠 닥터윤 울써마지 리프팅 색소·모공 여드름·흉터 안티에이징 부스터 바디 회원가입 로그인
+DOCTOR
+[Q&A] 써마지 난 언제부터?! 노화 방지는 몸...
+출처 대한민국 의 명의를
+소지한 의사
+써마지로
+노화방지를!
+# 유지와 예방은 달라!
+thermage
+FLX
+써마지 FLX, 언제하는게 좋을까요?
+닥터 Yoon이 알려주는 써마지
+FLX 시술 시기!
+ARTISAN CLINIC AT CHONGDAM
+리프팅
+1년
+책임보증제
+ARTISAN CLINIC AT CHEONGDAM
+A 빠른메뉴
+
+--- page_2_other_capture_6 ---
+Artisan Clinic
+AT CHEONGDAM
+청담아티젠 닥터울쎄마지 리프팅 색소·모공 여드름·흉터 안티에이징 부스터 바디 회원가입 로그인
+
+윤성환
+
+리프팅 책임 보증제
+
+볼 꺼짐, 볼 패임, 얼굴 처짐... 리프팅 부작용이 고민이라면 안심하세요.
+시술 후, 부작용에 대한 리프팅 1년 책임 보증제를 운영합니다
+실력에 대한 자신감!
+리프팅 시술 후 발생할 수 있는 부작용에 대한
+리프팅 1년 책임 보증제를 시행하는 이유입니다.
+
+ARTISAN CLINIC
+AT CHEONGDAM
+Yun Seonghwan
+리프팅
+1년
+책임보증제
+
+ARTISAN CLINIC AT CHONGDAM
+
+써마지 FLX 정품 맞을까? 정샷일까?
+안심하세요!
+청담아티젠에서는 시술 전, 후
+직접 확인시켜드립니다.
+
+빠른메뉴
+퍼스널 써마지 FLX
+ADD SHOT 리프팅
+
+--- page_2_other_capture_7 ---
+Artisan Clinic
+AT CHEONGDAM
+청담아티젠 닥터울쎄라지 리프팅 색소·모공 여드름·흉터 안티에이징 부스터 바디 회원가입 로그인
+
+정품팁 확인
+시술 전, 정품팁을
+눈 앞에서 개봉
+
+정품 인증서 발급
+윤승환 대표 원장님이
+직접 시술하고
+친필 서명한 정품 인증서 발급
+thermage
+FLX
+정품 인증하기
+메시지
+시술 및 상자에 부착된 정품인증번호 6자리를 입력하시면 정품 확인이 가능합니다.
+
+온라인으로 실시간 확인 가능한
+정품 인증 방법
+오직 한 분에게만 제공되는 그 효과와 안정성을 위한 정품팁 확인 방법
+
+STEP 01
+정품팁 박스 상/하단에서
+파란색 이중 보호 라벨의
+유무 확인
+
+STEP 02
+이중보호 라벨을 제거한 후
+노란색 정품 인증 스티커
+유무 확인
+
+STEP 03
+상자에 붙어있는
+정품 인증번호 스티커를
+확인 후 시술
+
+STEP 04
+시술 후
+정품 인증서를 통해
+번호 확인
+
+STEP 05
+공식 홈페이지에
+인증번호를 입력 후
+정품 인증하기 버튼 클릭
+빠른메뉴
+
+--- page_2_other_capture_8 ---
+Artisan Clinic
+at CHEONGDAM
+청담아티젠 닥터윤써마지 리프팅 색소·모공 여드름·흉터 안티에이징 부스터 바디 회원가입 로그인
+
+시술 후 주의사항
+
+시술 후 일주일 정도는 사우나, 목욕탕, 반신욕, 얼굴(경락) 마사지, 과격한 운동을 삼가 주세요.
+시술 후 멍과 붓기가 발생할 수 있으나 일시적인 현상으로 시간이 지나면 자연스럽게 사라집니다.
+피부 보호를 위해 자외선 차단제를 꼼꼼히 발라주세요.
+
+ARTISAN CLINIC AT CHEONGDAM
+
+청담아티젠 써마지 FLX와
+함께하면 좋은 시술
+리프팅 효과를 최대한 길게 유지하기 위한 시술을 추천합니다.
+
+내일의 나를 기대해!
+시간이 흐를수록
+단단하게, 당당하게!
+볼륨어
+
+시간을
+아름다
+동안
+(스킨부
+
+빠른메뉴
+
+--- page_2_other_capture_9 ---
+A Artisan Clinic
+at CHEONGDAM
+청담아티젠 닥터울쎄마지 리프팅 색소·모공 여드름·흉터 안티에이징 부스터 바디 회원가입 로그인
+청담아티젠만의
+Personal
+Anti-Aging
+Process
+03
+부위와 증상에 따라 꼭 필요한 시술로
+퍼스널 솔루션 제안 및 결정
+04
+숙련된 노하우로 윤승한 대표원장님이
+빠르고 정확하게 정교한 시술 진행
+Wannabe Young
+청담아티젠 Promise 6
+빠른메뉴
+
+--- page_2_other_capture_10 ---
+Artisan Clinic
+AT CHEONGDAM
+청담아티젠
+닥터윤올써마지
+리프팅
+색소·모공
+여드름·흉터
+안티에이징 부스터
+바디
+회원가입
+로그인
+Price
+만족도 높은 프리미엄 시술들을
+보다 합리적인 가격으로 제공
+Personal
+윤승환 대표 원장님이 직접
+1:1 맞춤 상담부터 시술까지
+Premium
+★정품, 정량, 정샷★
+프리미엄 레이저
+정품 인증서 발급
+Premium
+Membership
+반짝하고 사라지는 변화가 아닌,
+오래 지속되는 자연스러운 아름다움과
+특별한 혜택을 멤버쉽
+
+--- page_2_other_capture_11 ---
+청담아티젠 닥터윤올바디 리프팅 색소·모공 여드름·흉터 안티에이징·부스터 바디 회원가입 로그인
+A
+Artisan Clinic
+at CHEONGDAM
+
+반복하고 사라지는 변화가 아닌,
+오래 지속되는 자연스러운 아름다움과
+특별한 혜택을 멤버십 회원님께 선사합니다.
+
+1. 시술 전, 눈앞 정품확인 개봉
+2. 시술 중, 정시술량 등 제공
+3. 시술 후, 정품 시술 인증서 발급
+
+청담아티젠
+
+진료시간
+월 수 금 : 10:00~19:00
+화 목 : 10:00~20:30 (야간진료)
+토 요 일 : 9:30~15:00
+점심시간: 13:00~14:00 (토요일은 점심시간 없이 진료)
+대표번호 02-6224-8000
+카카오톡 @청담아티젠
+오시는길
+서울 강남구 선릉로 818, (청담동 85-4)
+수인분당선 압구정로데오역 4번 출구 직진 150m 좌측
+
+A
+Artisan Clinic
+at CHEONGDAM
+청담아티젠의원
+이용약관 | 개인정보취급방침 | 이메일무단수집거부 | 비급여진료비 / 제증명수수료
+상호: 청담아티젠의원 | 대표: 윤승환 | 사업자등록번호: 114-15-88672 |
+주소: 서울 강남구 선릉로 818, (청담동 85-4) 디자이너클럽 빌딩 3층 | 대표번호: 02-6224-8000 | 팩스: 02-522-3839
+COPYRIGHT ⓒ 2022 Artisan Clinic at Cheongdam. ALL RIGHT RESERVED.
+design by SAYYES
+blog
+빠른메뉴
+대한민국
+
+--- page_3_other_capture_0 ---
+Artisan Clinic
+AT CHEONGDAM
+청담아티젠 닥터윤올써마지 리프팅 색소·모공 여드름·흉터 안티에이징 부스터 바디 회원가입 로그인
+LUTRONIC
+Depth 1.6
+Power Level 5
+Pulse Count 230
+0 0
+PRESS TO START
+FDA CE
+지니어스 레이저는
+미국 FDA, 유럽 CE에서
+안전성이 입증된 레이저입니다.
+스스로 차오르는 콜라겐 볼륨
+지니어스 리프팅
+GENIUS LIFTING
+처지고 늘어진 피부의
+겉과 속을 동시에 케어하는
+지니어스 리프팅
+실시간 AI 스킨 테크놀로지 기술을 탑재한 지니어스 리프팅은
+피부 탄력을 관장하는 콜라겐 세포가 자가 치유 과정에서 스스로 활성 되도록
+도와줍니다. 피부 속 환경 및 저항값의 실시간 탐지가 가능한 분석된 정보에 맞춰
+필요한 지점에 정확하게 최적의 고주파 에너지를 조사할 수 있습니다.
+피부의 자가 치유 능력을 활용하는 시술이기 때문에 부작용 및
+카톡상담
+전화상담
+방문예약
+오시는길
+유튜브
+인스타
+왓츠앱
+
+--- page_3_other_capture_1 ---
+Artisan Clinic
+AT CHEONGDAM
+청담아티젠 닥터윤올써마지 리프팅 색소·모공 여드름·흉터 안티에이징 부스터 바디 회원가입 로그인
+
+시술시간
+15분 이내
+
+시술효과
+시술 후 3개월
+최대 효과 경험
+
+마취
+크림마취
+
+일상생활
+시술직후
+일상생활 가능
+
+효과 및 유지기간
+1회 시술로도 효과 약
+1년~1년 반
+
+LUTRONIC
+
+GENIUS
+LIFTING
+
+매년 1% 이상 감소하는
+피부 속 콜라겐과 엘라스틴.
+노화되고 처진 피부를
+회복시키려면...
+콜라겐과 함께 엘라스틴 재생이 필수!
+그것을 가능하게 하는 것이 바로
+지니어스 리프팅입니다.
+
+30대 40대 50대 60대
+
+30대 후반이 되면 콜라겐과 엘라스틴이 50% 감소.
+50대 중반 이후 콜라겐과 엘라스틴 함유 20% 이하로 감소,
+피부 두께 감소, 피부 처짐 심화
+
+피부 노화의 근본적인 원인을 해결하는
+빠른메뉴
+
+--- page_3_other_capture_2 ---
+Artisan Clinic
+at CHEONGDAM
+청담아티젠 닥터윤 울쎄라써마지 리프팅 색소·모공 여드름·흉터 안티에이징 부스터 바디 회원가입 로그인
+
+LUTRONIC
+PRESS TO START
+
+엘라스틴
+생성
+
+피부
+볼륨 향상
+
+피부
+탄력 증가
+
+모공
+축소
+
+목주름
+개선
+
+지니어스 리프팅 추천 대상
+
+피부 처짐이 심하고 탄력이 떨어져 고민이신 분
+얼굴 탄력 외에도 이중턱, 목주름까지 신경 쓰여 고민이신 분
+얇고 힘이 없는 피부 때문에 고민이신 분
+늘어나고 넓어진 모공이 고민이신 분
+볼 꺼짐, 얼굴 처짐 등의 시술 부작용이 우려되는 분
+
+빠른메뉴
+
+--- page_3_other_capture_3 ---
+A Artisan Clinic
+at CHEONGDAM
+청담아티젠 닥터윤올써마지 리프팅 색소·모공 여드름·흉터 안티에이징 부스터 바디 회원가입 로그인
+
+더 안전하고 더 정확하게!
+
+노화로 인해 무너진
+콜라겐 조직 확인
+
+부드러운 마이크로 니들이
+에너지를 정확하게 전달해
+콜라겐을 자극
+
+콜라겐 조직 및 엘라스틴 생성으로
+피부 속 볼륨이 차오르며
+극대화되는 안티에이징 효과
+
+지니어스 리프팅 시술 부위
+피부 표면에 직접적 손상없이 AI 에너지 컨트롤 기술을 통해
+처지고 늘어지면서 노화되는 피부의 빈틈을 채워줍니다.
+
+목 주름
+눈가 주름
+얼굴 처짐
+튼 살
+
+기미
+흉터
+다한증
+
+A 빠른메뉴
+
+--- page_3_other_capture_4 ---
+Artisan Clinic
+at CHEONGDAM
+청담아티젠 닥터울쎄마지 리프팅 색소·모공 여드름·흉터 안티에이징 부스터 바디 회원가입 로그인 🇺🇸 🇰🇷 ≡
+
+지니어스 리프팅 Before & After
+
+Before After (1회 시술)
+
+ARTISAN CLINIC AT CHONGDAM
+
+리프팅
+1년
+책임보증제
+ARTISAN CLINIC AT CHEONGDAM
+실력에 대한 자신감!
+청담아티젠 리프팅 책임 보증제
+빠른메뉴
+
+--- page_3_other_capture_5 ---
+Artisan Clinic
+at CHEONGDAM
+청담아티젠 닥터윤올써마지 리프팅 색소·모공 여드름·흉터 안티에이징 부스터 바디 회원가입 로그인
+
+실력에 대한 자신감!
+리프팅 시술 후 발생할 수 있는 부작용에 대한
+리프팅 1년 책임 보증제를 시행하는 이유입니다.
+
+ARTISAN CLINIC
+AT CHEONGDAM
+Yoon Seungwhan
+리프팅
+1년
+책임보증제
+
+ARTISAN CLINIC AT CHONGDAM
+
+지니어스 리프팅
+왜! 청담아티젠이어야 할까요?
+
+시술하는 의료진의 전문성과 경험에 따라 달라지는 리프팅 만족도,
+고객 한 분 한 분의 피부 타입에 맞춰 효과가 제일 좋을 퍼스널 솔루션으로
+차원이 다른 결과를 선사합니다.
+
+DOCTOR
+YOON
+
+지니어스 리프팅
+도대체 얼마나
+아팠길래?!
+괜찮아요?
+많이 놀랐죠?
+이걸 어떻게
+참았나 싶어...!
+
+빠른메뉴
+
+--- page_3_other_capture_6 ---
+Artisan Clinic
+at CHEONGDAM
+청담아티젠 닥터윤올써마지 리프팅 색소·모공 여드름·흉터 안티에이징 부스터 바디 회원가입 로그인
+
+닥터 YOON 영상 더보기
+
+지니어스 리프팅
+시술 후 주의사항
+
+시술 후 당일부터 가벼운 세안과 샤워, 메이크업등 일상생활이 바로 가능합니다.
+시술 후 일주일 정도는 음주, 흡연을 자제해 주세요.
+시술 후 얼굴에 딱지가 생기면 자연스럽게 떨어질때까지 기다려 주세요.
+시술 후 2~3주까지는 각질제거, 스크럽제 사용을 자제해 주세요.
+시술 후 1개월까지는 얼굴 마사지, 경락을 자제해 주세요.
+피부 보호를 위해 자외선 차단제를 꼼꼼히 발라주세요.
+
+최첨단 AI
+나보다 나를 더 잘 아는
+지니어스 0.1초마다
+내 피부를 이해하는 AI 솔루션
+
+꺼진 피부, 볼륨을 채우다
+진피재생을 통해
+뿌리부터 도톰하게
+볼륨 채움 솔루션
+
+지니어스
+리프팅만의
+놀라운 기술력
+마이크로 니들로 피부 속 깊숙이
+에너지를 전달해 심한 주름부터
+피부관리까지 다양한
+피부 고민에 최적화된 맞춤형
+레이저 리프팅입니다.
+빠른메뉴
+
+--- page_3_other_capture_7 ---
+Artisan Clinic
+at CHEONGDAM
+청담아티젠 닥터윤올써마지 리프팅 색소·모공 여드름·흉터 안티에이징 부스터 바디 회원가입 로그인
+
+콜라겐+엘라스틴 재생을 동시에!
+차원이 다른 기술력으로 콜라겐에
+엘라스틴까지 묶어주는
+진정한 안티에이징 솔루션
+
+얇고 힘없는 피부를 탄력있게
+얇아진 피부에
+지니어스의 힘을 더하는
+파워 리프팅 솔루션
+
+처진 피부를 올려주는
+세월이 담긴 목주름에
+탄력을 입히는
+처짐 방지 솔루션
+
+ARTISAN CLINIC AT CHEONGDAM
+
+청담아티젠 지니어스 리프팅과
+함께하면 좋은 시술
+리프팅 효과를 최대한 길게 유지하기 위한 시술을 추천합니다.
+
+통증 없이 주름과 탄력
+모두 잡는 리프팅이 온다!
+
+시간을 거
+아름다운 피부미
+동안주사
+빠른메뉴
+
+--- page_3_other_capture_8 ---
+Artisan Clinic
+at CHEONGDAM
+청담아티젠 닥터윤울써마지 리프팅 색소·모공 여드름·흉터 안티에이징 부스터 바디 회원가입 로그인
+
+청담아티젠만의
+Personal
+Anti-Aging
+Process
+
+03
+부위와 증상에 따라 꼭 필요한 시술로
+퍼스널 솔루션 제안 및 결정
+
+04
+숙련된 노하우로 윤승한 대표원장님이
+빠르고 정확하게 정교한 시술 진행
+
+Wannabe Young
+청담아티젠 Promise 6
+빠른메뉴
+
+--- page_3_other_capture_9 ---
+Artisan Clinic
+AT CHEONGDAM
+청담아티젠
+닥터윤올써마지
+리프팅
+색소·모공
+여드름·흉터
+안티에이징 부스터
+바디
+회원가입
+로그인
+🇺🇸 🇰🇷 ≡
+
+Price
+만족도 높은 프리미엄 시술들을
+보다 합리적인 가격으로 제공
+
+Personal
+윤승한 대표 원장님이 직접
+1:1 맞춤 상담부터 시술까지
+
+Premium
+★정품, 정량, 정샷★
+프리미엄 레이저
+정품 인증서 발급
+
+Premium
+Membership
+반짝하고 사라지는 변화가 아닌,
+오래 지속되는 자연스러운 아름다움과
+특별한 혜택을 멤버쉽 회원님께 선사합니다.
+
+울쎄라, 써마지 FLX
+정품 인증서 발급
+1. 시술 전, 눈앞 정품팁 개봉
+2. 시술 중, 즉시사용 팁 제공
+3. 시술 후, 정품 시술 인증서 발급
+
+SC제일은행
+금광아크존
+아파트
+4233
+마음센터
+사토시
+제주옥탑
+로데오현대
+아파트
+압구정
+로데오거리
+압구정하루
+압구정
+로데오거리
+럭시빌라트
+묵전
+런던베이글
+뮤지엄
+골드피쉬
+스미카츠
+스타벅스
+코리아나
+엔터테인먼트
+서율삼성
+인과 의원
+에테르노한아파트
+(2028년01월예정)
+청담
+비아이의원
+진료시간
+월 수 금: 10:00~19:00
+빠른메뉴
++
+
+--- page_3_other_capture_10 ---
+Artisan Clinic
+at CHEONGDAM
+청담아티젠 닥터윤올마지 리프팅 색소·모공 여드름·흉터 안티에이징·부스터 바디 회원가입 로그인 [US flag icon] [Hamburger menu icon]
+
+반복하고 사라지는 변화가 아닌,
+오래 지속되는 자연스러운 아름다움과
+특별한 혜택을 멤버십 회원님께 선사합니다.
+
+1. 시술 전, 눈썹 정리와 개별
+2. 시술 중, 즉시사용 팩 제공
+3. 시술 후, 정품 시술인증서 발급
+
+진료시간
+월 수 금: 10:00~19:00
+화 목: 10:00~20:30 (야간진료)
+토 요 일: 9:30~15:00
+점심시간: 13:00~14:00 (토요일은 점심시간 없이 진료)
+대표번호 02-6224-8000
+카카오톡 @청담아티젠
+오시는길
+서울 강남구 선릉로 818, (청담동 85-4)
+수인분당선 압구정로데오역 4번 출구 직진 150m 좌측
+
+SC제일은행 금광아크존 아파트 4233 마음센터
+사토시 제주옥탑 포에버성형외과 압구정하루 로데오현대 아파트 압구정 로데오거리 스타벅스 유라인클리닉
+넥시빌라트 목전 런던베이글 뮤지엄 골드피쉬 딤섬퀴진 스타벅스 압구정로데오 압구정 미라클의원 압구정 미라클의원
+피규어 뮤지엄W 정식당 청담아티젠
+SK주유소 알파카하우스 카페 카멜커피 아파트 더타코부스 카츠바이콘반 포엠 피부과의원 K현대미술관 몽뜨레아 테라스 브이아몬드 클리닉
+포레스타 클렌징랩 도산공원 도산공원 기념관 KB국민은행 리더스피부과 청담점 LG전자 다이어트한의원 케이플러스 청담의원 한양사거리 메이드헤븐 에스테틱 치과병원
+에르메스 메종 도산 세시셀라 스타벅스 CGV 자하연한의원 밀리의원 에스파스 도산 저스트 스테이크 호림아트센터 IBK 기업은행
+50m 카카오
+지도 위성 거리 뷰
+[Zoom in button] [Zoom out button]
+
+[Artisan Clinic logo]
+청담아티젠의원
+ARTISAN CLINIC
+at CHEONGDAM
+이용약관 개인정보취급방침 이메일
+
+--- page_4_other_capture_0 ---
+Artisan Clinic
+at CHEONGDAM
+청담아티젠 닥터울쎄라지 리프팅 색소·모공 여드름·흉터 안티에이징 부스터 바디 회원가입 로그인
+
+Ulthera
+AUTHENTIC
+FDA
+Powered by
+Amplify II Software
+
+피부 속부터 자연스럽게 차오르는 탄력
+울쎄라리프팅
+Ulthera
+
+카톡상담
+전화상담
+방문예약
+오시는길
+유튜브
+인스타
+왓츠앱
+
+디테일의 차이가 결과의 차이로 이어지는
+청담아티젠의
+퍼스널 울쎄라
+
+청담아티젠은 모두에게 동일한 시술이 아닌,
+고객 한 분 한 분에게 맞추어 초음파로 부위별 피부 두께를 확인 후
+시술 깊이, 강도, 필요 샷 수를 정확히 계산 후 시술합니다.
+오직 한 분을 위한 퍼스널 플랜으로 수술 없이
+
+--- page_4_other_capture_1 ---
+A Artisan Clinic
+at CHEONGDAM
+청담아티젠 닥터울쎄라지 리프팅 색소·모공 여드름·흉터 안티에이징 부스터 바디 회원가입 로그인
+
+Ulthera
+
+시술시간
+1시간 이내
+
+시술효과
+2~3개월 후
+
+마취
+수면 or 크림
+
+일상생활
+바로 가능
+
+유지기간
+1년~1년 6개월
+
+안심하세요! 청담아티젠에서는
+미국 FDA승인의
+Ulthera 정품기기만을 사용합니다.
+
+빠른메뉴
+
+--- page_4_other_capture_2 ---
+Artisan Clinic
+AT CHEONGDAM
+청담아티젠 닥터울쎄라지 리프팅 색소·모공 여드름·흉터 안티에이징 부스터 바디 회원가입 로그인
+
+울쎄라 리프팅
+
+피부 두께와 구조에 따라
+안전하고 정확한 시술 가능
+(미국 FDA, 한국 KFDA 승인)
+
+단 한 번의 시술로도
+최대 2년까지
+리프팅 유지 효과 기대
+
+피부 속 콜라겐의
+재생 및 생성을 통한
+주름 개선 및 피부 리모델링
+
+시술 후 바로
+일상생활이 가능한
+비침습적 리프팅
+
+울쎄라 리프팅 시술 원리
+수술 없이 다양한 피부층에 초음파 에너지를 집중 전달하여 피부 속 노화된 콜라겐을 재생하고
+새로운 콜라겐을 점차적으로 생성시키며 눈에 띄는 리프팅 효과를 확인할 수 있습니다.
+
+약화된 콜라겐으로
+힘없이 처진 피부
+
+강한 출력의 초음파 에너지를
+집중 전달하는 울쎄라 리프팅 시술
+
+콜라겐의 재생 및 생성으로
+쫀쫀하게 차오르는 피부 탄력
+
+빠른메뉴
+
+--- page_4_other_capture_3 ---
+Artisan Clinic
+at CHEONGDAM
+청담아티젠 닥터울쎄라마지 리프팅 색소·모공 여드름·흉터 안티에이징 부스터 바디 회원가입 로그인
+
+직접 눈으로 확인하여 시술 깊이와 방향, 필요한 샷 수와 적절한 강도 등 정확하고
+디테일한 퍼스널 솔루션으로 보다 높은 만족도를 자랑합니다.
+
+시술 부위의
+특성 파악
+
+적절한
+샷 수 계획
+
+샷 깊이
+조절 가능
+
+에너지
+강도 조절
+
+DS 7-4.5
+
+DS 10-4.5
+
+DS 4-4.5
+
+울쎄라 리프팅 추천 대상
+
+늘어진 턱 선과 얼굴라인으로 고민이신 분
+
+얼굴 전체의 탄력 개선을 원하시는 분
+
+수술 없이 자연스러운 리프팅 효과를 원하시는 분
+
+눈꺼풀이 처져 흐릿한 인상이 고민이신 분
+
+오래가는 탄력 시술을 원하시는 분
+
+시술 후 회복기간없이 빠른 일상 복귀를 원하시는 분
+
+울쎄라 리프팅
+
+얼굴 전체
+눈가처짐, 주름
+
+빠른메뉴
+
+--- page_4_other_capture_4 ---
+A Artisan Clinic
+at CHEONGDAM
+청담아티젠 닥터울쎄라써마지 리프팅 색소·모공 여드름·흉터 안티에이징 부스터 바디 회원가입 로그인 🇺🇸 🇯🇵 ☰
+
+처진 콜라겐을 재생시켜
+피부 탄력을 개선해 줍니다.
+목 주름 개선
+이중턱, 턱선
+
+눈가 주름 집중 솔루션 아이울쎄라
+눈가 주름 탄력을 개선하는 아이울쎄라는 눈가 주름과 눈 밑 타이트닝에 최적화 된 팁으로
+일반 울쎄라 팁 사용과는 확연히 다른 시술 결과를 보여줍니다.
+
+눈썹 리프팅
+Ulthera
+눈가 주름 개선
+눈밑 지방 제거
+
+눈가 전용 아이울쎄라팁
+일반 울쎄라 팁에 비해 접촉면이 작고 좁은 아이울쎄라 팁은
+기존 울쎄라 팁으로는 케어가 어려웠던 눈가 처럼 굴곡이 많은
+시술 부위에도 섬세한 시술 가능!
+
+A 빠른메뉴
+
+--- page_4_other_capture_5 ---
+Artisan Clinic
+at CHEONGDAM
+청담아티젠 닥터윤울쎄라써마지 리프팅 색소·모공 여드름·흉터 안티에이징 부스터 바디 회원가입 로그인 🇺🇸 🇯🇵 🇰🇷 ≡
+
+닥터 YOON
+울쎄라 가격 천차만별인 이유? 얼마가 적당할까...?
+출처 대한민국 의원블로그
+지한 의사
+울쎄라 받기전
+이 영상 안보면
+후회합니다!!
+비싼 이유?
+정품 확인은?
+Ulthera
+AUTHENTIC
+Powered by
+Amplify + Software
+닥터 YOON
+영상 더보기 >>
+
+ARTISAN CLINIC AT CHEONGDAM
+리프팅
+1년
+책임보증제
+ARTISAN CLINIC AT CHEONGDAM
+실력에 대한 자신감!
+청담아티젠 리프팅 책임 보증제
+(A) 빠른메뉴
+리프팅 책임 보증제
+
+--- page_4_other_capture_6 ---
+Artisan Clinic
+at CHEONGDAM
+청담아티젠 닥터윤울써마지 리프팅 색소·모공 여드름·흉터 안티에이징·부스터 바디 회원가입 로그인
+
+리프팅 시술 후 발생할 수 있는 부작용에 대한
+리프팅 1년 책임 보증제를 시행하는 이유입니다.
+리프팅
+1년
+책임보증제
+ARTISAN CLINIC Yun SeungHwan
+AT CHONGDAM
+
+ARTISAN CLINIC AT CHONGDAM
+
+울쎄라
+왜! 청담아티젠이어야 할까요?
+
+퍼스널 울쎄라 리프팅
+고객 한 분 한 분의 피부 타입에 맞춰
+효과가 제일 좋을 퍼스널 솔루션으로
+일반 울쎄라와 차원이 다른 결과를 선사합니다.
+
+ADD SHOT 리프팅
+보다 빠른 시술 효과와
+리프팅 유지 기간 연장을 위해 시술 8개월 후
+속부터 차오르는 슈링크 유니버스 (2세대 최신버전)
+리프팅을 45% 할인된 가격으로!
+
+정품팁 확인
+시술 전, 정품 팁을 눈 앞에서 개봉하고,
+시술 후, 사용한 팁을 제공합니다.
+
+정품 인증서 발급
+윤승환 대표 원장님이
+직접 시술하고
+친필 서명한 정품 인증서 발급
+Ulthera
+AUTHENTIC
+FDA
+CLEARED
+Powered by
+Amplify II Solta
+빠른메뉴
+
+--- page_4_other_capture_7 ---
+Artisan Clinic
+at CHEONGDAM
+청담아티젠 닥터윤울써마지 리프팅 색소·모공 여드름·흉터 안티에이징 부스터 바디 회원가입 로그인 [US flag] [KR flag] [Hamburger menu icon]
+
+쉽고 빠르게 알 수 있는
+정품 울쎄라 3단계 확인 방법
+오직 한 분에게만 제공되는 그 효과와 안정성을 위한 정품팁 확인 방법
+
+인증번호: 00000L
+
+청담아티젠에서는 시술 전 정품팁을
+직접 보여드리고 시술을 진행합니다.
+홀로그램 스티커를 확인 하세요.
+홀로그램이 없으면 정품이 아닙니다.
+
+울쎄라 시술을 위한 맞춤 소프트웨어
+AMPLIFY II 인증마크를 확인 하세요.
+
+시술 후 받으신 정품팁 인증서로
+정품 인증 번호를 확인 합니다.
+'처음부터 울쎄라' 앱 다운로드 후
+정품 인증 가능합니다.
+
+울쎄라 리프팅
+시술 후 주의사항
+
+[Checkbox] 시술 후 바로 (저자극 클렌징) 세안 및 메이크업이 가능합니다.
+[Checkbox] 시술 후 시술 부위를 자극하거나 문지르는 행동을 삼가주세요.
+[Checkbox] 시술 후 일주일 정도는 음주, 흡연을 자제해 주세요.
+[Checkbox] 시술 후 일주일 정도는 사우나, 목욕탕, 반신욕, 얼굴(경락) 마사지, 과격한 운동을 삼가 주세요.
+[Checkbox] 시술 후 멍과 붓기가 발생할 수 있으나 일시적인 현상으로 시간이 지나면 자연스럽게 사라집니다.
+[Checkbox] 피부 보호를 위해 자외선 차단제를 꼼꼼히 발라주세요.
+
+[Button] 빠른메뉴
+ARTISAN CLINIC AT CHEONGDAM
+
+--- page_4_other_capture_8 ---
+Artisan Clinic
+AT CHEONGDAM
+청담아티젠 닥터윤올써마지 리프팅 색소·모공 여드름·흉터 안티에이징 부스터 바디 회원가입 로그인
+
+청담아티젠 울쎄라 리프팅과
+함께하면 좋은 시술
+리프팅 효과를 최대한 길게 유지하기 위한 시술을 추천합니다.
+
+내일의 나를 기대해!
+시간이 흐를수록
+단단하게, 당당하게!
+볼뉴머
+
+시간을
+아름다
+동안
+(스킨부
+
+청담아티젠만의
+Personal
+Anti-Aging
+Process
+
+03
+부위와 증상에 따라 꼭 필요한 시술로
+퍼스널 솔루션 제안 및 결정
+
+04
+숙련된 노하우로 윤승환 대표원장님이
+빠르고 정확하게 정교한 시술 진행
+
+빠른메뉴
+
+--- page_4_other_capture_9 ---
+Artisan Clinic
+at CHEONGDAM
+청담아티젠 닥터울쎄마지 리프팅 색소·모공 여드름·흉터 안티에이징 부스터 바디 회원가입 로그인
+
+Wannabe Young
+청담아티젠 Promise 6
+
+Price
+만족도 높은 프리미엄 시술들을
+보다 합리적인 가격으로 제공
+
+Personal
+윤승환 대표 원장님이 직접
+1:1 맞춤 상담부터 시술까지
+
+Premium
+★정품, 정량, 정샷
+프리미엄 레 A 빠른메뉴
+정품 인증서 발급
+
+--- page_4_other_capture_10 ---
+Artisan Clinic
+at CHEONGDAM
+청담아티젠 닥터윤올써마지 리프팅 색소·모공 여드름·흉터 안티에이징·부스터 바디 회원가입 로그인
+
+Premium
+Membership
+반복하고 사라지는 변화가 아닌,
+오래 지속되는 자연스러운 아름다움과
+특별한 혜택을 멤버쉽 회원님께 선사합니다.
+
+울쎄라, 써마지 FLX
+정품 인증서 발급
+1. 시술 전, 눈앞 정품팁 개봉
+2. 시술 중, 즉시사용 팁 제공
+3. 시술 후, 정품 시술인증서 발급
+
+청담아티젠
+지도
+진료시간
+월 수 금: 10:00~19:00
+화 목: 10:00~20:30 (야간진료)
+토 요일: 9:30~15:00
+점심시간: 13:00~14:00 (토요일은 점심시간 없이 진료)
+대표번호 02-6224-8000
+카카오톡 @청담아티젠
+오시는길
+서울 강남구 선릉로 818, (청담동 85-4)
+수인분당선 압구정로데오역 4번 출구 직진 150m 좌측
+50m
+
+이용약관 개인정보취급방침 이메일무단수집거부 비급여진료비/제증명수수료
+Artisan Clinic
+청담아티젠의원
+ARTISAN CLINIC at CHEONGDAM
+상호: 청담아티젠의원 | 대표: 윤승환 | 사업자등록번호: 114-15-88672 |
+주소: 서울 강남구 선릉로 818, (청담동 85-4) 디자이너클럽 빌딩 3층 | 대표번호: 02-6224-8000 | 팩스: 02-522-3839
+COPYRIGHT © 2022 Artisan Clinic at Cheongdam. ALL RIGHT RESERVED.
+빠른메뉴
+
+--- page_4_other_capture_11 ---
+Artisan Clinic
+at CHEONGDAM
+청담아티젠
+닥터윤올마지
+리프팅
+색소·모공
+여드름·흉터
+안티에이징·부스터
+바디
+회원가입
+로그인
+
+반짝하고 사라지는 변화가 아닌,
+오래 지속되는 자연스러운 아름다움과
+특별한 혜택을 멤버십 회원님께 선사합니다.
+
+1. 시술 전, 눈썹 정돈/안내
+2. 시술 중, 마사지/음료 제공
+3. 시술 후, 정품 시술인증서 발급
+
+SC제일은행
+KCC
+금광아크로
+아파트
+4233
+마움
+
+──── [3] coverage_raw.txt (커버리지 검증 로그) ────
+{
+  "missing_equipments": [
+    "TORR RF",
+    "Onda"
+  ],
+  "missing_treatments": [
+    "보톡스",
+    "필러",
+    "슈링크",
+    "볼뉴머",
+    "베이비페이스",
+    "토르",
+    "온다"
+  ],
+  "missing_doctors": [],
+  "missing_prices": [],
+  "coverage_score": {
+    "equipment": 71,
+    "treatment": 46,
+    "doctor": 100,
+    "overall": 70
+  },
+  "issues": [
+    "추출 결과에 있는 의사 '윤승환'은 원본 마크다운에 명시되어 있지 않습니다.",
+    "추출 결과에 있는 시술 '아이써마지', '아이울쎄라', '퍼스널 써마지 FLX', 'ADD SHOT 리프팅', '퍼스널 울쎄라 리프팅'은 원본 마크다운에 명시되어 있지 않습니다.",
+    "원본 마크다운의 '볼뉴머'가 추출 결과에서는 '볼륨어'로 추출되어 정확한 명칭이 아닙니다."
+  ]
+}

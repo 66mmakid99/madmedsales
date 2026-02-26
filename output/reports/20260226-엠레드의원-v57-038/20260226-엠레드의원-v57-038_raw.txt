@@ -1,0 +1,2069 @@
+═══════════════════════════════════════════════════
+  엠레드의원 — 추출 원본 데이터
+═══════════════════════════════════════════════════
+
+──── [1] analysis.json (Gemini 분류 결과) ────
+{
+  "hospital_name": "엠레드의원",
+  "doctors": [
+    {
+      "name": "최두영",
+      "title": "대표",
+      "specialty": null,
+      "career": null,
+      "education": null,
+      "certifications": null,
+      "confidence": "confirmed"
+    },
+    {
+      "name": "김상우",
+      "title": "Dermatist",
+      "specialty": null,
+      "career": null,
+      "education": null,
+      "certifications": null,
+      "confidence": "confirmed"
+    }
+  ],
+  "academic_activities": [],
+  "medical_devices": [
+    {
+      "name": "Ulthera Prime",
+      "korean_name": "울쎄라피 프라임",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Thermage FLX",
+      "korean_name": "써마지 FLX",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_TIGHTENING",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Accent Prime",
+      "korean_name": "악센트프라임",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_TIGHTENING",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Tune Confier",
+      "korean_name": "튠 콩피에르®",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_TIGHTENING",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Titanium",
+      "korean_name": "티타늄",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_TIGHTENING",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Profound",
+      "korean_name": "프로파운드",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_MICRONEEDLE",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Shurink Universe",
+      "korean_name": "슈링크 유니버스",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "InMode",
+      "korean_name": "인모드",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_TIGHTENING",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "TORR RF",
+      "korean_name": "토르 리프팅",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_TIGHTENING",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Potenza",
+      "korean_name": "포텐자",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_MICRONEEDLE",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "PicoWay",
+      "korean_name": "피코웨이",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "LASER",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Tune Light",
+      "korean_name": "튠 라이트",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "LASER",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "GentleMax Pro Plus",
+      "korean_name": "젠틀맥스 프로 플러스",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "LASER",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Emface",
+      "korean_name": "엠페이스",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "BODY",
+      "description": null,
+      "source": "image_banner"
+    },
+    {
+      "name": "Onda",
+      "korean_name": "온다",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_TIGHTENING",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Alltite",
+      "korean_name": "올타이트",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_TIGHTENING",
+      "description": null,
+      "source": "image_banner"
+    },
+    {
+      "name": "Sofwave",
+      "korean_name": "소프웨이브",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Nanopiloti",
+      "korean_name": "나노필로티™",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "text"
+    }
+  ],
+  "treatments": [
+    {
+      "name": "리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "스킨",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "윤곽&볼륨",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "바디",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "맨즈제모",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "울쎄라 리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "ocr",
+      "category": "hifu",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "써마지FLX",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "ocr",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "티타늄 리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "ocr",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "스킨보톡스",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "ocr",
+      "category": "botox",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "온다",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "ocr",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "소프트웨이브",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "ocr",
+      "category": "hifu",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "울타이트",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "ocr",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "튠페이스",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "ocr",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "리쥬란",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "ocr",
+      "category": "skinbooster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "EMFACE 리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "image_banner",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "튠컬트라",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": true,
+      "is_addon": false,
+      "source": "image_banner",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "온다 리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "image_banner",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "올타이트 리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "image_banner",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "소프웨이브 리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "image_banner",
+      "category": "hifu",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "울쎄라피 프라임",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "hifu",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "악센트프라임 : 튠",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "튠 콩피에르®",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "초음파™ 보톡스",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "botox",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "스컬트라",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "collagen_stimulator",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "프로파운드",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "맞춤 실리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "thread",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "슈링크 유니버스",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "hifu",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "인모드",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "토르 리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "쥬베룩",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "skinbooster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "엑소좀",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "skinbooster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "스킨바이브",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "skinbooster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "포텐자",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "피코웨이",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "튠 라이트",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "젠틀맥스 프로 플러스",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "초음파™ 브이올렛",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "초음파™ 윤곽주사",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "lipolytic",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "엘란쎄",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "collagen_stimulator",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "쥬베룩 볼륨",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "skinbooster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "필러",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "filler",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "바디 튠 콩피에르®",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "body"
+    },
+    {
+      "name": "바디 울쎄라피 프라임",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "hifu",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "body"
+    },
+    {
+      "name": "바디 써마지 FLX",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "body"
+    },
+    {
+      "name": "바디 초음파™ 보톡스",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "botox",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "body"
+    },
+    {
+      "name": "바디 갭주사",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "body"
+    },
+    {
+      "name": "바디 스컬트라",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "collagen_stimulator",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "body"
+    },
+    {
+      "name": "나노필로티™",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    }
+  ],
+  "events": [
+    {
+      "title": "엠레드 아이코닉 시리즈 혜택",
+      "type": "패키지",
+      "period": null,
+      "discount_info": "혜택 바로가기",
+      "original_price": null,
+      "event_price": null,
+      "conditions": [],
+      "source": "popup"
+    },
+    {
+      "title": "ONLY 2 WEEKS INVITATION (설 연휴 한정 리프팅 & 볼륨 혜택)",
+      "type": "시즌",
+      "period": "단 2주간, 설 연휴 한정",
+      "discount_info": "리프팅 & 볼륨 혜택",
+      "original_price": null,
+      "event_price": null,
+      "conditions": [],
+      "source": "popup"
+    }
+  ],
+  "clinic_categories": [
+    {
+      "name": "리프팅",
+      "treatments": [
+        "울쎄라 리프팅",
+        "써마지FLX",
+        "티타늄 리프팅",
+        "온다",
+        "소프트웨이브",
+        "울타이트",
+        "튠페이스",
+        "EMFACE 리프팅",
+        "튠컬트라",
+        "온다 리프팅",
+        "올타이트 리프팅",
+        "소프웨이브 리프팅",
+        "울쎄라피 프라임",
+        "악센트프라임 : 튠",
+        "튠 콩피에르®",
+        "프로파운드",
+        "맞춤 실리프팅",
+        "슈링크 유니버스",
+        "인모드",
+        "토르 리프팅",
+        "바디 튠 콩피에르®",
+        "바디 울쎄라피 프라임",
+        "바디 써마지 FLX",
+        "나노필로티™"
+      ]
+    },
+    {
+      "name": "스킨",
+      "treatments": [
+        "스킨보톡스",
+        "리쥬란",
+        "쥬베룩",
+        "엑소좀",
+        "스킨바이브",
+        "포텐자",
+        "피코웨이",
+        "튠 라이트",
+        "젠틀맥스 프로 플러스"
+      ]
+    },
+    {
+      "name": "윤곽&볼륨",
+      "treatments": [
+        "초음파™ 보톡스",
+        "스컬트라",
+        "초음파™ 브이올렛",
+        "초음파™ 윤곽주사",
+        "엘란쎄",
+        "쥬베룩 볼륨",
+        "필러"
+      ]
+    },
+    {
+      "name": "바디",
+      "treatments": [
+        "바디 튠 콩피에르®",
+        "바디 울쎄라피 프라임",
+        "바디 써마지 FLX",
+        "바디 초음파™ 보톡스",
+        "바디 갭주사",
+        "바디 스컬트라"
+      ]
+    },
+    {
+      "name": "EXCLUSIVE",
+      "treatments": [
+        "튠컬트라",
+        "나노필로티™"
+      ]
+    },
+    {
+      "name": "BY AMRED",
+      "treatments": [
+        "튠 콩피에르®",
+        "울쎄라피 프라임",
+        "티타늄 리프팅",
+        "써마지 FLX",
+        "초음파™ 보톡스",
+        "스컬트라"
+      ]
+    }
+  ],
+  "contact_info": {
+    "email": [
+      {
+        "address": "amredworld@gmail.com",
+        "type": "기타",
+        "source": "footer"
+      }
+    ],
+    "phone": [
+      {
+        "number": "02-543-3110",
+        "type": "대표",
+        "source": "footer"
+      }
+    ],
+    "address": {
+      "full_address": "서울특별시 강남구 삼성로731로 청진빌딩 GF, 2F, 4F",
+      "sido": "서울특별시",
+      "sigungu": "강남구"
+    },
+    "kakao_channel": null,
+    "naver_booking": null,
+    "naver_place": null,
+    "instagram": "https://www.instagram.com/",
+    "facebook": null,
+    "youtube": "https://www.youtube.com/",
+    "blog": null,
+    "website_url": "https://amredclinic.com/ko",
+    "operating_hours": null
+  },
+  "unregistered_equipment": [
+    {
+      "name": "Nanopiloti",
+      "korean_name": "나노필로티™",
+      "suggested_category": "OTHER_DEVICE",
+      "source": "website",
+      "reason": "Not found in dictionary, appears as a device in 'EXCLUSIVE' lineup."
+    }
+  ],
+  "unregistered_treatments": [
+    {
+      "name": "초음파™ 브이올렛",
+      "source": "website",
+      "context": "윤곽&볼륨 라인업의 주사 시술"
+    },
+    {
+      "name": "초음파™ 윤곽주사",
+      "source": "website",
+      "context": "윤곽&볼륨 라인업의 주사 시술"
+    },
+    {
+      "name": "바디 갭주사",
+      "source": "website",
+      "context": "바디 라인업의 주사 시술"
+    }
+  ],
+  "raw_price_texts": [],
+  "extraction_summary": {
+    "total_doctors": 2,
+    "total_academic": 0,
+    "total_equipment": 18,
+    "total_devices": 18,
+    "total_injectables": 0,
+    "total_treatments": 41,
+    "total_events": 2,
+    "total_categories": 6,
+    "total_contact_channels": 5,
+    "has_email": true,
+    "has_phone": true,
+    "has_kakao": false,
+    "has_sns": true,
+    "price_available_ratio": "0/41",
+    "unregistered_equipment_count": 1,
+    "unregistered_treatments_count": 3
+  }
+}
+
+──── [2] ocr_raw.json (이미지 OCR 원본) ────
+
+--- page_0_main_capture_0 ---
+AMRED
+CLINIC
+프리미엄 리프팅
+엠레드의 새로운 기준
+AMRED BY AMRED 리프팅 스킨 윤곽&볼륨 바디 프로모션 후기 맨즈제모
+상담 신청 KR ∨ Q 👤
+
+AMRED DERMA PARK
+FOR WINTER
+
+AMRED ICONIC
+SERIES
+울쎄라 써마지FLX 티타늄 리프팅 스킨보톡스
+온다 소프트웨이브 울타이트 튠페이스 리쥬란
+혜택 바로가기
+엠레드 아이코닉 시리즈
+
+ALL-TIGHT
+TOWER
+LIFT EXPRESS
+YOUR PERFECT LIFTING AWAITS
+
+어떤 시술이 궁금하세요?
+이름 연락처
+상담 신청
+[필수]개인정보 수집·이용 및 활용에 동의합니다
+
+엠레드 더마 파크 입장하기
+
+프로모션
+카톡 상담
+상담 신청
+
+--- page_0_main_capture_1 ---
+AMRED CLINIC
+AMRED BY AMRED 리프팅 스킨 윤곽&볼륨 바디 프로모션 후기 맨즈 제모
+상담 신청 KR ∨ 🔍 👤
+AMRED ICONIC
+SERIES
+울쎄라 써마지FLX 티타늄 리프팅 스킨보톡스
+온다 소프웨이브 울타이트 튠페이스 리쥬란
+혜택 바로가기
+엠레드 아이코닉 시리즈
+어떤 시술이 궁금하세요?
+이름 연락처 상담 신청
+[필수] 개인정보 수집.이용 및 활용에 동의합니다.
+AGE FLX
+ACCENT PRIME : TUNE
+악센트프라임 : 튠
+TITANIUM LIFTING
+티타늄 리프팅
+프로모션
+카톡 상담
+상담 신청
+
+--- page_0_main_capture_2 ---
+AMRED
+CLINIC
+AMRED BY AMRED 리프팅 스킨 윤곽&볼륨 바디 프로모션 후기 맨즈 제모
+상담 신청 KR ∨ Q 👤
+AMRED VIP LOUNGE
+엠레드 VIP 라운지
+AMRED ICONIC
+SERIES
+울쎄라 써마지FLX 티타늄 리프팅 스킨보톡스
+온다 소프트웨이브 울타이트 튠페이스 리쥬란
+혜택 바로가기
+엠레드 아이코닉 시리즈
+VIP 라운지 더 알아보기
+어떤 시술이 궁금하세요?
+이름 연락처
+상담 신청
+[필수] 개인정보 수집·이용 및 활용에 동의합니다 >
+프로모션
+TALK
+카톡 상담
+[::]
+상담 신청
+
+--- page_0_main_capture_3 ---
+AMRED
+CLINIC
+AMRED BY AMRED 리프팅 스킨 윤곽&볼륨 바디 프로모션 후기 맨즈 제모 상담 신청 KR v Q 👤
+시그니처를 넘어 앰레드만의 기준.
+정밀 분석부터 결과까지, 당신에게 꼭 맞는 리프팅.
+오직 앰레드에서만 가능한 독자적 리프팅 프로그램.
+
+스킨
+홍조부터 미백까지, 피부 컨디션에 맞춘 스킨 솔루션.
+
+x
+ONLY 2 WEEKS
+INVITATION
+단 2주간, 설 연휴 한정 리프팅 & 볼륨 혜택
+더 알아보기 →
+
+굴처럼, 정교하게 디자인.
+
+어떤 시술이 궁금하세요? x
+이름 연락처 상담 신청
+[필수] 개인정보 수집·이용 및 활용에 동의합니다 >
+
+프로모션
+TALK
+카톡 상담
+[::]
+상담 신청
+
+--- page_0_main_capture_4 ---
+AMRED
+CLINIC
+AMRED BY AMRED 리프팅 스킨 윤곽&볼륨 바디 프로모션 후기 맨즈 제모 상담 신청 KR ∨ Q 8
+AMRED SPACE : LIFTING CENTER
+엠레드 공간 : 리프팅센터
+엠레드 공간 더 알아보기
+
+ONLY 2 WEEKS
+INVITATION
+단 2주간, 설 연휴 한정 리프팅 & 볼륨 혜택
+더 알아보기 →
+
+[필수] 개인정보 수집·이용 및 활용에 동의합니다
+
+어떤 시술이 궁금하세요?
+이름
+연락처
+상담 신청
+[필수] 개인정보 수집·이용 및 활용에 동의합니다
+엠레드를 더 깊게.
+프로모션
+TALK
+카톡 상담
+[::]
+상담 신청
+
+--- page_0_main_capture_5 ---
+AMRED
+CLINIC
+AMRED BY AMRED 리프팅 스킨 윤곽&볼륨 바디 프로모션 후기 맨즈 제모 상담 신청 KR ∨ Q 8
+YOUTUBE
+...는?
+<
+튠페이스 리프팅,
+이 영상 하나만 보시면 됩니다
+x
+ONLY 2 WEEKS
+INVITATION
+단 2주간, 설 연휴 한정 리프팅 & 볼륨 혜택
+제이홉도 빠져드는, 청
+감각적인 공간의 Afro
+PL/
+지금
+더 알아보기 →
+지금 시청하기
+어떤 시술이 궁금하세요?
+이름 연락처 상담 신청
+[필수] 개인정보 수집·이용 및 활용에 동의합니다. >
+HOW
+SKIN BOOSTER
+WORKS
+프로모션
+TALK
+카톡 상담
+상담 신청
+
+--- page_0_main_capture_6 ---
+AMRED
+CLINIC
+AMRED BY AMRED 리프팅 스킨 윤곽&볼륨 바디 프로모션 후기 맨즈 제모
+상담 신청
+KR ∨
+Q
+👤
+
+청담 피부과 의사의
+고민별 시술 추천 1탄
+AMRED NEW 4 LIFTINGS
+피부결
+ALLTITE
+올써마이트
+SOFWAVE
+써마지
+주름개선
+SKIN TYPE _ S.S.T.F
+SUN TYPE | SENSITIVE |
+ACNE | ROSACEA
+RECOMMEND
+TUNE | ULTHERA | JUVELOOK
+ONLY 2 WEEKS
+INVITATION
+단 2주간, 설 연휴 한정 리프팅 & 볼륨 혜택
+ONDA
+온다
+EMFACE
+엠페이스
+안면윤곽
+더 알아보기 →
+
+TEL 02-543-3110
+어떤 시술이 궁금하세요?
+이름
+연락처
+상담 신청
+[필수]개인정보 수집·이용 및 활용에 동의합니다.
+사업자등록번호 508-08-92709
+외국인환자유치등록번호 M-2022-01-086580호
+For Foreign Customers Only amredworld@gmail.com
+개인정보 취급 담당자 이견우
+4F
+2F
+프로모션
+TALK
+카톡 상담
+상담 신청
+
+--- page_0_main_capture_7 ---
+AMRED CLINIC
+AMRED BY AMRED 리프팅 스킨 윤곽&볼륨 바디 프로모션 후기 맨즈 제모
+상담 신청 KR ∨ Q 👤
+
+성형 피부과 의사
+고민 별 시술 추천 1탄
+
+SKIN TYPE S.S.T.F
+SLIM TYPE / SENSITIVE
+ACNE / ELASTICITY
+RECOMMEND
+TUNE / ULTHERA / JUVEDOOM
+
+피부결
+ALLTITE
+올라이트
+SOFWAVE
+써마지
+탄력증가
+주름개선
+ONDA
+온다
+EMFACE
+엠페이스
+안면윤곽
+
+ONLY 2 WEEKS
+INVITATION
+단 2주간, 설 연휴 한정 리프팅 & 볼륨 혜택
+더 알아보기 →
+
+TEL 02-543-3110
+
+상호명 엠레드 의원 대표 최두영
+사업자등록번호 508-08-92708 개인정보 취급담당자 이선우
+주소 [엠레드 클리닉] 서울특별시 강남구 삼성로731로 청진빌딩 GF, 2F, 4F
+외국인환자유치등록번호 M-2022-01-086580호
+[엠레드 리프팅 센터] 서울특별시 강남구 삼성로 725 은하빌딩 1F, 2F
+For Foreign Customers Only amredworld@gmail.com
+
+어떤 시술이 궁금하세요?
+이름 연락처 상담 신청
+및 이용약관
+[필수] 개인정보 수집·이용 및 활용에 동의합니다. >
+
+프로모션
+카톡 상담
+상담 신청
+
+--- page_1_other_capture_0 ---
+AMRED
+CLINIC
+AMRED BY AMRED 리프팅 스킨 윤곽&볼륨 바디 프로모션 후기 맨즈 제모
+상담 신청 KR ∨ Q 👤
+BY AMRED
+엠레드 클리닉은 어떤 시술을 하는지가 아니라, 누구에게 하
+는지를 먼저 고민합니다.
+1:1 상담을 통한 맞춤 디자인과 철저한 시술 플랜으로 한 사
+람만을 위한 맞춤 안티에이징을 제안합니다.
+BY AMRED 시그니처 라인업 살펴보기.
+SIGNATURE
+어떤 시술이 궁금하세요?
+이름
+연락처
+[필수] 개인정보 수집·이용 및 활용에 동의합니다
+상담 신청
+SIGNATURE
+PREMIUM
+프로모션
+TALK
+카톡 상담
+상담 신청
+
+--- page_1_other_capture_1 ---
+AMRED
+CLINIC
+AMRED BY AMRED 리프팅 스킨 윤곽&볼륨 바디 프로모션 후기 맨즈 제모
+상담 신청 KR ∨ Q 👤
+
+TUNE CONFIER®
+튠 콩피에르®
+ULTHERAPY PRIME
+울쎄라피 프라임
+TITANIUM LIFTING
+티타늄 리프팅
+
+SIGNATURE
+THERMAGE FLX
+써마지 FLX
+SIGNATURE
+SEE THROUGH™ BOTX
+초음파™ 보톡스
+SIGNATURE
+SCULPTRA
+스컬트라
+
+어떤 시술이 궁금하세요?
+X
+이름
+연락처
+상담 신청
+[필수] 개인정보 수집·이용 및 활용에 동의합니다
+>
+
+프로모션
+TALK
+카톡 상담
+[::]
+상담 신청
+
+사업자등록번호 508-08-92709
+개인정보 취급 담당자 이건우
+외국인환자유치등록번호 M-2022-01-086580호
+주소 [엠레드 클리닉] 서울특별시 강남구 삼성로731로 청진빌딩 GF, 2F, 4F
+
+--- page_1_other_capture_2 ---
+AMRED
+CLINIC
+AMRED BY AMRED 리프팅 스킨 윤곽&볼륨 바디 프로모션 후기 맨즈 제모
+상담 신청 KR V Q &
+
+THERMAGE FLX
+써마지 FLX
+SEE THROUGH™ BOTOK
+초음파™ 보톡스
+SCULPTRA
+스컬트라
+
+TEL 02-543-3110
+상호명 엠레드 의원 | 대표 최두영
+주소 [엠레드 클리닉] 서울특별시 강남구 삼성로731로 청진빌딩 GF, 2F, 4F
+[엠레드 리프팅 센터] 서울특별시 강남구 삼성로 725 은하빌딩 1F, 2F
+
+어떤 시술이 궁금하세요?
+X
+이름 연락처 상담 신청
+[필수] 개인정보 수집·이용 및 활용에 동의합니다.
+>
+사업자등록번호 508-08-92709 | 개인정보 취급 담당자 이건우
+외국인환자유치등록번호 M-2022-01-086580호
+For Foreign Customers Only amredworld@gmail.com
+및 이용약관
+프로모션
+TALK
+카톡 상담
+상담 신청
+
+--- page_2_other_capture_0 ---
+AMRED
+CLINIC
+AMRED BY AMRED 리프팅 스킨 윤곽&볼륨 바디 프로모션 후기 맨즈 제모
+상담 신청 KR V Q 8
+LIFTING
+많은 분들이 내게 진짜 필요한 리프팅이 무엇인지 모른 채 시
+술을 선택하지만, 엠레드는 그 시작부터 다릅니다.
+
+비스포크(BESPOKE) 시스템을 통해 철저한 3D 안면 분석과
+1:1 상담을 진행하여 내 얼굴에 꼭 맞는 리프팅을 제안합니다.
+비스포크 리프팅 라인업 살펴보기.
+PREMIUM
+어떤 시술이 궁금하세요?
+X
+이름
+연락처
+상담 신청
+[필수] 개인정보 수집·이용 및 활용에 동의합니다
+>
+PREMIUM
+PREMIUM
+프로모션
+TALK
+카톡 상담
+상담 신청
+
+--- page_2_other_capture_1 ---
+AMRED
+CLINIC
+AMRED BY AMRED 리프팅 스킨 윤곽&볼륨 바디 프로모션 후기 맨즈 제모
+상담 신청
+KR
+🔍
+👤
+TUNE CONFIER®
+튠 콩피에르®
+ULTHERAPY PRIME
+울쎄라피 프라임
+TITANIUM LIFTING
+티타늄 리프팅
+PREMIUM
+PREMIUM
+PREMIUM
+THERMAGE FLX
+써마지 FLX
+PROFOUND
+프로파운드
+THREAD LIFTING
+맞춤 실리프팅
+STANDARD
+STANDARD
+어떤 시술이 궁금하세요?
+X
+이름
+연락처
+상담 신청
+[필수] 개인정보 수집·이용 및 활용에 동의합니다
+>
+프로모션
+TALK
+카톡 상담
+[...]
+상담 신청
+
+--- page_2_other_capture_2 ---
+AMRED CLINIC
+AMRED BY AMRED 리프팅 스킨 윤곽&볼륨 바디 프로모션 후기 맨즈 제모
+상담 신청
+KR ∨
+Q
+👤
+
+SHURINK UNIVERSE
+슈링크 유니버스
+INMODE
+인모드
+TORR LIFTING
+토르 리프팅
+
+TEL 02-543-3110
+상호명 엠레드의원 | 대표 최두영
+사업자등록번호 508-08-92709 | 개인정보 취급 담당자 이건우
+주소 [엠레드 클리닉] 서울특별시 강남구 삼성로731로 청진빌딩 GF, 2F, 4F
+외국인환자유치등록번호 M-2022-01-086580호
+[엠레드 리프팅 센터] 서울특별시 강남구 삼성로 725 은하빌딩 1F, 2F
+For Foreign Customers Only amredworld@gmail.com
+
+어떤 시술이 궁금하세요?
+이름
+연락처
+상담 신청
+[ ] [필수]개인정보 수집·이용 및 활용에 동의합니다
+및 이용약관
+>
+
+🎁 프로모션
+💬 카톡 상담
+[::] 상담 신청
+
+--- page_3_other_capture_0 ---
+AMRED
+CLINIC
+AMRED BY AMRED 리프팅 스킨 윤곽&볼륨 바디 프로모션 후기 맨즈 제모
+상담 신청 KR V Q &
+DR.SANGHIM
+DERMAT
+SKIN
+엠레드 클리닉은 어떤 시술을 하는지가 아니라, 누구에게 하
+는지를 먼저 고민합니다.
+1:1 상담을 통한 맞춤 디자인과 철저한 시술 플래닝으로 한 사
+람만을 위한 맞춤 안티에이징을 제안합니다.
+비스포크 스킨 라인업 살펴보기.
+프로모션
+TALK
+카톡 상담
+상담 신청
+SKIN BOOSTER
+어떤 시술이 궁금하세요?
+X
+이름
+연락처
+상담 신청
+[필수]개인정보 수집·이용 및 활용에 동의합니다
+SKIN BOOSTER
+SKIN BOOSTER
+JUVE LOOK
+ASCE+
+
+--- page_3_other_capture_1 ---
+AMRED
+CLINIC
+AMRED BY AMRED 리프팅 스킨 윤곽&볼륨 바디 프로모션 후기 맨즈 제모
+상담 신청 KR v Q &
+
+REJURAN
+리쥬란
+
+JUVELOOK
+쥬베룩
+
+EXOSOME
+엑소좀
+
+SKIN BOOSTER
+SKINVIVE
+스킨바이
+
+SKIN LASER
+POTENZA
+포텐자
+
+SKIN LASER
+PICOWAY
+피코웨이
+
+SKIN LASER
+TUNE LIGHT
+
+어떤 시술이 궁금하세요? X
+이름 연락처 상담 신청
+[필수]개인정보 수집·이용 및 활용에 동의합니다. >
+
+SKIN LASER
+GENTLEMAX PRO PLUS
+
+프로모션
+TALK
+카톡 상담
+상담 신청
+
+--- page_3_other_capture_2 ---
+AMRED
+CLINIC
+AMRED
+BY AMRED
+리프팅
+스킨
+윤곽&볼륨
+바디
+프로모션
+후기
+맨즈 제모
+상담 신청
+KR
+∨
+Q
+👤
+TUNE LIGHT
+튠 라이트
+GENTLEMAX PRO PLUS
+젠틀맥스 프로 플러스
+TEL
+02-543-3110
+상호명 엠레드 의원
+|
+대표 최두영
+사업자등록번호 508-08-92709
+|
+개인정보 취급 담당자 이건우
+외국인환자유치등록번호 M-2022-01-086580호
+주소 [엠레드 클리닉] 서울특별시 강남구 삼성로731로 청진빌딩 GF, 2F, 4F
+[엠레드 리프팅 센터] 서울특별시 강남구 삼성로 725 은하빌딩 1F, 2F
+For Foreign Customers Only
+amredworld@gmail.com
+어떤 시술이 궁금하세요?
+X
+이름
+연락처
+상담 신청
+[필수]개인정보 수집·이용 및 활용에 동의합니다
+>
+및 이용약관
+💬
+▶
+📷
+blog
+f
+🎁
+프로모션
+💬
+카톡 상담
+[:::]
+상담 신청
+
+--- page_4_other_capture_0 ---
+AMRED
+CLINIC
+AMRED BY AMRED 리프팅 스킨 윤곽&볼륨 바디 프로모션 후기 맨즈 제모
+상담 신청 KR ∨ Q &
+
+ALPINION
+SHAPE & VOLUME
+
+DR. SANGWOO KIM
+DERMATIST
+
+얼굴은 모두 다르고, 볼륨이 필요한 위치도 다릅니다. 엠레드는
+는 3D 분석을 통해 얼굴 구조를 정밀하게 진단합니다.
+개인의 얼굴 형태와 비율에 맞춰 철저한 디자인으로 입체감은
+살리고, 자연스러운 윤곽의 조화를 완성합니다.
+
+비스포크 윤곽&볼륨 살펴보기.
+
+SHAPE
+어떤 시술이 궁금하세요?
+이름 연락처 상담 신청
+[필수]개인정보 수집·이용 및 활용에 동의합니다.
+>
+
+SHAPE
+SHAPE
+V-OLET
+브이올렛
+
+프로모션
+카톡 상담
+상담 신청
+
+--- page_4_other_capture_1 ---
+AMRED
+CLINIC
+AMRED
+BY AMRED
+리프팅
+스킨
+윤곽&볼륨
+바디
+프로모션
+후기
+맨즈 제모
+상담 신청
+KR
+Q
+8
+SEE THROUGH™ BOTox
+초음파™ 보톡스
+SEE THROUGH™ V-OLET
+초음파™ 브이올렛
+SEE THROUGH™ AM-CUT
+초음파™ 윤곽주사
+VOLUME
+VOLUME
+VOLUME
+SCULPTRA
+스컬트라
+ELLANSE
+엘란쎄
+JUVELOOK VOLUME
+쥬베룩 볼륨
+VOLUME
+어떤 시술이 궁금하세요?
+X
+이름
+연락처
+상담 신청
+[필수] 개인정보 수집·이용 및 활용에 동의합니다
+>
+프로모션
+TALK
+카톡 상담
+[::]
+상담 신청
+
+--- page_4_other_capture_2 ---
+AMRED
+CLINIC
+AMRED
+BY AMRED
+리프팅
+스킨
+윤곽&볼륨
+바디
+프로모션
+후기
+맨즈 제모
+상담 신청
+KR
+∨
+Q
+👤
+FILLER
+필러
+TEL 02-543-3110
+상호명 엠레드 의원 | 대표 최두영
+사업자등록번호 508-08-92709 | 개인정보 취급 담당자 이건우
+주소 [엠레드 클리닉] 서울특별시 강남구 삼성로731로 청진빌딩 GF, 2F, 4F
+외국인환자유치등록번호 M-2022-01-086580호
+[엠레드 리프팅 센터] 서울특별시 강남구 삼성로 725 은하빌딩 1F, 2F
+For Foreign Customers Only amredworld@gmail.com
+어떤 시술이 궁금하세요?
+X
+이름
+연락처
+상담 신청
+및 이용약관
+[ ] [필수]개인정보 수집·이용 및 활용에 동의합니다
+〉
+🎁
+프로모션
+💬
+카톡 상담
+[:::]
+상담 신청
+
+──── [3] coverage_raw.txt (커버리지 검증 로그) ────
+{
+  "missing_equipments": [],
+  "missing_treatments": [
+    "옥시크라이오"
+  ],
+  "missing_doctors": [],
+  "missing_prices": [],
+  "coverage_score": {
+    "equipment": 100,
+    "treatment": 97,
+    "doctor": 100,
+    "overall": 99
+  },
+  "issues": [
+    "추출된 '장비' 목록에 'Tune Confier'가 포함되어 있으나, 이는 '시술'로 분류되는 것이 더 적절해 보입니다. (실제 '시술' 목록에도 '튠 콩피에르®'로 존재)",
+    "추출된 '시술' 목록에 '리프팅리프팅', '리프팅\\n\\n정밀 분석부터 결과까지, 당신에게 꼭 맞는 리프팅.', 'EXCLUSIVE\\n\\n오직 엠레드에서만 가능한 독자적 리프팅 프로그램.', '청담 피부 클리닉 의사가 추천하는 인생 리프팅 딱 하나\\n\\n지금 시청하기', '튠페이스 리프팅, 이 영상 하나만 보시면 됩니다\\n\\n지금 시청하기'와 같이 시술명이 아닌 카테고리명, 설명 문구 또는 영상 제목이 포함되어 있습니다."
+  ]
+}

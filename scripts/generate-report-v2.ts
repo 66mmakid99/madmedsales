@@ -292,8 +292,8 @@ function buildMarkdownReport(input: ReportInput, config: ReportConfig): string {
   // ────────────────────────────
   // 2. 장비 현황
   // ────────────────────────────
-  const devices = analysis.medical_devices.filter(d => d.device_type === 'device');
-  const injectables = analysis.medical_devices.filter(d => d.device_type === 'injectable');
+  const devices = (analysis.medical_devices || []).filter(d => d.device_type === 'device');
+  const injectables = (analysis.medical_devices || []).filter(d => d.device_type === 'injectable');
 
   if (devices.length > 0 || injectables.length > 0) {
     L.push('---');
@@ -369,15 +369,15 @@ function buildMarkdownReport(input: ReportInput, config: ReportConfig): string {
   // ────────────────────────────
   // 3. 시술 메뉴
   // ────────────────────────────
-  if (analysis.treatments.length > 0) {
+  if ((analysis.treatments || []).length > 0) {
     L.push('---');
     L.push('');
     L.push('## 3. 시술 메뉴');
     L.push('');
 
     // 가격 있는 시술 먼저
-    const priced = analysis.treatments.filter(t => t.regular_price || t.event_price);
-    const unpriced = analysis.treatments.filter(t => !t.regular_price && !t.event_price);
+    const priced = (analysis.treatments || []).filter(t => t.regular_price || t.event_price);
+    const unpriced = (analysis.treatments || []).filter(t => !t.regular_price && !t.event_price);
 
     if (priced.length > 0) {
       L.push(`### 가격 공개 시술 (${priced.length}건)`);
@@ -409,7 +409,7 @@ function buildMarkdownReport(input: ReportInput, config: ReportConfig): string {
 
     // 리프팅 관련 시술 하이라이트
     const liftingKeywords = ['리프팅', '타이트닝', '써마지', '울쎄라', '슈링크', '더블로', '인모드', '올리지오', '텐쎄라', '온다'];
-    const liftingTreatments = analysis.treatments.filter(t =>
+    const liftingTreatments = (analysis.treatments || []).filter(t =>
       liftingKeywords.some(k => t.name.includes(k))
     );
     if (liftingTreatments.length > 0) {
@@ -426,7 +426,7 @@ function buildMarkdownReport(input: ReportInput, config: ReportConfig): string {
   // ────────────────────────────
   // 4. 의료진
   // ────────────────────────────
-  if (analysis.doctors.length > 0) {
+  if ((analysis.doctors || []).length > 0) {
     L.push('---');
     L.push('');
     L.push('## 4. 의료진');
@@ -443,7 +443,7 @@ function buildMarkdownReport(input: ReportInput, config: ReportConfig): string {
   // ────────────────────────────
   // 5. 이벤트/프로모션
   // ────────────────────────────
-  if (analysis.events.length > 0) {
+  if ((analysis.events || []).length > 0) {
     L.push('---');
     L.push('');
     L.push('## 5. 이벤트/프로모션');

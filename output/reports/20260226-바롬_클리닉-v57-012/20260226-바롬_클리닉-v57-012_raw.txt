@@ -1,0 +1,1802 @@
+═══════════════════════════════════════════════════
+  바롬 클리닉 — 추출 원본 데이터
+═══════════════════════════════════════════════════
+
+──── [1] analysis.json (Gemini 분류 결과) ────
+{
+  "hospital_name": "바롬 클리닉",
+  "doctors": [
+    {
+      "name": "고강영",
+      "title": "대표원장 | 전문의",
+      "specialty": null,
+      "career": [
+        "23년의 임상 경험",
+        "20여년간 강남에서 선택받은 이유",
+        "15년이상 강남역 한 자리에서 꿋꿋하게 자리를 지키며 수많은 환자분들의 동안 뷰티관리를 책임지고 있습니다."
+      ],
+      "education": [
+        "경희대학교 의과대학 졸업"
+      ],
+      "certifications": [
+        "비만 학회 정회원",
+        "비만 치료학회 정회원",
+        "비만 체형의학회 정회원",
+        "대한 태반 임상 연구회 정회원",
+        "ASIA PACIFIC AESTHETIC MEDICINE ASSOCIATION DIRECTOR"
+      ],
+      "confidence": "confirmed"
+    }
+  ],
+  "academic_activities": [],
+  "medical_devices": [
+    {
+      "name": "Sculptra",
+      "korean_name": "스컬트라",
+      "manufacturer": "GALDERMA",
+      "device_type": "injectable",
+      "subcategory": "collagen_stimulator",
+      "description": "poly-L-lactic acid",
+      "source": "image_banner"
+    },
+    {
+      "name": "Ulthera",
+      "korean_name": "울쎄라",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": "DeepSEE™ 초음파 영상 기술로 피부 속 구조를 직접 확인하여 타겟층을 설정합니다. 미국 FDA 승인을 받은 초음파 리프팅 장비입니다.",
+      "source": "text"
+    },
+    {
+      "name": "Thermage FLX",
+      "korean_name": "써마지 FLX",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_TIGHTENING",
+      "description": "고주파 열에너지가 진피층에 작용해 콜라겐의 수축과 재생을 유도하고, 이를 통해 피부 탄력 개선과 타이트닝 효과를 기대할 수 있습니다. 미국 FDA 승인을 받은 고주파 리프팅 장비입니다.",
+      "source": "text"
+    },
+    {
+      "name": "Onda",
+      "korean_name": "온다",
+      "manufacturer": "DEKA",
+      "device_type": "device",
+      "subcategory": "RF_TIGHTENING",
+      "description": "이탈리아 DEKA사에서 개발한 극초단파(Microwave) 기술 기반의 비수술 리프팅 시술입니다. 표피에서의 에너지 손실을 최소화하고, 진피 및 피하층에 에너지를 선택적으로 전달해 피부 타이트닝과 윤곽 개선을 동시에 고려합니다. 극초단파 기술의 특징 (COOLWAVES™).",
+      "source": "text"
+    },
+    {
+      "name": "Shurink Universe",
+      "korean_name": "슈링크 유니버스",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": "고강도 집속 초음파(HIFU) 에너지를 피부 깊은 층까지 전달하여 늘어진 조직을 타이트하게 당기고 콜라겐 생성을 유도하는 비수술 리프팅 시술입니다. 1샷당 약 400개의 열 응고점을 형성해 놓치는 부위 없이 균일하고 정밀한 리프팅 효과를 기대할 수 있습니다. 또한 양방향 에너지 조사 방식으로 시술 시간은 짧게, 통증 부담은 줄인 편안한 리프팅을 제공합니다. 처짐의 핵심 원인인 SMAS 근막층까지 에너지를 정확하게 집속시켜 피부 탄력 개선과 윤곽 타이트닝을 동시에 유도합니다. 두 가지 초음파 모드와 다양한 핸드피스를 활용해 굴곡진 부위까지 세밀하게 시술할 수 있어 더 꼼꼼하고 균형 잡힌 리프팅 결과를 만들어냅니다.",
+      "source": "text"
+    },
+    {
+      "name": "Botox",
+      "korean_name": "보톡스",
+      "manufacturer": "Allergan",
+      "device_type": "injectable",
+      "subcategory": "botox",
+      "description": "보톡스는 근육의 과도한 움직임을 일시적으로 완화해 주름을 개선하고 윤곽 정돈 효과를 기대할 수 있는 시술입니다. 표정 습관이나 근육 발달로 생긴 주름, 특정 부위의 과도한 근육 사용으로 인한 불균형을 조절해 자연스럽고 매끄러운 인상을 목표로 합니다.",
+      "source": "image_page"
+    },
+    {
+      "name": "Rejuran",
+      "korean_name": "리쥬란",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "booster",
+      "description": "리쥬란은 연어에서 추출한 PN(Polynucleotide) 성분을 피부에 직접 전달해 손상된 피부의 재생 환경을 회복시키는 시술입니다. 피부 표면을 일시적으로 채우는 방식이 아니라, 표피와 진피층의 생리적 조건을 개선해 피부 스스로 회복할 수 있는 기반을 만드는 것을 목표로 합니다.",
+      "source": "text"
+    },
+    {
+      "name": "Oligio",
+      "korean_name": "올리지오",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_TIGHTENING",
+      "description": "고주파 기반의 관리",
+      "source": "text"
+    },
+    {
+      "name": "Density",
+      "korean_name": "덴서티",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_TIGHTENING",
+      "description": "고주파 기반의 관리",
+      "source": "text"
+    }
+  ],
+  "treatments": [
+    {
+      "name": "바롬 리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "lifting",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "실리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "thread",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "쁘띠",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "petite",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "뷰티에이징",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "anti-aging",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "여드름/피부 케어",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "skin_care",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "울쎄라 리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "hifu",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "써마지 FLX",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "온다 리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "슈링크 유니버스",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "hifu",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "보톡스",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "botox",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "주름 보톡스",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "botox",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "이마, 미간, 눈가"
+    },
+    {
+      "name": "사각턱 보톡스",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "botox",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "턱"
+    },
+    {
+      "name": "바디 보톡스",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "botox",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "팔뚝, 종아리"
+    },
+    {
+      "name": "리쥬란 힐러",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "skinbooster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "덴서티 리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "올리지오",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "스킨보톡스",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "botox",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "더모톡신",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "botox",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "점제거",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "기미 제거",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "여드름 흉터 관리",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "skin_care",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "모공 관리",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "skin_care",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "얼굴 각질제거",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "skin_care",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "피부건조증 관리",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "skin_care",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "일반 리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "lifting",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "얼굴실리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "thread",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "얼굴"
+    },
+    {
+      "name": "턱여드름",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "skin_care",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "턱"
+    },
+    {
+      "name": "홍조 관리",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "skin_care",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "주름 관리",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "botox",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "침샘보톡스",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "botox",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "사각턱보톡스",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "botox",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "사각턱"
+    }
+  ],
+  "events": [
+    {
+      "title": "바롬의원 홈페이지가 새롭게 오픈했습니다",
+      "type": "기타",
+      "period": "2025-01-09",
+      "discount_info": null,
+      "original_price": null,
+      "event_price": null,
+      "conditions": [],
+      "source": "text"
+    }
+  ],
+  "clinic_categories": [
+    {
+      "name": "바롬 리프팅",
+      "treatments": [
+        "바롬 리프팅",
+        "울쎄라 리프팅",
+        "써마지 FLX",
+        "온다 리프팅",
+        "슈링크 유니버스",
+        "덴서티 리프팅",
+        "올리지오",
+        "일반 리프팅"
+      ]
+    },
+    {
+      "name": "실리프팅",
+      "treatments": [
+        "실리프팅",
+        "얼굴실리프팅"
+      ]
+    },
+    {
+      "name": "쁘띠",
+      "treatments": [
+        "쁘띠",
+        "보톡스",
+        "스킨보톡스",
+        "더모톡신",
+        "침샘보톡스",
+        "사각턱보톡스",
+        "주름 보톡스",
+        "사각턱 보톡스",
+        "바디 보톡스"
+      ]
+    },
+    {
+      "name": "뷰티에이징",
+      "treatments": [
+        "뷰티에이징",
+        "리쥬란 힐러",
+        "피부건조증 관리",
+        "주름 관리"
+      ]
+    },
+    {
+      "name": "여드름/피부 케어",
+      "treatments": [
+        "여드름/피부 케어",
+        "점제거",
+        "기미 제거",
+        "여드름 흉터 관리",
+        "모공 관리",
+        "얼굴 각질제거",
+        "턱여드름",
+        "홍조 관리"
+      ]
+    }
+  ],
+  "contact_info": {
+    "email": [],
+    "phone": [
+      {
+        "number": "02) 594-3644/3645",
+        "type": "CS Center"
+      },
+      {
+        "number": "02-594-3644",
+        "type": "대표"
+      }
+    ],
+    "address": {
+      "full_address": "서울시 서초구 강남대로 415번지 대동빌딩 7층",
+      "sido": "서울시",
+      "sigungu": "서초구"
+    },
+    "kakao_channel": "https://pf.kakao.com/_EmMKl",
+    "naver_booking": "https://map.naver.com/p/search/%EB%B0%94%EB%A1%AC%EC%9D%98%EC%9B%90/place/11864986?placePath=/home?from=map&fromPanelNum=2&timestamp=202511241054&locale=ko&svcName=map_pcv5&searchText=%EB%B0%94%EB%A1%AC%EC%9D%98%EC%9B%90",
+    "naver_place": "https://map.naver.com/p/search/%EB%B0%94%EB%A1%AC%EC%9D%98%EC%9B%90/place/11864986?placePath=/home?from=map&fromPanelNum=2&timestamp=202511241054&locale=ko&svcName=map_pcv5&searchText=%EB%B0%94%EB%A1%AC%EC%9D%98%EC%9B%90",
+    "instagram": null,
+    "facebook": null,
+    "youtube": null,
+    "blog": "https://blog.naver.com/varomgangnam",
+    "website_url": "https://www.varomclinic.co.kr",
+    "operating_hours": {
+      "weekday": "오전 10:30 ~ 오후 07:00",
+      "saturday": "오전 10:00 ~ 오후 04:00 (점심시간 없음)",
+      "sunday": "정기휴무",
+      "lunch_break": "오후 01:00 ~ 오후 02:00"
+    }
+  },
+  "unregistered_equipment": [
+    {
+      "name": "Density",
+      "korean_name": "덴서티",
+      "suggested_category": "RF_TIGHTENING",
+      "source": "text",
+      "reason": "Mentioned in blog posts as a lifting device, compared with Ulthera/Shrink, described as '고주파 기반의 관리'."
+    }
+  ],
+  "unregistered_treatments": [],
+  "raw_price_texts": [],
+  "extraction_summary": {
+    "total_doctors": 1,
+    "total_academic": 0,
+    "total_equipment": 9,
+    "total_devices": 6,
+    "total_injectables": 3,
+    "total_treatments": 31,
+    "total_events": 1,
+    "total_categories": 5,
+    "total_contact_channels": 6,
+    "has_email": false,
+    "has_phone": true,
+    "has_kakao": true,
+    "has_sns": true,
+    "price_available_ratio": "0/31",
+    "unregistered_equipment_count": 1,
+    "unregistered_treatments_count": 0
+  }
+}
+
+──── [2] ocr_raw.json (이미지 OCR 원본) ────
+
+--- page_1_main_capture_0 ---
+VAROM
+병원 소개
+진료 안내
+예약하기
+오시는 길
+커뮤니티
+KR
+보이지 않는 디테일이,
+보이는 변화를 만듭니다.
+N
+네이버 예약
+"피부를 바르게,
+라인을 바르게"
+blog
+네이버 블로그
+바롬
+20여년간 강남에서 선택받은 이유,
+바롬은 디테일의 차이를 결과로 증명해왔기 때문입니다.
+홈페이지 예약
+TALK
+카카오톡
+예약하기
+↗
+↑
+TOP
+INFORMATION
+Jeisys
+Sculptra
+poly-L-lactic acid
+GALDERMA
+니들,
+아직,
+몰라?
+VAROM
+
+--- page_1_main_capture_1 ---
+VAROM
+병원 소개
+진료 안내
+예약하기
+오시는 길
+커뮤니티
+KR
+
+바로가기
+결과의 차이를 만드는
+바롬의 디테일.
+
+바롬은 보이지 않는 피부층까지 정확하게 이해
+하고, 자연스러운 결과를 위해 정교하게 설계
+합니다.
+
+VAROM CLINIC
+바롬 클리닉 소개
+
+N
+네이버 예약
+blog
+네이버 블로그
+홈페이지 예약
+TALK
+카카오톡
+TOP
+
+진료 안내
+바롬은, 바르게 진단하고,
+결과로 이야기합니다.
+
+첨단 장비와 임상 경험을 토대로,
+가장 정확하고 바른 시술만 제안합니다.
+
+--- page_1_main_capture_2 ---
+VAROM
+병원 소개
+진료 안내
+예약하기
+오시는 길
+커뮤니티
+KR
+
+VAROM LIFTING
+23년 경력의 정밀 진단으로 탄력과 라
+인을 바르게 되살리는 바롬의 프리미엄
+리프팅
+살펴보기 →
+
+THREAD LIFTING
+23년의 임상 경험으로 '당기는 힘의 방
+향-깊이-층'을 정교하게 설계하는 바롬
+실리프팅
+살펴보기 →
+
+PETITE
+볼륨-근육-주름의 밸런스를 바르게 조절
+하는 바롬의 정교한 쁘띠 프로그램
+살펴보기 →
+
+N
+네이버 예약
+blog
+네이버 블로그
+홈페이지 예약
+TALK
+카카오톡
+↑
+TOP
+
+"바롬이 여러분께 약속드립니다."
+
+--- page_1_main_capture_3 ---
+VAROM
+병원 소개 진료 안내 예약하기 오시는 길 커뮤니티 KR
+대표원장 | 전문의
+끊임없는 피부 연구와 디테일한 접근은, 바롬이
+지켜온 바른 진료의 철학입니다.
+바롬은, 피부에 대한 깊은 연구와 23년의 임상 경험으로 한 분 한 분께
+확실한 바른 변화를 약속드립니다. 같은 시술이라도 피부는 모두 다
+르게 반응합니다. 바롬은 각자의 피부결과 조직의 흐름을 정밀하게 분
+석해 가장 자연스럽고 오래가는 변화를 만들어냅니다.
+20여년간 사랑받아온 이유,
+바로 이 이유에 있습니다.
+N
+네이버 예약
+blog
+네이버 블로그
+홈페이지 예약
+TALK
+카카오톡
+↑
+TOP
+
+--- page_1_main_capture_4 ---
+VAROM 병원 소개 진료 안내 예약하기 오시는 길 커뮤니티 KR
+주요경력
+• 경희대학교 의과대학 졸업
+• 비만 학회 정회원
+• 비만 치료학회 정회원
+• 비만 체형의학회 정회원
+• 대한 태반 임상 연구회 정회원
+• ASIA PACIFIC AESTHETIC MEDICINE ASSOCIATION DIRECTOR
+N
+네이버 예약
+blog
+네이버 블로그
+홈페이지 예약
+TALK
+카카오톡
+↑
+TOP
+VAROM COMPANY INFO CS Center
+병원이름 바롬 클리닉
+병원주소 서울시 서초구 강남대로
+415번지 대동빌딩 7층
+대표자 고강영
+사업자등록번호 214-13-34981
+02) 594-3644/3645
+월화수목 오전 10:30 ~ 오후 07:00
+금
+토요일 오전 10:00 ~ 오후 04:00 (점심시간 없음)
+일요일 정기휴무
+점심시간 오후 01:00 ~ 오후 02:00
+copyright @ 2007 varom clinic. All rights Reserved
+개인정보처리방침 | 비급여 항목안내
+• 일요일 및 공휴일은 휴진합니다.
+
+--- page_2_other_capture_0 ---
+VAROM
+병원 소개
+진료 안내
+예약하기
+오시는 길
+커뮤니티
+KR
+인사말
+보유장비 소개
+병원 둘러보기
+인사말
+병원소개
+네이버 예약
+네이버 블로그
+홈페이지 예약
+카카오톡
+TOP
+"바롬이 여러분께 드립니다. 약속드립니다."
+고강영
+대표원장 | 전문의
+끊임없는 피부 연구와 디테일한 접근은, 바롬이 지켜온 바른 진료의 철학입니다.
+바롬은, 피부에 대한 깊은 연구와 23년의 임상 경험으로 한 분 한 분께 '확실한 바른 변
+화'를 약속드립니다. 같은 시술이라도 피부는 모두 다르게 반응합니다. 바롬은 각자의 피부
+층과 조직의 흐름을 정밀하게 분석해 가장 자연스럽고 오래가는 변화를 만들어냅니다.
+20여년간 사랑받아온 이유, '바른 기준'바로 이 에 있습니다.
+
+--- page_2_other_capture_1 ---
+VAROM
+병원 소개 진료 안내 예약하기 오시는 길 커뮤니티 KR
+
+주요경력
+경희대학교 의과대학 졸업
+비만 치료학회 정회원
+대한 태반 임상 연구회 정회원
+비만 학회 정회원
+비만 체형의학회 정회원
+ASIA PACIFIC AESTHETIC MEDICINE ASSOCIATION DIRECTOR
+N
+네이버 예약
+blog
+네이버 블로그
+홈페이지 예약
+TALK
+카카오톡
+↑
+TOP
+"바르고 올바른 진료"
+바롬피부과는 환자 중심의 정직한 진료를 약속합니다. 과잉 진료 없이 꼭 필요한 치료만을 권해드리며, 최신
+장비와 검증된 시술로 최상의 결과를 제공해 드리겠습니다.
+
+VAROM
+COMPANY INFO
+병원이름 바롬 클리닉
+병원주소 서울시 서초구 강남대로
+415번지 대동빌딩 7층
+대표자 고강영
+CS Center
+02) 594-3644/3645
+월화수목 오전 10:30 ~ 오후 07:00
+금
+
+--- page_2_other_capture_2 ---
+VAROM
+병원 소개 진료 안내 예약하기 오시는 길 커뮤니티 KR
+비만 치료학회 정회원
+비만 체형의학회 정회원
+대한 태반 임상 연구회 정회원
+ASIA PACIFIC AESTHETIC MEDICINE ASSOCIATION DIRECTOR
+
+"바르고 올바른 진료"
+바롬피부과는 환자 중심의 정직한 진료를 약속합니다. 과잉 진료 없이 꼭 필요한 치료만을 권해드리며, 최신
+장비와 검증된 시술로 최상의 결과를 제공해 드리겠습니다.
+
+N
+네이버 예약
+blog
+네이버 블로그
+홈페이지 예약
+TALK
+카카오톡
+↑
+TOP
+VAROM
+COMPANY INFO
+CS Center
+병원이름 바롬 클리닉
+병원주소 서울시 서초구 강남대로
+415번지 대동빌딩 7층
+대표자 고강영
+사업자등록번호 214-13-34981
+02) 594-3644/3645
+월화수목 오전 10:30 ~ 오후 07:00
+금
+토요일 오전 10:00 ~ 오후 04:00 (점심시간 없음)
+일요일 정기휴무
+점심시간 오후 01:00 ~ 오후 02:00
+copyright @ 2007 varom clinic. All rights Reserved
+개인정보처리방침 | 비급여 항목안내
+일요일 및 공휴일은 휴진합니다.
+
+--- page_3_other_capture_0 ---
+VAROM
+병원 소개
+진료 안내
+예약하기
+오시는 길
+커뮤니티
+KR
+
+바롬 리프팅
+VAROM LIFTING
+
+리프팅
+실리프팅
+쁘띠
+뷰티에이징
+피부
+
+네이버 예약
+blog
+네이버 블로그
+홈페이지 예약
+TALK
+카카오톡
+↑
+TOP
+
+VAROM LIFTING
+바롬 리프팅
+
+23년 경력의 정밀 진단으로 탄력과 라인을 바르게 되살리는 바롬의 프리미엄 리프팅
+
+프로그램 특징
+
+01
+23년 노하우로 피부층·
+근막까지 정밀 분석
+
+02
+다양한 프리미엄 리프팅
+장비 보유
+
+03
+개인별 처짐 패턴에 맞춘
+맞춤 시술 설계
+
+04
+당기지 않고 자연스럽게
+리프팅되는 기술력
+
+05
+시술 후에도 표정이
+자연스러운 결과
+
+울쎄라 리프팅
+
+--- page_3_other_capture_1 ---
+VAROM
+병원 소개 진료 안내 예약하기 오시는 길 커뮤니티 KR
+
+리프팅 실리프팅 쁘띠 뷰티에이징 피부
+
+보이는 맞춤 시술
+DeepSEE™ 초음파 영상 기술로 피부 속
+구조를 직접 확인하여 타겟층을 설정합니다.
+
+개인별 깊이 선택
+1.5mm · 3.0mm · 4.5mm
+피부 상태에 따라 적용합니다.
+
+정밀한 에너지 전달
+설정된 깊이에 맞춰 에너지가
+균일하게 전달되도록 조절합니다.
+
+검증된 장비
+미국 FDA 승인을 받은
+초음파 리프팅 장비입니다.
+
+VAROM CLINIC
+
+네이버 예약
+blog
+네이버 블로그
+홈페이지 예약
+TALK
+카카오톡
+↑
+TOP
+
+VAROM CLINIC
+바롬의원 울쎄라, 1:1 맞춤 설계
+
+바롬의원에서는 울쎄라 시술을 모든 얼굴에
+동일하게 적용하지 않습니다.
+
+피부 두께, 처짐이 시작되는 깊이, 탄력 저하의
+범위와 양상을 개별적으로 분석한 뒤 각 얼굴에
+맞는 시술 깊이와 범위를 1:1로 설계합니다.
+
+--- page_3_other_capture_2 ---
+VAROM
+병원 소개
+진료 안내
+예약하기
+오시는 길
+커뮤니티
+KR
+
+리프팅
+실리프팅
+쁘띠
+뷰티에이징
+피부
+
+고주파 열에너지가 진피층에 작용해 콜라겐의 수축과 재생을 유도하고,
+이를 통해 피부 탄력 개선과 타이트닝 효과를 기대할 수 있습니다.
+
+정확한 고주파 에너지 전달
+고주파 열에너지를 피부
+진피층에 정교하게 전달해
+콜라겐 반응을 유도합니다.
+
+업그레이드된 통증 완화 기술
+이전 세대 대비 개선된 시스템으로
+시술 중 불편감을 줄이고 보다
+안정적인 시술 환경을 제공합니다.
+
+균일한 에너지 컨트롤
+에너지가 일정하게 전달되어
+부위별 편차를 줄이고 일관된
+타이트닝 효과를 목표로 합니다.
+
+다기능 안티에이징 효과
+피부 탄력 저하, 잔주름,
+피부 결 흐트러짐 개선을
+함께 고려합니다.
+
+검증된 장비
+미국 FDA 승인을 받은
+고주파 리프팅 장비입니다.
+
+VAROM CLINIC
+
+VAROM CLINIC
+바롬의원 써마지 FLX,
+개인별 타이트닝 설계
+
+바롬의원에서는 써마지 FLX 시술을 정해진
+출력이나 동일한 방식으로 적용하지 않습니다.
+
+피부 두께, 탄력 저하 정도, 부위별 피부 특성과
+반응도를 고려해 개인의 피부 상태에 맞는
+
+N
+네이버 예약
+blog
+네이버 블로그
+홈페이지 예약
+TALK
+카카오톡
+↑
+TOP
+
+--- page_3_other_capture_3 ---
+VAROM
+병원 소개 진료 안내 예약하기 오시는 길 커뮤니티 KR
+리프팅 실리프팅 쁘띠 뷰티에이징 피부
+온다 리프팅
+온다는 이탈리아 DEKA사에서 개발한 극초단파(Microwave)
+기술 기반의 비수술 리프팅 시술입니다.
+표피에서의 에너지 손실을 최소화하고, 진피 및 피하층에 에너지를
+선택적으로 전달해 피부 타이트닝과 윤곽 개선을 동시에 고려합니다.
+N
+네이버 예약
+blog
+네이버 블로그
+홈페이지 예약
+TALK
+카카오톡
+↑
+TOP
+깊이에 따른 맞춤 핸드피스 적용
+3mm 핸드피스
+ㆍ진피층 중심의 콜라겐 반응 유도
+ㆍ피부 탄력 및 타이트닝 개선
+7mm 핸드피스
+ㆍ깊은 피하 조직 타겟
+ㆍ이중턱, 심부볼 등 윤곽 정돈 고려
+선택적 에너지 전달
+극초단파 에너지를 필요한
+부위에만 전달해 불필요한
+에너지 확산을 줄입니다.
+피부 손상 부담 최소화
+표피 과열을 최소화하는 구조로
+피부 자극과 부담을 줄인 시술을
+목표로 합니다.
+안정적인 온도 컨트롤
+지속적인 쿨링과 센서 시스템을
+통해 시술 중 피부 상태를
+안정적으로 관리합니다.
+VAROM CLINIC
+VAROM CLINIC
+극초단파 기술의 특징
+(COOLWAVES™)
+온다는 기존 고주파(RF)나 초음파(HIFU)와
+다른 극초단파(COOLWAVES™) 에너지를 사용합니다.
+
+--- page_3_other_capture_4 ---
+VAROM
+병원 소개 진료 안내 예약하기 오시는 길 커뮤니티 KR
+리프팅 실리프팅 쁘띠 뷰티에이징 피부
+
+VAROM CLINIC
+바롬의원 온다,
+개인별 컨투어링 설계
+
+바롬의원에서는 온다 시술을
+일률적인 방식으로 적용하지 않습니다.
+
+피부 두께, 지방 분포, 타이트닝이 필요한
+깊이와 부위를 분석한 뒤 개인의 얼굴 윤곽에
+맞춰 시술 범위와 깊이를 설계합니다.
+
+N
+네이버 예약
+blog
+네이버 블로그
+홈페이지 예약
+TALK
+카카오톡
+↑
+TOP
+슈링크 유니버스
+슈링크 유니버스는 고강도 집속 초음파(HIFU) 에너지를 피부
+깊은 층까지 전달하여 늘어진 조직을 타이트하게 당기고 콜라겐
+생성을 유도하는 비수술 리프팅 시술입니다.
+1샷당 약 400개의 열 응고점을 형성해 놓치는 부위 없이 균일하고
+정밀한 리프팅 효과를 기대할 수 있습니다. 또한 양방향 에너지 조사
+방식으로 시술 시간은 짧게, 통증 부담은 줄인 편안한 리프팅을 제공
+합니다.
+
+--- page_3_other_capture_5 ---
+VAROM
+병원 소개
+진료 안내
+예약하기
+오시는 길
+커뮤니티
+KR
+
+리프팅
+실리프팅
+쁘띠
+뷰티에이징
+피부
+
+VAROM CLINIC
+
+VAROM CLINIC
+더욱 정교해진 2세대 리프팅 솔루션
+
+슈링크 유니버스는 처짐의 핵심 원인인
+SMAS 근막층까지 에너지를 정확하게 집속시켜
+피부 탄력 개선과 윤곽 타이트닝을 동시에 유도합니다.
+
+두 가지 초음파 모드와 다양한 핸드피스를 활용해
+굴곡진 부위까지 세밀하게 시술할 수 있어
+더 꼼꼼하고 균형 잡힌 리프팅 결과를 만들어냅니다.
+
+N
+네이버 예약
+blog
+네이버 블로그
+
+홈페이지 예약
+TALK
+카카오톡
+↑
+TOP
+
+예약하기 >
+
+VAROM
+COMPANY INFO
+병원 이름 바롬 클리닉
+병원주소 서울시 서초구 강남대로
+CS Center
+02) 594-3644/3645
+
+--- page_3_other_capture_6 ---
+VAROM
+병원 소개 진료 안내 예약하기 오시는 길 커뮤니티 KR
+
+리프팅
+슈링크 유니버스는 저심의 핵심 원인인
+SMAS 근막층까지 에너지를 정확하게 접속시켜
+피부 탄력 개선과 윤곽 타이트닝을 동시에 유도합니다.
+
+두 가지 초음파 모드와 다양한 핸드피스를 활용해
+굴곡진 부위까지 세밀하게 시술할 수 있어
+더 꼼꼼하고 균형 잡힌 리프팅 결과를 만들어냅니다.
+
+리프팅 실리프팅 쁘띠 뷰티에이징 피부
+
+예약하기 >
+
+N
+네이버 예약
+blog
+네이버 블로그
+홈페이지 예약
+TALK
+카카오톡
+↑
+TOP
+
+VAROM
+COMPANY INFO
+병원이름 바롬 클리닉
+병원주소 서울시 서초구 강남대로
+415번지 대동빌딩 7층
+대표자 고강영
+사업자등록번호 214-13-34981
+copyright @ 2007 varom clinic. All rights Reserved
+개인정보처리방침 | 비급여 항목안내
+CS Center
+02) 594-3644/3645
+월화수목 오전 10:30 ~ 오후 07:00
+금
+토요일 오전 10:00 ~ 오후 04:00 (점심시간 없음)
+일요일 정기휴무
+점심시간 오후 01:00 ~ 오후 02:00
+일요일 및 공휴일은 휴진합니다.
+
+--- page_4_other_capture_0 ---
+VAROM
+병원 소개
+진료 안내
+예약하기
+오시는 길
+커뮤니티
+KR
+
+커뮤니티
+바롬피부과의 다양한 소식을 만나보세요
+
+전체보기
+바롬 소식
+피부 정보
+이벤트
+공지사항
+
+네이버 예약
+네이버 블로그
+홈페이지 예약
+카카오톡
+TOP
+
+네이버
+VAROM
+피부 정보
+올리지오 슈링크
+통증 부담 줄이는
+체크 5가지!
+안녕하세요. 강남바롬의원 원장 고강영입니다. 리프
+팅을 고민하시는 분들이 가장 많이 망설이는 지점...
+바롬피부과
+2026년 2월 26일
+
+네이버
+VAROM
+피부 정보
+덴서티 클래식
+VS
+덴서티 하이
+무슨 차이일까?
+덴서티 클래식 vs 덴서티 하이, 비교
+하고 결정하세요
+안녕하세요. 강남바롬의원 원장 고강영입니다. 리프
+팅을 고민하시는 분들이 상담실에서 가장 먼저 물...
+바롬피부과
+2026년 2월 25일
+
+네이버
+VAROM
+피부 정보
+울쎄라 vs 써마지
+통증 차이부터
+정리하세요
+울쎄라 vs 써마지 통증 차이부터 정
+리하세요
+안녕하세요. 강남바롬의원 원장 고강영입니다. 리프
+팅을 고민하시는 분들이 상담실에서 가장 먼저 물...
+바롬피부과
+2026년 2월 23일
+
+--- page_4_other_capture_1 ---
+VAROM
+병원 소개
+진료 안내
+예약하기
+오시는 길
+커뮤니티
+KR
+
+덴서티 리프팅 전후
+놓치면 아쉬운
+5가지 총정리!
+사각턱보톡스
+볼패임이
+걱정될 때
+체크할 3가지
+침샘보톡스
+VS
+사각턱보톡스,
+내 얼굴형에
+맞는 선택법!
+N
+네이버 예약
+강남덴서티 리프팅 전후, 놓치면 아
+쉬운 5가지
+강남사각턱보톡스 볼패임이 걱정될
+때 체크할 3가지
+침샘보톡스 vs 사각턱보톡스, 내 얼
+굴형에 맞는 선택법
+blog
+네이버 블로그
+안녕하세요. 강남바롬의원 원장 고강영입니다. 리프
+팅을 고민하시는 분들 중에는 "탄력은 떨어진 것 ...
+안녕하세요. 강남바롬의원 원장 고강영입니다. 사각
+턱 때문에 얼굴이 각져 보이거나 사진에서 하관이...
+안녕하세요. 강남바롬의원 원장 고강영입니다. 거울
+을 볼 때마다 하관이 묵직해 보이거나 사진에서 얼...
+홈페이지 예약
+바롬피부과
+2026년 2월 20일
+바롬피부과
+2026년 2월 19일
+바롬피부과
+2026년 2월 13일
+TALK
+카카오톡
+↑
+TOP
+
+--- page_4_other_capture_2 ---
+VAROM
+병원 소개 진료 안내 예약하기 오시는 길 커뮤니티 KR
+
+N
+네이버 예약
+blog
+네이버 블로그
+홈페이지 예약
+TALK
+카카오톡
+↑
+TOP
+
+--- page_4_other_capture_3 ---
+VAROM 병원 소개 진료 안내 예약하기 오시는 길 커뮤니티 KR
+
+네이버 예약
+네이버 블로그
+홈페이지 예약
+카카오톡
+TOP
+
+--- page_4_other_capture_4 ---
+VAROM
+병원 소개
+진료 안내
+예약하기
+오시는 길
+커뮤니티
+KR
+
+N
+네이버 예약
+
+blog
+네이버 블로그
+
+홈페이지 예약
+
+TALK
+카카오톡
+
+↑
+TOP
+
+--- page_4_other_capture_5 ---
+VAROM
+병원 소개 진료 안내 예약하기 오시는 길 커뮤니티 KR
+
+N
+네이버 예약
+blog
+네이버 블로그
+홈페이지 예약
+TALK
+카카오톡
+↑
+TOP
+
+--- page_4_other_capture_6 ---
+VAROM 병원 소개 진료 안내 예약하기 오시는 길 커뮤니티 KR
+
+네이버 예약
+네이버 블로그
+홈페이지 예약
+카카오톡
+TOP
+
+VAROM COMPANY INFO CS Center
+병원이름 바롬 클리닉 02) 594-3644/3645
+병원주소 서울시 서초구 강남대로
+415번지 대동빌딩 7층 월화수목 오전 10:30 ~ 오후 07:00
+대표자 고강영 금
+사업자등록번호 214-13-34981 토요일 오전 10:00 ~ 오후 04:00 (점심시간 없음)
+일요일 정기휴무
+copyright @ 2007 varom clinic. All rights Reserved 점심시간 오후 01:00 ~ 오후 02:00
+
+개인정보처리방침 | 비급여 항목안내 • 일요일 및 공휴일은 휴진합니다.
+
+--- page_5_other_capture_0 ---
+VAROM
+병원 소개
+진료 안내
+예약하기
+오시는 길
+커뮤니티
+KR
+
+바롬 리프팅
+VAROM LIFTING
+
+리프팅
+실리프팅
+쁘띠
+뷰티에이징
+피부
+
+N
+네이버 예약
+
+blog
+네이버 블로그
+
+홈페이지 예약
+
+TALK
+카카오톡
+
+↑
+TOP
+
+VAROM LIFTING
+바롬 리프팅
+
+23년 경력의 정밀 진단으로 탄력과 라인을 바르게 되살리는 바롬의 프리미엄 리프팅
+
+프로그램 특징
+
+01
+23년 노하우로 피부층·
+근막까지 정밀 분석
+
+02
+다양한 프리미엄 리프팅
+장비 보유
+
+03
+개인별 처짐 패턴에 맞춘
+맞춤 시술 설계
+
+04
+당기지 않고 자연스럽게
+리프팅되는 기술력
+
+05
+시술 후에도 표정이
+자연스러운 결과
+
+예약하기 >
+
+--- page_5_other_capture_1 ---
+VAROM
+병원 소개 진료 안내 예약하기 오시는 길 커뮤니티 KR
+
+리프팅 실리프팅 쁘띠 뷰티에이징 피부
+
+프로그램 특징
+
+01
+23년 노하우로 피부층·
+근막까지 정밀 분석
+
+02
+다양한 프리미엄 리프팅
+장비 보유
+
+03
+개인별 처짐 패턴에 맞춘
+맞춤 시술 설계
+
+04
+당기지 않고 자연스럽게
+리프팅되는 기술력
+
+05
+시술 후에도 표정이
+자연스러운 결과
+
+예약하기 >
+
+N
+네이버 예약
+
+blog
+네이버 블로그
+
+홈페이지 예약
+
+TALK
+카카오톡
+
+↑
+TOP
+
+VAROM
+COMPANY INFO
+병원 이름 바롬 클리닉
+병원주소 서울시 서초구 강남대로
+415번지 대동빌딩 7층
+대표자 고강영
+사업자등록번호 214-13-34981
+copyright @ 2007 varom clinic. All rights Reserved
+개인정보처리방침 | 비급여 항목안내
+CS Center
+02) 594-3644/3645
+월화수목 오전 10:30 ~ 오후 07:00
+금
+토요일 오전 10:00 ~ 오후 04:00 (점심시간 없음)
+일요일 정기휴무
+점심시간 오후 01:00 ~ 오후 02:00
+· 일요일 및 공휴일은 휴진합니다.
+
+──── [3] coverage_raw.txt (커버리지 검증 로그) ────
+{
+  "missing_equipments": [],
+  "missing_treatments": [],
+  "missing_doctors": [],
+  "missing_prices": [],
+  "coverage_score": {
+    "equipment": 100,
+    "treatment": 100,
+    "doctor": 100,
+    "overall": 100
+  },
+  "issues": [
+    "추출 결과에 원본 마크다운에 명시되지 않은 장비(Sculptra, Oligio, Density) 및 시술(울쎄라 리프팅, 써마지 FLX, 온다 리프팅, 슈링크 유니버스, 보톡스, 주름 보톡스, 사각턱 보톡스, 바디 보톡스, 리쥬란 힐러, 덴서티 리프팅, 올리지오, 스킨보톡스, 더모톡신, 점제거, 기미 제거, 여드름 흉터 관리, 모공 관리, 얼굴 각질제거, 피부건조증 관리, 일반 리프팅, 얼굴실리프팅, 턱여드름, 홍조 관리, 주름 관리, 침샘보톡스)이 포함되어 있습니다. 이는 다른 페이지에서 추출된 것으로 보이며, 원본 마크다운에서 누락된 항목은 없습니다."
+  ]
+}

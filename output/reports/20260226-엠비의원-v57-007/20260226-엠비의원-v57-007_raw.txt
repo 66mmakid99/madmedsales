@@ -1,0 +1,732 @@
+═══════════════════════════════════════════════════
+  엠비의원 — 추출 원본 데이터
+═══════════════════════════════════════════════════
+
+──── [1] analysis.json (Gemini 분류 결과) ────
+{
+  "hospital_name": "엠비의원",
+  "doctors": [
+    {
+      "name": "기문상",
+      "title": "원장",
+      "specialty": "비만, 탈모&모발이식",
+      "career": [
+        "21년간 비만, 탈모 및 모발이식 분야 진료 및 연구"
+      ],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    }
+  ],
+  "academic_activities": [
+    {
+      "type": "기타",
+      "title": "대한미용성형레이저의학회 제 4대 회장역임",
+      "year": null,
+      "doctor_name": "기문상",
+      "source_text": "대한미용성형레이저의학회 제 4대 회장역임"
+    },
+    {
+      "type": "학회발표",
+      "title": "대한비만연구의사회 비만정보학술강연",
+      "year": null,
+      "doctor_name": "기문상",
+      "source_text": "대한비만연구의사회 비만정보학술강연"
+    },
+    {
+      "type": "기타",
+      "title": "대한레이저피부모발학회 학술고문",
+      "year": null,
+      "doctor_name": "기문상",
+      "source_text": "대한레이저피부모발학회 학술고문"
+    },
+    {
+      "type": "교과서집필",
+      "title": "대한레이저피부모발학회에서 '모발학' 탈모책 편찬",
+      "year": null,
+      "doctor_name": "기문상",
+      "source_text": "[책 편찬] 대한레이저피부모발학회에서 '모발학' 탈모책 편찬"
+    },
+    {
+      "type": "학회발표",
+      "title": "ASLS와 ICAP 학술대회 참가 및 강연",
+      "year": 2025,
+      "doctor_name": "기문상",
+      "source_text": "2025 ASLS와 ICAP 학술대회 참가 및 강연"
+    },
+    {
+      "type": "학회발표",
+      "title": "ASLS TOKYO 학술대회",
+      "year": 2025,
+      "doctor_name": "기문상",
+      "source_text": "2025 ASLS TOKYO 학술대회"
+    },
+    {
+      "type": "학회발표",
+      "title": "안산시의사회 춘계학술대회",
+      "year": 2025,
+      "doctor_name": "기문상",
+      "source_text": "2025 안산시의사회 춘계학술대회"
+    },
+    {
+      "type": "학회발표",
+      "title": "대한미용성형레이저의학회 미용의료기기 박람회 및 춘계학술대회",
+      "year": 2025,
+      "doctor_name": "기문상",
+      "source_text": "2025년 [학회강연]2025 대한미용성형레이저의학회 미용의료기기 박람회 및 춘계학술대회"
+    },
+    {
+      "type": "학회발표",
+      "title": "K-Med Expo Vietnam 2024 제2회 베트남 의료기기 박람회",
+      "year": 2024,
+      "doctor_name": "기문상",
+      "source_text": "2024년 [학회강연] K-Med Expo Vietnam 2024 제2회 베트남 의료기기 박람회"
+    },
+    {
+      "type": "학회발표",
+      "title": "AFAS 아시아국제미용의학포럼 제20회 한국미용외과의학회 학술대회",
+      "year": 2024,
+      "doctor_name": "기문상",
+      "source_text": "2024년 AFAS 아시아국제미용의학포럼 제20회 한국미용외과의학회 학술대회"
+    }
+  ],
+  "medical_devices": [],
+  "treatments": [
+    {
+      "name": "윤곽조각주사",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "other",
+      "price_display": "상담필요",
+      "session_info": null,
+      "body_part": "V라인 얼굴, 볼살"
+    },
+    {
+      "name": "NB 여드름 실속 패키지",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": true,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "other",
+      "price_display": "상담필요",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "NB 반영구 두피문신 EVENT",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "scalp_tattoo",
+      "price_display": "상담필요",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "탈모 치료",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "hair_loss",
+      "price_display": "상담필요",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "모발이식",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "hair_loss",
+      "price_display": "상담필요",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "두피문신",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "scalp_tattoo",
+      "price_display": "상담필요",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "색소 치료",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "pigmentation",
+      "price_display": "상담필요",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "주름 치료",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "wrinkle_treatment",
+      "price_display": "상담필요",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "흉터 치료",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "scar_treatment",
+      "price_display": "상담필요",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "lifting",
+      "price_display": "상담필요",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "스킨부스터",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "skinbooster",
+      "price_display": "상담필요",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "맞춤 체형 시술",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "body_shaping",
+      "price_display": "상담필요",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "G팡 DIET",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "obesity",
+      "price_display": "상담필요",
+      "session_info": null,
+      "body_part": null
+    }
+  ],
+  "events": [
+    {
+      "title": "3월 휴진 안내",
+      "type": "기타",
+      "period": "3월 2일 (월)",
+      "discount_info": "대체공휴일 휴진",
+      "original_price": null,
+      "event_price": null,
+      "conditions": [],
+      "source": "screenshot"
+    },
+    {
+      "title": "NB 여드름 실속 패키지",
+      "type": "패키지",
+      "period": null,
+      "discount_info": null,
+      "original_price": null,
+      "event_price": null,
+      "conditions": [],
+      "source": "screenshot"
+    },
+    {
+      "title": "NB 반영구 두피문신 EVENT",
+      "type": "기타",
+      "period": null,
+      "discount_info": null,
+      "original_price": null,
+      "event_price": null,
+      "conditions": [],
+      "source": "screenshot"
+    }
+  ],
+  "clinic_categories": [
+    {
+      "name": "탈모 클리닉",
+      "treatments": [
+        "탈모 치료",
+        "모발이식",
+        "두피문신"
+      ]
+    },
+    {
+      "name": "피부 클리닉",
+      "treatments": [
+        "색소 치료",
+        "주름 치료",
+        "흉터 치료",
+        "리프팅",
+        "스킨부스터"
+      ]
+    },
+    {
+      "name": "비만 클리닉",
+      "treatments": [
+        "맞춤 체형 시술",
+        "G팡 DIET"
+      ]
+    }
+  ],
+  "contact_info": {
+    "email": [],
+    "phone": [
+      {
+        "number": "031-485-7550",
+        "type": "대표"
+      },
+      {
+        "number": "031-485-7550",
+        "type": "상담",
+        "description": "비만클리닉"
+      },
+      {
+        "number": "031-485-7570",
+        "type": "상담",
+        "description": "탈모.모발이식"
+      }
+    ],
+    "address": {
+      "full_address": "경기도 안산시 단원구 고잔로 76 영풍빌딩 2층",
+      "sido": "경기도",
+      "sigungu": "안산시 단원구"
+    },
+    "kakao_channel": "nbclinic7550",
+    "naver_booking": null,
+    "naver_place": null,
+    "instagram": null,
+    "facebook": null,
+    "youtube": "https://www.youtube.com/channel/UCdfR-lwsCdvllhlrDPhTYzA",
+    "blog": null,
+    "website_url": "http://talmostop.com",
+    "operating_hours": {
+      "weekday": "AM 10:00 ~ PM 07:00",
+      "saturday": "AM 10:00 ~ PM 02:00",
+      "sunday": "휴무",
+      "lunch_break": "PM 01:00 ~ PM 02:00 (토요일 제외)"
+    }
+  },
+  "unregistered_equipment": [],
+  "unregistered_treatments": [
+    {
+      "name": "윤곽조각주사",
+      "source": "screenshot",
+      "context": "작고 가름한 V라인 얼굴 윤곽조각주사"
+    },
+    {
+      "name": "NB 여드름 실속 패키지",
+      "source": "screenshot",
+      "context": "NB 여드름 실속 패키지"
+    },
+    {
+      "name": "NB 반영구 두피문신 EVENT",
+      "source": "screenshot",
+      "context": "NB 반영구 두피문신 EVENT"
+    },
+    {
+      "name": "G팡 DIET",
+      "source": "text",
+      "context": "G팡 DIET"
+    }
+  ],
+  "raw_price_texts": [],
+  "extraction_summary": {
+    "total_doctors": 1,
+    "total_academic": 10,
+    "total_equipment": 0,
+    "total_devices": 0,
+    "total_injectables": 0,
+    "total_treatments": 13,
+    "total_events": 3,
+    "total_categories": 3,
+    "total_contact_channels": 6,
+    "has_email": false,
+    "has_phone": true,
+    "has_kakao": true,
+    "has_sns": true,
+    "price_available_ratio": "0/13",
+    "unregistered_equipment_count": 0,
+    "unregistered_treatments_count": 4
+  }
+}
+
+──── [2] ocr_raw.json (이미지 OCR 원본) ────
+
+--- page_0_main_capture_0 ---
+카카오톡
+블로그
+인스타그램
+페이스북
+유튜브
+NB의원
+3월 휴진 안내
+2일 (월)
+대체공휴일
+휴진
+진료 및 내원에 착오 없으시길 바랍니다.
+작고 가름한 V라인 얼굴
+윤곽조각주사
+불필요한 두툼한 볼살의 지방을
+파괴함과 동시에 피부탄력 개선과
+얼굴라인의 밸런스를 매끄럽게 개선
+NB의원
+3월 진료안내
+학술대회
+윤곽조각주사
+스킨부스터
+닫기
+24시간 동안 열람하지 않습니다.
+Hair Loss Clinic
+탈모 클리닉
+보이는 증상부터
+보이지 않는 원인까지!
+Skin Clinic
+피부 클리닉
+색소, 주름, 흉터, 리프팅, 스킨부스터 등
+안전하고 효과적인 맞춤 치료로 개선
+Obesity Clinic
+비만 클리닉
+맞춤 체형 시술로
+건강하고 탄력 있는 바디라인
+현재 진행중인
+PROMOTION
+NB 여드름
+
+--- page_0_main_capture_1 ---
+카카오톡
+b
+블로그
+인스타그램
+f
+페이스북
+유튜브
+
+NB 반영구
+두피문신 EVENT
+매일 모자나 가발로 탈모를 가리시는 분!
+매일 아침 흑채로 두피를 커버하시는 분!
+
+실속 패키지
+NB 의원
+
+NB 반영구
+두피문신 EVENT
+매일 모자나 가발로 탈모를 가리시는 분!
+매일 아침 흑채로 두피를 커버하시는 분!
+
+NB 여드름 실속 패키지
++ more
+
+엠비의원 TV
+엠비의원
+기문상 원장님의 탈모와 다이어트 이야기
+엠비의원 TV채널 바로가기 >
+
+YouTube
+우리가 하고 있는
+다이어트
+제대로 하고 있는 것이 맞을까?
+다이어트, 다시 말하다
+[엠비의원] 다이
+어트에게 꼭 말하
+고 싶은게 있어요...
+조회수 3.9만회
+
+엠비의원의 이유 있는 자신감
+꾸준한 노력과 연구 경험
+Natural beauty
+
+엠비의원의 믿을 수 있는 결과. 그 이유.
+
+--- page_0_main_capture_2 ---
+카카오톡
+블로그
+인스타그램
+페이스북
+유튜브
+엔비의원 기문상 원장은
+끊임없는 연구와 활동을 통해 우수한 비만, 탈모&모발이식 결과가 나올 수 있도록
+"책임감을 가지고 21년간 꾸준히 걸어왔습니다."
+대한미용성형레이저의학회
+제 4대 회장역임
+대한비만연구의사회
+비만정보학술강연
+대한레이저피부모발학회
+학술고문
+
+2025 ASLS와 ICAP 학술대회
+참가 및 강연
+2025 ASLS TOKYO 학술대회
+2025 안산시의사회 춘계학술
+대회
+[책 편찬] 대한레이저피부모발
+학회에서 '모발학' 탈모책 편찬
+2025년
+[학회강연]2025 대한미용성형
+레이저의학회 미용의료기기 ...
+
+진료시간
+월 수 금 AM 10:00 ~ PM 07:00
+화 목 AM 10:00 ~ PM 07:00
+토 요 일 AM 10:00 ~ PM 02:00
+점심시간 PM 01:00 ~ PM 02:00
+※ 토요일은 점심시간없이 2시까지 진료
+※ 일요일, 공휴일 휴무입니다.
+※ 진료시간 및 점심시간 1시간 전까지 접수 가능하며
+이후에는 마감됩니다.
+오시는길 경기 안산시 단원구 고잔로 76 영풍프라자 2층
+3국산업은행
+프라움시티
+오피스텔
+엔비의원
+국민연금공단
+안산외국인상담센터
+아웃백
+고든병원
+에이스병원
+하나은행
+메가박스
+롯데백화점
+웨딩&컨벤션
+롯데시네마
+안산점
+왕소금구이
+안산중앙역
+카카오톡 상담
+TALK ID : nbclinic7550
+대표전화
+비만클리닉 031.485.7550
+탈모.모발이식 031.485.7570
+
+--- page_0_main_capture_3 ---
+카카오톡
+b
+블로그
+O
+인스타그램
+f
+페이스북
+유튜브
+2025 ASLS와 ICAP 학술대회
+참가 및 강연
+
+2025 ASLS TOKYO 학술대회
+
+2025 안산시의사회 춘계학술
+대회
+
+[책 편찬] 대한레이저피부모발
+학회에서 '모발학' 탈모책 편찬
+
+2025년
+[학회강연]2025 대한미용성형
+레이저의학회 의료기기 …
+
+진료시간
+월 수 금 AM 10:00 ~ PM 07:00
+화 목 AM 10:00 ~ PM 07:00
+토 요 일 AM 10:00 ~ PM 02:00
+점심시간 PM 01:00 ~ PM 02:00
+
+※ 토요일은 점심시간없이 2시까지 진료
+※ 일요일, 공휴일 휴무입니다.
+※ 진료시간 및 점심시간 1시간 전까지 접수 가능하며
+이후에는 마감됩니다.
+
+오시는길 경기도 안산시 단원구 고잔로 76 영풍프라자 2층
+3-국민은행
+프라움시티
+엠비의원
+국민연금공단
+안산외국인상담센터
+이우백
+스테이크하우스
+고든병원
+하나은행
+롯데백화점
+안산점
+황소곱구이
+안산중앙역
+CNP차앤박
+롯데시네마
+엠비의원
+에이스병원
+롯데백화점 안산점
+웨딩&컨벤션
+카카오톡 상담
+TALK ID : nbclinic7550
+
+대표전화
+비만클리닉 031.485.7550
+탈모, 모발이식 031.485.7570
+
+natural
+beauty
+자연美
+주소 : 경기도 안산시 단원구 고잔로 76 (경기도 안산시 단원구 고잔동 533-3 영풍프라자 213,214호)
+병원명 : 엠비의원 | 사업자등록번호 : 134-32-02597
+Copyright ⓒ 2015 TALMOSTOP.COM, All Rights Reserved.
+대표전화 031.485.7550
+카카오톡 nbclinic7550
+
+──── [3] coverage_raw.txt (커버리지 검증 로그) ────
+{
+  "missing_equipments": [],
+  "missing_treatments": [],
+  "missing_doctors": [],
+  "missing_prices": [],
+  "coverage_score": {
+    "equipment": -1,
+    "treatment": 100,
+    "doctor": 100,
+    "overall": 100
+  },
+  "issues": [
+    "의사 '기문상'은 추출 결과에 포함되어 있으나, 제공된 원본 마크다운에는 명시되어 있지 않습니다.",
+    "추출 결과의 시술 목록에 '탈모 치료', '색소 치료', '주름 치료', '흉터 치료', '리프팅', '맞춤 체형 시술'이 포함되어 있으나, 이는 원본 마크다운에 구체적인 시술 메뉴로 명시되지 않았으며, 지시사항에서 '시술 분류명이지 개별 시술이 아님'으로 정의된 항목들입니다."
+  ]
+}

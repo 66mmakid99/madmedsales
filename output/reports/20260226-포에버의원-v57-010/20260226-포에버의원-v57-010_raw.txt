@@ -1,0 +1,2942 @@
+═══════════════════════════════════════════════════
+  포에버의원 — 추출 원본 데이터
+═══════════════════════════════════════════════════
+
+──── [1] analysis.json (Gemini 분류 결과) ────
+{
+  "hospital_name": "포에버의원",
+  "doctors": [
+    {
+      "name": "정해진",
+      "title": "대표",
+      "specialty": null,
+      "career": null,
+      "education": null,
+      "certifications": null,
+      "confidence": "uncertain"
+    },
+    {
+      "name": "전인기",
+      "title": "대표",
+      "specialty": null,
+      "career": null,
+      "education": null,
+      "certifications": null,
+      "confidence": "uncertain"
+    }
+  ],
+  "academic_activities": [],
+  "medical_devices": [
+    {
+      "name": "Ulthera",
+      "korean_name": "울쎄라",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": "포에버 프리미엄 리프팅 컬렉션",
+      "source": "text"
+    },
+    {
+      "name": "ExcelV",
+      "korean_name": "엑셀V 레이저",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "색소,혈관,탄력 등의 피부고민 해결사",
+      "source": "text"
+    },
+    {
+      "name": "리팟레이저",
+      "korean_name": "리팟레이저",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "흑자, 검버섯의 근본적인 치료",
+      "source": "text"
+    },
+    {
+      "name": "RevLite",
+      "korean_name": "레블라이트",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "더욱 강력한 PTP 방식의 프리미엄 토닝",
+      "source": "text"
+    },
+    {
+      "name": "Pico",
+      "korean_name": "피코",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "토닝의 품격을 높인 프리미엄 피코토닝",
+      "source": "text"
+    },
+    {
+      "name": "Accento",
+      "korean_name": "악센토",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "색소만 선택적으로 파괴하여 피부 손상없이 안전하게!",
+      "source": "text"
+    },
+    {
+      "name": "Lavieen",
+      "korean_name": "라비앙 레이저",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "비비크림 바른듯한 매끈한 피부결 완성",
+      "source": "text"
+    },
+    {
+      "name": "Fraxel",
+      "korean_name": "프락셀",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "매끈하고 쫀쫀하게! 모공 지우개",
+      "source": "text"
+    },
+    {
+      "name": "Onda",
+      "korean_name": "온다리프팅",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF",
+      "description": "신규 도입 기념 행사안내",
+      "source": "text"
+    },
+    {
+      "name": "Titanium",
+      "korean_name": "티타늄 리프팅",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF",
+      "description": "티타늄 리프팅보다 덴서티를 추천하는 이유!",
+      "source": "screenshot"
+    },
+    {
+      "name": "Density",
+      "korean_name": "덴서티",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF",
+      "description": "티타늄 리프팅보다 덴서티를 추천하는 이유!",
+      "source": "screenshot"
+    }
+  ],
+  "treatments": [
+    {
+      "name": "리팟",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "2026-02-28까지",
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "lipolytic",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "마운자로",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "2026-02-28까지",
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other_injectable",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "보톡스(국산)",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "2026-02-28까지",
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "botox",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "보톡스(국산 고순도)",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "2026-02-28까지",
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "botox",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "보톡스(독일산)",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "2026-02-28까지",
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "botox",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "윤곽주사/조각주사",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "2026-02-28까지",
+      "includes": [
+        "윤곽주사",
+        "조각주사"
+      ],
+      "is_package": true,
+      "is_addon": false,
+      "source": "website",
+      "category": "lipolytic",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "브이올렛",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "2026-02-28까지",
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "lipolytic",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "볼륨필러(국산 큐티필)",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "2026-02-28까지",
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "filler",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "볼륨필러(국산 리쥬비엘)",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "2026-02-28까지",
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "filler",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "볼륨필러(미국 쥬비덤)",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "2026-02-28까지",
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "filler",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "볼륨필러(독일 아말리안)",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "2026-02-28까지",
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "filler",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "볼륨필러(독일 벨로테로)",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "2026-02-28까지",
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "filler",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "필러(레스틸렌 키스)",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "2026-02-28까지",
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "filler",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "입술"
+    },
+    {
+      "name": "레스틸렌 아이",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "2026-02-28까지",
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "filler",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "눈"
+    },
+    {
+      "name": "부위별 필러",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "2026-02-28까지",
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "filler",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "비비코",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "2026-02-28까지",
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "filler",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "코"
+    },
+    {
+      "name": "눈성형",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "2026-02-28까지",
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "눈"
+    },
+    {
+      "name": "코성형",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "2026-02-28까지",
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "코"
+    },
+    {
+      "name": "보조개 성형",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "2026-02-28까지",
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "이마거상술",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "2026-02-28까지",
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "이마"
+    },
+    {
+      "name": "얼굴 지방이식",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "2026-02-28까지",
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "얼굴"
+    },
+    {
+      "name": "가슴성형",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "2026-02-28까지",
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "가슴"
+    },
+    {
+      "name": "지방흡입",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "2026-02-28까지",
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "얼굴 점빼기",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "2026-02-28까지",
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "얼굴"
+    },
+    {
+      "name": "레이저토닝",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "2026-02-28까지",
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "엑셀V 레이저",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "2026-02-28까지",
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "리팟레이저",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "2026-02-28까지",
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "레블라이트",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "2026-02-28까지",
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "피코토닝",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "2026-02-28까지",
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "악센토",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "2026-02-28까지",
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "라비앙 레이저",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "2026-02-28까지",
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "프락셀",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "2026-02-28까지",
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "ULTHERA PY PRIME 울쎄라 & 울쎄라피 프라임",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [
+        "울쎄라",
+        "울쎄라피 프라임"
+      ],
+      "is_package": true,
+      "is_addon": false,
+      "source": "image_banner",
+      "category": "hifu",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "턱끝 필러",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "filler",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "턱끝"
+    },
+    {
+      "name": "실리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "thread",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "얼굴 라인"
+    },
+    {
+      "name": "실리프팅 시술",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "thread",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "실리프팅 + 스킨부스터",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [
+        "실리프팅",
+        "스킨부스터"
+      ],
+      "is_package": true,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "thread, skinbooster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "티타늄 리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "리쥬란",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "skinbooster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "탈모치료",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "엘프귀 필러",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "filler",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "귀"
+    },
+    {
+      "name": "색소치료 시술",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "주사시술 조합",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": true,
+      "is_addon": false,
+      "source": "website",
+      "category": "other_injectable",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "수분 주사 3종",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": true,
+      "is_addon": false,
+      "source": "website",
+      "category": "skinbooster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "여드름 치료",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "기미, 색소, 오타모반 치료",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [
+        "기미 치료",
+        "색소 치료",
+        "오타모반 치료"
+      ],
+      "is_package": true,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "주름 필러",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "filler",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "다이어트 주사 위고비",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other_injectable",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "필러 시술",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "filler",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "처진 피부 리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "rf, hifu, thread",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "눈밑지방+처짐+다크써클 치료",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [
+        "눈밑지방 치료",
+        "처짐 치료",
+        "다크써클 치료"
+      ],
+      "is_package": true,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "눈밑"
+    },
+    {
+      "name": "눈매교정",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "눈"
+    },
+    {
+      "name": "리프팅 시술",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "rf, hifu, thread",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "눈 개선 수술",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "눈"
+    },
+    {
+      "name": "안티에이징 시술",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "피부과 시술",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "필러",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": true,
+      "is_addon": false,
+      "source": "website",
+      "category": "filler",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "보톡스",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": true,
+      "is_addon": false,
+      "source": "website",
+      "category": "botox",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": true,
+      "is_addon": false,
+      "source": "website",
+      "category": "rf, hifu, thread",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "피부",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": true,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "윤곽성형",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": true,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "체형성형",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": true,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "제모/탈모",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": true,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "보톡스(미국산)",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "2026-02-28까지",
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "botox",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "윤곽주사",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "2026-02-28까지",
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "lipolytic",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "볼륨필러(국산 아띠에르)",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "2026-02-28까지",
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "filler",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "볼륨필러(국산 Y솔루션 or 리쥬비엘)",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "2026-02-28까지",
+      "includes": [
+        "Y솔루션",
+        "리쥬비엘"
+      ],
+      "is_package": true,
+      "is_addon": false,
+      "source": "website",
+      "category": "filler",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "볼륨필러(미국 쥬비덤 or 벨로테로)",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "2026-02-28까지",
+      "includes": [
+        "쥬비덤",
+        "벨로테로"
+      ],
+      "is_package": true,
+      "is_addon": false,
+      "source": "website",
+      "category": "filler",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "하이코/미스코성형",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "2026-02-28까지",
+      "includes": [
+        "하이코",
+        "미스코성형"
+      ],
+      "is_package": true,
+      "is_addon": false,
+      "source": "website",
+      "category": "filler",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "코"
+    },
+    {
+      "name": "피부관리",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    }
+  ],
+  "events": [
+    {
+      "title": "월간포에버 ❄️2월❄️",
+      "type": "시즌",
+      "period": "2026-02-28까지",
+      "discount_info": "나에게 주는 최고의 설 선물, 지친 피부에 휴식을 더하세요!",
+      "original_price": null,
+      "event_price": null,
+      "conditions": null,
+      "source": "website"
+    },
+    {
+      "title": "설맞이 한정 이벤트",
+      "type": "시즌",
+      "period": "2026-02-28까지",
+      "discount_info": "포에버 강남점만의 스페'설' 이벤트!",
+      "original_price": null,
+      "event_price": null,
+      "conditions": null,
+      "source": "website"
+    },
+    {
+      "title": "런칭기념 특가 리팟 & 마운자로",
+      "type": "할인",
+      "period": "2026-02-28까지",
+      "discount_info": "포에버 강남점 드디어 상륙!",
+      "original_price": null,
+      "event_price": null,
+      "conditions": null,
+      "source": "website"
+    },
+    {
+      "title": "2월 ❤️성형 특가❤️ 기획전",
+      "type": "시즌",
+      "period": "2026-02-28까지",
+      "discount_info": "포에버 강남점 성형 기획전♡",
+      "original_price": null,
+      "event_price": null,
+      "conditions": null,
+      "source": "website"
+    },
+    {
+      "title": "月刊4EVER 2月",
+      "type": "시즌",
+      "period": "2026-02-28까지",
+      "discount_info": "送给自己最好的春节礼物，告别皮肤疲态，尽享深度修护",
+      "original_price": null,
+      "event_price": null,
+      "conditions": null,
+      "source": "website"
+    },
+    {
+      "title": "月刊 4ever 2月",
+      "type": "시즌",
+      "period": "2026-02-28까지",
+      "discount_info": "お正月のご褒美を私に、疲れた肌に休息を与えてください！",
+      "original_price": null,
+      "event_price": null,
+      "conditions": null,
+      "source": "website"
+    },
+    {
+      "title": "보톡스(국산)",
+      "type": "할인",
+      "period": "2026-02-28까지",
+      "discount_info": "검증받은 국산 보톡스로 빠르고 간편하게 톡~",
+      "original_price": null,
+      "event_price": null,
+      "conditions": null,
+      "source": "website"
+    },
+    {
+      "title": "보톡스(국산 고순도)",
+      "type": "할인",
+      "period": "2026-02-28까지",
+      "discount_info": "내성이 적은 프리미엄 국산 보톡스~",
+      "original_price": null,
+      "event_price": null,
+      "conditions": null,
+      "source": "website"
+    },
+    {
+      "title": "보톡스(독일산)",
+      "type": "할인",
+      "period": "2026-02-28까지",
+      "discount_info": "내성이 적은 독일 멀츠社의 명품 보톡스",
+      "original_price": null,
+      "event_price": null,
+      "conditions": null,
+      "source": "website"
+    },
+    {
+      "title": "윤곽주사/조각주사",
+      "type": "할인",
+      "period": "2026-02-28까지",
+      "discount_info": "내 얼굴의 숨은 라인을 되찾자",
+      "original_price": null,
+      "event_price": null,
+      "conditions": null,
+      "source": "website"
+    },
+    {
+      "title": "브이올렛",
+      "type": "할인",
+      "period": "2026-02-28까지",
+      "discount_info": "국내 유일 KFDA의 승인을 받은 이중턱 주사!",
+      "original_price": null,
+      "event_price": null,
+      "conditions": null,
+      "source": "website"
+    },
+    {
+      "title": "볼륨필러(국산 큐티필)",
+      "type": "할인",
+      "period": "2026-02-28까지",
+      "discount_info": "어느 각도에서든 볼륨감 있는 얼굴",
+      "original_price": null,
+      "event_price": null,
+      "conditions": null,
+      "source": "website"
+    },
+    {
+      "title": "볼륨필러(국산 리쥬비엘)",
+      "type": "할인",
+      "period": "2026-02-28까지",
+      "discount_info": "어느 각도에서든 볼륨감 있는 얼굴",
+      "original_price": null,
+      "event_price": null,
+      "conditions": null,
+      "source": "website"
+    },
+    {
+      "title": "볼륨필러(미국 쥬비덤)",
+      "type": "할인",
+      "period": "2026-02-28까지",
+      "discount_info": "볼륨감이 자연스러운 미국 엘러간社의 HA필러",
+      "original_price": null,
+      "event_price": null,
+      "conditions": null,
+      "source": "website"
+    },
+    {
+      "title": "볼륨필러(독일 아말리안)",
+      "type": "할인",
+      "period": "2026-02-28까지",
+      "discount_info": "안전성 높은 안과용 HA원료를 사용한 독일산 HA필러",
+      "original_price": null,
+      "event_price": null,
+      "conditions": null,
+      "source": "website"
+    },
+    {
+      "title": "볼륨필러(독일 벨로테로)",
+      "type": "할인",
+      "period": "2026-02-28까지",
+      "discount_info": "뛰어난 밀착력을 제공하는 독일 멀츠社의 HA필러",
+      "original_price": null,
+      "event_price": null,
+      "conditions": null,
+      "source": "website"
+    },
+    {
+      "title": "필러(레스틸렌 키스)",
+      "type": "할인",
+      "period": "2026-02-28까지",
+      "discount_info": "입술전용 필러로 자연스러운 입술모양을!",
+      "original_price": null,
+      "event_price": null,
+      "conditions": null,
+      "source": "website"
+    },
+    {
+      "title": "레스틸렌 아이",
+      "type": "할인",
+      "period": "2026-02-28까지",
+      "discount_info": null,
+      "original_price": null,
+      "event_price": null,
+      "conditions": null,
+      "source": "website"
+    },
+    {
+      "title": "부위별 필러",
+      "type": "할인",
+      "period": "2026-02-28까지",
+      "discount_info": "원하는 부위에 자연스럽게 채우는 볼륨",
+      "original_price": null,
+      "event_price": null,
+      "conditions": null,
+      "source": "website"
+    },
+    {
+      "title": "비비코",
+      "type": "할인",
+      "period": "2026-02-28까지",
+      "discount_info": "수술없이 엣지있는 코 만들기",
+      "original_price": null,
+      "event_price": null,
+      "conditions": null,
+      "source": "website"
+    },
+    {
+      "title": "눈성형",
+      "type": "할인",
+      "period": "2026-02-28까지",
+      "discount_info": "원래 내 눈처럼 티나지 않고 자연스럽게",
+      "original_price": null,
+      "event_price": null,
+      "conditions": null,
+      "source": "website"
+    },
+    {
+      "title": "코성형",
+      "type": "할인",
+      "period": "2026-02-28까지",
+      "discount_info": "예쁜 코라인으로 세련미를 더한 조화로운 얼굴 완성!",
+      "original_price": null,
+      "event_price": null,
+      "conditions": null,
+      "source": "website"
+    },
+    {
+      "title": "보조개 성형",
+      "type": "할인",
+      "period": "2026-02-28까지",
+      "discount_info": "매력만점 애교포인트 콕~",
+      "original_price": null,
+      "event_price": null,
+      "conditions": null,
+      "source": "website"
+    },
+    {
+      "title": "이마거상술",
+      "type": "할인",
+      "period": "2026-02-28까지",
+      "discount_info": "답답한 눈매 교정과 미간, 이마 주름을 한번에",
+      "original_price": null,
+      "event_price": null,
+      "conditions": null,
+      "source": "website"
+    },
+    {
+      "title": "얼굴 지방이식",
+      "type": "할인",
+      "period": "2026-02-28까지",
+      "discount_info": "생착률 높은 자가지방으로 입체감있는 동안 얼굴",
+      "original_price": null,
+      "event_price": null,
+      "conditions": null,
+      "source": "website"
+    },
+    {
+      "title": "가슴성형",
+      "type": "할인",
+      "period": "2026-02-28까지",
+      "discount_info": "티 안나게 자연스러운 볼륨 자신감",
+      "original_price": null,
+      "event_price": null,
+      "conditions": null,
+      "source": "website"
+    },
+    {
+      "title": "지방흡입",
+      "type": "할인",
+      "period": "2026-02-28까지",
+      "discount_info": "빠지지 않던 부위의 지방을 쏙~",
+      "original_price": null,
+      "event_price": null,
+      "conditions": null,
+      "source": "website"
+    },
+    {
+      "title": "얼굴 점빼기",
+      "type": "할인",
+      "period": "2026-02-28까지",
+      "discount_info": "쏙쏙! 깨끗한 피부의 시작",
+      "original_price": null,
+      "event_price": null,
+      "conditions": null,
+      "source": "website"
+    },
+    {
+      "title": "레이저토닝",
+      "type": "할인",
+      "period": "2026-02-28까지",
+      "discount_info": "칙칙한 피부톤을 화사하고 빛나게!",
+      "original_price": null,
+      "event_price": null,
+      "conditions": null,
+      "source": "website"
+    },
+    {
+      "title": "엑셀V 레이저",
+      "type": "할인",
+      "period": "2026-02-28까지",
+      "discount_info": "색소,혈관,탄력 등의 피부고민 해결사",
+      "original_price": null,
+      "event_price": null,
+      "conditions": null,
+      "source": "website"
+    },
+    {
+      "title": "리팟레이저",
+      "type": "할인",
+      "period": "2026-02-28까지",
+      "discount_info": "흑자, 검버섯의 근본적인 치료, 리팟레이저!",
+      "original_price": null,
+      "event_price": null,
+      "conditions": null,
+      "source": "website"
+    },
+    {
+      "title": "레블라이트",
+      "type": "할인",
+      "period": "2026-02-28까지",
+      "discount_info": "더욱 강력한 PTP 방식의 프리미엄 토닝",
+      "original_price": null,
+      "event_price": null,
+      "conditions": null,
+      "source": "website"
+    },
+    {
+      "title": "피코토닝",
+      "type": "할인",
+      "period": "2026-02-28까지",
+      "discount_info": "토닝의 품격을 높인 프리미엄 피코토닝",
+      "original_price": null,
+      "event_price": null,
+      "conditions": null,
+      "source": "website"
+    },
+    {
+      "title": "악센토",
+      "type": "할인",
+      "period": "2026-02-28까지",
+      "discount_info": "색소만 선택적으로 파괴하여 피부 손상없이 안전하게!",
+      "original_price": null,
+      "event_price": null,
+      "conditions": null,
+      "source": "website"
+    },
+    {
+      "title": "라비앙 레이저",
+      "type": "할인",
+      "period": "2026-02-28까지",
+      "discount_info": "비비크림 바른듯한 매끈한 피부결 완성",
+      "original_price": null,
+      "event_price": null,
+      "conditions": null,
+      "source": "website"
+    },
+    {
+      "title": "프락셀",
+      "type": "할인",
+      "period": "2026-02-28까지",
+      "discount_info": "매끈하고 쫀쫀하게! 모공 지우개",
+      "original_price": null,
+      "event_price": null,
+      "conditions": null,
+      "source": "website"
+    },
+    {
+      "title": "설맞이 한정 이벤트",
+      "type": "시즌",
+      "period": "2026-02-28까지",
+      "discount_info": "포에버 강서점만의 스페'설' 이벤트!",
+      "original_price": null,
+      "event_price": null,
+      "conditions": null,
+      "source": "website"
+    },
+    {
+      "title": "2월 ❄️피부관리❄️",
+      "type": "시즌",
+      "period": "2026-02-28까지",
+      "discount_info": "나에게 주는 최고의 설 선물, 지친 피부에 휴식을 더하세요!",
+      "original_price": null,
+      "event_price": null,
+      "conditions": null,
+      "source": "website"
+    },
+    {
+      "title": "2월 ❄️리프팅❄️",
+      "type": "시즌",
+      "period": "2026-02-28까지",
+      "discount_info": "나에게 주는 최고의 설 선물, 지친 피부에 휴식을 더하세요!",
+      "original_price": null,
+      "event_price": null,
+      "conditions": null,
+      "source": "website"
+    },
+    {
+      "title": "2월 ❄️필러❄️",
+      "type": "시즌",
+      "period": "2026-02-28까지",
+      "discount_info": "나에게 주는 최고의 설 선물, 지친 피부에 휴식을 더하세요!",
+      "original_price": null,
+      "event_price": null,
+      "conditions": null,
+      "source": "website"
+    },
+    {
+      "title": "2월 ❄️비만❄️",
+      "type": "시즌",
+      "period": "2026-02-28까지",
+      "discount_info": "나에게 주는 최고의 설 선물, 지친 피부에 휴식을 더하세요!",
+      "original_price": null,
+      "event_price": null,
+      "conditions": null,
+      "source": "website"
+    },
+    {
+      "title": "✨첫시술✨ 체험전",
+      "type": "신규고객",
+      "period": "2026-02-28까지",
+      "discount_info": "포에버가 준비한 설레는 첫시술 혜택~♥",
+      "original_price": null,
+      "event_price": null,
+      "conditions": null,
+      "source": "website"
+    },
+    {
+      "title": "강서점 ☀️먼데이☀️ 한정특가",
+      "type": "시즌",
+      "period": "2026-02-28까지",
+      "discount_info": "월요병 극복! 오직 월요일에만 누릴 수 있는 특급할인~",
+      "original_price": null,
+      "event_price": null,
+      "conditions": null,
+      "source": "website"
+    },
+    {
+      "title": "보톡스(국산)",
+      "type": "할인",
+      "period": "2026-02-28까지",
+      "discount_info": "내성과 부작용을 최소화한 국산 보톡스",
+      "original_price": null,
+      "event_price": null,
+      "conditions": null,
+      "source": "website"
+    },
+    {
+      "title": "보톡스(독일산)",
+      "type": "할인",
+      "period": "2026-02-28까지",
+      "discount_info": "내성이 적은 독일 멀츠社의 명품 보톡스",
+      "original_price": null,
+      "event_price": null,
+      "conditions": null,
+      "source": "website"
+    },
+    {
+      "title": "보톡스(미국산)",
+      "type": "할인",
+      "period": "2026-02-28까지",
+      "discount_info": "안정성이 뛰어난 엘러간社의 오리지날 명품 보톡스",
+      "original_price": null,
+      "event_price": null,
+      "conditions": null,
+      "source": "website"
+    },
+    {
+      "title": "윤곽주사",
+      "type": "할인",
+      "period": "2026-02-28까지",
+      "discount_info": "내 얼굴의 숨은 라인을 되찾자",
+      "original_price": null,
+      "event_price": null,
+      "conditions": null,
+      "source": "website"
+    },
+    {
+      "title": "볼륨필러(국산 아띠에르)",
+      "type": "할인",
+      "period": "2026-02-28까지",
+      "discount_info": "어느 각도에서든 볼륨감 있는 얼굴",
+      "original_price": null,
+      "event_price": null,
+      "conditions": null,
+      "source": "website"
+    },
+    {
+      "title": "볼륨필러(국산 리쥬비엘)",
+      "type": "할인",
+      "period": "2026-02-28까지",
+      "discount_info": "원하는 부위에 자연스럽게 채우는 볼륨",
+      "original_price": null,
+      "event_price": null,
+      "conditions": null,
+      "source": "website"
+    },
+    {
+      "title": "볼륨필러(국산 Y솔루션 or 리쥬비엘)",
+      "type": "할인",
+      "period": "2026-02-28까지",
+      "discount_info": "어느 각도에서든 볼륨감 있는 얼굴",
+      "original_price": null,
+      "event_price": null,
+      "conditions": null,
+      "source": "website"
+    },
+    {
+      "title": "볼륨필러(미국 쥬비덤 or 벨로테로)",
+      "type": "할인",
+      "period": "2026-02-28까지",
+      "discount_info": "볼륨감이 자연스러운 미국 엘러간社의 HA필러",
+      "original_price": null,
+      "event_price": null,
+      "conditions": null,
+      "source": "website"
+    },
+    {
+      "title": "부위별 필러",
+      "type": "할인",
+      "period": "2026-02-28까지",
+      "discount_info": "원하는 부위에 자연스럽게 채우는 볼륨",
+      "original_price": null,
+      "event_price": null,
+      "conditions": null,
+      "source": "website"
+    },
+    {
+      "title": "하이코/미스코성형",
+      "type": "할인",
+      "period": "2026-02-28까지",
+      "discount_info": "수술없이 엣지있는 코 만들기",
+      "original_price": null,
+      "event_price": null,
+      "conditions": null,
+      "source": "website"
+    },
+    {
+      "title": "얼굴 점빼기",
+      "type": "할인",
+      "period": "2026-02-28까지",
+      "discount_info": "쏙쏙! 깨끗한 피부의 시작",
+      "original_price": null,
+      "event_price": null,
+      "conditions": null,
+      "source": "website"
+    },
+    {
+      "title": "온다리프팅 신규 도입 기념 행사안내",
+      "type": "기타",
+      "period": null,
+      "discount_info": null,
+      "original_price": null,
+      "event_price": null,
+      "conditions": null,
+      "source": "website"
+    }
+  ],
+  "clinic_categories": [
+    {
+      "name": "필러",
+      "treatments": [
+        "볼륨필러(국산 큐티필)",
+        "볼륨필러(국산 리쥬비엘)",
+        "볼륨필러(미국 쥬비덤)",
+        "볼륨필러(독일 아말리안)",
+        "볼륨필러(독일 벨로테로)",
+        "필러(레스틸렌 키스)",
+        "레스틸렌 아이",
+        "부위별 필러",
+        "비비코",
+        "턱끝 필러",
+        "엘프귀 필러",
+        "주름 필러",
+        "필러 시술",
+        "필러",
+        "볼륨필러(국산 아띠에르)",
+        "볼륨필러(국산 Y솔루션 or 리쥬비엘)",
+        "볼륨필러(미국 쥬비덤 or 벨로테로)",
+        "하이코/미스코성형"
+      ]
+    },
+    {
+      "name": "보톡스",
+      "treatments": [
+        "보톡스(국산)",
+        "보톡스(국산 고순도)",
+        "보톡스(독일산)",
+        "보톡스",
+        "보톡스(미국산)"
+      ]
+    },
+    {
+      "name": "리프팅",
+      "treatments": [
+        "ULTHERA PY PRIME 울쎄라 & 울쎄라피 프라임",
+        "실리프팅",
+        "실리프팅 시술",
+        "실리프팅 + 스킨부스터",
+        "티타늄 리프팅",
+        "처진 피부 리프팅",
+        "리프팅 시술",
+        "리프팅"
+      ]
+    },
+    {
+      "name": "피부",
+      "treatments": [
+        "얼굴 점빼기",
+        "레이저토닝",
+        "엑셀V 레이저",
+        "리팟레이저",
+        "레블라이트",
+        "피코토닝",
+        "악센토",
+        "라비앙 레이저",
+        "프락셀",
+        "색소치료 시술",
+        "주사시술 조합",
+        "수분 주사 3종",
+        "여드름 치료",
+        "기미, 색소, 오타모반 치료",
+        "피부과 시술",
+        "피부",
+        "피부관리"
+      ]
+    },
+    {
+      "name": "눈성형",
+      "treatments": [
+        "눈성형",
+        "이마거상술",
+        "눈밑지방+처짐+다크써클 치료",
+        "눈매교정",
+        "눈 개선 수술"
+      ]
+    },
+    {
+      "name": "코성형",
+      "treatments": [
+        "코성형",
+        "비비코",
+        "하이코/미스코성형"
+      ]
+    },
+    {
+      "name": "윤곽성형",
+      "treatments": [
+        "윤곽주사/조각주사",
+        "브이올렛",
+        "얼굴 지방이식",
+        "윤곽성형",
+        "윤곽주사"
+      ]
+    },
+    {
+      "name": "가슴성형",
+      "treatments": [
+        "가슴성형"
+      ]
+    },
+    {
+      "name": "체형성형",
+      "treatments": [
+        "지방흡입",
+        "다이어트 주사 위고비",
+        "체형성형"
+      ]
+    },
+    {
+      "name": "제모/탈모",
+      "treatments": [
+        "탈모치료",
+        "제모/탈모"
+      ]
+    },
+    {
+      "name": "안티에이징",
+      "treatments": [
+        "안티에이징 시술"
+      ]
+    }
+  ],
+  "contact_info": {
+    "email": [],
+    "phone": [
+      {
+        "number": "1600-8343",
+        "type": "대표"
+      }
+    ],
+    "address": {
+      "full_address": "서울특별시 강남구 논현로 742 파티오나인 5층",
+      "sido": "서울특별시",
+      "sigungu": "강남구"
+    },
+    "kakao_channel": "http://pf.kakao.com/_xlffNd/chat",
+    "naver_booking": null,
+    "naver_place": "https://naver.me/FXwhYLrN",
+    "instagram": "https://www.instagram.com/4ever__beauty/",
+    "facebook": null,
+    "youtube": "https://www.youtube.com/@4ever-clinic/videos",
+    "blog": null,
+    "website_url": "https://www.4-ever.co.kr",
+    "operating_hours": {
+      "weekday": "AM 10:00 ~ PM 20:00",
+      "saturday": "AM 10:00 ~ PM 15:30",
+      "sunday": null,
+      "lunch_break": "PM 13:00 ~ PM 14:00"
+    }
+  },
+  "unregistered_equipment": [],
+  "unregistered_treatments": [],
+  "raw_price_texts": [],
+  "extraction_summary": {
+    "total_doctors": 2,
+    "total_academic": 0,
+    "total_equipment": 11,
+    "total_devices": 11,
+    "total_injectables": 0,
+    "total_treatments": 59,
+    "total_events": 51,
+    "total_categories": 11,
+    "total_contact_channels": 5,
+    "has_email": false,
+    "has_phone": true,
+    "has_kakao": true,
+    "has_sns": true,
+    "price_available_ratio": "0/59",
+    "unregistered_equipment_count": 0,
+    "unregistered_treatments_count": 0
+  }
+}
+
+──── [2] ocr_raw.json (이미지 OCR 원본) ────
+
+--- page_1_main_capture_0 ---
+포에버의원 유튜브 바로가기
+4EVER® 파트너스 병원소개 필러 보톡스 리프팅 피부 눈성형 코성형 윤곽성형 가슴성형 체형성형
+시술
+LTHERA PY PRIME
+쎄라 & 울쎄라피 프라임
+버 프리미엄 리프팅 컬렉션
+GRAND OPENING
+포에버의원 홍대글로벌점
+OPEN EVENT
+2026년 2월 4일 오픈
+Clinic Details
+진료 그 이상의 공간
+포에버의원
+공간의 차이를 느껴보세요
+< 1 / 5 > ||
+포에버의원 지점안내
+4EVER BRANCH
+
+--- page_1_main_capture_1 ---
+4EVER® 파트너스 병원소개 필러 보톡스 리프팅 피부 눈성형 코성형 윤곽성형 가슴성형 체형성형
+청주점 하남 미사점 홍제점
+
+포에버의원이 필요한 순간
+
+월간
+포에버
+지금이 타이밍
+2026-02-28까지
+월간포에버 ❄️2월❄️
+나에게 주는 최고의 설 선물, 지친
+피부에 휴식을 더하세요!
+
+복받는날
+설맞이
+EVENT
+2026-02-28까지
+🎁설맞이 한정 이벤트🎁
+포에버 강남점만의 '스페셜' 이벤트!
+
+Contact
+대표 전화 1600-8343
+카카오톡 포에버강남
+인스타그램 4ever_beauty
+진료시간 월요일 AM 10:00 ~ PM
+화요일 AM 10:00 ~ PM
+수요일 AM 10:00 ~ PM
+목요일 AM 10:00 ~ PM
+금요일 AM 10:00 ~ PM
+토요일 AM 10:00 ~ PM
+
+한눈에 보는
+런칭기념
+혜택.ZIP
+2026-02-28까지
+✨런칭기념 특가✨ 리팟 &
+마운자로
+포에버 강남점 드디어 상륙!
+
+포에버
+성형플랜
+BEAUTY FOR YOU
+2026-02-28까지
+2월 ❤️성형 특가❤️ 기획전
+포에버 강남점 성형 기획전♡
+
+Location
+도로명 서울특별시 강남구 논현로 74
+지번 서울특별시 강남구 논현동 6
+
+월간
+4EVER
+現在が就寝時
+2026-02-28까지
+月刊4EVER 2月
+送给自己最好的春节礼物,
+告别皮肤疲态, 尽享深度修护
+
+월간
+フォーエバー
+今がタイミング
+2026-02-28까지
+月刊 4ever 2月
+お正月のこ褒美を私に、
+疲れた肌に休息を与えてください!
+
+길안내 바로가기 ↗
+
+--- page_1_main_capture_2 ---
+4EVER®
+파트너스
+병원소개
+필러
+보톡스
+리프팅
+피부
+눈성형
+코성형
+윤곽성형
+가슴성형
+체형성형
+차별화된 솔루션, 차별화된 결과
+4EVER SHORTS
+
+여기는
+포에버
+실리프팅
+성공의 핵심은
+'설계'에 있습니다
+
+여기는
+포에버
+실리프팅 시술 후
+꼭 지켜야 할
+주의사항 !
+
+여기는
+포에버
+젊음을 되찾는
+시술 조합
+실리프팅 + 스킨부스터
+
+여기는
+포에버
+실리프팅할 때
+강하게 당겨서
+고정하는 이유는?
+
+4ever 정답템
+티타늄 리프팅보다
+덴서티를 추천하는 이유!
+
+MORE
+
+여기는 포에버
+4EVER YOUTUBE
+
+--- page_1_main_capture_3 ---
+4EVER® 파트너스
+병원소개 필러 보톡스 리프팅 피부 눈성형 코성형 윤곽성형 가슴성형 체형성형
+
+50대 인상개선 ✨
+팔자필러로 리프팅효과?
+📍 포에버 여수점
+둥근 얼굴 잡아주는 턱끝 필러 😋
+
+처진 이중턱+심술보 해결
+턱라인 바꾸는 실리프팅
+📍 포에버 여수점
+전반적인 얼굴 라인 개선엔 실리프팅 🙋‍♀️
+
+수술없이!
+돌출입 & 긴 턱끝 개선
+중안부 축소엔 턱끝 필러
+📍 포에버 여수점
+턱끝 필러 하나로 옆라인 여신되기 👸
+
+통증 X
+리쥬란
+📍 포에버 여수점
+통증, 엠보
+
+MORE
+
+NOTICE
+
+DOCTOR TIPS
+닥터팁스 화이트닝
+피부 깊숙이 전달 가능한 솔루션 에센스
+[닥터팁스]
+토닉 앤 화
+20,000
+
+--- page_1_main_capture_4 ---
+4EVER
+파트너스
+병원소개
+필러
+보톡스
+리프팅
+피부
+눈성형
+코성형
+윤곽성형
+가슴성형
+체형성형
+수딩 앤 하이
+20,000원
+[닥터팁스]
+AC 카밍 인
+25,000원
+공지 26년 2월 휴무 안내
+공지 26년 1월 휴무 안내
+공지 25년 12월 휴무 안내
+공지 25년 추석 연휴 진료 안내
+종료 온다리프팅 신규 도입 기념 행사안내
+닥터팁스 에이징 리페어
+포에버 피부과학 노하우를 담은 코스메틱
+[닥터팁스]
+엔케이 에이징 리페어 엠앤엠 솔루션 앰플
+116,000원
+[닥터팁스]
+엔케이 울트라 에이징 리페어 엠앤엠
+솔루션 크림
+126,000원
+닥터팁스 제품 전체보기
+
+--- page_1_main_capture_5 ---
+4EVER®
+파트너스
+병원소개 필러 보톡스 리프팅 피부 눈성형 코성형 윤곽성형 가슴성형 체형성형
+
+포에버의원
+BEFORE & AFTER
+
+의료법상
+회원만 전후사진을
+확인할 수 있습니다.
+로그인
+! Information
+시술 종류 리프팅
+더 많은 전후사진 보기 ↗
+시술 전
+시술 후
+
+4EVER®
+포에버 파트너스 대표 정혜진, 전인기 사업자등록번호 562-86-03057 주소 경기 성남시 분당구 서현로 192, 아베스밸리 9층
+
+--- page_1_main_capture_6 ---
+4EVER
+파트너스
+병원소개 필러 보톡스 리프팅 피부 눈성형 코성형 윤곽성형 가슴성형 체형성형
+
+포에버의원
+BEFORE & AFTER
+
+의료법상
+회원만 전후사진을
+확인할 수 있습니다.
+로그인
+시술전
+
+ⓘ Information
+시술 종류 리프팅
+더 많은 전후사진 보기 ↗
+시술후
+
+4EVER®
+포에버 파트너스
+대표 정혜진, 전인기
+사업자등록번호 562-86-03057
+주소 경기 성남시 분당구 서현로 192, 야베스밸리 9층
+
+--- page_2_other_capture_0 ---
+4EVER 파트너스 ▼
+포에버의원 유튜브 바로가기
+
+OPENING
+버의원 홍대글로벌점
+EN EVENT
+2월 4일 오픈
+
+Clinic Details
+진료 그 이상의 공간
+포에버의원
+공간의 차이를 느껴보세요
+
+< 2 / 5 > ||
+
+포에버의원 지점안내
+4EVER BRANCH
+
+강남
+시흥
+제주
+홍제
+
+강서
+안산
+청담
+
+구리
+안양
+천안
+
+미포
+여수
+천호
+
+분당
+위례
+청주
+
+수원
+의정부
+하남미사
+
+포에버의원이 필요한 순간
+
+--- page_2_other_capture_1 ---
+2026-02-28까지
+월간포에버 2월
+나에게 주는 최고의 설 선물, 지친 피부에 휴식을 더하세요!
+
+2026-02-28까지
+설맞이 한정 이벤트
+포에버 강남점만의 스페셜 이벤트!
+
+2026-02-28까지
+런칭기념 특가 리팟 & 마운자로
+포에버 강남점 드디어 상륙!
+
+Contact
+대표 전화 1600-8343
+카카오톡 포에버강남
+인스타그램 4ever_beauty
+진료시간
+월요일 AM 10:00 - PM 20:00
+화요일 AM 10:00 - PM 20:00
+수요일 AM 10:00 - PM 20:00
+목요일 AM 10:00 - PM 20:00
+금요일 AM 10:00 - PM 20:00
+토요일 AM 10:00 - PM 15:30
+*점심시간 PM 13:00 ~ PM 14:00
+
+--- page_2_other_capture_2 ---
+*토요일 점심시간 없이 진료
+Location
+도로명 서울특별시 강남구 논현로 742 파티오나인 5층
+지번 서울특별시 강남구 논현동 66-24 파티오나인 5층
+길안내 바로가기 강남점 홈페이지
+
+차별화된 솔루션, 차별화된 결과
+4EVER SHORTS
+
+여기는
+실리프팅
+성공의 핵심은
+'설계'에 있습니다
+
+여기는
+실리프팅 시술 후
+꼭 지켜야 할
+주의사항 ⚠
+
+여기는
+포에버
+젊음을 되찾는
+시술 조합
+실리프팅 + 스킨부스터
+고
+
+MORE
+
+▶ 여기는 포에버
+4EVER YOUTUBE
+
+시술 전 시술직후
+
+--- page_2_other_capture_3 ---
+50대 인상 개선
+팔자필러로 리프팅 효과?
+처진 이중턱+심술보 해결
+턱라인 예쁜 실리프팅
+
+📍 포에버 여수점
+둥근 얼굴 잡아주는 턱끝 필러 😋
+📍 포에버 여수점
+전반적인 얼굴 라인 개선엔 실리프팅 🐰
+
+MORE
+
+DOCTOR TIPS
+
+DOCTOR TIPS
+PURE 1.5
+GEL CLEANSER
+PLUS
+200ml/6.76 fl.oz.
+
+--- page_2_other_capture_4 ---
+닥터팁스 화이트닝
+피부 깊숙이 전달 가능한 솔루션 에센스
+
+[닥터팁스]
+토닉 앤 화이트닝 솔루션 마스크
+20,000원
+
+[닥터팁스]
+수딩 앤 하이드레이팅 솔루션 마스크
+20,000원
+
+[닥터팁스]
+AC 카밍 앤 모이스춰 토너 패드
+25,000원
+
+닥터팁스 에이징 리페어
+포에버 피부과학 노하우를 담은 코스메틱
+
+[닥터팁스]
+엔케이 에이징 리페어 앤엠앤 솔루션 앰플
+116,000원
+
+[닥터팁스]
+엔케이 울트라 에이징 리페어 앤엠앤 솔루션
+크림
+126,000원
+
+--- page_2_other_capture_5 ---
+닥터팁스 제품 전체보기
+
+포에버의원
+BEFORE & AFTER
+
+의료법상
+회원만 전후사진을
+확인할 수 있습니다.
+
+로그인
+시술 전 시술 후
+
+ⓘ Information
+시술 종류 리프팅
+전후 기간 시술 직후
+
+더 많은 전후사진 보기 로그인
+
+4EVER
+개인정보취급방침 이용약관 제휴문의 고객만족센터
+
+--- page_2_other_capture_6 ---
+의료법상
+회원만 전후사진을
+확인할 수 있습니다.
+로그인
+시술 전
+시술 후
+! Information
+시술 종류 리프팅
+전후 기간 시술 직후
+더 많은 전후사진 보기
+로그인
+4EVER
+개인정보취급방침 이용약관 제휴문의 고객만족센터
+포에버의원 파트너스
+대표 정해진, 전인기 사업자등록번호 562-86-03057
+주소 경기 성남시 분당구 서현로 192, 아베뉴스벨리 9층
+Copyright © 4ever-clinic. all rights reserved.
+
+--- page_3_other_capture_0 ---
+#4EVER 파트너스 ▼
+포에버의원 유튜브 바로가기
+글로벌점
+Clinic Details
+진료 그 이상의 공간
+포에버의원
+공간의 차이를 느껴보세요
+< 2 / 5 > ||
+포에버의원 지점안내
+4EVER BRANCH
+강남 강서 구리 마포 분당 수원
+시흥 안산 안양 여수 위례 의정부
+제주 청담 천안 천호 청주 하남미사
+홍제
+포에버의원이 필요한 순간
+
+--- page_3_other_capture_1 ---
+2026-02-28까지
+🎁 설맞이 한정 이벤트 🎁
+포에버 강서점만의 스페'설' 이벤트!
+
+2026-02-28까지
+2월 🌸 피부관리 🌸
+나에게 주는 최고의 설 선물, 지친 피부에 휴식을 더하세요!
+
+2026-02-28까지
+2월 🌸 리프팅 🌸
+나에게 주는 최고의 설 선물, 지친 피부에 휴식을 더하세요!
+
+Contact
+대표 전화 1577-8350
+카카오톡 포에버강서
+인스타그램 4evergangseo
+진료시간
+월요일 AM 10:00 ~ PM 19:00
+화요일 AM 10:00 ~ PM 21:00
+수요일 AM 10:00 ~ PM 19:00
+목요일 AM 10:00 ~ PM 21:00
+금요일 AM 10:00 ~ PM 19:00
+토요일 AM 10:00 ~ PM 15:00
+*점심시간 PM 13:00 ~ PM 14:00
+
+--- page_3_other_capture_2 ---
+* 토요일 점심시간 없이 진료
+* 매주 둘째주, 마지막주 수요일 오전 11시 진료 시작
+
+Location
+
+도로명 서울특별시 강서구 양천로 476 금부빌딩 4층
+지번 서울특별시 강서구 등촌동 73-1 금부빌딩 4층
+
+길안내 바로가기 강서점 홈페이지
+
+차별화된 솔루션, 차별화된 결과
+4EVER SHORTS
+
+여기는
+실리프팅
+성공의 핵심은
+'설계'에 있습니다
+
+여기는
+실리프팅 시술 후
+꼭 지켜야 할
+주의사항!
+
+여기는
+포에버
+젊음을 되찾는
+시술 조합
+실리프팅 + 스킨부스터
+
+여기는
+포에버
+실리프팅
+시술
+후기
+
+MORE
+
+▶ 여기는 포에버
+4EVER YOUTUBE
+
+--- page_3_other_capture_3 ---
+시술전
+시술후
+시술전
+시술후
+시술전
+시술후
+50대 인상 개선
+처진 이중턱+심술보 해결
+팔자필러로 리프팅효과?
+턱라인 뼈깎는 실리프팅
+
+포에버 여수점
+포에버 여수점
+둥근 얼굴 잡아주는 턱끝 필러
+전반적인 얼굴 라인 개선엔 실리프팅
+
+MORE
+
+DOCTOR TIPS
+
+DOCTOR TIPS
+PURE L.L
+DELICATE CLEANSER
+PLUS
+200ml / 6.76 fl.oz
+A mild, pH-balanced cleanser that gently removes impurities and makeup for a fresh, clean complexion.
+
+--- page_3_other_capture_4 ---
+닥터팁스 화이트닝
+피부 깊숙이 전달 가능한 솔루션 에센스
+
+[닥터팁스]
+토닉 앤 화이트닝 솔루션 마스크
+20,000원
+↗
+
+[닥터팁스]
+수딩 앤 하이드레이팅 솔루션 마스크
+20,000원
+↗
+
+[닥터팁스]
+AC 카밍 앤 모이스춰 토너 패드
+25,000원
+↗
+
+닥터팁스 에이징 리페어
+포에버 피부과학 노하우를 담은 코스메틱
+
+[닥터팁스]
+엔케이 에이징 리페어 엔엠엔 솔루션 앰플
+116,000원
+↗
+
+[닥터팁스]
+엔케이 울트라 에이징 리페어 엔엠엔 솔루션
+크림
+126,000원
+↗
+
+--- page_3_other_capture_5 ---
+닥터팀스 제품 전체보기
+
+포에버의원
+BEFORE & AFTER
+
+의료법상
+회원만 전후사진을
+확인할 수 있습니다.
+
+로그인
+
+시술 전 시술 후
+
+ⓘ Information
+시술 종류 리프팅
+전후 기간 시술 직후
+
+더 많은 전후사진 보기
+로그인
+
+4EVER
+개인정보취급방침 이용약관 제휴문의 고객만족센터
+
+--- page_3_other_capture_6 ---
+의료법상
+회원만 전후사진을
+확인할 수 있습니다.
+로그인
+시술 전
+시술 후
+
+ⓘ Information
+시술 종류 리프팅
+전후 기간 시술 직후
+더 많은 전후사진 보기
+로그인
+
+4EVER
+개인정보취급방침 이용약관 제휴문의 고객만족센터
+
+포에버의원 파트너스
+대표 정혜진, 전인기 사업자등록번호 562-86-03057
+주소 경기 성남시 분당구 서현로 192, 야베스밸리 9층
+Copyright © 4ever-clinic. all rights reserved.
+▶ ♬ ⓞ N
+
+──── [3] coverage_raw.txt (커버리지 검증 로그) ────
+{
+  "missing_equipments": [],
+  "missing_treatments": [],
+  "missing_doctors": [],
+  "missing_prices": [],
+  "coverage_score": {
+    "equipment": 100,
+    "treatment": 100,
+    "doctor": 100,
+    "overall": 100
+  },
+  "issues": []
+}

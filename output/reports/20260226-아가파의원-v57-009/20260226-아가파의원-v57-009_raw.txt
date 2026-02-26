@@ -1,0 +1,512 @@
+═══════════════════════════════════════════════════
+  아가파의원 — 추출 원본 데이터
+═══════════════════════════════════════════════════
+
+──── [1] analysis.json (Gemini 분류 결과) ────
+{
+  "hospital_name": "아가파의원",
+  "doctors": [
+    {
+      "name": "강승철",
+      "title": "원장",
+      "specialty": "피부과",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    }
+  ],
+  "academic_activities": [],
+  "medical_devices": [
+    {
+      "name": "ULTRA DREAM PICO",
+      "korean_name": null,
+      "manufacturer": "DAESIN ENTERPRISE",
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "잡티 ZERO 깨끗한 피부 되찾기. 잡티, 주근깨, 검버섯",
+      "source": "image_page"
+    },
+    {
+      "name": "M22",
+      "korean_name": "엠투투",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "IPL",
+      "description": "잡티, 미백, 홍조 세 가지를 동시에 3 in 1 효과",
+      "source": "text"
+    },
+    {
+      "name": "Shurink",
+      "korean_name": "슈링크",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": "노화로 인해 저하된 피부탄력 수술없이 개선",
+      "source": "text"
+    }
+  ],
+  "treatments": [
+    {
+      "name": "기미",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "Face"
+    },
+    {
+      "name": "안면홍조",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "Face"
+    },
+    {
+      "name": "잡티, 주근깨, 검버섯",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "Face"
+    },
+    {
+      "name": "엠투투 (M22)",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "슈링크 리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "hifu",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "Face"
+    },
+    {
+      "name": "윤곽주사",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "lipolytic",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "Face"
+    }
+  ],
+  "events": [
+    {
+      "title": "설렘가득 봄빛피부",
+      "type": "시즌",
+      "period": "Spring",
+      "discount_info": null,
+      "original_price": null,
+      "event_price": null,
+      "conditions": [],
+      "source": "image_banner"
+    }
+  ],
+  "clinic_categories": [
+    {
+      "name": "색소/잡티 클리닉",
+      "treatments": [
+        "기미",
+        "잡티, 주근깨, 검버섯",
+        "엠투투 (M22)"
+      ]
+    },
+    {
+      "name": "홍조 클리닉",
+      "treatments": [
+        "안면홍조",
+        "엠투투 (M22)"
+      ]
+    },
+    {
+      "name": "리프팅 클리닉",
+      "treatments": [
+        "슈링크 리프팅",
+        "윤곽주사"
+      ]
+    }
+  ],
+  "contact_info": {
+    "email": [],
+    "phone": [],
+    "address": null,
+    "kakao_channel": null,
+    "naver_booking": null,
+    "naver_place": null,
+    "instagram": "https://www.instagram.com/agafar_official",
+    "facebook": "https://www.facebook.com/agafarclinic/",
+    "youtube": "https://youtube.com/channel/UCM6ExIBN_BfWfqA5vA6Zcaw",
+    "blog": "https://m.blog.naver.com/agafar",
+    "website_url": "http://www.agafarclinic.com",
+    "operating_hours": null
+  },
+  "unregistered_equipment": [
+    {
+      "name": "ULTRA DREAM PICO",
+      "korean_name": null,
+      "suggested_category": "LASER",
+      "source": "image_page",
+      "reason": "PICO indicates a picosecond laser, which is a type of laser device."
+    }
+  ],
+  "unregistered_treatments": [
+    {
+      "name": "기미",
+      "source": "text",
+      "context": "맑고 투명한 피부의 자신감 속부터 반짝이는 맑고 투명한 피부 기미"
+    },
+    {
+      "name": "안면홍조",
+      "source": "text",
+      "context": "울긋불긋 붉은피부 개선 안면홍조"
+    },
+    {
+      "name": "잡티, 주근깨, 검버섯",
+      "source": "text",
+      "context": "잡티 ZERO 깨끗한 피부 되찾기 잡티, 주근깨, 검버섯"
+    },
+    {
+      "name": "윤곽주사",
+      "source": "text",
+      "context": "늘어진 얼굴라인을 타이트하게 윤곽주사"
+    }
+  ],
+  "raw_price_texts": [],
+  "extraction_summary": {
+    "total_doctors": 1,
+    "total_academic": 0,
+    "total_equipment": 3,
+    "total_devices": 3,
+    "total_injectables": 0,
+    "total_treatments": 6,
+    "total_events": 1,
+    "total_categories": 3,
+    "total_contact_channels": 4,
+    "has_email": false,
+    "has_phone": false,
+    "has_kakao": false,
+    "has_sns": true,
+    "price_available_ratio": "0/6",
+    "unregistered_equipment_count": 1,
+    "unregistered_treatments_count": 4
+  }
+}
+
+──── [2] ocr_raw.json (이미지 OCR 원본) ────
+
+--- page_1_main_capture_0 ---
+agafar 아가파 의원
+자연스러운 아름다움을 되찾는 시간
+
+agafar
+설렘가득
+봄빛피부
+
+성남점
+김포점
+계양점
+-
+
+Spring
+agafar agafar CLINIC areiv agapharma agafar
+오늘 하루 열지 않음 □ 닫기 X
+오늘 하루 다시 열림 ■ 열기 ㅅ
+
+--- page_1_main_capture_1 ---
+agafar 아가파 의원
+자연스러운 아름다움을 되찾는 시간
+agafar
+설렘가득
+봄빛피부
+Spring
+agafar agafarCLINIC areiv agapharma agafar
+성남점
+김포점
+계양점
+-
+오늘 하루 열지 않음 □ 닫기 X
+오늘 하루 다시 보지 않음 □ 닫기 X
+
+--- page_2_other_capture_0 ---
+agafar
+미아점 병원소개 시술비용 상담예약 커뮤니티
+맑고 투명한 피부의 자신감
+속부터 반짝이는 맑고 투명한 피부
+기미
+agafar
+
+--- page_2_other_capture_1 ---
+agafar
+미아점 병원소개 시술비용 상담예약 커뮤니티
+맑고 투명한 피부의 자신감
+속부터 반짝이는 맑고 투명한 피부
+기미
+agafar
+
+--- page_2_other_capture_2 ---
+agafar
+미아점 병원소개 시술비용 상담예약 커뮤니티
+맑고 투명한 피부의 자신감
+속부터 반짝이는 맑고 투명한 피부
+기미
+
+--- page_2_other_capture_3 ---
+agafar
+미아점 병원소개 시술비용 상담예약 커뮤니티
+
+맑고 투명한 피부의 자신감
+속부터 반짝이는 맑고 투명한 피부
+
+기미
+agafar
+
+--- page_2_other_capture_4 ---
+agafar
+미아점 병원소개 시술비용 상담예약 커뮤니티
+맑고 투명한 피부의 자신감
+속부터 반짝이는 맑고 투명한 피부
+기미
+
+--- page_3_other_capture_0 ---
+agafar
+광명점 병원소개 시술비용 상담예약 커뮤니티 ≡
+울긋불긋 붉은피부 개선
+안면홍조
+gafar
+
+--- page_3_other_capture_1 ---
+agafar
+광명점 병원소개 시술비용 상담예약 커뮤니티 ≡
+울긋불긋 붉은피부 개선
+안면홍조
+agafar
+
+--- page_3_other_capture_2 ---
+agafar
+광명점 병원소개 시술비용 상담예약 커뮤니티
+울긋불긋 붉은피부 개선
+안면홍조
+gafar
+
+--- page_3_other_capture_3 ---
+agafar
+광명점 병원소개 시술비용 상담예약 커뮤니티
+울긋불긋 붉은피부 개선
+안면홍조
+gafar
+
+--- page_3_other_capture_4 ---
+agafar
+광명점 병원소개 시술비용 상담예약 커뮤니티
+울긋불긋 붉은피부 개선
+안면홍조
+gafar
+
+--- page_4_other_capture_0 ---
+agafar
+주안점 병원소개 시술비용 상담예약 커뮤니티
+
+잡티 ZERO 깨끗한 피부 되찾기.
+잡티, 주근깨, 검버섯
+
+ULTRA DREAM PICO
+DAESIN ENTERPRISE
+W
+
+agafar
+아름다운 피부를 만드는 사람들
+원장 강승철
+
+--- page_4_other_capture_1 ---
+agafar
+주안점 병원소개 시술비용 상담예약 커뮤니티
+잡티 ZERO 깨끗한 피부 되찾기
+잡티, 주근깨, 검버섯
+ULTRA DREAM PICO
+DAESIN ENTERPRISE
+W
+agafar
+아가가피부과 대표원장
+의사 | 강승철
+
+--- page_4_other_capture_2 ---
+agafar
+주안점 병원소개 시술비용 상담예약 커뮤니티
+잡티 ZERO 깨끗한 피부 되찾기
+잡티, 주근깨, 검버섯
+ULTRA DREAM PICO
+DAESIN ENTERPRISE
+W
+agafar
+아가가피부과 대표원장
+의사 | 강승철
+
+--- page_4_other_capture_3 ---
+agafar
+주안점 병원소개 시술비용 상담예약 커뮤니티
+잡티 ZERO 깨끗한 피부 되찾기
+잡티, 주근깨, 검버섯
+ULTRA DREAM PICO
+DAESIN ENTERPRISE
+W
+agafar
+아가가피부과 대표원장
+의사 | 강승철
+
+--- page_4_other_capture_4 ---
+agafar
+주안점 병원소개 시술비용 상담예약 커뮤니티
+잡티 ZERO 깨끗한 피부 되찾기
+잡티, 주근깨, 검버섯
+ULTRA DREAM PICO
+DAESIN ENTERPRISE
+W
+agafar
+아가가피부과 대표원장
+의사 강승철
+
+--- page_5_other_capture_0 ---
+agafar
+성남점 병원소개 시술비용 상담예약 커뮤니티
+잡티, 미백, 홍조 세 가지를
+3 in 1 효과
+엠투투 (M22)
+
+--- page_5_other_capture_1 ---
+agafar
+성남점 병원소개 시술비용 상담예약 커뮤니티
+잡티, 미백, 홍조 세 가지를 동시에
+3 in 1 효과
+엠투투 (M22)
+
+--- page_5_other_capture_2 ---
+agafar
+성남점 병원소개 시술비용 상담예약 커뮤니티
+잡티, 미백, 홍조 세 가지를 동시에
+3 in 1 효과
+엠투투 (M22)
+
+--- page_5_other_capture_3 ---
+agafar
+성남점 병원소개 시술비용 상담예약 커뮤니티
+
+잡티, 미백, 홍조 세 가지를 동시에
+3 in 1 효과
+
+엠투투 (M22)
+
+--- page_5_other_capture_4 ---
+agafar
+성남점 병원소개 시술비용 상담예약 커뮤니티
+
+잡티, 미백, 홍조 세 가지를 동시에
+3 in 1 효과
+
+엠투투 (M22)
+
+──── [3] coverage_raw.txt (커버리지 검증 로그) ────
+{
+  "missing_equipments": [],
+  "missing_treatments": [
+    "점빼기"
+  ],
+  "missing_doctors": [],
+  "missing_prices": [
+    "기미",
+    "안면홍조",
+    "잡티",
+    "주근깨",
+    "검버섯",
+    "엠투투 (M22)",
+    "슈링크 리프팅",
+    "윤곽주사"
+  ],
+  "coverage_score": {
+    "equipment": 100,
+    "treatment": 89,
+    "doctor": 100,
+    "overall": 96
+  },
+  "issues": [
+    "추출 결과에 '미아점', '광명점', '주안점', '성남점', '김포점', '계양점' 등 지점명이 시술로 잘못 분류되어 있습니다.",
+    "추출 결과에 있는 장비 'ULTRA DREAM PICO'는 원본 마크다운 텍스트에 명시적으로 언급되어 있지 않습니다."
+  ]
+}

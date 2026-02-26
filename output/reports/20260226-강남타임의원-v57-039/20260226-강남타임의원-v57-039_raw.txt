@@ -1,0 +1,3278 @@
+═══════════════════════════════════════════════════
+  강남타임의원 — 추출 원본 데이터
+═══════════════════════════════════════════════════
+
+──── [1] analysis.json (Gemini 분류 결과) ────
+{
+  "hospital_name": "강남타임의원",
+  "doctors": [
+    {
+      "name": "백나영",
+      "title": "원장",
+      "specialty": "전문의",
+      "career": [
+        "현, 강남타임 클리닉 원장",
+        "전, 더웰피부과 원장",
+        "전, 제이린클리닉 원장",
+        "전, 제스필클리닉 원장"
+      ],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "백진영",
+      "title": "원장",
+      "specialty": "전문의",
+      "career": [
+        "현, 강남타임 클리닉 원장",
+        "전, 엘레슈클리닉 원장",
+        "전, 제스필클리닉 원장",
+        "전, 좋은강안병원 진료의",
+        "전, 좋은문화병원 진료의"
+      ],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "이승호",
+      "title": "원장",
+      "specialty": "전문의",
+      "career": [
+        "현, 강남타임 클리닉 원장",
+        "전, 미플러스센텀 원장",
+        "전, 깨끗한의원 원장",
+        "전, 제스필클리닉 원장"
+      ],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "백승철",
+      "title": "원장",
+      "specialty": "전문의",
+      "career": [
+        "현, 강남타임 클리닉 원장",
+        "전, 서울선애병원 진료의",
+        "전, 광주보훈병원 진료의",
+        "전, 제스필클리닉 원장"
+      ],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "조현준",
+      "title": "원장",
+      "specialty": "마취통증의학과 전문의",
+      "career": [
+        "현, 강남타임 클리닉 원장",
+        "전, 부산대학병원 간이식 센터 근무",
+        "전, 명은병원 마취통증의학과 진료과장",
+        "전, 셀럽성형외과 마취통증의학과 및 미용 피부 파트 대표원장"
+      ],
+      "education": [
+        "부산대학교 의과대학 졸업",
+        "부산대학병원 마취통증의학과 전공의 과정 수료",
+        "부산대학병원 마취통증의학과 전임의 과정 수료"
+      ],
+      "certifications": [],
+      "confidence": "confirmed"
+    }
+  ],
+  "academic_activities": [
+    {
+      "type": "기타",
+      "title": "대한피부미용학회 정회원",
+      "year": null,
+      "doctor_name": "백나영",
+      "source_text": "대한피부미용학회 정회원"
+    },
+    {
+      "type": "기타",
+      "title": "대한비만체형학회 정회원",
+      "year": null,
+      "doctor_name": "백나영",
+      "source_text": "대한비만체형학회 정회원"
+    },
+    {
+      "type": "기타",
+      "title": "대한비만학회 정회원",
+      "year": null,
+      "doctor_name": "백나영",
+      "source_text": "대한비만학회 정회원"
+    },
+    {
+      "type": "기타",
+      "title": "대한일차진료학회 정회원",
+      "year": null,
+      "doctor_name": "백나영",
+      "source_text": "대한일차진료학회 정회원"
+    },
+    {
+      "type": "기타",
+      "title": "대한피부미용학회 정회원",
+      "year": null,
+      "doctor_name": "백진영",
+      "source_text": "대한피부미용학회 정회원"
+    },
+    {
+      "type": "기타",
+      "title": "대한비만체형학회 정회원",
+      "year": null,
+      "doctor_name": "백진영",
+      "source_text": "대한비만체형학회 정회원"
+    },
+    {
+      "type": "기타",
+      "title": "대한비만학회 정회원",
+      "year": null,
+      "doctor_name": "백진영",
+      "source_text": "대한비만학회 정회원"
+    },
+    {
+      "type": "기타",
+      "title": "대한일차진료학회 정회원",
+      "year": null,
+      "doctor_name": "백진영",
+      "source_text": "대한일차진료학회 정회원"
+    },
+    {
+      "type": "기타",
+      "title": "대한피부미용학회 정회원",
+      "year": null,
+      "doctor_name": "이승호",
+      "source_text": "대한피부미용학회 정회원"
+    },
+    {
+      "type": "기타",
+      "title": "대한비만체형학회 정회원",
+      "year": null,
+      "doctor_name": "이승호",
+      "source_text": "대한비만체형학회 정회원"
+    },
+    {
+      "type": "기타",
+      "title": "대한비만학회 정회원",
+      "year": null,
+      "doctor_name": "이승호",
+      "source_text": "대한비만학회 정회원"
+    },
+    {
+      "type": "기타",
+      "title": "대한일차진료학회 정회원",
+      "year": null,
+      "doctor_name": "이승호",
+      "source_text": "대한일차진료학회 정회원"
+    },
+    {
+      "type": "기타",
+      "title": "대한피부미용학회 정회원",
+      "year": null,
+      "doctor_name": "백승철",
+      "source_text": "대한피부미용학회 정회원"
+    },
+    {
+      "type": "기타",
+      "title": "대한비만체형학회 정회원",
+      "year": null,
+      "doctor_name": "백승철",
+      "source_text": "대한비만체형학회 정회원"
+    },
+    {
+      "type": "기타",
+      "title": "대한비만학회 정회원",
+      "year": null,
+      "doctor_name": "백승철",
+      "source_text": "대한비만학회 정회원"
+    },
+    {
+      "type": "기타",
+      "title": "대한일차진료학회 정회원",
+      "year": null,
+      "doctor_name": "백승철",
+      "source_text": "대한일차진료학회 정회원"
+    },
+    {
+      "type": "기타",
+      "title": "대한피부미용학회 정회원",
+      "year": null,
+      "doctor_name": "조현준",
+      "source_text": "대한피부미용학회 정회원"
+    },
+    {
+      "type": "기타",
+      "title": "대한비만체형학회 정회원",
+      "year": null,
+      "doctor_name": "조현준",
+      "source_text": "대한비만체형학회 정회원"
+    },
+    {
+      "type": "기타",
+      "title": "대한비만학회 정회원",
+      "year": null,
+      "doctor_name": "조현준",
+      "source_text": "대한비만학회 정회원"
+    },
+    {
+      "type": "기타",
+      "title": "대한일차진료학회 정회원",
+      "year": null,
+      "doctor_name": "조현준",
+      "source_text": "대한일차진료학회 정회원"
+    },
+    {
+      "type": "기타",
+      "title": "대한마취통증의학회 정회원",
+      "year": null,
+      "doctor_name": "조현준",
+      "source_text": "대한마취통증의학회 정회원"
+    }
+  ],
+  "medical_devices": [
+    {
+      "name": "Ulthera Prime",
+      "korean_name": "울쎄라피프라임",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Onda",
+      "korean_name": "온다",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_TIGHTENING",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Tensera",
+      "korean_name": "덴서티",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_TIGHTENING",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Shurink",
+      "korean_name": "슈링크",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "TuneFace",
+      "korean_name": "튠리프팅",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_TIGHTENING",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Discovery PICO Laser",
+      "korean_name": "디스커버리 피코레이저",
+      "manufacturer": "Quanta System",
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "기존 나노초 단위의 레이저보다 빠른 피코초 단위로 레이저가 조사되어 순식간에 높은 에너지를 조사해 피부의 손상을 최소화하여 다양한 색소를 효과적으로 파괴할 수 있는 색소치료레이저입니다. 532nm와 1064nm 듀얼 파장을 사용하며, 표재성 색소 병변, 빨간색 문신, 진피성 색소 병변, 청색/흑색 문신, 기미 치료에 효과적입니다. PICO, Q-Switch, Opti-Pulse, Photo-Thermal 4가지 모드로 구성.",
+      "source": "image_page"
+    },
+    {
+      "name": "Thermage FLX",
+      "korean_name": "써마지 FLX",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_TIGHTENING",
+      "description": null,
+      "source": "image_page"
+    },
+    {
+      "name": "Fraxel Dual",
+      "korean_name": "프락셀 듀얼",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": null,
+      "source": "image_page"
+    },
+    {
+      "name": "Titanium",
+      "korean_name": "티타늄리프팅",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_TIGHTENING",
+      "description": null,
+      "source": "image_page"
+    },
+    {
+      "name": "Sofwave",
+      "korean_name": "소프웨이브",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": null,
+      "source": "image_page"
+    },
+    {
+      "name": "Legato",
+      "korean_name": "레가토",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": "often used for skin resurfacing/scar treatment, similar to lasers",
+      "source": "image_page"
+    },
+    {
+      "name": "Sylfirm",
+      "korean_name": "실펌",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_MICRONEEDLE",
+      "description": null,
+      "source": "image_page"
+    },
+    {
+      "name": "Shumax",
+      "korean_name": "슈맥스",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": "likely a HIFU device",
+      "source": "image_page"
+    },
+    {
+      "name": "Cellect",
+      "korean_name": "셀렉",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": "sounds like a laser device",
+      "source": "image_page"
+    },
+    {
+      "name": "Accufit",
+      "korean_name": "에이핏",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": null,
+      "source": "image_page"
+    },
+    {
+      "name": "Intracel",
+      "korean_name": "인트라셀",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_MICRONEEDLE",
+      "description": null,
+      "source": "image_page"
+    },
+    {
+      "name": "Scizer",
+      "korean_name": "사이저",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": null,
+      "source": "image_page"
+    },
+    {
+      "name": "Duet RF",
+      "korean_name": "듀엣RF",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_MICRONEEDLE",
+      "description": null,
+      "source": "image_page"
+    },
+    {
+      "name": "Agnes",
+      "korean_name": "아그네스",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_MICRONEEDLE",
+      "description": null,
+      "source": "image_page"
+    },
+    {
+      "name": "MiCool",
+      "korean_name": "미쿨",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "cryotherapy",
+      "description": null,
+      "source": "image_page"
+    },
+    {
+      "name": "Green Cell",
+      "korean_name": "그린셀",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": "likely a laser or light therapy",
+      "source": "image_page"
+    },
+    {
+      "name": "Bubble Jet",
+      "korean_name": "버블젯",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": "likely a water-jet based device for skin cleansing/delivery",
+      "source": "image_page"
+    },
+    {
+      "name": "LDM",
+      "korean_name": "LDM 리프팅",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "IPL",
+      "description": null,
+      "source": "image_page"
+    },
+    {
+      "name": "LightSheer",
+      "korean_name": "라이트쉐어",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": null,
+      "source": "image_page"
+    },
+    {
+      "name": "QuattroStar Yellow",
+      "korean_name": "콰트로스타 옐로우",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": null,
+      "source": "image_page"
+    },
+    {
+      "name": "Skin Aura",
+      "korean_name": "스킨아우라",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": "likely a skin analysis or treatment device",
+      "source": "image_page"
+    },
+    {
+      "name": "Potenza",
+      "korean_name": "포텐자",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_MICRONEEDLE",
+      "description": null,
+      "source": "image_page"
+    },
+    {
+      "name": "QuattroBeam",
+      "korean_name": "콰트로빔",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": null,
+      "source": "image_page"
+    },
+    {
+      "name": "InMode",
+      "korean_name": "인모드 리프팅",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_TIGHTENING",
+      "description": null,
+      "source": "image_page"
+    },
+    {
+      "name": "Linearge",
+      "korean_name": "리니어지 리프팅",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_TIGHTENING",
+      "description": null,
+      "source": "image_page"
+    },
+    {
+      "name": "Tune Laser",
+      "korean_name": "튠 레이저",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": "could be a laser or RF, but 'laser' is in the name",
+      "source": "image_page"
+    },
+    {
+      "name": "Shurink Universe",
+      "korean_name": "슈링크 유니버스",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": null,
+      "source": "image_page"
+    },
+    {
+      "name": "Dermashine",
+      "korean_name": "더마샤인",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "injector",
+      "description": null,
+      "source": "image_page"
+    },
+    {
+      "name": "Volnewmer",
+      "korean_name": "볼뉴머",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_TIGHTENING",
+      "description": null,
+      "source": "image_page"
+    },
+    {
+      "name": "V-RO Advance",
+      "korean_name": "브이로 어드밴스",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": "likely a lifting/tightening device",
+      "source": "image_page"
+    },
+    {
+      "name": "Clarity Pro",
+      "korean_name": "클라리티 프로",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": null,
+      "source": "image_page"
+    },
+    {
+      "name": "Oligio X",
+      "korean_name": "올리지오 X",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_TIGHTENING",
+      "description": null,
+      "source": "image_page"
+    },
+    {
+      "name": "Tensera High",
+      "korean_name": "덴서티 하이",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_TIGHTENING",
+      "description": null,
+      "source": "image_page"
+    },
+    {
+      "name": "Emface",
+      "korean_name": "엠페이스",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "EMS_magnetic",
+      "description": null,
+      "source": "image_page"
+    },
+    {
+      "name": "CERP",
+      "korean_name": "세르프",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_TIGHTENING",
+      "description": null,
+      "source": "image_page"
+    },
+    {
+      "name": "Diamond Lifting",
+      "korean_name": "다이아 리프팅",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": "generic term for lifting, but could refer to an RF device",
+      "source": "image_page"
+    },
+    {
+      "name": "UltraTight",
+      "korean_name": "울타이트",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": "sounds like a lifting/tightening device, often HIFU or RF",
+      "source": "image_page"
+    },
+    {
+      "name": "The Ruby Q",
+      "korean_name": "더루비큐",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": null,
+      "source": "image_page"
+    }
+  ],
+  "treatments": [
+    {
+      "name": "울쎄라피프라임",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "hifu",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "온다",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "수면마취시술",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "덴서티",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "올타이트",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "슈링크",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "hifu",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "다이아리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "튠리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "모공",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "흉터",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "티타늄",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "리쥬란",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "skinbooster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "릴리이드",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "skinbooster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "리투오",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "skinbooster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "레티젠",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "skinbooster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "물광",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "skinbooster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "보톡스",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "botox",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "콜라겐실",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "thread",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "세포재생주사",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "skinbooster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "필러",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "filler",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "피코레이저",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "image_page",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "써마지 FLX",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "image_page",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "프락셀 듀얼",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "image_page",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "레가토",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "image_page",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "실펌",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "image_page",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "슈맥스",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "image_page",
+      "category": "hifu",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "셀렉",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "image_page",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "에이핏",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "image_page",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "인트라셀",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "image_page",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "사이저",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "image_page",
+      "category": "hifu",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "듀엣RF",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "image_page",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "아그네스",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "image_page",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "미쿨",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "image_page",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "그린셀",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "image_page",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "버블젯",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "image_page",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "LDM 리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "image_page",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "라이트쉐어",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "image_page",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "콰트로스타 옐로우",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "image_page",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "스킨아우라",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "image_page",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "포텐자",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "image_page",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "콰트로빔",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "image_page",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "인모드 리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "image_page",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "리니어지 리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "image_page",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "튠 레이저",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "image_page",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "슈링크 유니버스",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "image_page",
+      "category": "hifu",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "더마샤인",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "image_page",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "볼뉴머",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "image_page",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "브이로 어드밴스",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "image_page",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "클라리티 프로",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "image_page",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "올리지오 X",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "image_page",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "덴서티 하이",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "image_page",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "엠페이스",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "image_page",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "세르프",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "image_page",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "다이아 리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "image_page",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "울타이트",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "image_page",
+      "category": "hifu",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "더루비큐",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "image_page",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "티타늄리프팅 30KJ",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": 30,
+      "unit": "kJ",
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "image_page",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "티타늄리프팅 40KJ",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": 40,
+      "unit": "kJ",
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "image_page",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "온다리프팅 30KJ",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": 30,
+      "unit": "kJ",
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "image_page",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "온다리프팅 40KJ",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": 40,
+      "unit": "kJ",
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "image_page",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "온다리프팅 50KJ",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": 50,
+      "unit": "kJ",
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "image_page",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    }
+  ],
+  "events": [
+    {
+      "title": "강남 타임 MVG 멤버십 혜택 안내",
+      "type": "패키지",
+      "period": "1년 이내 (첫 시술 기준)",
+      "discount_info": "더 아름다워지는 기쁨, 상상 그 이상의 서비스",
+      "original_price": null,
+      "event_price": null,
+      "conditions": [
+        "소비자의 변심 및 귀책 사유로 인해 MVG 멤버십이 해지될 경우 환불은 해지일까지 진행된 시술 횟수와 시술 혜택에 해당하는 정상금액과 총 결제비용의 10%를 배상 후 환급됩니다.",
+        "치료 개시 이전 : 총 결제비용의 10% 배상 후 환급",
+        "치료 개시 이후 : 해지일까지 진행된 시술 횟수와 시술 혜택에 해당하는 정상금액과 총 결제비용의 10%를 배상 후 환급",
+        "세안서비스는 레이저 시술시에만 적용됩니다",
+        "MVG 멤버십은 본인만 사용가능하며, 시술 불가능한 사정이 발생시 1회에 한하여 양도 가능합니다.",
+        "이벤트가격은 상시 변동되며 당일 이벤트 가격으로 시술가능합니다.(소급적용불가)",
+        "적립금은 환불대상에 포함되지 않습니다.",
+        "해당 MVG 멤버십은 누적 적용이 되지 않으며 회원등급은 적립혜택 모두 사용 후 초기화 됩니다.",
+        "중복 할인가능합니다."
+      ],
+      "source": "page"
+    },
+    {
+      "title": "MVG Gold Membership",
+      "type": "할인",
+      "period": null,
+      "discount_info": "+20만원 적립",
+      "original_price": 2000000,
+      "event_price": 200000,
+      "conditions": null,
+      "source": "image_page"
+    },
+    {
+      "title": "MVG Platinum Membership",
+      "type": "할인",
+      "period": null,
+      "discount_info": "+30만원 적립",
+      "original_price": 3000000,
+      "event_price": 300000,
+      "conditions": null,
+      "source": "image_page"
+    },
+    {
+      "title": "MVG Diamond Membership",
+      "type": "할인",
+      "period": null,
+      "discount_info": "+40만원 적립",
+      "original_price": 4000000,
+      "event_price": 400000,
+      "conditions": null,
+      "source": "image_page"
+    },
+    {
+      "title": "MVG Trinity Membership",
+      "type": "할인",
+      "period": null,
+      "discount_info": "+50만원 적립",
+      "original_price": 5000000,
+      "event_price": 500000,
+      "conditions": null,
+      "source": "image_page"
+    },
+    {
+      "title": "MVG Sapphire Membership",
+      "type": "할인",
+      "period": null,
+      "discount_info": "+60만원 적립",
+      "original_price": 6000000,
+      "event_price": 600000,
+      "conditions": null,
+      "source": "image_page"
+    },
+    {
+      "title": "MVG Prestige Membership",
+      "type": "할인",
+      "period": null,
+      "discount_info": "+70만원 적립",
+      "original_price": 7000000,
+      "event_price": 700000,
+      "conditions": null,
+      "source": "image_page"
+    },
+    {
+      "title": "MVG Purple Membership",
+      "type": "할인",
+      "period": null,
+      "discount_info": "+80만원 적립",
+      "original_price": 8000000,
+      "event_price": 800000,
+      "conditions": null,
+      "source": "image_page"
+    },
+    {
+      "title": "MVG Emerald Membership",
+      "type": "할인",
+      "period": null,
+      "discount_info": "+90만원 적립",
+      "original_price": 9000000,
+      "event_price": 900000,
+      "conditions": null,
+      "source": "image_page"
+    },
+    {
+      "title": "주차비 무료 & 세안 서비스",
+      "type": "기타",
+      "period": "1년 이내 (첫 시술 기준)",
+      "discount_info": "무료",
+      "original_price": null,
+      "event_price": null,
+      "conditions": [
+        "세안서비스는 레이저 시술시에만 적용됩니다"
+      ],
+      "source": "image_page"
+    }
+  ],
+  "clinic_categories": [
+    {
+      "name": "수면마취 클리닉",
+      "treatments": [
+        "수면마취시술"
+      ]
+    },
+    {
+      "name": "색소 클리닉",
+      "treatments": [
+        "피코레이저",
+        "콰트로스타 옐로우",
+        "콰트로빔",
+        "더루비큐",
+        "클라리티 프로",
+        "라이트쉐어"
+      ]
+    },
+    {
+      "name": "리프팅A 클리닉",
+      "treatments": [
+        "울쎄라피프라임",
+        "온다",
+        "덴서티",
+        "올타이트",
+        "슈링크",
+        "다이아리프팅",
+        "튠리프팅",
+        "티타늄",
+        "인모드 리프팅",
+        "리니어지 리프팅",
+        "튠 레이저",
+        "슈링크 유니버스",
+        "볼뉴머",
+        "브이로 어드밴스",
+        "올리지오 X",
+        "덴서티 하이",
+        "엠페이스",
+        "세르프",
+        "울타이트"
+      ]
+    },
+    {
+      "name": "리프팅B 클리닉",
+      "treatments": []
+    },
+    {
+      "name": "스킨부스터 클리닉",
+      "treatments": [
+        "리쥬란",
+        "릴리이드",
+        "리투오",
+        "레티젠",
+        "물광",
+        "세포재생주사"
+      ]
+    },
+    {
+      "name": "콜라겐부스터 클리닉",
+      "treatments": [
+        "콜라겐실"
+      ]
+    },
+    {
+      "name": "세포재생/쁘띠 클리닉",
+      "treatments": [
+        "보톡스",
+        "필러"
+      ]
+    },
+    {
+      "name": "문신/체형 클리닉",
+      "treatments": [
+        "미쿨",
+        "사이저",
+        "피코레이저"
+      ]
+    },
+    {
+      "name": "여드름 흉터 모공 클리닉",
+      "treatments": [
+        "프락셀 듀얼",
+        "레가토",
+        "실펌",
+        "아그네스",
+        "포텐자",
+        "인트라셀",
+        "듀엣RF",
+        "모공",
+        "흉터"
+      ]
+    }
+  ],
+  "contact_info": {
+    "email": [
+      {
+        "address": "timetime2022@naver.com",
+        "type": "대표",
+        "source": "footer"
+      }
+    ],
+    "phone": [
+      {
+        "number": "02-6953-0572",
+        "type": "대표",
+        "source": "footer"
+      }
+    ],
+    "address": {
+      "full_address": "서울특별시 강남구 강남대로 476 어반하이브빌딩 9층",
+      "sido": "서울특별시",
+      "sigungu": "강남구"
+    },
+    "kakao_channel": null,
+    "naver_booking": null,
+    "naver_place": null,
+    "instagram": null,
+    "facebook": null,
+    "youtube": null,
+    "blog": null,
+    "website_url": "http://www.gangnamtime.com/",
+    "operating_hours": null
+  },
+  "unregistered_equipment": [
+    {
+      "name": "Legato",
+      "korean_name": "레가토",
+      "suggested_category": "laser",
+      "source": "image_page",
+      "reason": "not in predefined list, often used for skin resurfacing/scar treatment, similar to lasers"
+    },
+    {
+      "name": "Shumax",
+      "korean_name": "슈맥스",
+      "suggested_category": "HIFU",
+      "source": "image_page",
+      "reason": "not in predefined list, name similarity to Shurink, likely a HIFU device"
+    },
+    {
+      "name": "Cellect",
+      "korean_name": "셀렉",
+      "suggested_category": "laser",
+      "source": "image_page",
+      "reason": "not in predefined list, sounds like a laser device"
+    },
+    {
+      "name": "Green Cell",
+      "korean_name": "그린셀",
+      "suggested_category": "laser",
+      "source": "image_page",
+      "reason": "not in predefined list, likely a laser or light therapy"
+    },
+    {
+      "name": "Bubble Jet",
+      "korean_name": "버블젯",
+      "suggested_category": "other_device",
+      "source": "image_page",
+      "reason": "not in predefined list, likely a water-jet based device for skin cleansing/delivery"
+    },
+    {
+      "name": "Skin Aura",
+      "korean_name": "스킨아우라",
+      "suggested_category": "other_device",
+      "source": "image_page",
+      "reason": "not in predefined list, likely a skin analysis or treatment device"
+    },
+    {
+      "name": "Tune Laser",
+      "korean_name": "튠 레이저",
+      "suggested_category": "laser",
+      "source": "image_page",
+      "reason": "not in predefined list, could be a laser or RF, but 'laser' is in the name"
+    },
+    {
+      "name": "V-RO Advance",
+      "korean_name": "브이로 어드밴스",
+      "suggested_category": "RF_TIGHTENING",
+      "source": "image_page",
+      "reason": "not in predefined list, likely a lifting/tightening device"
+    },
+    {
+      "name": "Diamond Lifting",
+      "korean_name": "다이아 리프팅",
+      "suggested_category": "RF_TIGHTENING",
+      "source": "image_page",
+      "reason": "not in predefined list, generic term for lifting, but could refer to an RF device"
+    },
+    {
+      "name": "UltraTight",
+      "korean_name": "울타이트",
+      "suggested_category": "HIFU",
+      "source": "image_page",
+      "reason": "not in predefined list, sounds like a lifting/tightening device, often HIFU or RF"
+    }
+  ],
+  "unregistered_treatments": [
+    {
+      "name": "수면마취시술",
+      "source": "text",
+      "context": "수면마취"
+    },
+    {
+      "name": "모공",
+      "source": "text",
+      "context": "다이아/튠리프팅 모공/흉터/티타늄"
+    },
+    {
+      "name": "흉터",
+      "source": "text",
+      "context": "다이아/튠리프팅 모공/흉터/티타늄"
+    },
+    {
+      "name": "올타이트",
+      "source": "text",
+      "context": "덴서티 올타이트/슈링크"
+    },
+    {
+      "name": "슈맥스",
+      "source": "image_page",
+      "context": "Pico Laser page menu"
+    },
+    {
+      "name": "셀렉",
+      "source": "image_page",
+      "context": "Pico Laser page menu"
+    },
+    {
+      "name": "그린셀",
+      "source": "image_page",
+      "context": "Pico Laser page menu"
+    },
+    {
+      "name": "버블젯",
+      "source": "image_page",
+      "context": "Pico Laser page menu"
+    },
+    {
+      "name": "스킨아우라",
+      "source": "image_page",
+      "context": "Pico Laser page menu"
+    },
+    {
+      "name": "튠 레이저",
+      "source": "image_page",
+      "context": "Pico Laser page menu"
+    },
+    {
+      "name": "더마샤인",
+      "source": "image_page",
+      "context": "Pico Laser page menu"
+    },
+    {
+      "name": "브이로 어드밴스",
+      "source": "image_page",
+      "context": "Pico Laser page menu"
+    },
+    {
+      "name": "엠페이스",
+      "source": "image_page",
+      "context": "Pico Laser page menu"
+    },
+    {
+      "name": "다이아 리프팅",
+      "source": "image_page",
+      "context": "Pico Laser page menu"
+    },
+    {
+      "name": "울타이트",
+      "source": "image_page",
+      "context": "Pico Laser page menu"
+    }
+  ],
+  "raw_price_texts": [],
+  "extraction_summary": {
+    "total_doctors": 5,
+    "total_academic": 21,
+    "total_equipment": 43,
+    "total_devices": 43,
+    "total_injectables": 0,
+    "total_treatments": 61,
+    "total_events": 10,
+    "total_categories": 9,
+    "total_contact_channels": 4,
+    "has_email": true,
+    "has_phone": true,
+    "has_kakao": false,
+    "has_sns": false,
+    "price_available_ratio": "0/61",
+    "unregistered_equipment_count": 10,
+    "unregistered_treatments_count": 15
+  }
+}
+
+──── [2] ocr_raw.json (이미지 OCR 원본) ────
+
+--- page_0_main_capture_0 ---
+GANGNAM
+TIME CLINIC
+외국인 환자 유치 공식인증 의료기관 TAX REFUND 가능
+로그인 | 회원가입
+강남타임소개
+수면마취
+색소
+리프팅A
+리프팅B
+스킨부스터
+콜라겐부스터
+세포재생/쁘띠
+문신/체형
+여드름 흉터 모
+카카오톡
+실시간 상담
+장비소개
+언론 및
+공지사항
+진료안내
+02.
+6953
+0572
+전후사진
+바로가기
+프라이빗한
+공간
+수면마취
+시스템
+줄기
+감염!
+
+--- page_0_main_capture_1 ---
+나는 체계적인 마취 프로세스
+걱정하지 마세요
+
+기관 지정
+외국인 시술가격이 동일합니다
+국외 환자까지 만족도 높은
+공하고 있습니다.
+
+리닉
+자
+줄기, 지정
+감염!
+강남타임
+철저한 소
+
+등록번호: 2024-01-08-0
+카카오톡
+실시간상담
+외국인환자 유
+1. 의료기관 명칭 강남타임
+2. 의료기관 주소 서울특별시
+3. 대표자 성명 백나영
+4. 대상자 유형
+5. 외국인환자 유치
+6. 유효기간 2024-10-2
+의료법 제27조 및 외국인환자 유치
+시행규칙 제13조에 의거하여 위
+등록증을 발급합니다.
+서울특별시
+
+장비소개
+언론 및
+공지사항
+진료안내
+
+Certificate
+To Whom It May Concern:
+This is to certify that the above-mentioned medical institution is a medical tourism
+Provider for international patients in the REPUBLIC OF KOREA.
+Issued to: gangnamtime clinic
+Address: 9F, 476, Eonju-ro, Gangnam-gu, Seoul, Republic of Korea
+Representative: BAEK NA YOUNG
+Date of Expiration: 2025/03/04~2027/03/03
+No. of Registrar:
+Mayor of Seoul
+Date: 02/15/2024
+
+02.
+외국인6953
+유치의료0572
+전후사진
+바로가기
+
+보건복지부
+인증기관
+
+이용약관 | 개인정보취급방침
+2014년도 1분기부터 피부미용 시술 시 부가세 10%가 부과됩니다.
+강남타임의원 서울특별시 강남구 강남대로 476 어반하이빌딩 9층 | 대표. 백나영 | 사업자 등록번호. 464-16-01956
+대표전화. 02-6953-0572~4 | E-mail. timetime2022@naver.com
+Copyright (C) 2022 kangnamtime. All Rights Reserved.
+
+--- page_1_other_capture_0 ---
+GANGNAM
+TIME CLINIC
+외국인 환자 유치 공식인증 의료기관 TAX REFUND 가능
+로그인 | 회원가입
+강남타임소개
+수면마취
+색소
+리프팅A
+리프팅B
+스킨부스터
+콜라겐부스터
+세포재생/쁘띠
+문신/체형
+여드름 흉터 모
+[ 시간은 절약하고 통증은 줄인, 효과적인 색소치료 ]
+피코레이저
+카카오톡
+실시간 상담
+장비소개
+언론 및
+공지사항
+진료안내
+피부의 손상을 최소화하여 다양한 색소를 효과적으로
+파괴할 수 있는 색소치료 레이저입니다.
+02.
+6953
+0572
+전후사진
+바로가기
+피코
+레이저
+써마지 FLX
+울쎄라피
+프라임
+프락셀듀얼
+티타늄리프팅
+온다리프팅
+소프웨이브
+레가토
+실펌
+슈맥스
+셀렉
+에이핏
+인트라셀
+사이저
+듀엣RF
+아그네스
+미쿨
+그린셀
+버블젯
+LDM 리프팅
+라이트쉐어
+그 외 장비
+
+--- page_1_other_capture_1 ---
+콰트로스타
+옐로우
+스킨아우라
+포텐자
+콰트로빔
+인모드
+리프팅
+리니어지
+리프팅
+튠
+레이저
+슈링크
+유니버스
+더마샤인
+볼뉴머
+브이로
+어드밴스
+클라리티프로
+올리지오X
+덴서티
+하이
+엠페이스
+세르프
+다이아
+리프팅
+울타이트
+더루비큐
+
+피코레이저란?
+기존 나노초 단위의 레이저보다 빠른 피코초 단위로 레이저가 조사되어 순식간에 높은 에너지를
+조사해 피부의 손상을 최소화하여 다양한 색소를 효과적으로 파괴할 수 있는 색소치료레이저입니다.
+
+카카오톡
+실시간 상담
+장비소개
+언론 및
+공지사항
+진료안내
+02.
+6953
+0572
+전후사진
+바로가기
+
+PICOLASER 01
+감춰진 색소치료
+감춰진 색소까지 깨끗이 치료합니다.
+기존의 색소치료레이저들 보다 더욱 높은 효과를 기대할 수 있습니다.
+
+PICOLASER 02
+FDA, CE, KFDA 인증
+FDA, CE, KFDA에서 안정성과 효과를 입증받은
+색소치료레이저입니다.
+
+PICOLASER 03
+듀얼파장
+
+PICOLASER 04
+최신식 레이저
+
+--- page_1_other_capture_2 ---
+디스커버리 피코레이저는 엔디야그 532nm와 1064nm
+듀얼 파장을 사용하고 있습니다.
+디스커버리 피코레이저는 잡티와 문신을 제거하는
+최신식 색소치료레이저입니다.
+
+PICOLASER 05
+빠르고 높은 치료효과
+
+기존 나노초(10억분의 1) 단위의 레이저보다 빠른 피코초(1조분의 1) 단위로 레이저를 조사합니다.
+순식간에 높은 에너지를 조사해 피부의 손상을 최소화하여 다양한 색소를 효과적으로 파괴할 수 있습니다.
+색소 입자를 잘게 부순 후 그 입자를 또 다시 쪼개어 부수기 때문에 지금까지 나와있는 기존의 색소치료레이저들
+보다 더욱 높은 효과를 기대할 수 있습니다.
+
+일반 색소레이저 VS 디스커버리 피코
+
+색소
+색소
+일반 색소레이저
+디스커버리 피코
+
+카카오톡
+실시간 상담
+장비소개
+언론 및
+공지사항
+진료안내
+02.
+6953
+0572
+전후사진
+바로가기
+
+DISCOVERY
+PICO Laser
+
+디스커버리 피코 레이저는 엔디야그 532nm와 1064nm 듀얼파장을
+
+--- page_1_other_capture_3 ---
+사용하고 있습니다.
+
+엔디야그 532nm
+532nm파장은 표재성 색소 병변의 치료와 빨간색 문신 제거가 가능합니다.
+
+엔디야그 1064nm
+1064nm파장은 4~6mm 정도의 깊은 조직까지 침투할 수 있어 진피성 색소 병변인 오타모반,
+청색 또는 흑색 문신제거가 가능합니다. 또한 낮은 에너지 밀도로 조사해
+반복 시술했을 때 열 손상을 최소로 하면서 기미 색소를 제거할 수 있기 때문에 기미가
+더 진해지는 부작용없이 기미치료가 가능합니다.
+
+카카오톡
+실시간 상담
+
+장비소개
+
+언론 및
+공지사항
+
+진료안내
+02.
+6953
+0572
+
+전후사진
+바로가기
+
+듀얼 파장의 특징
+엔디야그 532nm와 1064nm 듀얼 파장의 특징과 안정성
+
+01
+다양한 컬러문신
+시술가능
+단색 문신뿐만 아니라 기존에 치료가
+어려웠던 다양한 컬러문신까지
+시술이 가능합니다.
+
+02
+재발성 및 복합
+기미에 효과적
+치료가 힘들었던 옅은 잡티 및 주근깨,
+검버섯, 재발성 및 복합기미치료에
+효과적입니다.
+
+03
+파워조절
+기능
+병변의 크기 및 깊이에 따른 맞춤형
+시술이 가능하여 화상 및 흉터 부작용을
+최소화할 수 있는 장점이 있습니다.
+
+--- page_1_other_capture_4 ---
+카카오톡
+실시간 상담
+장비소개
+언론 및
+공지사항
+진료안내
+02.
+6953
+0572
+전후사진
+바로가기
+
+피코레이저의 원리
+디스커버리 피코레이저는 기미나 각종 난치성 색소질환의 근본적인 원인인
+표피 멜라닌 같은 아주 작은 크기의 색소 입자에 좀 더 물리적인 힘을 가해 주변 조직의
+열 손상 없이 더욱 잘게 부술 수 있게 되었습니다.
+색소 질환의 근본 원인, 색소 입자에 물리적 힘을 가해
+주변 열 손상 없이 효과적, 안정적인 색소치료!
+보통 레이저토닝의 경우 1064nm 파장을 이용하지만 532nm의 파장도 시술이 가능해 듀얼모드로
+색소를 치료할 수 있으며, 이에 기존 레이저토닝 시술로 해결하지 못한 색소치료가 가능하고
+미백에도 효과가 있어 전체적인 피부톤까지 개선해줍니다.
+
+피코레이저의 4가지 모드
+디스커버리 피코레이저는 PICO, Q-Switch, Opti-Pulse, Photo-Thermal 4가지 모드로 구성되어 있습니다.
+디스커버리 피코레이저의 4가지 모드는 아래와 같이 파장, 최대출력 에너지, 레이저조사시간, 스팟사이즈 등의
+차이가 있으며 환자의 색소 병변에 따라 의료진이 4가지 모드를 적용해 색소를 치료하게 됩니다.
+
+--- page_1_other_capture_5 ---
+Laser
+PICO
+Q-Switch
+Opti-Pulse
+Photo-Thermal
+Wavelength(nm)
+532
+1064
+532
+1064
+532
+1064
+1064
+Maximum energy
+300mJ
+800mJ
+400mJ
+800mJ
+450mJ
+1, 2J
+2J
+Pulse duration
+370ps
+450ps
+6ns
+6ns
+6ns + >150µs + 6ns
+6ns + >150µs + 6ns
+300µs
+Repetition Rate(Hz)
+single, 1, 2, 5, 10
+single 1 ÷ 10
+Spot Size(mm)
+2, 4, 6, 8mm round; 2x2, 3x3, 4x4, 5x5mm² square; 8mm fractional round
+Max Fluence(J/cm²)
+12
+25
+12
+25
+14
+38
+50
+Max peak power(PICO)
+0.8 GW
+0.8 GW
+Electrical Requirements
+3.7kVA, 200-240VAC; 50/60Hz
+Dimensions and Weight
+530(W) x 1040(D) x 1060(H)mm³; 150Kg
+
+카카오톡
+실시간 상담
+
+장비소개
+
+언론 및
+공지사항
+
+진료안내
+
+02. ☎
+6953
+0572
+
+전후사진
+바로가기
+“
+타 레이저사의 피코와 Quanta System의
+디스커버리 피코레이저의 비교
+
+디스커버리 피코레이저는 타사 피코레이저와 비교해 짧은 시간에 높은 에너지를 조사할 수 있습니다
+이는 디스커버리 피코레이저가 부작용을 최소화하면서 더 탁월한 효과를 기대할 수가 있는 것을 보여주고 있습니다.
+
+Power and Pulse
+2
+1.5
+
+--- page_1_other_capture_6 ---
+Discovery PICO
+A
+B
+C
+Power (GW)
+Pulse Width (ps)
+카카오톡
+실시간상담
+장비소개
+언론 및
+공지사항
+진료안내
+피코레이저 시술 전후 사진
+디스커버리 피코레이저 시술 전후 사진 및 시술정보입니다.
+02.
+6953
+0572
+전후사진
+바로가기
+
+--- page_1_other_capture_7 ---
+카카오톡
+실시간 상담
+장비소개
+언론 및
+공지사항
+진료안내
+02.
+6953
+0572
+전후사진
+바로가기
+
+POINT
+01
+시술시간
+약 30분
+02
+입원치료
+불필요
+03
+크림마취
+04
+회복기간
+1~2주일
+
+피코레이저 시술방법!
+01
+원장님상담
+02
+피부상태진단
+03
+클렌징
+04
+크림마취
+05
+피코레이저 시술
+06
+재생 및 마무리
+
+피코레이저 시술이 필요하신 분!
+이미 색소질환 치료를 받으셨지만 효과가 만족스럽지 못하신 분
+기미, 주근깨, 오타모반 등 다양한 질환이 동시에 있으신 분
+레이저 치료시 화상 등으로 인한 부작용이 걱정이신 분
+시술 후 별도의 회복기간 없이 바로 일상생활을 해야 하시는 분
+
+--- page_1_other_capture_8 ---
+피코레이저 시술방법!
+01
+원장님상담
+02
+피부상태진단
+03
+클렌징
+04
+크림마취
+05
+피코레이저 시술
+06
+재생 및 마무리
+카카오톡
+실시간 상담
+
+장비소개
+언론 및
+공지사항
+피코레이저 시술이 필요하신 분!
+진료안내
+이미 색소질환 치료를 받으셨지만 효과가 만족스럽지 못하신 분
+레이저 치료시 화상 등으로 인한 부작용이 걱정이신 분
+02.
+기미, 주근깨, 오타모반 등 다양한 질환이 동시에 있으신 분
+시술 후 별도의 회복기간 없이 바로 일상생활을 해야 하시는 분
+6953
+0572
+칙칙한 피부톤 때문에 늘 고민이신 분
+전후사진
+바로가기
+
+이용약관 | 개인정보취급방침
+2014년도 1분기부터 피부미용 시술 시 부가세 10%가 부과됩니다.
+강남타임의원 서울특별시 강남구 강남대로 476 어반하이브빌딩 9층 | 대표. 백나영 | 사업자 등록번호. 464-16-01956
+대표전화. 02-6953-0572~4 | E-mail. timetime2022@naver.com
+Copyright (C) 2022 kangnamtime. All Rights Reserved.
+
+--- page_3_other_capture_0 ---
+GANGNAM
+TIME CLINIC
+외국인 환자 유치 공식인증 의료기관 TAX REFUND 가능 로그인 | 회원가입
+강남타임소개 수면마취 색소 리프팅A 리프팅B 스킨부스터 콜라겐부스터 세포재생/쁘띠 문신/체형 여드름 흉터 모공
+TIME CLINIC
+카카오톡
+실시간 상담
+장비소개
+언론 및
+공지사항
+진료안내
+02.
+6953
+0572
+전후사진
+바로가기
+당신의 숨겨진 아름다움과 자신감을 되찾아드립니다
+의료진의 손 끝에서 재탄생하는 아름다운라인의 기적같은 순간
+강남타임에서 경험하세요
+
+--- page_3_other_capture_1 ---
+저희 강남타임의원을 찾아주신 고객님께 감사드립니다. 고객을 가족 같이 생각하는 마음으로
+정직한시술, 신뢰, 편안함을 바탕으로 건강하고 자연스러운 아름다움을 위해 언제나 최선의노력을 다하겠습니다.
+고객의 숨겨진 아름다움과 자신감을 되찾아드리기 위해 매순간 최선을 다하겠습니다.
+강남타임의 의료진 손길에서 재탄생하는 아름다운 라인의 기적 같은 순간을 직접 경험하세요
+
+카카오톡
+실시간 상담
+
+장비소개
+
+언론 및
+공지사항
+
+진료안내
+02.
+6953
+0572
+
+전후사진
+바로가기
+
+GANGNAM TIME
+
+강남타임의원은 항상 생각합니다.
+
+사람들은 저마다 숨겨진 아름다움을 지니고 있습니다.
+강남타임은 당신의 감춰진 아름다움을 찾아드리기 위해 생합니다.
+
+항상 손 쉬운 답 보단 더 나은 답을 찾고자 노력하며
+
+--- page_3_other_capture_2 ---
+타협 없이 원칙과 규정을 준수하는 책임감, 믿을 수 있는 의료진, 꼼꼼하고
+섬세한 시술을 통해 고객의 더 큰 만족을위해 약속합니다.
+
+카카오톡
+실시간 상담
+
+장비소개
+
+언론 및
+공지사항
+
+진료안내
+
+강남타임만의 특별함
+
+02.
+6953
+0572
+
+01. 원장님 직접 상담원칙
+
+강남타임은 무조건적인 시술 권유를 하지 않습니다.
+상담실장 아닌 원장님 직접 상담을 통해 명확한 진단과 1:1 맞춤 시술을 하
+전후사진
+바로가기
+
+02.1:1 프라이빗한 시술
+
+강남타임의 프라이빗한 1인 시술 공간에서 다른 고객과 부딪힐 일 없이 더욱 편안하
+고 안전하게 섬세한 시술을 받아보시기 바랍니다.
+
+--- page_3_other_capture_3 ---
+Perfume 20
+03.10년이상 시술 경력 원장 5명
+강남타임의 원장님들은 미용 경력 10년 이상의 풍부한 임상경험을 가지고 있습니다.
+시술자의 경험과 테크닉에 따라 같은 장비라할지라도 시술 결과가 달라집니다.
+강남타임은 다년간 수많은시술 케이스를 보유하고 있으며 항상 발전하는 최신 시술
+법의 도입을 위해 끊임 없는 연구와 최선의 노력을 다하고 있습니다
+카카오톡
+실시간상담
+네이버톡톡
+실시간상담
+장비소개
+언론 및
+공지사항
+진료안내
+04.마취과전문의 상주로 통증 조절 및 관리
+강남타임은 마취과전문의가 상주하는 클리닉 입니다. 시술의 효과도 중요하지만 시
+술을 받으시는 고객님의 편안함과 안전성을 중요시 생각하며 통증에 대한 부담을
+줄이고 더 나은 효과를 안겨드리도록 노력합니다.
+02.
+6953
+0572
+전후사진
+바로가기
+Quanta System
+05.통합 레이저치료
+강남타임에는 다양한 색소, 리프팅, 스킨케어 관련 장비들이 구비되어 있습니다.
+환자의 피부 병변에 맞는 다양한 색소 레이저와 현존 출시된 강력하다 알려진
+리프팅 기기 다수가 구비되어 있습니다. 이를 통하여 환자에게 맞는 다양하고
+체계적인 맞춤치료를 도와드리고 있습니다.
+
+--- page_3_other_capture_4 ---
+카카오톡
+실시간 상담
+
+장비소개
+
+언론 및
+공지사항
+
+진료안내
+
+02.
+6953
+0572
+
+Gangnam Time clinic
+
+당신의 변치 않는 아름다운 시간을 위해
+지금 당신과 함께 합니다
+
+전후사진
+바로가기
+
+강남타임클리닉
+
+--- page_3_other_capture_5 ---
+Gangnam Time clinic
+당신의 변치 않는 아름다운 시간을 위해
+지금 당신과 함께 합니다
+강남타임클리닉
+카카오톡
+실시간 상담
+장비소개
+언론 및
+공지사항
+진료안내
+02.
+6953
+0572
+전후사진
+바로가기
+이용약관 | 개인정보취급방침
+2014년도 1분기부터 피부미용 시술 시 부가세 10%가 부과됩니다.
+강남타임의원 서울특별시 강남구 강남대로 476 어반하이브빌딩 9층 | 대표. 백나영 | 사업자 등록번호. 464-16-01956
+대표전화. 02-6953-0572~4 | E-mail. timetime2022@naver.com
+Copyright (C) 2022 kangnamtime. All Rights Reserved.
+
+--- page_4_other_capture_0 ---
+GANGNAM
+TIME CLINIC
+외국인 환자 유치 공식인증 의료기관 TAX REFUND 가능
+로그인 | 회원가입
+강남타임소개 수면마취 색소 리프팅A 리프팅B 스킨부스터 콜라겐부스터 세포재생/쁘띠 문신/체형 여드름 흉터 모공
+
+GANGNAMTIME
+MVG MEMBERSHIP
+
+강남 타임 MVG 멤버십 혜택 안내
+
+카카오톡
+실시간 상담
+
+장비소개
+
+언론 및
+공지사항
+
+안녕하세요 강남타임클리닉 입니다.
+더 아름다워지는 기쁨, 상상 그 이상의 서비스
+지금 바로 강남타임클리닉 멤버십의 특권을 누려보세요
+
+진료안내
+02.
+6953
+0572
+
+전후사진
+바로가기
+
+G
+골드
+P
+플래티넘
+D
+다이아몬드
+T
+트리니티
+S
+사파이어
+P
+프레스티지
+P
+퍼플
+E
+에메랄드
+
+200만원
+300만원
+400만원
+500만원
+600만원
+700만원
+800만원
+900만원
+
++20만원
++30만원
++40만원
++50만원
++60만원
++70만원
++80만원
++90만원
+
+--- page_4_other_capture_1 ---
+G 골드
+P 플래티넘
+D 다이아몬드
+T 트리니티
+S 사파이어
+P 프레스티지
+P 퍼플
+E 에메랄드
+
+200만원
+300만원
+400만원
+500만원
+600만원
+700만원
+800만원
+900만원
+
++20만원
++30만원
++40만원
++50만원
++60만원
++70만원
++80만원
+
+P 카카오톡
+C 실시간상담
+
+티타늄리프팅
+30KJ
+티타늄리프팅
+40KJ
+온다리프팅
+30KJ
+온다리프팅
+40KJ
+온다리프팅
+50KJ
+
+장비소개
+
+언론 및
+공지사항
+
+주차비 무료 & 세안 서비스
+
+1년 이내
+(첫 시술 기준)
+
+진료안내
+
+02.
+6953
+0572
+
+소비자의 변심 및 귀책 사유로 인해 MVG 멤버십이 해지될 경우
+환불은 해지일까지 진행된 시술 횟수와 시술 혜택에 해당하는 정상금액과 총 결제비용의 10%를 배상 후 환급됩니다.
+치료 개시 이전 : 총 결제비용의 10% 배상 후 환급
+치료 개시 이후 : 해지일까지 진행된 시술 횟수와 시술 혜택에 해당하는 정상금액과 총 결제비용의 10%를 배상 후 환급
+세안서비스는 레이저 시술시에만 적용됩니다
+MVG 멤버십은 본인만 사용가능하며, 시술 불가능한 사정이 발생시 1회에 한하여 양도 가능합니다.
+이벤트가격은 상시 변동되며 당일 이벤트 가격으로 시술가능합니다.(소급적용불가)
+적립금은 환불대상에 포함되지 않습니다.
+해당 MVG 멤버십은 누적 적용이 되지 않으며 회원등급은 적립혜택 모두 사용 후 초기화 됩니다.
+중복 할인가능합니다.
+
+전후사진
+바로가기
+
+이용약관 | 개인정보취급방침
+
+2014년도 1분기부터 피부미용 시술 시 부가세 10%가 부과됩니다.
+강남타임의원 서울특별시 강남구 강남대로 476 어반하이브빌딩 9층 | 대표. 백나영 | 사업자 등록번호. 464-16-01956
+대표전화. 02-6953-0572~4 | E-mail. timetime2022@naver.com
+Copyright (C) 2022 kangnamtime. All Rights Reserved.
+
+--- page_5_other_capture_0 ---
+GANGNAM
+TIME CLINIC
+외국인 환자 유치 공식인증 의료기관 TAX REFUND 가능 로그인 | 회원가입
+강남타임소개 수면마취 색소 리프팅A 리프팅B 스킨부스터 콜라겐부스터 세포재생/쁘띠 문신/체형 여드름 흉터 모
+
+의료/진/소/개
+
+카카오톡
+실시간 상담
+
+장비소개
+
+언론 및
+공지사항
+
+진료안내
+02. 📞
+6953
+0572
+
+전후사진
+바로가기
+
+“
+피부 성형 시술경력 10년 이상의
+
+--- page_5_other_capture_1 ---
+강남타임 의료진 소개
+
+강남타임클리닉
+백나영 원장
+Paek na young
+현, 강남타임 클리닉 원장
+전문의
+
+학회활동
+대한피부미용학회 정회원
+대한비만체형학회 정회원
+대한비만학회 정회원
+대한일차진료학회 정회원
+전, 더웰피부과 원장
+전, 제이린클리닉 원장
+전, 제스필클리닉 원장
+
+강남타임클리닉
+백진영 원장
+Paek jin young
+현, 강남타임 클리닉 원장
+전문의
+
+학회활동
+현, 강남타임 클리닉 원장
+대한피부미용학회 정회원
+대한비만체형학회 정회원
+대한비만학회 정회원
+대한일차진료학회 정회원
+전, 엘레슈클리닉 원장
+전, 제스필클리닉 원장
+전, 좋은강안병원 진료의
+전, 좋은문화병원 진료의
+
+카카오톡
+실시간 상담
+
+장비소개
+
+언론 및
+공지사항
+
+진료안내
+02.
+6953
+0572
+
+강남타임클리닉
+이승호 원장
+Lee seung ho
+현, 강남타임 클리닉 원장
+전문의
+
+학회활동
+현, 강남타임 클리닉 원장
+대한피부미용학회 정회원
+대한비만체형학회 정회원
+대한비만학회 정회원
+대한일차진료학회 정회원
+
+강남타임클리닉
+백승철 원장
+Paek seung chul
+현, 강남타임 클리닉 원장
+전문의
+
+학회활동
+현, 강남타임 클리닉 원장
+대한피부미용학회 정회원
+대한비만체형학회 정회원
+대한비만학회 정회원
+대한일차진료학회 정회원
+
+전후사진
+바로가기
+
+--- page_5_other_capture_2 ---
+전, 미플러스센텀 원장
+전, 깨끗한의원 원장
+전, 제스필클리닉 원장
+
+전, 서울선애병원 진료의
+전, 광주보훈병원 진료의
+전, 제스필클리닉 원장
+
+강남타임클리닉
+조현준 원장
+Cho hyun jun
+현, 강남타임 클리닉 원장
+마취통증의학과 전문의
+
+학회활동
+현, 강남타임 클리닉 원장
+대한피부미용학회 정회원
+대한비만체형학회 정회원
+대한비만학회 정회원
+대한일차진료학회 정회원
+대한마취통증의학회 정회원
+부산대학교 의과대학 졸업
+부산대학병원 마취통증의학과
+전공의 과정 수료
+부산대학병원 마취통증의학과
+전임의 과정 수료
+전, 부산대학병원 간이식 센터 근무
+전, 명은병원 마취통증의학과 진료과장
+전, 셀럽성형외과 마취통증의학과 및 미용
+피부 파트 대표원장
+
+카카오톡
+실시간 상담
+
+장비소개
+
+언론 및
+공지사항
+
+진료안내
+02.
+6953
+0572
+전후사진
+바로가기
+
+이용약관 | 개인정보취급방침
+
+2014년도 1분기부터 피부미용 시술 시 부가세 10%가 부과됩니다.
+
+강남타임의원 서울특별시 강남구 강남대로 476 어반하이브빌딩 9층 | 대표. 백나영 | 사업자 등록번호. 464-16-01956
+대표전화. 02-6953-0572~4 | E-mail. timetime2022@naver.com
+Copyright (C) 2022 kangnamtime. All Rights Reserved.
+
+──── [3] coverage_raw.txt (커버리지 검증 로그) ────
+{
+  "missing_equipments": [
+    "루카스",
+    "레가토2",
+    "브이로A RM",
+    "어븀프락셀",
+    "플래티눔PTT",
+    "더마샤인프로"
+  ],
+  "missing_treatments": [
+    "소프웨이브",
+    "올리핏",
+    "바이블주",
+    "브이올렛",
+    "벨라콜린",
+    "고우리",
+    "레디어스부스터",
+    "여드름",
+    "목주름",
+    "벨로테로",
+    "레스틸렌",
+    "핫바디이벤트",
+    "색소화이트닝",
+    "타임수액테라피",
+    "콰트로점빼기",
+    "엑션2",
+    "아큐토닝",
+    "루카스",
+    "울쎄라2 프라임",
+    "아이울쎄라"
+  ],
+  "missing_doctors": [],
+  "missing_prices": [],
+  "coverage_score": {
+    "equipment": 83,
+    "treatment": 66,
+    "doctor": 100,
+    "overall": 82
+  },
+  "issues": [
+    "추출된 '시술' 목록에 원본 마크다운의 리스트 형식(예: '*   울쎄라피프라임')이 포함되어 있어 파싱 개선이 필요합니다.",
+    "추출된 일부 시술 및 장비명(예: '핫패키' vs '핫패키지', '더마샤인' vs '더마샤인프로', '레가토' vs '레가토2')이 원본과 정확히 일치하지 않고 변형되거나 덜 구체적인 형태로 추출되었습니다."
+  ]
+}

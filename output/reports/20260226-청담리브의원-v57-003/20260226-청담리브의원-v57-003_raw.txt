@@ -1,0 +1,3463 @@
+═══════════════════════════════════════════════════
+  청담리브의원 — 추출 원본 데이터
+═══════════════════════════════════════════════════
+
+──── [1] analysis.json (Gemini 분류 결과) ────
+{
+  "hospital_name": "청담리브의원",
+  "doctors": [
+    {
+      "name": "박세령",
+      "title": "원장",
+      "specialty": "피부과",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "조문주",
+      "title": "원장",
+      "specialty": "내과",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "김재석",
+      "title": "원장",
+      "specialty": null,
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    }
+  ],
+  "academic_activities": [],
+  "medical_devices": [
+    {
+      "name": "Eve Titan",
+      "korean_name": "이브타이탄",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_TIGHTENING",
+      "description": "미세전류, RF(고주파), EMS",
+      "source": "image_banner"
+    },
+    {
+      "name": "NeoGen Plasma",
+      "korean_name": "네오젠 플라즈마",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": "편안한 시술로 건강해지는 피부",
+      "source": "image_page"
+    },
+    {
+      "name": "Rejuran HB+",
+      "korean_name": "리쥬란힐러 HB+",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "booster",
+      "description": "적은 통증으로 촉촉하게 물광 채우기",
+      "source": "image_page"
+    },
+    {
+      "name": "Juvelook",
+      "korean_name": "쥬베룩",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "booster",
+      "description": "자가 콜라겐 생성 유도로 피부 나이 되돌리기",
+      "source": "image_page"
+    },
+    {
+      "name": "Laser Toning",
+      "korean_name": "레이저토닝",
+      "manufacturer": "LUTRONIC",
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "티끌 없이 하얗고 투명한 피부",
+      "source": "image_page"
+    },
+    {
+      "name": "Denserty",
+      "korean_name": "덴서티",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_TIGHTENING",
+      "description": "듀얼 고주파 에너지",
+      "source": "text"
+    },
+    {
+      "name": "InMode",
+      "korean_name": "인모드",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_TIGHTENING",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Tensera",
+      "korean_name": "텐쎄라",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_TIGHTENING",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "TORR RF",
+      "korean_name": "토르리프팅",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_TIGHTENING",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Shurink",
+      "korean_name": "슈링크",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Corege Cellfit",
+      "korean_name": "코레지 셀핏",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Silhouette Soft",
+      "korean_name": "실루엣소프트",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "thread",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "NCTF",
+      "korean_name": "NCTF",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "booster",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "P198엑소좀",
+      "korean_name": "P198엑소좀",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "booster",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Filorga",
+      "korean_name": "필로가",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "booster",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "MiCool",
+      "korean_name": "미쿨",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "cryotherapy",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Ulfit",
+      "korean_name": "울핏",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "T-Wave",
+      "korean_name": "티웨이브",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Core Sculpt",
+      "korean_name": "코어스컬프",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "EMS_magnetic",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Saxenda",
+      "korean_name": "삭센다",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "lipolytic",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Wegovy",
+      "korean_name": "위고비",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "lipolytic",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Accento Edge Toning",
+      "korean_name": "악센토엣지토닝",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Titanium",
+      "korean_name": "티타늄리프팅",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_TIGHTENING",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Silk Wave",
+      "korean_name": "실크웨이브",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Trifill",
+      "korean_name": "트리필",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "collagen_stimulator",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "ExcelV",
+      "korean_name": "엑셀V",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "MarkVu",
+      "korean_name": "마크뷰",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Mosaic Fraxel",
+      "korean_name": "모자이크 프락셀",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Pico Toning",
+      "korean_name": "피코토닝",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Rederm Plasma",
+      "korean_name": "리덤 플라즈마",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Hiko",
+      "korean_name": "하이코",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "thread",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Juvegel",
+      "korean_name": "쥬브엘",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "filler",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Dorothy Injection",
+      "korean_name": "도로시주사",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "other_injectable",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "PDRN",
+      "korean_name": "연어주사",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "booster",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Botox",
+      "korean_name": "보톡스",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "botox",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Filler",
+      "korean_name": "필러",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "filler",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Juvelook Volume",
+      "korean_name": "쥬베룩 볼륨",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "booster",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Mounjaro",
+      "korean_name": "마운자로",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "lipolytic",
+      "description": null,
+      "source": "text"
+    }
+  ],
+  "treatments": [
+    {
+      "name": "한관종&피지샘증식증",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "skin",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "덴서티리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "lifting",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "인모드리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "lifting",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "텐쎄라리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "lifting",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "이브타이탄 리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "lifting",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "리바이브리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "lifting",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "토르리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "lifting",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "슈링크리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "lifting",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "코레지 셀핏 리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "lifting",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "실루엣소프트",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "lifting",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "실리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "lifting",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "비수술 안면거상",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "lifting",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "굿바이 목주름 리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "lifting",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "프리패스 마스터",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "special_program",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "쥬베룩 스킨부스터",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "skin_booster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "NCTF 스킨부스터",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "skin_booster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "리쥬란힐러",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "skin_booster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "리쥬란힐러HB+",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "skin_booster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "눈꽃주사",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "skin_booster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "P198엑소힐러",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "skin_booster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "도로시주사",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "skin_booster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "필러",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "petit",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "페이스 톡신",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "petit",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "쥬베룩 볼륨",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "petit",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "쥬브엘",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "petit",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "윤곽주사 (조각주사)",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "petit",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "스킨필러",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "petit",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "리브 다이어트",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "body",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "트리플바디",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "body",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "리브팻주사",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "body",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "미쿨",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "body",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "울핏",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "body",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "티웨이브",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "body",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "코어스컬프",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "body",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "리핏",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "body",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "바디 제모",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "body",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "바디 보톡스",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "body",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "트리플 시그니처",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "special_program",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "목주름 리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "lifting",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "웨딩 케어 관리",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "special_program",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "유기산검사",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "diagnostic",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "NK면역세포검사",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "diagnostic",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "산후관리",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "special_program",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "맘스힐링 패키지",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": true,
+      "is_addon": false,
+      "source": "text",
+      "category": "special_program",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "비수술 미니안면거상",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "lifting",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "비수술 목주름제거",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "lifting",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "보툴리늄톡신",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "petit",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "쁘띠성형",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "petit",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "비수술 코성형",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "petit",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "하이코시술",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "petit",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "필로가주사",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "skin_booster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "피부관리",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "skin",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "피코토닝",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "skin",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "일반 토닝",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "skin",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "악센토엣지토닝",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "skin",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "티타늄리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "lifting",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "실크웨이브",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "skin",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "스킨부스터",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "skin_booster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "트리필",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "skin",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "염증성 여드름 치료",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "skin",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "아토피 치료",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "skin",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "색소질환치료",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "skin",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "레이저토닝",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "skin",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "네오젠 플라즈마 레이저",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "skin",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "리덤 플라즈마 레이저",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "skin",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "엑셀V레이저",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "skin",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "트리플토닝",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "skin",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "삭센다",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "body",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "위고비",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "body",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "유전자 다이어트",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "body",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "비만다이어트 플랜",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "body",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "바디밸런스",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "body",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "남자 수염제모",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "body",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "목주름 시술",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "lifting",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "이마주름 주사",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "petit",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "이마"
+    },
+    {
+      "name": "마운자로",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "body",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "기미제거",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "skin",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "남성 제모",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "body",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "여드름 색소침착",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "skin",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "기미 제거",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "skin",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "골반 필러",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "body",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "골반"
+    },
+    {
+      "name": "지방분해주사",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "body",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "레이저 리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "lifting",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "얼굴 레이저 제모",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "skin",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "얼굴"
+    }
+  ],
+  "events": [
+    {
+      "title": "REEV :: SUMMER BEAUTY FESTIVAL",
+      "type": "시즌",
+      "period": "2025.06.01 ~ 2025.08.31",
+      "discount_info": null,
+      "original_price": null,
+      "event_price": null,
+      "conditions": [],
+      "source": "screenshot"
+    },
+    {
+      "title": "REEV SNOW BEAUTY",
+      "type": "시즌",
+      "period": "2025.12.01 ~ 2026.02.28",
+      "discount_info": null,
+      "original_price": null,
+      "event_price": null,
+      "conditions": [],
+      "source": "page"
+    },
+    {
+      "title": "리브 웨딩 패키지",
+      "type": "패키지",
+      "period": "상시 프로그램",
+      "discount_info": null,
+      "original_price": null,
+      "event_price": null,
+      "conditions": [],
+      "source": "page"
+    },
+    {
+      "title": "비수술 안면거상 패키지",
+      "type": "패키지",
+      "period": "상시 프로그램",
+      "discount_info": null,
+      "original_price": null,
+      "event_price": null,
+      "conditions": [],
+      "source": "page"
+    },
+    {
+      "title": "리브 다이어트 프로그램",
+      "type": "패키지",
+      "period": "상시 프로그램",
+      "discount_info": null,
+      "original_price": null,
+      "event_price": null,
+      "conditions": [],
+      "source": "page"
+    },
+    {
+      "title": "리브 도네이션 데이",
+      "type": "할인",
+      "period": "2025.12.12",
+      "discount_info": "40% 할인",
+      "original_price": null,
+      "event_price": null,
+      "conditions": [
+        "당일 모든 1회성 시술 한정",
+        "12월 이벤트 참여자와 뷰티데이 시술은 제외"
+      ],
+      "source": "page"
+    },
+    {
+      "title": "리브에서 예뻐질 가을~?",
+      "type": "시즌",
+      "period": "2025.09.01 ~ 2025.11.30",
+      "discount_info": null,
+      "original_price": null,
+      "event_price": null,
+      "conditions": [],
+      "source": "page"
+    },
+    {
+      "title": "썸머뷰티페스티벌 이벤트",
+      "type": "시즌",
+      "period": "2025.06.01 ~ 2025.08.31",
+      "discount_info": null,
+      "original_price": null,
+      "event_price": null,
+      "conditions": [],
+      "source": "page"
+    },
+    {
+      "title": "봄맞이 본격 미모단장",
+      "type": "시즌",
+      "period": "2025.03.04 ~ 2025.05.31",
+      "discount_info": null,
+      "original_price": null,
+      "event_price": null,
+      "conditions": [],
+      "source": "page"
+    },
+    {
+      "title": "리브 도네이션 데이",
+      "type": "할인",
+      "period": "2024.12.12",
+      "discount_info": "40% 할인",
+      "original_price": null,
+      "event_price": null,
+      "conditions": [
+        "당일 모든 1회성 시술 한정"
+      ],
+      "source": "page"
+    }
+  ],
+  "clinic_categories": [
+    {
+      "name": "기미&색소 클리닉",
+      "treatments": []
+    },
+    {
+      "name": "홍조&혈관 클리닉",
+      "treatments": []
+    },
+    {
+      "name": "여드름 클리닉",
+      "treatments": []
+    },
+    {
+      "name": "모공&흉터 클리닉",
+      "treatments": []
+    },
+    {
+      "name": "제모 클리닉",
+      "treatments": []
+    },
+    {
+      "name": "무좀 클리닉",
+      "treatments": []
+    },
+    {
+      "name": "리프팅클리닉",
+      "treatments": []
+    },
+    {
+      "name": "쁘띠 클리닉",
+      "treatments": []
+    },
+    {
+      "name": "스페셜클리닉",
+      "treatments": []
+    },
+    {
+      "name": "피부&쁘띠",
+      "treatments": []
+    },
+    {
+      "name": "비만&다이어트",
+      "treatments": []
+    },
+    {
+      "name": "이너뷰티 & 웰에이징",
+      "treatments": []
+    }
+  ],
+  "contact_info": {
+    "email": [],
+    "phone": [
+      {
+        "number": "062.452.2200",
+        "type": "대표",
+        "source": "footer"
+      }
+    ],
+    "address": {
+      "full_address": "광주광역시 광산구 선운중앙로 65, 선운메디컬스퀘어 5층 (지번 주소 : 광주광역시 광산구 선암동 538, 선운메디컬스퀘어 5층)",
+      "sido": "광주광역시",
+      "sigungu": "광산구"
+    },
+    "kakao_channel": null,
+    "naver_booking": null,
+    "naver_place": "https://map.kakao.com/?urlX=449705.0&urlY=458923.0&itemId=878432376&q=%EC%B2%AD%EB%8B%B4%EB%A6%AC%EB%B8%8C%EC%9D%98%EC%9B%90&srcid=878432376&map_type=TYPE_MAP&from=roughmap",
+    "instagram": null,
+    "facebook": null,
+    "youtube": null,
+    "blog": null,
+    "website_url": "http://www.reev.co.kr",
+    "operating_hours": {
+      "weekday": "AM 10:00 ~ PM 07:00 (점심시간 오후 12:30 ~ 오후 2:00)",
+      "saturday": "AM 10:00 ~ PM 02:00 (점심시간 없음)",
+      "sunday": "휴진",
+      "lunch_break": "오후 12:30 ~ 오후 2:00 (월~금)"
+    }
+  },
+  "unregistered_equipment": [],
+  "unregistered_treatments": [],
+  "raw_price_texts": [],
+  "extraction_summary": {
+    "total_doctors": 3,
+    "total_academic": 0,
+    "total_equipment": 38,
+    "total_devices": 26,
+    "total_injectables": 12,
+    "total_treatments": 55,
+    "total_events": 10,
+    "total_categories": 12,
+    "total_contact_channels": 3,
+    "has_email": false,
+    "has_phone": true,
+    "has_kakao": false,
+    "has_sns": false,
+    "price_available_ratio": "0/55",
+    "unregistered_equipment_count": 0,
+    "unregistered_treatments_count": 0
+  }
+}
+
+──── [2] ocr_raw.json (이미지 OCR 원본) ────
+
+--- page_0_main_capture_0 ---
+REHV
+Re-Evolution of Your Life
+청담리브의원
+
+청담리브 피부시술 리프팅 프리패스 마스터 스킨부스터 바디시술 커뮤니티
+
+청담리브의원
+프리패스 마스터
+특허청 상표 등록
+
+프리패스 마스터는 오직 청담리브의원에서만
+만나실 수 있는 독자적인 시술 프로그램입니다.
+
+자세히 알아보기 >>
+
+상표권
+등록
+
+상표등록증
+CERTIFICATE OF TRADEMARK REGISTRATION
+
+등록 제 40-2376912 호
+Registration Number
+
+출원번호 제 40-2023-0027571 호
+Application Number
+출원일 2023년 02월 21일
+Filing Date
+등록일 2023년 06월 22일
+Registration Date
+
+상표를 사용한 상품 및 구분
+Goods and Services
+제 44 류
+병원업(치과업 제외)등 10건
+
+프리패스
+
+위의 표장은 「상표법」에 따라 상표등록원부에 등록되었음을
+This is to certify that, in accordance with the Trademark Act,
+been registered at the Korean Intellectual Property Office.
+
+2023년 06월 22일
+
+특허청
+Korean Intellectual
+Property Office
+
+특허청장
+COMMISSIONER
+KOREAN INTELLECTUAL PROPERTY OFFICE
+김완기
+
+TALK
+
+blog
+
+스마트폰으로 간편하게
+등록사항을 확인하세요
+
+--- page_0_main_capture_1 ---
+청담리브의원
+NEWS
+청담리브
+피부시술
+리프팅
+프리패스 마스터
+스킨부스터
+쁘띠시술
+바디시술
+커뮤니티
+RELIV
+Re-Evolution Of Your Life
+광주 & 전남 지역 최초
+이브타이탄 신규 런칭
+“ 당김의 순간, 리프팅의 시작! ”
+RELIV
+Re-Evolution Of Your Life
+프리패스 마스터
+청담리브만의 VIP 프리미엄 프로그램
+TALK
+미세전류
+트리플 시그니처
+청담리브만의 스페셜 프로그램
+RF(고주파)
+비수술 안면거상
+청담리브만의 스페셜 비수술 안면거상 패키
+blog
+EMS
+목주름 리프팅
+목주름 해결하고 젊어진 목선 되찾기
+eve TITAN
+리브 다이어트
+프라이빗 다이어트 컨설팅 프로그램
+
+--- page_0_main_capture_2 ---
+청담리브의원
+REEV
+Re-Evolution of Your Life
+청담리브
+피부시술
+리프팅
+프리패스 마스터
+스킨부스터
+쁘띠시술
+바디시술
+커뮤니티
+≡
+스페셜클리닉
+리프팅
+피부&쁘띠
+비만&다이어트
+YouTube 바로가기
+REEV
+청담리브의원
+모공, 탄력, 처짐, 색소등 피부 고민? 청담리브의원 【프리패스 마스터】로 고민 종결...
+모공, 탄력, 처짐, 색소
+피부 고민? 청담리브의
+모공? 탄력? 처짐?
+홍조? 기미?
+특허청
+상표등록
+완료!
+신부, 신랑, 부모님 웨딩
+케어 관리
+피부 고민에 맞는
+1:1맞춤형 관리!
+청담리브의원의 시그니처
+유기산검사 &
+NK면역세포검사
+프리패스 마스터
+프로그램을 소개합니다!
+출산 후 산후관리,
+맘스힐링 패키지
+다음에서 보기: YouTube
+BEST CONTENTS
+
+--- page_0_main_capture_3 ---
+RE:V
+Re:Evolution of Your Life
+청담리브의원
+청담리브
+피부시술
+리프팅
+프리패스 마스터
+스킨부스터
+쁘띠시술
+바디시술
+커뮤니티
+NeoGen
+NEOGEN PLASMA
+네오젠 플라즈마
+편안한 시술로
+건강해지는 피부
+MORE +
+REJURAN HB plus
+리쥬란힐러 HB+
+적은 통증으로
+촉촉하게 물광 채우기
+MORE +
+JuveLook
+쥬베룩
+자가 콜라겐 생성 유도로
+피부 나이 되돌리기
+MORE +
+LUTRONIC
+LASER TONING
+레이저토닝
+티끌 없이 하얗고
+투명한 피부
+MORE +
+TALK
+blog
+NOTICE 리브공지
++ MORE
+청담리브의원 2026년 3월 휴진 안내
+청담리브의원 2026년 2월 휴진 안내
+Q&A 온라인 상담
++ MORE
+유기산 검사
+남자 수염제모
+NEWS 언론보도
++ MORE
+새해 인기 시술 트렌드, 개인별 맞춤 관리 전략 주목
+덴서티 리프팅, 듀얼 고주파 에너지로 피부 탄력 · 밀
+
+--- page_0_main_capture_4 ---
+RE:EV
+Re-Evolution of Your Life
+청담리브의원 청담리브 피부시술 리프팅 프리패스 마스터 스킨부스터 쁘띠시술 바디시술 커뮤니티
+
+진료안내
+진료안내 바로가기
+
+온라인상담
+상담 바로가기
+
+TALK
+카톡상담
+상담 바로가기
+
+TALK
+blog
+
+LOCATION MAP
+뱅크주유소
+보문고등학교
+동곡미술관
+복암사
+어등대로
+선운지하차도
+광주광산경찰서
+대양식자재마트
+가천아파트
+우리집
+광산소촌
+동공원
+아파트
+광산구
+민방위교육장
+광주어등대로
+
+--- page_0_main_capture_5 ---
+REHV
+Re-Evolution of Your Life
+청담리브의원
+청담리브
+피부시술
+리프팅
+프리패스 마스터
+스킨부스터
+쁘띠시술
+바디시술
+커뮤니티
+진료시간
+일 ~ 목
+AM 10:00 ~ PM 07:00
+(점심시간 오후 12:30 ~ 오후 2:00)
+금 요일
+AM 10:00 ~ PM 09:00
+(점심시간 오후 12:30 ~ 오후 2:00)
+토 요일
+AM 10:00 ~ PM 02:00
+
+--- page_0_main_capture_6 ---
+REEV
+Re-Evolution of Your Life
+청담리브의원 청담리브 피부시술 리프팅 프리패스 마스터 스킨부스터 쁘띠시술 바디시술 커뮤니티
+
+페스티벌
+REEV :: SUMMER BEAUTY FESTIVAL
+이벤트 기간 : 2025. 06. 01 ~ 2025. 08. 31
+
+이벤트 자세히보기
+
+TALK
+
+blog
+
+REEV
+Re-Evolution of Your Life
+청담리브의원
+대기시간 발생안내
+
+최근 예약 및 내원 고객이 증가함에 따라
+다소 진료가 지연되거나 대기시간이 발생할 수 있으니
+양해 부탁드립니다.
+
+청담리브의원 의료진과 전 스텝은
+한 분 한 분 만족스러운 상담 & 진료 진행을 위해
+최선을 다하고 있습니다.
+
+대기시간을 줄이고 원활한 진료가 이루어지도록
+노력하겠습니다. 감사합니다.
+
+--- page_0_main_capture_7 ---
+REEV
+Re-Evolution of Your Life
+청담리브의원
+청담리브 피부시술 리프팅 프리패스 마스터 스킨부스터 쁘띠시술 바디시술 커뮤니티
+페스티벌
+REEV :: SUMMER BEAUTY FESTIVAL
+이벤트 기간 : 2025. 06. 01 ~ 2025. 08. 31
+이벤트 자세히보기
+TALK
+
+blog
+
+
+REEV
+Re-Evolution of Your Life
+청담리브의원
+대기시간 발생안내
+최근 예약 및 내원 고객이 증가함에 따라
+다소 진료가 지연되거나 대기시간이 발생할 수 있으니
+양해 부탁드립니다.
+청담리브의원 의료진과 전 스텝은
+한 분 한 분 만족스러운 상담 & 진료 진행을 위해
+최선을 다하고 있습니다.
+대기시간을 줄이고 원활한 진료가 이루어지도록
+노력하겠습니다. 감사합니다.
+
+--- page_2_other_capture_0 ---
+REEV
+Re-Evolution of Your Life
+청담리브의원
+청담리브 피부시술 리프팅 프리패스 마스터 스킨부스터 쁘띠시술 바디시술 커뮤니티 ≡
+
+청담리브
+Re-Evolution of Your Life
+
+REEV
+청담리브피부과
+
+인사말 의료진 소개 진료 안내 오시는 길 리브 둘러보기
+
+TALK
+
+blog
+
+오시는 길
+— REEV —
+
+REEV
+Re-Evolution of Your Life
+청담리브의원
+
+주소
+광주광역시 광산구 선운중앙로 65, 선운메디컬스퀘어 5층
+(지번 주소 : 광주광역시 광산구 선암동 538, 선운메디컬스퀘어 5층)
+
+--- page_2_other_capture_1 ---
+REHV
+Re-Evolution of Your Life
+청담리브
+청담리브
+피부시술
+리프팅
+프리패스 마스터
+스킨부스터
+쁘띠시술
+바디시술
+커뮤니티
+≡
+청담리브의원
+CU
+조권
+운동장
+우편취급국
+선운진아리채
+아파트
+선운리브프라임
+1단지아파트
+광주선운지구EG더
+원3단지아파트
+선운초등학교
+광주선운지구EG더
+원2단지아파트
+청담리브의원
+선운교회
+사랑과
+사람교회
+광주선운
+
+--- page_2_other_capture_2 ---
+RE:LIV
+Re-Evolution of Your Life
+청담리브의원
+청담리브
+피부시술
+리프팅
+프리패스 마스터
+스킨부스터
+쁘띠시술
+바디시술
+커뮤니티
+LOCATION MAP
+주소
+광주광역시 광산구 선운중앙로 65, 선운메디컬스퀘어 5층
+광주광역시 광산구 선암동 538, 선운메디컬스퀘어 5층
+진료시간
+*일요일 및 공휴일 휴진
+월 ~ 목 AM 10:00 ~ PM 07:00
+(점심시간 오후 12:30 ~ 오후 2:00)
+금 요일 AM 10:00 ~ PM 09:00 야간진료
+(점심시간 오후 12:30 ~ 오후 2:00)
+토 요일 AM 10:00 ~ PM 02:00
+(점심시간 없음)
+고객센터
+062.452.2200
+어등대로
+광주광산경찰서
+대양식자재마트
+가천아파트
+광주선운2레
+니체아파트
+GS25
+광산구
+민방위교육장
+광주선운리버프라임
+아파트
+청담리브의원
+선운교회
+광주선운2단지아파트
+사랑과
+사랑교회
+선운보도약국
+광주선운2
+공공주택지구
+운수초등학교
+어등동
+행정복지센터
+광주선운2
+포리애아파트
+선운초등학교
+CU
+광주
+예수교회
+선운보도약국
+광주선운
+휴먼시아아파트
+선예학교
+광주선운리체
+리버빌드아파트
+송정전기
+심테교회
+도얏골
+어등동
+행정복지센터
+광주선운희망타운
+2단지아파트
+송정정비
+소촌
+산업
+한국전력공사
+광산지사
+blog
+금호타이어
+퍼포먼스센터
+새마을금고
+선운1동
+행정복지센터
+광주선운
+휴먼시아아파트
+금호타이어
+광주공장
+송정동
+송정공원
+송정농장
+황룡강
+오시는 길 더보기
+지도 자세히보기
+RE:LIV
+Re-Evolution of Your Life
+청담리브의원
+청담리브 소개
+공지사항
+개인정보 취급방침
+ADMIN
+상호 : 청담리브의원 | 대표자명 : 박세형 | 주소 : 광주광역시 광산구 선운중앙로 65, 선운메디컬스퀘어 5층
+사업자번호 : 226-30-13399 | Tel. 062.452.2200
+COPYRIGHT ⓒ 청담리브의원 ALL RIGHT RESERVED.
+
+--- page_3_other_capture_0 ---
+REHV
+The Re-Evolution of Your Life
+청담리브의원
+청담리브
+피부시술
+리프팅
+프리패스 마스터
+스킨부스터
+쁘띠시술
+바디시술
+커뮤니티
+커뮤니티
+Re-Evolution of Your Life
+TALK
+이벤트
+카카오톡 상담
+온라인 상담
+언론 속 리브
+공지사항
+blog
+온라인상담
+REHV
+번호
+제목
+작성자
+작성일
+510
+유기산 검사
+지이
+2026-02-25
+2
+509
+남자 수염제모[1]
+김상호
+2026-02-20
+4
+508
+목주름 시술 가격 문의[1]
+휴나
+2026-02-19
+6
+507
+이마주름에는 무슨 주사를 맞아야하나요?[1]
+쩡이
+2026-02-13
+5
+506
+마온자료[1]
+김민우
+2026-02-12
+3
+505
+기미제거비용문의드려요[1]
+정동훈
+2026-01-27
+6
+504
+남성 제모 문의[1]
+제모
+2026-01-24
+8
+503
+비용문의[1]
+ㄱㅎ
+2026-01-14
+7
+502
+여드름 색소침착 비용[1]
+해피가이
+2026-01-13
+5
+501
+기미 제거 비용[1]
+릴탈
+2026-01-10
+3
+
+--- page_3_other_capture_1 ---
+RE:V
+Re:Evolution of Your Life
+청담리브의원
+청담리브
+피부시술
+리프팅
+프리패스 마스터
+스킨부스터
+쁘띠시술
+바디시술
+커뮤니티
+LOCATION MAP
+주소
+광주광역시 광산구 선운중앙로 65, 선운메디컬스퀘어 5층
+광주광역시 광산구 선암동 538, 선운메디컬스퀘어 5층
+진료시간
+*일요일 및 공휴일 휴진
+월 ~ 목 AM 10:00 ~ PM 07:00
+(점심시간 오후 12:30 ~
+
+--- page_3_other_capture_2 ---
+RE:V
+Re-Evolution of Your Life
+청담리브의원
+청담리브
+피부시술
+리프팅
+프리패스 마스터
+스킨부스터
+쁘띠시술
+바디시술
+커뮤니티
+
+LOCATION MAP
+
+주소
+광주광역시 광산구 선운중앙로 65, 선운메디컬스퀘어 5층
+광주광역시 광산구 선암동 538, 선운메디컬스퀘어 5층
+
+진료시간
+*일요일 및 공휴일 휴진
+월 ~ 목 AM 10:00 ~ PM 07:00
+(점심시간 오후 12:30 ~ 오후
+
+--- page_4_other_capture_0 ---
+REEV
+Re-Evolution of Your Life
+청담리브의원
+청담리브
+피부시술
+리프팅
+프리패스 마스터
+스킨부스터
+쁘띠시술
+바디시술
+커뮤니티
+
+커뮤니티
+Re-Evolution of Your Life
+
+이벤트
+카카오톡 상담
+온라인 상담
+언론 속 리브
+공지사항
+
+TALK
+blog
+
+이벤트
+REEV
+
+REEV
+청담리브 겨울 이벤트
+REEV
+SNOW
+BEAUTY
+리브에서 하얀 눈처럼 눈부시게 아름답게!
+이벤트 기간 : 2025.12.01 ~ 2026.02.28
+이벤트 자세히보기
+예비신부 & 예비신랑을 위한
+REEV
+WEDDING
+PACKAGE
+이벤트 보러가기
+REEV
+청담리브의원
+비수술 안면거상
+Special Package
+일반 리프팅 시술만으로는 만족하지 못했다면?
+수술은 무섭고, 빠른 일상 복귀를 원한다면?
+
+REEV SNOW BEAUTY
+[이벤트 기한 : 2025.12.01 ~ 2026.02.28]
+리브 웨딩 패키지
+[이벤트 기한 : 상시 프로그램]
+비수술 안면거상 패키지
+[이벤트 기한 : 상시 프로그램]
+
+--- page_4_other_capture_1 ---
+RE:IV
+Re:Evolution of Your Life
+청담리브의원
+청담리브
+피부시술
+리프팅
+프리패스 마스터
+스킨부스터
+바디시술
+커뮤니티
+청담리브의원 비만클리닉
+다이어트
+프로그램
+살찌는 체질 개선부터, 건강한 체중 감량까지!
+청담리브의 대표 다이어트 프로그램을 소개합니다.
+12월 12일
+리브 도네이션 데이
+종료된 이벤트
+| 당일 모든 1회성 시술 한정 |
+40% 할인
+* 단, 12월 이벤트 참여자와 뷰티데이 시술은 제외 *
+청담리브 가을 이벤트
+리브에서 예뻐질 가을~?
+종료된 이벤트
+이벤트 자세히보기
+TALK
+리브 다이어트 프로그램
+[이벤트 기한: 상시 프로그램]
+리브 도네이션 데이
+[이벤트 기한: 2025.12.12]
+[이벤트 기한: 2025.09.01 ~ 2025.11.30]
+blog
+썸머뷰티
+Re:ev event
+종료된 이벤트
+RE:IV :: SUMMER BEAUTY FESTIVAL
+이벤트 자세히보기
+이벤트 기한: 2025.06.01 ~ 2025.08.31
+봄맞이
+이모단장
+종료된 이벤트
+청담리브와 함께 본격적인 봄맞이 이모단장
+이벤트 자세히보기
+이벤트 기한: 2025.03.04 ~ 2025.05.31
+RE:IV
+12월 12일
+리브 도네이션 데이
+종료된 이벤트
+당일 모든 1회성 시술 한정
+40% 할인
+이벤트 자세히보기
+썸머뷰티페스티벌 이벤트
+[이벤트 기한: 2025.06.01 ~ 2025.08.31]
+봄맞이 본격 미모단장
+[이벤트 기한: 2025.03.04 ~ 2025.05.31]
+리브 도네이션 데이
+[이벤트 기한: 2024.12.12]
+제목
+검색
+1 2 3 4 5 6 7 8 9 10
+
+--- page_4_other_capture_2 ---
+RE:EV
+Re-Evolution of Your Life
+청담리브
+청담리브 피부시술 리프팅 프리패스 마스터 스킨부스터 쁘띠시술 바디시술 커뮤니티
+≡
+
+LOCATION MAP
+
+주소
+광주광역시 광산구 선운중앙로 65, 선운메디컬스퀘어 5층
+광주광역시 광산구 선암동 538, 선운메디컬스퀘어 5층
+
+진료시간
+월 ~ 목 AM 10:00 ~ PM 07:00
+(점심시간 오후 12:30 ~ 오후 2:00)
+금 요일 AM 10:00 ~ PM 09:00 야간진료
+(점심시간 오후 12:30 ~ 오후 2:00)
+토 요일 AM 10:00 ~ PM 02:00
+(점심시간 없음)
+
+고객센터
+062.452.2200
+
+오시는 길 더보기
+지도 자세히보기
+
+어등대로
+광주광산
+경찰서
+대양
+식자재마트
+가천아파트
+광산구
+민방위교육
+광주선운2레
+니체아파트
+CU
+GS25
+청담리브의원
+선운교회
+광주선운지구EGL,
+원2단지아파트
+운수초등학교
+광주선운2
+공공주택지구
+선운포도약국
+어등동
+행정복지센터
+선명학교
+광주예수존교회
+광주선운
+휴먼시아아파트
+어등산어리채
+리버빌드아파트
+송정정비
+한국전력공사
+광산지사
+코오롱하늘채
+퍼포먼스센터
+도싯골
+평동로
+금호타이어
+퍼포먼스센터
+새마을금고
+강강
+금호타이어
+광주공장
+TALK
+blog
+승근농장
+
+RE:EV
+Re-Evolution of Your Life
+청담리브의원
+청담리브 소개
+공지사항
+개인정보 취급방침
+ADMIN
+상호 : 청담리브의원 | 대표자명 : 박세영 | 주소 : 광주광역시 광산구 선운중앙로 65, 선운메디컬스퀘어 5층
+사업자번호 : 226-30-13399 | Tel. 062.452.2200
+COPYRIGHT ⓒ 청담리브의원 ALL RIGHT RESERVED.
+
+--- page_4_other_capture_3 ---
+RE:LIV
+Re-Evolution of Your Life
+청담리브의원
+청담리브
+피부시술
+리프팅
+프리패스 마스터
+스킨부스터
+쁘띠시술
+바디시술
+커뮤니티
+
+LOCATION MAP
+주소
+광주광역시 광산구 선운중앙로 65, 선운메디컬스퀘어 5층
+광주광역시 광산구 선암동 538, 선운메디컬스퀘어 5층
+진료시간
+*일요일 및 공휴일 휴진
+월 ~ 목 AM 10:00 ~ PM 07:00
+(점심시간 오후 12:30 ~ 오후 2:00)
+금 요일 AM 10:00 ~ PM 09:00 야간진료
+(점심시간 오후 12:30 ~ 오후 2:00)
+토 요일 AM 10:00 ~ PM 02:00
+(점심시간 없음)
+고객센터
+062.452.2200
+오시는 길 더보기
+지도 자세히보기
+
+청담리브의원
+TALK
+blog
+
+RE:LIV
+Re-Evolution of Your Life
+청담리브의원
+청담리브 소개
+공지사항
+개인정보 취급방침
+ADMIN
+상호 : 청담리브의원 | 대표자명 : 박세형 | 주소 : 광주광역시 광산구 선운중앙로 65, 선운메디컬스퀘어 5층
+사업자번호 : 226-30-13399 | Tel. 062.452.2200
+COPYRIGHT © 청담리브의원 ALL RIGHT RESERVED.
+
+--- page_5_other_capture_0 ---
+REEV
+Re-Evolution of Your Life
+청담리브의원
+청담리브
+피부시술
+리프팅
+프리패스 마스터
+스킨부스터
+쁘띠시술
+바디시술
+커뮤니티
+≡
+청담리브
+Re-Evolution of Your Life
+REEV
+청담리브피부과
+인사말
+의료진 소개
+진료 안내
+오시는 길
+리브 둘러보기
+인사말
+REEV
+REEV
+청담리브의원
+200평대 규모로 확장 이전한 【청담리브의원】 랜선 투어
+공유
+광주피부과
+청담리브
+랜선투어
+200평대 규모
+
+--- page_5_other_capture_1 ---
+RE`EV
+Re-Evolution of Your Life
+청담리브의원
+청담리브 피부시술 리프팅 프리패스 마스터 스킨부스터 쁘띠시술 바디시술 커뮤니티
+
+RE`EV STORY
+
+다시 경험하는 내 몸 안의 혁명
+당신의 아름다움을 위한 리브
+건강한 아름다움을 약속합니다.
+
+RE-EVOlution of your life; RE`EV clinic
+
+"우리는, 어릴 때 처음으로 몸의 혁명을 경험하게 됩니다."
+아무리 뛰어놀아도 지치지 않고,
+미세먼지와 같은 유해 물질들이나
+뜨거운 햇볕에 오랜 시간 노출되어도
+매끄럽고 뽀얀 피부를 유지합니다.
+
+그러나 시간이 흘러 나이가 들면
+자연스럽게 노화가 시작되고,
+그 과정에서 작은 주변 환경 변화만으로도
+우리 몸은 쉽게 자극을 느끼게 됩니다.
+또한 체내의 호르몬과 영양소, 미네랄 불균형으로 인해
+피부는 점점 볼품없이 변하고 몸은 쉽게 지치게 됩니다.
+
+Change your life for the better
+
+내 몸 안의 혁명이 일어나는 어린 시절로
+
+--- page_5_other_capture_2 ---
+RE`EV
+Re-Evolution of Your Life
+청담리브의원
+청담리브
+피부시술
+리프팅
+프리패스 마스터
+스킨부스터
+쁘띠시술
+바디시술
+커뮤니티
+☰
+
+RE`EV
+PHILOSOPHY
+청담리브의원의
+진료 철학
+
+RE`EV
+Re-Evolution of Your Life
+
+TALK
+
+blog
+
+RE`EV MOTO
+[이너뷰티] & [웰에이징]
+
+'이너뷰티' (inner beauty) & '웰에이징' (well-aging)
+바로, 이 2가지가 청담리브의원의 진료 철학이자 모토입니다.
+일반적인 피부과에서 만나볼 수 있던 진료 뿐만 아니라,
+건강까지 챙긴 뷰티 & 웰스를 경험하실 수 있습니다.
+이너뷰티를 통해 몸 속 바디밸런스를 건강하게 만들면
+신체 바깥까지도 아름답고 건강해질 수 있습니다.
+청담리브는 이러한 아름다움을 오래 지속시킬 수 있도록,
+
+--- page_5_other_capture_3 ---
+RE:EV
+Re-Evolution of Your Life
+청담리브의원
+청담리브 피부시술 리프팅 프리패스 마스터 스킨부스터 쁘띠시술 바디시술 커뮤니티
+RE:EV
+Re-Evolution of Your Life
+RE:EV
+FEATURE
+청담리브의원의
+특색
+TALK
+blog
+저희 청담리브의원은
+일반적인 피부과와는 결이 다릅니다.
+몸속의 바디 밸런스를 케어할 수 있는 내과 원장과
+외면의 아름다움을 유지시켜주는 피부과 원장이
+함께 진단하고 진료하는 병원이기 때문입니다.
+내과 진단을 통해 몸속 불균형을 잡아주고
+일반적인 피부과 진료를 함께 병행하여
+내적인 아름다움이 겉으로도 표출될 수 있게
+도와드리고 있습니다.
+청담리브의원의 특색
+[피부과원장] & [내과원장]
+
+--- page_5_other_capture_4 ---
+REHV
+Re-Evolution of Your Life
+청담리브의원 청담리브 피부시술 리프팅 프리패스 마스터 스킨부스터 쁘띠시술 바디시술 커뮤니티
+
+이너뷰티 X 웰에이징
+
+청담리브의원이 말하는 이너뷰티란?
+이너뷰티는 몸속의 아름다움이 밖으로 표출된다는 이야기입니다.
+간이 안 좋은 경우 얼굴색이 까매지거나 누레지면서
+얼굴에 잡티가 많이 올라오고,
+콩팥이 안 좋은 경우는 몸이 잘 붓게 되며,
+폐가 안 좋은 경우는 숨을 잘 못 쉬게 되기 때문에
+얼굴색이 파래지게 됩니다.
+이처럼 우리 신체는 몸속 상태에 따라 얼굴에 그대로 드러나게 됩니다.
+청담리브의원은 이와 같은 문제들을
+먼저 컨트롤하고 개선하여 피부로 나타나는 안색을
+더 아름답게 만들 수 있는 이너뷰티 노하우가 있습니다.
+
+청담리브의원이 말하는 웰에이징이란?
+웰에이징이란 건강하게 나이 들어감을 의미합니다.
+나이가 들어감에 따라 우리 몸은 점점 변화가 생깁니다.
+나이가 들면 피부 노화로 인해
+이전에는 없던 주름이 생기고, 피부가 처지게 되며,
+예전에는 보이지 않았던 잡티가 생기기도 하고,
+쉽게 피로해지는 신체적인 변화를 겪게 됩니다.
+청담리브의원은 이러한 증상들을
+
+--- page_5_other_capture_5 ---
+RE'EV
+Re-Evolution of Your Life
+청담리브의원
+청담리브 피부시술 리프팅 프리패스 마스터 스킨부스터 쁘띠시술 바디시술 커뮤니티
+
+청담리브의원은 최신 장비와 시스템,
+본원만의 진료 철학과 의술을 통하여
+건강하고 아름다운 삶을 유지할 수 있도록 최선을 다해 진료합니다.
+
+TALK
+
+blog
+
+청담리브의원의 약속
+
+청담리브의원은 미용만을 생각하는 곳이 아닌
+고객의 건강을 먼저 생각하는 병원입니다.
+환자분들의 건강을 해치거나 몸을 아프게 만드는
+과도한 시술이나 약 처방은 절대 하지 않을 것을 약속드리며,
+언제나 진심으로 환자 중심의 진료를 실천하는
+청담리브의원이 되겠습니다.
+
+Re'ev Clinic
+
+--- page_5_other_capture_6 ---
+RE:EV
+Re:Evolution of Your Life
+청담리브의원
+
+청담리브 피부시술 리프팅 프리패스 마스터 스킨부스터 쁘띠시술 바디시술 커뮤니티 ≡
+
+RE:EV CLINIC
+청담리브의원 진료 과목 안내
+
+Skin
+피부시술
+기미&색소 클리닉
+홍조&혈관 클리닉
+모공&흉터 클리닉
+제모 클리닉
+무릎 클리닉
+한관종&피지샘 증식증
+
+Lifting
+리프팅
+덴서티 리프팅
+인모드 리프팅
+텐쎄라 리프팅
+이브아티탄 리프팅
+리바이이브 리프팅
+토르 리프팅
+슈링크 리프팅
+코레지 셀핏 리프팅
+실루엣소프트
+실리프팅
+비수술 안면거상
+굿바이 목주름 리프팅
+
+Skin Booster
+스킨부스터
+쥬베룩 스킨부스터
+NCTF 스킨부스터
+리쥬란힐러
+리쥬란힐러HB+
+눈꽃주사
+P198엑소좀
+도로시주사
+
+Petit
+쁘띠시술
+필러
+보톡스
+쥬베룩 볼륨
+쥬브엘
+윤곽주사(조각주사)
+스킨필러
+
+Body
+바디시술
+리브 다이어트
+트리플바디
+리브펫주사
+미쿨
+울핏
+티웨이브
+코어스컬프
+리핏
+바디 제모
+바디 보톡스
+
+TALK
+blog
+
+뱅크주유소
+
+--- page_5_other_capture_7 ---
+RE:LV
+Re-Evolution of Your Life
+청담리브의원
+청담리브
+피부시술
+리프팅
+프리패스 마스터
+스킨부스터
+쁘띠시술
+바디시술
+커뮤니티
+LOCATION MAP
+주소
+광주광역시 광산구 선운중앙로 65, 선운메디컬스퀘어 5층
+광주광역시 광산구 선암동 538, 선운메디컬스퀘어 5층
+진료시간
+*일요일 및 공휴일 휴진
+월 ~ 목 AM 10:00 ~ PM 07:00
+(점심시간 오후 12:30 ~ 오후 2:00)
+금요일 AM 10:00 ~ PM 09:00 야간진료
+(점심시간 오후 12:30 ~ 오후 2:00)
+토요일 AM 10:00 ~ PM 02:00
+(점심시간 없음)
+고객센터
+062.452.2200
+오시는 길 더보기
+지도 자세히보기
+어등대로
+광주광산
+경찰서
+광주상무2차
+니체아파트
+CU
+광주선운리프라임
+아파트
+청담리브의원
+광주선운2단지아파트
+선운보도육교
+광주선운2
+포리예아파트
+어등동
+행정복지센터
+선운초등학교
+광주선운2 공공주택지구
+선운예학교
+광주선운리버빌드아파트
+송정전리
+침례교회
+도얏골
+송정농장
+가천아파트
+GS25
+광주선운희망타운
+2단지아파트
+송정정비
+광주선운
+스타벅스
+예수교회
+한국전력공사
+광산지사
+광주서운
+휴먼시아아파트
+금호타이어
+퍼포먼스센터
+새마을금고
+금호타이어
+광주공장
+광산구
+민방위교육장
+소촌
+산업
+사랑과
+사랑교회
+TALK
+blog
+왕복
+왕복
+왕복
+RE:LV
+Re-Evolution of Your Life
+청담리브의원
+청담리브 소개
+공지사항
+개인정보 취급방침
+ADMIN
+상호 : 청담리브의원 | 대표자명 : 박세형 | 주소 : 광주광역시 광산구 선운중앙로 65, 선운메디컬스퀘어 5층
+사업자번호 : 226-30-13399 | Tel. 062.452.2200
+COPYRIGHT © 청담리브의원 ALL RIGHT RESERVED.
+
+──── [3] coverage_raw.txt (커버리지 검증 로그) ────
+{
+  "missing_equipments": [],
+  "missing_treatments": [],
+  "missing_doctors": [],
+  "missing_prices": [],
+  "coverage_score": {
+    "equipment": 100,
+    "treatment": 100,
+    "doctor": 100,
+    "overall": 100
+  },
+  "issues": [
+    "추출된 장비 목록에 제품/재료/약물 (예: 리쥬란힐러HB+, 쥬베룩, 실루엣소프트, NCTF, P198엑소좀, 필로가, 삭센다, 위고비, 하이코, 쥬브겔, 보톡스, 필러, 쥬베룩 볼륨, 마운자로, PDRN) 및 시술명 (예: 레이저토닝, 악센토엣지토닝, 피코토닝, 도로시주사)이 포함되어 있어 '구체적 의료기기 이름' 정의에 부합하지 않는 항목들이 있습니다.",
+    "추출된 의사 목록에 원본 마크다운에 명시되지 않은 '조문주', '김재석'이 포함되어 있습니다."
+  ]
+}

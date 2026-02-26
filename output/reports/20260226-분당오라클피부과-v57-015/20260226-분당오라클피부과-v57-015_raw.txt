@@ -1,0 +1,2180 @@
+═══════════════════════════════════════════════════
+  분당오라클피부과 — 추출 원본 데이터
+═══════════════════════════════════════════════════
+
+──── [1] analysis.json (Gemini 분류 결과) ────
+{
+  "hospital_name": "분당오라클피부과",
+  "doctors": [
+    {
+      "name": "김성권",
+      "title": "대표자",
+      "specialty": null,
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "이성주",
+      "title": "대표자",
+      "specialty": null,
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    }
+  ],
+  "academic_activities": [
+    {
+      "type": "기타",
+      "title": "버짐,각질?! 남성도 ‘피부 건조’ 조심하라",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "버짐,각질?! 남성도 ‘피부 건조’ 조심하라"
+    },
+    {
+      "type": "기타",
+      "title": "오늘 한반도에 황사, 피부와 두발 보호해야",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "오늘 한반도에 황사, 피부와 두발 보호해야"
+    },
+    {
+      "type": "기타",
+      "title": "오라클피부과 \"공공의 적 비만, 비만시술의 힘에 주목\"",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "오라클피부과 \"공공의 적 비만, 비만시술의 힘에 주목\""
+    },
+    {
+      "type": "기타",
+      "title": "스키장 다녀온 후 짙어진 잡티, 해결하려면?",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "스키장 다녀온 후 짙어진 잡티, 해결하려면?"
+    },
+    {
+      "type": "기타",
+      "title": "멈출 수 없는 과도한 땀, 해결방안은?",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "멈출 수 없는 과도한 땀, 해결방안은?"
+    },
+    {
+      "type": "기타",
+      "title": "늦겨울 피부관리, 긴장 놓지 말아야",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "늦겨울 피부관리, 긴장 놓지 말아야"
+    },
+    {
+      "type": "기타",
+      "title": "백반증! 완치가 될 수 있다는 믿음을 가지고 치료",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "백반증! 완치가 될 수 있다는 믿음을 가지고 치료"
+    }
+  ],
+  "medical_devices": [
+    {
+      "name": "Ulthera",
+      "korean_name": "울쎄라",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": "처진 피부 개선",
+      "source": "text"
+    },
+    {
+      "name": "Sculptra",
+      "korean_name": "스컬트라",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "collagen_stimulator",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "XTRAC VELOCITY",
+      "korean_name": "엑시머 밸로시티",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "백반증 건선치료의 끝판왕! 빠르고 효과적인 치료, 획기적으로 줄어든 치료 시간, 신체 어느 부위든 시술 가능!",
+      "source": "ocr"
+    },
+    {
+      "name": "PinPointe FOOTLASER",
+      "korean_name": "핀포인트 풋레이저",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "손발톱 무좀치료, 무좀균만 선택적으로 파괴, 보건복지부 신 의료기술 등재!, 간편한 시술로 일상생활 바로가능!",
+      "source": "ocr"
+    },
+    {
+      "name": "Agnes",
+      "korean_name": "아그네스",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_MICRONEEDLE",
+      "description": "여드름 치료",
+      "source": "ocr"
+    },
+    {
+      "name": "Botox",
+      "korean_name": "보톡스",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "botox",
+      "description": "자연스러운 아름다움",
+      "source": "text"
+    },
+    {
+      "name": "Filler",
+      "korean_name": "필러",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "filler",
+      "description": "수술없이 예뻐지다",
+      "source": "text"
+    },
+    {
+      "name": "Airjet",
+      "korean_name": "에어젯",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": "처진 피부의 주름과 탄력을 동시에!",
+      "source": "text"
+    },
+    {
+      "name": "Doublo",
+      "korean_name": "더블로",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Skin Tyte",
+      "korean_name": "스킨타이트",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "IPL",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "BBL Laser",
+      "korean_name": "BBL 레이저",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "IPL",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "PicoSure",
+      "korean_name": "피코슈어",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "소프트필링레이저",
+      "korean_name": "소프트필링레이저",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "듀엣RF",
+      "korean_name": "듀엣RF",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF",
+      "description": "따로따로 시술받지말고 듀엣RF로 한 번에!",
+      "source": "ocr"
+    }
+  ],
+  "treatments": [
+    {
+      "name": "내향성발톱",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "백반증 / 건선",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "백반증 표피이식술",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "손발톱 무좀치료",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "사마귀",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "전염성연속증 (물사마귀)",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "홍조",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "제모",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "메조테라피",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "탄력프로그램",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "피부톤개선",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "민감성피부",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "웨딩케어",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "울쎄라",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "hifu",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "리쥬란힐러",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "skinbooster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "보톡스",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "botox",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "필러",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "filler",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "스컬트라",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "skinbooster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "윤곽주사",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "에어젯",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "듀엣써마지",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "물광주사",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "skinbooster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "더블로",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "hifu",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "Skin Tyte(스킨타이트)",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "여드름",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "흉터치료",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "모공",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "시크릿",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "점",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "잡티/주근깨",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "기미",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "후천성 오타모반",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "밀크커피반점",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "문신제거",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "BBL 레이저",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "ipl",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "피코슈어",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "여드름 치료",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "여드름 흉터",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "점 제거",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "종아리보톡스 시술",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "botox",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "종아리"
+    },
+    {
+      "name": "여드름 스케일링",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "보들보들 소프트필링레이저",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    }
+  ],
+  "events": [
+    {
+      "title": "special EVENT",
+      "type": "기타",
+      "period": null,
+      "discount_info": null,
+      "original_price": null,
+      "event_price": null,
+      "conditions": [],
+      "source": "banner"
+    },
+    {
+      "title": "가을맞이 10월 이벤트",
+      "type": "시즌",
+      "period": "10월",
+      "discount_info": null,
+      "original_price": null,
+      "event_price": null,
+      "conditions": [],
+      "source": "text"
+    },
+    {
+      "title": "9월 가을 이벤트",
+      "type": "시즌",
+      "period": "9월",
+      "discount_info": null,
+      "original_price": null,
+      "event_price": null,
+      "conditions": [],
+      "source": "text"
+    },
+    {
+      "title": "받아보고 실망않는 8월 여름이벤트",
+      "type": "시즌",
+      "period": "8월",
+      "discount_info": null,
+      "original_price": null,
+      "event_price": null,
+      "conditions": [],
+      "source": "text"
+    }
+  ],
+  "clinic_categories": [
+    {
+      "name": "오라클스페셜",
+      "treatments": [
+        "탄력프로그램",
+        "피부톤개선",
+        "민감성피부",
+        "백반증 표피이식술",
+        "웨딩케어"
+      ]
+    },
+    {
+      "name": "탄력 리프팅 / 쁘띠성형",
+      "treatments": [
+        "탄력프로그램",
+        "울쎄라",
+        "리쥬란힐러",
+        "보톡스",
+        "필러",
+        "스컬트라",
+        "윤곽주사",
+        "에어젯",
+        "듀엣써마지",
+        "물광주사",
+        "더블로",
+        "Skin Tyte(스킨타이트)"
+      ]
+    },
+    {
+      "name": "여드름 / 흉터 / 모공",
+      "treatments": [
+        "여드름",
+        "흉터치료",
+        "모공",
+        "시크릿"
+      ]
+    },
+    {
+      "name": "잡티 / 색소 / 점",
+      "treatments": [
+        "점",
+        "잡티/주근깨",
+        "기미",
+        "후천성 오타모반",
+        "밀크커피반점",
+        "문신제거",
+        "BBL 레이저",
+        "피코슈어"
+      ]
+    },
+    {
+      "name": "건강피부 클리닉",
+      "treatments": [
+        "내향성발톱",
+        "백반증 / 건선",
+        "백반증 표피이식술",
+        "손발톱 무좀치료",
+        "사마귀",
+        "전염성연속증 (물사마귀)",
+        "홍조"
+      ]
+    },
+    {
+      "name": "두피 / 제모",
+      "treatments": [
+        "제모",
+        "메조테라피"
+      ]
+    }
+  ],
+  "contact_info": {
+    "email": [],
+    "phone": [
+      {
+        "number": "031-707-4975",
+        "type": "대표",
+        "source": "footer"
+      },
+      {
+        "number": "031-707-5975",
+        "type": "팩스",
+        "source": "footer"
+      }
+    ],
+    "address": {
+      "full_address": "경기 성남시 분당구 서현로180번길 13 서현프라자 6층 604호",
+      "sido": "경기",
+      "sigungu": "성남시 분당구"
+    },
+    "kakao_channel": "https://pf.kakao.com/_xeAmgE",
+    "naver_booking": null,
+    "naver_place": null,
+    "instagram": null,
+    "facebook": null,
+    "youtube": null,
+    "blog": "https://blog.naver.com/oraclebd02",
+    "website_url": "https://oracle2u.com",
+    "operating_hours": {
+      "weekday": "AM 10:00 - PM 7:00",
+      "saturday": "AM 10:00 - PM 3:00 (점심시간X)",
+      "sunday": "휴진",
+      "lunch_break": "PM 1:00 ~ PM 2:00"
+    }
+  },
+  "unregistered_equipment": [
+    {
+      "name": "Airjet",
+      "korean_name": "에어젯",
+      "suggested_category": "OTHER_DEVICE",
+      "source": "website",
+      "reason": "Device for skin tightening/wrinkles, not in dictionary."
+    },
+    {
+      "name": "Skin Tyte",
+      "korean_name": "스킨타이트",
+      "suggested_category": "IPL",
+      "source": "website",
+      "reason": "Typically a BBL/IPL module for skin tightening, not in dictionary."
+    },
+    {
+      "name": "소프트필링레이저",
+      "korean_name": "소프트필링레이저",
+      "suggested_category": "LASER",
+      "source": "website",
+      "reason": "Generic laser mentioned in review, not in dictionary."
+    },
+    {
+      "name": "듀엣RF",
+      "korean_name": "듀엣RF",
+      "suggested_category": "RF",
+      "source": "ocr",
+      "reason": "Generic RF device mentioned in banner, not in dictionary."
+    }
+  ],
+  "unregistered_treatments": [],
+  "raw_price_texts": [],
+  "extraction_summary": {
+    "total_doctors": 2,
+    "total_academic": 7,
+    "total_equipment": 14,
+    "total_devices": 10,
+    "total_injectables": 4,
+    "total_treatments": 37,
+    "total_events": 4,
+    "total_categories": 6,
+    "total_contact_channels": 5,
+    "has_email": false,
+    "has_phone": true,
+    "has_kakao": true,
+    "has_sns": true,
+    "price_available_ratio": "0/37",
+    "unregistered_equipment_count": 4,
+    "unregistered_treatments_count": 0
+  }
+}
+
+──── [2] ocr_raw.json (이미지 OCR 원본) ────
+
+--- page_1_other_capture_0 ---
+피부과 전문의 시술
+효과가 좋은 치료를
+제공하도록 노력하겠습니다.
+Y 분당오라클피부과 피부과
+BUNDANG ORACLE DERMATOLOGY 전문의
+온라인상담
+로그인
+TALK
+카톡상담
+두
+공지/
+이벤트
+시술후기
+전후사진
+오시는 길
+X
+오라클 소개
+소식/상담센터
+오라클스페셜
+탄력 리프팅 / 쁘띠성형
+여드름 / 흉터 / 모공
+잡티 / 색소 / 점
+건강피부 클리닉
+웹회원 가입
+웹회원 가입시 더 편리한 이용을 할 수 있습니다.
+이용약관 동의
+
+아래 약관에 모두 동의합니다.
+전체동의는 필수 및 선택정보에 대한 동의도 포함되어 있으며,
+개별적으로도 동의를 선택하실 수 있습니다. 선택항목에 대한
+동의를 거부하시는 경우에도 서비스는 이용이 가능합니다.
+본동의는 언제든지 철회 및 수정이 가능합니다.
+
+[필수] 만 14세 이상입니다.
+
+[필수] 서비스이용 / 사용자계정 약관
+약관보기
+본약관은 회사가 제공하는 서비스 등에 공통적용되며, 본 약관에 동의함으로써 해당 서비스
+등을 별도 이용계약체결 없이 이용할 수 있습니다.
+
+[필수] 개인정보 수집 및 이용 약관
+본약관은 회사가 제공하는 서비스 등에 공통적용되며, 본 약관에 동의함으로써 해당 서비스
+등을 별도 이용계약체결 없이 이용할 수 있습니다.
+
+[필수] 중요공지 알림 메시지 수신
+본약관은 회사가 제공하는 서비스의 중요알림 및 정책알림등을 위해 메세지 수신 허용여부
+상관없이 메세지를 송출할 수 있습니다.
+
+[선택] 메세지 알림 및 광고메세지 수신
+
+--- page_1_other_capture_1 ---
+는 언제든지 탈퇴 및 수정이 가능합니다.
+
+[필수] 만 14세 이상입니다.
+
+[필수] 서비스이용 / 사용자계정 약관
+약관보기
+본 약관은 회사가 제공하는 서비스 등에 공통적용되며, 본 약관에 동의함으로써 해당 서비스
+및/또는 이용계약체결 없이 이용할 수 있습니다.
+
+[필수] 개인정보 수집 및 이용 약관
+본 약관은 회사가 제공하는 서비스 등에 공통적용되며, 본 약관에 동의함으로써 해당 서비스
+및/또는 이용계약체결 없이 이용할 수 있습니다.
+
+[필수] 중요공지 알림 메세지 수신
+본 약관은 회사가 제공하는 서비스의 중요 알림 및 정책 알림등을 위해 메세지 수신 허용여부
+상관없이 메세지를 송출할 수 있습니다.
+
+[선택] 메세지 알림 및 광고메세지 수신
+본 약관거부시 모든 서비스에서의 상담 및 답변, 예약 등의 알림을 받을 수 없게 됩니다.
+
+[필수] 제3자 정보제공 동의 및 활용 약관 / 법적고지
+약관보기
+
+다음
+
+이용약관 개인정보처리방침 제3자운영동의약관 이메일무단수집거부 환자권리의무 비급여비용안내 통합수신거부/해제 서식자료실
+O'racle
+분당 오라클피부과
+BUNDANG ORACLE DERMATOLOGY
+상호명 : 오라클피부과의원 | 주소:경기 성남시 분당구 서현로180번길 13 서현프라자 6층 604호
+전화번호 : 031-707-4975 | 팩스번호 : 031-707-5975
+대표자 : 김성균/이성주 | 사업자등록번호 : 144-02-16863
+COPYRIGHT 2014~2026 ALL RIGHT RESERVED
+
+온라인상담
+TALK
+카톡상담
+공지/
+이벤트
+시술후기
+전후사진
+오시는 길
+X
+
+--- page_2_equipment_capture_0 ---
+피부과 전문의 시술
+효과가 좋은 치료를
+제공하도록 노력하겠습니다.
+
+분당오라클피부과
+BUNDANG ORACLE DERMATOLOGY
+피부과
+전문의
+
+온라인상담
+로그인
+TALK
+카톡상담
+두피
+공지/
+이벤트
+시술후기
+전후사진
+오시는 길
+X
+
+오라클 소개
+소식/상담센터
+오라클스페셜
+탄력 리프팅 / 쁘띠성형
+여드름 / 흉터 / 모공
+잡티 / 색소 / 점
+건강피부 클리닉
+
+극심한 스트레스, 대인기피증은 그만!
+백반증·건선치료
+막막했던 백반증과 건선 치료,
+이제는 분당오라클피부과에서 치료하세요!
+VIEW MORE >
+
+백반증·건선치료
+피부과전문의
+울쎄라·스컬트라
+공식 의료기관
+감염방지 시스템
+엑시머 벨로시티
+손발톱 무좀치료
+정품·정량의 원칙
+
+실시간 간편상담
+031.707.4975
+통화희망시간 (운영시간내)
+성별
+이름
+연락처
+전화
+문자
+개인정보 취급방침 동
+11시
+00분
+성별
+이름
+연락처 (숫자만 입력)
+전화상담 요청
+
+--- page_2_equipment_capture_1 ---
+점심시간: PM 1:00 ~ PM 2:00
+온라인
+
+온라인상담
+TALK
+카톡상담
+공지/
+이벤트
+시술후기
+전후사진
+오시는 길
+0
+X
+
+Beauty · Skin for you
+오라클피부과를 빠르게 만나는 순간
+
+뿌리부터
+근본치료
+여드름
+
+병변 조직만을
+말끔하게!
+깨끗하고
+맑은 피부
+
+수술없이
+예뻐지다
+필러/보톡스
+
+분당 오라클피부과에서
+준비한 특별한 선물
+special
+EVENT
+
+Bundang Oracle Community
+분당오라클 커뮤니티
+진심을 다해 치료하는 피부주치의, 오라클피부과
+
+오시는 길
+LG전자
+풍림아이원
+분당삼성병원
+분당소방서
+CGV
+분당우체국
+롯데마트
+분당 자생
+한방병원
+서울나우병원
+분당본원
+AK
+0
+X
+
+실시간 간편상담
+031.707.4975
+통화희망시간 (운영시간내)
+성별
+이름
+연락처
+전화
+문자
+개인정보 취급방침 동
+전화상담 요청
+
+11시
+00분
+성별
+이름
+연락처 (숫자만 입력)
+
+--- page_2_equipment_capture_2 ---
+온라인상담
+TALK
+카톡상담
+공지/
+이벤트
+시술후기
+전후사진
+오시는길
+X
+여드름/흉터
+여드름의 근본 원인을 치료하여 재발방지!
+제대로 하자!
+여드름 치료
+고민하지마!
+여드름 흉터
+빈틈없이 조여라!
+모공
+오라클피부과
+실시간 간편상담
+031.707.4975
+통화희망시간 (운영시간내)
+성별
+이름
+연락처
+전화
+문자
+개인정보 취급방침 동
+11시
+00분
+성별
+이름
+연락처 (숫자만 입력)
+전화상담 요청
+
+--- page_2_equipment_capture_3 ---
+병변 조직만을
+온라인상담
+톡
+카톡상담
+공지/
+이벤트
+시술후기
+전후사진
+오시는 길
+X
+깨끗하고 안전하게!
+점 제거
+재발을 막자!
+잡티/주근깨
+앓고 흐린
+기미부터
+깊은 기미까지
+기미
+계속 치료해도
+없어지지 않는다면?
+후천성 오타모반
+백반증/건선
+XTRAC
+손발톱무좀
+PinPointe™
+한달에
+단한번
+실시간 간편상담
+031.707.4975
+통화희망시간 (운영시간내)
+성별
+이름
+연락처
+전화 ■ 문자
+개인정보 취급방침 동
+11시
+00분
+성별
+이름
+연락처 (숫자만 입력)
+전화상담 요청
+
+--- page_2_equipment_capture_4 ---
+온라인상담
+TALK
+카톡상담
+공지/
+이벤트
+시술후기
+전후사진
+오시는 길
+X
+획기적으로 줄어든 치료 시간
+신체 어느 부위든 시술 가능!
+VIEW MORE »
+보건복지부 신의료기술 등재!
+간편한 시술로 일상생활바로가능!
+VIEW MORE »
+Oracle Petit & Lifting
+수술없이 예뻐지는 나만의 뷰티 시크릿!
+자연스러운
+아름다움
+보톡스
+간단하고
+빠르게
+아름다운
+변화의 시작
+처진 피부의 주름과
+탄력을 동시에!
+에어젯
+따로따로
+시술받지말고
+듀엣RF로
+한 번에!
+^
+실시간 간편상담
+031.707.4975
+통화희망시간 (운영시간내)
+성별
+이름
+11시
+00분
+성별
+이름
+연락처
+연락처 (숫자만 입력)
+전화
+문자
+개인정보 취급방침 동
+전화상담 요청
+
+--- page_2_equipment_capture_5 ---
+챗봇상담
+온라인상담
+TALK
+카톡상담
+공지/
+이벤트
+시술후기
+시술사진
+전후사진
+피부 속까지! 오시는 길
+X
+
+좋은 장비가
+좋은 결과를
+약속합니다
+
+다양한 프리미엄
+의료기기 보유로 더 좋은
+결과를 약속드립니다.
+VIEW MORE »
+
+처진 피부 개선! 울쎄라
+여드름 치료엔? 아그네스
+피부 속까지! 오시는 길
+
+Review 고객후기
++ MORE
+이제야 여드름을 해결할 길이 보이는것 같아요..ㅠㅠ
+간절하던 여드름 흉터 치료 하고왔어요!!
+보툴보툴 소프트필링레이저 받았어요*_*
+종아리보톡스 시술 대만족!
+여드름 스케일링 하고왔어요~!
+
+Media 언론보도
++ MORE
+버짐, 각질?! 남성도 '피부 건조' 조심하라
+오늘 한반도에 황사, 피부와 두발 보호해야
+오라클피부과 "공공의 적 비만, 비만시술의 힘에 주목"
+스키장 다녀온 후 찢어진 잔티, 해결하려면?
+멈출 수 없는 과도한 땀, 해결방안은?
+늦가을 피부관리, 긴장 놓지 말아야
+백반증! 완치가 될 수 있다는 믿음을 가지고 치료
+
+Notice 공지사항
+[공지] 설날 휴진안내
+[공지] 5월 진료안내
+[공지] 1월 휴진 일정 안내
+[공지] 9월 연휴 휴진 안내
+[이벤트] 가을맞이 10월 이벤트
+[이벤트] 9월 가을 이벤트
+[이벤트] 받아보고 실망없는 8월 이벤트
+
+실시간 간편상담
+031.707.4975
+
+통화희망시간 (운영시간내)
+11시
+00분
+
+성별
+성별
+
+이름
+이름
+
+연락처
+연락처 (숫자만 입력)
+
+전화
+문자
+개인정보 취급방침 동
+
+전화상담 요청
+
+--- page_2_equipment_capture_6 ---
+좋은 성과를
+좋은 결과를
+약속합니다
+
+다양한 프리미엄
+의료기기 보유로 더 좋은
+결과를 약속드립니다.
+VIEW MORE »
+
+온라인상담
+TALK
+카톡상담
+공지/
+이벤트
+시술후기
+전후사진
+오시는 길
+X
+
+처진 피부 개선엔! 울쎄라
+여드름 치료엔? 아그네스
+피부 속까지!
+
+Review 고객후기
++ MORE
+이제야 여드름을 해결할 길이 보이는것 같아요..ㅠㅠ
+간절하던 여드름흉터 치료 하고왔어요!!
+보툴눔 소프트필링레이저 받았어요*.*
+종아리보톡스 시술 대만족!
+여드름 스케일링 하고왔어요~!
+
+Media 언론보도
++ MORE
+버짐, 각질?! 남성도 '피부 건조' 조심하라
+오늘 한반도에 황사, 피부와 두발 보호해야
+오라클피부과 "궁극의 적 비만, 비만시술의
+스키장 다녀온 후 굳어진 잡티, 해결하려면?
+멈출 수 없는 과도한 땀, 해결방안은?
+늦가을 피부관리, 긴장 늦추지 말아야
+백반증! 완치가 될 수 있다는 믿음을 가지고 치료
+
+Notice 공지사항
+[공지] 설날 휴진안내
+[공지] 5월 진료안내
+[공지] 1월 휴진 일정 안내
+[공지] 9월 연휴 휴진 안내
+[이벤트] 가을맞이 10월이벤트
+[이벤트] 9월 가을이벤트
+[이벤트] 받아보고 실망없는 8월 여름이벤트
+
+실시간 간편상담
+031.707.4975
+통화희망시간 (운영시간내)
+11시 00분
+성별
+이름
+연락처
+전화 ■ 문자 ■ 개인정보 취급방침 동의
+전화상담 요청
+
+이용약관
+개인정보처리방침
+제3자운영동의약관
+이메일무단수집거부
+환자권리 의무
+비급여비용안내
+통합수신거부/해제
+서식자료실
+
+--- page_3_main_capture_0 ---
+피부과 전문의 시술
+효과가 좋은 치료를
+제공하도록 노력하겠습니다.
+㉠ 분당오라클피부과
+BUNDANG ORACLE DERMATOLOGY
+피부과
+전문의
+온라인상담
+로그인
+TALK
+카톡상담
+두피
+공지/
+이벤트
+시술후기
+전후사진
+오시는길
+X
+오라클 소개
+소식/상담센터
+오라클스페셜
+탄력 리프팅 / 쁘띠성형
+여드름 / 흉터 / 모공
+잡티 / 색소 / 점
+건강피부 클리닉
+극심한 스트레스, 대인기피증은 그만!
+백반증·건선치료
+막막했던 백반증과 건선 치료,
+이제는 분당오라클피부과에서 치료하세요!
+VIEW MORE >
+백반증·건선치료
+피부과전문의
+울쎄라·스컬트라
+공식 의료기관
+감염방지 시스템
+엑시머 벨로시티
+손발톱 무좀치료
+정품·정량의 원칙
+실시간 간편상담
+031.707.4975
+통화희망시간 (운영시간내)
+성별
+이름
+연락처
+11시
+00분
+성별
+이름
+연락처 (숫자만 입력)
+전화
+문자
+개인정보 취급방침 동
+전화상담요청
+
+--- page_3_main_capture_1 ---
+오라클 소개
+소식/상담센터
+오라클스페셜
+탄력 리프팅 / 쁘띠성형
+여드름 / 흉터 / 모공
+잡티 / 색소 / 점
+건강 피부 클리닉
+두피
+온라인상담
+오라클피부과를 빠르게 만나는 순간
+내향성발톱
+TALK
+카톡상담
+공지/
+이벤트
+시술후기
+전후사진
+오시는 길
+X
+빨리부터
+근본치료
+여드름
+병변조직만을
+말끔하게
+깨끗하고
+맑은 피부
+백반증 / 건선
+백반증 표피이식술
+손발톱 무좀치료
+사마귀
+전염성연속종 (물사마귀)
+수술없이
+예뻐지다
+홍조
+필러/보톡스
+분당 오라클피부과에서
+준비한 특별한 선물
+Bundang Oracle Community
+분당오라클 커뮤니티
+진심을 다해 치료하는 피부주치의, 오라클피부과
+오시는 길
+LG전자
+중앙하이웨이
+분당재생병원
+분당소방서
+CGV+
+분당우체국
+롯데마트
+분당 자생
+한방병원
+서현로데오거리
+분당퍼스트타워
+AK
+special
+EVENT
+실시간 간편상담
+031.707.4975
+통화희망시간 (운영시간내)
+성별
+이름
+연락처
+전화
+문자
+개인정보 취급방침 동의
+11시
+00분
+성별
+이름
+연락처 (숫자만 입력)
+전화상담 요청
+
+--- page_3_main_capture_2 ---
+오라클 소개 소식/상담센터 오라클스페셜 탄력 리프팅 / 쁘띠성형 여드름 / 흉터 / 모공 잡티 / 색소 / 점 건강피부 클리닉
+온라인상담
+TALK
+카톡상담
+여드름의 근본 원인을 치료하여 재발방지!
+내향성발톱
+백반증 / 건선
+백반증 표피이식술
+공지/
+이벤트
+손발톱 무좀치료
+시술후기
+사마귀
+전염성연속종 (물사마귀)
+전후사진
+홍조
+오시는 길
+X
+제대로 하자!
+여드름 치료
+고민하지마!
+여드름 흉터
+빈틈없이 조여라!
+모공
+정확한 위치에 레이
+실시간 간편상담
+통화희망시간 (운영시간내)
+성별
+이름
+연락처
+전화 문자 개인정보 취급방침 동
+031.707.4975
+11시
+00분
+성별
+이름
+연락처 (숫자만 입력)
+전화상담 요청
+
+--- page_3_main_capture_3 ---
+오라클 소개 소식/상담센터 오라클스페셜 탄력 리프팅 / 쁘띠성형 여드름 / 흉터 / 모공 잡티 / 색소 / 점 건강피부 클리닉 두
+온라인상담
+TALK
+카톡상담
+공지/
+이벤트
+시술후기
+전후사진
+오시는 길
+X
+깨끗하고 안전하게!
+점 제거
+
+내향성발톱
+백반증 / 건선
+백반증 표피이식술
+손발톱 무좀치료
+사마귀
+전염성연속종 (물사마귀)
+흑색종 오타모반
+홍조
+
+얕고 흐린
+기미부터
+깊은 기미까지
+기미
+
+백반증/건선
+XTRAC
+VELOCITY
+백반증 건선치료의 끝판왕!
+빠르고 효과적인 치료
+
+손발톱 무좀
+PinPointe™
+FOOTLASER™
+CERTIFIED PROVIDER
+한달에
+단한번
+무좀균만 선택적으로 파괴
+
+실시간 간편상담
+031.707.4975
+통화희망시간 (운영시간내)
+11시 00분
+성별
+이름
+연락처
+전화 문자 개인정보 취급방침 동
+전화상담 요청
+
+--- page_3_main_capture_4 ---
+오라클 소개 소식/상담센터 오라클스페셜 탄력 리프팅 / 쁘띠성형 여드름 / 흉터 / 모공 잡티 / 색소 / 점 건강피부 클리닉
+온라인상담
+내향성발톱
+백반증 / 건선
+백반증 표피이식술
+손발톱 무좀치료
+사마귀
+전염성연속종 (물사마귀)
+홍조
+TALK
+카톡상담
+공지/
+이벤트
+시술후기
+전후사진
+오시는 길
+Oracle Petit & Lifting
+수술없이 예뻐지는 나만의 뷰티 시크릿
+자연스러운
+아름다움
+보톡스
+간편하고
+빠르게
+아름다운
+변화의 시작
+처진 피부의 주름과
+탄력을 동시에!
+에어젯
+내소모도
+시술받지말고
+듀엣RF로
+한 번에!
+실시간 간편상담
+031.707.4975
+통화희망시간 (운영시간내)
+성별
+이름
+연락처
+전화
+문자
+개인정보 취급방침 동의
+11시
+00분
+성별
+이름
+연락처 (숫자만 입력)
+전화상담요청
+
+--- page_3_main_capture_5 ---
+오라클 소개 소식/상담센터 오라클스페셜 탄력 리프팅 / 쁘띠성형 여드름 / 흉터 / 모공 잡티 / 색소 / 점 건강피부 클리닉
+온라인상담
+TALK
+카톡상담
+공지/
+이벤트
+시술후기
+전후사진
+오시는 길
+X
+오라클피부과
+약속합니다
+내향성발톱
+백반증 / 건선
+백반증 표피이식술
+손발톱 무좀치료
+사마귀
+전염성연속종 (물사마귀)
+홍조
+다양한 프리미엄
+의료기기보유로 더 좋은
+결과를 약속드립니다.
+VIEW MORE »
+처진 피부 개선! 울쎄라
+여드름 치료엔? 아그네스
+Review 고객후기
++ MORE
+Media 언론보도
++ MORE
+Notice 공지사항
+이제야 여드름을 해결할 길이 보이는것 같아요..ㅠㅠ
+간절하던 여드름 흉터 치료 하고왔어요!!
+보톡스 보톡스필러레이저 받았어요*_*
+종아리보톡스 시술 대만족!
+여드름 스케일링 하고왔어요~!
+버짐, 각질?! 남성도 '피부 건조' 조심하라
+오늘 한반도에 황사, 피부와 두발 보호해야
+오라클피부과 "궁극의 적 비만, 비만시술의
+스키장 다녀온 후 짙어진 잡티, 해결하려면?
+멈출 수 없는 과도한땀, 해결방안은?
+늦가을 피부관리, 긴장 놓지 말아야
+백반증! 완치가 될 수 있다는 믿음을 가지고 치료
+[공지] 설날 휴진안내
+[공지] 5월 휴진 안내
+[공지] 1월 휴진 일정 안내
+[공지] 9월 연휴 휴진 안내
+[이벤트] 가을맞이 10월 이벤트
+[이벤트] 9월 가을 이벤트
+[이벤트] 받아보고 실망없는 8월 여름이벤트
+^
+실시간 간편상담
+031.707.4975
+통화희망시간 (운영시간내)
+11시
+00분
+성별
+성별
+이름
+이름
+연락처
+연락처 (숫자만 입력)
+전화상담요청
+전화
+문자
+개인정보 취급방침 동의
+이용약관
+개인정보처리방침
+제3자운영동의약관
+환자권리의무
+비급여비용안내
+통합수신거부/해제
+서식자료실
+
+--- page_3_main_capture_6 ---
+오라클 소개 소식/상담센터 오라클스페셜 탄력 리프팅 / 쁘띠성형 여드름 / 흉터 / 모공 잡티 / 색소 / 점 건강 피부 클리닉 두피 온라인상담
+TALK
+카톡상담
+공지/
+이벤트
+시술후기
+전후사진
+오시는 길
+의료기기로부터 더 좋은
+결과를 약속드립니다.
+VIEW MORE »
+처진 피부 개선! 울쎄라
+여드름 치료엔? 아그네스
+내향성발톱
+백반증 / 건선
+백반증 표피이식술
+손발톱 무좀치료
+사마귀
+전염성연속종 (물사마귀)
+홍조
+Review 고객후기 + MORE
+Media 언론보도 + MORE
+Notice 공지사항
+[공지] 설날 휴진안내
+[공지] 5월 진료안내
+[공지] 1월 휴진 안내
+[공지] 9월 연휴 휴진안내
+[이벤트] 가을맞이 10월이벤트
+[이벤트] 9월 가을이벤트
+[이벤트] 받아보고 싶었던 8월 여름이벤트
+이제야 여드름을 해결할 길이 보이는것같아요..ㅠㅠ
+간절하던 여드름흉터 치료 하고왔어요!!
+보툴룸 소프트필링레이저받았어요*.*
+종아리보톡스 시술 대만족!
+여드름 스케일링 하고왔어요~!
+버짐, 각질?! 남성도 '피부 건조' 조심하라
+오늘 한반도에 황사, 피부와 두부 보호해야
+오라클피부과 "궁극의 적 비만, 비만시술의 힘에 주목"
+스키장 다녀온 후 짙어진 잡티, 해결하려면?
+멈출 수 없는 과도한 땀, 해결방안은?
+늦겨울 피부관리, 긴장 놓지 말아야
+백반증! 완치가 될 수 있다는 믿음을 가지고 치료
+실시간 간편상담
+031.707.4975
+통화희망시간 (운영시간내)
+11시 00분
+성별
+이름
+연락처
+전화 문자 개인정보 취급방침 동의
+전화상담 요청
+이용약관 개인정보처리방침 제3자운영동의약관 이메일무단수집거부 환자권리와의무 비급여비용안내 통합수신거부/해제 서식자료실
+O'racle
+분당 오라클피부과
+BUNDANG ORACLE DERMATOLOGY
+상호명 : 오라클피부과의원 | 주소 : 경기 성남시 분당구 서현로180번길 13 서현프라자 6층 604호
+대표전화 : 031-707-4975 / 팩스번호 : 031-707-5975
+대표자 : 김성권/이성우 | 사업자등록번호 : 144-02-16863
+COPYRIGHT 2014~2026 ALL RIGHT RESERVED
+
+──── [3] coverage_raw.txt (커버리지 검증 로그) ────
+{
+  "missing_equipments": [
+    "포토나",
+    "듀엣써마지"
+  ],
+  "missing_treatments": [
+    "듀엣RF",
+    "비만시술",
+    "땀 치료",
+    "피부관리",
+    "두피"
+  ],
+  "missing_doctors": [],
+  "missing_prices": [],
+  "coverage_score": {
+    "equipment": 75,
+    "treatment": 77,
+    "doctor": 100,
+    "overall": 83
+  },
+  "issues": [
+    "추출된 장비 목록에 시술/물질(Botox, Filler, 소프트필링레이저)이 포함되어 있습니다.",
+    "추출된 시술 목록에 실제 시술명이 아닌 리뷰 제목이나 설명 문구(예: '울쎄라·스컬트라 공식 의료기관', '보들보들 소프트필링레이저 받았어요*_*')가 포함되어 있습니다.",
+    "'듀엣RF'는 추출 결과에서 장비로 분류되었으나, 원본 마크다운에서는 시술 목록과 함께 배치되어 시술로도 해석될 여지가 있습니다. 또한 '듀엣써마지'는 원본 마크다운에서 장비로 명시되었으나, 추출 결과에서는 시술로 분류되어 일관성이 부족합니다."
+  ]
+}

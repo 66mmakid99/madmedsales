@@ -1,0 +1,3048 @@
+═══════════════════════════════════════════════════
+  포에버의원 안산점 — 추출 원본 데이터
+═══════════════════════════════════════════════════
+
+──── [1] analysis.json (Gemini 분류 결과) ────
+{
+  "hospital_name": "포에버의원 안산점",
+  "doctors": [
+    {
+      "name": "이건민",
+      "title": "대표원장",
+      "specialty": null,
+      "career": [
+        "현 포에버의원 안산점 원장",
+        "전 포에버의원 구로점 원장",
+        "전 미앤미의원 인천 부평점"
+      ],
+      "education": null,
+      "certifications": [
+        "국제미용항노화학회 이사",
+        "한국미용외과의학회 정회원",
+        "대한비만미용치료학회 정회원",
+        "대한레이저피부모발학회 정회원"
+      ],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "이충일",
+      "title": "원장",
+      "specialty": null,
+      "career": [
+        "현 포에버의원 안산점 원장"
+      ],
+      "education": null,
+      "certifications": [
+        "대한미용성형레이저학회 정회원",
+        "대한레이저피부모발학회 정회원",
+        "대한비만학회 정회원",
+        "대한미용의사회 정회원"
+      ],
+      "confidence": "confirmed"
+    }
+  ],
+  "academic_activities": [],
+  "medical_devices": [
+    {
+      "name": "Ulthera",
+      "korean_name": "울쎄라",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": "FDA 승인 정품팁, 프리미엄 초음파 리프팅",
+      "source": "text"
+    },
+    {
+      "name": "Botox",
+      "korean_name": "보톡스",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "botox",
+      "description": "내성적은 국산 항노화톡신 주름 / 국산 일반형 / 국산 고순도 / 독일산 고순도",
+      "source": "text"
+    },
+    {
+      "name": "Juvelook",
+      "korean_name": "쥬베룩",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "booster",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Shurink",
+      "korean_name": "슈링크",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Rejuran",
+      "korean_name": "리쥬란힐러",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "booster",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "RevLite",
+      "korean_name": "레블라이트SI",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "더욱 강력한 PTP 방식의 프리미엄 토닝",
+      "source": "text"
+    },
+    {
+      "name": "Attiere",
+      "korean_name": "아띠에르",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "filler",
+      "description": "국산, 볼륨감 있는 얼굴",
+      "source": "text"
+    },
+    {
+      "name": "Restylane",
+      "korean_name": "레스틸렌",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "filler",
+      "description": "스웨덴, 뛰어난 효과와 안전성이 검증된 HA필러",
+      "source": "text"
+    },
+    {
+      "name": "Belotero",
+      "korean_name": "벨로테로",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "filler",
+      "description": "독일, 뛰어난 효과와 안전성이 검증된 HA필러",
+      "source": "text"
+    },
+    {
+      "name": "Shurink Universe",
+      "korean_name": "슈링크 유니버스",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": "2가지 모드로 더욱 강력해진 2세대 슈링크",
+      "source": "text"
+    },
+    {
+      "name": "Tensera",
+      "korean_name": "텐쎄라",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_TIGHTENING",
+      "description": "2라인 HIFU로 더 빠르고 강력한 리프팅 효과",
+      "source": "text"
+    },
+    {
+      "name": "Onda",
+      "korean_name": "온다",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_TIGHTENING",
+      "description": "통증은 내리고, 효과는 올리는 신개념 리프팅",
+      "source": "text"
+    },
+    {
+      "name": "InMode",
+      "korean_name": "인모드",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_TIGHTENING",
+      "description": "헐리웃 셀럽들의 원픽 리프팅, 고강도 양극성 고주파",
+      "source": "text"
+    },
+    {
+      "name": "ExcelV",
+      "korean_name": "엑셀V",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Genesis",
+      "korean_name": "제네시스",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "LDM",
+      "korean_name": "LDM",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "IPL",
+      "description": "고밀도 초음파 에너지로 수분과 탄력을 동시에",
+      "source": "text"
+    },
+    {
+      "name": "AquaPeel",
+      "korean_name": "아쿠아필",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Airnox",
+      "korean_name": "에어녹스",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": "웃음가스마취, 새로운 비수면 진정 마취",
+      "source": "text"
+    }
+  ],
+  "treatments": [
+    {
+      "name": "인모드리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "보톡스",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "botox",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "쥬베룩",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "skinbooster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "슈링크",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "hifu",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "리쥬란힐러",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "skinbooster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "필러",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "filler",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "피부",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "스킨부스터",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "skinbooster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "제모/탈모",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "윤곽성형",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "체형성형",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "슈링크 유니버스 100샷",
+      "regular_price": 28000,
+      "event_price": 14500,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": 100,
+      "unit": "shot",
+      "price_per_unit": 145,
+      "event_period": "~2026-02-28",
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "hifu",
+      "price_display": "14,500원",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "울쎄라 리프팅 100샷",
+      "regular_price": 355000,
+      "event_price": 190000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": 100,
+      "unit": "shot",
+      "price_per_unit": 1900,
+      "event_period": "~2026-02-28",
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "hifu",
+      "price_display": "190,000원",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "텐쎄라 300라인 + 원쎄라 2000샷",
+      "regular_price": 375000,
+      "event_price": 220000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "~2026-02-28",
+      "includes": [
+        "텐쎄라 300라인",
+        "원쎄라 2000샷"
+      ],
+      "is_package": true,
+      "is_addon": false,
+      "source": "text",
+      "category": "rf",
+      "price_display": "220,000원",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "온다 4만줄 1회",
+      "regular_price": 427000,
+      "event_price": 249000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": 40000,
+      "unit": "line",
+      "price_per_unit": 6.225,
+      "event_period": "~2026-02-28",
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "rf",
+      "price_display": "249,000원",
+      "session_info": "1회",
+      "body_part": null
+    },
+    {
+      "name": "덴서티 300샷 + 얼굴전체 타이트닝 주사",
+      "regular_price": 1394000,
+      "event_price": 790000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": 300,
+      "unit": "shot",
+      "price_per_unit": 2633.33,
+      "event_period": "~2026-02-28",
+      "includes": [
+        "덴서티 300샷",
+        "얼굴전체 타이트닝 주사"
+      ],
+      "is_package": true,
+      "is_addon": false,
+      "source": "text",
+      "category": "rf",
+      "price_display": "790,000원",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "민트실 4줄 + 잼버실 2줄 + 타이트닝주사",
+      "regular_price": 504000,
+      "event_price": 290000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "~2026-02-28",
+      "includes": [
+        "민트실 4줄",
+        "잼버실 2줄",
+        "타이트닝주사"
+      ],
+      "is_package": true,
+      "is_addon": false,
+      "source": "text",
+      "category": "thread",
+      "price_display": "290,000원",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "베이직 화이트닝 (레이저토닝 + 재생레이저) 10회",
+      "regular_price": 189000,
+      "event_price": 99000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "~2026-02-28",
+      "includes": [
+        "레이저토닝",
+        "재생레이저"
+      ],
+      "is_package": true,
+      "is_addon": false,
+      "source": "text",
+      "category": "laser",
+      "price_display": "99,000원",
+      "session_info": "10회",
+      "body_part": null
+    },
+    {
+      "name": "색소올클리어 (엑셀V 색소모드 + 크라이오 + 미백팩) 1회",
+      "regular_price": 304000,
+      "event_price": 169000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "~2026-02-28",
+      "includes": [
+        "엑셀V 색소모드",
+        "크라이오",
+        "미백팩"
+      ],
+      "is_package": true,
+      "is_addon": false,
+      "source": "text",
+      "category": "laser",
+      "price_display": "169,000원",
+      "session_info": "1회",
+      "body_part": null
+    },
+    {
+      "name": "레이저토닝 5회 + 제네시스 5회 + 홍조 OR 혈관레이저 1회 + 보습팩 5회",
+      "regular_price": 679000,
+      "event_price": 390000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "~2026-02-28",
+      "includes": [
+        "레이저토닝 5회",
+        "제네시스 5회",
+        "홍조 OR 혈관레이저 1회",
+        "보습팩 5회"
+      ],
+      "is_package": true,
+      "is_addon": false,
+      "source": "text",
+      "category": "laser",
+      "price_display": "390,000원",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "울트라콜 100 + 물광주사 + 스킨보톡스 + 보습팩",
+      "regular_price": 292000,
+      "event_price": 159000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "~2026-02-28",
+      "includes": [
+        "울트라콜 100",
+        "물광주사",
+        "스킨보톡스",
+        "보습팩"
+      ],
+      "is_package": true,
+      "is_addon": false,
+      "source": "text",
+      "category": "skinbooster",
+      "price_display": "159,000원",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "리쥬란힐러 2cc + 얼굴전체 스킨보톡스 + 콜라겐팩 1회",
+      "regular_price": 450000,
+      "event_price": 239000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": 2,
+      "unit": "cc",
+      "price_per_unit": 119500,
+      "event_period": "~2026-02-28",
+      "includes": [
+        "리쥬란힐러 2cc",
+        "얼굴전체 스킨보톡스",
+        "콜라겐팩 1회"
+      ],
+      "is_package": true,
+      "is_addon": false,
+      "source": "text",
+      "category": "skinbooster",
+      "price_display": "239,000원",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "레티젠 2cc + 콜라겐관리",
+      "regular_price": 736000,
+      "event_price": 399000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": 2,
+      "unit": "cc",
+      "price_per_unit": 199500,
+      "event_period": "~2026-02-28",
+      "includes": [
+        "레티젠 2cc",
+        "콜라겐관리"
+      ],
+      "is_package": true,
+      "is_addon": false,
+      "source": "text",
+      "category": "skinbooster",
+      "price_display": "399,000원",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "래디어스 1실린지 + 얼굴전체 스킨보톡스",
+      "regular_price": 1335000,
+      "event_price": 749000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": 1,
+      "unit": "syringe",
+      "price_per_unit": 749000,
+      "event_period": "~2026-02-28",
+      "includes": [
+        "래디어스 1실린지",
+        "얼굴전체 스킨보톡스"
+      ],
+      "is_package": true,
+      "is_addon": false,
+      "source": "text",
+      "category": "collagen_stimulator",
+      "price_display": "749,000원",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "NO!피지 패키지 (플래티넘 PTT + SONO 관리 + 제네시스 + 진정팩 - 압출별도)",
+      "regular_price": 259000,
+      "event_price": 150000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "~2026-02-28",
+      "includes": [
+        "플래티넘 PTT",
+        "SONO 관리",
+        "제네시스",
+        "진정팩"
+      ],
+      "is_package": true,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": "150,000원",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "내성적은 국산 항노화톡신 주름 3부위",
+      "regular_price": 122000,
+      "event_price": 69000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "~2026-02-28",
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "botox",
+      "price_display": "69,000원",
+      "session_info": null,
+      "body_part": "주름 3부위"
+    },
+    {
+      "name": "♥ 설날 복주머니 P!CK ♥ (슈링크 200샷/인모드 FX 1부위/턱보톡스/주름보톡스 1부위/비타민관리/아쿠아필1,2제/보습관리/면역수액/아큐주사 3cc 中 5가지)",
+      "regular_price": 180000,
+      "event_price": 99000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "~2026-02-28",
+      "includes": [
+        "슈링크 200샷",
+        "인모드 FX 1부위",
+        "턱보톡스",
+        "주름보톡스 1부위",
+        "비타민관리",
+        "아쿠아필1,2제",
+        "보습관리",
+        "면역수액",
+        "아큐주사 3cc"
+      ],
+      "is_package": true,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": "99,000원",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "얼굴 점, 사마귀, 비립종 30개",
+      "regular_price": 344900,
+      "event_price": 179000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": 30,
+      "unit": "개",
+      "price_per_unit": 5963.33,
+      "event_period": "~2026-02-28",
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "laser",
+      "price_display": "179,000원",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "엑셀V 1회 + 레블라이트 3회 + 비타민 관리 3회 + 재생광선 3회 + 보습팩 3회",
+      "regular_price": 580000,
+      "event_price": 299000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "~2026-02-28",
+      "includes": [
+        "엑셀V 1회",
+        "레블라이트 3회",
+        "비타민 관리 3회",
+        "재생광선 3회",
+        "보습팩 3회"
+      ],
+      "is_package": true,
+      "is_addon": false,
+      "source": "text",
+      "category": "laser",
+      "price_display": "299,000원",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "울쎄라 100샷 + 온다 6만줄 + 턱라인 스킨보톡스",
+      "regular_price": 1100000,
+      "event_price": 590000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "~2026-02-28",
+      "includes": [
+        "울쎄라 100샷",
+        "온다 6만줄",
+        "턱라인 스킨보톡스"
+      ],
+      "is_package": true,
+      "is_addon": false,
+      "source": "text",
+      "category": "hifu",
+      "price_display": "590,000원",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "울트라콜 + 물광주사 + 스킨보톡스",
+      "regular_price": 300000,
+      "event_price": 159000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "~2026-02-28",
+      "includes": [
+        "울트라콜",
+        "물광주사",
+        "스킨보톡스"
+      ],
+      "is_package": true,
+      "is_addon": false,
+      "source": "text",
+      "category": "skinbooster",
+      "price_display": "159,000원",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "턱보톡스 + 윤곽주사 3cc",
+      "regular_price": 39000,
+      "event_price": 22000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": 3,
+      "unit": "cc",
+      "price_per_unit": 7333.33,
+      "event_period": "~2026-02-28",
+      "includes": [
+        "턱보톡스",
+        "윤곽주사 3cc"
+      ],
+      "is_package": true,
+      "is_addon": false,
+      "source": "text",
+      "category": "botox",
+      "price_display": "22,000원",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "각질정리 + 비타민 OR 보습관리 + 보습팩",
+      "regular_price": 39000,
+      "event_price": 22000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "~2026-02-28",
+      "includes": [
+        "각질정리",
+        "비타민 OR 보습관리",
+        "보습팩"
+      ],
+      "is_package": true,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": "22,000원",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "프리미엄 관리(LDM/다이아필링/라라필/오투덤) 1회",
+      "regular_price": 75000,
+      "event_price": 39000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "~2026-02-28",
+      "includes": [
+        "LDM",
+        "다이아필링",
+        "라라필",
+        "오투덤"
+      ],
+      "is_package": true,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": "39,000원",
+      "session_info": "1회",
+      "body_part": null
+    },
+    {
+      "name": "인모드 FX 얼굴전체",
+      "regular_price": 130000,
+      "event_price": 69000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "~2026-02-28",
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "rf",
+      "price_display": "69,000원",
+      "session_info": null,
+      "body_part": "얼굴전체"
+    },
+    {
+      "name": "리쥬란힐러 2cc",
+      "regular_price": 260000,
+      "event_price": 139000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": 2,
+      "unit": "cc",
+      "price_per_unit": 69500,
+      "event_period": "~2026-02-28",
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "skinbooster",
+      "price_display": "139,000원",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "주름보톡스 1부위",
+      "regular_price": 4900,
+      "event_price": 2500,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "~2026-02-28",
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "botox",
+      "price_display": "2,500원",
+      "session_info": null,
+      "body_part": "1부위"
+    },
+    {
+      "name": "턱보톡스 1부위",
+      "regular_price": 14000,
+      "event_price": 7900,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "~2026-02-28",
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "botox",
+      "price_display": "7,900원",
+      "session_info": null,
+      "body_part": "1부위"
+    },
+    {
+      "name": "비타민관리/아쿠아필/보습관리",
+      "regular_price": 8800,
+      "event_price": 4500,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "~2026-02-28",
+      "includes": [
+        "비타민관리",
+        "아쿠아필",
+        "보습관리"
+      ],
+      "is_package": true,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": "4,500원",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "레이저토닝(화이트닝 레이저)",
+      "regular_price": 9900,
+      "event_price": 5000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "~2026-02-28",
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "laser",
+      "price_display": "5,000원",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "인모드 리프팅(고강도 양극성 고주파) 1부위",
+      "regular_price": 13000,
+      "event_price": 6900,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "~2026-02-28",
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "rf",
+      "price_display": "6,900원",
+      "session_info": null,
+      "body_part": "1부위"
+    },
+    {
+      "name": "원쎄라 리프팅(롱펄스 초음파) 펜타입 1000샷",
+      "regular_price": 55000,
+      "event_price": 29000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": 1000,
+      "unit": "shot",
+      "price_per_unit": 29,
+      "event_period": "~2026-02-28",
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "hifu",
+      "price_display": "29,000원",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "텐쎄라 리프팅 100라인",
+      "regular_price": 95000,
+      "event_price": 49000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": 100,
+      "unit": "line",
+      "price_per_unit": 490,
+      "event_period": "~2026-02-28",
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "hifu",
+      "price_display": "49,000원",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "[여자제모] 인중/겨드랑이 1회",
+      "regular_price": 1900,
+      "event_price": 1000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "~2026-02-28",
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "laser",
+      "price_display": "1,000원",
+      "session_info": "1회",
+      "body_part": "인중/겨드랑이"
+    },
+    {
+      "name": "[남자제모] 인중/겨드랑이 1회",
+      "regular_price": 5900,
+      "event_price": 3000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "~2026-02-28",
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "laser",
+      "price_display": "3,000원",
+      "session_info": "1회",
+      "body_part": "인중/겨드랑이"
+    },
+    {
+      "name": "슬림바디 패키지(대용량 걸그룹주사 600cc + 고주파관리)",
+      "regular_price": 180000,
+      "event_price": 99000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": 600,
+      "unit": "cc",
+      "price_per_unit": 165,
+      "event_period": "~2026-02-28",
+      "includes": [
+        "대용량 걸그룹주사 600cc",
+        "고주파관리"
+      ],
+      "is_package": true,
+      "is_addon": false,
+      "source": "text",
+      "category": "lipolytic",
+      "price_display": "99,000원",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "슬림라인 패키지(컨투어핏주사 60cc + 바디 온다 리프팅 10만줄)",
+      "regular_price": 900000,
+      "event_price": 490000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": 60,
+      "unit": "cc",
+      "price_per_unit": 8166.67,
+      "event_period": "~2026-02-28",
+      "includes": [
+        "컨투어핏주사 60cc",
+        "바디 온다 리프팅 10만줄"
+      ],
+      "is_package": true,
+      "is_addon": false,
+      "source": "text",
+      "category": "lipolytic",
+      "price_display": "490,000원",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "바디 S라인주사 1부위",
+      "regular_price": 150000,
+      "event_price": 79000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "~2026-02-28",
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "lipolytic",
+      "price_display": "79,000원",
+      "session_info": null,
+      "body_part": "1부위"
+    },
+    {
+      "name": "베이직 스킨케어(각질정리/블랙헤드관리/보습관리/비타민관리/수분팩/재생광선) 10회",
+      "regular_price": 180000,
+      "event_price": 99000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "~2026-02-28",
+      "includes": [
+        "각질정리",
+        "블랙헤드관리",
+        "보습관리",
+        "비타민관리",
+        "수분팩",
+        "재생광선"
+      ],
+      "is_package": true,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": "99,000원",
+      "session_info": "10회",
+      "body_part": null
+    },
+    {
+      "name": "영양 면역주사(신데렐라주사/슈퍼비타민주사/마늘주사/와인주사) 5회",
+      "regular_price": 175000,
+      "event_price": 99000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "~2026-02-28",
+      "includes": [
+        "신데렐라주사",
+        "슈퍼비타민주사",
+        "마늘주사",
+        "와인주사"
+      ],
+      "is_package": true,
+      "is_addon": false,
+      "source": "text",
+      "category": "other_injectable",
+      "price_display": "99,000원",
+      "session_info": "5회",
+      "body_part": null
+    },
+    {
+      "name": "울쎄라 리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": 190000,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "hifu",
+      "price_display": "190,000원~",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "울쎄라 리프팅(고강도 집속 초음파) 100샷",
+      "regular_price": 370000,
+      "event_price": 190000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": 100,
+      "unit": "shot",
+      "price_per_unit": 1900,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "hifu",
+      "price_display": "190,000원",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "울쎄라 리프팅(고강도 집속 초음파) 300샷",
+      "regular_price": 1110000,
+      "event_price": 790000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": 300,
+      "unit": "shot",
+      "price_per_unit": 2633.33,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "hifu",
+      "price_display": "790,000원",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "LDM 프리미엄 관리",
+      "regular_price": null,
+      "event_price": 40000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": true,
+      "source": "website",
+      "category": "ipl",
+      "price_display": "40,000원",
+      "session_info": "1회",
+      "body_part": null
+    },
+    {
+      "name": "턱라인 스킨보톡스(국산) 1부위",
+      "regular_price": null,
+      "event_price": 19000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": true,
+      "source": "website",
+      "category": "botox",
+      "price_display": "19,000원",
+      "session_info": null,
+      "body_part": "턱라인 1부위"
+    },
+    {
+      "name": "레블라이트SI 토닝",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": 25000,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": "25,000원~",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "레블라이트SI 토닝(PTP 프리미엄 토닝) 1회",
+      "regular_price": 49900,
+      "event_price": 25000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": "25,000원",
+      "session_info": "1회",
+      "body_part": null
+    },
+    {
+      "name": "레블라이트SI 토닝(PTP 프리미엄 토닝) 10회",
+      "regular_price": 1000000,
+      "event_price": 590000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": "590,000원",
+      "session_info": "10회",
+      "body_part": null
+    },
+    {
+      "name": "레블라이트SI 토닝(PTP 프리미엄 토닝) 10회 + 진정관리 10회 + 모델링팩 10회",
+      "regular_price": 1300000,
+      "event_price": 690000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [
+        "레블라이트SI 토닝 10회",
+        "진정관리 10회",
+        "모델링팩 10회"
+      ],
+      "is_package": true,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": "690,000원",
+      "session_info": "10회",
+      "body_part": null
+    },
+    {
+      "name": "아쿠아필/비타민관리/진정관리/보습관리 10회",
+      "regular_price": null,
+      "event_price": 150000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [
+        "아쿠아필",
+        "비타민관리",
+        "진정관리",
+        "보습관리"
+      ],
+      "is_package": true,
+      "is_addon": true,
+      "source": "website",
+      "category": "other",
+      "price_display": "150,000원",
+      "session_info": "10회",
+      "body_part": null
+    },
+    {
+      "name": "LDM 프리미엄 수분관리 10회",
+      "regular_price": null,
+      "event_price": 250000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": true,
+      "source": "website",
+      "category": "ipl",
+      "price_display": "250,000원",
+      "session_info": "10회",
+      "body_part": null
+    },
+    {
+      "name": "제네시스 10회",
+      "regular_price": null,
+      "event_price": 400000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": true,
+      "source": "website",
+      "category": "laser",
+      "price_display": "400,000원",
+      "session_info": "10회",
+      "body_part": null
+    },
+    {
+      "name": "볼륨필러(국산 아띠에르)",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": 69000,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "filler",
+      "price_display": "69,000원~",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "볼륨필러(국산 아띠에르) 1cc",
+      "regular_price": 110000,
+      "event_price": 69000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": 1,
+      "unit": "cc",
+      "price_per_unit": 69000,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "filler",
+      "price_display": "69,000원",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "볼륨필러(독일 아말리안)",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": 189000,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "filler",
+      "price_display": "189,000원~",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "볼륨필러(독일 아말리안) 1cc",
+      "regular_price": 320000,
+      "event_price": 189000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": 1,
+      "unit": "cc",
+      "price_per_unit": 189000,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "filler",
+      "price_display": "189,000원",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "볼륨필러(스웨덴 레스틸렌/독일 벨로테로)",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": 270000,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "filler",
+      "price_display": "270,000원~",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "볼륨필러(스웨덴 레스틸렌/독일 벨로테로) 1cc",
+      "regular_price": 480000,
+      "event_price": 270000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": 1,
+      "unit": "cc",
+      "price_per_unit": 270000,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "filler",
+      "price_display": "270,000원",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "라라필",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": 110000,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "~2026-02-28",
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "skinbooster",
+      "price_display": "110,000원~",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "덴서티 리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": 690000,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "~2026-02-28",
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "rf",
+      "price_display": "690,000원~",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "온다 리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": 110000,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "~2026-02-28",
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "rf",
+      "price_display": "110,000원~",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "텐쎄라 리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": 49000,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "~2026-02-28",
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "hifu",
+      "price_display": "49,000원~",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "인모드 리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": 6900,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "~2026-02-28",
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "rf",
+      "price_display": "6,900원~",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "슈링크 유니버스 리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": 14500,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "~2026-02-28",
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "hifu",
+      "price_display": "14,500원~",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "실리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": 50000,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "~2026-02-28",
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "thread",
+      "price_display": "50,000원~",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "LDM 물방울 리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": 120000,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "~2026-02-28",
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "ipl",
+      "price_display": "120,000원~",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "보톡스 (국산 일반형)",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": 10000,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "botox",
+      "price_display": "10,000원~",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "보톡스 (국산 고순도)",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": 25000,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "botox",
+      "price_display": "25,000원~",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "보톡스 (독일산 고순도)",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": 45000,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "botox",
+      "price_display": "45,000원~",
+      "session_info": null,
+      "body_part": null
+    }
+  ],
+  "events": [
+    {
+      "title": "월간포에버 ❄️2월❄️",
+      "type": "시즌",
+      "period": "~2026-02-28",
+      "discount_info": null,
+      "original_price": null,
+      "event_price": 14500,
+      "conditions": [
+        "나에게 주는 최고의 설 선물, 지친 피부에 휴식을 더하세요!"
+      ],
+      "source": "text"
+    },
+    {
+      "title": "🎊 설맞이 한정 이벤트 🎊",
+      "type": "시즌",
+      "period": "~2026-02-28",
+      "discount_info": null,
+      "original_price": null,
+      "event_price": 99000,
+      "conditions": [
+        "포에버 안산점만의 스페'설' 이벤트!"
+      ],
+      "source": "text"
+    },
+    {
+      "title": "💖 발렌타인데이 특가 💖",
+      "type": "시즌",
+      "period": "~2026-02-28",
+      "discount_info": null,
+      "original_price": null,
+      "event_price": 22000,
+      "conditions": [
+        "초콜렛보다 더 달콤한 발렌타인데이 한정 이벤트!"
+      ],
+      "source": "text"
+    },
+    {
+      "title": "✨화수목✨ 한정가 이벤트",
+      "type": "시즌",
+      "period": "~2026-02-28",
+      "discount_info": null,
+      "original_price": null,
+      "event_price": 39000,
+      "conditions": [
+        "매주 화요일, 수요일, 목요일에는 혜택이 팡팡"
+      ],
+      "source": "text"
+    },
+    {
+      "title": "✨첫시술✨ 체험전",
+      "type": "신규고객",
+      "period": "~2026-02-28",
+      "discount_info": null,
+      "original_price": null,
+      "event_price": 1000,
+      "conditions": [
+        "포에버가 준비한 설레는 첫시술 혜택~♥",
+        "평일 첫 시술 고객에게만 해당됩니다."
+      ],
+      "source": "text"
+    },
+    {
+      "title": "다이어트 솔루션",
+      "type": "패키지",
+      "period": "~2026-02-28",
+      "discount_info": null,
+      "original_price": null,
+      "event_price": 79000,
+      "conditions": [
+        "여름준비 지금부터, 날씬하게!"
+      ],
+      "source": "text"
+    },
+    {
+      "title": "평일 해피타임 이벤트",
+      "type": "시즌",
+      "period": "~2026-02-28",
+      "discount_info": null,
+      "original_price": null,
+      "event_price": 99000,
+      "conditions": [
+        "붙잡으면 해피해지는 특별한 혜택♥",
+        "평일 오전 11시부터 오후 5시까지 적용됩니다."
+      ],
+      "source": "text"
+    },
+    {
+      "title": "인모드 리프팅",
+      "type": "할인",
+      "period": "~2026-02-28",
+      "discount_info": null,
+      "original_price": null,
+      "event_price": 6900,
+      "conditions": [
+        "헐리웃 셀럽들의 원픽 리프팅"
+      ],
+      "source": "text"
+    },
+    {
+      "title": "울쎄라 리프팅",
+      "type": "할인",
+      "period": "~2026-02-28",
+      "discount_info": null,
+      "original_price": null,
+      "event_price": 190000,
+      "conditions": [
+        "FDA 승인 정품팁, 프리미엄 초음파 리프팅"
+      ],
+      "source": "text"
+    },
+    {
+      "title": "덴서티 리프팅",
+      "type": "할인",
+      "period": "~2026-02-28",
+      "discount_info": null,
+      "original_price": null,
+      "event_price": 690000,
+      "conditions": [
+        "두가지 고주파와 섬세한 쿨링이 만나 빈틈없이!"
+      ],
+      "source": "text"
+    },
+    {
+      "title": "온다 리프팅",
+      "type": "할인",
+      "period": "~2026-02-28",
+      "discount_info": null,
+      "original_price": null,
+      "event_price": 110000,
+      "conditions": [
+        "통증은 내리고, 효과는 올리는 신개념 리프팅"
+      ],
+      "source": "text"
+    },
+    {
+      "title": "텐쎄라 리프팅",
+      "type": "할인",
+      "period": "~2026-02-28",
+      "discount_info": null,
+      "original_price": null,
+      "event_price": 49000,
+      "conditions": [
+        "2라인 HIFU로 더 빠르고 강력한 리프팅 효과"
+      ],
+      "source": "text"
+    },
+    {
+      "title": "슈링크 유니버스 리프팅",
+      "type": "할인",
+      "period": "~2026-02-28",
+      "discount_info": null,
+      "original_price": null,
+      "event_price": 14500,
+      "conditions": [
+        "2가지 모드로 더욱 강력해진 2세대 슈링크"
+      ],
+      "source": "text"
+    },
+    {
+      "title": "실리프팅",
+      "type": "할인",
+      "period": "~2026-02-28",
+      "discount_info": null,
+      "original_price": null,
+      "event_price": 50000,
+      "conditions": [
+        "확실하게 당겨주는 페이스 리프팅"
+      ],
+      "source": "text"
+    },
+    {
+      "title": "LDM 물방울 리프팅",
+      "type": "할인",
+      "period": "~2026-02-28",
+      "discount_info": null,
+      "original_price": null,
+      "event_price": 120000,
+      "conditions": [
+        "고밀도 초음파 에너지로 수분과 탄력을 동시에"
+      ],
+      "source": "text"
+    },
+    {
+      "title": "라라필",
+      "type": "할인",
+      "period": "~2026-02-28",
+      "discount_info": null,
+      "original_price": null,
+      "event_price": 110000,
+      "conditions": [
+        "벗기지 않고 채워주는 신개념 4세대 필링"
+      ],
+      "source": "text"
+    }
+  ],
+  "clinic_categories": [
+    {
+      "name": "필러",
+      "treatments": []
+    },
+    {
+      "name": "보톡스",
+      "treatments": []
+    },
+    {
+      "name": "리프팅",
+      "treatments": []
+    },
+    {
+      "name": "피부",
+      "treatments": []
+    },
+    {
+      "name": "스킨부스터",
+      "treatments": []
+    },
+    {
+      "name": "제모/탈모",
+      "treatments": []
+    },
+    {
+      "name": "윤곽성형",
+      "treatments": []
+    },
+    {
+      "name": "체형성형",
+      "treatments": []
+    }
+  ],
+  "contact_info": {
+    "email": [],
+    "phone": [
+      {
+        "number": "1599-8340",
+        "type": "대표"
+      }
+    ],
+    "address": {
+      "full_address": "경기 안산시 단원구 고잔로 88 지스타프라자 8층",
+      "sido": "경기",
+      "sigungu": "안산시 단원구"
+    },
+    "kakao_channel": "http://pf.kakao.com/_zxgnaj/chat",
+    "naver_booking": null,
+    "naver_place": null,
+    "instagram": "https://www.instagram.com/4ever_official_as/",
+    "facebook": null,
+    "youtube": "https://www.youtube.com/@4ever-clinic/videos",
+    "blog": null,
+    "website_url": "https://as.4-ever.co.kr",
+    "operating_hours": {
+      "weekday": "AM 10 : 00 ~ PM 20 : 00",
+      "saturday": "AM 10 : 00 ~ PM 16 : 00",
+      "sunday": null,
+      "lunch_break": "PM 13 : 00 ~ PM 14 :00"
+    }
+  },
+  "unregistered_equipment": [
+    {
+      "name": "Amalian",
+      "korean_name": "아말리안",
+      "suggested_category": "filler",
+      "source": "text",
+      "reason": "Not in dictionary"
+    },
+    {
+      "name": "원쎄라",
+      "korean_name": "원쎄라",
+      "suggested_category": "HIFU",
+      "source": "text",
+      "reason": "Not in dictionary"
+    },
+    {
+      "name": "덴서티",
+      "korean_name": "덴서티",
+      "suggested_category": "RF_TIGHTENING",
+      "source": "text",
+      "reason": "Not in dictionary"
+    },
+    {
+      "name": "잼버실",
+      "korean_name": "잼버실",
+      "suggested_category": "thread",
+      "source": "text",
+      "reason": "Not in dictionary"
+    },
+    {
+      "name": "울트라콜",
+      "korean_name": "울트라콜",
+      "suggested_category": "SKINBOOSTER",
+      "source": "text",
+      "reason": "Not in dictionary"
+    },
+    {
+      "name": "래디어스",
+      "korean_name": "래디어스",
+      "suggested_category": "collagen_stimulator",
+      "source": "text",
+      "reason": "Not in dictionary"
+    },
+    {
+      "name": "플래티넘 PTT",
+      "korean_name": "플래티넘 PTT",
+      "suggested_category": "other_device",
+      "source": "text",
+      "reason": "Not in dictionary"
+    },
+    {
+      "name": "SONO 관리",
+      "korean_name": "SONO 관리",
+      "suggested_category": "other_device",
+      "source": "text",
+      "reason": "Not in dictionary"
+    }
+  ],
+  "unregistered_treatments": [
+    {
+      "name": "다이아필링",
+      "source": "text",
+      "context": "프리미엄 관리(LDM/다이아필링/라라필/오투덤) 1회"
+    },
+    {
+      "name": "오투덤",
+      "source": "text",
+      "context": "프리미엄 관리(LDM/다이아필링/라라필/오투덤) 1회"
+    },
+    {
+      "name": "대용량 걸그룹주사 600cc",
+      "source": "text",
+      "context": "슬림바디 패키지(대용량 걸그룹주사 600cc + 고주파관리)"
+    },
+    {
+      "name": "고주파관리",
+      "source": "text",
+      "context": "슬림바디 패키지(대용량 걸그룹주사 600cc + 고주파관리)"
+    },
+    {
+      "name": "컨투어핏주사 60cc",
+      "source": "text",
+      "context": "슬림라인 패키지(컨투어핏주사 60cc + 바디 온다 리프팅 10만줄)"
+    },
+    {
+      "name": "바디 온다 리프팅 10만줄",
+      "source": "text",
+      "context": "슬림라인 패키지(컨투어핏주사 60cc + 바디 온다 리프팅 10만줄)"
+    },
+    {
+      "name": "바디 S라인주사 1부위",
+      "source": "text",
+      "context": "바디 S라인주사 1부위"
+    },
+    {
+      "name": "각질정리",
+      "source": "text",
+      "context": "각질정리 + 비타민 OR 보습관리 + 보습팩"
+    },
+    {
+      "name": "비타민 OR 보습관리",
+      "source": "text",
+      "context": "각질정리 + 비타민 OR 보습관리 + 보습팩"
+    },
+    {
+      "name": "보습팩",
+      "source": "text",
+      "context": "각질정리 + 비타민 OR 보습관리 + 보습팩"
+    },
+    {
+      "name": "블랙헤드관리",
+      "source": "text",
+      "context": "베이직 스킨케어(각질정리/블랙헤드관리/보습관리/비타민관리/수분팩/재생광선) 10회"
+    },
+    {
+      "name": "수분팩",
+      "source": "text",
+      "context": "베이직 스킨케어(각질정리/블랙헤드관리/보습관리/비타민관리/수분팩/재생광선) 10회"
+    },
+    {
+      "name": "재생광선",
+      "source": "text",
+      "context": "베이직 스킨케어(각질정리/블랙헤드관리/보습관리/비타민관리/수분팩/재생광선) 10회"
+    },
+    {
+      "name": "신데렐라주사",
+      "source": "text",
+      "context": "영양 면역주사(신데렐라주사/슈퍼비타민주사/마늘주사/와인주사) 5회"
+    },
+    {
+      "name": "슈퍼비타민주사",
+      "source": "text",
+      "context": "영양 면역주사(신데렐라주사/슈퍼비타민주사/마늘주사/와인주사) 5회"
+    },
+    {
+      "name": "마늘주사",
+      "source": "text",
+      "context": "영양 면역주사(신데렐라주사/슈퍼비타민주사/마늘주사/와인주사) 5회"
+    },
+    {
+      "name": "와인주사",
+      "source": "text",
+      "context": "영양 면역주사(신데렐라주사/슈퍼비타민주사/마늘주사/와인주사) 5회"
+    },
+    {
+      "name": "타이트닝주사",
+      "source": "text",
+      "context": "덴서티 300샷 + 얼굴전체 타이트닝 주사"
+    },
+    {
+      "name": "엑셀V 색소모드",
+      "source": "text",
+      "context": "색소올클리어 (엑셀V 색소모드 + 크라이오 + 미백팩) 1회"
+    },
+    {
+      "name": "크라이오",
+      "source": "text",
+      "context": "색소올클리어 (엑셀V 색소모드 + 크라이오 + 미백팩) 1회"
+    },
+    {
+      "name": "미백팩",
+      "source": "text",
+      "context": "색소올클리어 (엑셀V 색소모드 + 크라이오 + 미백팩) 1회"
+    },
+    {
+      "name": "홍조 OR 혈관레이저",
+      "source": "text",
+      "context": "레이저토닝 5회 + 제네시스 5회 + 홍조 OR 혈관레이저 1회 + 보습팩 5회"
+    },
+    {
+      "name": "물광주사",
+      "source": "text",
+      "context": "울트라콜 100 + 물광주사 + 스킨보톡스 + 보습팩"
+    },
+    {
+      "name": "스킨보톡스",
+      "source": "text",
+      "context": "울트라콜 100 + 물광주사 + 스킨보톡스 + 보습팩"
+    },
+    {
+      "name": "콜라겐팩",
+      "source": "text",
+      "context": "리쥬란힐러 2cc + 얼굴전체 스킨보톡스 + 콜라겐팩 1회"
+    },
+    {
+      "name": "콜라겐관리",
+      "source": "text",
+      "context": "레티젠 2cc + 콜라겐관리"
+    },
+    {
+      "name": "플래티넘 PTT",
+      "source": "text",
+      "context": "NO!피지 패키지 (플래티넘 PTT + SONO 관리 + 제네시스 + 진정팩 - 압출별도)"
+    },
+    {
+      "name": "SONO 관리",
+      "source": "text",
+      "context": "NO!피지 패키지 (플래티넘 PTT + SONO 관리 + 제네시스 + 진정팩 - 압출별도)"
+    },
+    {
+      "name": "진정팩",
+      "source": "text",
+      "context": "NO!피지 패키지 (플래티넘 PTT + SONO 관리 + 제네시스 + 진정팩 - 압출별도)"
+    },
+    {
+      "name": "비타민관리",
+      "source": "text",
+      "context": "♥ 설날 복주머니 P!CK ♥ (슈링크 200샷/인모드 FX 1부위/턱보톡스/주름보톡스 1부위/비타민관리/아쿠아필1,2제/보습관리/면역수액/아큐주사 3cc 中 5가지)"
+    },
+    {
+      "name": "아쿠아필1,2제",
+      "source": "text",
+      "context": "♥ 설날 복주머니 P!CK ♥ (슈링크 200샷/인모드 FX 1부위/턱보톡스/주름보톡스 1부위/비타민관리/아쿠아필1,2제/보습관리/면역수액/아큐주사 3cc 中 5가지)"
+    },
+    {
+      "name": "면역수액",
+      "source": "text",
+      "context": "♥ 설날 복주머니 P!CK ♥ (슈링크 200샷/인모드 FX 1부위/턱보톡스/주름보톡스 1부위/비타민관리/아쿠아필1,2제/보습관리/면역수액/아큐주사 3cc 中 5가지)"
+    },
+    {
+      "name": "아큐주사 3cc",
+      "source": "text",
+      "context": "♥ 설날 복주머니 P!CK ♥ (슈링크 200샷/인모드 FX 1부위/턱보톡스/주름보톡스 1부위/비타민관리/아쿠아필1,2제/보습관리/면역수액/아큐주사 3cc 中 5가지)"
+    },
+    {
+      "name": "얼굴 점, 사마귀, 비립종",
+      "source": "text",
+      "context": "얼굴 점, 사마귀, 비립종 30개"
+    },
+    {
+      "name": "재생레이저",
+      "source": "text",
+      "context": "엑셀V 1회 + 레블라이트 3회 + 비타민 관리 3회 + 재생광선 3회 + 보습팩 3회"
+    },
+    {
+      "name": "윤곽주사 3cc",
+      "source": "text",
+      "context": "턱보톡스 + 윤곽주사 3cc"
+    },
+    {
+      "name": "화이트닝 레이저",
+      "source": "text",
+      "context": "레이저토닝(화이트닝 레이저)"
+    }
+  ],
+  "raw_price_texts": [],
+  "extraction_summary": {
+    "total_doctors": 2,
+    "total_academic": 0,
+    "total_equipment": 19,
+    "total_devices": 13,
+    "total_injectables": 6,
+    "total_treatments": 54,
+    "total_events": 17,
+    "total_categories": 8,
+    "total_contact_channels": 6,
+    "has_email": false,
+    "has_phone": true,
+    "has_kakao": true,
+    "has_sns": true,
+    "price_available_ratio": "51/54",
+    "unregistered_equipment_count": 8,
+    "unregistered_treatments_count": 37
+  }
+}
+
+──── [2] ocr_raw.json (이미지 OCR 원본) ────
+
+--- page_0_main_capture_0 ---
+텍스트_없음
+
+--- page_0_main_capture_1 ---
+텍스트_없음
+
+--- page_0_main_capture_2 ---
+메디서나
+함께 포에버의원
+
+시술명 검색
+Q
+리프팅 BEST
+5 리프팅
+BEST
+6 보톡스
+마스터 BEST
+7 쥬베룩
+필러
+8 슈링크
+
+BEFORE & AFTER
+
+의료법상
+회원만 전후사진을
+확인할 수 있습니다.
+
+로그인
+
+시술 전
+시술 후
+
+시술부위 리프팅
+전후기간 시술직후
+
+더 많은 전후사진 보기
+빠른 상담 예약
+
+차별화된 솔루션, 차별화된 결과
+4EVER SHORTS
+
+여기는
+실리프팅
+성공의 핵심은
+'설계'에 있습니다
+여기는
+실리프팅 시술 후
+꼭 지켜야 할
+주의사항 !
+여기는
+젊음을 도
+시술 조
+실리프팅 + 스
+
+EVENT LOUNGE
+안산점만의 토탈 케어 라운지
+
+--- page_0_main_capture_3 ---
+더 많은 쇼츠 보러가기
+
+디서나
+함께 포에버의원
+
+명 검색
+Q
+리프팅 BEST
+5 리프팅
+BEST
+6 보톡스
+스터 BEST
+7 쥬베룩
+러
+-
+8 슈링크
+
+YouTube X 여기는 포에버
+4EVER 유튜브
+시술 전 시술 직후
+깊게 패인 입가 주름
+실+필러로
+얼마나 개선될까?
+시술 영상과 전후 사진까지, 눈으로 확인하는 리프팅 효과 🤙
+
+메리.마리오네트 팔자주름
+'필러'는 '실'과 함께!
+초음파! 고주파! 극초단파!
+리프팅 시술 비교 분석
+주름 필러 효과
+유지기간 늘리는 비법 대공개!
+초음파! 고주파! 극초단파!
+리프팅 시술 비교 분석
+
+50대 안티에이징
+'이것'을 추천합니다
+피부 나이
+선천적? VS 후천적?
+
+EVENT LOUNGE
+안산점만의 토탈 케어 라운지
+
+--- page_0_main_capture_4 ---
+유튜브 바로가기
+
+디서나
+함께 포에버의원
+
+명 검색
+Q
+리프팅 BEST 5 리프팅
+BEST 6 보톡스
+스터 BEST 7 쥬베룩
+러 - 8 슈링크
+
+의료진 소개
+
+대표원장
+이건민 대표원장
+포에버의원 안산점
+
+이충일 원장
+포에버의원 안산점
+
+CONTACT
+대표전화 1599-8340
+카카오톡 @포에버안산
+인스타그램 @4ever_official_as
+진료시간 월요일 AM 10:00 ~ PM 20:00
+화요일 AM 10:00 ~ PM 20:00
+수요일 AM 10:00 ~ PM 20:00
+목요일 AM 10:00 ~ PM 20:00
+금요일 AM 10:00 ~ PM 20:00
+토요일 AM 10:00 ~ PM 16:00
+
+EVENT LOUNGE
+안산점만의 토탈 케어 라운지
+
+--- page_0_main_capture_5 ---
+*토요일 점심시간 없이 진료
+
+LOCATION
+도로명 경기 안산시 단원구 고잔로 88 지스타프라자 8층
+지번 경기 안산시 단원구 고잔동 534-2 지스타프라자 8층
+
+고잔파출소
+한국산업은행
+안산소방서
+중앙시티
+오피스텔
+국민연금공단
+안산외국인상담센터
+아우백
+스테이크하우스
+에이스병원
+롯데시네마
+메가박스
+포에버의원
+힐스테이트
+중앙아파트
+안산중앙
+초등학교
+안산센트럴
+푸르지오아파트
+휴지오
+오피스텔
+안산중앙
+요양병원
+안산금창골목
+하나은행
+고든병원
+롯데백화점
+맛찬들
+
+네이버 지도
+카카오맵
+
+디서나
+함께 포에버의원
+
+검색
+
+BEST 5 리프팅
+BEST 6 보톡스
+BEST 7 쥬베룩
+BEST 8 슈링크
+
+빠른 상담예약
+이름
+휴대폰 번호 입력
+개인정보이용동의 [자세히보기]
+상담예약
+
+EVENT LOUNGE
+안산점만의 토탈 케어 라운지
+
+--- page_0_main_capture_6 ---
+디서나
+함께 포에버의원
+
+명 검색
+Q
+리프팅 BEST 5 리프팅
+BEST 6 보톡스
+BEST 7 쥬베룩
+러 8 슈링크
+
+W 한국산업은행
+줌시티
+오피스텔
+포에버의원
+국민연금공단
+안산외국인상담센터
+에이스병원
+스카이하우스
+롯데백화점
+에버튼빌딩
+프라움시티
+오피스텔
+힐스테이트
+중앙아파트
+하나은행
+고든병원
+메가박스
+롯데백화점
+맛찬들
+외랑로
+포에버의원
+힐스테이트
+중앙아파트
+안산센트럴
+푸르지오아파트
+휴지오
+오피스텔
+안산중앙
+요양병원
+안산곱창골목
++
+-
+C
+네이버지도
+카카오맵
+
+빠른 상담예약
+이름
+휴대폰 번호 입력
+개인정보이용동의 [자세히보기]
+상담예약
+
+4EVER
+개인정보취급방침 이용약관 제휴문의 고객만족센터
+포에버의원 안산점
+대표 이건민 사업자등록번호 690-24-00736
+주소 경기 안산시 단원구 고잔로 88
+Copyright © 4ever-clinic. all rights reserved.
+EVENT LOUNGE
+안산점만의 토탈 케어 라운지
+
+--- page_1_event_capture_0 ---
+4EVER 안산점 ▼
+≡
+디서나
+함께 포에버의원
+검색
+EVENT
+포에버의원 안산점만의 엄청난 혜택을 확인해 보세요!
+인모드
+검색
+초기화
+전체
+기획전
+쁘띠성형
+성형
+피부
+리프팅
+제모
+체형
+BEST
+5 리프팅
+설맞이 한정 이벤트
+포에버 안산점만의 '스페셜' 이벤트!
+~2028-02-28
+#2월
+#설날
+#한정
+#이벤트
+#점
+99,000원~
+BEST
+6 보톡스
+NEW
+화수목 한정가 이벤트
+매주 화요일, 수요일, 목요일에는 혜택이 팡팡
+~2028-02-28
+#화
+#수
+#목
+#한정
+#특가
+39,000원~
+BEST
+7 쥬베룩
+HOT
+첫시술 체험전
+포에버가 준비한 설레는 첫시술 혜택-♥
+~2028-02-28
+#첫시술
+#체험이벤트
+1,000원~
+BEST
+8 슈링크
+HOT
+인모드 리프팅
+헐리웃 셀럽들의 원픽 리프팅
+~2028-02-28
+#연예인리프팅
+#타이트닝
+#탄력
+#이중턱
+#심부볼
+EVENT LOUNGE
+안산점만의 토탈 케어 라운지
+
+--- page_1_event_capture_1 ---
+디서나
+함께 포에버의원
+
+검색
+
+리프팅 BEST 5 리프팅
+보톡스 BEST 6 보톡스
+마스터 BEST 7 쥬베룩
+필러 8 슈링크
+
+6,900원~
+
+각 지점별 상기 이미지가 상이할 경우 혹은 특정 시술에 한하여 고객 대상으로 진행됩니다.
+정부의 부가세법 제29조에 따라 부가세가 별도로 부과됩니다.
+
+< 1 >
+
+빠른 상담예약
+이름
+휴대폰 번호 입력
+개인정보이용동의 [자세히보기]
+상담예약
+
+4EVER
+개인정보취급방침 이용약관 제휴문의 고객만족센터
+포에버의원 안산점
+대표 이건민 사업자등록번호 690-24-00736
+주소 경기 안산시 단원구 고잔로 88
+Copyright ⓒ 4ever-clinic. all rights reserved.
+[YouTube icon] [TikTok icon] [Instagram icon] [Naver Blog icon]
+EVENT LOUNGE
+안산점만의 토탈 케어 라운지
+[Chat icon]
+
+--- page_2_event_capture_0 ---
+디서나
+함께 포에버의원
+명 검색
+BEST 4 리프팅
+BEST 5 리프팅
+BEST 6 보톡스
+BEST 7 쥬베룩
+BEST 8 슈링크
+4EVER 안산점
+EVENT
+포에버의원 안산점만의 엄청난 혜택을 확인해 보세요!
+리프팅
+검색
+초기화
+전체
+기획전
+뼈따성형
+성형
+피부
+리프팅
+제모
+체형
+HOT
+월간
+포에버
+지금이 타이밍
+4ever
+월간포에버 2월
+나에게 주는 최고의 설 선물, 지친 피부에 휴식을 더하세요!
+#2월 #설날 #특가 #피부 #혜택
+14,500원~
+~2026-02-28
+HOT
+첫 시술
+이벤트
+첫만남은 혜택가득!
+4ever
+첫시술 체험전
+포에버가 준비한 설레는 첫시술 혜택
+#첫시술 #체험이벤트
+1,000원~
+~2026-02-28
+NEW HOT
+다이어트
+솔루션
+4ever
+다이어트 솔루션
+여름준비 지금부터, 날씬하게!
+#다이어트 #여름준비 #체형관리
+79,000원~
+~2026-02-28
+NEW
+LHA
+라라필
+벗기지 않고 채워주는 신개념 4세대 필링
+#필링 #각질제거 #피부결개선 #각질탈락
+~2026-02-28
+EVENT LOUNGE
+안산점만의 토탈 케어 라운지
+
+--- page_2_event_capture_1 ---
+디서나
+함께 포에버의원
+
+명 검색
+리프팅 BEST
+5 리프팅
+보톡스 BEST
+6 보톡스
+스터 BEST
+7 쥬베룩
+러
+8 슈링크
+
+HOT
+울쎄라 리프팅
+FDA 승인 정품팁, 프리미엄 초음파 리프팅
+#탄력 #고강도 #초음파 #주름 #턱라인
+190,000원~
+-2026-02-28
+
+NEW
+덴서티 리프팅
+두가지 고주파와 섬세한 쿨링이 만나 빈틈없이!
+#탄력 #주름 #윤곽 #고주파 #쿨링
+690,000원~
+-2026-02-28
+
+NEW
+온다 리프팅
+통증은 내리고, 효과는 올리는 신개념 리프팅
+#극초단파 #마이크로웨이브 #비침습 #피부탄력
+#지방파괴
+110,000원~
+-2026-02-28
+
+NEW
+텐쎄라 리프팅
+2라인 HIFU로 더 빠르고 강력한 리프팅 효과
+#타이트닝 #탄력 #이중턱 #턱선 #심부볼
+49,000원~
+-2026-02-28
+
+HOT
+인모드 리프팅
+헐리웃 셀럽들의 원픽 리프팅
+#연예인리프팅 #타이트닝 #탄력 #이중턱 #심부볼
+6,900원~
+-2026-02-28
+
+NEW HOT
+EVENT LOUNGE
+안산점만의 토탈 케어 라운지
+
+--- page_2_event_capture_2 ---
+디서나
+함께 포에버의원
+
+시술명 검색
+Q
+
+BEST 5 리프팅
+BEST 6 보톡스
+BEST 7 쥬베룩
+8 슈링크
+
+#타이트닝 #탄력 #이중턱 #턱선 #심부볼
+14,500원~
+
+-2026-02-28
+실리프팅
+확실하게 당겨주는 페이스 리프팅
+#리프팅 #브이라인 #V라인 #이중턱 #주름개선
+50,000원~
+
+-2026-02-28
+LDM 물방울 리프팅
+고밀도 초음파 에너지로 수분과 탄력을 동시에
+#탄력 #보습 #화이트닝 #피부재생 #초음파
+120,000원~
+
+*기간/권장기간 동안에만 적용되는 이벤트이며 고객님으로 진행됩니다.
+정부의 부가세법 개정에 따라 부가세가 별도로 부과됩니다.
+
+< 1 >
+
+빠른 상담예약
+이름
+휴대폰 번호 입력
+✓ 개인정보이용동의 [자세히보기]
+
+EVENT LOUNGE
+안산점만의 토탈 케어 라운지
+
+--- page_2_event_capture_3 ---
+120,000원~
+
+각 진료/시술 기간, 용어(명칭)은 특정 부위와 고객(환자)으로 적용되며
+정부의 부가세법 제29조에 따라 부가세가 별도로 부과됩니다.
+
+< 1 >
+
+메디서나
+함께 포에버의원
+
+검색
+Q
+
+리프팅 BEST 5 리프팅 ▲
+BEST 6 보톡스 ▲
+스터 BEST 7 쥬베룩 ▼
+러 8 슈링크 ▼
+
+빠른 상담예약
+이름
+휴대폰 번호 입력
+개인정보이용동의 [자세히보기]
+상담예약
+
+4EVER
+개인정보취급방침 이용약관 제휴문의 고객만족센터
+포에버의원 안산점
+대표 이건민 사업자등록번호 690-24-00736
+주소 경기 안산시 단원구 고잔로 88
+Copyright © 4ever-clinic. all rights reserved.
+
+EVENT LOUNGE
+안산점만의 토탈 케어 라운지
+
+──── [3] coverage_raw.txt (커버리지 검증 로그) ────
+{
+  "missing_equipments": [
+    "원쎄라",
+    "민트실",
+    "잼버실",
+    "울트라콜",
+    "레티젠",
+    "래디어스",
+    "플래티넘 PTT",
+    "아말리안",
+    "항노화톡신"
+  ],
+  "missing_treatments": [
+    "웃음가스마취",
+    "♥ 설날 복주머니 P!CK ♥ (슈링크 200샷/인모드 FX 1부위/턱보톡스/주름보톡스 1부위/비타민관리/아쿠아필1,2제/보습관리/면역수액/아큐주사 3cc 中 5가지)",
+    "🎊 설맞이 한정 이벤트 🎊",
+    "✨화수목✨ 한정가 이벤트",
+    "✨첫시술✨ 체험전",
+    "월간포에버 ❄️2월❄️",
+    "다이어트 솔루션",
+    "평일 해피타임 이벤트"
+  ],
+  "missing_doctors": [],
+  "missing_prices": [
+    "슈링크 유니버스 100샷",
+    "울쎄라 리프팅 100샷",
+    "텐쎄라 300라인 + 원쎄라 2000샷",
+    "온다 4만줄 1회",
+    "덴서티 300샷 + 얼굴전체 타이트닝 주사",
+    "민트실 4줄 + 잼버실 2줄 + 타이트닝주사",
+    "베이직 화이트닝 (레이저토닝 + 재생레이저) 10회",
+    "색소올클리어 (엑셀V 색소모드 + 크라이오 + 미백팩) 1회",
+    "레이저토닝 5회 + 제네시스 5회 + 홍조 OR 혈관레이저 1회 + 보습팩 5회",
+    "울트라콜 100 + 물광주사 + 스킨보톡스 + 보습팩",
+    "리쥬란힐러 2cc + 얼굴전체 스킨보톡스 + 콜라겐팩 1회",
+    "레티젠 2cc + 콜라겐관리",
+    "래디어스 1실린지 + 얼굴전체 스킨보톡스",
+    "NO!피지 패키지 (플래티넘 PTT + SONO 관리 + 제네시스 + 진정팩 - 압출별도)",
+    "내성적은 국산 항노화톡신 주름 3부위",
+    "♥ 설날 복주머니 P!CK ♥ (슈링크 200샷/인모드 FX 1부위/턱보톡스/주름보톡스 1부위/비타민관리/아쿠아필1,2제/보습관리/면역수액/아큐주사 3cc 中 5가지)",
+    "얼굴 점, 사마귀, 비립종 30개",
+    "엑셀V 1회 + 레블라이트 3회 + 비타민 관리 3회 + 재생광선 3회 + 보습팩 3회",
+    "울쎄라 100샷 + 온다 6만줄 + 턱라인 스킨보톡스",
+    "울트라콜 + 물광주사 + 스킨보톡스"
+  ],
+  "coverage_score": {
+    "equipment": 64,
+    "treatment": 90,
+    "doctor": 100,
+    "overall": 85
+  },
+  "issues": [
+    "제공된 [추출 결과]에는 원본 마크다운에 명시되지 않은 의사 이름(이건민, 이충일) 및 보톡스 시술명(국산 일반형, 고순도, 독일산 고순도)이 포함되어 있습니다. 이는 추출 범위가 원본 마크다운보다 넓음을 시사합니다.",
+    "이벤트/기획전의 제목(예: '월간포에버 ❄️2월❄️', '🎊 설맞이 한정 이벤트 🎊')은 가격 정보가 명시된 구체적인 시술/패키지임에도 불구하고 [추출 결과]의 '시술' 항목에 포함되지 않았습니다."
+  ]
+}

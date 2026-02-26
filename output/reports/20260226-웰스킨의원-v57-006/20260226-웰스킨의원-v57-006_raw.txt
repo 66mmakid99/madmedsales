@@ -1,0 +1,2017 @@
+═══════════════════════════════════════════════════
+  웰스킨의원 — 추출 원본 데이터
+═══════════════════════════════════════════════════
+
+──── [1] analysis.json (Gemini 분류 결과) ────
+{
+  "hospital_name": "웰스킨의원",
+  "doctors": [
+    {
+      "name": "황용호",
+      "title": "대표원장",
+      "specialty": "피부 미용, 의학, 한의학",
+      "career": [
+        "전) 동국한방병원 진료과장",
+        "전) 이화피부과 원장",
+        "경희대학교 의과대학 임상실습지도 교수",
+        "동국대학교 한의과대학 진단학교실 동서의학 협력교수",
+        "일본 도쿄 기타사토 동양의학종합연구소연수 (Dr. Hanawa Toshihiko prof. 사사)",
+        "일본 도쿄 게이오 의과대학연수 (Dr. Watanabe Kenji prof. 사사)",
+        "일본동양의학회 특별회원",
+        "레이저 회사 설계 자문 및 개발",
+        "대한의사한의사 복수면허의사협회 학술이사",
+        "대한동서의학회 학술이사",
+        "대한미용성형레이저의학회 수석학술이사",
+        "대한임상레이저의학회 학술이사"
+      ],
+      "education": [
+        "경희대학교 의과대학",
+        "동국대학교 한의과대학"
+      ],
+      "certifications": [
+        "의사한의사 복수면허"
+      ],
+      "confidence": "confirmed"
+    }
+  ],
+  "academic_activities": [
+    {
+      "type": "학회발표",
+      "title": "여드름, 화상, 수술 후 흉터치료",
+      "year": "2020",
+      "doctor_name": "황용호",
+      "source_text": "2020.09 대한미용성형레이저의학회 ‘여드름, 화상, 수술 후 흉터치료’"
+    },
+    {
+      "type": "학회발표",
+      "title": "여드름의 진단 및 치료",
+      "year": "2020",
+      "doctor_name": "황용호",
+      "source_text": "2020.09 대한미용성형레이저의학회 ‘여드름의 진단 및 치료’"
+    },
+    {
+      "type": "학회발표",
+      "title": "저자극성 약물을 이용한 기미 색소 치료",
+      "year": "2020",
+      "doctor_name": "황용호",
+      "source_text": "2020.09 대한미용성형레이저의학회 ‘저자극성 약물을 이용한 기미 색소 치료’"
+    },
+    {
+      "type": "학회발표",
+      "title": "고주파의 원리와 파라미터",
+      "year": "2020",
+      "doctor_name": "황용호",
+      "source_text": "2020.07 대한임상레이저의학회 ‘고주파의 원리와 파라미터’"
+    },
+    {
+      "type": "학회발표",
+      "title": "RF를 이용한 여드름과 홍조 치료",
+      "year": "2019",
+      "doctor_name": "황용호",
+      "source_text": "2019.11 대한미용성형레이저의학회 광주학술대회 강연 ‘RF를 이용한 여드름과 홍조 치료’"
+    },
+    {
+      "type": "학회발표",
+      "title": "여드름의 진단 및 치료",
+      "year": "2019",
+      "doctor_name": "황용호",
+      "source_text": "2019.04 대한미용성형레이저의학회 춘계학술대회 강연 ‘여드름의 진단 및 치료’"
+    },
+    {
+      "type": "학회발표",
+      "title": "여드름과 홍조를 치료하는 RF Needle의 파라미터",
+      "year": "2019",
+      "doctor_name": "황용호",
+      "source_text": "2019.04 대한미용성형레이저의학회 춘계학술대회 강연 ‘여드름과 홍조를 치료하는 RF Needle의 파라미터’"
+    },
+    {
+      "type": "학회발표",
+      "title": "다양한 실을 이용한 얼굴 리프팅",
+      "year": "2018",
+      "doctor_name": "황용호",
+      "source_text": "2018.09 대한미용성형레이저의학회 추계학술대회 강연 ‘다양한 실을 이용한 얼굴 리프팅’"
+    },
+    {
+      "type": "학회발표",
+      "title": "여드름의 약물 및 PDT 치료",
+      "year": "2018",
+      "doctor_name": "황용호",
+      "source_text": "2018.09 대한미용성형레이저의학회 추계학술대회 강연 ‘여드름의 약물 및 PDT 치료’"
+    },
+    {
+      "type": "논문",
+      "title": "여드름 치료의 다양한 방법들 – 여드름 PDT 시술",
+      "year": "2018",
+      "doctor_name": "황용호",
+      "source_text": "2018.04 D&PS 의학잡지 ‘여드름 치료의 다양한 방법들 – 여드름 PDT 시술’"
+    },
+    {
+      "type": "논문",
+      "title": "여드름 치료의 다양한 방법들- 여드름 치료에 효과적인 필링제제 – 하이드록시애시드",
+      "year": "2018",
+      "doctor_name": "황용호",
+      "source_text": "2018.05 D&PS 의학잡지 ‘여드름 치료의 다양한 방법들- 여드름 치료에 효과적인 필링제제 – 하이드록시애시드’"
+    },
+    {
+      "type": "논문",
+      "title": "여드름 치료의 다양한 방법들-여드름 치료에 효과적인 필링제제 -제스너 용액",
+      "year": "2018",
+      "doctor_name": "황용호",
+      "source_text": "2018.06 D&PS 의학잡지 ‘여드름 치료의 다양한 방법들-여드름 치료에 효과적인 필링제제 -제스너 용액’"
+    },
+    {
+      "type": "논문",
+      "title": "여드름 치료의 다양한 방법들-고주파를 이용한 여드름 치료",
+      "year": "2018",
+      "doctor_name": "황용호",
+      "source_text": "2018.07 D&PS 의학잡지 ‘여드름 치료의 다양한 방법들-고주파를 이용한 여드름 치료’"
+    },
+    {
+      "type": "논문",
+      "title": "여드름 치료의 다양한 방법들-FRM Device를 이용한 여드름 치료",
+      "year": "2018",
+      "doctor_name": "황용호",
+      "source_text": "2018.08 D&PS 의학잡지 ‘여드름 치료의 다양한 방법들-FRM Device를 이용한 여드름 치료’"
+    },
+    {
+      "type": "논문",
+      "title": "여드름 치료의 다양한 방법들-PDT의 기원과 치료효과를 높이는 방법",
+      "year": "2018",
+      "doctor_name": "황용호",
+      "source_text": "2018.09 D&PS 의학잡지 ‘여드름 치료의 다양한 방법들-PDT의 기원과 치료효과를 높이는 방법’"
+    },
+    {
+      "type": "논문",
+      "title": "여드름 치료의 다양한 방법들-PDT 치료시 광원선택의 중요성과 부작용처치법",
+      "year": "2018",
+      "doctor_name": "황용호",
+      "source_text": "2018.10 D&PS 의학잡지 ‘여드름 치료의 다양한 방법들-PDT 치료시 광원선택의 중요성과 부작용처치법’"
+    },
+    {
+      "type": "논문",
+      "title": "리텐스를 이용한 입주위 주름 해결하기",
+      "year": "2017",
+      "doctor_name": "황용호",
+      "source_text": "2017.10 D&PS 의학잡지 – ‘리텐스를 이용한 입주위 주름 해결하기’"
+    },
+    {
+      "type": "논문",
+      "title": "코그실을 이용한 실리프팅",
+      "year": "2017",
+      "doctor_name": "황용호",
+      "source_text": "2017.09 D&PS 의학잡지 – ‘코그실을 이용한 실리프팅’"
+    },
+    {
+      "type": "학회발표",
+      "title": "ACNE & Epidermis",
+      "year": "2017",
+      "doctor_name": "황용호",
+      "source_text": "2017.03 대한비만체형학회 22차 학술대회 강연 ‘ACNE & Epidermis’"
+    },
+    {
+      "type": "학회발표",
+      "title": "RF Needle을 이용한 여드름 치료의 원리 및 임상적용",
+      "year": "2017",
+      "doctor_name": "황용호",
+      "source_text": "2017.02 대한미용성형레이저의학회 춘계학술대회 강연 ‘RF Needle을 이용한 여드름 치료의 원리 및 임상적용’"
+    },
+    {
+      "type": "학회발표",
+      "title": "리텐스를 이용한 입주위 주름 해결",
+      "year": "2017",
+      "doctor_name": "황용호",
+      "source_text": "2017.02 대한미용성형레이저의학회 춘계학술대회 강연 ‘리텐스를 이용한 입주위 주름 해결’"
+    },
+    {
+      "type": "학회발표",
+      "title": "여드름과 여드름 흉터까지 해결하는 노하우",
+      "year": "2016",
+      "doctor_name": "황용호",
+      "source_text": "2016.09 대한미용성형레이저의학회 추계학술대회 강연 ‘여드름과 여드름 흉터까지 해결하는 노하우’"
+    },
+    {
+      "type": "학회발표",
+      "title": "AMTS, 어븀, 니들 고주파, 씨오투 레이저를 이용한 여드름 흉터 프로그램",
+      "year": "2016",
+      "doctor_name": "황용호",
+      "source_text": "2016.09 대한미용성형레이저의학회 추계학술대회 강연 ‘AMTS, 어븀, 니들 고주파, 씨오투 레이저를 이용한 여드름 흉터 프로그램’"
+    },
+    {
+      "type": "학회발표",
+      "title": "여드름의 근본원인 – 피지분비 억제를 위한 다양한 접근",
+      "year": "2016",
+      "doctor_name": "황용호",
+      "source_text": "2016.04 대한레이저피부모발학회 학술대회 강연 ‘여드름의 근본원인 – 피지분비 억제를 위한 다양한 접근’"
+    },
+    {
+      "type": "학회발표",
+      "title": "여드름 치료하는 클래식한 방법들 부작용은 줄이고, 여드름 치료 효과는 높여라!",
+      "year": "2016",
+      "doctor_name": "황용호",
+      "source_text": "2016.03 대한미용성형레이저의학회 강연 ‘여드름 치료하는 클래식한 방법들 부작용은 줄이고, 여드름 치료 효과는 높여라!’"
+    },
+    {
+      "type": "학회발표",
+      "title": "Acne Treatment-PDT, Needle RF",
+      "year": "2015",
+      "doctor_name": "황용호",
+      "source_text": "2015.03 대한미용성형레이저의학회 춘계학술대회 강연 ‘Acne Treatment-PDT, Needle RF’"
+    },
+    {
+      "type": "학회발표",
+      "title": "리프팅 시장을 지배할 새로운 HIFU가 나타났다.",
+      "year": "2014",
+      "doctor_name": "황용호",
+      "source_text": "2014.04 한국미용성형학회 춘계 심포지엄 강연 ‘리프팅 시장을 지배할 새로운 HIFU가 나타났다.’"
+    },
+    {
+      "type": "학회발표",
+      "title": "피부 전층을 구분한 세밀한 공략 – 울트라셀",
+      "year": "2014",
+      "doctor_name": "황용호",
+      "source_text": "2014.04 한국미용성형학회 춘계 심포지엄 강연 ‘피부 전층을 구분한 세밀한 공략 – 울트라셀’"
+    },
+    {
+      "type": "학회발표",
+      "title": "여드름 치료에 꼭 필요한 다양한 PDT",
+      "year": "2014",
+      "doctor_name": "황용호",
+      "source_text": "2014.03 대한미용성형레이저의학회 춘계학술대회 강연 ‘여드름 치료에 꼭 필요한 다양한 PDT’"
+    },
+    {
+      "type": "학회발표",
+      "title": "여드름과 감별할 여러 가지 피부질환 및 그 해법",
+      "year": "2014",
+      "doctor_name": "황용호",
+      "source_text": "2014.03 대한미용성형레이저의학회 추계학술대회 강연 ‘여드름과 감별할 여러 가지 피부질환 및 그 해법’"
+    },
+    {
+      "type": "학회발표",
+      "title": "여드름 약물치료의 A to Z",
+      "year": "2013",
+      "doctor_name": "황용호",
+      "source_text": "2013.04 대한미용성형레이저의학회 강연 ‘여드름 약물치료의 A to Z’"
+    }
+  ],
+  "medical_devices": [
+    {
+      "name": "윤곽주사",
+      "korean_name": "윤곽주사",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "lipolytic",
+      "description": "얼굴의 턱, 볼, 심술보 부위의 지방 볼륨을 줄여주는 주사 시술. 지방 분해 및 파괴 성분으로 구성.",
+      "source": "text"
+    },
+    {
+      "name": "필러",
+      "korean_name": "필러",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "filler",
+      "description": "볼륨감이 부족한 얼굴, 큰 주름 부위를 개선하여 젊고 아름다운 얼굴을 만들어주는 시술. 팔자 주름, 이마, 턱, 얼굴 살이 없는 부위 위주로 시술.",
+      "source": "text"
+    },
+    {
+      "name": "보톡스",
+      "korean_name": "보톡스",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "botox",
+      "description": "근육을 마비시키는 독소를 사용하여 얼굴의 표정주름과 발달된 근육을 교정하는 시술. 비대칭 얼굴 교정 및 리프팅 효과.",
+      "source": "text"
+    },
+    {
+      "name": "실",
+      "korean_name": "실",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "thread",
+      "description": "실을 이용하여 주름 개선과 탄력을 개선하는 리프팅 시술. 녹는 실은 약 6개월 후 흡수되며, 콜라겐 생성을 촉진하여 피부 탄력을 개선.",
+      "source": "text"
+    },
+    {
+      "name": "초음파",
+      "korean_name": "초음파",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": "피부 탄력 개선 및 얼굴 축소 효과를 주는 시술. 통증이 적고 일상생활 지장 없음. 지방세포 분해 효과도 있음.",
+      "source": "text"
+    },
+    {
+      "name": "체형조각주사",
+      "korean_name": "체형조각주사",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "lipolytic",
+      "description": "지방이 많이 축적된 부위에 주입하여 지방 조직을 분해하는 주사 시술. 지방흡입에 비해 위험이 적고 일상생활 복귀가 빠름.",
+      "source": "text"
+    },
+    {
+      "name": "레이저",
+      "korean_name": "레이저",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "다양한 피부 문제 치료에 사용되는 장비. 특히 체형관리, 피부 미백, 주름 개선 등에 활용.",
+      "source": "text"
+    },
+    {
+      "name": "PDT",
+      "korean_name": "광역동치료",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": "광과민제를 피부에 바른 후 광선 치료를 통해 활성산소를 발생시켜 피지선을 파괴하는 여드름 치료 시술. 피부 타입, 중증도에 따라 약물 처방.",
+      "source": "text"
+    },
+    {
+      "name": "IPL",
+      "korean_name": "IPL",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "IPL",
+      "description": "400nm ~ 600nm대 파장의 빛이 나오는 광치료 장비 중 하나. 여드름 치료에 사용될 수 있음.",
+      "source": "text"
+    },
+    {
+      "name": "Pulsed Dye Laser",
+      "korean_name": "Pulsed Dye Laser",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "400nm ~ 600nm대 파장의 빛이 나오는 광치료 장비 중 하나. 여드름 치료에 사용될 수 있음.",
+      "source": "text"
+    },
+    {
+      "name": "고주파",
+      "korean_name": "고주파",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF",
+      "description": "목주름 탄력 회복에 사용되는 시술. 회복기간이 짧아 생활에 불편함이 적음.",
+      "source": "text"
+    },
+    {
+      "name": "Kobayashi Needle",
+      "korean_name": "고바야시 시술",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_microneedle",
+      "description": "여드름 치료 방법 중 가장 효과가 뛰어난 시술. 피지선 위치에 고주파 시술을 하여 피지선 기능 조절. 흉터 개선, 콜라겐 리모델링, 피지선 분비 감소, 염증 반응 개선, 모공/잔주름/흉터/장미진/혈관성 병변 개선 효과.",
+      "source": "text"
+    },
+    {
+      "name": "RF Needle",
+      "korean_name": "RF 니들",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_microneedle",
+      "description": "고주파 니들을 이용한 시술. 여드름과 홍조 치료에 사용.",
+      "source": "text"
+    },
+    {
+      "name": "리텐스",
+      "korean_name": "리텐스",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_microneedle",
+      "description": "입주위 주름 해결에 사용되는 장비/시술.",
+      "source": "text"
+    },
+    {
+      "name": "Ulthera",
+      "korean_name": "HIFU",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": "리프팅 시장을 지배할 새로운 HIFU 장비.",
+      "source": "text"
+    },
+    {
+      "name": "울트라셀",
+      "korean_name": "울트라셀",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": "피부 전층을 구분한 세밀한 공략이 가능한 장비.",
+      "source": "text"
+    },
+    {
+      "name": "AMTS",
+      "korean_name": "AMTS",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "microneedle",
+      "description": "여드름 흉터 프로그램에 사용되는 장비.",
+      "source": "text"
+    },
+    {
+      "name": "어븀",
+      "korean_name": "어븀",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "여드름 흉터 프로그램에 사용되는 장비.",
+      "source": "text"
+    },
+    {
+      "name": "니들 고주파",
+      "korean_name": "니들 고주파",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_microneedle",
+      "description": "여드름 흉터 프로그램에 사용되는 장비.",
+      "source": "text"
+    },
+    {
+      "name": "CO2 Laser",
+      "korean_name": "씨오투 레이저",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "여드름 흉터 프로그램에 사용되는 장비.",
+      "source": "text"
+    },
+    {
+      "name": "LDM",
+      "korean_name": "LDM",
+      "manufacturer": "독일",
+      "device_type": "device",
+      "subcategory": "IPL",
+      "description": "독일에서 만들어진 강력한 고밀도 초음파를 피부 깊숙이 조사하여 콜라겐 생성을 자극하고 탄력을 개선. 보습 효과 및 염증 진정 효과.",
+      "source": "text"
+    },
+    {
+      "name": "AquaPeel",
+      "korean_name": "아쿠아필",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": "여드름이 자주 발생하는 피부에 적합한 부드러운 필링. 노화된 각질층 제거, 모공 노폐물 정리, 피지 배출 원활, 미백 효과.",
+      "source": "text"
+    },
+    {
+      "name": "FRM Device",
+      "korean_name": "FRM Device",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_microneedle",
+      "description": "여드름 치료에 사용되는 장비.",
+      "source": "text"
+    }
+  ],
+  "treatments": [
+    {
+      "name": "윤곽주사",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "lipolytic",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "얼굴, 턱, 볼, 심술보"
+    },
+    {
+      "name": "필러",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "filler",
+      "price_display": null,
+      "session_info": "1년이상 효과 지속",
+      "body_part": "팔자 주름, 이마, 턱, 얼굴"
+    },
+    {
+      "name": "보톡스",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "botox",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "얼굴"
+    },
+    {
+      "name": "실 리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "thread",
+      "price_display": null,
+      "session_info": "약 6개월 후 흡수, 1년정도 효과 지속, 6개월 이후 재시술 권장, 1년에 2~3회 시술 추천",
+      "body_part": "입가, 입술, 팔자, 마리오네트, 심술보"
+    },
+    {
+      "name": "초음파 리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "hifu",
+      "price_display": null,
+      "session_info": "1개월 이상 시술 간격으로 여러 차례 시술 반복",
+      "body_part": "얼굴, 팔뚝, 허벅지, 복부"
+    },
+    {
+      "name": "체형조각주사",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "lipolytic",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "레이저체형관리",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "안면동안시술",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "얼굴"
+    },
+    {
+      "name": "목주름탄력시술",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "목"
+    },
+    {
+      "name": "미백회춘술",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "얼굴"
+    },
+    {
+      "name": "탄력회춘술",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "눈, 입주위"
+    },
+    {
+      "name": "모공과 흉터 치료",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "웨딩케어 스킨 케어",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": true,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "피부"
+    },
+    {
+      "name": "웨딩케어 V라인 프로그램",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": true,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "얼굴, 볼살, 이중턱, 광대살"
+    },
+    {
+      "name": "웨딩케어 바디케어 프로그램",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": true,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "바디, 목, 어깨, 팔"
+    },
+    {
+      "name": "웨딩케어 등 여드름 치료",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": true,
+      "is_addon": false,
+      "source": "website",
+      "category": "여드름치료",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "등"
+    },
+    {
+      "name": "웰스킨케어 여드름 케어",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [
+        "여드름 압출",
+        "각질제거",
+        "여드름 균 치료",
+        "여드름 붉은 자국 개선"
+      ],
+      "is_package": true,
+      "is_addon": false,
+      "source": "website",
+      "category": "여드름치료",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "웰스킨케어 피부 속 리프팅 케어",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": true,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "얼굴"
+    },
+    {
+      "name": "웰스킨케어 미백 보습 프로그램",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": true,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "피부"
+    },
+    {
+      "name": "웰스킨케어 모공속 노폐물까지 깨끗하게 만드는 아쿠아필",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": true,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "웰스킨케어 LDM 물방울 리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": true,
+      "is_addon": false,
+      "source": "website",
+      "category": "hifu",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "초음파 지방분해시술",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "hifu",
+      "price_display": null,
+      "session_info": "보통 2주 정도의 시술 간격 필요",
+      "body_part": "복부, 허벅지, 팔뚝, 이중턱, 옆구리, 뒷구리"
+    },
+    {
+      "name": "넥리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "목"
+    },
+    {
+      "name": "가로목주름 치료",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "목"
+    },
+    {
+      "name": "세로목주름 치료",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "목"
+    },
+    {
+      "name": "여드름 치료",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "여드름치료",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "PDT 여드름 치료",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "여드름치료",
+      "price_display": null,
+      "session_info": "여러 번 시술 시 더욱 오래가고 뛰어난 효과",
+      "body_part": null
+    },
+    {
+      "name": "고바야시 시술",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "여드름치료",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "매선동안침",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "차밍리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "thread",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "블루로즈리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "thread",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "아크젠",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "여드름치료",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "장미진 치료",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "건선 치료",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    }
+  ],
+  "events": [],
+  "clinic_categories": [
+    {
+      "name": "WELL SKIN",
+      "treatments": [
+        "의료진 소개",
+        "진료안내&오시는 길",
+        "보도자료"
+      ]
+    },
+    {
+      "name": "FACE",
+      "treatments": [
+        "윤곽주사",
+        "필러",
+        "보톡스",
+        "실 리프팅",
+        "초음파 리프팅"
+      ]
+    },
+    {
+      "name": "BODY",
+      "treatments": [
+        "체형조각주사",
+        "레이저체형관리",
+        "초음파 지방분해시술"
+      ]
+    },
+    {
+      "name": "SKIN",
+      "treatments": [
+        "미백회춘술",
+        "탄력회춘술",
+        "모공과 흉터 치료"
+      ]
+    },
+    {
+      "name": "ANTI-AGING",
+      "treatments": [
+        "안면동안시술",
+        "목주름탄력시술",
+        "넥리프팅",
+        "가로목주름 치료",
+        "세로목주름 치료"
+      ]
+    },
+    {
+      "name": "SPECIAL",
+      "treatments": [
+        "웨딩케어 스킨 케어",
+        "웨딩케어 V라인 프로그램",
+        "웨딩케어 바디케어 프로그램",
+        "웨딩케어 등 여드름 치료",
+        "웰스킨케어 여드름 케어",
+        "웰스킨케어 피부 속 리프팅 케어",
+        "웰스킨케어 미백 보습 프로그램",
+        "웰스킨케어 모공속 노폐물까지 깨끗하게 만드는 아쿠아필",
+        "웰스킨케어 LDM 물방울 리프팅"
+      ]
+    },
+    {
+      "name": "여드름",
+      "treatments": [
+        "여드름 치료",
+        "PDT 여드름 치료",
+        "고바야시 시술"
+      ]
+    }
+  ],
+  "contact_info": {
+    "email": [
+      {
+        "address": "scrtgarden@hanmail.net",
+        "type": "대표",
+        "source": "footer"
+      }
+    ],
+    "phone": [
+      {
+        "number": "02-532-7579",
+        "type": "대표",
+        "source": "footer"
+      },
+      {
+        "number": "02-592-7579",
+        "type": "팩스",
+        "source": "footer"
+      }
+    ],
+    "address": {
+      "full_address": "서울 서초구 반포대로 291 원베일리스퀘어 5층 웰스킨의원 534호",
+      "sido": "서울",
+      "sigungu": "서초구"
+    },
+    "kakao_channel": null,
+    "naver_booking": null,
+    "naver_place": null,
+    "instagram": null,
+    "facebook": null,
+    "youtube": null,
+    "blog": null,
+    "website_url": "http://www.wellskinclinic.net/",
+    "operating_hours": {
+      "weekday": "월, 수, 목 10:00 ~ 19:00 / 화, 금 10:00 ~ 21:00",
+      "saturday": "10:00 ~ 14:30 (점심시간 13:00 ~ 14:00 제외)",
+      "sunday": "휴진",
+      "lunch_break": "13:00 ~ 14:00 (토요일 제외)"
+    }
+  },
+  "unregistered_equipment": [],
+  "unregistered_treatments": [
+    {
+      "name": "매선동안침",
+      "source": "website",
+      "context": "겨울철 피부관리 위한 양한방 협진치료…매선동안침"
+    },
+    {
+      "name": "차밍리프팅",
+      "source": "website",
+      "context": "탄력 없이 쳐진 피부, 리프팅 시키는 차밍리프팅이 효과"
+    },
+    {
+      "name": "블루로즈리프팅",
+      "source": "website",
+      "context": "늘어진 볼살 잡아주고 주름 개선해주는 `블루로즈리프팅`"
+    },
+    {
+      "name": "아크젠",
+      "source": "website",
+      "context": "지긋지긋 재발하는 여드름, 아크젠으로 개선"
+    },
+    {
+      "name": "장미진 치료",
+      "source": "website",
+      "context": "만성 충혈성 피부 질환 장미진(주사), 양·한방 동시 치료 이뤄져야"
+    },
+    {
+      "name": "건선 치료",
+      "source": "website",
+      "context": "나을 수 있는 건선, 방치해 난치병 만들어"
+    }
+  ],
+  "raw_price_texts": [],
+  "extraction_summary": {
+    "total_doctors": 1,
+    "total_academic": 30,
+    "total_equipment": 23,
+    "total_devices": 16,
+    "total_injectables": 7,
+    "total_treatments": 26,
+    "total_events": 0,
+    "total_categories": 7,
+    "total_contact_channels": 5,
+    "has_email": true,
+    "has_phone": true,
+    "has_kakao": false,
+    "has_sns": false,
+    "price_available_ratio": "0/26",
+    "unregistered_equipment_count": 0,
+    "unregistered_treatments_count": 6
+  }
+}
+
+──── [2] ocr_raw.json (이미지 OCR 원본) ────
+
+--- page_1_main_capture_0 ---
+W WELL SKIN CLINIC
+웰스킨 의원
+WELL SKIN 여드름 FACE BODY SKIN ANTI-AGING SPECIAL
+W
+Well Skin Clinic
+Welcome
+MORE ∨
+WELL SK
+
+--- page_1_main_capture_1 ---
+W
+WELL SKIN 여드름 FACE BODY SKIN ANTI-AGING SPECIAL
+
+About
+Well Skin Clinic
+웰스킨 클리닉의 1:1 맞춤형 피부 솔루션
+
+Face
+Body
+Skin
+Anti-Aging
+Special
+
+--- page_1_main_capture_2 ---
+W
+WELL SKIN
+여드름
+FACE
+BODY
+SKIN
+ANTI-AGING
+SPECIAL
+
+Experience with Care
+웰스킨 클리닉
+웰스킨 클리닉은 피부 미용의 영역에서
+환자를 최우선으로 생각하며, 소중하고 안전하게 치료합니다.
+
+行
+醫
+仙
+藥
+人
+生
+黃
+朝
+虎
+見
+PM1.0
+PM2.5
+PM10
+WELL SKIN CLINIC
+원장
+uncertain: 김정훈
+
+--- page_1_main_capture_3 ---
+W
+WELL SKIN 여드름 FACE BODY SKIN ANTI-AGING SPECIAL
+
+More than a treatment
+만족할 수 있는 최고의 시술
+웰스킨 클리닉은 모든 분들을 내 몸과 같이 생각하고 소중하게 치료합니다.
+
+--- page_1_main_capture_4 ---
+W
+WELL SKIN 여드름 FACE BODY SKIN ANTI-AGING SPECIAL
+
+Why choose Our Clinic
+웰스킨 클리닉의 약속
+최고의 시술을 받을 수 있는 병원이라 자부합니다.
+
+Upgrad
+Multifilament 의 적용증
+
+--- page_1_main_capture_5 ---
+W
+WELL SKIN
+여드름
+FACE
+BODY
+SKIN
+ANTI-AGING
+SPECIAL
+
+WELL SKIN CLINIC
+CRAFTSMAN OF B
+Upgrade PDT
+Multifilament 및 적용증
+FRAX RESURFACING
+2018
+대한미용성형
+레이저의학회
+춘계학술대회
+항상 감사합니다
+WELLSKIN CLINIC
+HYUNG YONG
+2017 대한미용외과학회
+춘계학술대회
+
+W
+월 / 수 / 목 10:00 ~ 19:00
+화 / 금 10:00 ~ 21:00
+토요일 10:00 ~ 14:30
+일요일, 공휴일 휴진
+(점심시간 13:00 ~ 14:00) *토요일 제외
+
+WELL SKIN
+의료진 소개
+진료안내&오시는 길
+보도자료
+
+FACE
+윤곽주사
+필러 보톡스
+실 리프팅
+초음파 리프팅
+
+BODY
+체형조각주사
+레이저체형관리
+
+SKIN
+미백회춘술
+탄력회춘술
+모공과 흉터
+
+ANTI-AGING
+안면동안시술
+목주름탄력시술
+
+SPECIAL
+웨딩케어
+웰스킨케어
+
+서울 서초구 반포대로 291 원베일리스퀘어 5층 웰스킨의원 534호
+대표원장 : 황용호 / Tel : 02-532-7579 / Fax : 02-592-7579
+
+Email : scrtgarden@hanmail.net
+© Well Skin Clinic. All Rights Reserved.
+
+--- page_2_other_capture_0 ---
+W WELL SKIN CLINIC
+웰스킨 의원
+WELL SKIN 여드름 FACE BODY SKIN ANTI-AGING SPECIAL
+
+W
+Face
+윤곽주사
+MORE v
+
+--- page_2_other_capture_1 ---
+W
+WELL SKIN 여드름 FACE BODY SKIN ANTI-AGING SPECIAL
+윤곽주사 필러 보톡스 실 리프팅 초음파 리프팅
+
+윤곽주사
+성형 수술을 하지 않고도 얼굴의 디테일을 살려주며 처진 살을 축소
+시켜주는 간단한 시술
+
+얼굴의 턱, 볼, 심술보 부위에 주로 시술하며 하지 않는 간편한 방법으로 갸
+름하고 작은 얼굴을 만들어 줍니다.
+지방을 분해하는 성분과 지방 세포를 파괴하는 성분으로 구성되어 있습
+니다.
+약물 특성상 부위가 "윤곽주사"는 보통 턱과 이중턱, 심술보나
+시술 시 마취와 거의 필요 없으나, 미미하게는 통증을 덜고 매끄러운 얼굴
+로 시술을 합니다.
+실리프팅 또는 초음파 시술과 병행하면 더욱 큰 효과를 낼 수 있습니
+다.
+
+이마
+눈두덩
+콧대
+코끝
+인중
+턱끝
+이중턱
+관자
+광대
+심술보
+침샘
+윤곽주사 시술부위
+
+필러 보톡스
+
+--- page_2_other_capture_2 ---
+W
+WELL SKIN 여드름 FACE BODY SKIN ANTI-AGING SPECIAL
+
+윤곽주사 필러 보톡스 실 리프팅 초음파 리프팅
+
+필러
+
+환자의 얼굴의 비율과 각도를 고려
+미적 감각이 있어야 잘하는 시술
+정교하고 섬세함이 살아있는 손 끝의 터치가 중요
+
+필러는 주로 볼륨감이 부족해서 말라 보이는 얼굴, 큰 주름이 발생한 부위를 즉각적으로 개선시켜,
+얼굴을 젊고 아름답게 만들어주는 시술입니다.
+시술 부위는 주로 팔자 주름, 이마, 턱, 얼굴 살이 없어 말라보이는 부위 위주로 시술하면
+효과가 좋습니다.
+간단한 한번의 시술로 1년이상 효과가 지속됩니다.
+
+--- page_2_other_capture_3 ---
+W
+WELL SKIN
+여드름
+FACE
+BODY
+SKIN
+ANTI-AGING
+SPECIAL
+
+윤곽주사
+필러 보톡스
+실 리프팅
+초음파 리프팅
+
+입가·입술·팔자·마리오네트 부위에 주름이 발생합니다.
+이러한 주름의 개선과 탄력을 개선하기 위해 실리프팅 시술합니다.
+시술 2주 후부터 효과가 보이기 시작하고 얼굴이 조금씩 변화됩니다.
+녹는 실은 약 6개월 정도 지난 뒤 완벽하게 흡수되어 사라집니다.
+시술 부위는 콜라겐이 대량으로 생성되고, 탄력이 개선되어 피부가 탱탱하게 변화됩니다.
+리프팅 시술 부위의 지방이 흡수되어 날렵한 얼굴선이 만들어집니다.
+움직임이 많은 입주변부 주름과 팔자 주름, 심술보 부위에 특수실을 시술한 후 만족도가 아주 높아졌습니다.
+보통 젊은 분들은 얼굴의 날렵한 라인을 만들고 싶은 경우에
+나이가 있으신 분들은 처짐 방지나 잔주름 예방 차원에서 녹는실 리프팅 시술을 받습니다.
+시술의 효과는 콜라겐이 생성되는 것은 약 1년정도 지속되지만, 예쁜 모양을 유지하기 위해서는 6개월 이후에 재시술을 권장합니다.
+대략 1년에 2~3회 정도의 시술을 추천 드리고,
+다른 보톡스나 필러, 고주파와 초음파 시술을 병행할 것을 권장합니다.
+
+--- page_2_other_capture_4 ---
+W
+WELL SKIN
+여드름
+FACE
+BODY
+SKIN
+ANTI-AGING
+SPECIAL
+
+윤곽주사
+필러 보톡스
+실 리프팅
+초음파 리프팅
+
+초음파 리프팅
+
+샷의 수가 중요한 것이 아닙니다.
+얼굴 비율을 고려하여 처짐의 원인이 되는 부위를
+적절한 깊이와 에너지를 사용하여 시술해야 합니다.
+
+초음파를 이용하여 피부의 탄력 개선을 시키고 얼굴을 더욱 작게 만들어 주는 시술입니다.
+통증이 적고, 피부에 상처가 생기지 않고, 멍이 들지 않아 시술 후 일상 생활에 지장이 없습니다.
+시술 직 후 얼굴이 축소된 것이 느껴지고, 시간이 지날수록 효과가 증대됩니다.
+보통 1개월 이상의 시술 간격으로 여러 차례 시술을 반복하면, 얼굴이 작아지고 주름도 개선됩니다.
+초음파 리프팅은 처진 얼굴과 늘어진 살을 교정하고, 특정 부위의 볼륨을 줄이는 효과도 있습니다.
+체형관리를 할 때 이용하면 지방세포를 분해하여, 원하는 부위의 살만 효과적으로 빼줍니다.
+팔뚝, 허벅지, 복부 비만을 효과적으로 치료할 수도 있습니다.
+
+W
+WELL SKIN
+의료진 소개
+FACE
+윤곽주사
+BODY
+체형조각주사
+
+--- page_2_other_capture_5 ---
+W
+WELL SKIN
+여드름
+FACE
+BODY
+SKIN
+ANTI-AGING
+SPECIAL
+
+윤곽주사
+필러 보톡스
+실 리프팅
+초음파 리프팅
+
+W
+월 / 수 / 목 10:00 ~ 19:00
+화 / 금 10:00 ~ 21:00
+토요일 10:00 ~ 14:30
+일요일, 공휴일 휴진
+(점심시간 13:00 ~14:00) *토요일 제외
+
+WELL SKIN
+의료진 소개
+진료안내&오시는 길
+보도자료
+
+FACE
+윤곽주사
+필러 보톡스
+실 리프팅
+초음파 리프팅
+
+BODY
+체형조각주사
+레이저체형관리
+
+SKIN
+미백회춘술
+탄력회춘술
+모공과 흉터
+
+ANTI-AGING
+안면동안시술
+목주름탄력시술
+
+SPECIAL
+웨딩케어
+웰스킨케어
+
+서울 서초구 반포대로 291 원베일리1스퀘어 5층 웰스킨의원 534호
+대표원장 : 황용호 / Tel : 02-532-7579 / Fax : 02-592-7579
+
+Email : scrtgarden@hanmail.net
+© Well Skin Clinic. All Rights Reserved.
+
+--- page_3_other_capture_0 ---
+W WELL SKIN CLINIC
+웰스킨 의원
+WELL SKIN 여드름 FACE BODY SKIN ANTI-AGING SPECIAL
+
+W
+Body
+체형조각주사
+
+MORE ∨
+
+--- page_3_other_capture_1 ---
+W
+WELL SKIN 여드름 FACE BODY SKIN ANTI-AGING SPECIAL
+체형조각주사 레이저체형관리<초음파 지방분해시술>
+
+비만치료에 새로운 장을 열다.
+슬림한 체형을 위한 솔루션
+
+지방이 많이 축적된 부위에 체형 조각 주사를 주입하여 지방 조직을 분해
+하는 간편하고 빠른 주사 시술입니다.
+지방흡입에 비하여 짧은 시술시간과 흉터를 남기지 않고, 수술에 비하여
+위험하지 않습니다.
+시술 후 빠른 일상생활 복귀가 가능합니다.
+
+--- page_3_other_capture_2 ---
+W WELL SKIN 여드름 FACE BODY SKIN ANTI-AGING SPECIAL
+체형조각주사 레이저체형관리<초음파 지방분해시술>
+
+복부, 허벅지, 팔뚝, 이중턱, 옆구리, 뒷구리 부위
+
+초음파 지방 분해 시술은 초음파를 이용하여 체지방조직을 직접적으로 파괴하여
+원하는 부위의 살을 직접 빼주는 시술입니다.
+시술 시 통증이 적고, 피부에 상처가 생기지 않고, 멍도 들지 않아 일상 생활에 지장이 없습니다.
+시술 후 파괴된 지방은 서서히 분해됩니다. 보통 2주 정도의 시술 간격이 필요합니다.
+원하는 부위의 살을 빼는 것은 지방 흡입과 비슷하지만, 지방흡입처럼 위험하지 않고, 흉터나 자국, 멍이 들지 않습니다.
+초음파 지방분해시술은 지방을 분해하고, 그 부위에 콜라겐이나 탄력섬유들이 생성되도록 자극하여 요요 현상을 줄이는 장점이 있고, 살이 빠진 부위의 탄력을 주어
+피부가 심하게 늘어지는 것을 방지하는 효과가 있습니다.
+풍선에 바람이 빠지고 나면 축 늘어져 보이는데 이 시술은 바람을 빼면서도 늘어짐을 어느정도 보정해주는 역할을 합니다.
+다른 다이어트 시술과 병행하는 것이 좋습니다.
+
+W WELL SKIN FACE BODY
+월 / 수 / 목 10:00 ~ 19:00 의료진 소개 윤곽주사 체형조각주사
+화 / 금 10:00 ~ 21:00 진료안내&오시는 길 필러 보톡스 레이저체형관리
+토요일 10:00 ~ 14:30 보도자료 실 리프팅
+일요일, 공휴일 휴진 초음파 리프팅
+(점심시간 13:00 ~14:00) *토요일 제외
+
+--- page_3_other_capture_3 ---
+W
+WELL SKIN 여드름 FACE BODY SKIN ANTI-AGING SPECIAL
+
+체형조각주사 레이저체형관리<초음파 지방분해시술>
+
+W
+월 / 수 / 목 10:00 ~ 19:00
+화 / 금 10:00 ~ 21:00
+토요일 10:00 ~ 14:30
+일요일, 공휴일 휴진
+(점심시간 13:00 ~14:00) *토요일 제외
+
+WELL SKIN
+의료진 소개
+진료안내&오시는 길
+보도자료
+
+FACE
+윤곽주사
+필러 보톡스
+실 리프팅
+초음파 리프팅
+
+BODY
+체형조각주사
+레이저체형관리
+
+SKIN
+미백회춘술
+탄력회춘술
+모공과 흉터
+
+ANTI-AGING
+안면동안시술
+목주름탄력시술
+
+SPECIAL
+웨딩케어
+웰스킨케어
+
+서울 서초구 반포대로 291 원베일리케어 5층 웰스킨의원 534호
+대표원장 : 황용호 / Tel : 02-532-7579 / Fax : 02-592-7579
+
+Email : scrtgarden@hanmail.net
+© Well Skin Clinic. All Rights Reserved.
+
+--- page_4_other_capture_0 ---
+W WELL SKIN CLINIC
+웰스킨 의원
+WELL SKIN 여드름 FACE BODY SKIN ANTI-AGING SPECIAL
+
+W
+Skin
+미백회춘술
+
+MORE ⌄
+
+--- page_4_other_capture_1 ---
+W
+WELL SKIN
+여드름
+FACE
+BODY
+SKIN
+ANTI-AGING
+SPECIAL
+
+미백회춘술
+탄력회춘술
+모공과 흉터
+
+미백 회춘술은 우리 병원 특유의 가장 효과적인 미백 시술입니다.
+
+색소는 정말로 치료하기가 어렵기 때문에 레이저 치료와 함께 다른 복합 시술을 병행하는 것을 추천합니다.
+웰스킨 클리닉에서는 바깥층의 색소를 태워버리는 레이저와 피부 속의 색소를 깨뜨리는 레이저를 이용하여 피부의 톤을 밝게 만들어줍니다.
+하지만 레이저 하나만으로는 기미나 색소를 치료할 수 없습니다.
+미백 회춘술은 레이저로 색소를 태우는 것 뿐만 아니라 피부 속까지 건강하게 만들어서, 미백 뿐만 아니라 탄력 개선의 효과까지 있는 시술이라고
+할 수 있습니다.
+
+미백 회춘술의 5가지 효과
+
+1. 피부의 결이 부드러워집니다.
+2. 얼굴의 잡티뿐만 아니라 홍조의 치료에도 효과가 있습니다.
+3. 피부 속 진피가 건강해지면서 피부의 톤이 맑아집니다.
+4. 탄력이 개선되고, 주름이 완화됩니다.
+5. 피지가 조절되면서 번들거림이 소실됩니다.
+
+--- page_4_other_capture_2 ---
+W
+WELL SKIN 여드름 FACE BODY SKIN ANTI-AGING SPECIAL
+미백회춘술 탄력회춘술 모공과 흉터
+
+탄력회춘술
+
+피부의 주름과 탄력을 개선하는 웰스킨 클리닉의 대표적 시술입니다.
+
+나이가 들면서 눈과 입주위에는 잔주름이 많이 발생합니다
+이러한 잔주름은 마치 종이를 자주 접었다 폈을 때 발생하는 주름에 비유할 수 있습니다.
+얇은 종이는 쉽게 주름이 잡히지만, 두꺼운 종이는 주름이 잘 만들어지지 않습니다.
+이 시술은 얇은 종이를 두꺼운 종이로 만들어주는 것에 비유할 수 있습니다.
+탄력 회춘술은 피부 속 콜라겐과 엘라스틴을 풍부하게 만들어
+잔주름과 탄력 저하로 피부 처짐 및 잔주름을 치료하는 시술입니다.
+피부의 표피부터 피하조직까지 탱탱하게 만들어 주는 복합적인 시술입니다.
+
+--- page_4_other_capture_3 ---
+W
+WELL SKIN 여드름 FACE BODY SKIN ANTI-AGING SPECIAL
+
+미백회춘술 탄력회춘술 모공과 흉터
+
+피지지가 많이 분비되거나 이로인해 여드름이 발생하는 경우는 피지선을 치료하는 것이 중요합니다.
+노화로 인해 모공주위의 피부 탄력이 저하되면 피부의 섬유모세포를 자극하여 콜라겐과 엘라스틴을 대량으로 생성할 수 있는 치료를 실시합니다.
+
+W
+월 / 수 / 목 10:00 ~ 19:00
+화 / 금 10:00 ~ 21:00
+토요일 10:00 ~ 14:30
+일요일, 공휴일 휴진
+(점심시간 13:00 ~ 14:00) *토요일 제외
+
+WELL SKIN
+의료진 소개
+진료안내&오시는 길
+보도자료
+
+FACE
+윤곽주사
+필러 보톡스
+실 리프팅
+초음파 리프팅
+
+BODY
+체형조각주사
+레이저체형관리
+
+SKIN
+미백회춘술
+탄력회춘술
+모공과 흉터
+
+ANTI-AGING
+안면동안시술
+목주름탄력시술
+
+SPECIAL
+웨딩케어
+웰스킨케어
+
+--- page_4_other_capture_4 ---
+W
+WELL SKIN
+여드름
+FACE
+BODY
+SKIN
+ANTI-AGING
+SPECIAL
+
+미백회춘술
+탄력회춘술
+모공과 흉터
+
+W
+월 / 수 / 목 10:00 ~ 19:00
+화 / 금 10:00 ~ 21:00
+토요일 10:00 ~ 14:30
+일요일, 공휴일 휴진
+(점심시간 13:00 ~14:00) *토요일 제외
+
+WELL SKIN
+의료진 소개
+진료안내&오시는 길
+보도자료
+
+FACE
+윤곽주사
+필러 보톡스
+실 리프팅
+초음파 리프팅
+
+BODY
+체형조각주사
+레이저체형관리
+
+SKIN
+미백회춘술
+탄력회춘술
+모공과 흉터
+
+ANTI-AGING
+안면동안시술
+목주름탄력시술
+
+SPECIAL
+웨딩케어
+웰스킨케어
+
+서울 서초구 반포대로 291 원베일리케어 5층 웰스킨의원 534호
+대표원장 : 황용호 / Tel : 02-532-7579 / Fax : 02-592-7579
+
+Email : scrtgarden@hanmail.net
+© Well Skin Clinic. All Rights Reserved.
+
+--- page_5_other_capture_0 ---
+W WELL SKIN CLINIC
+웰스킨 의원
+WELL SKIN 여드름 FACE BODY SKIN ANTI-AGING SPECIAL
+
+W
+Anti-Aging
+얼굴동안시술 (주사, 침)
+
+MORE ∨
+
+--- page_5_other_capture_1 ---
+W
+WELL SKIN 여드름 FACE BODY SKIN ANTI-AGING SPECIAL
+안면동안시술 목주름탄력시술
+
+동안시술은 피부세포가 스스로 재생하도록 도와주어 손상된 내부의 생리적 환경을 개선시키고,
+콜라겐 생성을 통해 탄력있고 건강한 피부로 변화하게 됩니다.
+
+피부는 나이가 들면서 자외선, 음주, 흡연 등에 노출되면 노화가 급격하게 진행됩니다. 노화가 진행되면 피부속의 섬유모세포 기능이 떨어져서
+콜라겐, 엘라스틴의 생산이 잘 되지 않습니다. 상처가 나도 예전처럼 회복되는 속도가 느리고, 피부에 주름이 많이 생깁니다.
+
+--- page_5_other_capture_2 ---
+W
+WELL SKIN
+여드름
+FACE
+BODY
+SKIN
+ANTI-AGING
+SPECIAL
+
+안면동안시술
+목주름탄력시술
+
+주사, 레이저를 이용한 시술
+
+목주름 교정해주는 넥리프팅
+
+목주름은 나이든 사람 뿐만 아니라 젊은 사람들에게도 많이 생깁니다.
+최근 들어 핸드폰의 사용으로 인해 젊은 분들도 목에 주름이 심해지는 분들이 많습니다.
+얼굴에는 많은 관심을 보이지만 목에는 신경쓰지 않는 분들이 많습니다.
+목은 얼굴에 비해 피부가 얇고 피지선이 적어 쉽게 건조해집니다.
+피지가 적게 분비되면 피부가 쉽게 노화가 되는 특징이 있습니다.
+목의 가로 주름과 세로 주름을 부드러운 주사시술과 필러, 보톡스, 실, 레이저 등의 시술로 탄력회복 효과를 많이 볼 수 있
+습니다. 특히 고주파와 레이저 시술은 회복기간이 1~2일로 아주 짧아 생활에 불편함을 거의 느끼지 못하는 정도입니다.
+
+W
+WELL SKIN
+의료진 소개
+진료안내 & 오시는 길
+FACE
+윤곽주사
+필러 보톡스
+BODY
+체형조각주사
+레이저체형관리
+
+--- page_5_other_capture_3 ---
+W
+WELL SKIN 여드름 FACE BODY SKIN ANTI-AGING SPECIAL
+안면동안시술 목주름탄력시술
+
+W
+월 / 수 / 목 10:00 ~ 19:00
+화 / 금 10:00 ~ 21:00
+토요일 10:00 ~ 14:30
+일요일, 공휴일 휴진
+(점심시간 13:00 ~14:00) *토요일 제외
+
+WELL SKIN
+의료진 소개
+진료안내&오시는 길
+보도자료
+
+FACE
+윤곽주사
+필러 보톡스
+실 리프팅
+초음파 리프팅
+
+BODY
+체형조각주사
+레이저체형관리
+
+SKIN
+미백회춘술
+탄력회춘술
+모공과 흉터
+
+ANTI-AGING
+안면동안시술
+목주름탄력시술
+
+SPECIAL
+웨딩케어
+웰스킨케어
+
+서울 서초구 반포대로 291 원베일리케어 5층 웰스킨의원 534호
+대표원장 : 황용호 / Tel : 02-532-7579 / Fax : 02-592-7579
+
+Email : scrtgarden@hanmail.net
+© Well Skin Clinic. All Rights Reserved.
+
+──── [3] coverage_raw.txt (커버리지 검증 로그) ────
+{
+  "missing_equipments": [
+    "LED"
+  ],
+  "missing_treatments": [
+    "필링",
+    "스케일링"
+  ],
+  "missing_doctors": [],
+  "missing_prices": [],
+  "coverage_score": {
+    "equipment": 83.33,
+    "treatment": 88.89,
+    "doctor": 100.00,
+    "overall": 90.56
+  },
+  "issues": [
+    "\"장비\" 추출 결과에 \"윤곽주사, 필러, 보톡스, 실, 체형조각주사\" 등 시술 또는 재료로 분류될 수 있는 항목들이 포함되어 있어 장비 정의와의 일관성이 부족합니다."
+  ]
+}

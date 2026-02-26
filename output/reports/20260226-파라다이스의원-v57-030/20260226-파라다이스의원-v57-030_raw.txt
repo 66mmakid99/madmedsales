@@ -1,0 +1,2574 @@
+═══════════════════════════════════════════════════
+  파라다이스의원 — 추출 원본 데이터
+═══════════════════════════════════════════════════
+
+──── [1] analysis.json (Gemini 분류 결과) ────
+{
+  "hospital_name": "파라다이스의원",
+  "doctors": [
+    {
+      "name": "김용준",
+      "title": "원장님",
+      "specialty": null,
+      "career": [
+        "前 더뉴의원 원장",
+        "前 동아대학교 병원 임상교수",
+        "前 대동병원 과장",
+        "대한 미용성형레이저의학회 정회원",
+        "대한 필러 학회 정회원",
+        "대한 비만 연구의사회 정회원"
+      ],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "신부선",
+      "title": "원장님",
+      "specialty": null,
+      "career": [
+        "前 서면 엘린의원 대표원장",
+        "前 여우미의원",
+        "한국 미용성형의학회 정회원",
+        "대한 미용성형 레이저의학회 정회원",
+        "대한 레이저 피부모발학회 정회원",
+        "대한 비만연구의사회 정회원",
+        "대한 미용웰빙학회 정회원",
+        "대한 필러 학회 정회원",
+        "대한 반영구화장의학회 정회원"
+      ],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    }
+  ],
+  "academic_activities": [
+    {
+      "type": "기타",
+      "title": "대한 미용성형레이저의학회 정회원",
+      "year": null,
+      "doctor_name": "김용준",
+      "source_text": "대한 미용성형레이저의학회 정회원"
+    },
+    {
+      "type": "기타",
+      "title": "대한 필러 학회 정회원",
+      "year": null,
+      "doctor_name": "김용준",
+      "source_text": "대한 필러 학회 정회원"
+    },
+    {
+      "type": "기타",
+      "title": "대한 비만 연구의사회 정회원",
+      "year": null,
+      "doctor_name": "김용준",
+      "source_text": "대한 비만 연구의사회 정회원"
+    },
+    {
+      "type": "기타",
+      "title": "한국 미용성형의학회 정회원",
+      "year": null,
+      "doctor_name": "신부선",
+      "source_text": "한국 미용성형의학회 정회원"
+    },
+    {
+      "type": "기타",
+      "title": "대한 미용성형 레이저의학회 정회원",
+      "year": null,
+      "doctor_name": "신부선",
+      "source_text": "대한 미용성형 레이저의학회 정회원"
+    },
+    {
+      "type": "기타",
+      "title": "대한 레이저 피부모발학회 정회원",
+      "year": null,
+      "doctor_name": "신부선",
+      "source_text": "대한 레이저 피부모발학회 정회원"
+    },
+    {
+      "type": "기타",
+      "title": "대한 비만연구의사회 정회원",
+      "year": null,
+      "doctor_name": "신부선",
+      "source_text": "대한 비만연구의사회 정회원"
+    },
+    {
+      "type": "기타",
+      "title": "대한 미용웰빙학회 정회원",
+      "year": null,
+      "doctor_name": "신부선",
+      "source_text": "대한 미용웰빙학회 정회원"
+    },
+    {
+      "type": "기타",
+      "title": "대한 필러 학회 정회원",
+      "year": null,
+      "doctor_name": "신부선",
+      "source_text": "대한 필러 학회 정회원"
+    },
+    {
+      "type": "기타",
+      "title": "대한 반영구화장의학회 정회원",
+      "year": null,
+      "doctor_name": "신부선",
+      "source_text": "대한 반영구화장의학회 정회원"
+    }
+  ],
+  "medical_devices": [
+    {
+      "name": "에어젯",
+      "korean_name": "에어젯",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "screenshot"
+    },
+    {
+      "name": "코레지",
+      "korean_name": "코레지",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "screenshot"
+    },
+    {
+      "name": "버츄RF",
+      "korean_name": "버츄RF",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF",
+      "description": null,
+      "source": "screenshot"
+    },
+    {
+      "name": "InMode",
+      "korean_name": "인모드",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF",
+      "description": null,
+      "source": "screenshot"
+    },
+    {
+      "name": "TORR RF",
+      "korean_name": "토르",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF",
+      "description": null,
+      "source": "screenshot"
+    },
+    {
+      "name": "Shurink Universe",
+      "korean_name": "슈링크유니버스",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": null,
+      "source": "screenshot"
+    },
+    {
+      "name": "Doublo Gold",
+      "korean_name": "더블로골드",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": null,
+      "source": "screenshot"
+    },
+    {
+      "name": "Volnewmer",
+      "korean_name": "볼뉴머",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF",
+      "description": null,
+      "source": "screenshot"
+    },
+    {
+      "name": "브이로리프팅",
+      "korean_name": "브이로리프팅",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "screenshot"
+    },
+    {
+      "name": "울페이스",
+      "korean_name": "울페이스",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "screenshot"
+    },
+    {
+      "name": "써니",
+      "korean_name": "써니",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "screenshot"
+    },
+    {
+      "name": "Ulthera",
+      "korean_name": "울쎄라",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": null,
+      "source": "screenshot"
+    },
+    {
+      "name": "Titanium",
+      "korean_name": "티타늄",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF",
+      "description": null,
+      "source": "screenshot"
+    },
+    {
+      "name": "Matrixcell",
+      "korean_name": "메트릭셀",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": null,
+      "source": "screenshot"
+    },
+    {
+      "name": "Agnes",
+      "korean_name": "아그네스",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_microneedle",
+      "description": null,
+      "source": "screenshot"
+    },
+    {
+      "name": "아꼴레이드",
+      "korean_name": "아꼴레이드",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": null,
+      "source": "screenshot"
+    },
+    {
+      "name": "제이시스(IPL)",
+      "korean_name": "제이시스(IPL)",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "IPL",
+      "description": null,
+      "source": "screenshot"
+    },
+    {
+      "name": "ExcelV",
+      "korean_name": "엑셀V",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": null,
+      "source": "screenshot"
+    },
+    {
+      "name": "아이콘",
+      "korean_name": "아이콘",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": null,
+      "source": "screenshot"
+    },
+    {
+      "name": "엘리제모",
+      "korean_name": "엘리제모",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": null,
+      "source": "screenshot"
+    },
+    {
+      "name": "아크네토닝",
+      "korean_name": "아크네토닝",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": null,
+      "source": "screenshot"
+    },
+    {
+      "name": "카프리",
+      "korean_name": "카프리",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": null,
+      "source": "screenshot"
+    },
+    {
+      "name": "Sylfirm",
+      "korean_name": "실펌",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_microneedle",
+      "description": null,
+      "source": "screenshot"
+    },
+    {
+      "name": "어븀야그",
+      "korean_name": "어븀야그",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": null,
+      "source": "screenshot"
+    },
+    {
+      "name": "포토큐",
+      "korean_name": "포토큐",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": null,
+      "source": "screenshot"
+    },
+    {
+      "name": "네오젠",
+      "korean_name": "네오젠",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "screenshot"
+    },
+    {
+      "name": "미인레이저",
+      "korean_name": "미인레이저",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": null,
+      "source": "screenshot"
+    },
+    {
+      "name": "Clarity",
+      "korean_name": "클라리티",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": null,
+      "source": "screenshot"
+    },
+    {
+      "name": "스타워커",
+      "korean_name": "스타워커",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": null,
+      "source": "screenshot"
+    },
+    {
+      "name": "엔커브",
+      "korean_name": "엔커브",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF",
+      "description": null,
+      "source": "screenshot"
+    },
+    {
+      "name": "CoolSera",
+      "korean_name": "쿨쎄라",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "cryotherapy",
+      "description": null,
+      "source": "screenshot"
+    },
+    {
+      "name": "펀치웨이브",
+      "korean_name": "펀치웨이브",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "screenshot"
+    },
+    {
+      "name": "버블젯",
+      "korean_name": "버블젯",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "screenshot"
+    },
+    {
+      "name": "카복시",
+      "korean_name": "카복시",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "screenshot"
+    },
+    {
+      "name": "RF고주파",
+      "korean_name": "RF고주파",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF",
+      "description": null,
+      "source": "screenshot"
+    },
+    {
+      "name": "트리플바디",
+      "korean_name": "트리플바디",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "screenshot"
+    },
+    {
+      "name": "듀엣RF",
+      "korean_name": "듀엣RF",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF",
+      "description": null,
+      "source": "screenshot"
+    },
+    {
+      "name": "산소토닝조아",
+      "korean_name": "산소토닝조아",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "screenshot"
+    },
+    {
+      "name": "Dermashine",
+      "korean_name": "더마샤인",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "injector",
+      "description": null,
+      "source": "screenshot"
+    },
+    {
+      "name": "LED광선",
+      "korean_name": "LED광선",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "screenshot"
+    },
+    {
+      "name": "AquaPeel",
+      "korean_name": "아쿠아필",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "screenshot"
+    },
+    {
+      "name": "이온자임",
+      "korean_name": "이온자임",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "screenshot"
+    },
+    {
+      "name": "고주파",
+      "korean_name": "고주파",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF",
+      "description": null,
+      "source": "screenshot"
+    },
+    {
+      "name": "바이톤",
+      "korean_name": "바이톤",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "screenshot"
+    },
+    {
+      "name": "LDM",
+      "korean_name": "LDM",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "IPL",
+      "description": null,
+      "source": "screenshot"
+    },
+    {
+      "name": "MTS",
+      "korean_name": "MTS",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "microneedle",
+      "description": null,
+      "source": "screenshot"
+    },
+    {
+      "name": "이온토손",
+      "korean_name": "이온토손",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "screenshot"
+    },
+    {
+      "name": "CryoCell",
+      "korean_name": "크라이오셀",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "cryotherapy",
+      "description": null,
+      "source": "screenshot"
+    },
+    {
+      "name": "프리즌초음파",
+      "korean_name": "프리즌초음파",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "screenshot"
+    },
+    {
+      "name": "듀오하이로젠",
+      "korean_name": "듀오하이로젠",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "screenshot"
+    }
+  ],
+  "treatments": [
+    {
+      "name": "복합실 A 코스",
+      "regular_price": null,
+      "event_price": 1100000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [
+        "캐번실 4줄",
+        "클레어실 4줄",
+        "블루로즈 4줄"
+      ],
+      "is_package": true,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "thread",
+      "price_display": "110 만원",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "복합실 B 코스",
+      "regular_price": null,
+      "event_price": 1400000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [
+        "캐번실 4줄",
+        "클레어실 6줄",
+        "블루로즈 6줄"
+      ],
+      "is_package": true,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "thread",
+      "price_display": "140 만원",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "실루엣 A 코스",
+      "regular_price": null,
+      "event_price": 2100000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [
+        "실루엣소프트 4줄",
+        "캐번실 4줄",
+        "클레어실 4줄",
+        "블루로즈 4줄"
+      ],
+      "is_package": true,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "thread",
+      "price_display": "210 만원",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "실루엣 B 코스",
+      "regular_price": null,
+      "event_price": 2600000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [
+        "실루엣소프트 6줄",
+        "캐번실 4줄",
+        "클레어실 4줄",
+        "블루로즈 4줄"
+      ],
+      "is_package": true,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "thread",
+      "price_display": "260 만원",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "에어젯",
+      "regular_price": null,
+      "event_price": 280000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": 200,
+      "unit": "shot",
+      "price_per_unit": 1400,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "hifu",
+      "price_display": "200샷 28 만원",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "에어젯",
+      "regular_price": null,
+      "event_price": 770000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": 600,
+      "unit": "shot",
+      "price_per_unit": 1283.33,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "hifu",
+      "price_display": "600샷 77 만원",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "코레지 3가지모드",
+      "regular_price": null,
+      "event_price": 280000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "rf",
+      "price_display": "3가지모드 28 만원",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "코레지 4가지모드",
+      "regular_price": null,
+      "event_price": 390000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "rf",
+      "price_display": "4가지모드 39 만원",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "버츄RF",
+      "regular_price": null,
+      "event_price": 440000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": 400,
+      "unit": "shot",
+      "price_per_unit": 1100,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "rf",
+      "price_display": "400샷 44 만원",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "버츄RF",
+      "regular_price": null,
+      "event_price": 770000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": 800,
+      "unit": "shot",
+      "price_per_unit": 962.5,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "rf",
+      "price_display": "800샷 77 만원",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "인모드 FORMA 모드",
+      "regular_price": null,
+      "event_price": 80000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "rf",
+      "price_display": "FORMA 1회 8 만원",
+      "session_info": "1회",
+      "body_part": "얼굴전체, 목주름"
+    },
+    {
+      "name": "인모드 두가지 모드",
+      "regular_price": null,
+      "event_price": 330000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "rf",
+      "price_display": "두가지 2회 33 만원",
+      "session_info": "2회",
+      "body_part": "양볼,이중턱"
+    },
+    {
+      "name": "아이토르 3회",
+      "regular_price": null,
+      "event_price": 330000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "rf",
+      "price_display": "아이토르 3회 33 만원",
+      "session_info": "3회",
+      "body_part": null
+    },
+    {
+      "name": "토르 2회",
+      "regular_price": null,
+      "event_price": 330000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "rf",
+      "price_display": "토르 2회 33 만원",
+      "session_info": "2회",
+      "body_part": null
+    },
+    {
+      "name": "슈링크유니버스",
+      "regular_price": null,
+      "event_price": 200000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": 300,
+      "unit": "shot",
+      "price_per_unit": 666.67,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "hifu",
+      "price_display": "300샷 20 만원",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "슈링크유니버스",
+      "regular_price": null,
+      "event_price": 440000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": 1000,
+      "unit": "shot",
+      "price_per_unit": 440,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "hifu",
+      "price_display": "1000샷 44 만원",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "더블로골드",
+      "regular_price": null,
+      "event_price": 300000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": 400,
+      "unit": "shot",
+      "price_per_unit": 750,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "hifu",
+      "price_display": "400샷 30 만원",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "더블로골드",
+      "regular_price": null,
+      "event_price": 550000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": 1000,
+      "unit": "shot",
+      "price_per_unit": 550,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "hifu",
+      "price_display": "1000샷 55 만원",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "볼뉴머",
+      "regular_price": null,
+      "event_price": 160000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": 100,
+      "unit": "shot",
+      "price_per_unit": 1600,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "rf",
+      "price_display": "100샷 16 만원",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "브이로리프팅",
+      "regular_price": null,
+      "event_price": 360000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": 400,
+      "unit": "shot",
+      "price_per_unit": 900,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "hifu",
+      "price_display": "400샷 36 만원",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "브이로리프팅",
+      "regular_price": null,
+      "event_price": 660000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": 1000,
+      "unit": "shot",
+      "price_per_unit": 660,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "hifu",
+      "price_display": "1000샷 66 만원",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "울페이스",
+      "regular_price": null,
+      "event_price": 550000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": 400,
+      "unit": "shot",
+      "price_per_unit": 1375,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "hifu",
+      "price_display": "400샷 55 만원",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "울페이스",
+      "regular_price": null,
+      "event_price": 760000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": 600,
+      "unit": "shot",
+      "price_per_unit": 1266.67,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "hifu",
+      "price_display": "600샷 76 만원",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "써니 써니팁 300샷 + 펄사팁 600샷",
+      "regular_price": null,
+      "event_price": 1320000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [
+        "써니팁 300샷",
+        "펄사팁 600샷"
+      ],
+      "is_package": true,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "rf",
+      "price_display": "써니 써니팁 300샷 + 펄사팁 600샷 1회 132 만원",
+      "session_info": "1회",
+      "body_part": null
+    },
+    {
+      "name": "써니",
+      "regular_price": null,
+      "event_price": 2100000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "rf",
+      "price_display": "2회 210 만원",
+      "session_info": "2회",
+      "body_part": null
+    },
+    {
+      "name": "울쎄라",
+      "regular_price": null,
+      "event_price": 390000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": 100,
+      "unit": "shot",
+      "price_per_unit": 3900,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "hifu",
+      "price_display": "100샷 39 만원",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "울쎄라",
+      "regular_price": null,
+      "event_price": 1050000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": 300,
+      "unit": "shot",
+      "price_per_unit": 3500,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "hifu",
+      "price_display": "300샷 105 만원",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "울쎄라",
+      "regular_price": null,
+      "event_price": 1650000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": 500,
+      "unit": "shot",
+      "price_per_unit": 3300,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "hifu",
+      "price_display": "500샷 165 만원",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "티타늄",
+      "regular_price": null,
+      "event_price": 770000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "rf",
+      "price_display": "1회 77 만원",
+      "session_info": "1회",
+      "body_part": null
+    },
+    {
+      "name": "티타늄",
+      "regular_price": null,
+      "event_price": 1650000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "rf",
+      "price_display": "3회 165 만원",
+      "session_info": "3회",
+      "body_part": null
+    },
+    {
+      "name": "티타늄",
+      "regular_price": null,
+      "event_price": 2200000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "rf",
+      "price_display": "5회 220 만원",
+      "session_info": "5회",
+      "body_part": null
+    },
+    {
+      "name": "여우실 리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "thread",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "엔코그 리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "thread",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "실루엣 소프트",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "thread",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "목주름 스케폴더",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "thread",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "듀라리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "thread",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "울트라 V리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "thread",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "블루로즈 리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "thread",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "페이스라인 흡입",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "더모톡신",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "botox",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "팔자리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "thread",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "이마리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "thread",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "채움프리미엄",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "filler",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "벨로테로",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "filler",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "스타일에이지",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "filler",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "아말리안",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "filler",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "캐번실",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "thread",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "클레어실",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "thread",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "블루로즈",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "thread",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    }
+  ],
+  "events": [
+    {
+      "title": "파라다이스 실 패키지",
+      "type": "패키지",
+      "period": null,
+      "discount_info": "복합실 A 코스 110만원, 복합실 B 코스 140만원, 실루엣 A 코스 210만원, 실루엣 B 코스 260만원",
+      "original_price": null,
+      "event_price": null,
+      "conditions": [],
+      "source": "screenshot"
+    },
+    {
+      "title": "파라다이스 리프팅 13대천왕",
+      "type": "할인",
+      "period": null,
+      "discount_info": "에어젯 200샷 28만원, 코레지 3가지모드 28만원, 버츄RF 400샷 44만원, 인모드 FORMA 1회 8만원, 토르 아이토르 3회 33만원, 슈링크유니버스 300샷 20만원, 더블로골드 400샷 30만원, 볼뉴머 100샷 16만원, 브이로리프팅 400샷 36만원, 울페이스 400샷 55만원, 써니 1회 132만원, 울쎄라 100샷 39만원, 티타늄 1회 77만원",
+      "original_price": null,
+      "event_price": null,
+      "conditions": [],
+      "source": "screenshot"
+    }
+  ],
+  "clinic_categories": [
+    {
+      "name": "피부",
+      "treatments": []
+    },
+    {
+      "name": "비만",
+      "treatments": []
+    },
+    {
+      "name": "쁘띠",
+      "treatments": []
+    },
+    {
+      "name": "리프팅",
+      "treatments": [
+        "복합실 A 코스",
+        "복합실 B 코스",
+        "실루엣 A 코스",
+        "실루엣 B 코스",
+        "에어젯",
+        "코레지 3가지모드",
+        "코레지 4가지모드",
+        "버츄RF",
+        "인모드 FORMA 모드 (얼굴전체, 목주름)",
+        "인모드 두가지 모드 (양볼, 이중턱)",
+        "아이토르 3회",
+        "토르 2회",
+        "슈링크유니버스",
+        "더블로골드",
+        "볼뉴머",
+        "브이로리프팅",
+        "울페이스",
+        "써니 써니팁 300샷 + 펄사팁 600샷",
+        "써니",
+        "울쎄라",
+        "티타늄",
+        "여우실 리프팅",
+        "엔코그 리프팅",
+        "실루엣 소프트",
+        "목주름 스케폴더",
+        "듀라리프팅",
+        "울트라 V리프팅",
+        "블루로즈 리프팅",
+        "팔자리프팅",
+        "이마리프팅"
+      ]
+    },
+    {
+      "name": "항노화",
+      "treatments": []
+    },
+    {
+      "name": "심부복합",
+      "treatments": []
+    },
+    {
+      "name": "1년 프리미엄패키지",
+      "treatments": []
+    }
+  ],
+  "contact_info": {
+    "email": [],
+    "phone": [
+      {
+        "number": "051.807.3456",
+        "type": "대표"
+      },
+      {
+        "number": "051.807.3450",
+        "type": "팩스"
+      }
+    ],
+    "address": {
+      "full_address": "부산광역시 부산진구 가야대로 785 인제메디컬센터 2층",
+      "sido": "부산광역시",
+      "sigungu": "부산진구"
+    },
+    "kakao_channel": "https://pf.kakao.com/_kgxmxhd",
+    "naver_booking": null,
+    "naver_place": null,
+    "instagram": null,
+    "facebook": null,
+    "youtube": null,
+    "blog": null,
+    "website_url": "http://paradiseclinic.co.kr",
+    "operating_hours": {
+      "weekday": "월,수,목 AM 10:00 ~ PM 19:00 / 화,금 AM 10:00 ~ PM 21:00 (야간진료)",
+      "saturday": "AM 10:00 ~ PM 15:00 (점심시간없음)",
+      "sunday": "휴진",
+      "lunch_break": "PM 13:00 ~ PM 14:00"
+    }
+  },
+  "unregistered_equipment": [
+    {
+      "name": "아꼴레이드",
+      "korean_name": "아꼴레이드",
+      "suggested_category": "LASER",
+      "source": "screenshot",
+      "reason": "Not in predefined list, context suggests laser"
+    },
+    {
+      "name": "아이콘",
+      "korean_name": "아이콘",
+      "suggested_category": "LASER",
+      "source": "screenshot",
+      "reason": "Not in predefined list, context suggests laser"
+    },
+    {
+      "name": "엘리제모",
+      "korean_name": "엘리제모",
+      "suggested_category": "LASER",
+      "source": "screenshot",
+      "reason": "Not in predefined list, context suggests laser"
+    },
+    {
+      "name": "아크네토닝",
+      "korean_name": "아크네토닝",
+      "suggested_category": "LASER",
+      "source": "screenshot",
+      "reason": "Not in predefined list, context suggests laser"
+    },
+    {
+      "name": "카프리",
+      "korean_name": "카프리",
+      "suggested_category": "LASER",
+      "source": "screenshot",
+      "reason": "Not in predefined list, context suggests laser"
+    },
+    {
+      "name": "포토큐",
+      "korean_name": "포토큐",
+      "suggested_category": "LASER",
+      "source": "screenshot",
+      "reason": "Not in predefined list, context suggests laser"
+    },
+    {
+      "name": "네오젠",
+      "korean_name": "네오젠",
+      "suggested_category": "OTHER_DEVICE",
+      "source": "screenshot",
+      "reason": "Not in predefined list, plasma device"
+    },
+    {
+      "name": "미인레이저",
+      "korean_name": "미인레이저",
+      "suggested_category": "LASER",
+      "source": "screenshot",
+      "reason": "Not in predefined list, context suggests laser"
+    },
+    {
+      "name": "스타워커",
+      "korean_name": "스타워커",
+      "suggested_category": "LASER",
+      "source": "screenshot",
+      "reason": "Not in predefined list, context suggests laser"
+    },
+    {
+      "name": "펀치웨이브",
+      "korean_name": "펀치웨이브",
+      "suggested_category": "OTHER_DEVICE",
+      "source": "screenshot",
+      "reason": "Not in predefined list, likely body contouring"
+    },
+    {
+      "name": "버블젯",
+      "korean_name": "버블젯",
+      "suggested_category": "OTHER_DEVICE",
+      "source": "screenshot",
+      "reason": "Not in predefined list, likely body contouring"
+    },
+    {
+      "name": "트리플바디",
+      "korean_name": "트리플바디",
+      "suggested_category": "OTHER_DEVICE",
+      "source": "screenshot",
+      "reason": "Not in predefined list, likely body contouring"
+    },
+    {
+      "name": "듀엣RF",
+      "korean_name": "듀엣RF",
+      "suggested_category": "RF",
+      "source": "screenshot",
+      "reason": "Not in predefined list, context suggests RF"
+    },
+    {
+      "name": "산소토닝조아",
+      "korean_name": "산소토닝조아",
+      "suggested_category": "OTHER_DEVICE",
+      "source": "screenshot",
+      "reason": "Not in predefined list, oxygen therapy device"
+    },
+    {
+      "name": "LED광선",
+      "korean_name": "LED광선",
+      "suggested_category": "OTHER_DEVICE",
+      "source": "screenshot",
+      "reason": "Not in predefined list, LED therapy device"
+    },
+    {
+      "name": "이온자임",
+      "korean_name": "이온자임",
+      "suggested_category": "OTHER_DEVICE",
+      "source": "screenshot",
+      "reason": "Not in predefined list, iontophoresis device"
+    },
+    {
+      "name": "바이톤",
+      "korean_name": "바이톤",
+      "suggested_category": "OTHER_DEVICE",
+      "source": "screenshot",
+      "reason": "Not in predefined list, skin management device"
+    },
+    {
+      "name": "이온토손",
+      "korean_name": "이온토손",
+      "suggested_category": "OTHER_DEVICE",
+      "source": "screenshot",
+      "reason": "Not in predefined list, iontophoresis device"
+    },
+    {
+      "name": "프리즌초음파",
+      "korean_name": "프리즌초음파",
+      "suggested_category": "OTHER_DEVICE",
+      "source": "screenshot",
+      "reason": "Not in predefined list, ultrasound device"
+    },
+    {
+      "name": "듀오하이로젠",
+      "korean_name": "듀오하이로젠",
+      "suggested_category": "OTHER_DEVICE",
+      "source": "screenshot",
+      "reason": "Not in predefined list, hydrogen therapy device"
+    },
+    {
+      "name": "브이로리프팅",
+      "korean_name": "브이로리프팅",
+      "suggested_category": "OTHER_DEVICE",
+      "source": "screenshot",
+      "reason": "Not in predefined list, lifting device"
+    },
+    {
+      "name": "울페이스",
+      "korean_name": "울페이스",
+      "suggested_category": "OTHER_DEVICE",
+      "source": "screenshot",
+      "reason": "Not in predefined list, lifting device"
+    },
+    {
+      "name": "써니",
+      "korean_name": "써니",
+      "suggested_category": "OTHER_DEVICE",
+      "source": "screenshot",
+      "reason": "Not in predefined list, skin/lifting device"
+    }
+  ],
+  "unregistered_treatments": [
+    {
+      "name": "복합실 A 코스",
+      "source": "screenshot",
+      "context": "파라다이스 실 패키지"
+    },
+    {
+      "name": "복합실 B 코스",
+      "source": "screenshot",
+      "context": "파라다이스 실 패키지"
+    },
+    {
+      "name": "실루엣 A 코스",
+      "source": "screenshot",
+      "context": "파라다이스 실 패키지"
+    },
+    {
+      "name": "실루엣 B 코스",
+      "source": "screenshot",
+      "context": "파라다이스 실 패키지"
+    },
+    {
+      "name": "코레지 3가지모드",
+      "source": "screenshot",
+      "context": "파라다이스 리프팅 13대천왕"
+    },
+    {
+      "name": "코레지 4가지모드",
+      "source": "screenshot",
+      "context": "파라다이스 리프팅 13대천왕"
+    },
+    {
+      "name": "인모드 FORMA 모드 (얼굴전체, 목주름)",
+      "source": "screenshot",
+      "context": "파라다이스 리프팅 13대천왕"
+    },
+    {
+      "name": "인모드 두가지 모드 (양볼, 이중턱)",
+      "source": "screenshot",
+      "context": "파라다이스 리프팅 13대천왕"
+    },
+    {
+      "name": "아이토르 3회",
+      "source": "screenshot",
+      "context": "파라다이스 리프팅 13대천왕"
+    },
+    {
+      "name": "토르 2회",
+      "source": "screenshot",
+      "context": "파라다이스 리프팅 13대천왕"
+    },
+    {
+      "name": "써니 써니팁 300샷 + 펄사팁 600샷",
+      "source": "screenshot",
+      "context": "파라다이스 리프팅 13대천왕"
+    },
+    {
+      "name": "써니",
+      "source": "screenshot",
+      "context": "파라다이스 리프팅 13대천왕"
+    },
+    {
+      "name": "여우실 리프팅",
+      "source": "text",
+      "context": "리프팅 메뉴"
+    },
+    {
+      "name": "엔코그 리프팅",
+      "source": "text",
+      "context": "리프팅 메뉴"
+    },
+    {
+      "name": "목주름 스케폴더",
+      "source": "text",
+      "context": "리프팅 메뉴"
+    },
+    {
+      "name": "듀라리프팅",
+      "source": "text",
+      "context": "리프팅 메뉴"
+    },
+    {
+      "name": "울트라 V리프팅",
+      "source": "text",
+      "context": "리프팅 메뉴"
+    },
+    {
+      "name": "블루로즈 리프팅",
+      "source": "text",
+      "context": "리프팅 메뉴"
+    },
+    {
+      "name": "페이스라인 흡입",
+      "source": "text",
+      "context": "리프팅 메뉴"
+    },
+    {
+      "name": "더모톡신",
+      "source": "text",
+      "context": "리프팅 메뉴"
+    },
+    {
+      "name": "팔자리프팅",
+      "source": "text",
+      "context": "리프팅 메뉴"
+    },
+    {
+      "name": "이마리프팅",
+      "source": "text",
+      "context": "리프팅 메뉴"
+    },
+    {
+      "name": "채움프리미엄",
+      "source": "screenshot",
+      "context": "필러컬렉션"
+    },
+    {
+      "name": "클레어실",
+      "source": "screenshot",
+      "context": "실 패키지 구성"
+    },
+    {
+      "name": "아말리안",
+      "source": "screenshot",
+      "context": "필러컬렉션"
+    },
+    {
+      "name": "캐번실",
+      "source": "screenshot",
+      "context": "실 패키지 구성"
+    },
+    {
+      "name": "블루로즈",
+      "source": "screenshot",
+      "context": "실 패키지 구성"
+    }
+  ],
+  "raw_price_texts": [],
+  "extraction_summary": {
+    "total_doctors": 2,
+    "total_academic": 10,
+    "total_equipment": 50,
+    "total_devices": 50,
+    "total_injectables": 0,
+    "total_treatments": 39,
+    "total_events": 2,
+    "total_categories": 7,
+    "total_contact_channels": 8,
+    "has_email": false,
+    "has_phone": true,
+    "has_kakao": true,
+    "has_sns": true,
+    "price_available_ratio": "30/39",
+    "unregistered_equipment_count": 23,
+    "unregistered_treatments_count": 27
+  }
+}
+
+──── [2] ocr_raw.json (이미지 OCR 원본) ────
+
+--- page_1_main_capture_0 ---
+파라다이스 의원 고객센터
+051.807.3456
+Pd 파라다이스 의원
+진료과목 | 피부과 · 성형외과
+HOME / LOGIN / JOIN
+
+파라다이스소개 피부 비만 쁘띠 리프팅 항노화 커뮤니티 보유장비
+
+트렌디함과 감각적인 센스에
+믿을 수 있는 실력과 노하우를 더했습니다.
+파라다이스
+
+자세히보기
+카톡상담
+이벤트
+블로그
+페이스북
+인스타그램
+공지사항
+
+파라다이스 내맘대로 패키지
+원하는 시술만 쏙쏙 골라 담아 내맘대로 예뻐진다
+
+리프팅 피부 비만 심부복합 1년 프리미엄패키지
+
+내맘대로 리프팅 패키지
+
+--- page_1_main_capture_1 ---
+파라다이스 실 패키지
+
+복합실 A 코스
+캐번실 4줄
++ 클레어실 4줄
++ 블루로즈 4줄
+110 만원
+
+복합실 B 코스
+캐번실 4줄
++ 클레어실 6줄
++ 블루로즈 6줄
+140 만원
+※실루엣소프트 2줄 추가 60만원
+
+추천
+실루엣 A 코스
+실루엣소프트 4줄
++ 캐번실 4줄
++ 클레어실 4줄
++ 블루로즈 4줄
+210 만원
+
+실루엣 B 코스
+실루엣소프트 6줄
++ 캐번실 4줄
++ 클레어실 4줄
++ 블루로즈 4줄
+260 만원
+
+파라다이스 리프팅 13대천왕
+※부가세포함
+
+에어젯
+*팁값 6만원 별도 200샷 28 만원 600샷 77 만원
+
+코레지
+3가지모드 28 만원 4가지모드 39 만원
+
+버츄RF
+400샷 44 만원 800샷 77 만원
+
+인모드
+FORMA 1회 8 만원
+모드 (얼굴전체, 목주름) (5회시)
+두가지 2회 33 만원
+모드 (양볼,이중턱)
+
+토르
+아이토르 3회 33 만원 / 토르 2회 33 만원
+
+슈링크유니버스
+300샷 20 만원 1000샷 44 만원
+
+더블로골드
+400샷 30 만원 1000샷 55 만원
+
+볼뉴머
+100샷 16 만원
+
+브이로리프팅
+400샷 36 만원 1000샷 66 만원
+
+TALK
+카톡상담
+이벤트
+blog
+블로그
+f
+페이스북
+인스타그램
+공지사항
+
+--- page_1_main_capture_2 ---
+400샷 55 만원 600샷 76 만원
+율페이스
+써니 써니팁 300샷 + 펄사팁 600샷 1회 132 만원 2회 210 만원
+울쎄라 100샷 39 만원 300샷 105 만원 500샷 165 만원
+티타늄 1회 77 만원 3회 165 만원 5회 220 만원
+
+TALK
+카톡상담
+이벤트
+blog
+블로그
+f
+페이스북
+인스타그램
+공지사항
+
+파라다이스 TV
+PARADISE
+한번의 시술로 세가지 효과를 볼수있다? 부산피부과 티타늄리프팅 찐후...
+Soprano
+BEFORE AFTER
+Soprano
+하나의 시술로 세가지 효과!
+
+--- page_1_main_capture_3 ---
+FIF타늄 레이저로 개선!
+다음에서 보기: ▶ YouTube
+
+티타늄 BIO로 개선!
+[서면파라다이스] 한번의 시술로 세가지
+효과를 볼수있다?
+
+PD PARADISE
+[서면파라다이스] 파라다이스의 필러
+시술 공.개.
+
+산소토닝
+피부로
+숨쉬다 O2
+[서면파라다이스] 산소토닝 받고 내 피
+부가 숨을 쉰다!
+
+올쎄라!
+[서면파라다이스] 셀프로 올쎄라리프
+팅을 시술하면?
+
+TALK
+카톡상담
+
+이벤트
+
+blog
+블로그
+
+f
+페이스북
+
+인스타그램
+
+공지사항
+
+파라다이스 필러컬렉션
+스타일과 타입에 맞는 적합한 필러로 감각적인 디자인을 진행합니다.
+
+채움프리미엄
+벨로테로
+스타일에이지
+아말리안
+
+파라다이스 장비컬렉션
+파라다이스는 지속적인 기술과 장비의 도입으로 남다른 의료서비스를 제공합니다.
+
+--- page_1_main_capture_4 ---
+레이저
+메트릭셀
+아그네스
+아꼴레이드
+제이시스(IPL)
+엑셀V
+아이콘
+엘리제모
+카톡상담
+이벤트
+블로그
+페이스북
+인스타그램
+공지사항
+아크네토닝
+카프리
+실펌
+어븀야그
+포토큐
+네오젠
+미인레이저
+클라리티
+버츄RF
+스타워커
+엔커브
+쿨쎄라
+펀치웨이브
+버블젯
+카복시
+RF고주파
+바디
+
+--- page_1_main_capture_5 ---
+트리플바디
+
+리프팅
+울쎄라
+슈링크
+더블로골드
+듀엣RF
+에어젯
+
+코레지
+인모드
+써니
+브이로리프팅
+티타늄
+볼뉴머
+
+카톡상담
+이벤트
+블로그
+페이스북
+인스타그램
+공지사항
+
+산소토닝조아
+더마샤인
+LED광선
+아쿠아필
+이온자임
+고주파
+관리
+
+--- page_1_main_capture_6 ---
+바이톤
+LDM
+MTS
+이온토손
+크라이오셀
+프리즌초음파
+듀오하이로젠
+
+TALK
+카톡상담
+이벤트
+blog
+블로그
+f
+페이스북
+인스타그램
+공지사항
+
+PARADISE CLINIC
+Online
+Consultation
+친절하게 상담해 드리겠습니다.
+카톡 상담 +
+
+PARADISE CLINIC
+Real Story
+파라다이스 고객님들의 리얼후기
+전후사진 보기 +
+
+PARADISE INFORMATION
+언제나 친절하고 편안한 파라다이스가 되겠습니다.
+
+고객센터 051.807.3456
+진료시간
+안내
+월 /
+
+--- page_1_main_capture_7 ---
+PARADISE INFORMATION
+언제나 친절하고 편안한 파라다이스가 되겠습니다.
+
+12
+10
+8
+11
+천국모바일
+7
+설빙
+본죽
+금행장
+차이나
+서면문화로5번길
+주차장입구
+소문대로
+루이상의원
+파라다이스의원
+입구
+사리원
+13
+금복식당
+13
+781-1
+성원메디컬빌딩
+메디스
+치과의원
+779
+원도식탁
+779-4
+라테스솔
+779-2
+이삭토스트
+가야대로
+서면
+서면로
+일렉한의원
+스타벅스
+샐러디
+CU
+6
+급행장
+신수미 2
+건강의학과 의원
+789
+SKT대리점
+
+고객센터 051.807.3456
+진료시간
+안내
+월 / 수 / 목 AM 10:00 ~ PM 19:00
+화 / 금 AM 10:00 ~ PM 21:00 야간진료
+토 요 일 AM 10:00 ~ PM 15:00 점심시간없음
+점심시간 PM 13:00 ~ PM 14:00
+일요일 공휴일은 휴진입니다.
+
+오시는 길
+부산광역시 부산진구 가야대로 785
+인제메디컬센터 2층 서면역 9번 출구
+
+blog f
+blog 페이스북
+인스타그램
+
+TALK
+카톡상담
+이벤트
+blog
+블로그
+f
+페이스북
+인스타그램
+공지사항
+
+파라다이스 소개 | 상담문의 | 개인정보취급방침 | 이메일수집거부 | 찾아오시는길 | 비급여 안내
+
+Pd PARADISE
+DERMATOLOGY
+
+부산광역시 부산진구 가야대로 785 인제메디컬센터 2층 TEL 051.807.3456 FAX 051.807.3450
+의료기관명 : 파라다이스 의원 대표 : 김용준 사업자등록번호 : 169-01-02056
+
+COPYRIGHT ⓒ 2017 PARADISE ALL RIGHT RESERVED
+
+--- page_2_other_capture_0 ---
+Pd PARADISE
+DERMATOLOGY
+TALK
+상담 및 예약 051)807.3456
+일요일, 공휴일 휴진입니다.
+온라인 상담 바로 가기
+진료시간 안내
+진료
+시간
+월 / 수 / 목 AM 10:00 ~ PM 07:00
+화 / 금(야간진료) AM 10:00 ~ PM 09:00
+토 요 일 AM 10:00 ~ PM 03:00
+(토요일은 점심시간 없이 오후 3시까지 진료합니다.)
+점 심 시 간 PM 01:00 ~ PM 02:00
+카카오톡 상담
+이벤트
+전화상담
+
+--- page_2_other_capture_1 ---
+접수시간 PM 01:00 ~ PM 02:00
+온라인 상담 바로가기
+
+찾아오시는길
+
+성성여관
+부산 부산진구 가야대로 785
+유원골든티..
+오피스텔
+사미헌
+KB국민은행
+롯데백화점
+본사보적
+정액병원
+kakaomap
+길찾기
+
+주소: 부산광역시 부산진구 가야대로 785 인제메디컬센터 2층
+
+버스안내
+일반
+17, 23, 29, 33, 54, 63, 67, 81, 83-1, 88, 103, 110-1,
+129-1, 133, 138, 138-1, 141, 160, 167, 169-1, 583
+급행
+1000, 1000(심야), 1004, 1004(심야), 1005, 1009-1
+마을
+부산진구 12, 부산진구 12-1, 부산진구 15, 남구 10, 사상구 6
+
+Pd PARADISE
+DERMATOLOGY
+부산광역시 부산진구 가야대로 785 인제메디컬센터 2층
+의료기관명 : 파라다이스의원 | 대표 : 김용준
+사업자등록번호 : 169-01-02056
+전화 : 051-807-3456 | 팩스번호 : 051-807-3450
+Copyright ⓒ 2017 PRADISE All rights reserved.
+
+카카오톡상담
+이벤트
+전화상담
+
+--- page_4_other_capture_0 ---
+Pd
+PARADISE
+DERMATOLOGY
+TALK
+파라다이스 소개
+현대사회에서 아름다움은 자신감입니다.
+파라다이스는 여러분의 자신감을
+찾아드리기 위해 노력하겠습니다.
+카카오톡 상담
+이벤트
+전화상담
+
+--- page_4_other_capture_1 ---
+파라다이스 소개
+
+현대 사회에서 아름다움은 자신감입니다.
+파라다이스는 여러분의 자신감을
+찾아드리기 위해 노력하겠습니다.
+
+파라다이스는 부담 없는 가격으로 고객님 모두에게
+최고의 만족을 드리기 위해 최선을 다하겠습니다.
+
+파라다이스는 검증되고 안전한 시술만을
+추구할 것을 약속합니다.
+
+Pd PARADISE
+DERMATOLOGY
+
+부산광역시 부산진구 가야대로 785 인제메디컬센터 2층
+의료기관명 : 파라다이스의원 | 대표 : 김용준
+사업자등록번호 : 169-01-02056
+전화 : 051-807-3456 | 팩스번호 : 051-807-3450
+Copyright ⓒ 2017 PRADISE All rights reserved.
+
+카카오톡상담
+이벤트
+전화상담
+
+--- page_5_other_capture_0 ---
+PARADISE
+DERMATOLOGY
+TALK
+의료진 소개
+김용준 원장님
+Dr. Kim Yong jun
+• 前 더뉴의원 원장
+• 前 동아대학교 병원 임상교수
+• 前 대동병원 과장
+• 대한 미용성형레이저의학회 정회원
+• 대한 필러 학회 정회원
+• 대한 비만 연구의사회 정회원
+카카오톡 상담
+이벤트
+전화상담
+
+--- page_5_other_capture_1 ---
+대한 비만 연구의사회 정회원
+대한 필러 학회 정회원
+
+신부선 원장님
+Dr. Shin Bu seon
+
+・ 前 서면 엘린의원 대표원장
+・ 前 여우미의원
+・ 한국 미용성형의학회 정회원
+・ 대한 미용성형 레이저의학회 정회원
+・ 대한 레이저 피부모발학회 정회원
+・ 대한 비만연구의사회 정회원
+・ 대한 미용웰빙학회 정회원
+・ 대한 필러 학회 정회원
+・ 대한 반영구화장의학회 정회원
+
+Pd PARADISE
+DERMATOLOGY
+
+부산광역시 부산진구 가야대로 785 인제메디컬센터 2층
+의료기관명 : 파라다이스의원 | 대표 : 김용준
+사업자등록번호 : 169-01-02056
+전화 : 051-807-3456 | 팩스번호 : 051-807-3450
+Copyright ⓒ 2017 PRADISE All rights reserved.
+
+카카오톡상담
+이벤트
+전화상담
+
+--- page_6_other_capture_0 ---
+PARADISE
+DERMATOLOGY
+TALK
+내부 둘러보기
+카카오톡 상담
+이벤트
+전화상담
+
+--- page_6_other_capture_1 ---
+PARADISE
+CLINIC
+
+Pd PARADISE
+DERMATOLOGY
+부산광역시 부산진구 가야대로 785 인제메디컬센터 2층
+의료기관명 : 파라다이스의원 | 대표 : 김용준
+사업자등록번호 : 169-01-02056
+전화 : 051-807-3456 | 팩스번호 : 051-807-3450
+Copyright (C) 2017 PARADISE All rights reserved
+카카오톡상담 이벤트 전화상담
+
+--- page_6_other_capture_2 ---
+Pd PARADISE
+DERMATOLOGY
+
+부산광역시 부산진구 가야대로 785 인제메디컬센터 2층
+의료기관명 : 파라다이스의원 | 대표 : 김용준
+사업자등록번호 : 169-01-02056
+전화 : 051-807-3456 | 팩스번호 : 051-807-3450
+Copyright ⓒ 2017 PRADISE All rights reserved.
+
+카카오톡상담 이벤트 전화상담
+
+──── [3] coverage_raw.txt (커버리지 검증 로그) ────
+{
+  "missing_equipments": [
+    "하이드라페이셜",
+    "브이올렛"
+  ],
+  "missing_treatments": [
+    "하이드라페이셜",
+    "브이올렛",
+    "리프팅 피부 비만 심부복합 1년 프리미엄패키지",
+    "산소토닝"
+  ],
+  "missing_doctors": [],
+  "missing_prices": [],
+  "coverage_score": {
+    "equipment": 60,
+    "treatment": 78,
+    "doctor": 100,
+    "overall": 79
+  },
+  "issues": []
+}

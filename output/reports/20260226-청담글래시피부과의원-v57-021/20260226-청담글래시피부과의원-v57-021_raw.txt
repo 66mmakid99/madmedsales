@@ -1,0 +1,876 @@
+═══════════════════════════════════════════════════
+  청담글래시피부과의원 — 추출 원본 데이터
+═══════════════════════════════════════════════════
+
+──── [1] analysis.json (Gemini 분류 결과) ────
+{
+  "hospital_name": "청담글래시피부과의원",
+  "doctors": [
+    {
+      "name": "주홍진",
+      "title": "대표 원장",
+      "specialty": "피부과 전문의, 탈모, 두피 전공",
+      "career": [
+        "뉴욕 Icahn School of Medicine at Mount Sinai 단기 연수 (2014년, 2015년)",
+        "세계모발연구학회(World Congress for Hair Reserch) 기조 강연: 만성 원형 탈모에서 면역이 미치는 영향",
+        "(전) 차앤박 피부과 도곡 양재점 원장",
+        "(전) 오월의 아침 피부과 원장",
+        "(전) 셀파크 청담 피부과 원장",
+        "(현) 청담글래시피부과 의원 대표 원장"
+      ],
+      "education": [
+        "한성과학고등학교 졸업",
+        "가톨릭의과대학 졸업",
+        "가톨릭의과대학 피부과 의학 석사"
+      ],
+      "certifications": [
+        "가톨릭의과대학 서울성모병원 피부과 전문의"
+      ],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "김소민",
+      "title": "원장",
+      "specialty": "피부과 전문의",
+      "career": [
+        "가톨릭의과대학 성모병원 인턴",
+        "가톨릭의과대학 서울성모병원 피부과 레지던트",
+        "Newyork Storybrook University Hospital 단기연수",
+        "전) 후즈후피부과 원장",
+        "전) 오라클피부과 원장",
+        "전) 타임리스피부과 원장"
+      ],
+      "education": [
+        "가톨릭의과대학 졸업"
+      ],
+      "certifications": [
+        "피부과전문의"
+      ],
+      "confidence": "confirmed"
+    }
+  ],
+  "academic_activities": [
+    {
+      "type": "학회발표",
+      "title": "세계모발연구학회(World Congress for Hair Reserch) 기조 강연: 만성 원형 탈모에서 면역이 미치는 영향",
+      "year": 2015,
+      "doctor_name": "주홍진",
+      "source_text": "세계모발연구학회(World Congress for Hair Reserch) 기조 강연: 만성 원형 탈모에서 면역이 미치는 영향"
+    }
+  ],
+  "medical_devices": [
+    {
+      "name": "Cryotherapy",
+      "korean_name": "두피크라이오테라피",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "cryotherapy",
+      "description": "비수술 탈모 치료의 일환",
+      "source": "text"
+    },
+    {
+      "name": "IPL",
+      "korean_name": "PL 리프팅",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "IPL",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "블랙홀 여드름 레이저",
+      "korean_name": "블랙홀 여드름 레이저",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "여드름 치료",
+      "source": "text"
+    },
+    {
+      "name": "듀얼 홍조 레이저",
+      "korean_name": "듀얼 홍조 레이저",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "홍조 치료",
+      "source": "text"
+    },
+    {
+      "name": "Pico Laser",
+      "korean_name": "피코 트리플 미백 레이저",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "미백 치료",
+      "source": "text"
+    },
+    {
+      "name": "Juvelook",
+      "korean_name": "쥬베룩",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "booster",
+      "description": "흉터 손주사",
+      "source": "text"
+    },
+    {
+      "name": "Potenza",
+      "korean_name": "포텐자 레이저",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_microneedle",
+      "description": "흉터 치료",
+      "source": "text"
+    },
+    {
+      "name": "Curejet",
+      "korean_name": "큐어젯 레이저",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": "흉터 치료",
+      "source": "text"
+    }
+  ],
+  "treatments": [
+    {
+      "name": "비수술 탈모 치료",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "두피크라이오테라피",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "PL 리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "트리플 리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "콜라겐 볼륨리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "이너뷰티 4종 검사",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [
+        "영양제 장내세균검사",
+        "피부염증검사",
+        "피부호르몬검사",
+        "음식물 과민증검사"
+      ],
+      "is_package": true,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "블랙홀 여드름 레이저",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "듀얼 홍조 레이저",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "피코 트리플 미백 레이저",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "바디라인 레이저",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "body"
+    },
+    {
+      "name": "피부타입 진단",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "맞춤형 화장품 처방",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "영양제 처방",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "안티에이징테라피",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "홍조민감관리",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "홍조탄력관리",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "비만디톡스 식단관리",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "흉터 손주사(쥬베룩)",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "skinbooster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "여드름 패인 흉터치료",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "복부 비만 해결 시술",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "abdomen"
+    }
+  ],
+  "events": [],
+  "clinic_categories": [
+    {
+      "name": "탈모 클리닉",
+      "treatments": [
+        "비수술 탈모 치료",
+        "두피크라이오테라피"
+      ]
+    },
+    {
+      "name": "리프팅 클리닉",
+      "treatments": [
+        "PL 리프팅",
+        "트리플 리프팅",
+        "콜라겐 볼륨리프팅"
+      ]
+    },
+    {
+      "name": "이너뷰티 클리닉",
+      "treatments": [
+        "이너뷰티 4종 검사",
+        "영양제 처방"
+      ]
+    },
+    {
+      "name": "여드름 클리닉",
+      "treatments": [
+        "블랙홀 여드름 레이저",
+        "여드름 패인 흉터치료"
+      ]
+    },
+    {
+      "name": "홍조 클리닉",
+      "treatments": [
+        "듀얼 홍조 레이저",
+        "홍조민감관리",
+        "홍조탄력관리"
+      ]
+    },
+    {
+      "name": "미백 클리닉",
+      "treatments": [
+        "피코 트리플 미백 레이저"
+      ]
+    },
+    {
+      "name": "바디 클리닉",
+      "treatments": [
+        "바디라인 레이저",
+        "복부 비만 해결 시술"
+      ]
+    },
+    {
+      "name": "비만 클리닉",
+      "treatments": [
+        "비만디톡스 식단관리"
+      ]
+    },
+    {
+      "name": "피부 진단/관리",
+      "treatments": [
+        "피부타입 진단",
+        "맞춤형 화장품 처방",
+        "안티에이징테라피"
+      ]
+    }
+  ],
+  "contact_info": {
+    "email": [],
+    "phone": [
+      {
+        "number": "02-515-5255",
+        "type": "대표"
+      }
+    ],
+    "address": {
+      "full_address": "서울특별시 강남구 도산대로81길 51, 5층 글래시피부과의원",
+      "sido": "서울특별시",
+      "sigungu": "강남구"
+    },
+    "kakao_channel": null,
+    "naver_booking": "https://booking.naver.com/booking/13/bizes/695390",
+    "naver_place": null,
+    "instagram": null,
+    "facebook": null,
+    "youtube": null,
+    "blog": null,
+    "website_url": "https://booking.naver.com/booking/13/bizes/695390",
+    "operating_hours": null
+  },
+  "unregistered_equipment": [
+    {
+      "name": "블랙홀 여드름 레이저",
+      "korean_name": "블랙홀 여드름 레이저",
+      "suggested_category": "LASER",
+      "source": "website",
+      "reason": "Clinic-specific laser name, not in standard list."
+    },
+    {
+      "name": "듀얼 홍조 레이저",
+      "korean_name": "듀얼 홍조 레이저",
+      "suggested_category": "LASER",
+      "source": "website",
+      "reason": "Clinic-specific laser name, not in standard list."
+    }
+  ],
+  "unregistered_treatments": [
+    {
+      "name": "트리플 리프팅",
+      "source": "website",
+      "context": "소개"
+    },
+    {
+      "name": "콜라겐 볼륨리프팅",
+      "source": "website",
+      "context": "소개"
+    },
+    {
+      "name": "이너뷰티 4종 검사",
+      "source": "website",
+      "context": "소개"
+    },
+    {
+      "name": "영양제 장내세균검사",
+      "source": "website",
+      "context": "이너뷰티 4종 검사 구성"
+    },
+    {
+      "name": "피부염증검사",
+      "source": "website",
+      "context": "이너뷰티 4종 검사 구성"
+    },
+    {
+      "name": "피부호르몬검사",
+      "source": "website",
+      "context": "이너뷰티 4종 검사 구성"
+    },
+    {
+      "name": "음식물 과민증검사",
+      "source": "website",
+      "context": "이너뷰티 4종 검사 구성"
+    },
+    {
+      "name": "바디라인 레이저",
+      "source": "website",
+      "context": "소개"
+    },
+    {
+      "name": "피부타입 진단",
+      "source": "website",
+      "context": "소개"
+    },
+    {
+      "name": "맞춤형 화장품 처방",
+      "source": "website",
+      "context": "소개"
+    },
+    {
+      "name": "영양제 처방",
+      "source": "website",
+      "context": "소개"
+    },
+    {
+      "name": "안티에이징테라피",
+      "source": "website",
+      "context": "소개"
+    },
+    {
+      "name": "홍조민감관리",
+      "source": "website",
+      "context": "소개"
+    },
+    {
+      "name": "홍조탄력관리",
+      "source": "website",
+      "context": "소개"
+    },
+    {
+      "name": "비만디톡스 식단관리",
+      "source": "website",
+      "context": "소개"
+    },
+    {
+      "name": "흉터 손주사(쥬베룩)",
+      "source": "text",
+      "context": "리뷰"
+    },
+    {
+      "name": "여드름 패인 흉터치료",
+      "source": "text",
+      "context": "리뷰"
+    },
+    {
+      "name": "복부 비만 해결 시술",
+      "source": "text",
+      "context": "리뷰"
+    }
+  ],
+  "raw_price_texts": [],
+  "extraction_summary": {
+    "total_doctors": 2,
+    "total_academic": 1,
+    "total_equipment": 8,
+    "total_devices": 7,
+    "total_injectables": 1,
+    "total_treatments": 20,
+    "total_events": 0,
+    "total_categories": 9,
+    "total_contact_channels": 3,
+    "has_email": false,
+    "has_phone": true,
+    "has_kakao": false,
+    "has_sns": false,
+    "price_available_ratio": "0/20",
+    "unregistered_equipment_count": 2,
+    "unregistered_treatments_count": 18
+  }
+}
+
+──── [2] ocr_raw.json (이미지 OCR 원본) ────
+
+--- page_0_main_capture_0 ---
+< 청담글래시피부과의원
+my
+청담글래시피부과의원
+리뷰 52
+
+📍 서울특별시 강남구 도산대로81길 51, 5층 글래시피부과의원
+ⓟ 지도 🏠 홈페이지 📞 02-515-5255 복사
+
+예약
+🗓️ 날짜와 시간을 선택해주세요.
+
+Dr.Judy 주홍진
+학력 한성과학고등학교 졸업 가톨릭의과대학 졸업 가톨릭의과대학 서울성모병원 피부
+과 전문의 가톨릭의과대학 피부과 의학 석사: 탈모,두피 전공 경력 뉴욕 Icahn School ...
+리뷰 3
+
+Dr.Sophie 김소민
+피부과전문의 가톨릭의과대학 성모병원 인턴 가톨릭의과대학 서울성모병원 피부과 레
+지던트 Newyork Storybrook University Hospital 단기연수 전) 후즈후피부과 원장 전)
+리뷰 1
+
+--- page_0_main_capture_1 ---
+< 청담글래시피부과의원
+v 비수술 탈모 치료, 두피크라이오테라피
+v PL 리프팅, 트리플 리프팅, 콜라겐 볼륨리프팅
+v 이너뷰티 4종 검사 (영양제 장내세균검사, 피부염증검사, 피부호르몬검사, 음식물 과민증검사)
+v 블랙폴 여드름 레이저 / 듀얼 홍조 레이저 / 피코 트리플 미백 레이저 / 바디라인 레이저
+v 피부타입 진단/ 맞춤형 화장품, 영양제처방/ 안티에이징테라피, 홍조민감관리, 홍조탄력관리 / 비
+만디톡스 식단관리
+
+네이버 예약으로
+방문 인증한 후기입니다.
+
+리뷰 쓰기
+
+예약자 리뷰
+
+리뷰 0
+
+사진/영상 리뷰만
+
+--- page_0_main_capture_2 ---
+< 청담글래시피부과의원
+my
+Dr.주홍진
+우선 대기없이 바로 상담받을 수 있었고, 상담도 현실적이면서도 꼼꼼하고 친절하게 잘 해주셔서 인상깊
+었습니다. 직선으로 생기고 있는 팔자주름이 가장 고민이었는데, 원장님께서 정말 전문적으로 얼굴 전체
+구조를 파악하시고 시술해주셨어요. 다른 곳은 정한 시술을 그냥 끝낸다 느낌인데 여기는 고민부위에 ...
+더보기
+☺ 반응 남기기
+25.8.14. 목 예약
+
+mat****
+리뷰 9 · 사진 12 · 팔로워 0
+팔로우
+
+Dr.주영웅
+60대여성입니다~
+복부비만이 고민이라 오늘도 글래시 피부과를 방문 했습니다 ^^ 새로운 기계가 들어왔다고 해서 복부 비
+만 해결하고자 오늘 시술을 받아봤는데 1회만 했는데도 효과가 좋은 것 같아 계속 받아보려고 합니다 ~ ...
+더보기
+☺ 반응 남기기
+25.6.16. 월 예약
+
+후추박사62
+리뷰 2 · 사진 1 · 팔로워 0
+팔로우
+
+--- page_0_main_capture_3 ---
+청담글래시피부과의원
+my
+🙂 반응 남기기
+25.6.16. 월 예약
+우주박사62
+리뷰 2 · 사진 1 · 팔로워 0
+팔로우
+Dr.주홍진
+여드름 패인 흉터치료를 2월달에 한번 받았었는데, 효과가 너무 좋아서 또 방문하게 되었습니다. 흉터 손
+주사(쥬베룩)와 포텐자 레이저, 큐어젯 레이저 함께 받아서 그런지 한번만 받았었는데도 효과가 좋았던 것
+같습니다. 그리고 정말 신기하게도 하나도 안아픕니다!
+🤩 1명>
+25.4.28. 월 예약
+표정을 눌러 반응을 남겨 보세요!
+okokchu
+리뷰 3 · 사진 0 · 팔로워 0
+팔로우
+내원상담예약
+눈밑 꺼짐이 너무 심해서 스트레스 받던차에
+유투브에서 원장님 영상을 처음 보고
+찐 내돈내산~ 직접 피부과를 예약하고 찾아갔다...
+더보기
+🙂 반응 남기기
+24.3.21. 목 예약
+pighohohoho
+리뷰 10 · 사진 21 · 팔로워 0
+팔로우
+내원상담예약
+아는 지인 통해 소개 받고 태어나서 처음 피부과 진료 받았는데 대기실이랑 관리실 너무 깨끗하고 관리가
+
+──── [3] coverage_raw.txt (커버리지 검증 로그) ────
+{
+  "missing_equipments": [],
+  "missing_treatments": [],
+  "missing_doctors": [],
+  "missing_prices": [],
+  "coverage_score": {
+    "equipment": 100,
+    "treatment": 100,
+    "doctor": 100,
+    "overall": 100
+  },
+  "issues": []
+}

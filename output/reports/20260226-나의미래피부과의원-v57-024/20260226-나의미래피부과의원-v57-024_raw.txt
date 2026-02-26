@@ -1,0 +1,1195 @@
+═══════════════════════════════════════════════════
+  나의미래피부과의원 — 추출 원본 데이터
+═══════════════════════════════════════════════════
+
+──── [1] analysis.json (Gemini 분류 결과) ────
+{
+  "hospital_name": "나의미래피부과의원",
+  "doctors": [
+    {
+      "name": "노효진",
+      "title": "대표원장",
+      "specialty": "피부과 전문의",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "정진영",
+      "title": "원장",
+      "specialty": "피부과 전문의",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    }
+  ],
+  "academic_activities": [],
+  "medical_devices": [
+    {
+      "name": "Ulthera",
+      "korean_name": "울쎄라",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": "피부 처짐 개선 시술에 사용되는 장비",
+      "source": "text"
+    },
+    {
+      "name": "Reepot Laser",
+      "korean_name": "리팟레이저",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "깊이 숨겨진 색소 치료에 사용되는 레이저 장비",
+      "source": "image_banner"
+    },
+    {
+      "name": "리투오",
+      "korean_name": "리투오",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "booster",
+      "description": "콜라겐 재생 및 피부결 개선에 사용되는 주사제",
+      "source": "image_banner"
+    },
+    {
+      "name": "힐로웨이브",
+      "korean_name": "힐로웨이브",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": "진피볼륨 재생 및 잔주름 개선에 사용되는 장비",
+      "source": "image_banner"
+    },
+    {
+      "name": "Rejuran",
+      "korean_name": "리쥬란",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "booster",
+      "description": "피부 장벽 강화 및 속건조 개선에 사용되는 주사제",
+      "source": "image_banner"
+    },
+    {
+      "name": "Botox",
+      "korean_name": "스킨보톡스",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "botox",
+      "description": "피부결 개선, 잔주름 개선, 피부 장벽 강화 등에 사용되는 보톡스",
+      "source": "image_banner"
+    },
+    {
+      "name": "Liftera",
+      "korean_name": "리프테라2",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": "즉각 리프팅 및 얼굴라인 정리에 사용되는 장비",
+      "source": "image_banner"
+    },
+    {
+      "name": "Botox",
+      "korean_name": "턱보톡스",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "botox",
+      "description": "턱 라인 정리에 사용되는 보톡스",
+      "source": "image_banner"
+    }
+  ],
+  "treatments": [
+    {
+      "name": "나의미래 울쎄라 후기",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "hifu",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "나의미래 방문/시술 후기",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "울쎄라 시술",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "hifu",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "화상치료",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "여드름 관리",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "색소관리",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "검버섯 제거",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "레이저 치료",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "진정관리",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "원타임 흑자치료",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "눈밑지방제거",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "눈밑"
+    },
+    {
+      "name": "기미지우개",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "리팟레이저 1+1",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "~26.02.28",
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "landing",
+      "category": "laser",
+      "price_display": "1+1",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "리투오 + 스킨보톡스",
+      "regular_price": 1400000,
+      "event_price": 1100000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "2월",
+      "includes": [
+        "리투오",
+        "스킨보톡스"
+      ],
+      "is_package": true,
+      "is_addon": false,
+      "source": "landing",
+      "category": "skinbooster",
+      "price_display": "140만 → 110만",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "힐로웨이브 + 스킨보톡스",
+      "regular_price": 1300000,
+      "event_price": 900000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "2월",
+      "includes": [
+        "힐로웨이브",
+        "스킨보톡스"
+      ],
+      "is_package": true,
+      "is_addon": false,
+      "source": "landing",
+      "category": "rf",
+      "price_display": "130만 → 90만",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "리쥬란 + 스킨보톡스",
+      "regular_price": 900000,
+      "event_price": 600000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "2월",
+      "includes": [
+        "리쥬란",
+        "스킨보톡스"
+      ],
+      "is_package": true,
+      "is_addon": false,
+      "source": "landing",
+      "category": "skinbooster",
+      "price_display": "90만 → 60만",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "리프테라2 + 턱보톡스",
+      "regular_price": 400000,
+      "event_price": 300000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": "2월",
+      "includes": [
+        "리프테라2",
+        "턱보톡스"
+      ],
+      "is_package": true,
+      "is_addon": false,
+      "source": "landing",
+      "category": "hifu",
+      "price_display": "40만 → 30만",
+      "session_info": null,
+      "body_part": null
+    }
+  ],
+  "events": [
+    {
+      "title": "리팟레이저 1+1 이벤트",
+      "type": "할인",
+      "period": "~26.02.28",
+      "discount_info": "1+1",
+      "original_price": null,
+      "event_price": null,
+      "conditions": [
+        "VAT 별도",
+        "동일크기 기준",
+        "개인 피부 상태에 따라 시술 구성은 달라질 수 있습니다"
+      ],
+      "source": "popup"
+    },
+    {
+      "title": "2월, 설레2는 이벤트: 리투오 + 스킨보톡스",
+      "type": "패키지",
+      "period": "2월 (~26.02.28)",
+      "discount_info": "30만원 할인",
+      "original_price": 1400000,
+      "event_price": 1100000,
+      "conditions": [
+        "VAT 별도"
+      ],
+      "source": "popup"
+    },
+    {
+      "title": "2월, 설레2는 이벤트: 힐로웨이브 + 스킨보톡스",
+      "type": "패키지",
+      "period": "2월 (~26.02.28)",
+      "discount_info": "40만원 할인",
+      "original_price": 1300000,
+      "event_price": 900000,
+      "conditions": [
+        "VAT 별도"
+      ],
+      "source": "popup"
+    },
+    {
+      "title": "2월, 설레2는 이벤트: 리쥬란 + 스킨보톡스",
+      "type": "패키지",
+      "period": "2월 (~26.02.28)",
+      "discount_info": "30만원 할인",
+      "original_price": 900000,
+      "event_price": 600000,
+      "conditions": [
+        "VAT 별도"
+      ],
+      "source": "popup"
+    },
+    {
+      "title": "2월, 설레2는 이벤트: 리프테라2 + 턱보톡스",
+      "type": "패키지",
+      "period": "2월 (~26.02.28)",
+      "discount_info": "10만원 할인",
+      "original_price": 400000,
+      "event_price": 300000,
+      "conditions": [
+        "VAT 별도"
+      ],
+      "source": "popup"
+    },
+    {
+      "title": "원타임 흑자치료",
+      "type": "기타",
+      "period": null,
+      "discount_info": null,
+      "original_price": null,
+      "event_price": null,
+      "conditions": [],
+      "source": "text"
+    },
+    {
+      "title": "눈밑지방제거",
+      "type": "기타",
+      "period": null,
+      "discount_info": null,
+      "original_price": null,
+      "event_price": null,
+      "conditions": [],
+      "source": "text"
+    },
+    {
+      "title": "기미지우개",
+      "type": "기타",
+      "period": null,
+      "discount_info": null,
+      "original_price": null,
+      "event_price": null,
+      "conditions": [],
+      "source": "text"
+    }
+  ],
+  "clinic_categories": [
+    {
+      "name": "나의미래 시그니처",
+      "treatments": [
+        "색소 시술",
+        "흉터 시술",
+        "리프팅 시술"
+      ]
+    },
+    {
+      "name": "안티에이징 센터",
+      "treatments": [
+        "맞춤 리프팅"
+      ]
+    },
+    {
+      "name": "눈밑센터",
+      "treatments": [
+        "눈밑 시술"
+      ]
+    },
+    {
+      "name": "피부질환 클리닉",
+      "treatments": [
+        "피부질환 치료"
+      ]
+    },
+    {
+      "name": "쁘띠•스킨케어",
+      "treatments": [
+        "페이스 시술",
+        "바디 시술"
+      ]
+    }
+  ],
+  "contact_info": {
+    "email": [],
+    "phone": [
+      {
+        "number": "050-7871-6288",
+        "type": "대표"
+      }
+    ],
+    "address": {
+      "full_address": "서울 영등포구 국제금융로2길 7 한주빌딩 3층 (여의도동 24번지)",
+      "sido": "서울",
+      "sigungu": "영등포구"
+    },
+    "kakao_channel": null,
+    "naver_booking": null,
+    "naver_place": null,
+    "instagram": null,
+    "facebook": null,
+    "youtube": null,
+    "blog": null,
+    "website_url": "http://mymirae.co.kr/",
+    "operating_hours": {
+      "weekday": "10:30 - 20:00",
+      "saturday": "10:00 - 15:00",
+      "sunday": "휴무(Off)",
+      "lunch_break": "13:30 - 14:30 (평일)"
+    }
+  },
+  "unregistered_equipment": [
+    {
+      "name": "리투오",
+      "korean_name": "리투오",
+      "suggested_category": "SKINBOOSTER",
+      "source": "image_banner",
+      "reason": "콜라겐 재생, 피부결 개선 효과로 보아 스킨부스터 주사제로 추정"
+    },
+    {
+      "name": "힐로웨이브",
+      "korean_name": "힐로웨이브",
+      "suggested_category": "OTHER_DEVICE",
+      "source": "image_banner",
+      "reason": "진피볼륨 재생, 잔주름 개선 효과로 보아 피부과 시술 장비로 추정되나, 특정 카테고리(RF/HIFU/Laser)에 속하는지 불분명함"
+    }
+  ],
+  "unregistered_treatments": [],
+  "raw_price_texts": [],
+  "extraction_summary": {
+    "total_doctors": 2,
+    "total_academic": 0,
+    "total_equipment": 8,
+    "total_devices": 4,
+    "total_injectables": 4,
+    "total_treatments": 17,
+    "total_events": 8,
+    "total_categories": 5,
+    "total_contact_channels": 1,
+    "has_email": false,
+    "has_phone": true,
+    "has_kakao": false,
+    "has_sns": false,
+    "price_available_ratio": "5/17",
+    "unregistered_equipment_count": 2,
+    "unregistered_treatments_count": 0
+  }
+}
+
+──── [2] ocr_raw.json (이미지 OCR 원본) ────
+
+--- page_1_main_capture_0 ---
+나의미래피부과
+아름다움 | 진료과목 피부과 & 성형외과
+
+MIRAE REEPOT LASER
+숨겨진 색소
+피부과 전문의의
+레이저는 타깃에만 레이저 에너지를 조사
+간 병변 데이터에 기반해 색소 부위에 맞춰
+
+비교할 수 없는 다양한 임상경험
+치료만족도
+98%
+피부과 전문의
+
+Before
+After
+
+나의미래 시그니처
+리팟레이저
+1+1
+한번 더!
+* 동일크기 기준
+* 개인 피부 상태에 따라 시술 구성은 달라질 수 있습니다
+
+MYMIRAE
+VAT 별도 | 이벤트 기간 ~26.02.28
+
+리팟레이저 1+1 이벤트
+2월, 설레는 이벤트
+
+오늘 하루종일 열지 않기
+상담하러 가기
+
+--- page_1_main_capture_1 ---
+나의미래피부과
+아름다움 | 신뢰의 피부과 & 성형외과
+
+비교할 수 없는 다양한 임상경험
+치료만족도
+98%
+
+피부과
+전문의
+
+나의미래 시그니처
+리팟레이저
+1+1
+한번 더!
+
+Before After
+* 동일크기 기준
+* 개인 피부 상태에 따라 시술 구성은 달라질 수 있습니다
+
+MYMIRAE
+
+VAT 별도 | 이벤트 기간 ~26.02.28
+
+리팟레이저 1+1 이벤트
+2월, 설레는 이벤트
+
+상담하러 가기
+
+오늘은 하루종일 열지 않기
+
+--- page_1_main_capture_2 ---
+나의미래피부과
+에스테틱 | 안티에이징 피부과 & 성형외과
+
+나의미래가 준비한
+설레2는
+이벤트
+February
+
+수분부터 탄력까지, 내 피부에 딱 맞는 조합
+
+01
+리투오 +
+스킨보톡스
+콜라겐 재생 피부결 개선
+140만
+110만
+
+02
+힐로웨이브 +
+스킨보톡스
+진피볼륨 재생 잔주름 개선
+130만
+90만
+
+03
+리쥬란 +
+스킨보톡스
+피부 장벽 강화 속건조 개선
+90만
+60만
+
+흐려진 얼굴라인, 다시 선명하게
+
+04
+리프테라2 + 턱보톡스
+즉각 리프팅 얼굴라인 정리 효과 증대
+40만
+30만
+
+MYMIRAE
+VAT 별도 | 이벤트 기간 ~26.02.28
+
+리셋레이저 1+1 이벤트
+2월, 설레는 이벤트
+오늘은 하루종일 열지 않기
+울긋불긋 눈밑지방이 고민?
+상담하러 가기
+
+--- page_1_main_capture_3 ---
+나의미래피부과
+에스테틱 | 안티에이징 | 피부과 & 성형외과
+
+나의미래가 준비한
+설레 2는
+이벤트
+
+수분부터 탄력까지, 내 피부에 딱 맞는 조합
+
+01
+리투오 +
+스킨보톡스
+콜라겐 재생 피부결 개선
+-140만
+110만
+
+02
+힐로웨이브 +
+스킨보톡스
+진피 볼륨 재생 잔주름·결 개선
+-130만
+90만
+
+03
+리쥬란 +
+스킨보톡스
+피부 장벽 강화 속건조 개선
+-90만
+60만
+
+흐려진 얼굴라인, 다시 선명하게
+
+04
+리프테라2 + 턱보톡스
+즉각 리프팅 얼굴라인 정리 효과 증대
+-40만
+30만
+
+MYMIRAE
+VAT 별도 | 이벤트 기간 ~26.02.28
+
+리밋레이저 1+1 이벤트
+오늘 하루종일 열지 않기
+
+2월, 설레2는 이벤트
+상담하러 가기
+
+--- page_1_main_capture_4 ---
+나의미래피부과
+에스테틱 | 안티에이징 피부과 & 성형외과
+
+나의미래가 준비한
+설레 2는
+이벤트
+
+나의
+확인해
+피부
+다음
+
+수분부터 탄력까지, 내 피부에 딱 맞는 조합
+
+01
+리투오 +
+스킨보톡스
+콜라겐 재생 피부결 개선
+140만
+110만
+
+02
+힐로웨이브 +
+스킨보톡스
+진피 볼륨 재생 잔주름 개선
+130만
+90만
+
+03
+리쥬란 +
+스킨보톡스
+피부 장벽 강화 속건조 개선
+90만
+60만
+
+피부과 전문의
+
+흐려진 얼굴라인, 다시 선명하게
+04
+리프테라2 + 턱보톡스
+즉각 리프팅 얼굴라인 정리 효과 증대
+40만
+30만
+
+ER
+
+MYMIRAE
+VAT 별도 | 이벤트 기간 ~26.02.28
+
+리뷰에서 1+1 이벤트
+2월, 설레는 이벤트
+오늘 하루종일 열지 않기
+
+상담하러 가기
+
+--- page_1_main_capture_5 ---
+나의미래피부과
+에스테틱 | 안티에이징 | 피부과 & 성형외과
+
+나의미래가 준비한
+설레 2는
+이벤트
+
+수분부터 탄력까지, 내 피부에 딱 맞는 조합
+
+01
+리투오 +
+스킨보톡스
+콜라겐 재생 피부결 개선
+140만
+110만
+
+02
+힐로웨이브 +
+스킨보톡스
+진피 볼륨 재생 잔주름 개선
+130만
+90만
+
+03
+리쥬란 +
+스킨보톡스
+피부 장벽 강화 속건조 개선
+90만
+60만
+
+흐려진 얼굴라인, 다시 선명하게
+04
+리프테라2 + 턱보톡스
+즉각 리프팅 얼굴라인 정리 효과 증대
+40만
+30만
+
+MYMIRAE
+VAT 별도 | 이벤트 기간 ~26.02.28
+
+리프테라2 1+1 이벤트
+2월, 설레2는 이벤트
+
+오늘은 하루종일 열지 않기
+상담하러 가기
+X
+
+--- page_1_main_capture_6 ---
+나의미래피부과
+에스테틱 | 안티에이징 | 피부과 & 성형외과
+
+나의미래가 준비한
+설레2는
+이벤트
+February
+
+수분부터 탄력까지, 내 피부에 딱 맞는 조합
+
+01
+리투오 +
+스킨보톡스
+콜라겐 재생 피부결 개선
+-140만
+110만
+
+02
+힐로웨이브 +
+스킨보톡스
+진피 볼륨 재생 잔주름 개선
+-130만
+90만
+
+03
+리쥬란 +
+스킨보톡스
+피부 장벽 강화 속건조 개선
+-90만
+60만
+
+흐려진 얼굴라인, 다시 선명하게
+04
+리프테라2 + 턱보톡스
+즉각 리프팅 얼굴라인 정리 효과 증대
+-40만
+30만
+
+MYMIRAE
+VAT 별도 | 이벤트 기간 ~26.02.28
+
+리뷰레이저 1+1 이벤트
+2월, 설레2는 이벤트
+
+오늘 하루종일 열지 않기
+상담하러 가기
+
+--- page_1_main_capture_7 ---
+나의미래피부과
+MYMIRAE
+에스테틱 | 안티에이징 | 피부과 전문의
+
+나의미래가 준비한
+설레는
+이벤트
+
+수분부터 탄력까지, 내 피부에 딱 맞는 조합
+
+01
+리투오 +
+스킨보톡스
+콜라겐 재생 피부결 개선
+-140만
+110만
+
+02
+힐로웨이브 +
+스킨보톡스
+진피 볼륨 재생 잔주름 개선
+-130만
+90만
+
+03
+리쥬란 +
+스킨보톡스
+피부 장벽 강화 속건조 개선
+-90만
+60만
+
+흐려진 얼굴라인, 다시 선명하게
+
+04
+리프테라2 + 턱보톡스
+즉각 리프팅 얼굴라인 정리 효과 증대
+-40만
+30만
+
+MYMIRAE
+VAT 별도 | 이벤트 기간 ~26.02.28
+리뷰에서 1+1 이벤트
+2월, 설레는 이벤트
+
+오늘 하루종일 열지 않기
+상담하러 가기
+X
+
+--- page_1_main_capture_8 ---
+나의미래피부과
+예쁜도장 | 진료과목 피부과 & 성형외과
+≡
+나의미래가 준비한
+설레2는
+이벤트
+February
+수분부터 탄력까지, 내 피부에 딱 맞는 조합
+01
+리투오 +
+스킨보톡스
+콜라겐 재생 피부결 개선
+140만
+110만
+02
+힐로웨이브 +
+스킨보톡스
+진피볼륨 재생 잔주름·결개선
+130만
+90만
+03
+리쥬란 +
+스킨보톡스
+피부 장벽 강화 속건조 개선
+90만
+60만
+흐려진 얼굴라인, 다시 선명하게
+04
+리프테라2 + 턱보톡스
+즉각 리프팅 얼굴라인 정리 효과 증대
+40만
+30만
+MYMIRAE
+리셋레이저 1+1 이벤트
+VAT 별도 | 이벤트 기간 ~26.02.28
+2월, 설레2는 이벤트
+오늘 하루종일 열지 않기
+X
+상담하러 가기
+
+--- page_1_main_capture_9 ---
+나의미래피부과
+MYMIRAE
+피부과 전문의 & 성형외과
+지도 보기
+비교할 수 없는 다양한 임
+여의대로
+Tesla 서울
+여의도 스토어
+February
+치료만족도
+98%
+Apple 여의도
+는 조합
+콘래드 서울
+4.4 ★ (6942)
+5성급 호텔
+03
+리쥬란 +
+스킨보톡스
+(uncertain: 김형수)
+여의도동 24번지 복사
+피부 장벽 강화
+속건조 개선
+나의
+리
+MYMIRAE
+-90만
+60만
+Before
+After
+구글맵
+IFC 몰
+국제금융로
+계
+30만
+*개인 피부 상태에 따라 결과는 달라질 수 있습니다.
+파크원 (Pa
+T 별도 | 이벤트 기간 ~26.02.28
+여의대로
+국제금융로2길
+리셋레이저 1+1 이벤트
+2월, 설레는 이벤트
+동양화재
+청담식
+한식
+오늘 하루종일 열지 않기
+3~4번 출구로 나오시면 됩니다.
+X
+상담하러 가기
++
+
+--- page_1_main_capture_10 ---
+나의미래피부과
+MYMIRAE DERMATOLOGY
+에스테틱 | 안티에이징 | 피부과 & 성형외과
+
+동양화재
+대한빌딩
+정식당
+한식
+신송빌딩
+우리은행
+다이소 여의도점
+신송센터
+빌딩
+여의나루로
+도정
+여의나루로
+
+050-7871-6288
+
+Reservation & Consultation
+
+평일(Week) 10:30 - 20:00
+토(Sat) 10:00 - 15:00
+일(Sun) 휴무(Off)
+점심(Lunch) 13:30 - 14:30
+
+* 토요일은 점심시간 없이 정상진료합니다.
+
+이용약관 | 개인정보처리방침
+
+비교할 수 없는 다양한 임상경험
+치료만족도
+98%
+
+피부과
+전문의
+
+나의미래 시그니처
+리팟레이저
+1+1
+한번 더!
+
+Before After
+MYMIRAE
+
+* 동일크기 기준
+* 개인 피부 상태에 따라 시술 구성은 달라질 수 있습니다
+
+VAT 별도 | 이벤트 기간 ~26.02.28
+
+나의미래피부과
+MYMIRAE DERMATOLOGY
+사업자등록번호 | 123-45-67890
+TEL : 050-78
+상호 : 나의미래
+Copyright ©
+
+리팟레이저 1+1 이벤트
+2월, 설레는 이벤트
+
++
+
+오늘 하루종일 열지 않기
+
+상담하러 가기
+
+──── [3] coverage_raw.txt (커버리지 검증 로그) ────
+{
+  "missing_equipments": [],
+  "missing_treatments": [
+    "나의미래 퀵 눈밑지방제거 수술"
+  ],
+  "missing_doctors": [],
+  "missing_prices": [],
+  "coverage_score": {
+    "equipment": 100,
+    "treatment": 96,
+    "doctor": 100,
+    "overall": 98
+  },
+  "issues": [
+    "추출된 '시술' 목록에 실제 시술 메뉴가 아닌 리뷰 제목(예: '나의미래 울쎄라 후기') 및 섹션/카테고리명(예: '나의미래 시그니처')이 포함되어 있어 시술 정의의 일관성이 부족합니다.",
+    "장비 및 시술명에서 원본과 추출 결과 간에 영문 음차(예: '리팟레이저' -> 'Reepot Laser', '리쥬란' -> 'Rejuran', '보톡스' -> 'Botox') 또는 세부 정보 누락(예: '리프테라2' -> 'Liftera', '리팟레이저 1+1 이벤트' -> '리팟레이저 1+1')이 발견되었습니다."
+  ]
+}

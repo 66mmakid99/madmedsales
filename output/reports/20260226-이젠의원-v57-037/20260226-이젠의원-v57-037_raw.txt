@@ -1,0 +1,1127 @@
+═══════════════════════════════════════════════════
+  이젠의원 — 추출 원본 데이터
+═══════════════════════════════════════════════════
+
+──── [1] analysis.json (Gemini 분류 결과) ────
+{
+  "hospital_name": "이젠의원",
+  "doctors": [
+    {
+      "name": "이 란",
+      "title": "대표 원장",
+      "specialty": null,
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    }
+  ],
+  "academic_activities": [],
+  "medical_devices": [
+    {
+      "name": "Ulthera",
+      "korean_name": "울쎄라",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": null,
+      "source": "screenshot"
+    },
+    {
+      "name": "Splendor X",
+      "korean_name": "스플렌더 X",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": null,
+      "source": "screenshot"
+    },
+    {
+      "name": "Density Alpha",
+      "korean_name": "덴서티 알파",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "text"
+    }
+  ],
+  "treatments": [
+    {
+      "name": "색소",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "여드름",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "홍조",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "제모",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "쁘띠",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "botox_filler",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "스킨부스터",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "skinbooster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "lifting",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "피부관리",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "메디컬관리",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "비타민관리",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "체형관리",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "피부질환",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "무좀",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "문신제거",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "보톡스",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "botox",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "필러",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "filler",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "다이어트 프로그램",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "남성 맞춤형 스킨케어 솔루션",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "Ulthera Prime",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "hifu",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "Splendor X",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "Juvelook",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "skinbooster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "리프팅 박스",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": true,
+      "is_addon": false,
+      "source": "text",
+      "category": "lifting",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "맨즈 시크릿가든",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": true,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "덴서티 알파",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "리투오",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other_injectable",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    }
+  ],
+  "events": [
+    {
+      "title": "3월 프로모션",
+      "type": "시즌",
+      "period": null,
+      "discount_info": null,
+      "original_price": null,
+      "event_price": null,
+      "conditions": [],
+      "source": "text"
+    },
+    {
+      "title": "설맞이 더블베네핏",
+      "type": "시즌",
+      "period": null,
+      "discount_info": null,
+      "original_price": null,
+      "event_price": null,
+      "conditions": [],
+      "source": "text"
+    },
+    {
+      "title": "리프팅 박스",
+      "type": "패키지",
+      "period": null,
+      "discount_info": null,
+      "original_price": null,
+      "event_price": null,
+      "conditions": [],
+      "source": "text"
+    },
+    {
+      "title": "맨즈 시크릿가든",
+      "type": "패키지",
+      "period": null,
+      "discount_info": null,
+      "original_price": null,
+      "event_price": null,
+      "conditions": [],
+      "source": "text"
+    },
+    {
+      "title": "덴서티 알파",
+      "type": "기타",
+      "period": null,
+      "discount_info": null,
+      "original_price": null,
+      "event_price": null,
+      "conditions": [],
+      "source": "text"
+    },
+    {
+      "title": "리투오 런칭",
+      "type": "기타",
+      "period": null,
+      "discount_info": null,
+      "original_price": null,
+      "event_price": null,
+      "conditions": [],
+      "source": "text"
+    }
+  ],
+  "clinic_categories": [
+    {
+      "name": "시그니처",
+      "treatments": [
+        "색소",
+        "여드름",
+        "홍조",
+        "제모",
+        "쁘띠",
+        "스킨부스터",
+        "리프팅",
+        "피부관리",
+        "메디컬관리",
+        "비타민관리",
+        "체형관리",
+        "피부질환",
+        "무좀",
+        "문신제거"
+      ]
+    },
+    {
+      "name": "안티에이징",
+      "treatments": [
+        "쁘띠",
+        "스킨부스터",
+        "리프팅"
+      ]
+    },
+    {
+      "name": "스킨케어",
+      "treatments": [
+        "피부관리",
+        "메디컬관리",
+        "비타민관리"
+      ]
+    },
+    {
+      "name": "특수클리닉",
+      "treatments": [
+        "체형관리",
+        "피부질환",
+        "무좀",
+        "문신제거"
+      ]
+    },
+    {
+      "name": "이젠맨즈",
+      "treatments": [
+        "남성 맞춤형 스킨케어 솔루션",
+        "맨즈 시크릿가든"
+      ]
+    },
+    {
+      "name": "티아라 컨시어지",
+      "treatments": []
+    },
+    {
+      "name": "피부 질환",
+      "treatments": [
+        "색소",
+        "여드름",
+        "홍조",
+        "피부질환",
+        "무좀"
+      ]
+    },
+    {
+      "name": "리프팅",
+      "treatments": [
+        "리프팅",
+        "리프팅 박스",
+        "Ulthera Prime",
+        "덴서티 알파"
+      ]
+    },
+    {
+      "name": "보톡스/필러",
+      "treatments": [
+        "보톡스",
+        "필러",
+        "쁘띠"
+      ]
+    },
+    {
+      "name": "다이어트",
+      "treatments": [
+        "다이어트 프로그램",
+        "체형관리"
+      ]
+    },
+    {
+      "name": "남성 피부과",
+      "treatments": [
+        "남성 맞춤형 스킨케어 솔루션",
+        "맨즈 시크릿가든"
+      ]
+    }
+  ],
+  "contact_info": {
+    "email": [],
+    "phone": [
+      {
+        "number": "041-561-7978~9",
+        "type": "상담"
+      }
+    ],
+    "address": {
+      "full_address": "충청남도 천안시 서북구 오성6길 4 이젠빌딩 4, 5층 (두정동)",
+      "sido": "충청남도",
+      "sigungu": "천안시 서북구"
+    },
+    "kakao_channel": "https://kko.to/5gCoOwrepu",
+    "naver_booking": null,
+    "naver_place": "https://naver.me/FbRi4EoP",
+    "instagram": null,
+    "facebook": null,
+    "youtube": null,
+    "blog": null,
+    "website_url": "http://www.ezenskin.co.kr",
+    "operating_hours": {
+      "weekday": "AM 09:30 - PM 19:00",
+      "saturday": "AM 09:30 - PM 14:00 (점심시간 없음)",
+      "sunday": null,
+      "lunch_break": "PM 13:00 - PM 14:00"
+    }
+  },
+  "unregistered_equipment": [
+    {
+      "name": "Density Alpha",
+      "korean_name": "덴서티 알파",
+      "suggested_category": "other_device",
+      "source": "text",
+      "reason": "Not in predefined device list, appears as a launch event for a device."
+    }
+  ],
+  "unregistered_treatments": [
+    {
+      "name": "리프팅 박스",
+      "source": "text",
+      "context": "Event item, sounds like a package treatment"
+    },
+    {
+      "name": "맨즈 시크릿가든",
+      "source": "text",
+      "context": "Event item, sounds like a package treatment"
+    },
+    {
+      "name": "덴서티 알파",
+      "source": "text",
+      "context": "Event item, could be a treatment program using the device"
+    },
+    {
+      "name": "리투오",
+      "source": "text",
+      "context": "Event item, sounds like an injectable product launch"
+    }
+  ],
+  "raw_price_texts": [],
+  "extraction_summary": {
+    "total_doctors": 1,
+    "total_academic": 0,
+    "total_equipment": 3,
+    "total_devices": 3,
+    "total_injectables": 0,
+    "total_treatments": 25,
+    "total_events": 6,
+    "total_categories": 11,
+    "total_contact_channels": 6,
+    "has_email": false,
+    "has_phone": true,
+    "has_kakao": true,
+    "has_sns": false,
+    "price_available_ratio": "0/25",
+    "unregistered_equipment_count": 1,
+    "unregistered_treatments_count": 4
+  }
+}
+
+──── [2] ocr_raw.json (이미지 OCR 원본) ────
+
+--- page_1_main_capture_0 ---
+EZEN
+SKINCARE CLINIC
+The EZEN
+시그니처
+안티에이징
+스킨케어
+특수클리닉
+이젠맨즈
+티아리앤시아지
+커뮤니티
+LOGIN | JOIN
+
+Only For
+Your Skin.
+
+오직, 당신의 피부만 생각합니다.
+그래서 우리는 한 걸음 더 그대에게 가까이 가겠습니다.
+
+다양한 케이스와 노하우로
+당신만을 위한 프로그램을 설계하는 곳, 이젠클리닉.
+
++
+↑
+
+--- page_1_main_capture_1 ---
+EZEN
+SKINCARE CLINIC
+TheEZEN
+시그니처
+안티에이징
+스킨케어
+특수클리닉
+이젠몰
+티아리션시그
+커뮤니티
+LOGIN | JOIN
+
+Signature
+
+색소 / 여드름 / 홍조 / 제모
+쁘띠 / 스킨부스터 / 리프팅
+피부관리 / 메디컬관리 / 비타민관리
+체형관리 / 피부질환 / 무좀 / 문신제거
+
++
+↑
+
+--- page_1_main_capture_2 ---
+EZEN
+SKINCARE CLINIC
+TheEZEN 시그니처 안티에이징 스킨케어 Doctor 특수클리닉 이젠맨즈 티아라앤시크 커뮤니티 LOGIN JOIN
+
+이 란 대표 원장
+
+피부에 대한 깊은 철학과 이해도를 바탕으로,
+환자의 피부를 진단하기에 앞서
+나무를 보는 것이 아닌 숲을 바라보듯
+개인에게 맞는 적절하고 효율적인 솔루션으로
+건강한 아름다움의 재발견을 도와드리겠습니다.
+
+View More +
+
+Philosophy
+
+내 피부에 맞는 진단의 시작,
+개인이 가지고 있는 피부 특성에 따라 진단과 프로그램은 달라야 합니다.
+다양한 레이저를 경험하고 연구한 의료진들이 최선의 시술을 선사합니다.
+
+근본을 바탕으로 트렌드를 추구하는 이젠클리닉은
+새로운 뷰티 패러다임을 제시합니다.
+
+View More +
+EZEN
++
+↑
+
+--- page_1_main_capture_3 ---
+EZEN
+SKINCARE CLINIC
+The EZEN
+시그니처
+안티에이징
+스킨케어
+특수클리닉
+이젠맨즈
+티아라컨시어지
+커뮤니티
+LOGIN
+JOIN
+
+Tiara membership
+티아라 컨시어지
+당신의 가치를 더욱 빛나게,
+이젠만의 특별한 컨시어지 서비스
+View More +
+
+EZEN's homme
+이젠맨즈
+남자들의 스타일 지수를 업그레이드 시킬
+섬세한 시술, 그 이상의 만족
+View More +
+
+Before & After
+결과로 말하는 이젠,
+방문해 주신 고객분들의 눈부신 변화들을 확인해 보세요.
+
++
+↑
+
+--- page_1_main_capture_4 ---
+EZEN
+SKINCARE CLINIC
+TheEZEN
+시그니처
+안티에이징
+스킨케어
+특수클리닉
+이젠맨즈
+티어리젠시
+커뮤니티
+LOGIN | JOIN
+BEFORE
+AFTER
+BEFORE
+BEFORE
+BEFORE
+BEFORE
+AFTER
+BEFORE
+BEFORE
+
+Instagram Youtube
+EZEN의원 공식 인스타그램 계정을 팔로우하시면
+다양한 소식을 빠르게 확인하실 수 있습니다.
+
+Ultherapy PRIME
+
+SPLENDOR X
+
+JUVELOC
+
++
+↑
+
+--- page_1_main_capture_5 ---
+EZEN
+SKINCARE CLINIC
+The EZEN
+시그니처
+안티에이징
+스킨케어
+특수클리닉
+이젠맨즈
+티아라리프팅
+커뮤니티
+LOGIN | JOIN
+
+피부 질환
+참을 수 없는 가려움과 통증의
+근본
+적인 원인 해결 & 재발 방지 케어
+
+리프팅
+피부 처짐, 주름 등 특성과 고민에
+맞춘 정교한 리프팅 솔루션
+
+보톡스/필러
+개인의 얼굴과 체형을 고려한
+페이스&바디 디자인 시술
+
+다이어트
+개인의 바디 타입과 체질을 고려한
+특허받은 다이어트 프로그램
+
+남성 피부과
+남성 전용 레이저 장비로 완성하는
+남성 맞춤형 스킨케어 솔루션
+
+0.3km
+5사아파트
+502
+501
+BBQ
+초은오
+상상갈비 솜에아
+CU
+GS25
+109
+116
+101
+102
+103
+110
+115
+아토어린이집
+111
+114
+112
+113
+CU
+101
+102
+103
+천안백석센트레빌
+파크디션아파트
+이젠의원
+마르페 커피
+노태산
+능이오리
+명장복집
+서울삼성
+내과의원
+한빛동물병원
+웨브레
+두정로
+행복한리
+유치원
+원더랜드
+어린이집
+두정오성공원 소담골
+남경오피스텔
+틴나나 마살
+아츠트킹 아크로바틱
+신지헤어살롱
+신화수산
+활어회센타
+천안두정행복주택
+1단지아파트
+롯데프레시
+&델리
+성쾌한
+이비인후과 의원
+오성로
+오성로
+조상현
+탁구클럽
+205
+천안명성교회
+203
+청년찜
+두정본점 세광리치빌
+202자아파트
+401
+402
+더
+상가
+403
+404
+두정4차
+푸르지오아파트
+kakao
+50m
+천안CA마트
+크라운호프
+CU
+리차드
+프로헤어
+다나
+메디피아의원
+SG골프
+천안오성
+초등학교
+서울수아
+청소년과의원
+권정화 석정
+3공원
+
+Contact us
+
+EZEN의원 오시는 길
+충청남도 천안시 서북구 오성6길 4 이젠빌딩 4, 5층 (두정동)
+
+상담전화 041-561-7978-9
+
+진료시간 월 ~ 목 AM 09:30 - PM 19:00
+금 요 일 AM 10:00 - PM 20:00 (야간진료)
+토 요 일 AM 09:30 - PM 14:00 (점심시간 없음)
+점 심 시 간 PM 13:00 - PM 14:00
+
+네이버 길찾기
+카카오 길찾기
+
+--- page_1_main_capture_6 ---
+EZEN
+SKINCARE CLINIC
+The EZEN
+시그니처
+안티에이징
+스킨케어
+특수클리닉
+이젠렌즈
+티아라리프팅
+커뮤니티
+LOGIN
+JOIN
+
+0.3km 3분
+5사아파트
+502
+BBQ
+조은오
+두정로
+501
+상상갈비 솜헤어
+Contact us
+109
+116
+101
+명랑핫도그 서부점
+내과의원
+한빛동물병원
+쉐보레
+102
+메르베 커피
+순복음참
+아름다운교회
+GS25
+CU
+110
+
+──── [3] coverage_raw.txt (커버리지 검증 로그) ────
+{
+  "missing_equipments": [],
+  "missing_treatments": [],
+  "missing_doctors": [],
+  "missing_prices": [],
+  "coverage_score": {
+    "equipment": 100,
+    "treatment": 100,
+    "doctor": 100,
+    "overall": 100
+  },
+  "issues": []
+}

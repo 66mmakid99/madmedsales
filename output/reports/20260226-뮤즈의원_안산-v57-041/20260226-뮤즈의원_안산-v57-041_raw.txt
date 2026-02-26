@@ -1,0 +1,1145 @@
+═══════════════════════════════════════════════════
+  뮤즈의원 안산 — 추출 원본 데이터
+═══════════════════════════════════════════════════
+
+──── [1] analysis.json (Gemini 분류 결과) ────
+{
+  "hospital_name": "뮤즈의원 안산",
+  "doctors": [
+    {
+      "name": "김재민",
+      "title": "원장",
+      "specialty": null,
+      "career": [
+        "전) 강남 뮤즈의원 원장",
+        "고려대학교 의과대학병원 전공의 수료",
+        "고려대학교 의과대학병원 임상초빙교수"
+      ],
+      "education": [
+        "고려대학교 의과대학 졸업"
+      ],
+      "certifications": [],
+      "confidence": "confirmed"
+    }
+  ],
+  "academic_activities": [
+    {
+      "type": "기타",
+      "title": "대한미용의사사회 학술이사",
+      "year": null,
+      "doctor_name": "김재민",
+      "source_text": "대한미용의사사회 학술이사"
+    },
+    {
+      "type": "기타",
+      "title": "대한레이저피부모발학회",
+      "year": null,
+      "doctor_name": "김재민",
+      "source_text": "대한레이저피부모발학회"
+    },
+    {
+      "type": "기타",
+      "title": "대한미용성형레이저의학회",
+      "year": null,
+      "doctor_name": "김재민",
+      "source_text": "대한미용성형레이저의학회"
+    }
+  ],
+  "medical_devices": [
+    {
+      "name": "PicoSure",
+      "korean_name": "피코슈어",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Rejuran",
+      "korean_name": "리쥬란",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "booster",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Shurink Universe",
+      "korean_name": "슈링크유니버스",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Oligio",
+      "korean_name": "올리지오",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_TIGHTENING",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Ulthera Prime",
+      "korean_name": "울쎄라 프라임",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Thermage FLX",
+      "korean_name": "써마지 FLX",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_TIGHTENING",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "InMode",
+      "korean_name": "인모드",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_TIGHTENING",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "ExcelV",
+      "korean_name": "엑셀V",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Potenza",
+      "korean_name": "포텐자",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_MICRONEEDLE",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "LDM",
+      "korean_name": "LDM",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "IPL",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "MarkVu",
+      "korean_name": "마크뷰",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": "피부 진단 기기로 정확한 피부 측정. 세계 최초 전 광원 LED 분석기로 모공, 색소, 피지, 노화 (현재 주름, 미래 주름)등을 정확한 피부 상태를 측정합니다.",
+      "source": "text"
+    },
+    {
+      "name": "Tensera",
+      "korean_name": "텐써마",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_TIGHTENING",
+      "description": null,
+      "source": "screenshot"
+    },
+    {
+      "name": "Emface",
+      "korean_name": "엠페이스",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "BODY",
+      "description": null,
+      "source": "screenshot"
+    },
+    {
+      "name": "Genesis",
+      "korean_name": "제네시스",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": null,
+      "source": "screenshot"
+    },
+    {
+      "name": "Botox",
+      "korean_name": "보톡스",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "botox",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Filler",
+      "korean_name": "필러",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "filler",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Juvelook",
+      "korean_name": "쥬베룩",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "booster",
+      "description": null,
+      "source": "screenshot"
+    }
+  ],
+  "treatments": [
+    {
+      "name": "피코슈어토닝",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "리쥬란힐러HB플러스",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "skinbooster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "슈링크유니버스리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "hifu",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "얼굴 필러",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "filler",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "얼굴"
+    },
+    {
+      "name": "올리지오 리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "울쎄라 프라임",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "image_banner",
+      "category": "hifu",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "써마지 FLX",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "image_banner",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "화이트닝",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "image_banner",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "리쥬란",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "image_banner",
+      "category": "skinbooster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "레이저토닝",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "필러",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "filler",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "보톡스",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "botox",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "시술 상담",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": 1000,
+      "max_price": null,
+      "price_type": "regular",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "other",
+      "price_display": "1,000원 ~",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "턱보톡스",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": 25000,
+      "max_price": null,
+      "price_type": "regular",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "botox",
+      "price_display": "25,000원 ~",
+      "session_info": null,
+      "body_part": "턱"
+    },
+    {
+      "name": "인모드리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "프리미엄 리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "입술필러",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "filler",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "입술"
+    },
+    {
+      "name": "볼필러",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "filler",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "볼"
+    },
+    {
+      "name": "콧대필러",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "filler",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "콧대"
+    },
+    {
+      "name": "윤곽주사",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "lipolytic",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "제모",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    }
+  ],
+  "events": [
+    {
+      "title": "2월 EVENT",
+      "type": "시즌",
+      "period": "2026-02-01 ~ 2026-02-28",
+      "discount_info": "모든 이벤트 상품 VAT 10% 별도",
+      "original_price": null,
+      "event_price": null,
+      "conditions": [
+        "해당 기간동안 방문 고객"
+      ],
+      "source": "screenshot"
+    },
+    {
+      "title": "1회 체험이벤트",
+      "type": "기타",
+      "period": null,
+      "discount_info": null,
+      "original_price": null,
+      "event_price": null,
+      "conditions": [],
+      "source": "screenshot"
+    },
+    {
+      "title": "2026 뮤즈 새학기 스페셜",
+      "type": "시즌",
+      "period": "~ 3월 7일",
+      "discount_info": null,
+      "original_price": null,
+      "event_price": null,
+      "conditions": [],
+      "source": "screenshot"
+    },
+    {
+      "title": "12~16시 타임특가 이벤트",
+      "type": "할인",
+      "period": null,
+      "discount_info": null,
+      "original_price": null,
+      "event_price": null,
+      "conditions": [],
+      "source": "screenshot"
+    },
+    {
+      "title": "탄력/리프팅레이저",
+      "type": "패키지",
+      "period": null,
+      "discount_info": null,
+      "original_price": null,
+      "event_price": null,
+      "conditions": [],
+      "source": "screenshot"
+    },
+    {
+      "title": "프리미엄 리프팅",
+      "type": "패키지",
+      "period": null,
+      "discount_info": null,
+      "original_price": null,
+      "event_price": null,
+      "conditions": [],
+      "source": "screenshot"
+    },
+    {
+      "title": "색소/흉터제거",
+      "type": "패키지",
+      "period": null,
+      "discount_info": null,
+      "original_price": null,
+      "event_price": null,
+      "conditions": [],
+      "source": "screenshot"
+    },
+    {
+      "title": "스킨부스터",
+      "type": "패키지",
+      "period": null,
+      "discount_info": null,
+      "original_price": null,
+      "event_price": null,
+      "conditions": [],
+      "source": "screenshot"
+    },
+    {
+      "title": "필러/쁘띠성형",
+      "type": "패키지",
+      "period": null,
+      "discount_info": null,
+      "original_price": null,
+      "event_price": null,
+      "conditions": [],
+      "source": "screenshot"
+    },
+    {
+      "title": "보톡스/윤곽주사",
+      "type": "패키지",
+      "period": null,
+      "discount_info": null,
+      "original_price": null,
+      "event_price": null,
+      "conditions": [],
+      "source": "screenshot"
+    },
+    {
+      "title": "여드름/모공/흉터",
+      "type": "패키지",
+      "period": null,
+      "discount_info": null,
+      "original_price": null,
+      "event_price": null,
+      "conditions": [],
+      "source": "screenshot"
+    },
+    {
+      "title": "제모",
+      "type": "패키지",
+      "period": null,
+      "discount_info": null,
+      "original_price": null,
+      "event_price": null,
+      "conditions": [],
+      "source": "screenshot"
+    }
+  ],
+  "clinic_categories": [
+    {
+      "name": "탄력/리프팅레이저",
+      "treatments": [
+        "울쎄라 프라임",
+        "써마지 FLX",
+        "텐써마 리프팅",
+        "올리지오 리프팅",
+        "인모드리프팅",
+        "슈링크유니버스리프팅"
+      ]
+    },
+    {
+      "name": "프리미엄 리프팅",
+      "treatments": [
+        "울쎄라프라임",
+        "엠페이스 리프팅"
+      ]
+    },
+    {
+      "name": "색소/흉터제거",
+      "treatments": [
+        "피코슈어토닝",
+        "엑셀V 레이저",
+        "제네시스 레이저"
+      ]
+    },
+    {
+      "name": "스킨부스터",
+      "treatments": [
+        "리쥬란",
+        "쥬베룩",
+        "스킨부스터 주사제"
+      ]
+    },
+    {
+      "name": "필러/쁘띠성형",
+      "treatments": [
+        "입술필러",
+        "볼필러",
+        "콧대필러"
+      ]
+    },
+    {
+      "name": "보톡스/윤곽주사",
+      "treatments": [
+        "보톡스",
+        "윤곽주사"
+      ]
+    },
+    {
+      "name": "여드름/모공/흉터",
+      "treatments": [
+        "여드름 치료",
+        "모공 치료",
+        "흉터 치료"
+      ]
+    },
+    {
+      "name": "제모",
+      "treatments": [
+        "제모"
+      ]
+    }
+  ],
+  "contact_info": {
+    "email": [],
+    "phone": [],
+    "address": {
+      "full_address": "롯데시네마 센트럴락 3층",
+      "sido": null,
+      "sigungu": null
+    },
+    "kakao_channel": null,
+    "naver_booking": null,
+    "naver_place": null,
+    "instagram": null,
+    "facebook": null,
+    "youtube": null,
+    "blog": null,
+    "website_url": "http://ansan.museclinic.co.kr",
+    "operating_hours": null
+  },
+  "unregistered_equipment": [
+    {
+      "name": "코레지2.0",
+      "korean_name": "코레지2.0",
+      "suggested_category": "other_device",
+      "source": "text",
+      "reason": "사전에 없는 장비명, 문맥상 피부관리 장비로 추정"
+    },
+    {
+      "name": "Aileen",
+      "korean_name": "에일린",
+      "suggested_category": "laser",
+      "source": "text",
+      "reason": "사전에 없는 장비명, 다른 레이저 장비와 함께 언급됨"
+    },
+    {
+      "name": "Apogee+",
+      "korean_name": "아포지플러스",
+      "suggested_category": "laser",
+      "source": "text",
+      "reason": "사전에 없는 장비명, Apogee는 레이저 장비로 알려져 있음"
+    },
+    {
+      "name": "ZoomPass",
+      "korean_name": "줌패스",
+      "suggested_category": "laser",
+      "source": "text",
+      "reason": "사전에 없는 장비명, 다른 레이저 장비와 함께 언급됨"
+    },
+    {
+      "name": "Focus",
+      "korean_name": "포커스",
+      "suggested_category": "laser",
+      "source": "text",
+      "reason": "사전에 없는 장비명, 다른 레이저 장비와 함께 언급됨"
+    },
+    {
+      "name": "Corage",
+      "korean_name": "Corage",
+      "suggested_category": "other_device",
+      "source": "screenshot",
+      "reason": "사전에 없는 장비명, 이미지에서 장비로 보임"
+    },
+    {
+      "name": "주사제",
+      "korean_name": "주사제",
+      "suggested_category": "other_injectable",
+      "source": "screenshot",
+      "reason": "사전에 없는 주사제명, 일반적인 주사제를 의미"
+    }
+  ],
+  "unregistered_treatments": [
+    {
+      "name": "색소질환 치료",
+      "source": "text",
+      "context": "기미, 주근깨, 잡티 등과 같은 색소질환은 다양한 병변들이 혼합된 경우가 많습니다. 피부 손상이 적으면서 효과적인 멜라닌 치료를 위해서는 적합한 레이저 치료가 동반되어야 합니다."
+    },
+    {
+      "name": "멜라닌 치료",
+      "source": "text",
+      "context": "피부 손상이 적으면서 효과적인 멜라닌 치료를 위해서는 적합한 레이저 치료가 동반되어야 합니다."
+    },
+    {
+      "name": "텐써마 리프팅",
+      "source": "screenshot",
+      "context": "탄력/리프팅레이저: 울쎄라, 써마지, 텐써마, 올리지오X, 인모드, 슈링크"
+    },
+    {
+      "name": "엠페이스 리프팅",
+      "source": "screenshot",
+      "context": "프리미엄 리프팅: 울쎄라프라임, 엠페이스"
+    },
+    {
+      "name": "엑셀V 레이저",
+      "source": "screenshot",
+      "context": "색소/흉터제거: 피코슈어토닝, 엑셀V, 제네시스"
+    },
+    {
+      "name": "제네시스 레이저",
+      "source": "screenshot",
+      "context": "색소/흉터제거: 피코슈어토닝, 엑셀V, 제네시스"
+    },
+    {
+      "name": "스킨부스터 주사제",
+      "source": "screenshot",
+      "context": "스킨부스터: 리쥬란, 쥬베룩, 주사제"
+    },
+    {
+      "name": "여드름 치료",
+      "source": "screenshot",
+      "context": "여드름/모공/흉터"
+    },
+    {
+      "name": "모공 치료",
+      "source": "screenshot",
+      "context": "여드름/모공/흉터"
+    },
+    {
+      "name": "흉터 치료",
+      "source": "screenshot",
+      "context": "여드름/모공/흉터"
+    }
+  ],
+  "raw_price_texts": [
+    "1,000원 ~",
+    "25,000원 ~"
+  ],
+  "extraction_summary": {
+    "total_doctors": 1,
+    "total_academic": 3,
+    "total_equipment": 17,
+    "total_devices": 14,
+    "total_injectables": 3,
+    "total_treatments": 21,
+    "total_events": 12,
+    "total_categories": 8,
+    "total_contact_channels": 1,
+    "has_email": false,
+    "has_phone": false,
+    "has_kakao": false,
+    "has_sns": false,
+    "price_available_ratio": "2/21",
+    "unregistered_equipment_count": 7,
+    "unregistered_treatments_count": 10
+  }
+}
+
+──── [2] ocr_raw.json (이미지 OCR 원본) ────
+
+--- page_1_main_capture_0 ---
+MUSE CLINIC
+뮤즈의원 안산
+소개 가격 이벤트 청산/불만 상담/예약
+0
+KOR
+
+안산뮤즈의원
+울쎄라 프라임
+
+피부 탄력
+
+다시 보지 않기 | 닫기
+
+좌우로 넘겨보세요
+
+--- page_2_other_capture_0 ---
+MUSE CLINIC
+뮤즈의원 안산
+
+소개 가격 이벤트 칭찬/불만 상담/예약 🔍 🛒 0 ≡ 🌐 KOR ▼
+
+안산뮤즈의원
+울쎄라 프라임
+
+다시 보지 않기 | 닫기
+
+좌우로 넘겨보세요
+
+--- page_3_other_capture_0 ---
+MUSE CLINIC
+뮤즈의원 안산
+소개 가격 이벤트 칭찬/불만 상담/예약 🔍 🛒 0 ☰ KOR ▾
+
+더 예뻐지는 공간, 안산 뮤즈
+
+더 예뻐지는 공간, 안산 뮤즈
+의사 & 스탭 소개
+오시는 길, 진료 시간
+공지사항
+
+MUSE CLINIC
+안산
+뮤즈의원, 그 시작
+
+--- page_3_other_capture_1 ---
+MUSE CLINIC
+뮤즈의원 안산
+소개 가격 이벤트 칭찬/불만 상담/예약
+KOR
+MUSE CLINIC
+
+무엇보다,
+고객을 가장 최우선으로 생각하는 친절한 의료진과 스탭들이
+고객을 맞이 합니다.
+
+MUSE CLINIC
+
+--- page_3_other_capture_2 ---
+MUSE CLINIC
+뮤즈의원 안산
+소개 가격 이벤트 칭찬/불만 상담/예약
+KOR
+
+고객을 위해,
+
+프라이빗, 고급스러움
+
+VIP실과 1인실을 운영하여 더욱 프라이빗한 시술을 받으실 수 있습
+니다. 자연을 모티브로 한 공간 속에서 편안한 휴식시간을 즐기시면서
+아름다워지세요.
+
+좋은 향기도 더 근사한 하루를 만들어 줄거에요. 뮤즈의원 안산에는
+고급 향수가 준비되어 있습니다. 향기도 더하세요.
+
+롯데시네마 센트럴락 3층에 위치한 뮤즈의원은 편안한 주차 시설을
+제공합니다. 더 이상 주차 공간을 기다리지 마세요.
+
+MUSE
+ANSAN
+김재민
+
+--- page_3_other_capture_3 ---
+MUSE CLINIC
+뮤즈의원 안산
+소개 가격 이벤트 칭찬/불만 상담/예약
+KOR
+경력
+전) 강남 뮤즈의원 원장
+고려대학교 의과대학 졸업
+고려대학교 의과대학병원 전공의 수료
+고려대학교 의과대학병원 임상초빙교수
+학회 활동
+대한미용의사사회 학술이사
+대한레이저피부모발학회
+대한미용성형레이저의학회
+
+소수만이 누리던 경험을 모두가
+부담없이 누릴 수 있도록 하는 것을 목표로
+정직하고, 합리적인 아름다움을 위해 노력할 것입니다.
+
+[마크뷰] 피부 진단 기기로 정확한 피부 측정
+뮤즈의원 안산은 고객의 안전을 먼저 생각하고 있으며, 높은 만
+족도를 지향하고 합리적인 가격으로 최상의 서비스를 제공합니
+다.
+마크뷰는 세계 최초 전 광원 LED 분석기로 모공, 색소, 피지, 노
+화 (현재 주름, 미래 주름)등을 정확한 피부 상태를 측정합니다.
+뮤즈의원 안산에서는 분석자료를 토대로 최적의 피부 솔루션을
+제공합니다.
+
+--- page_3_other_capture_4 ---
+MUSE CLINIC
+뮤즈의원 안산
+소개 가격 이벤트 칭찬/불만 상담/예약
+KOR
+많은 시술 케이스, 친절한 스텝
+피부, 지방, 근육의 노화는 30대 초반부터 시작됩니다. 30대 초반부터 피부의 다양한 고민을 해
+결하기 위해 적합한 기기가 필요합니다.
+뮤즈의원 안산은 써마지, 울쎄라, 올리지오, 코레지2.0, 인모드, 슈링크, 피코슈어토닝, 엑셀V, 에
+일린, 아포지플러스, 포텐자, LDM 등 최신의 기기를 보유하고 있습니다.
+
+안티 에이징(Anti-Aging)
+최고의 리프팅 레이저 기기[써마지, 울쎄라 등]
+30대 초반부터 피부가 얇아지며 탄력과 피지분비가 감소하여 건조해지고 윤기를 잃기도 합니다.
+이러한 노화는 늦출 수 있습니다. 4세대 써마지 FLX, 울쎄라, 올리지오, 코레지2.0, 인모드, 슈링
+크, 피코슈어토닝, 엑셀V, 에일린, 아포지플러스, 포텐자, LDM 등과 같이 레이저토닝을 통한 점
+진적인 방법과 필러, 보톡스와 같은 즉각적인 방법을 함께 이용합니다. 저희는 수 많은 시술 경력
+을 갖고 있습니다. 과하지 않고 적절한 시술로 노화방지에 확실한 도움을 드리겠습니다.
+
+맑은 피부를 희망하는 다양한 피부 고민을 위해
+깔끔한 피부는 고급스러운 인상을 더해줍니다.
+기미, 주근깨, 잡티 등과 같은 색소질환은 다양한 병변들이 혼합된 경우가 많습니다. 피부 손상
+이 적으면서 효과적인 멜라닌 치료를 위해서는 적합한 레이저 치료가 동반되어야 합니다.
+저희는 Cynosure의 PicoSure, 줌패스, 포커스, 포텐자, 엑셀V, 에일린 등을 이용하여 병변에
+따른 치료 계획을 수립하여 경험과 노하우로 안정적인 치료를 진행하고 있습니다.
+
+뮤즈의원 안산의 최신 기기 (4세대 써마지 FLX, 울쎄라, 올리지오, 코레지2.0, 인모드, 슈링크 등)
+0.4
+STANDBY
+INMODE
+INMODE
+Corage
+
+--- page_3_other_capture_5 ---
+MUSE CLINIC
+뮤즈의원 안산
+소개 가격 이벤트 칭찬/불만 상담/예약 0 KOR
+MUSE CLINIC
+MUSE CLINIC
+
+--- page_3_other_capture_6 ---
+MUSE CLINIC
+뮤즈의원 안산
+소개 가격 이벤트 칭찬/불만 상담/예약 0 KOR
+MUSE CLINIC
+아산 피부과 뮤즈의 아산
+
+--- page_3_other_capture_7 ---
+MUSE CLINIC
+뮤즈의원 안산
+소개 가격 이벤트 칭찬/불만 상담/예약 🔍 🛒0 ☰ 🌐 KOR ▼
+
+안산 피부과 뮤즈의원 안산
+숙련된 의료진, 색다른 공간
+당신을 초대합니다.
+
+뮤즈의원 사업자정보 +
+개인정보처리방침 사이트이용약관 가맹문의
+
+──── [3] coverage_raw.txt (커버리지 검증 로그) ────
+{
+  "missing_equipments": [],
+  "missing_treatments": [
+    "아쿠아필"
+  ],
+  "missing_doctors": [],
+  "missing_prices": [],
+  "coverage_score": {
+    "equipment": 100,
+    "treatment": 91,
+    "doctor": 100,
+    "overall": 96
+  },
+  "issues": []
+}

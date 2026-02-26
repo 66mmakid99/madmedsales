@@ -1,0 +1,1714 @@
+═══════════════════════════════════════════════════
+  엔의원 — 추출 원본 데이터
+═══════════════════════════════════════════════════
+
+──── [1] analysis.json (Gemini 분류 결과) ────
+{
+  "hospital_name": "엔의원",
+  "doctors": [
+    {
+      "name": "김범석",
+      "title": "대표",
+      "specialty": null,
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    }
+  ],
+  "academic_activities": [],
+  "medical_devices": [
+    {
+      "name": "LDM Triple Gold",
+      "korean_name": "LDM 트리플 골드",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "IPL",
+      "description": "님의 최애 장비, 피부재생 끝판왕",
+      "source": "screenshot"
+    },
+    {
+      "name": "Ulthera",
+      "korean_name": "울쎄라",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": "초음파 리프팅 끝판왕",
+      "source": "screenshot"
+    },
+    {
+      "name": "Rejuran",
+      "korean_name": "리쥬란",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "booster",
+      "description": "피부재생 끝판왕",
+      "source": "screenshot"
+    },
+    {
+      "name": "Dysport",
+      "korean_name": "디스포트",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "botox",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Radiesse",
+      "korean_name": "레디어스",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "collagen_stimulator",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "윤곽주사",
+      "korean_name": "윤곽주사",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "lipolytic",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "물광주사",
+      "korean_name": "물광주사",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "booster",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Airtox",
+      "korean_name": "에어톡스",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "other_injectable",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Airjet",
+      "korean_name": "에어젯",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Lizne",
+      "korean_name": "리즈네",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "other_injectable",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Allergan Botox",
+      "korean_name": "엘러간",
+      "manufacturer": "Allergan",
+      "device_type": "injectable",
+      "subcategory": "botox",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "Xeomin",
+      "korean_name": "제오민",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "botox",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "Coretox",
+      "korean_name": "코어톡스",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "botox",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "Nabota",
+      "korean_name": "나보타",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "botox",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "Liztox",
+      "korean_name": "리즈톡스",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "botox",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "Juvederm",
+      "korean_name": "쥬비덤",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "filler",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "Belotero",
+      "korean_name": "벨로테로",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "filler",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "Teosyal",
+      "korean_name": "테오시알",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "filler",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "Neuramis",
+      "korean_name": "뉴라미스",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "filler",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "InMode",
+      "korean_name": "인모드",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Shurink Universe",
+      "korean_name": "슈링크 유니버스",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "TORR RF",
+      "korean_name": "토르",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "TunePort Dual",
+      "korean_name": "튠포트 듀얼",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Mono Thread",
+      "korean_name": "모노 실리프팅",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "thread",
+      "description": "리프팅(주름개선)을 원하는 방향으로 정교하고 세밀하게 피부 아래층에 삽입하는 방식",
+      "source": "ocr"
+    },
+    {
+      "name": "Mint Thread",
+      "korean_name": "민트 실리프팅",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "thread",
+      "description": "360도 3D 입체 돌기로 만들어진 PDO실을 이용한 리프팅 시술",
+      "source": "ocr"
+    },
+    {
+      "name": "Epiticon Thread",
+      "korean_name": "에피티콘 리프팅",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "thread",
+      "description": "엑스자 모양의 듀얼 콘 돌기실로 견인과 고정 두가지 효과를 동시에 가능, 다양한 부위와 각도로 활용",
+      "source": "ocr"
+    },
+    {
+      "name": "AstroDome",
+      "korean_name": "아스트로돔",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Airnox",
+      "korean_name": "에어녹스",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "text"
+    }
+  ],
+  "treatments": [
+    {
+      "name": "베커모반",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "밀크커피반점",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "푸른점",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "보톡스",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "botox",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "얼굴, 목주름, 사각턱, 침샘, 종아리, 승모근 등 바디, 국소 비만"
+    },
+    {
+      "name": "필러",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "filler",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "이마, 미간주름, 눈가주름, 애교/다크써클, 코, 볼, 관자, 팔자, 마리오네트, 입술, 턱, 목주름"
+    },
+    {
+      "name": "리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "thread",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "실리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "thread",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "이마주름, 미간주름, 눈가주름, 심부볼, 팔자주름, 턱라인(V라인), 목주름"
+    },
+    {
+      "name": "레이저리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "기미·잡티",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "홍조",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "여드름·여드름흉터",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "탈모주사",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "남자제모",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "LDM 트리플 골드",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "울쎄라",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "hifu",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "리쥬란",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "skinbooster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "디스포트",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "botox",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "스킨부스터",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "skinbooster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "레디어스",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "filler",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "윤곽주사",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "물광주사",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "skinbooster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "에어톡스",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "botox",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "리즈네",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "skinbooster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "에어젯",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "인모드",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "슈링크 유니버스",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "hifu",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "토르",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "튠포트 듀얼",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "모노 실리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "ocr",
+      "category": "thread",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "민트 실리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "ocr",
+      "category": "thread",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "에피티콘 리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "ocr",
+      "category": "thread",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    }
+  ],
+  "events": [
+    {
+      "title": "첫방문 이벤트",
+      "type": "신규고객",
+      "period": null,
+      "discount_info": null,
+      "original_price": null,
+      "event_price": null,
+      "conditions": [],
+      "source": "text"
+    },
+    {
+      "title": "리쥬란 10주 솔루션",
+      "type": "패키지",
+      "period": null,
+      "discount_info": null,
+      "original_price": null,
+      "event_price": null,
+      "conditions": [],
+      "source": "text"
+    },
+    {
+      "title": "아스트로돔 도입",
+      "type": "기타",
+      "period": null,
+      "discount_info": null,
+      "original_price": null,
+      "event_price": null,
+      "conditions": [],
+      "source": "text"
+    },
+    {
+      "title": "에어녹스 도입",
+      "type": "기타",
+      "period": null,
+      "discount_info": null,
+      "original_price": null,
+      "event_price": null,
+      "conditions": [],
+      "source": "text"
+    },
+    {
+      "title": "3월 일정",
+      "type": "시즌",
+      "period": null,
+      "discount_info": null,
+      "original_price": null,
+      "event_price": null,
+      "conditions": [],
+      "source": "text"
+    }
+  ],
+  "clinic_categories": [
+    {
+      "name": "피부질환",
+      "treatments": [
+        "베커모반",
+        "밀크커피반점",
+        "푸른점",
+        "기미·잡티",
+        "홍조",
+        "여드름·여드름흉터"
+      ]
+    },
+    {
+      "name": "안티에이징",
+      "treatments": [
+        "보톡스",
+        "필러"
+      ]
+    },
+    {
+      "name": "리프팅",
+      "treatments": [
+        "리프팅",
+        "실리프팅",
+        "레이저리프팅",
+        "울쎄라",
+        "인모드",
+        "슈링크 유니버스",
+        "토르",
+        "튠포트 듀얼",
+        "모노 실리프팅",
+        "민트 실리프팅",
+        "에피티콘 리프팅"
+      ]
+    },
+    {
+      "name": "시그니처 레이저",
+      "treatments": []
+    },
+    {
+      "name": "레이저 제모",
+      "treatments": [
+        "남자제모"
+      ]
+    },
+    {
+      "name": "비만/체형",
+      "treatments": []
+    },
+    {
+      "name": "스킨케어",
+      "treatments": [
+        "LDM 트리플 골드"
+      ]
+    }
+  ],
+  "contact_info": {
+    "email": [],
+    "phone": [
+      {
+        "number": "031-778-7500",
+        "type": "대표"
+      }
+    ],
+    "address": {
+      "full_address": "경기도 화성시 동탄순환대로 127-23 우성에듀파크 3층",
+      "sido": "경기도",
+      "sigungu": "화성시"
+    },
+    "kakao_channel": "엔의원",
+    "naver_booking": null,
+    "naver_place": null,
+    "instagram": null,
+    "facebook": null,
+    "youtube": null,
+    "blog": null,
+    "website_url": "http://www.nskin.kr",
+    "operating_hours": {
+      "weekday": "화 / 목: AM 10:00 - PM 07:00, 수 / 금: 야간진료 AM 10:00 - PM 09:00",
+      "saturday": "AM 10:00 - PM 04:00",
+      "sunday": "휴진",
+      "lunch_break": "PM 01:00 - PM 02:00"
+    }
+  },
+  "unregistered_equipment": [
+    {
+      "name": "AstroDome",
+      "korean_name": "아스트로돔",
+      "suggested_category": "OTHER_DEVICE",
+      "source": "text",
+      "reason": "Light therapy or similar device, not in standard list."
+    },
+    {
+      "name": "Airnox",
+      "korean_name": "에어녹스",
+      "suggested_category": "OTHER_DEVICE",
+      "source": "text",
+      "reason": "Skin treatment device, not in standard list."
+    },
+    {
+      "name": "Airtox",
+      "korean_name": "에어톡스",
+      "suggested_category": "OTHER_INJECTABLE",
+      "source": "text",
+      "reason": "Likely a type of botox or skin booster, not in standard list."
+    },
+    {
+      "name": "Lizne",
+      "korean_name": "리즈네",
+      "suggested_category": "OTHER_INJECTABLE",
+      "source": "text",
+      "reason": "Likely a skin booster or similar, not in standard list."
+    },
+    {
+      "name": "Epiticon Thread",
+      "korean_name": "에피티콘 리프팅",
+      "suggested_category": "INJECTABLE",
+      "source": "ocr",
+      "reason": "Specific type of thread, not in standard list."
+    }
+  ],
+  "unregistered_treatments": [],
+  "raw_price_texts": [],
+  "extraction_summary": {
+    "total_doctors": 1,
+    "total_academic": 0,
+    "total_equipment": 28,
+    "total_devices": 11,
+    "total_injectables": 17,
+    "total_treatments": 31,
+    "total_events": 5,
+    "total_categories": 7,
+    "total_contact_channels": 2,
+    "has_email": false,
+    "has_phone": true,
+    "has_kakao": true,
+    "has_sns": true,
+    "price_available_ratio": "0/31",
+    "unregistered_equipment_count": 5,
+    "unregistered_treatments_count": 0
+  }
+}
+
+──── [2] ocr_raw.json (이미지 OCR 원본) ────
+
+--- page_0_main_capture_0 ---
+Talk icon N icon F icon Instagram icon Gift icon
+엔의원
+Aesthetic Medical
+피부 · 쁘띠 · 비만 · 레이저
+로그인 회원가입
+
+이벤트 엔의원 소개 피부질환 안티에이징 리프팅 시그니처 레이저 레이저 제모 비만/체형
+
+N AESTHETIC MEDICAL
+단순 "기미, 잡티"가 아니에요.
+베커모반 · 밀크커피반점 · 푸른점
+[색소 질환의 원인, 양상에 따라 커스터마이징 솔루션을 진행합니다.]
+
+수비니어
+Gift icon
+Talk icon
+Stethoscope icon
+Person icon
+
+DONG TAN N
+YOUTUBE
+더 아름다워질 수 있도록
+엔의원이 함께합니다.
+view more >
+Left arrow icon Right arrow icon
+
+님의 최애 장비
+ㅐ트리플 골드
+
+원장님도 맞는!
+피부재생 끝판왕 리쥬란
+
+초음파 리프팅 끝판왕
+울쎄라
+통증 있다? 없다?
+
+피부에 나타난
+커피 자국 뭘까?
+밀크커피
+
+--- page_0_main_capture_1 ---
+이벤트
+엔의원 소개
+피부질환
+안티에이징
+리프팅
+시그니처 레이저
+레이저 제모
+비만/체형
+
+NAESTHETIC MEDICAL
+라인을 예쁘게 살리는
+보톡스
+
+마음을 담은
+주비덤
+Juviderm
+
+정품,정량을 원칙으로 정성으로 시술합니다.
+근육이 발달한 부위에 시술하여 주름개선, 근육축소,
+피부탄력 등의 효과를 기대할 수 있습니다.
+more
+
+NAESTHETIC MEDICAL
+입체감을 더하는
+필러
+정품,정량을 원칙으로 정성으로 시술합니다.
+꺼진 부위에 입체감을 더해주고, 보다 아름다운 라인을
+기대할 수 있습니다.
+more
+
+--- page_0_main_capture_2 ---
+이벤트
+엔의원 소개
+피부질환
+안티에이징
+리프팅
+시그니처 레이저
+레이저 제모
+비만/체형
+
+N AESTHETIC MEDICAL
+피부탄력을 끌어올리는
+리프팅
+
+1:1 맞춤으로 실/레이저리프팅을 시술합니다.
+처지고 탄력이 없는 피부에 비수술적인 방법으로 시술함으로써
+탄력과 주름, 갸름한 얼굴 라인을 기대할 수 있습니다.
+more
+
+바른의원
+주비덤
+Juviderm
+
+TALK
+
+NAESTHETIC MEDICAL
+트러블 없이 속부터 빛나는 스킨케어
+
+Melasma
+Blushing
+Acne
+
+--- page_0_main_capture_3 ---
+이벤트
+엔의원 소개
+피부질환
+안티에이징
+리프팅
+시그니처 레이저
+레이저 제모
+비만/체형
+
+Blemishes
+
+기미·잡티
+재발이 쉬운 기미·잡티 등 색소질환!
+근본적인 원인 분석 및 진단으로
+맞춤시술을 지향합니다.
+
+홍조
+예민하고 쉽게 붉어지는 피부!
+근본적인 원인 분석 및 진단으로
+맞춤시술을 지향합니다.
+
+피부고민은
+주비덤
+Juviderm
+
+Acne scar
+
+여드름·여드름흉터
+울긋불긋 여드름과 작별하고 싶다면!
+근본적인 원인 분석 및 진단으로
+맞춤시술을 지향합니다.
+
+셀카 찍을 때마다 즐거운 이유!
+#Real Selfie
+N
+
+--- page_0_main_capture_4 ---
+이벤트
+엔의원 소개
+피부질환
+안티에이징
+리프팅
+시그니처 레이저
+레이저 제모
+비만/체형
+
+피부가 예뻐지는
+주비덤
+
+오시는 길
+Location
+경기도 화성시 동탄순환대로 127-23
+우성에듀파크 3층
+
+kakaomap
+엔의원
+브리즈힐
+제이마켓
+동탄정형외과
+호수공원역
+샌드빌시티아파트
+CGV
+주차장
+동탄
+kakao
+로드뷰
+길찾기
+지도 크게 보기
+100m
+
+진료시간
+Information
+월요일
+휴진 *단, 공휴일이 있는 주간 월요일 정상진료
+화 / 목
+AM 10:00 - PM 07:00
+수 / 금
+야간진료
+AM 10:00 - PM 09:00
+토요일
+점심시간 X
+AM 10:00 - PM 04:00
+점심시간
+PM 01:00 - PM 02:00
+※ 일요일 / 공휴일 휴진
+
+상담 및 예약
+Consultation
+대표전화
+031.778.7500
+카카오톡
+엔의원 >
+
+엔의원
+Aesthetic Medical
+
+--- page_0_main_capture_5 ---
+이벤트
+엔의원 소개
+피부질환
+안티에이징
+리프팅
+시그니처 레이저
+레이저 제모
+비만/체형
+아름다운
+주치의
+
+오시는 길
+Location
+경기도 화성시 동탄순환대로 127-23
+우성에듀파크 3층
+kakaomap
+로드뷰 길찾기 지도 크게 보기
+
+진료시간
+Information
+• 월요일 휴진 단, 공휴일이 있는 주간 월요일 정상진료
+• 화 / 목 AM 10:00 - PM 07:00
+• 수 / 금 야간진료 AM 10:00 - PM 09:00
+• 토요일 점심시간 X AM 10:00 - PM 04:00
+• 점심시간 PM 01:00 - PM 02:00
+※ 일요일 / 공휴일 휴진
+
+상담 및 예약
+Consultation
+대표전화
+031.778.7500
+TALK 카카오톡 | 엔의원 >
+
+엔의원
+Aesthetic Medical
+| 비급여안내 |
+상호:엔의원 주소:경기도 화성시 동탄순환대로 127-23 우성에듀파크 3층
+대표:김범석 사업자등록번호:785-23-01206 전화:031-778-7500
+Copyrightⓒ2021 엔의원동탄. All rights reserved.
+
+--- page_1_other_capture_0 ---
+Talk N f O
+엔의원
+Aesthetic Medical
+피부 · 쁘띠 · 비만 · 레이저
+로그인 회원가입
+이벤트
+엔의원 소개
+피부질환
+안티에이징
+리프팅
+시그니처 레이저
+레이저 제모
+비만/체형
+보톡스
+디스포트
+필러
+스킨부스터
+레디어스
+리쥬란
+윤곽주사
+리쥬란
+물광주사
+에어톡스
+N CLINIC
+BOTOX
+근육이 발달한 부위에 시술하여 주름개선, 근육축소, 피부탄력 등 효과를 기대할 수 있는 보톡스는
+얼굴 뿐만 아니라 매끄러운 바디라인까지 효과를 볼 수 있습니다
+N CLINIC
+주요 시술 부위
+
+--- page_1_other_capture_1 ---
+이벤트
+엔의원 소개
+피부질환
+안티에이징
+리프팅
+시그니처 레이저
+레이저 제모
+비만/체형
+
+N CLINIC
+라인업
+
+OnabotulinumtoxinA
+Botox®
+Cosmetic
+100
+units
+엘러간
+
+XEOMIN®
+injection
+100 units
+제오민
+
+CORETOX®
+Botulinum Toxin Type A
+100 units
+코어톡스
+
+NABOTA
+Botulinum Toxin
+Type A
+100 units
+나보타
+
+리즈톡스®
+100
+단위
+리즈톡스
+
+N CLINIC
+시술과정
+
+체계적인 상담 시스템
+(시술 부위 및 방법, 디자인 결정)
+
+보톡스 주입 희망 해당 부위 원장님 시술
+
+변화된 모습 확인
+
+N CLINIC
+엔의원은 정품, 정량을 원칙으로 시술하며
+효과를 기대할 수 있는 시술을 지향합니다.
+
+--- page_1_other_capture_2 ---
+이벤트
+엔의원 소개
+피부질환
+안티에이징
+리프팅
+시그니처 레이저
+레이저 제모
+비만/체형
+
+N CLINIC
+페이스보톡스 시술 후 주의사항
+
+01 시술 후 껌, 오징어, 쥐포 등 질긴 음식은 피하시는 것이 좋습니다.
+02 표정주름의 경우 1~2주 후, 사각턱의 경우 3~4주 정도가 경과하며 서서히 효과가 나타납니다.
+03 시술 후 일주일 정도는 음주, 흡연, 격한운동, 자극적인 마사지, 찜질방, 사우나는 피해 주세요.
+04 시술부위를 과도하게 만지거나 누르지 마세요.
+
+N CLINIC
+바디보톡스 시술 후 주의사항
+
+01 24시간 정도 시술 부위를 과도하게 만지거나 문지르지 마세요
+02 개인차가 있으나 시술 후 약간 힘이 빠지거나 뻐근한 증상이 있을 수 있으나 서서히 개선됩니다
+03 시술 후 일주일 정도는 음주, 흡연, 격한운동, 찜질방, 사우나는 피해 주세요
+04 종아리보톡스의 경우 일주일 정도 하이힐을 되도록 신지 않는 것이 좋습니다
+
+엔의원
+Aesthetic Medical
+
+--- page_1_other_capture_3 ---
+이벤트 엔의원 소개 피부질환 안티에이징 리프팅 시그니처 레이저 레이저 제모 비만/체형
+
+N CLINIC
+페이스보톡스 시술 후 주의사항
+01 시술 후 껌, 오징어, 쥐포 등 질긴 음식은 피하시는 것이 좋습니다.
+02 표정주름의 경우 1~2주 후, 사각턱의 경우 3~4주 정도가 경과하며 서서히 효과가 나타납니다.
+03 시술 후 일주일 정도는 음주, 흡연, 격한운동, 자극적인 마사지, 찜질방, 사우나는 피해 주세요.
+04 시술부위를 과도하게 만지거나 누르지 마세요.
+
+N CLINIC
+바디보톡스 시술 후 주의사항
+01 24시간 정도 시술 부위를 과도하게 만지거나 문지르지 마세요
+02 개인차가 있으나 시술 후 약간 힘이 빠지거나 뻐근한 증상이 있을 수 있으나 서서히 개선됩니다
+03 시술 후 일주일 정도는 음주, 흡연, 격한운동, 찜질방, 사우나는 피해 주세요
+04 종아리보톡스의 경우 일주일 정도 하이힐을 신지 않는 것이 좋습니다
+
+엔의원
+Aesthetic Medical
+| 비급여안내 |
+상호:엔의원 주소:경기도 화성시 동탄순환대로 127-23 우성에듀파크 3층
+대표:김범석 사업자등록번호:785-23-01206 전화:031-778-7500
+Copyright©2021 엔의원동탄. All rights reserved.
+
+--- page_2_other_capture_0 ---
+N
+f
+로그인 회원가입
+엔의원
+Aesthetic Medical
+피부 · 쁘띠 · 비만 · 레이저
+
+이벤트
+엔의원 소개
+피부질환
+안티에이징
+리프팅
+시그니처 레이저
+레이저 제모
+비만/체형
+
+보톡스
+디스포트
+필러
+스킨부스터
+레디어스
+리즈네
+윤곽주사
+리쥬란
+물광주사
+에어젯
+
+N CLINIC
+
+3D FILLER
+
+필러는 인체조직과 동일한 성분의 히알루론산을 피부에 주사할 수 있는 시술입니다.
+엔의원 3D 필러는 주름 아래를 채우고 얼굴에 입체감을 더해 조화로운 라인을 기대할 수 있습니다.
+
+N CLINIC
+주요 시술 부위
+
+이마
+
+--- page_2_other_capture_1 ---
+이벤트
+엔의원 소개
+피부질환
+안티에이징
+리프팅
+시그니처 레이저
+레이저 제모
+비만/체형
+
+볼
+팔자
+마리오네트
+입술
+턱
+목주름
+
+N CLINIC
+라인업
+
+쥬비덤
+벨로테로
+테오시알
+뉴라미스
+
+N CLINIC
+시술과정
+
+--- page_2_other_capture_2 ---
+이벤트
+엔의원 소개
+피부질환
+안티에이징
+리프팅
+시그니처 레이저
+레이저 제모
+비만/체형
+
+N CLINIC
+엔의원은 정품, 정량을 원칙으로
+정성으로 시술합니다.
+
+N CLINIC
+3D필러 시술 후 주의사항
+01 시술 부위를 과도하게 만지거나 누르지 마세요.
+02 개인차가 있으나 약간의 붓기, 멍, 통증은 1-2주 후 서서히 개선됩니다.
+03 시술 후 일주일 정도는 음주, 흡연은 피해 주세요.
+04 시술 부위에 색이 변했을 경우 반드시 내원해주세요.
+
+엔의원
+Aesthetic Medical
+| 비급여안내 |
+상호:엔의원 주소:경기도 화성시 동탄순환대로 127-23 우성에듀파크 3층
+
+--- page_2_other_capture_3 ---
+이벤트 엔의원 소개 피부질환 안티에이징 리프팅 시그니처 레이저 레이저 제모 비만/체형
+N CLINIC
+엔의원은 정품, 정량을 원칙으로
+정성으로 시술합니다.
+
+N CLINIC
+3D필러 시술 후 주의사항
+
+01 시술 부위를 과도하게 만지거나 누르지 마세요.
+02 개인차가 있으나 약간의 붓기, 멍, 통증은 1-2주 후 서서히 개선됩니다.
+03 시술 후 일주일 정도는 음주, 흡연은 피해주세요.
+04 시술 부위에 색이 변했을 경우 반드시 내원해주세요.
+
+엔의원
+Aesthetic Medical
+| 비급여안내 |
+상호:엔의원 주소:경기도 화성시 동탄순환대로 127-23 우성에듀파크 3층
+대표:김범석 사업자등록번호:785-23-01206 전화:031-778-7500
+Copyright©2021 엔의원동탄. All rights reserved.
+
+--- page_3_other_capture_0 ---
+엔의원
+Aesthetic Medical
+피부 · 쁘띠 · 비만 · 레이저
+로그인 회원가입
+
+이벤트 엔의원 소개 피부질환 안티에이징 리프팅 시그니처 레이저 레이저 제모 비만/체형
+
+울쎄라 실리프팅 인모드 슈링크 유니버스 토르 튠포트 듀얼
+
+N CLINIC
+
+THREAD LIFTING
+
+실리프팅은 쳐지고, 늘어진 피부를 당겨주어 보다 만족스러운 탄력효과를 기대할 수 있습니다.
+엔의원 실리프팅은 한번의 시술로 주름개선과 피부탄력에 도움을 주고, 보다 오랫동안 효과를 지속할 수 있습니다.
+
+N CLINIC
+
+주요 시술 부위
+
+이마주름
+미간주름
+
+--- page_3_other_capture_1 ---
+이벤트
+엔의원 소개
+피부질환
+안티에이징
+리프팅
+시그니처 레이저
+레이저 제모
+비만/체형
+
+턱라인(V라인)
+
+목주름
+
+= N CLINIC =
+라인업
+
+모노 실리프팅
+
+리프팅(주름개선)을 원하는 방향으로
+정교하고 세밀하게 피부 아래층에
+삽입하는 방식
+
+- 주름개선 효과
+- 이중턱, 심부볼, 팔자부위 개선
+- 콜라겐생성 및 재생을 유도
+- 피부탄력
+- 피부톤 증대
+
+민트 실리프팅
+
+360도 3D 입체 돌기로 만들어진
+PDO실을 이용한 리프팅 시술
+
+- 보다 높은 지속력
+- 깊은 주름개선 효과
+- 노화방지 효과
+- 피부탄력
+- 피부톤 증대
+
+에피티콘 리프팅
+
+엑스자 모양의 듀얼 콘 돌기실로
+견인과 고정 두가지 효과를 동시에 가능,
+다양한 부위와 각도로 활용
+
+- 보다 높은 지속력
+- 깊은 주름개선 효과
+- 노화방지 효과
+- 피부탄력
+- 피부톤 증대
+- 보다 튼튼한 내구성
+
+= N CLINIC =
+시술과정
+
+--- page_3_other_capture_2 ---
+이벤트
+엔의원 소개
+피부질환
+안티에이징
+리프팅
+시그니처 레이저
+레이저 제모
+비만/체형
+
+체계적인 상담 시스템
+(시술 부위 및 방법, 디자인 결정)
+시술 부위별 국소마취 진행
+원하는 방향으로 리프팅(디자인)
+변화된 모습 확인
+
+N CLINIC
+실리프팅 시술 후 주의사항
+
+01 시술 부위를 과도하게 만지거나 누르지 마세요.
+02 딱딱한 음식과 과하게 입을 벌리는 행동은 피해 주세요.
+03 개인차가 있으나 약간의 붓기, 멍, 통증은 1~2주 후 서서히 개선됩니다.
+04 시술 후 1~2주 정도는 음주, 흡연은 피해 주세요.
+05 시술 후 4~6주 정도는 찜질방, 사우나 등과 같은 고온 노출은 피해 주세요.
+
+엔의원
+Aesthetic Medical
+| 비급여안내 |
+상호:엔의원 주소:경기도 화성시 동탄순환대로 127-23 우성에듀파크 3층
+대표:김범석 사업자등록번호:785-23-01206 전화:031-778-7500
+Copyright©2021 엔의원동탄. All rights reserved.
+
+──── [3] coverage_raw.txt (커버리지 검증 로그) ────
+{
+  "missing_equipments": [],
+  "missing_treatments": [],
+  "missing_doctors": [],
+  "missing_prices": [],
+  "coverage_score": {
+    "equipment": 100,
+    "treatment": 100,
+    "doctor": 100,
+    "overall": 100
+  },
+  "issues": []
+}

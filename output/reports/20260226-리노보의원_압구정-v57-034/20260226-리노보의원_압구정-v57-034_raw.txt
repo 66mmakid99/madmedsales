@@ -1,0 +1,958 @@
+═══════════════════════════════════════════════════
+  리노보의원 압구정 — 추출 원본 데이터
+═══════════════════════════════════════════════════
+
+──── [1] analysis.json (Gemini 분류 결과) ────
+{
+  "hospital_name": "리노보의원 압구정",
+  "doctors": [
+    {
+      "name": "김승준",
+      "title": "대표",
+      "specialty": null,
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    }
+  ],
+  "academic_activities": [],
+  "medical_devices": [
+    {
+      "name": "Thermage",
+      "korean_name": "써마지",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF",
+      "description": "강력한 고주파 열에너지를 이용하여 콜라겐을 재생시켜 얼굴부터 바디까지 리프팅 효과를 기대할 수 있습니다.",
+      "source": "text"
+    },
+    {
+      "name": "InMode",
+      "korean_name": "인모드",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF",
+      "description": "두 가지 핸드피스로 불필요한 지방 감소와 탄력 개선을 통해 동안 이미지를 기대할 수 있습니다.",
+      "source": "text"
+    },
+    {
+      "name": "Noblex",
+      "korean_name": "노블렉스",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "알렉산드라이트를 사용한 롱퍼스 레이저로 제모에 사용되는 의료용 레이저입니다. 755NM 파장을 이용해 표피에 상처를 주지 않고 모근과 그 주변의 멜라닌 및 멜라닌 세포, 멜라노솜에 높은 흡수를 보여 이들을 선택적으로 파괴합니다. 따라서 피부 속 멜라닌 세포가 다량 함유된 동양인에게 얼굴, 바디 어느 부분이나 만족스러운 결과를 만들어 낼 수 있습니다",
+      "source": "text"
+    },
+    {
+      "name": "ExcelV",
+      "korean_name": "엑셀브이",
+      "manufacturer": "큐테라사",
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "미국 큐테라사에서 개발한 복합 피부노화 개선 레이저로, 세 가지 모드를 통해 색소, 홍반, 탄력을 중심으로 피부의 문제를 복합적으로 개선해줍니다.",
+      "source": "text"
+    },
+    {
+      "name": "IPL",
+      "korean_name": "IPL",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "IPL",
+      "description": "A2PL을 기반으로 기존의 IPL과는 차별화된 IPL입니다. 기존의 IPL로서는 치료가 어려웠던 피부의 깊은 부위에 있는 색소도 효과적인 치료가 가능하며, 특정한 파장의 광선을 선택적으로 피부 깊숙이 침투 시키고 냉각으로 피부 표면의 통증과 손상을 줄줍니다. 기미, 색소 치료뿐만아니라 혈관, 여드름 개선에도 효과적으로 사용됩니다.",
+      "source": "text"
+    },
+    {
+      "name": "BB Lavieen",
+      "korean_name": "BB라비앙",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "1927nm 에너지를 이용하여 상피의 손상 없이 기미, 잡티 등의 색소성 병변을 치료하고 콜라겐을 수축시켜 탄력, 모공, 주름 등의 효과도 동시에 경험할 수 있는 레이저 시술입니다. 비박피성 시술로 기존 프락셔널 레이저에 비해 회복기간이 짧은 것이 특징입니다.",
+      "source": "text"
+    },
+    {
+      "name": "Agnes",
+      "korean_name": "아그네스",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_microneedle",
+      "description": "특수 파장의 열에너지를 발생시켜 여드름 발생 원인인 피지선에만 열을 가해 주변 피부는 손상 없이 여드름 치료가 가능합니다. 피지선을 파괴하여 여드름의 원인을 차단합니다. 두가지 핸드피스를 탑재하여 치료 편의성과 효과를 높입니다.",
+      "source": "text"
+    },
+    {
+      "name": "Ultra Duo",
+      "korean_name": "울트라 듀오",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": "초음파를 HIFU방식이 아닌 직접 조사 방식으로 젤을 접촉 매채로 사용하여 피부에 직접 에너지를 전달하는 방법으로 초음파 파장이 교차되어 조사되면서 피부 속의 수분을 진피쪽으로 끌어올려 모든 시술 후 피부가 촉촉하고 맑아지게 됩니다.",
+      "source": "text"
+    },
+    {
+      "name": "CryoCell",
+      "korean_name": "크라이오",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "cryotherapy",
+      "description": "냉동전기영동요법으로 피부의 수분 침투로 열적반응을 일으키는 레이저 시술 후 바로 적용하여 홍반, 열감을 감소시키며 더 나아가 재생 앰플을 적용하여 빠른 재생을 도와줍니다.",
+      "source": "text"
+    },
+    {
+      "name": "O2Derm",
+      "korean_name": "오투덤",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": "고농도 산소와 음이온을 이용하여 피부 노화의 원인이 되는 활성 산소를 환원시키고, 손상된 세포를 재생 면역력 증진 등 트러블 및 문제성 피부를 개선시키고, 지친 피부에 활력을 불어 넣어주는 안티에이징 피부관리 프로그램입니다.",
+      "source": "text"
+    },
+    {
+      "name": "AquaPeel",
+      "korean_name": "아쿠아필",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": "수분(AQUA)과 박피(PEEL)이 합쳐진 것으로 부드럽고 자극이 거의 없는 특수한 솔루션을 이용한 필링시술로 특수 솔루션이 모공 깊숙이 스며들어 블랙헤드, 피지, 각질 등 모공 속 노폐물을 녹인 다음 흡입 후 제거하게 됩니다.",
+      "source": "text"
+    },
+    {
+      "name": "Corege",
+      "korean_name": "코레지",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": "16가지의 공명 파장(공명 에너지)를 사용하여 피부 속 세포 운동을 유도함과 동시에 콜라겐을 회복/생성하여 얼굴 전체를 운동한 것과 같이 탄력 있고 건강한 피부를 만들어 줍니다. 시술 후 피부 결, 피부 톤, 보습, 타이트닝, 피부 두께 증가 등의 효과를 기대할 수 있습니다.",
+      "source": "text"
+    },
+    {
+      "name": "Venus Viva",
+      "korean_name": "비너스비바",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_microneedle",
+      "description": "나노 프락셔널 RF 그리고 스마트스캔 기술을 토대로 만든 장비로 피부 표피와 진피까지 동시에 타깃하기 때문에 피부 깊은 곳부터의 콜라겐 재생을 도와 존쫀하고 탄력 있게 개선시켜 주는 복합 기능 장비입니다.",
+      "source": "text"
+    },
+    {
+      "name": "Intracel",
+      "korean_name": "인트라셀",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_microneedle",
+      "description": "프락셀의 장점과 더마스탬프의 장점을 더한 치료 기기로 특수하게 제작된 미세 절연침을 이용하여 모양과 부위에 따라 효과적인 맞춤 시술이 가능하고 피부 진피층에 순간적으로 고압의 RF를 방사함으로써 콜라겐의 변성과 재생을 활성화하고 촉진 합니다.",
+      "source": "text"
+    },
+    {
+      "name": "MCL31",
+      "korean_name": "MCL31",
+      "manufacturer": "독일",
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "독일의 어붐야그레이저로써 기존의 CML30레이저의 업그레이드 된 버전입니다. 독일의 우수한 광학 기술을 이용한 DRT 시술법을 가진 프락셔널 레이저로 콜라겐이나 엘라스틴 등의 새로운 피부 조직의 생성과 재생을 유도하여 치료하는 레이저입니다.",
+      "source": "text"
+    },
+    {
+      "name": "Shurink Universe",
+      "korean_name": "슈링크 유니버스",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": "HIFU(고강도 집속 초음파 에너지)를 비침습적 방식으로 피부 속 특정 깊이에 전달하는 원리의 리프팅 장비 입니다. 피부층 깊이와 상태에 따라 다양한 카트리지를 적용하여 피부 손상이나 지방감소 없이 피부 탄력을 개선 할 수 있습니다.",
+      "source": "text"
+    },
+    {
+      "name": "Triple Body",
+      "korean_name": "트리플바디",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": "저출력 레이저와 고주파, 중저주파를 이용한 복합적인 시술입니다. 심부열을 이용하여 지방을 파괴시키고 녹인 지방을 배출시키는 원리로써 탄력 넘치고 정돈된 바디라인을 만들어 주는 시술입니다.",
+      "source": "text"
+    },
+    {
+      "name": "Ellie Laser",
+      "korean_name": "엘리 레이저",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "810nm파장의 다이오드 레이저를 이용하여 모낭에 있는 검은 멜라닌 색소를 파괴하여 제모를 하는 새로운 방식의 제모시스템입니다. 레이저 에너지로 모낭을 파괴할 때 부드럽게 진피층까지 열을 도달시키므로 표피층을 보호하며 통증이 거의 없이 치료가 가능합니다.",
+      "source": "text"
+    }
+  ],
+  "treatments": [
+    {
+      "name": "눈밑조각술",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "눈밑"
+    },
+    {
+      "name": "입가 주름 지우개",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "입가"
+    },
+    {
+      "name": "써마지",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "코레지 피부재생술",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "skinbooster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "인모드 리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "노블렉스 제모",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "엑셀브이",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "레이저토닝",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "IPL",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "ipl",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "BB라비앙",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "아그네스",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "울트라 듀오 물방울리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "hifu",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "크라이오",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "오투덤 산소테라피",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "아쿠아필",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "코레지",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "skinbooster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "비너스비바",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "인트라셀",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "MCL31",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "슈링크 유니버스",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "hifu",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "트리플바디",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "엘리 레이저 제모",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    }
+  ],
+  "events": [
+    {
+      "title": "진료 휴진 일정 변경 안내",
+      "type": "기타",
+      "period": "변경전 일요일 및 공휴일 -> 변경후 매주 수요일, 일요일 및 공휴일",
+      "discount_info": null,
+      "original_price": null,
+      "event_price": null,
+      "conditions": null,
+      "source": "popup"
+    }
+  ],
+  "clinic_categories": [
+    {
+      "name": "피부",
+      "treatments": [
+        "엑셀브이",
+        "레이저토닝",
+        "IPL",
+        "BB라비앙",
+        "아그네스",
+        "울트라 듀오 물방울리프팅",
+        "크라이오",
+        "오투덤 산소테라피",
+        "아쿠아필",
+        "코레지",
+        "비너스비바",
+        "인트라셀",
+        "MCL31"
+      ]
+    },
+    {
+      "name": "리프팅",
+      "treatments": [
+        "써마지",
+        "인모드 리프팅",
+        "슈링크 유니버스"
+      ]
+    },
+    {
+      "name": "줄기세포치료",
+      "treatments": []
+    },
+    {
+      "name": "쁘띠성형",
+      "treatments": []
+    },
+    {
+      "name": "바디/체형",
+      "treatments": [
+        "노블렉스 제모",
+        "트리플바디",
+        "엘리 레이저 제모"
+      ]
+    },
+    {
+      "name": "옴므",
+      "treatments": []
+    },
+    {
+      "name": "색소",
+      "treatments": [
+        "레이저토닝",
+        "IPL",
+        "BB라비앙",
+        "엑셀브이"
+      ]
+    },
+    {
+      "name": "여드름",
+      "treatments": [
+        "아그네스",
+        "크라이오",
+        "오투덤 산소테라피",
+        "울트라 듀오 물방울리프팅"
+      ]
+    },
+    {
+      "name": "모공/흉터",
+      "treatments": [
+        "아쿠아필",
+        "코레지",
+        "비너스비바",
+        "인트라셀",
+        "MCL31"
+      ]
+    }
+  ],
+  "contact_info": {
+    "email": [],
+    "phone": [
+      {
+        "number": "02.593.1356",
+        "type": "대표",
+        "source": "text"
+      }
+    ],
+    "address": {
+      "full_address": "서울특별시 강남구 논현로 841 JB미소빌딩 5층",
+      "sido": "서울특별시",
+      "sigungu": "강남구"
+    },
+    "kakao_channel": "https://place.map.kakao.com/25630192",
+    "naver_booking": null,
+    "naver_place": "https://map.naver.com/v5/search/%EB%A6%AC%EB%85%B4%EB%B3%B4%20%EC%95%95%EA%B5%AC%EC%A0%95/place/13023672?c=14139761.2893225,4512415.8921152,14,0,0,0,dh&isCorrectAnswer=true",
+    "instagram": null,
+    "facebook": null,
+    "youtube": null,
+    "blog": null,
+    "website_url": "http://www.renovo.co.kr",
+    "operating_hours": {
+      "weekday": "AM 10:00 ~ PM 07:30 (월/화/목), PM 01:00 ~ PM 09:00 (금요일)",
+      "saturday": "AM 10:00 ~ PM 03:00",
+      "sunday": "휴진",
+      "lunch_break": "PM 01:00 ~ PM 02:00"
+    }
+  },
+  "unregistered_equipment": [],
+  "unregistered_treatments": [
+    {
+      "name": "눈밑조각술",
+      "source": "website",
+      "context": "비수술적 동안 눈밑조각술"
+    },
+    {
+      "name": "입가 주름 지우개",
+      "source": "website",
+      "context": "피부 노화로 주름이 깊게 자리 잡은 입가 주름"
+    },
+    {
+      "name": "코레지 피부재생술",
+      "source": "website",
+      "context": "세포에 에너지를 전달할 수 있는 16가지 공명파장을 통해 리프팅, 주름 및 볼륨 개선 효과를 동시에 기대할 수 있습니다."
+    },
+    {
+      "name": "울트라 듀오 물방울리프팅",
+      "source": "website",
+      "context": "초음파를 HIFU방식이 아닌 직접 조사 방식으로 ... 피부 속의 수분을 진피쪽으로 끌어올려"
+    },
+    {
+      "name": "오투덤 산소테라피",
+      "source": "website",
+      "context": "고농도 산소와 음이온을 이용하여 피부 노화의 원인이 되는 활성 산소를 환원시키고, 손상된 세포를 재생 면역력 증진 등 트러블 및 문제성 피부를 개선시키고, 지친 피부에 활력을 불어 넣어주는 안티에이징 피부관리 프로그램입니다."
+    }
+  ],
+  "raw_price_texts": [],
+  "extraction_summary": {
+    "total_doctors": 1,
+    "total_academic": 0,
+    "total_equipment": 18,
+    "total_devices": 18,
+    "total_injectables": 0,
+    "total_treatments": 22,
+    "total_events": 1,
+    "total_categories": 9,
+    "total_contact_channels": 5,
+    "has_email": false,
+    "has_phone": true,
+    "has_kakao": true,
+    "has_sns": false,
+    "price_available_ratio": "0/22",
+    "unregistered_equipment_count": 0,
+    "unregistered_treatments_count": 5
+  }
+}
+
+──── [2] ocr_raw.json (이미지 OCR 원본) ────
+
+--- page_1_main_capture_0 ---
+병원소개 리노보 시그니처 피부 리프팅 줄기세포치료 쁘띠성형 바디/체형 옴므
+ЯE_NOVO
+
+ЯE_NOVO
+진료 휴진 일정
+
+변경 안내
+
+본원은 아래와 같이 진료 휴진 일정이 변경되오니
+참고하시어 내원 및 예약에 불편함 없으시길 바랍니다.
+
+변경전 일요일 및 공휴일
+변경후 매주 수요일, 일요일 및 공휴일
+
+ЯE
+다시 새 롭
+다시 아 름
+NOVO
+
+■ 오늘 하루 그만보기 [닫기]
+
+--- page_1_main_capture_1 ---
+Signature RE_NOVOgram
+병원소개
+리노보 시그니처
+피부
+리프팅
+줄기세포치료
+쁘띠성형
+바디/체형
+옴므
+
+01
+눈밑조각술
+자연스러운 눈매
+잔주름 개선
+
+02
+입가 주름
+지우개
+깔끔한 입매라인
+잔주름 개선
+
+03
+써마지
+콜라겐 재생
+네가지팁
+
+04
+코레지
+피부재생술
+콜라겐 재생
+피부 재생 에너지
+
+05
+인모드
+리프팅
+탄력 개선
+지방 감소
+
+OUR
+PROMISE
+아름다운 피부를 위한 노력
+
+TALK
+N
+
+--- page_1_main_capture_2 ---
+아름다운 피부를 위한 노력
+ЯE_NOVO
+병원소개 리노보 시그니처 피부 리프팅 줄기세포치료 뼈따성형 바디/체형 옴므
+
+TOI
+HARMONY
+
+당신의 색을 잃지 않도록
+지정한 아름다움은 자신의 색을
+잃지 않는 아름다움입니다.
+환자의 개성을 찾아 빛나게 하는
+치료를 위해 노력합니다
+
+조화롭고 자연스러운 변화를
+지향합니다.
+고객의 한 분 한 분의 현 상태를 파악하여
+모든 과정에서 조화롭고
+자연스럽게 아름다워 질 수 있도록
+
+TALK
+N
+
+색소 여드름 모공/흉터 리프팅 바디/체형
+
+--- page_1_main_capture_3 ---
+병원소개
+리노보 시그니처
+피부
+리프팅
+줄기세포치료
+쁘띠성형
+바디/체형
+옴므
+ㅐE_NOVO
+
+엑셀브이
+
+레이저토닝
+레이저토닝은 쉽게 재발되는 동양인의 기미에
+적합하며 기미 뿐 아니라 경계가 불분명한
+깊은 색소질환을 효과적으로 개선시키며 전반적인
+안색개선, 화이트닝 효과까지 볼 수 있는
+레이저 시술입니다.
++ more
+
+IPL
+
+TALK
+N
+
+Contact us
+진료시간 안내
+
+--- page_1_main_capture_4 ---
+병원소개 리노보 시그니처 피부 리프팅 줄기세포치료 쁘띠성형 바디/체형 옴므
+
+Contact us
+문의전화 플러스 친구 오시는길
+02.593.1356
+-P
+네이버 지도 카카오 지도
+서울특별시 강남구 논현로 841 JB미스빌딩 5층
+
+진료시간 안내
+OFFICE HOUR
+월/화/목 AM 10:00 ~ PM 07:30
+금요일 PM 01:00 ~ PM 09:00
+토요일 AM 10:00 ~ PM 03:00
+점심시간 PM 01:00 ~ PM 02:00
+*수요일, 일요일 휴진
+
+TALK
+N
+
+이용약관 개인정보처리방침 비급여 안내
+
+리노보의원 압구정 | 대표: 김승준 | 사업자등록번호: 214-13-35544
+주소: 서울특별시 강남구 논현로 841 JB미스빌딩 5층 | 전화번호: 02-593-1356
+Copyright ⓒ 2022 RENOVO CLINIC All Rights Reserved
+
+──── [3] coverage_raw.txt (커버리지 검증 로그) ────
+{
+  "missing_equipments": [],
+  "missing_treatments": [],
+  "missing_doctors": [],
+  "missing_prices": [],
+  "coverage_score": {
+    "equipment": 100,
+    "treatment": 100,
+    "doctor": 100,
+    "overall": 100
+  },
+  "issues": [
+    "'리프팅'은 시술 분류명으로, 개별 시술이 아니므로 추출 결과에서 제외되어야 합니다."
+  ]
+}

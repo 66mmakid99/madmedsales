@@ -1,0 +1,2470 @@
+═══════════════════════════════════════════════════
+  메이린의원 — 추출 원본 데이터
+═══════════════════════════════════════════════════
+
+──── [1] analysis.json (Gemini 분류 결과) ────
+{
+  "hospital_name": "메이린의원",
+  "doctors": [
+    {
+      "name": "오욱",
+      "title": "원장",
+      "specialty": null,
+      "career": [
+        "前 대한레이저피부모발학회 회장",
+        "대한필러학회 학술위원장",
+        "대한레이저피부모발학회 간행위원장",
+        "한국 피부비만성형학회 상임고문",
+        "한국미용성형학회 피부분과 수석이사"
+      ],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "조선화",
+      "title": "원장",
+      "specialty": null,
+      "career": [
+        "서울백병원 전문의",
+        "전 오가나피부과 원장",
+        "전 톡스앤필 강남본점 원장",
+        "ICLAS국제학회 학술상임이사",
+        "대한비만학회 비만 인증의",
+        "대한비만학회 정회원",
+        "대한미용성형레이저학회 정회원",
+        "대한레이저피부모발학회 정회원"
+      ],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "김미진",
+      "title": "원장",
+      "specialty": null,
+      "career": [
+        "서울아산병원 전문의",
+        "전 연세로의료의원 피부과 원장",
+        "전 연세라인의원 원장",
+        "대한레이저피부모발학회 정회원",
+        "대한미용성형레이저의학회 정회원",
+        "대한비만미용학회 정회원"
+      ],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "김형문",
+      "title": "원장",
+      "specialty": null,
+      "career": [
+        "President of ICLAS",
+        "Chief-In-Editor of \"The Aesthetics\"",
+        "Chief Director Doctor of Maylin Clinic Ilsan Division",
+        "전) 대한레이저피부모발학회 회장",
+        "대한유방성형학회 이사장",
+        "대한레이저피부모발학회 보톡스, 필러 분과장",
+        "메듀케이션 K아카데미 레이저 분과장"
+      ],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "김도연",
+      "title": "원장",
+      "specialty": null,
+      "career": [
+        "현) 메이린 일산점 원장",
+        "전) 왕실 성형외과 원장",
+        "전) 셀린의원 용인수지점 원장"
+      ],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "노준희",
+      "title": "원장",
+      "specialty": null,
+      "career": [
+        "현) 메이린 일산점 원장",
+        "전) 유앤아이의원 부천점 원장"
+      ],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "천관우",
+      "title": "원장",
+      "specialty": null,
+      "career": [
+        "대한레이저피부모발학회 학술이사",
+        "대한주름성형 항노화학회 학술이사",
+        "대한의학레이저학회 정회원",
+        "대한미용성형레이저학회 정회원",
+        "대한비만연구의사회 정회원",
+        "대한비만체형학회 정회원",
+        "대한비만미용치료학회 정회원",
+        "대한안과학회 정회원",
+        "前 닥터베이직맑음의원 대표원장",
+        "Academic Director, KALADT (Korean Association for Laser, Dermatology and Trichology)",
+        "Academic Director, K4AWM(Korea Academy of Anti-Wrinkle and Anti-Aging Medicine)"
+      ],
+      "education": [
+        "가천의대 길병원 인턴 전공의 수련",
+        "일본 후쿠오카 대학병원 연수"
+      ],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "박지현",
+      "title": "원장",
+      "specialty": null,
+      "career": [
+        "현 메이린의원 판교점 원장",
+        "전 벤스의원 여의도점 원장"
+      ],
+      "education": [
+        "조선대학교 의과대학 졸업"
+      ],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "김정근",
+      "title": "원장",
+      "specialty": null,
+      "career": [
+        "부산대학교 병원 외래교수",
+        "대한안면성형재건학회 정회원",
+        "한국 미용성형의학회 정회원",
+        "대한레이저피부모발학회 정회원",
+        "대한항노화학회 정회원",
+        "대한미용성형레이저의학회 정회원",
+        "대한임상 미용의학회 정회원",
+        "한국 피부 미용성형학회 정회원",
+        "대한주름성형 항노화의학회 정회원",
+        "前 서울 코미인 성형외과의원 원장",
+        "前 톡스앤필 의원 부산서면점 원장"
+      ],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "유진아",
+      "title": "원장",
+      "specialty": "피부과 전문의",
+      "career": [
+        "영국 피부과 전문의",
+        "영국 피부과 전공의 수료",
+        "맨체스터 대학원 Honorary Lecture",
+        "대한미용성형레이저학회 국제협력이사",
+        "前 버멍험의과대학 겸임부교수",
+        "前 Queen Elizabeth Hospital Birmingham 피부과 전문의",
+        "前 Sk:n clinic (버밍험지점) 대표원장",
+        "現 영국 런던 유진아피부과 대표원장",
+        "現 맨체스터대학원 피부노화/미용 석사과정 겸임조교수",
+        "영국 피부과 협회 정회원",
+        "유럽 피부과 학회 정회원"
+      ],
+      "education": [
+        "버밍험 의과대학 졸업",
+        "맨체스터대학 석사 졸업 (면역 및 면역유전학)",
+        "맨체스터대학 석사 수석졸업 (피부노화 및 미용)"
+      ],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "박현준",
+      "title": "대표원장",
+      "specialty": null,
+      "career": [
+        "(현) 메이린클리닉 청담점 대표원장",
+        "(전) 메이린클리닉 압구정점 대표원장 2009-2023",
+        "(전) 청담리벨로뷰티의원 원장 2005-2008",
+        "대한레이저피부모발학회 학술부회장",
+        "ICLAS(International Conference of Laser, Aesthetic medicine and Surgery)부회장"
+      ],
+      "education": [
+        "한양대학교 의과대학 졸업",
+        "한양대학교 의료원 수련의, 전공의",
+        "한양대학교 의과대학 대학원 석사",
+        "가천대학교 의과대학 대학원 해부학 박사과정"
+      ],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "홍준희",
+      "title": "대표원장",
+      "specialty": null,
+      "career": [
+        "現) 메이린의원 송도 대표원장",
+        "前) 오네스타의원 원장",
+        "제이시스메디칼 기업부속의원 원장",
+        "제이시스메디칼 학술임상실장(이사)",
+        "국립암센터 국제암대학원대학교 암의생명과학과 산학협력교원",
+        "국립암센터 희귀난치암연구과 병역특례전문연구요원",
+        "의과학자육성지원사업 (M.D./Ph.D. 과정)",
+        "가천의대 길병원 기초전공의",
+        "한국을 빛낸사람들 2회 선정(BRIC 한빛사)",
+        "대한레이저피부모발학회 (KALDAT) 정회원",
+        "대한미용성형레이저의학회 정회원"
+      ],
+      "education": [
+        "가천대학교 의무석사",
+        "해부-조직학 의학박사"
+      ],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "정연재",
+      "title": "대표원장",
+      "specialty": null,
+      "career": [
+        "삼성서울병원 전공의 수료",
+        "前 BLS클리닉 본점 원장",
+        "現 메이린의원 성수점 대표원장",
+        "대한레이저피부모발학회 회원",
+        "대한미용성형레이저학회 회원",
+        "대한비만미용학회 회원"
+      ],
+      "education": [
+        "경희대학교 졸업"
+      ],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "손영기",
+      "title": "원장",
+      "specialty": null,
+      "career": [
+        "現 메이린의원 성수점 원장",
+        "대한피부모발학회 정회원",
+        "대한미용의사회 창립회원",
+        "前 홍대 이지동안의원 대표원장",
+        "前 BLS클리닉 본점 원장",
+        "F아이디병원 원장",
+        "F리팅성형외과 원장",
+        "F클럽미즈 라미체의원 원장"
+      ],
+      "education": [
+        "경희대학교 의과대학 졸업"
+      ],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "허두보",
+      "title": "대표원장",
+      "specialty": null,
+      "career": [
+        "現 메이린 청주 대표원장",
+        "前 강서서울연합의원 비만-통증 클리닉 원장",
+        "前 메이린 일산 부원장",
+        "前 클림의원 홍대 부원장",
+        "前 클림의원 명동 부원장",
+        "한국치유협회 심사위원",
+        "대한피부모발학회 정회원",
+        "대한미용레이저학회 정회원",
+        "대한미용기능의학회 정회원",
+        "대한미용의사회 정회원",
+        "대한비만학회 정회원",
+        "대한비만연구의사회 정회원",
+        "대한일차진료학회 정회원"
+      ],
+      "education": [
+        "충북대학교 의대 졸업"
+      ],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "유기웅",
+      "title": "대표원장",
+      "specialty": null,
+      "career": [
+        "대한레이저피부모발학회 (KALDAT) 학술이사",
+        "대한미용성형레이저의학회 정회원",
+        "대한항노화학회 정회원",
+        "대한리프팅연구회 정회원",
+        "대한비만미용치료학회(KAOT) 정회원",
+        "대한비만미용체형학회 정회원",
+        "現메이린의원 잠실롯데호텔점 대표원장",
+        "前닥터디자이너의원 잠실점 대표원장"
+      ],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "김효진",
+      "title": "대표원장",
+      "specialty": null,
+      "career": [
+        "충북대학교병원 수련의",
+        "(전) 스노우의원 본점 원장",
+        "(현) 메이린의원 부산센텀시티점 대표원장",
+        "대한레이저피부모발학회 정회원",
+        "대한미용성형레이저학회 정회원",
+        "대한비만미용학회 정회원",
+        "대한항노화학회 정회원"
+      ],
+      "education": [
+        "충북대학교 의과대학 졸업"
+      ],
+      "certifications": [],
+      "confidence": "confirmed"
+    }
+  ],
+  "academic_activities": [
+    {
+      "type": "논문",
+      "title": "A Mixture of Topical Forms of Polydeoxyribonucleotide, Vitamin C",
+      "year": null,
+      "doctor_name": "박현준",
+      "source_text": "12 Published SCI articles -A Mixture of Topical Forms of Polydeoxyribonucleotide, Vitamin C"
+    },
+    {
+      "type": "논문",
+      "title": "A Novel Anatomical Consideration on the Exposed Segment of the Facial",
+      "year": null,
+      "doctor_name": "박현준",
+      "source_text": "12 Published SCI articles -A Novel Anatomical Consideration on the Exposed Segment of the Facial"
+    },
+    {
+      "type": "논문",
+      "title": "A novel microcoring technology A completely new concept of enlarged",
+      "year": null,
+      "doctor_name": "박현준",
+      "source_text": "12 Published SCI articles -A novel microcoring technology A completely new concept of enlarged"
+    },
+    {
+      "type": "논문",
+      "title": "Botulinum neurotoxin injection in the deltoid muscle application",
+      "year": null,
+      "doctor_name": "박현준",
+      "source_text": "12 Published SCI articles -Botulinum neurotoxin injection in the deltoid muscle application"
+    },
+    {
+      "type": "논문",
+      "title": "Broadband light treatment using static operation and constant motion",
+      "year": null,
+      "doctor_name": "박현준",
+      "source_text": "12 Published SCI articles -Broadband light treatment using static operation and constant motion"
+    },
+    {
+      "type": "논문",
+      "title": "Coagulation and ablation patterns of high intensity focused ultrasound",
+      "year": null,
+      "doctor_name": "박현준",
+      "source_text": "12 Published SCI articles -Coagulation and ablation patterns of high intensity focused ultrasound"
+    },
+    {
+      "type": "논문",
+      "title": "Current practices and perceived effectiveness polynucleotides for",
+      "year": null,
+      "doctor_name": "박현준",
+      "source_text": "12 Published SCI articles -Current practices and perceived effectiveness polynucleotides for"
+    },
+    {
+      "type": "논문",
+      "title": "High Intensity Focused Ultrasound Decreases Subcutaneous Fat Tissue",
+      "year": null,
+      "doctor_name": "박현준",
+      "source_text": "12 Published SCI articles -High Intensity Focused Ultrasound Decreases Subcutaneous Fat Tissue"
+    },
+    {
+      "type": "논문",
+      "title": "Interactive thermal tissue reactions of 7 MHz ultrasound and 1 MHz",
+      "year": null,
+      "doctor_name": "박현준",
+      "source_text": "12 Published SCI articles -Interactive thermal tissue reactions of 7 MHz ultrasound and 1 MHz"
+    },
+    {
+      "type": "논문",
+      "title": "Morphometric analysis of high intensity focused ultrasound induced",
+      "year": null,
+      "doctor_name": "박현준",
+      "source_text": "12 Published SCI articles -Morphometric analysis of high intensity focused ultrasound induced"
+    },
+    {
+      "type": "논문",
+      "title": "Novel anatomical guidelines for botulinum neurotoxin injection in",
+      "year": null,
+      "doctor_name": "박현준",
+      "source_text": "12 Published SCI articles -Novel anatomical guidelines for botulinum neurotoxin injection in"
+    },
+    {
+      "type": "논문",
+      "title": "Polynucleotide injection treatment for iatrogenic fat atrophy intwo",
+      "year": null,
+      "doctor_name": "박현준",
+      "source_text": "12 Published SCI articles -Polynucleotide injection treatment for iatrogenic fat atrophy intwo"
+    },
+    {
+      "type": "논문",
+      "title": "The Combination of Niacinamide, Vitamin C, and PDRN Mitigates Melanogenesis",
+      "year": null,
+      "doctor_name": "박현준",
+      "source_text": "12 Published SCI articles -The Combination of Niacinamide, Vitamin C, and PDRN Mitigates Melanogenesis"
+    },
+    {
+      "type": "논문",
+      "title": "The Extracellular Matrix Vitalizer RA increased skin elasticity",
+      "year": null,
+      "doctor_name": "박현준",
+      "source_text": "12 Published SCI articles -The Extracellular Matrix Vitalizer RA increased skin elasticity"
+    },
+    {
+      "type": "논문",
+      "title": "세계 3대 최상위권 국제 학술지 Cell에 주저자로서 논문을 출판 (Cancer Cell, Impact Factor 50.3)",
+      "year": null,
+      "doctor_name": "홍준희",
+      "source_text": "홍준희 원장은 세계 3대 최상위권 국제 학술지 Cell에 주저자로서 논문을 출판할 만큼의 조직학적 연구력과 의과학자로서의 소양을 가지고 있습니다. (Cancer Cell, Impact Factor 50.3)"
+    },
+    {
+      "type": "수상",
+      "title": "한국을 빛낸사람들 2회 선정(BRIC 한빛사)",
+      "year": null,
+      "doctor_name": "홍준희",
+      "source_text": "한국을 빛낸사람들 2회 선정(BRIC 한빛사)"
+    },
+    {
+      "type": "논문",
+      "title": "고주파 치료로 색소 개선을 입증한 난치성 색소 질환 치료 및 혈관치료, 모공치료에 효과적이며 피부 속 콜라겐 생성으로 탄력, 잔주름, 거친 피부결, 피부톤 개선에 도움을 주는 논문",
+      "year": null,
+      "doctor_name": "김형문",
+      "source_text": "김형문 원장님의 논문으로 입증이 된 최초 고주파 치료로 색소 개선을 입증한 난치성 색소 질환 치료 및 혈관치료, 모공치료에 효과적이며 피부 속 콜라겐 생성으로 탄력, 잔주름, 거친 피부결, 피부톤 개선에 도움을 줍니다."
+    }
+  ],
+  "medical_devices": [
+    {
+      "name": "Potenza",
+      "korean_name": "포텐자",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_MICRONEEDLE",
+      "description": "기존 침습 기기의 한계를 극복한 RF 장비로 필요한 타겟층에 일정하고 고른 에너지 전달이 가능해진 다양한 멀티레이저 니들팁을 사용합니다. 모공, 흉터, 여드름, 홍조 등 개인의 피부 상태와 목적에 맞는 맞춤프로그램 시술입니다.",
+      "source": "text"
+    },
+    {
+      "name": "Laser",
+      "korean_name": "레이저",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Titanium",
+      "korean_name": "티타늄",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_TIGHTENING",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Ulthera",
+      "korean_name": "울쎄라",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Thermage",
+      "korean_name": "써마지",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_TIGHTENING",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "HIFU",
+      "korean_name": "집속초음파",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "RF",
+      "korean_name": "고주파",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_TIGHTENING",
+      "description": null,
+      "source": "text"
+    }
+  ],
+  "treatments": [
+    {
+      "name": "New Normal Lifting",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "Balance Lifting",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "One Day Extreme Lifting",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "Facial Sculpting",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "Custom Dual Torning",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "Medical Skincare",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "메이린 실 리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "thread",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "메이린 보톡스 필러",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "botox/filler",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "메이린 포텐자",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "메이린 포토닝",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "메이린 나노토닝",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "메이린 색소 집중 치료",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "메이린 혈관 집중 치료",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "메이린 흉터 집중 치료",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "메이린 콜라겐 부스터",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "collagen_stimulator",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "메이린 커스텀 칵테일 주사",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other_injectable",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "메이린 테일러 필러",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "filler",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "듀얼 토닝",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "세포 항노화 프로그램",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "피부 항노화 프로그램",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "박현준 원장 시그니처 포뮬라",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "메이린 포톤 시그널링",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "메이린 셀",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "skinbooster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "메이린 뉴 노멀 리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [
+        "티타늄리프팅",
+        "집속초음파",
+        "고주파",
+        "빛 레이저"
+      ],
+      "is_package": true,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "메이린 콰트로 리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [
+        "4파장 레이저"
+      ],
+      "is_package": true,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "메이린 스킨 부스터",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "skinbooster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "메이린 커스텀 리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [
+        "코그실",
+        "모노실",
+        "볼륨실"
+      ],
+      "is_package": true,
+      "is_addon": false,
+      "source": "website",
+      "category": "thread",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "메이린 울써티 테라피",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [
+        "울쎄라",
+        "써마지",
+        "티타늄"
+      ],
+      "is_package": true,
+      "is_addon": false,
+      "source": "website",
+      "category": "hifu/rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "메이린 셀 테라피",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "메이린 스페셜 리프팅 콤비네이션 \"울트라\"",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "hifu/rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "메이린만의 프리미엄 색소 프로그램",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "메이린 안티에이징 줄기세포",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "skinbooster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "진료확인서",
+      "regular_price": 3000,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "regular",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "nongeubyeo",
+      "category": "other",
+      "price_display": "￦3,000",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "일반진단서",
+      "regular_price": 20000,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "regular",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "nongeubyeo",
+      "category": "other",
+      "price_display": "￦20,000",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "영문진단서",
+      "regular_price": 40000,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "regular",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "nongeubyeo",
+      "category": "other",
+      "price_display": "￦40,000",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "의사소견서",
+      "regular_price": 10000,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "regular",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "nongeubyeo",
+      "category": "other",
+      "price_display": "￦10,000",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "비보험진료비",
+      "regular_price": 10000,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "regular",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "nongeubyeo",
+      "category": "other",
+      "price_display": "￦10,000",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "진료기록부 사본 (1~5매)",
+      "regular_price": 1000,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "regular",
+      "quantity": 1,
+      "unit": "매",
+      "price_per_unit": 1000,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "nongeubyeo",
+      "category": "other",
+      "price_display": "￦1,000 (1매당)",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "진료기록부 사본 (6매~)",
+      "regular_price": 100,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "regular",
+      "quantity": 1,
+      "unit": "매",
+      "price_per_unit": 100,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "nongeubyeo",
+      "category": "other",
+      "price_display": "￦100 (1매당)",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "영문진단서 (청주점)",
+      "regular_price": 20000,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "regular",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "nongeubyeo",
+      "category": "other",
+      "price_display": "￦20,000",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "의사소견서 (청주점)",
+      "regular_price": 20000,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "regular",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "nongeubyeo",
+      "category": "other",
+      "price_display": "￦20,000",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "진료기록부 사본 (1매 당) (청주점)",
+      "regular_price": 1000,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "regular",
+      "quantity": 1,
+      "unit": "매",
+      "price_per_unit": 1000,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "nongeubyeo",
+      "category": "other",
+      "price_display": "￦1,000",
+      "session_info": null,
+      "body_part": null
+    }
+  ],
+  "events": [],
+  "clinic_categories": [
+    {
+      "name": "Revitalization Clinic",
+      "treatments": []
+    },
+    {
+      "name": "하이엔드 안티에이징 클리닉",
+      "treatments": []
+    },
+    {
+      "name": "안티에이징 클리닉",
+      "treatments": []
+    }
+  ],
+  "contact_info": {
+    "email": [
+      {
+        "address": "mkt@maylin.co.kr",
+        "type": "대표",
+        "source": "footer"
+      }
+    ],
+    "phone": [
+      {
+        "number": "02-6959-9880",
+        "type": "대표",
+        "source": "footer"
+      },
+      {
+        "number": "02.783.1231",
+        "type": "대표",
+        "source": "website"
+      },
+      {
+        "number": "031.919.0000",
+        "type": "대표",
+        "source": "website"
+      },
+      {
+        "number": "031.5170.3246",
+        "type": "대표",
+        "source": "website"
+      },
+      {
+        "number": "052.228.1388",
+        "type": "대표",
+        "source": "website"
+      },
+      {
+        "number": "+44 7943 977232",
+        "type": "WhatsApp",
+        "source": "website"
+      },
+      {
+        "number": "+447483 119137",
+        "type": "기타",
+        "source": "screenshot"
+      },
+      {
+        "number": "02-3445-9103",
+        "type": "대표",
+        "source": "website"
+      },
+      {
+        "number": "02-3444-9103",
+        "type": "팩스",
+        "source": "website"
+      },
+      {
+        "number": "032-816-8882",
+        "type": "대표",
+        "source": "website"
+      },
+      {
+        "number": "02.6457.0101",
+        "type": "대표",
+        "source": "website"
+      },
+      {
+        "number": "043-909-4715",
+        "type": "대표",
+        "source": "website"
+      },
+      {
+        "number": "02-422-1016",
+        "type": "대표",
+        "source": "website"
+      },
+      {
+        "number": "051-909-0501",
+        "type": "대표",
+        "source": "website"
+      }
+    ],
+    "address": {
+      "full_address": "경기도 고양시 일산서구 호수로 817, 9층(대화동, 현대백화점)",
+      "sido": "경기도",
+      "sigungu": "고양시 일산서구"
+    },
+    "kakao_channel": "http://pf.kakao.com/_EKBLK",
+    "naver_booking": null,
+    "naver_place": null,
+    "instagram": null,
+    "facebook": null,
+    "youtube": null,
+    "blog": null,
+    "website_url": "https://maylin.co.kr",
+    "operating_hours": null
+  },
+  "unregistered_equipment": [
+    {
+      "name": "Photoning",
+      "korean_name": "포토닝",
+      "suggested_category": "LASER",
+      "source": "website",
+      "reason": "described as anti-aging laser treatment"
+    },
+    {
+      "name": "Nano-Toning",
+      "korean_name": "나노토닝",
+      "suggested_category": "LASER",
+      "source": "website",
+      "reason": "described as effective laser treatment for scars"
+    },
+    {
+      "name": "Titanium Plus",
+      "korean_name": "티타늄플러스",
+      "suggested_category": "RF_TIGHTENING",
+      "source": "website",
+      "reason": "described as a 4-wavelength laser applicator, variant of Titanium"
+    },
+    {
+      "name": "4파장 레이저",
+      "korean_name": "4파장 레이저",
+      "suggested_category": "LASER",
+      "source": "website",
+      "reason": "described as a type of laser used in Quattro Lifting"
+    },
+    {
+      "name": "항노화 기구",
+      "korean_name": "항노화 기구",
+      "suggested_category": "OTHER_DEVICE",
+      "source": "website",
+      "reason": "general term for anti-aging devices"
+    }
+  ],
+  "unregistered_treatments": [],
+  "raw_price_texts": [],
+  "extraction_summary": {
+    "total_doctors": 17,
+    "total_academic": 17,
+    "total_equipment": 12,
+    "total_devices": 7,
+    "total_injectables": 0,
+    "total_treatments": 34,
+    "total_events": 0,
+    "total_categories": 3,
+    "total_contact_channels": 3,
+    "has_email": true,
+    "has_phone": true,
+    "has_kakao": true,
+    "has_sns": false,
+    "price_available_ratio": "10/34",
+    "unregistered_equipment_count": 5,
+    "unregistered_treatments_count": 0
+  }
+}
+
+──── [2] ocr_raw.json (이미지 OCR 원본) ────
+
+--- page_1_main_capture_0 ---
+MAYLIN NETWORK SIGNATURE SPEAKER MORE SPECIAL MAYLIN&FRIENDS
+MAYLIN
+GROUP
+OFFER
+Global Anti-aging Aesthetic Medicine
+Timeless Luxury
+
+--- page_1_main_capture_1 ---
+MAYLIN NETWORK SIGNATURE SPEAKER MORE SPECIAL MAYLIN&FRIENDS
+MAYLIN
+GROUP OFFER
+Global Anti-Timeless Luxury Medicine
+
+--- page_1_main_capture_2 ---
+MAYLIN NETWORK SIGNATURE SPEAKER MORE SPECIAL MAYLIN&FRIENDS
+MAYLIN
+GROUP OFFER
+Global Anti-Timeless Luxury Medicine
+
+--- page_1_main_capture_3 ---
+MAYLIN
+MAYLIN
+NETWORK
+SIGNATURE
+SPEAKER
+MORE
+SPECIAL
+MAYLIN&FRIENDS
+GROUP
+OFFER
+Global Anti-Timeless Luxury Medicine
+
+--- page_1_main_capture_4 ---
+MAYLIN
+GROUP
+MAYLIN NETWORK SIGNATURE SPEAKER MORE SPECIAL MAYLIN&FRIENDS
+OFFER
+Global AntiTimeless Luxury Medicine
+
+--- page_1_main_capture_5 ---
+MAYLIN
+MAYLIN NETWORK SIGNATURE SPEAKER MORE SPECIAL MAYLIN&FRIENDS
+GROUP OFFER
+
+Global A Timeless Aesthetic Medicine
+더 특별하게, 더 아름답게
+
+--- page_2_other_capture_0 ---
+MAYLIN NETWORK SIGNATURE SPEAKER MORE SPECIAL MAYLIN&FRIENDS
+MAYLIN
+GROUP OFFER
+Language
+한국어
+Ch
+카카오상담
+blog
+블로그
+인스타그램
+이벤트
+오시는길
+TOP
+MAYLIN
+ANTI-AGING CLINIC
+Network
+Scientific Articles 바로가기
+
+--- page_2_other_capture_1 ---
+MAYLIN NETWORK SIGNATURE SPEAKER MORE SPECIAL MAYLIN&FRIENDS
+MAYLIN
+GROUP
+OFFER
+Language
+한국어 ∨
+Ch
+카카오상담
+blog
+블로그
+O
+인스타그램
+MAYLIN
+ANTI-AGING CLINIC
+Network
+🎁
+이벤트
+📍
+오시는길
+^
+TOP
+Scientific Articles 바로가기
+
+--- page_2_other_capture_2 ---
+MAYLIN
+NETWORK
+SIGNATURE
+SPEAKER
+MORE
+SPECIAL
+MAYLIN&FRIENDS
+MAYLIN
+GROUP
+OFFER
+Language
+한국어
+Ch
+카카오상담
+MAYLIN
+ANTI-AGING CLINIC
+blog
+블로그
+Network
+O
+인스타그램
+이벤트
+오시는길
+^
+TOP
+Scientific Articles 바로가기
+
+--- page_2_other_capture_3 ---
+MAYLIN NETWORK SIGNATURE SPEAKER MORE SPECIAL MAYLIN&FRIENDS
+MAYLIN
+GROUP
+OFFER
+Language
+한국어
+Ch
+카카오상담
+blog
+블로그
+인스타그램
+이벤트
+오시는길
+TOP
+MAYLIN
+ANTI-AGING CLINIC
+Network
+Scientific Articles 바로가기
+
+--- page_2_other_capture_4 ---
+MAYLIN NETWORK SIGNATURE SPEAKER MORE SPECIAL MAYLIN&FRIENDS
+MAYLIN
+GROUP OFFER
+Language
+한국어
+Ch
+카카오상담
+MAYLIN
+ANTI-AGING CLINIC
+blog
+블로그
+Network
+인스타그램
+이벤트
+오시는길
+TOP
+Scientific Articles 바로가기
+
+--- page_2_other_capture_5 ---
+MAYLIN NETWORK SIGNATURE SPEAKER MORE SPECIAL MAYLIN&FRIENDS
+MAYLIN
+GROUP OFFER
+Language
+한국어
+Ch
+카카오상담
+blog
+블로그
+인스타그램
+이벤트
+오시는길
+TOP
+MAYLIN
+ANTI-AGING CLINIC
+Network
+Scientific Articles 바로가기
+
+--- page_2_other_capture_6 ---
+MAYLIN NETWORK SIGNATURE SPEAKER MORE SPECIAL MAYLIN&FRIENDS
+GROUP OFFER
+MAYLIN
+ANTI-AGING CLINIC
+Language
+한국어
+Ch
+카카오상담
+blog
+블로그
+Network
+인스타그램
+이벤트
+오시는길
+Scientific Articles 바로가기
+TOP
+
+--- page_2_other_capture_7 ---
+MAYLIN NETWORK SIGNATURE SPEAKER MORE SPECIAL MAYLIN&FRIENDS
+MAYLIN
+GROUP OFFER
+Language
+한국어
+Ch
+카카오상담
+blog
+블로그
+O
+인스타그램
+이벤트
+오시는길
+^
+TOP
+MAYLIN
+ANTI-AGING CLINIC
+Network
+Scientific Articles 바로가기
+
+--- page_2_other_capture_8 ---
+MAYLIN NETWORK SIGNATURE SPEAKER MORE SPECIAL MAYLIN&FRIENDS
+MAYLIN
+GROUP
+OFFER
+Language
+한국어
+Ch
+카카오상담
+blog
+블로그
+O
+인스타그램
+🎁
+이벤트
+📍
+오시는길
+^
+TOP
+MAYLIN
+ANTI-AGING CLINIC
+Network
+Scientific Articles 바로가기
+
+--- page_2_other_capture_9 ---
+MAYLIN NETWORK SIGNATURE SPEAKER MORE SPECIAL MAYLIN&FRIENDS
+MAYLIN
+GROUP
+OFFER
+Language
+한국어
+Ch
+카카오상담
+blog
+블로그
+O
+인스타그램
+이벤트
+오시는길
+TOP
+MAYLIN
+ANTI-AGING CLINIC
+Network
+Scientific Articles 바로가기
+
+--- page_3_other_capture_0 ---
+MAYLIN NETWORK SIGNATURE SPEAKER MORE SPECIAL MAYLIN&FRIENDS
+MAYLIN
+GROUP
+OFFER
+Language
+한국어
+MAYLIN
+ANTI-AGING CLINIC
+Ch
+카카오상담
+blog
+블로그
+Network
+메이린클리닉 1호점
+유튜브
+인스타그램
+이벤트
+Scientific Articles 바로가기
+오시는길
+전화상담
+TOP
+
+--- page_3_other_capture_1 ---
+MAYLIN NETWORK SIGNATURE SPEAKER MORE SPECIAL MAYLIN&FRIENDS
+MAYLIN
+GROUP
+OFFER
+Language
+한국어
+Ch
+카카오상담
+MAYLIN
+ANTI-AGING CLINIC
+blog
+블로그
+Network
+유튜브
+메이린클리닉 1호점
+인스타그램
+이벤트
+오시는길
+전화상담
+Scientific Articles 바로가기
+TOP
+
+--- page_3_other_capture_2 ---
+MAYLIN NETWORK SIGNATURE SPEAKER MORE SPECIAL MAYLIN&FRIENDS
+MAYLIN
+GROUP
+OFFER
+Language
+한국어
+Ch
+카카오상담
+MAYLIN
+ANTI-AGING CLINIC
+blog
+블로그
+Network
+메이린클리닉 1호점
+유튜브
+인스타그램
+이벤트
+오시는길
+Scientific Articles 바로가기
+전화상담
+TOP
+
+--- page_3_other_capture_3 ---
+MAYLIN NETWORK SIGNATURE SPEAKER MORE SPECIAL MAYLIN&FRIENDS
+MAYLIN
+GROUP
+OFFER
+Language
+한국어
+Ch
+카카오상담
+blog
+블로그
+유튜브
+인스타그램
+MAYLIN
+ANTI-AGING CLINIC
+Network
+메이린클리닉 1호점
+이벤트
+오시는길
+전화상담
+Scientific Articles 바로가기
+TOP
+
+--- page_3_other_capture_4 ---
+MAYLIN NETWORK SIGNATURE SPEAKER MORE SPECIAL MAYLIN&FRIENDS
+MAYLIN
+GROUP
+OFFER
+Language
+한국어
+MAYLIN
+ANTI-AGING CLINIC
+Ch
+카카오상담
+blog
+블로그
+Network
+메이린클리닉 1호점
+유튜브
+인스타그램
+이벤트
+오시는길
+Scientific Articles 바로가기
+전화상담
+TOP
+
+--- page_3_other_capture_5 ---
+MAYLIN NETWORK SIGNATURE SPEAKER MORE SPECIAL MAYLIN&FRIENDS
+MAYLIN
+GROUP
+OFFER
+Language
+한국어
+MAYLIN
+ANTI-AGING CLINIC
+Ch
+카카오상담
+blog
+블로그
+Network
+메이린클리닉 1호점
+유튜브
+인스타그램
+이벤트
+오시는길
+Scientific Articles 바로가기
+전화상담
+TOP
+
+--- page_3_other_capture_6 ---
+MAYLIN NETWORK SIGNATURE SPEAKER MORE SPECIAL MAYLIN&FRIENDS
+MAYLIN
+GROUP
+OFFER
+Language
+한국어
+Ch
+카카오상담
+MAYLIN
+ANTI-AGING CLINIC
+blog
+블로그
+Network
+메이린클리닉 1호점
+유튜브
+인스타그램
+이벤트
+오시는길
+Scientific Articles 바로가기
+전화상담
+TOP
+
+--- page_3_other_capture_7 ---
+MAYLIN NETWORK SIGNATURE SPEAKER MORE SPECIAL MAYLIN&FRIENDS
+MAYLIN
+GROUP
+OFFER
+Language
+한국어
+Ch
+카카오상담
+MAYLIN
+ANTI-AGING CLINIC
+blog
+블로그
+Network
+유튜브
+메이린클리닉 1호점
+인스타그램
+이벤트
+오시는길
+전화상담
+Scientific Articles 바로가기
+TOP
+
+--- page_3_other_capture_8 ---
+MAYLIN NETWORK SIGNATURE SPEAKER MORE SPECIAL MAYLIN&FRIENDS
+MAYLIN
+GROUP
+OFFER
+Language
+한국어
+Ch
+카카오상담
+blog
+블로그
+MAYLIN
+ANTI-AGING CLINIC
+유튜브
+Network
+메이린클리닉 1호점
+인스타그램
+이벤트
+오시는길
+전화상담
+Scientific Articles 바로가기
+TOP
+
+--- page_3_other_capture_9 ---
+MAYLIN NETWORK SIGNATURE SPEAKER MORE SPECIAL MAYLIN&FRIENDS
+MAYLIN
+GROUP
+OFFER
+Language
+한국어
+Ch
+카카오상담
+blog
+블로그
+MAYLIN
+ANTI-AGING CLINIC
+유튜브
+Network
+메이린클리닉 1호점
+인스타그램
+이벤트
+오시는길
+전화상담
+Scientific Articles 바로가기
+TOP
+
+--- page_4_other_capture_0 ---
+MAYLIN NETWORK SIGNATURE SPEAKER MORE SPECIAL MAYLIN&FRIENDS
+MAYLIN
+GROUP OFFER
+Language
+한국어
+Ch
+카카오상담
+blog
+블로그
+Network
+인스타그램
+이벤트
+오시는길
+Scientific Articles 바로가기
+TOP
+
+--- page_4_other_capture_1 ---
+MAYLIN NETWORK SIGNATURE SPEAKER MORE SPECIAL MAYLIN&FRIENDS
+MAYLIN
+GROUP
+OFFER
+Network
+Language
+한국어
+Ch
+카카오상담
+blog
+블로그
+인스타그램
+이벤트
+오시는길
+TOP
+Scientific Articles 바로가기
+
+--- page_4_other_capture_2 ---
+MAYLIN NETWORK SIGNATURE SPEAKER MORE SPECIAL MAYLIN&FRIENDS
+MAYLIN
+GROUP
+OFFER
+Language
+한국어
+Network
+Ch
+카카오상담
+blog
+블로그
+인스타그램
+이벤트
+오시는길
+Scientific Articles 바로가기
+TOP
+
+--- page_4_other_capture_3 ---
+MAYLIN NETWORK SIGNATURE SPEAKER MORE SPECIAL MAYLIN&FRIENDS
+MAYLIN
+GROUP
+OFFER
+Language
+한국어
+Network
+Ch
+카카오상담
+blog
+블로그
+O
+인스타그램
+이벤트
+오시는길
+TOP
+Scientific Articles 바로가기
+
+--- page_4_other_capture_4 ---
+MAYLIN NETWORK SIGNATURE SPEAKER MORE SPECIAL MAYLIN&FRIENDS
+MAYLIN
+GROUP
+OFFER
+Language
+한국어
+Ch
+카카오상담
+blog
+블로그
+O
+인스타그램
+이벤트
+오시는길
+TOP
+Network
+Scientific Articles 바로가기
+
+--- page_4_other_capture_5 ---
+MAYLIN NETWORK SIGNATURE SPEAKER MORE SPECIAL MAYLIN&FRIENDS
+MAYLIN
+GROUP
+OFFER
+Language
+한국어
+Ch
+카카오상담
+blog
+블로그
+Network
+O
+인스타그램
+이벤트
+오시는길
+TOP
+Scientific Articles 바로가기
+
+--- page_4_other_capture_6 ---
+MAYLIN NETWORK SIGNATURE SPEAKER MORE SPECIAL MAYLIN&FRIENDS
+MAYLIN
+GROUP
+OFFER
+Language
+한국어
+Ch
+카카오상담
+blog
+블로그
+O
+인스타그램
+이벤트
+오시는길
+TOP
+Network
+Scientific Articles 바로가기
+
+--- page_4_other_capture_7 ---
+MAYLIN NETWORK SIGNATURE SPEAKER MORE SPECIAL MAYLIN&FRIENDS
+MAYLIN
+GROUP
+OFFER
+Language
+한국어 ∨
+Ch
+카카오상담
+blog
+블로그
+O
+인스타그램
+🎁
+이벤트
+📍
+오시는길
+^
+TOP
+Network
+Scientific Articles 바로가기
+
+--- page_4_other_capture_8 ---
+MAYLIN NETWORK SIGNATURE SPEAKER MORE SPECIAL MAYLIN&FRIENDS
+MAYLIN
+GROUP
+OFFER
+Language
+한국어
+Ch
+카카오상담
+blog
+블로그
+인스타그램
+이벤트
+오시는길
+Network
+TOP
+Scientific Articles 바로가기
+
+--- page_4_other_capture_9 ---
+MAYLIN NETWORK SIGNATURE SPEAKER MORE SPECIAL MAYLIN&FRIENDS
+MAYLIN
+GROUP
+OFFER
+Language
+한국어
+Ch
+카카오상담
+blog
+블로그
+O
+인스타그램
+이벤트
+오시는길
+TOP
+Network
+Scientific Articles 바로가기
+
+--- page_5_other_capture_0 ---
+MAYLIN NETWORK SIGNATURE SPEAKER MORE SPECIAL MAYLIN&FRIENDS
+MAYLIN
+GROUP
+OFFER
+Language
+한국어 ∨
+Ch
+카카오상담
+blog
+블로그
+O
+인스타그램
+이벤트
+오시는길
+TOP
+MAYLIN
+Network
+POTENZA
+Lenovo
+Lenovo
+Scientific Articles 바로가기
+
+--- page_5_other_capture_1 ---
+MAYLIN NETWORK SIGNATURE SPEAKER MORE SPECIAL MAYLIN&FRIENDS
+MAYLIN
+GROUP
+OFFER
+Network
+Language
+한국어 ∨
+Ch
+카카오상담
+blog
+블로그
+O
+인스타그램
+이벤트
+오시는길
+TOP
+Scientific Articles 바로가기
+
+--- page_5_other_capture_2 ---
+MAYLIN NETWORK SIGNATURE SPEAKER MORE SPECIAL MAYLIN&FRIENDS
+MAYLIN
+GROUP
+OFFER
+Language
+한국어 ∨
+Ch
+카카오상담
+blog
+블로그
+O
+인스타그램
+이벤트
+오시는길
+TOP
+MAYLIN
+Network
+Scientific Articles 바로가기
+
+--- page_5_other_capture_3 ---
+MAYLIN NETWORK SIGNATURE SPEAKER MORE SPECIAL MAYLIN&FRIENDS
+MAYLIN
+GROUP
+OFFER
+MAYLIN
+Network
+Language
+한국어 ∨
+Ch
+카카오상담
+blog
+블로그
+O
+인스타그램
+이벤트
+오시는길
+^
+TOP
+Scientific Articles 바로가기
+
+--- page_5_other_capture_4 ---
+MAYLIN NETWORK SIGNATURE SPEAKER MORE SPECIAL MAYLIN&FRIENDS
+MAYLIN
+GROUP
+OFFER
+Language
+한국어 ∨
+카카오상담
+블로그
+인스타그램
+이벤트
+오시는길
+TOP
+MAYLIN
+Network
+Scientific Articles 바로가기
+
+--- page_5_other_capture_5 ---
+MAYLIN
+NETWORK
+SIGNATURE
+SPEAKER
+MORE
+SPECIAL
+MAYLIN&FRIENDS
+MAYLIN
+GROUP
+OFFER
+Language
+한국어 ∨
+Ch
+카카오상담
+blog
+블로그
+O
+인스타그램
+MAYLIN
+Network
+이벤트
+오시는길
+TOP
+Scientific Articles 바로가기
+
+--- page_5_other_capture_6 ---
+MAYLIN
+NETWORK
+SIGNATURE
+SPEAKER
+MORE
+SPECIAL
+MAYLIN&FRIENDS
+GROUP
+OFFER
+Language
+한국어 ∨
+Ch
+카카오상담
+blog
+블로그
+O
+인스타그램
+MAYLIN
+Network
+이벤트
+오시는길
+^
+TOP
+Scientific Articles 바로가기
+
+--- page_5_other_capture_7 ---
+MAYLIN NETWORK SIGNATURE SPEAKER MORE SPECIAL MAYLIN&FRIENDS
+MAYLIN
+[Korean flag] [US flag] [Japanese flag]
+GROUP
+OFFER
+MAYLIN
+Network
+Language
+한국어 ∨
+Ch
+카카오상담
+blog
+블로그
+O
+인스타그램
+이벤트
+오시는길
+^
+TOP
+Scientific Articles 바로가기
+
+--- page_5_other_capture_8 ---
+MAYLIN NETWORK SIGNATURE SPEAKER MORE SPECIAL MAYLIN&FRIENDS
+MAYLIN
+GROUP
+OFFER
+Language
+한국어 ∨
+Ch
+카카오상담
+blog
+블로그
+O
+인스타그램
+MAYLIN
+Network
+POTENZA
+이벤트
+오시는길
+TOP
+Scientific Articles 바로가기
+
+--- page_5_other_capture_9 ---
+MAYLIN NETWORK SIGNATURE SPEAKER MORE SPECIAL MAYLIN&FRIENDS
+MAYLIN
+GROUP
+OFFER
+Language
+한국어 ∨
+Ch
+카카오상담
+blog
+블로그
+O
+인스타그램
+이벤트
+오시는길
+^
+TOP
+MAYLIN
+Network
+Lenovo
+POTENZA
+Lenovo
+Scientific Articles 바로가기
+
+──── [3] coverage_raw.txt (커버리지 검증 로그) ────
+{
+  "missing_equipments": [],
+  "missing_treatments": [],
+  "missing_doctors": [],
+  "missing_prices": [
+    "진료확인서",
+    "일반진단서",
+    "영문진단서",
+    "의사소견서",
+    "영문소견서",
+    "비보험진료비",
+    "진료기록부 사본 (1~5매)",
+    "진료기록부 사본 (6매~)",
+    "영문진단서 (청주점)",
+    "의사소견서 (청주점)",
+    "진료기록부 사본 (1매 당) (청주점)"
+  ],
+  "coverage_score": {
+    "equipment": 100,
+    "treatment": 100,
+    "doctor": 100,
+    "overall": 100
+  },
+  "issues": [
+    "추출된 '시술' 목록에 실제 시술이 아닌 클리닉 지점 소개 문구가 포함되어 있습니다.",
+    "추출된 '시술' 목록에 실제 시술이 아닌 제증명서 발급 비용 항목이 포함되어 있습니다.",
+    "추출 결과에 가격 정보 필드가 없어, 가격 정보가 있는 항목들이 'missing_prices'로 분류되었습니다."
+  ]
+}

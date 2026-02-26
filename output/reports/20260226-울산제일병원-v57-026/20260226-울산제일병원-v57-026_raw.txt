@@ -1,0 +1,193 @@
+═══════════════════════════════════════════════════
+  울산제일병원 — 추출 원본 데이터
+═══════════════════════════════════════════════════
+
+──── [1] analysis.json (Gemini 분류 결과) ────
+{
+  "hospital_name": "울산제일병원",
+  "doctors": [],
+  "academic_activities": [
+    {
+      "type": "기타",
+      "title": "야식·커피가 부르는 병 ‘위식도역류질환’",
+      "year": 2026,
+      "doctor_name": null,
+      "source_text": "야식·커피가 부르는 병 ‘위식도역류질환’"
+    }
+  ],
+  "medical_devices": [
+    {
+      "name": "요로결석 쇄석기",
+      "korean_name": "요로결석 쇄석기",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": "요로결석 응급쇄석센터에서 운영하는 장비",
+      "source": "text"
+    }
+  ],
+  "treatments": [],
+  "events": [],
+  "clinic_categories": [
+    {
+      "name": "내과",
+      "treatments": []
+    },
+    {
+      "name": "비뇨기과",
+      "treatments": []
+    },
+    {
+      "name": "신경과",
+      "treatments": []
+    },
+    {
+      "name": "정형외과",
+      "treatments": []
+    },
+    {
+      "name": "미용피부과",
+      "treatments": []
+    },
+    {
+      "name": "요로결석 응급쇄석센터",
+      "treatments": []
+    },
+    {
+      "name": "건강증진센터",
+      "treatments": []
+    },
+    {
+      "name": "비뇨기과센터",
+      "treatments": []
+    },
+    {
+      "name": "피부미용센터",
+      "treatments": []
+    }
+  ],
+  "contact_info": {
+    "email": [
+      {
+        "address": "chemkmw@nate.com",
+        "type": "대표",
+        "source": "footer"
+      }
+    ],
+    "phone": [
+      {
+        "number": "052-220-3300",
+        "type": "대표"
+      },
+      {
+        "number": "052-220-3488",
+        "type": "팩스"
+      }
+    ],
+    "address": {
+      "full_address": "울산광역시 남구 남산로 354번길 26",
+      "sido": "울산광역시",
+      "sigungu": "남구"
+    },
+    "kakao_channel": null,
+    "naver_booking": null,
+    "naver_place": null,
+    "instagram": null,
+    "facebook": null,
+    "youtube": null,
+    "blog": null,
+    "website_url": "http://www.ujh.co.kr",
+    "operating_hours": null
+  },
+  "unregistered_equipment": [],
+  "unregistered_treatments": [],
+  "raw_price_texts": [],
+  "extraction_summary": {
+    "total_doctors": 0,
+    "total_academic": 1,
+    "total_equipment": 1,
+    "total_devices": 1,
+    "total_injectables": 0,
+    "total_treatments": 0,
+    "total_events": 0,
+    "total_categories": 9,
+    "total_contact_channels": 3,
+    "has_email": true,
+    "has_phone": true,
+    "has_kakao": false,
+    "has_sns": false,
+    "price_available_ratio": "0/0",
+    "unregistered_equipment_count": 0,
+    "unregistered_treatments_count": 0
+  }
+}
+
+──── [2] ocr_raw.json (이미지 OCR 원본) ────
+
+--- page_1_main_capture_0 ---
+의료법인 울산제일병원
+병원소개 이용안내 진료과소개 전문센터 주요시술 커뮤니티 Q +
+진료시간안내
+외래 및 입퇴원 안내
+비급여 항목 안내
+장례식장
+찾아오시는길
+진료협약기관
+
+🧑‍⚕️ 진료시간안내 🧑‍⚕️ 의료진 소개 🚗 찾아오시는길 ❓ 온라인상담 ❓ 전문센터
+
+언론보도자료 제일갤러리 병원소식
+제목 작성일
+울산 ubc 프라임뉴스 | 울산제일병원, 적십자사 희망나눔성금 1천... 2026.02.25
+울산제일병원, 적십자 희망나눔성금 1000만원 2026.02.25
+울산제일병원, 도란도란행복나눔봉사단과 진료협약 2026.02.12
+울산제일병원-자산주택, 보건 향상 위한 진료협약 체결 2026.02.11
+야식·커피가 부르는 병 '위식도역류질환' 2026.01.27
+
+울산제일병원 방문을 환영합니다.
+✅ 제일병원은 내과,비뇨기과,신경외과,정형외과,미용피부과 중심병원입니다.
+✅ 24시간 요로결석 응급쇄석센터 운영중입니다.
+✅ 건강증진센터를 운영중입니다.
+✅ 비뇨기과센터를 운영중입니다.
+✅ 피부미용센터를 운영중입니다.
+
+--- page_1_main_capture_1 ---
+진료시간안내
+의료진소개
+찾아오시는길
+온라인상담
+전문센터
+
+언론보도자료
+제일갤러리
+병원소식
+
+제목
+작성일
+울산 ubc 프라임뉴스 | 울산제일병원, 적십자사 희망나눔성금 1천... 2026.02.25
+울산제일병원, 적십자 희망나눔성금 1000만원 2026.02.25
+울산제일병원, 도란도란행복나눔봉사단과 진료협약 2026.02.12
+울산제일병원-지산주택, 보건 향상 위한 진료협약 체결 2026.02.11
+야식·커피가 부르는 병 '위식도역류질환' 2026.01.27
+
+울산제일병원 방문을 환영합니다.
+
+제일병원은 내과,비뇨기과,신경과,정형외과, 미용피부과 중심병원입니다.
+24시간 요로결석 응급쇄석센터 운영중입니다.
+건강증진센터를 운영중입니다.
+비뇨기과센터를 운영중입니다.
+피부미용센터를 운영중입니다.
+
+사업자번호 : 610-82-07223
+대표자 : 김 종 길
+주소 : 울산광역시 남구 남산로 354번길 26
+전 화 : 052-220-3300
+팩 스 : 052-220-3488
+이 메 일 :chemkmw@nate.com
+Copyright 1986 ujh.co.kr .All Rights Reserved.
+
+개인정보취급방침
+
+직원전용
+
+> 로그인

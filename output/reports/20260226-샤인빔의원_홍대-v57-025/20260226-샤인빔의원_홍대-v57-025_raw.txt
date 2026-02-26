@@ -1,0 +1,1044 @@
+═══════════════════════════════════════════════════
+  샤인빔의원 홍대 — 추출 원본 데이터
+═══════════════════════════════════════════════════
+
+──── [1] analysis.json (Gemini 분류 결과) ────
+{
+  "hospital_name": "샤인빔의원 홍대",
+  "doctors": [],
+  "academic_activities": [],
+  "medical_devices": [
+    {
+      "name": "PicoSure",
+      "korean_name": "피코슈어",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Ulthera",
+      "korean_name": "울쎄라피",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Filler",
+      "korean_name": "얼굴필러",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "filler",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Rejuran",
+      "korean_name": "리쥬란힐러",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "booster",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "AquaPeel",
+      "korean_name": "아쿠아필",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Laser",
+      "korean_name": "레이저",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Shurink Universe",
+      "korean_name": "슈링크 유니버스",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Botox",
+      "korean_name": "턱보톡스",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "botox",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "LDM",
+      "korean_name": "LDM",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "IPL",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "O2Derm",
+      "korean_name": "오투덤",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Water Shine Injection",
+      "korean_name": "물광주사",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "booster",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Girl Group Injection",
+      "korean_name": "걸그룹주사",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "lipolytic",
+      "description": null,
+      "source": "text"
+    }
+  ],
+  "treatments": [
+    {
+      "name": "피코슈어토닝",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "울쎄라피 프라임",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "hifu",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "얼굴필러",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "filler",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "리쥬란힐러",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "skinbooster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "엘리트 플러스 제모",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "피부관리[재생관리]",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": 25000,
+      "max_price": null,
+      "price_type": "regular",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [
+        "수분",
+        "진정",
+        "재생",
+        "비타민"
+      ],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": "25,000 원~",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "아쿠아필",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": 60000,
+      "max_price": null,
+      "price_type": "regular",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": "60,000 원~",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "레이저토닝+모델링팩",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": 50000,
+      "max_price": null,
+      "price_type": "regular",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [
+        "기미",
+        "주근깨",
+        "잡티개선",
+        "미백레이저"
+      ],
+      "is_package": true,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": "50,000 원~",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "슈링크 유니버스 리프팅 (100샷)",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": 59000,
+      "max_price": null,
+      "price_type": "regular",
+      "quantity": 100,
+      "unit": "shot",
+      "price_per_unit": 590,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "hifu",
+      "price_display": "59,000 원~",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "턱보톡스",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": 22000,
+      "max_price": null,
+      "price_type": "regular",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "botox",
+      "price_display": "22,000 원~",
+      "session_info": null,
+      "body_part": "턱"
+    },
+    {
+      "name": "LDM재생관리",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": 55000,
+      "max_price": null,
+      "price_type": "regular",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": "55,000 원~",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "오투덤 산소테라피",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": 60000,
+      "max_price": null,
+      "price_type": "regular",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": "60,000 원~",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "물광주사+물광촉촉팩",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": 79000,
+      "max_price": null,
+      "price_type": "regular",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": true,
+      "is_addon": false,
+      "source": "website",
+      "category": "skinbooster",
+      "price_display": "79,000 원~",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "걸그룹주사",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": 80000,
+      "max_price": null,
+      "price_type": "regular",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": "80,000 원~",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "여드름박멸패키지(4주)",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": 459000,
+      "max_price": null,
+      "price_type": "regular",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [
+        "샤인빔홍대 여드름 박멸 4주 패키지"
+      ],
+      "is_package": true,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": "459,000 원",
+      "session_info": "4주",
+      "body_part": null
+    }
+  ],
+  "events": [
+    {
+      "title": "QR코드 찍고 샤인빔과 친구하자!",
+      "type": "할인",
+      "period": null,
+      "discount_info": "최대 49% 할인까지 진행 되는 이벤트!",
+      "original_price": null,
+      "event_price": null,
+      "conditions": [
+        "QR 찍고",
+        "친구하고",
+        "혜택받기"
+      ],
+      "source": "popup"
+    },
+    {
+      "title": "1월 해피콜 이벤트 당첨자 안내",
+      "type": "기타",
+      "period": "1월",
+      "discount_info": null,
+      "original_price": null,
+      "event_price": null,
+      "conditions": [],
+      "source": "popup"
+    }
+  ],
+  "clinic_categories": [],
+  "contact_info": {
+    "email": [],
+    "phone": [
+      {
+        "number": "1544-5598",
+        "type": "대표"
+      }
+    ],
+    "address": {
+      "full_address": "서울시 마포구 양화로 151, 5,6,7층 (동교동, 욱도빌딩)",
+      "sido": "서울시",
+      "sigungu": "마포구"
+    },
+    "kakao_channel": "@샤인빔의원홍대",
+    "naver_booking": null,
+    "naver_place": null,
+    "instagram": null,
+    "facebook": null,
+    "youtube": null,
+    "blog": null,
+    "website_url": "http://hongdae.shinebeam.co.kr/",
+    "operating_hours": {
+      "weekday": "10:30 AM - 8:30 PM(30분전 예약마감)",
+      "saturday": "10:30 AM - 4:30 PM(30분전 예약마감)",
+      "sunday": "휴진입니다."
+    }
+  },
+  "unregistered_equipment": [
+    {
+      "name": "Elite Plus",
+      "korean_name": "엘리트 플러스",
+      "suggested_category": "laser",
+      "source": "website",
+      "reason": "Device name found in treatment, not in predefined list."
+    }
+  ],
+  "unregistered_treatments": [],
+  "raw_price_texts": [],
+  "extraction_summary": {
+    "total_doctors": 0,
+    "total_academic": 0,
+    "total_equipment": 12,
+    "total_devices": 7,
+    "total_injectables": 5,
+    "total_treatments": 15,
+    "total_events": 2,
+    "total_categories": 0,
+    "total_contact_channels": 5,
+    "has_email": false,
+    "has_phone": true,
+    "has_kakao": true,
+    "has_sns": false,
+    "price_available_ratio": "10/15",
+    "unregistered_equipment_count": 1,
+    "unregistered_treatments_count": 0
+  }
+}
+
+──── [2] ocr_raw.json (이미지 OCR 원본) ────
+
+--- page_1_main_capture_0 ---
+샤인빔 홍대점
+KOR
+장바구니
+예약 / 티켓팅 확인
+SHINE BEAM
+샤인빔의원 홍대
+병원소개/위치
+시술안내/가격
+칭찬/불만
+공지사항
+상담예약하기
+이벤트
+1월 해피콜 설문참여
+이제는 편리하고 간편하게!
+QR코드 찍고
+샤인빔과 친구하자!
+1월 해피콜
+이벤트 당첨자 안내
+① QR 찍고 ② 친구하고 ③ 혜택받기
+이벤트 당첨자 (연락처)
+QR코드 찍고 샤인빔과 친구하자!
+최*숙 (7**5) 이*순 (5**1) 문*하 (5**1)
+샤인빔의원 홍대
+최대 49% 할인까지
+진행 되는 이벤트!
+좋은 의견 감사합니다.
+SHINE BEAM
+오늘 하루 보지 않기
+X
+오늘 하루 보지 않기
+X
+찾으시는 시술이 있나요?
+원하는 시술을 검색해보세요.
+
+--- page_1_main_capture_1 ---
+이 시술 어때요?
+매달 진행되는 다양한 이벤트를 만나보세요.
+
+피부관리[재생관리]
+수분/진정/재생/비타민
+25,000 원~
+
+아쿠아필
+모공 속 노폐물 관리
+60,000 원~
+
+레이저토닝+모델링팩
+기미,주근깨,잡티개선[미백레이저]
+50,000 원~
+
+슈링크 유니버스 리…
+유니버스로 한번 더 강하게
+59,000 원~
+
+리츠아파트
+CU
+바투 스테이
+마포곱창타운
+로얄포차킨
+푸하하크림빵
+도어스
+자식캠퍼스
+평생교육원
+신원빌딩
+바로아토
+광남빌라스
+아파트
+올리브영
+올리브영
+세븐일레븐
+4233
+마음센터
+메가MGC커피
+동교
+마젤란21
+파리바게뜨
+홍대스타일
+게스트하우스
+플랜라이브
+엔하우스
+마젤란21
+LC타워
+아만티호텔
+서울
+세븐일레븐
+홍대입구역
+롯데시네마
+스타벅스
+샤인빔
+SHINE BEAM
+EXIT 홍대
+레이븐드
+
+샤인빔 홍대점 안내
+
+주소
+서울시 마포구 양화로 151, 5,6,7층 (동교동, 옥토빌딩)
+[2호선 홍대입구역 1번출구,도보 1분]
+
+--- page_1_main_capture_2 ---
+아쿠아필
+모공 속 노폐물 관리
+60,000 원~
+
+레이저토닝+모델링팩
+기미,주근깨,잡티개선[미백레이저]
+50,000 원~
+
+슈링크 유니버스 리…
+유니버스로 한번더 강하게
+59,000 원~
+
+턱보톡스
+발달된 근육 축소
+22,000 원~
+
+LDM재생관리
+콜라겐생성,리프팅효과
+55,000 원~
+
+리츠아파트
+바투 스테이
+마포곱창타운
+로얄호프치킨
+노비스
+CU
+바토이
+광남벨라스
+올리브영
+푸하하크림빵
+신원빌딩
+아파트
+도이스
+지식캠퍼스
+평생교육원
+신원빌딩
+4233
+마음센터
+메가MGC커피
+세븐일레븐
+올리브영
+파리바게뜨
+아만티호텔
+서울
+홍대스타일
+게스트하우스
+클럽라이브
+앤라우드
+투썸플레이스
+LC타워
+세븐일레븐
+SHINE BEAM
+EXIT 홍대입구역
+홍대입구역
+CGV
+카카오프렌즈
+ABC마트
+파리바게뜨
+GS25
+스타벅스
+세븐일레븐
+LG팰리스
+빌딩
+마포곱창
+교장백주
+스시이안
+삼평식당
+CU
+삼평식당
+메가박스
+ABC마트
+세븐일레븐
+토비
+해장집
+어메이징농카이
+어메이징농카이
+이마트24
+어메이징농카이
+커피빈
+홍대입구역
+공룡
+동교로22길
+맘스터치
+어메이징농카이
+투썸플레이스
+컴포즈커피
+홍대갤러리
+카페꼼마
+메디칼한방병원
+라이즈오토
+그래프렉쳐선
+다이소
+KB국민은행
+홍대입구역
+요거프레소
+코코넛박스
+홍부빌딩
+서교푸르지오
+화곡식스
+NAVER Corp.
+NAVER
+50m
+
+샤인빔 홍대점 안내
+
+주소
+서울시 마포구 양화로 151, 5,6,7층 (동교동, 옥도빌
+딩)
+[2호선 홍대입구역 1번출구, 도보 1분]
+
+주차장
+병원 건물 내 기계식 주차
+SUV 주차 장소가 협소하오니 문의 부탁드립니다.
+
+진료시간
+평일 10:30 AM - 8:30 PM(30분전 예약마감)
+토요일 10:30 AM - 4:30 PM(30분전 예약마감)
+*일요일 휴진입니다.
+
+샤인빔 사업자정보
+개인정보처리방침
+사이트이용약관
+가맹문의
+
+--- page_2_other_capture_0 ---
+샤인빔 홍대점
+KOR
+장바구니
+예약 / 티켓팅 확인
+SHINE BEAM
+샤인빔의원 홍대
+병원소개/위치
+시술안내/가격
+칭찬/불만
+공지사항
+상담예약하기
+이벤트
+1월 해피콜 설문참여
+이제는 편리하고 간편하게!
+QR코드 찍고
+샤인빔과 친구하자!
+1월 해피콜
+이벤트 당첨자 안내
+① QR 찍고 ② 친구하고 ③ 혜택받기
+이벤트 당첨자 (연락처)
+QR코드 찍고 샤인빔과 친구하자!
+최*숙 (7**5) 이*순 (5**1) 문*하 (5**1)
+샤인빔의원 홍대
+최대 49% 할인까지
+진행 되는 이벤트!
+좋은 의견 감사합니다.
+SHINE BEAM
+오늘 하루 보지 않기
+X
+오늘 하루 보지 않기
+X
+찾으시는 시술이 있나요?
+원하는 시술을 검색해보세요.
+
+--- page_2_other_capture_1 ---
+이 시술 어때요?
+매달 진행되는 다양한 이벤트를 만나보세요.
+
+피부관리[재생관리]
+수분/진정/재생/비타민
+25,000 원~
+
+아쿠아필
+모공 속 노폐물 관리
+60,000 원~
+
+레이저토닝+모델링팩
+기미,주근깨,잡티개선[미백레이저]
+50,000 원~
+
+슈링크 유니버스 리…
+유니버스로 한번 더 강하게
+59,000 원~
+
+CU
+리츠아파트
+바투 스테이
+자식캠퍼스
+평생교육원
+신원빌딩
+파리바게뜨
+마포곱창타운
+로얄포차킨
+푸하하크림빵
+도어스
+바로아토
+광남빌라스
+아파트
+올리브영
+세븐일레븐
+메가MGC커피
+마포아트센터
+제1MACE커피
+홍대스타일
+게스트하우스
+플랜라이브
+엔하우스
+투썸플레이스
+동교
+마젤란21
+롯데시네마
+EXIT 홍대 홍대입구역
+레이븐드
+SHINE BEAM
+스타벅스
+세븐일레븐
+어만두호텔
+서울
+삼진빌딩
+2호선
+올리브영
+LC타워
+
+샤인빔 홍대점 안내
+주소
+서울시 마포구 양화로 151, 5,6,7층 (동교동, 옥토빌
+딩)
+[2호선 홍대입구역 1번출구,도보 1분]
+
+--- page_2_other_capture_2 ---
+아쿠아필
+모공 속 노폐물 관리
+60,000 원~
+레이저토닝+모델링팩
+기미,주근깨,잡티개선[미백레이저]
+50,000 원~
+슈링크 유니버스 리…
+유니버스로 한번 더 강하게
+59,000 원~
+턱보톡스
+발달된 근육 축소
+22,000 원~
+LDM재생관리
+콜라겐생성,리프팅효과
+55,000 원~
+
+리츠아파트
+CU
+바투 스테이
+마포곱창타운
+로얄호프치킨
+푸하하크림빵
+도이스
+지식캠퍼스
+평생교육원
+신원빌딩
+바로아토
+광남벨라스
+아파트
+올리브영
+홍대브영
+2호선
+4233
+마음센터
+메가MGC커피
+세븐일레븐
+GS25
+파리바게뜨
+클럽라이브
+엔라우드
+투썸플레이스
+마포궁쌈
+아만티호텔
+서울
+스타벅스
+게스트하우스
+SHINE BEAM
+EXIT홍대
+홍대입구역
+LC타워
+롯데시네마
+레이몬드
+스시이안
+CGV
+카카오프렌즈
+LG팰리스
+아파트
+ABC마트
+세븐일레븐
+교장백주
+두루미
+해장집
+삼정식당
+어메이징농어
+맘스터치
+케이페어
+커피빈
+머큐어앰배서더
+홍대
+공팔
+라이즈오토
+그래프레젠
+투썸플레이스
+컴포즈커피
+요맘프레소
+KB청춘마루
+홍부빌딩
+서교푸르지오
+이마트24
+홍대갤러리
+키티큐브
+유익상스시
+서교초등학교
+NAVER Corp.
+NAVER
+50m
+
+샤인빔 홍대점 안내
+
+주소
+서울시 마포구 양화로 151, 5,6,7층 (동교동, 옥도빌
+딩)
+[2호선 홍대입구역 1번출구, 도보 1분]
+
+주차장
+병원 건물 내 기계식 주차
+SUV 주차 장소가 협소하오니 문의 부탁드립니다.
+
+진료시간
+평일 10:30 AM - 8:30 PM (30분전 예약마감)
+토요일 10:30 AM - 4:30 PM (30분전 예약마감)
+*일요일 휴진입니다.
+
+샤인빔 사업자정보 ∨
+개인정보처리방침
+사이트이용약관
+가맹문의
+
+--- page_3_other_capture_0 ---
+샤인빔 홍대점
+KOR
+장바구니
+예약 / 티켓팅 확인
+SHINE BEAM
+샤인빔 의원 홍대
+병원소개/위치
+시술안내/가격
+칭찬/불만
+공지사항
+상담 예약하기
+이벤트
+🔍
+
+예약 / 티켓팅 확인
+
+본인인증을 해주세요
+예약 확정 전 또는 남은 티켓팅 시술이 없을 경우
+인증번호 확인이 어렵습니다.
+
+TALK
+카카오로 간편하게
+인증을 하실 수 있습니다.
+카카오 인증
+
+휴대폰 번호를 통해
+인증을 하실 수 있습니다.
+문자 인증
+
+샤인빔 사업자정보
+개인정보처리방침
+사이트이용약관
+가맹문의
+
+--- page_3_other_capture_1 ---
+샤인빔 홍대점
+KOR
+장바구니
+예약 / 티켓팅 확인
+SHINE BEAM
+샤인빔 의원 홍대
+병원소개/위치
+시술안내/가격
+칭찬/불만
+공지사항
+상담 예약하기
+이벤트
+Q
+
+예약 / 티켓팅 확인
+
+본인인증을 해주세요
+예약 확정 전 또는 남은 티켓팅 시술이 없을 경우
+인증번호 확인이 어렵습니다.
+
+TALK
+카카오로 간편하게
+인증을 하실 수 있습니다.
+카카오 인증
+휴대폰 번호를 통해
+인증을 하실 수 있습니다.
+문자 인증
+
+샤인빔 사업자정보
+개인정보처리방침
+사이트이용약관
+가맹문의
+
+--- page_4_other_capture_0 ---
+샤인빔 홍대점 KOR
+SHINE BEAM
+샤인빔 의원 홍대
+병원소개/위치 시술안내/가격 칭찬/불만 공지사항 상담 예약하기 이벤트
+장바구니 예약 / 티켓팅 확인
+
+장바구니 확인하기
+
+장바구니에 담은 상품이 없습니다.
+
+장바구니
+이벤트 시술 0개
+일반시술 0개
+전체 합계 0개
+
+총 시술 금액 0원
+예약하기
+
+샤인빔 사업자정보
+개인정보처리방침 사이트이용약관 가맹문의
