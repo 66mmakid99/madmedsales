@@ -1,0 +1,61 @@
+{
+  "hospital_name": "이지함피부과 망우점",
+  "doctors": [],
+  "academic_activities": [],
+  "medical_devices": [],
+  "treatments": [],
+  "events": [],
+  "clinic_categories": [
+    {
+      "name": "미백",
+      "treatments": []
+    },
+    {
+      "name": "탄력&주름",
+      "treatments": []
+    },
+    {
+      "name": "여드름",
+      "treatments": []
+    }
+  ],
+  "contact_info": {
+    "email": [],
+    "phone": [],
+    "address": {
+      "full_address": "서울특별시 중랑구 망우로 422 원동빌딩 4층",
+      "sido": "서울특별시",
+      "sigungu": "중랑구"
+    },
+    "kakao_channel": null,
+    "naver_booking": null,
+    "naver_place": null,
+    "instagram": null,
+    "facebook": null,
+    "youtube": null,
+    "blog": null,
+    "website_url": "http://mw.ljh.co.kr/",
+    "operating_hours": null
+  },
+  "unregistered_equipment": [],
+  "unregistered_treatments": [],
+  "raw_price_texts": [],
+  "extraction_summary": {
+    "total_doctors": 0,
+    "total_academic": 0,
+    "total_equipment": 0,
+    "total_devices": 0,
+    "total_injectables": 0,
+    "total_treatments": 0,
+    "total_events": 0,
+    "total_categories": 3,
+    "total_contact_channels": 2,
+    "has_email": false,
+    "has_phone": false,
+    "has_kakao": false,
+    "has_sns": false,
+    "price_available_ratio": "0/0",
+    "unregistered_equipment_count": 0,
+    "unregistered_treatments_count": 0
+  }
+}

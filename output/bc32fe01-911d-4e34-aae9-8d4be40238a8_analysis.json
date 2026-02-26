@@ -2,61 +2,70 @@
   "hospital_name": "노벨의원",
   "doctors": [
     {
-      "name": "최준일",
+      "name": "최준영",
       "title": "원장",
       "specialty": null,
       "career": [],
       "education": [],
       "certifications": [],
-      "confidence": "confirmed"
+      "confidence": "uncertain"
     }
   ],
   "academic_activities": [],
   "medical_devices": [
     {
-      "name": "필러",
+      "name": "CO2 레이저",
+      "korean_name": "CO2 레이저",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": null,
+      "source": "image_banner"
+    },
+    {
+      "name": "FILLER",
       "korean_name": "필러",
       "manufacturer": null,
       "device_type": "injectable",
       "subcategory": "filler",
       "description": "얼굴의 라인을 완성하다",
-      "source": "image_banner"
+      "source": "screenshot"
     },
     {
-      "name": "Ulthera",
+      "name": "ULTHERA",
       "korean_name": "울쎄라",
       "manufacturer": null,
       "device_type": "device",
       "subcategory": "HIFU",
-      "description": "수술없는 안면거상 속부터 채워지는 피부탄력",
-      "source": "image_banner"
+      "description": "수술없는 안면거상 처진피부 개선",
+      "source": "screenshot"
     },
     {
-      "name": "Rejuran",
+      "name": "REJURAN",
       "korean_name": "리쥬란힐러",
       "manufacturer": null,
       "device_type": "injectable",
       "subcategory": "booster",
-      "description": "탄탄 촉촉 쫀쫀 동안주사",
-      "source": "image_banner"
+      "description": "동안주사",
+      "source": "screenshot"
     },
     {
-      "name": "Ultra Col",
+      "name": "ULTRA COL",
       "korean_name": "울트라콜",
       "manufacturer": null,
       "device_type": "injectable",
       "subcategory": "collagen_stimulator",
       "description": "볼륨&탄력개선 4세대콜라겐주사",
-      "source": "image_banner"
+      "source": "screenshot"
     },
     {
       "name": "I3PL",
-      "korean_name": "I3PL 색소레이저",
+      "korean_name": "I3PL",
       "manufacturer": null,
       "device_type": "device",
       "subcategory": "IPL",
       "description": null,
-      "source": "image_page"
+      "source": "screenshot"
     },
     {
       "name": "Botox",
@@ -65,7 +74,16 @@
       "device_type": "injectable",
       "subcategory": "botox",
       "description": null,
-      "source": "image_page"
+      "source": "screenshot"
+    },
+    {
+      "name": "슬리밍주사",
+      "korean_name": "슬리밍주사",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "lipolytic",
+      "description": null,
+      "source": "screenshot"
     }
   ],
   "treatments": [
@@ -90,7 +108,7 @@
       "body_part": null
     },
     {
-      "name": "필러",
+      "name": "FILLER 필러",
       "regular_price": null,
       "event_price": null,
       "min_price": null,
@@ -103,14 +121,14 @@
       "includes": [],
       "is_package": false,
       "is_addon": false,
-      "source": "image_banner",
+      "source": "screenshot",
       "category": "filler",
       "price_display": null,
       "session_info": null,
       "body_part": null
     },
     {
-      "name": "울쎄라",
+      "name": "ULTHERA 울쎄라",
       "regular_price": null,
       "event_price": null,
       "min_price": null,
@@ -123,14 +141,14 @@
       "includes": [],
       "is_package": false,
       "is_addon": false,
-      "source": "image_banner",
+      "source": "screenshot",
       "category": "hifu",
       "price_display": null,
       "session_info": null,
       "body_part": null
     },
     {
-      "name": "리쥬란힐러",
+      "name": "REJURAN 리쥬란힐러",
       "regular_price": null,
       "event_price": null,
       "min_price": null,
@@ -143,14 +161,14 @@
       "includes": [],
       "is_package": false,
       "is_addon": false,
-      "source": "image_banner",
+      "source": "screenshot",
       "category": "skinbooster",
       "price_display": null,
       "session_info": null,
       "body_part": null
     },
     {
-      "name": "울트라콜",
+      "name": "ULTRA COL 울트라콜",
       "regular_price": null,
       "event_price": null,
       "min_price": null,
@@ -163,7 +181,7 @@
       "includes": [],
       "is_package": false,
       "is_addon": false,
-      "source": "image_banner",
+      "source": "screenshot",
       "category": "collagen_stimulator",
       "price_display": null,
       "session_info": null,
@@ -183,30 +201,70 @@
       "includes": [],
       "is_package": false,
       "is_addon": false,
-      "source": "image_page",
+      "source": "screenshot",
       "category": "laser",
       "price_display": "1,100원",
       "session_info": null,
       "body_part": null
     },
     {
-      "name": "I3PL 색소레이저",
+      "name": "I3PL I3PL 색소레이저",
       "regular_price": null,
-      "event_price": 160000,
+      "event_price": 165000,
       "min_price": null,
       "max_price": null,
       "price_type": "event",
       "quantity": 3,
       "unit": "session",
-      "price_per_unit": 53333.33,
+      "price_per_unit": 55000,
       "event_period": null,
       "includes": [],
       "is_package": false,
       "is_addon": false,
-      "source": "image_page",
+      "source": "screenshot",
       "category": "laser",
-      "price_display": "3회 16만원",
+      "price_display": "3회 16만5천원",
       "session_info": "3회",
+      "body_part": null
+    },
+    {
+      "name": "Botox 보톡스",
+      "regular_price": null,
+      "event_price": 27500,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "botox",
+      "price_display": "27,500원",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "Waxing 겨드랑이제모",
+      "regular_price": null,
+      "event_price": 33000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": 5,
+      "unit": "session",
+      "price_per_unit": 6600,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "other",
+      "price_display": "5회 3만3천원",
+      "session_info": "5회",
       "body_part": null
     },
     {
@@ -223,54 +281,14 @@
       "includes": [],
       "is_package": false,
       "is_addon": false,
-      "source": "image_page",
+      "source": "screenshot",
       "category": "lipolytic",
       "price_display": "5회 10만원",
       "session_info": "5회",
       "body_part": null
     },
     {
-      "name": "보톡스",
-      "regular_price": null,
-      "event_price": 27500,
-      "min_price": null,
-      "max_price": null,
-      "price_type": "event",
-      "quantity": null,
-      "unit": null,
-      "price_per_unit": null,
-      "event_period": null,
-      "includes": [],
-      "is_package": false,
-      "is_addon": false,
-      "source": "image_page",
-      "category": "botox",
-      "price_display": "27,500원",
-      "session_info": null,
-      "body_part": null
-    },
-    {
-      "name": "겨드랑이제모",
-      "regular_price": null,
-      "event_price": 33000,
-      "min_price": null,
-      "max_price": null,
-      "price_type": "event",
-      "quantity": 5,
-      "unit": "session",
-      "price_per_unit": 6600,
-      "event_period": null,
-      "includes": [],
-      "is_package": false,
-      "is_addon": false,
-      "source": "image_page",
-      "category": "laser",
-      "price_display": "5회 3만3천원",
-      "session_info": "5회",
-      "body_part": "겨드랑이"
-    },
-    {
-      "name": "여드름 치료",
+      "name": "여드름치료",
       "regular_price": null,
       "event_price": null,
       "min_price": null,
@@ -283,11 +301,11 @@
       "includes": [],
       "is_package": false,
       "is_addon": false,
-      "source": "image_page",
+      "source": "screenshot",
       "category": "other",
       "price_display": null,
       "session_info": null,
-      "body_part": null
+      "body_part": "acne"
     },
     {
       "name": "색소치료",
@@ -303,11 +321,11 @@
       "includes": [],
       "is_package": false,
       "is_addon": false,
-      "source": "image_page",
+      "source": "screenshot",
       "category": "laser",
       "price_display": null,
       "session_info": null,
-      "body_part": null
+      "body_part": "pigmentation"
     },
     {
       "name": "실리프팅",
@@ -323,11 +341,11 @@
       "includes": [],
       "is_package": false,
       "is_addon": false,
-      "source": "image_page",
+      "source": "screenshot",
       "category": "thread",
       "price_display": null,
       "session_info": null,
-      "body_part": null
+      "body_part": "lifting"
     },
     {
       "name": "모공치료",
@@ -343,11 +361,11 @@
       "includes": [],
       "is_package": false,
       "is_addon": false,
-      "source": "image_page",
+      "source": "screenshot",
       "category": "other",
       "price_display": null,
       "session_info": null,
-      "body_part": null
+      "body_part": "pore"
     }
   ],
   "events": [
@@ -359,17 +377,37 @@
       "original_price": null,
       "event_price": 1100,
       "conditions": [],
-      "source": "banner"
+      "source": "screenshot"
     },
     {
-      "title": "I3PL 색소레이저",
+      "title": "I3PL I3PL 색소레이저",
       "type": "할인",
       "period": null,
-      "discount_info": "3회 16만원",
+      "discount_info": "3회 16만5천원",
       "original_price": null,
-      "event_price": 160000,
+      "event_price": 165000,
       "conditions": [],
-      "source": "banner"
+      "source": "screenshot"
+    },
+    {
+      "title": "Botox 보톡스",
+      "type": "할인",
+      "period": null,
+      "discount_info": "27,500원",
+      "original_price": null,
+      "event_price": 27500,
+      "conditions": [],
+      "source": "screenshot"
+    },
+    {
+      "title": "Waxing 겨드랑이제모",
+      "type": "할인",
+      "period": null,
+      "discount_info": "5회 3만3천원",
+      "original_price": null,
+      "event_price": 33000,
+      "conditions": [],
+      "source": "screenshot"
     },
     {
       "title": "슬리밍주사",
@@ -379,27 +417,7 @@
       "original_price": null,
       "event_price": 100000,
       "conditions": [],
-      "source": "banner"
-    },
-    {
-      "title": "보톡스",
-      "type": "할인",
-      "period": null,
-      "discount_info": "27,500원",
-      "original_price": null,
-      "event_price": 27500,
-      "conditions": [],
-      "source": "banner"
-    },
-    {
-      "title": "겨드랑이제모",
-      "type": "할인",
-      "period": null,
-      "discount_info": "5회 3만3천원",
-      "original_price": null,
-      "event_price": 33000,
-      "conditions": [],
-      "source": "banner"
+      "source": "screenshot"
     }
   ],
   "clinic_categories": [
@@ -407,23 +425,15 @@
       "name": "레이저",
       "treatments": [
         "점제거시술",
-        "I3PL 색소레이저",
-        "겨드랑이제모"
-      ]
-    },
-    {
-      "name": "쁘띠",
-      "treatments": [
-        "필러",
-        "리쥬란힐러",
-        "울트라콜",
-        "보톡스"
+        "점 · 쥐젖 · 비립종 · 한관종 제거",
+        "I3PL I3PL 색소레이저",
+        "색소치료"
       ]
     },
     {
       "name": "제모",
       "treatments": [
-        "겨드랑이제모"
+        "Waxing 겨드랑이제모"
       ]
     },
     {
@@ -435,22 +445,16 @@
     {
       "name": "리프팅",
       "treatments": [
-        "울쎄라",
+        "ULTHERA 울쎄라",
         "실리프팅"
       ]
     },
     {
-      "name": "스킨케어",
+      "name": "스킨케어/필링",
       "treatments": [
-        "리쥬란힐러",
-        "울트라콜",
-        "여드름 치료",
+        "여드름치료",
         "모공치료"
       ]
-    },
-    {
-      "name": "필링",
-      "treatments": []
     },
     {
       "name": "반영구문신",
@@ -459,10 +463,10 @@
     {
       "name": "피부",
       "treatments": [
-        "점제거시술",
-        "여드름 치료",
-        "색소치료",
-        "모공치료"
+        "FILLER 필러",
+        "REJURAN 리쥬란힐러",
+        "ULTRA COL 울트라콜",
+        "Botox 보톡스"
       ]
     },
     {
@@ -472,25 +476,6 @@
     {
       "name": "비뇨",
       "treatments": []
-    },
-    {
-      "name": "여드름 치료",
-      "treatments": [
-        "여드름 치료"
-      ]
-    },
-    {
-      "name": "색소치료",
-      "treatments": [
-        "색소치료",
-        "I3PL 색소레이저"
-      ]
-    },
-    {
-      "name": "모공치료",
-      "treatments": [
-        "모공치료"
-      ]
     }
   ],
   "contact_info": {
@@ -498,7 +483,7 @@
     "phone": [
       {
         "number": "02-841-7582",
-        "type": "대표"
+        "type": "상담"
       },
       {
         "number": "02-841-7580",
@@ -506,7 +491,7 @@
       }
     ],
     "address": {
-      "full_address": "서울특별시 영등포구 도신로60길 2 7층 노벨의원",
+      "full_address": "서울특별시 영등포구 도신로 60길 27 1층 노벨의원",
       "sido": "서울특별시",
       "sigungu": "영등포구"
     },
@@ -517,33 +502,54 @@
     "facebook": null,
     "youtube": null,
     "blog": null,
-    "website_url": "https://www.nobelclinic.co.kr",
+    "website_url": null,
     "operating_hours": {
-      "weekday": "월~금 09:30~19:00 (목요일 09:30~21:00)",
-      "saturday": "09:00~14:00",
+      "weekday": "월-수-금: 오전 09:30 ~ 오후 07:00, 목요일: 오전 09:30 ~ 오후 09:00",
+      "saturday": "오전 09:00 ~ 오후 02:00",
       "sunday": "휴진",
-      "lunch_break": "13:00~14:00"
+      "lunch_break": "오후 01:00 ~ 오후 02:00"
     }
   },
-  "unregistered_equipment": [],
-  "unregistered_treatments": [],
+  "unregistered_equipment": [
+    {
+      "name": "I3PL",
+      "korean_name": "I3PL",
+      "suggested_category": "IPL",
+      "source": "screenshot",
+      "reason": "Not in predefined device list, but clearly an IPL device."
+    },
+    {
+      "name": "ULTRA COL",
+      "korean_name": "울트라콜",
+      "suggested_category": "collagen_stimulator",
+      "source": "screenshot",
+      "reason": "Not in predefined device list, but description indicates collagen stimulator."
+    }
+  ],
+  "unregistered_treatments": [
+    {
+      "name": "Waxing 겨드랑이제모",
+      "source": "screenshot",
+      "context": "Waxing 겨드랑이제모 5회 3만3천원"
+    }
+  ],
   "raw_price_texts": [],
   "extraction_summary": {
     "total_doctors": 1,
     "total_academic": 0,
-    "total_equipment": 6,
-    "total_devices": 2,
-    "total_injectables": 4,
+    "total_equipment": 8,
+    "total_devices": 3,
+    "total_injectables": 5,
     "total_treatments": 14,
     "total_events": 5,
-    "total_categories": 13,
-    "total_contact_channels": 4,
+    "total_categories": 9,
+    "total_contact_channels": 5,
     "has_email": false,
     "has_phone": true,
     "has_kakao": true,
     "has_sns": false,
-    "price_available_ratio": "7/14",
-    "unregistered_equipment_count": 0,
-    "unregistered_treatments_count": 0
+    "price_available_ratio": "6/14",
+    "unregistered_equipment_count": 2,
+    "unregistered_treatments_count": 1
   }
 }

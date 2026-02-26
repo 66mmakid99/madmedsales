@@ -1,0 +1,273 @@
+{
+  "hospital_name": "강서 톡스앤필의원",
+  "doctors": [
+    {
+      "name": "문영식",
+      "title": "대표원장",
+      "specialty": null,
+      "career": [],
+      "education": [
+        "한양대학교"
+      ],
+      "certifications": [],
+      "confidence": "confirmed"
+    }
+  ],
+  "academic_activities": [
+    {
+      "type": "학회발표",
+      "title": "제 249회 톡스앤필 브랜드 회의",
+      "year": 2025,
+      "doctor_name": null,
+      "source_text": "제 249회 톡스앤필 브랜드 회의 2025.09.15"
+    },
+    {
+      "type": "학회발표",
+      "title": "제 248회 톡스앤필 브랜드 회의",
+      "year": 2025,
+      "doctor_name": null,
+      "source_text": "제 248회 톡스앤필 브랜드 회의 2025.08.12"
+    },
+    {
+      "type": "학회발표",
+      "title": "제 247회 톡스앤필 브랜드 회의",
+      "year": 2025,
+      "doctor_name": null,
+      "source_text": "제 247회 톡스앤필 브랜드 회의 2025.07.09"
+    },
+    {
+      "type": "학회발표",
+      "title": "제 246회 톡스앤필 브랜드 회의",
+      "year": 2025,
+      "doctor_name": null,
+      "source_text": "제 246회 톡스앤필 브랜드 회의 2025.06.10"
+    },
+    {
+      "type": "학회발표",
+      "title": "제 245회 톡스앤필 브랜드 회의",
+      "year": 2025,
+      "doctor_name": null,
+      "source_text": "제 245회 톡스앤필 브랜드 회의 2025.05.13"
+    },
+    {
+      "type": "수상",
+      "title": "7th Golden Record Award 2022 Accelerated Growth Award APAC 1st",
+      "year": 2022,
+      "doctor_name": null,
+      "source_text": "골든 레코드 어워드 2022 APAC 1위 수상🏆톡스앤필 | 7th Golden Record Award 2022 Accelerated Growth Award APAC 1st - YouTube"
+    }
+  ],
+  "medical_devices": [
+    {
+      "name": "Botox",
+      "korean_name": "보톡스",
+      "manufacturer": "국산",
+      "device_type": "injectable",
+      "subcategory": "botox",
+      "description": "보툴리늄 톡신 주성분, 근육 사이즈 감소",
+      "source": "text"
+    },
+    {
+      "name": "Botox",
+      "korean_name": "보톡스",
+      "manufacturer": "국산 프리미엄",
+      "device_type": "injectable",
+      "subcategory": "botox",
+      "description": "보툴리늄 톡신 주성분, 근육 사이즈 감소",
+      "source": "text"
+    },
+    {
+      "name": "Botox",
+      "korean_name": "보톡스",
+      "manufacturer": "독일산",
+      "device_type": "injectable",
+      "subcategory": "botox",
+      "description": "보툴리늄 톡신 주성분, 근육 사이즈 감소",
+      "source": "text"
+    },
+    {
+      "name": "Botox",
+      "korean_name": "보톡스",
+      "manufacturer": "미국산",
+      "device_type": "injectable",
+      "subcategory": "botox",
+      "description": "보툴리늄 톡신 주성분, 근육 사이즈 감소",
+      "source": "text"
+    },
+    {
+      "name": "Shurink Universe",
+      "korean_name": "슈링크 유니버스",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": "비수술 안면거상 리프팅 레이저",
+      "source": "text"
+    },
+    {
+      "name": "Juvelook",
+      "korean_name": "쥬베룩",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "booster",
+      "description": "고분자 PLA와 인체 피부 조직에 존재하는 히알루론산을 결합시킨 자가 조직 재생 콜라겐 부스터",
+      "source": "text"
+    },
+    {
+      "name": "Juvelook Volume",
+      "korean_name": "쥬베룩 볼륨",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "booster",
+      "description": "피부 스스로 자연스러운 볼륨감 형성",
+      "source": "text"
+    },
+    {
+      "name": "Skinvive",
+      "korean_name": "스킨바이브",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "booster",
+      "description": "속건조 잔주름 개선 물광주사",
+      "source": "text"
+    },
+    {
+      "name": "Radiesse",
+      "korean_name": "래디어스",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "collagen_stimulator",
+      "description": "강력한 칼슘콜라겐부스터",
+      "source": "text"
+    },
+    {
+      "name": "Thermage",
+      "korean_name": "써마지",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Clarity II",
+      "korean_name": "클라리티2",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "InMode FX",
+      "korean_name": "인모드FX",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Volnewmer",
+      "korean_name": "볼뉴머",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Onda",
+      "korean_name": "온다",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Sculptra",
+      "korean_name": "스컬트라",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "collagen_stimulator",
+      "description": "콜라겐부스터의 원조",
+      "source": "text"
+    },
+    {
+      "name": "Rejuran HB plus",
+      "korean_name": "리쥬란Hb plus",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "booster",
+      "description": "통증적은 리쥬란",
+      "source": "text"
+    },
+    {
+      "name": "MintThread",
+      "korean_name": "민트실",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "thread",
+      "description": "특허받은 360도 3D 입체 돌기, 흡수성 재질의 리프팅실",
+      "source": "text"
+    },
+    {
+      "name": "Elravie RE2O",
+      "korean_name": "엘라비에 리투오",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "booster",
+      "description": "Real Human Skin을 직접 보충해 피부를 재생시키는 하이엔드 스킨부스터",
+      "source": "text"
+    },
+    {
+      "name": "Corege",
+      "korean_name": "코레지",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "MTS",
+      "korean_name": null,
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "microneedle",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "ASCE+",
+      "korean_name": "ASCE 엑소좀",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "booster",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "ExoHealer",
+      "korean_name": "엑소힐러",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "booster",
+      "description": "0세 제대혈 줄기세포 배양액으로 단 한번도 노화를 겪지 않은 세포 내 전달물질",
+      "source": "text"
+    },
+    {
+      "name": "LED",
+      "korean_name": "LED 재생레이저",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Hollywood Spectra",
+      "korean_name": "할리우드스펙트라",
+      "manufacturer": null,
+      "device_type": "device",
+      "

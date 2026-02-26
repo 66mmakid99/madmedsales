@@ -1,0 +1,1897 @@
+{
+  "hospital_name": "닥터스피부과",
+  "doctors": [
+    {
+      "name": "성현철",
+      "title": "대표원장",
+      "specialty": "피부과전문의",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "고범준",
+      "title": "원장",
+      "specialty": "피부과전문의",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "오영주",
+      "title": "원장",
+      "specialty": "피부과전문의",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "서지인",
+      "title": "원장",
+      "specialty": "피부과전문의",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "권효은",
+      "title": "원장",
+      "specialty": "피부과전문의",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "권혁선",
+      "title": "원장",
+      "specialty": "피부과전문의",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "송진영",
+      "title": "원장",
+      "specialty": "피부과전문의",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "이재인",
+      "title": "원장",
+      "specialty": "피부과전문의",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "김영호",
+      "title": "원장",
+      "specialty": "피부과전문의",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "김현빈",
+      "title": "원장",
+      "specialty": "피부과전문의",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "유민재",
+      "title": "원장",
+      "specialty": null,
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "uncertain"
+    },
+    {
+      "name": "이준",
+      "title": "원장",
+      "specialty": null,
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "uncertain"
+    },
+    {
+      "name": "전지영",
+      "title": "원장",
+      "specialty": null,
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "uncertain"
+    },
+    {
+      "name": "이지영",
+      "title": "원장",
+      "specialty": "마취통증의학과전문의",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "김태인",
+      "title": "대표원장",
+      "specialty": "피부과전문의",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "천승연",
+      "title": "원장",
+      "specialty": "피부과전문의",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "노승희",
+      "title": "원장",
+      "specialty": "피부과전문의",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "권륭",
+      "title": "원장",
+      "specialty": "피부과전문의",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "조경종",
+      "title": "대표원장",
+      "specialty": "피부과전문의",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "이원경",
+      "title": "원장",
+      "specialty": "피부과전문의",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "정가희",
+      "title": "원장",
+      "specialty": "피부과전문의",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "유민건",
+      "title": "대표원장",
+      "specialty": "피부과전전문",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "정국진",
+      "title": "원장",
+      "specialty": "피부과전문의",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "이로우",
+      "title": "원장",
+      "specialty": "피부과전문의",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "정성규",
+      "title": "대표원장",
+      "specialty": "피부과전문의",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "박해은",
+      "title": "원장",
+      "specialty": "피부과전문의",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "신영빈",
+      "title": "원장",
+      "specialty": "피부과전문의",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "박새미",
+      "title": "원장",
+      "specialty": "피부과전문의",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "최인혜",
+      "title": "원장",
+      "specialty": "피부과전문의",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "박재양",
+      "title": "대표원장",
+      "specialty": "피부과전문의",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "장희선",
+      "title": "대표원장",
+      "specialty": "피부과전문의",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "이정우",
+      "title": "대표원장",
+      "specialty": "피부과전문의",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "송지용",
+      "title": "원장",
+      "specialty": "피부과전문의",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "최병곤",
+      "title": "원장",
+      "specialty": "피부과전문의",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "정지희",
+      "title": "원장",
+      "specialty": "피부과전문의",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "이승연",
+      "title": "원장",
+      "specialty": null,
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "uncertain"
+    },
+    {
+      "name": "이지홍",
+      "title": "대표원장",
+      "specialty": "피부과전문의",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "오용우",
+      "title": "원장",
+      "specialty": "피부과전문의",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "오대영",
+      "title": "대표원장",
+      "specialty": "피부과전문의",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "조정원",
+      "title": "원장",
+      "specialty": "피부과전문의",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "신호정",
+      "title": "원장",
+      "specialty": "피부과전문의",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "채명헌",
+      "title": "원장",
+      "specialty": "피부과전문의",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "홍석준",
+      "title": "원장",
+      "specialty": "마취통증의학과전문의",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "박경열",
+      "title": "대표원장",
+      "specialty": "피부과전문의",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "박종서",
+      "title": "원장",
+      "specialty": "피부과전문의",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "심지훈",
+      "title": "대표원장",
+      "specialty": "피부과전문의",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "최승일",
+      "title": "대표원장",
+      "specialty": "피부과전문의",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "어지안",
+      "title": "원장",
+      "specialty": "피부과전문의",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "김동주",
+      "title": "대표원장",
+      "specialty": "피부과전문의",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "양정훈",
+      "title": "대표원장",
+      "specialty": "피부과전문의",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "김경오",
+      "title": "대표원장",
+      "specialty": "피부과전문의",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "박정영",
+      "title": "원장",
+      "specialty": "피부과전문의",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "최용우",
+      "title": "대표원장",
+      "specialty": "피부과전문의",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "이은경",
+      "title": "원장",
+      "specialty": "피부과전문의",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "권순범",
+      "title": "대표원장",
+      "specialty": "피부과전문의",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "오하늘",
+      "title": "대표원장",
+      "specialty": "피부과전문의",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "홍규락",
+      "title": "대표원장",
+      "specialty": "피부과전문의",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "이연미",
+      "title": "대표원장",
+      "specialty": "피부과전문의",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "유혜린",
+      "title": "대표원장",
+      "specialty": "피부과전문의",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "이민영",
+      "title": "원장",
+      "specialty": "피부과전문의",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "배수현",
+      "title": "원장",
+      "specialty": "피부과전문의",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "문기랑",
+      "title": "원장",
+      "specialty": "피부과전문의",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "이예진",
+      "title": "대표원장",
+      "specialty": "피부과전문의",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "은동혁",
+      "title": "대표원장",
+      "specialty": "피부과전문의",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "송치현",
+      "title": "대표원장",
+      "specialty": "피부과전문의",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    }
+  ],
+  "academic_activities": [
+    {
+      "type": "학회발표",
+      "title": "대한피부항노화학회 리투오 기반 hADM 핸즈온",
+      "year": 2026,
+      "doctor_name": "고범준",
+      "source_text": "대한피부항노화학회 리투오 기반 hADM 핸즈온_고범준 원장"
+    },
+    {
+      "type": "기타",
+      "title": "진료실 밖 인터뷰 [피부도감]",
+      "year": 2026,
+      "doctor_name": "유민건",
+      "source_text": "진료실 밖 인터뷰 [피부도감]_유민건 대표원장"
+    },
+    {
+      "type": "학회발표",
+      "title": "2026 MEX SYMPOSIUM",
+      "year": 2026,
+      "doctor_name": null,
+      "source_text": "2026 MEX SYMPOSIUM_닥터스 네트워크"
+    },
+    {
+      "type": "기타",
+      "title": "스컬트라 20,000vial 돌파",
+      "year": 2026,
+      "doctor_name": null,
+      "source_text": "스컬트라 20,000vial 돌파_닥터스 네트워크"
+    },
+    {
+      "type": "학회발표",
+      "title": "ACCORD SUMMIT 2025",
+      "year": 2026,
+      "doctor_name": "성현철, 김경오",
+      "source_text": "ACCORD SUMMIT 2025_성현철 대표원장, 김경오 원장"
+    },
+    {
+      "type": "기타",
+      "title": "럭셔리 1월호 인터뷰",
+      "year": 2026,
+      "doctor_name": "고범준",
+      "source_text": "럭셔리 1월호 인터뷰_고범준 원장"
+    },
+    {
+      "type": "학회발표",
+      "title": "Merz Aesthetics Skin Quality Seminar",
+      "year": 2025,
+      "doctor_name": "심지훈",
+      "source_text": "Merz Aesthetics Skin Quality Seminar_심지훈 원장"
+    },
+    {
+      "type": "학회발표",
+      "title": "GAIN INSPIRE Sculptra® Hands-on Seminar",
+      "year": 2025,
+      "doctor_name": "심지훈",
+      "source_text": "GAIN INSPIRE Sculptra® Hands-on Seminar_심지훈 원장"
+    },
+    {
+      "type": "학회발표",
+      "title": "PENTA-A 항노화미용해부연구회 제8차 학술대회",
+      "year": 2025,
+      "doctor_name": "김동주",
+      "source_text": "PENTA-A 항노화미용해부연구회 제8차 학술대회_김동주 원장"
+    },
+    {
+      "type": "학회발표",
+      "title": "AMWC CHINA 2025",
+      "year": 2025,
+      "doctor_name": "고범준",
+      "source_text": "AMWC CHINA 2025_고범준 원장"
+    },
+    {
+      "type": "학회발표",
+      "title": "2025 OPEN DOCTORS Seminar Session",
+      "year": 2025,
+      "doctor_name": "성현철, 박재양, 김경오, 김동주, 최용우, 정성규, 최병곤",
+      "source_text": "2025 OPEN DOCTORS Seminar Session_닥터스 네트워크"
+    },
+    {
+      "type": "학회발표",
+      "title": "2025 OPEN DOCTORS Hands-On Session",
+      "year": 2025,
+      "doctor_name": "성현철, 고범준, 박재양, 김경오, 김동주, 최병곤, 최용우",
+      "source_text": "2025 OPEN DOCTORS Hands-On Session_닥터스 네트워크"
+    },
+    {
+      "type": "학회발표",
+      "title": "제28회 대한피부과의사회 추계학술대회",
+      "year": 2025,
+      "doctor_name": "이지영",
+      "source_text": "제28회 대한피부과의사회 추계학술대회_이지영 원장"
+    },
+    {
+      "type": "학회발표",
+      "title": "KOREADERMA2025 Pre-Congress Workshop",
+      "year": 2025,
+      "doctor_name": "성현철",
+      "source_text": "KOREADERMA2025 Pre-Congress Workshop_성현철 대표원장"
+    },
+    {
+      "type": "학회발표",
+      "title": "제24차 추계심포지엄",
+      "year": 2025,
+      "doctor_name": "정성규",
+      "source_text": "제24차 추계심포지엄_정성규 원장"
+    },
+    {
+      "type": "학회발표",
+      "title": "APAAC 2025 Live Surgery",
+      "year": 2025,
+      "doctor_name": "은동혁",
+      "source_text": "APAAC 2025 Live Surgery_은동혁 원장"
+    },
+    {
+      "type": "학회발표",
+      "title": "APAAC 2025",
+      "year": 2025,
+      "doctor_name": "은동혁",
+      "source_text": "APAAC 202터스피부과 대구점 은동혁 원장님이 강연자로 초청되어 을 주제로 강연을 진행했습니다."
+    },
+    {
+      "type": "학회발표",
+      "title": "2025 DOCTORS SAY XERF",
+      "year": 2025,
+      "doctor_name": null,
+      "source_text": "2025 DOCTORS SAY XERF_닥터스 네트워크"
+    },
+    {
+      "type": "학회발표",
+      "title": "2025 OPEN DOCTORS_네트워크 세미나",
+      "year": 2025,
+      "doctor_name": null,
+      "source_text": "2025 OPEN DOCTORS_네트워크 세미나"
+    },
+    {
+      "type": "학회발표",
+      "title": "2025 OPEN DOCTORS_핸즈온 세미나",
+      "year": 2025,
+      "doctor_name": null,
+      "source_text": "2025 OPEN DOCTORS_핸즈온 세미나"
+    },
+    {
+      "type": "학회발표",
+      "title": "RUN TO GROW_닥터스 네트워크",
+      "year": 2025,
+      "doctor_name": null,
+      "source_text": "RUN TO GROW_닥터스 네트워크"
+    },
+    {
+      "type": "학회발표",
+      "title": "Allergan Symposium_닥터스 네트워크",
+      "year": 2025,
+      "doctor_name": null,
+      "source_text": "Allergan Symposium_닥터스 네트워크"
+    },
+    {
+      "type": "학회발표",
+      "title": "2024 OPEN Doctors",
+      "year": 2024,
+      "doctor_name": null,
+      "source_text": "2024 OPEN Doctors"
+    },
+    {
+      "type": "학회발표",
+      "title": "2024 닥터스 춘계 학술 세미나",
+      "year": 2024,
+      "doctor_name": null,
+      "source_text": "2024 닥터스 춘계 학술 세미나"
+    }
+  ],
+  "medical_devices": [
+    {
+      "name": "써마지FLX",
+      "korean_name": "써마지FLX",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF",
+      "description": "탄력리프팅, 잔주름개선, 피부재생, 콜라겐재생, 볼륨감개선",
+      "source": "text"
+    },
+    {
+      "name": "울쎄라피 프라임",
+      "korean_name": "울쎄라피 프라임",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": "초음파리프팅, 통증감소, 콜라겐재생, 리프팅효과, SMAS층개선",
+      "source": "text"
+    },
+    {
+      "name": "울쎄라",
+      "korean_name": "울쎄라",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": "처진얼굴리프팅, 이마/눈썹리프팅, 피부탄력개선, 잔주름개선, 안티에이징",
+      "source": "text"
+    },
+    {
+      "name": "세르프",
+      "korean_name": "세르프",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF",
+      "description": "고주파시술, 모노폴라고주파, 리프팅, 타이트닝, 콜라겐재생",
+      "source": "text"
+    },
+    {
+      "name": "프로파운드",
+      "korean_name": "프로파운드",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "microneedle",
+      "description": "탄력리프팅, 잔주름개선, 피부재생, 콜라겐재생, 볼륨감개선",
+      "source": "text"
+    },
+    {
+      "name": "덴서티",
+      "korean_name": "덴서티",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF",
+      "description": "잔주름개선, 피부재생, 타이트닝, 탄력개선, 쫀쫀탱탱피부",
+      "source": "text"
+    },
+    {
+      "name": "소프라노 티타늄",
+      "korean_name": "소프라노 티타늄",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "세가지파장, 리프팅, 타이트닝, 피부톤개선, 피부재생촉진",
+      "source": "text"
+    },
+    {
+      "name": "온다리프팅",
+      "korean_name": "온다리프팅",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF",
+      "description": "이중턱개선, 처진얼굴리프팅, 타이트닝, 지방파괴, 콜라겐생성",
+      "source": "text"
+    },
+    {
+      "name": "인모드",
+      "korean_name": "인모드",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF",
+      "description": "탄력, 타이트닝, 주름개선, 콜라겐리모델링, 리프팅",
+      "source": "text"
+    },
+    {
+      "name": "슈링크",
+      "korean_name": "슈링크",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": "탄력리프팅, 처진얼굴리프팅, 주름개선, 피부재생, 콜라겐생성촉진",
+      "source": "text"
+    },
+    {
+      "name": "포텐자",
+      "korean_name": "포텐자",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "microneedle",
+      "description": "모공축소, 피부탄력개선, 기미/주근깨, 여드름흉터개선, 홍조개선",
+      "source": "text"
+    },
+    {
+      "name": "브이빔",
+      "korean_name": "브이빔",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "안면홍조, 혈관질환, 미백, 여드름붉은자국, 탄력도개선",
+      "source": "text"
+    },
+    {
+      "name": "튠라이트",
+      "korean_name": "튠라이트",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "IPL",
+      "description": "기미잡티, 피부탄력, 피부톤업, 콜라겐재생, 탄력리프팅",
+      "source": "text"
+    },
+    {
+      "name": "올리지오X",
+      "korean_name": "올리지오X",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF",
+      "description": "잔주름탄력증대, 눈꺼풀주름개선, 피부결/모공개선, 리프팅, 이중턱개선",
+      "source": "text"
+    },
+    {
+      "name": "올리지오",
+      "korean_name": "올리지오",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF",
+      "description": "잔주름탄력증대, 눈가/눈꺼풀주름개선, 피부결/모공개선, 이중턱개선, 리프팅",
+      "source": "text"
+    },
+    {
+      "name": "트리니티",
+      "korean_name": "트리니티",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF",
+      "description": "이중턱개선, 리프팅, 주름개선, 탄력/피부결개선, 리프토닝",
+      "source": "text"
+    },
+    {
+      "name": "브이로",
+      "korean_name": "브이로",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": "탄력리프팅, 처진얼굴리프팅, 주름개선, 피부재생, 피부결&모공개선",
+      "source": "text"
+    },
+    {
+      "name": "브이로 어드밴스",
+      "korean_name": "브이로 어드밴스",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": "HIFU, RF(고주파), RF마이크로니들, 맞춤리프팅",
+      "source": "text"
+    },
+    {
+      "name": "IBEX ST18",
+      "korean_name": "IBEX ST18",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": "항노화, 피부미용, 고압산소치료, 시술후회복, 세포재생촉진",
+      "source": "text"
+    },
+    {
+      "name": "파셀라",
+      "korean_name": "파셀라",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF",
+      "description": "피부탄력개선, 세포활성화, 근막리프팅, 고주파에너지, 저주파에너지",
+      "source": "text"
+    },
+    {
+      "name": "에코투",
+      "korean_name": "에코투",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "흉터치료, 모공축소, 피부재생, 주름개선",
+      "source": "text"
+    },
+    {
+      "name": "매트릭셀PRO",
+      "korean_name": "매트릭셀PRO",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "피부재생, 여드름흉터, 모공축소, 피부결개선, 점/검버섯/한관종",
+      "source": "text"
+    },
+    {
+      "name": "파이어셀",
+      "korean_name": "파이어셀",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "피부맞춤, 여드름, 기미개선, 흉터완화, 잡티개선",
+      "source": "text"
+    },
+    {
+      "name": "큐어젯",
+      "korean_name": "큐어젯",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": "모공축소, 흉터개선, 피부재생, 튼살치료, 피부개선",
+      "source": "text"
+    },
+    {
+      "name": "시크릿듀오",
+      "korean_name": "시크릿듀오",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "microneedle",
+      "description": "모공흉터치료, 저자극시술, 여드름흉터치료, 통증최소화, 모공축소",
+      "source": "text"
+    },
+    {
+      "name": "스카힐",
+      "korean_name": "스카힐",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "흉터치료, 모공축소, 피부톤개선, 주름개선, 박피",
+      "source": "text"
+    },
+    {
+      "name": "미라젯",
+      "korean_name": "미라젯",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": "저자극시술, 탄력/주름개선, 흉터/모공, 피부결, 통증감소",
+      "source": "text"
+    },
+    {
+      "name": "매트릭셀",
+      "korean_name": "매트릭셀",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "여드름흉터/모공성흉터, 모공축소, 피부톤개선, 잔주름개선, 점/검버섯/한관종/색소치료",
+      "source": "text"
+    },
+    {
+      "name": "네오빔",
+      "korean_name": "네오빔",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "여드름치료, 피지분비감소, 여드름붉음증완화, 모공축소, 피부결개선",
+      "source": "text"
+    },
+    {
+      "name": "브이빔 퍼펙타",
+      "korean_name": "브이빔 퍼펙타",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "안면홍조, 혈관질환, 여드름붉은자국, 화염상모반, 켈로이드흉터",
+      "source": "text"
+    },
+    {
+      "name": "시크릿",
+      "korean_name": "시크릿",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "microneedle",
+      "description": "여드름흉터, 주름개선, 모공축소, 색소개선, 피부탄력개선",
+      "source": "text"
+    },
+    {
+      "name": "아그네스",
+      "korean_name": "아그네스",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "microneedle",
+      "description": "여드름치료, 피지선파괴, 눈가주름개선, 블랙헤드/화이트헤드치료, 여드름균파괴",
+      "source": "text"
+    },
+    {
+      "name": "리써FX",
+      "korean_name": "리써FX",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "모공축소/흉터치료, 여드름치료, 탄력증진/주름개선, 튼살치료",
+      "source": "text"
+    },
+    {
+      "name": "테라클리어",
+      "korean_name": "테라클리어",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": "여드름치료, 피지분비감소, 여드름붉음증완화, 모공축소, 피부결개선",
+      "source": "text"
+    },
+    {
+      "name": "펄-프락셔널",
+      "korean_name": "펄-프락셔널",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "여드름흉터, 모공축소, 피부톤개선, 잔주름개선, 초미세박피술",
+      "source": "text"
+    },
+    {
+      "name": "아비오",
+      "korean_name": "아비오",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "여드름흉터, 모공축소, 검버섯비림종, 사마귀, 잔주름",
+      "source": "text"
+    },
+    {
+      "name": "유펄스 CO2",
+      "korean_name": "유펄스 CO2",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "여드름흉터, 모공축소, 잔주름개선, 점/검버섯/한관종, 주근깨/기미/잡티",
+      "source": "text"
+    },
+    {
+      "name": "팔라스 프리미엄",
+      "korean_name": "팔라스 프리미엄",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "백반증, 건선, 아토피, 피부질환완화, 피부개선",
+      "source": "text"
+    },
+    {
+      "name": "오니코V레이저",
+      "korean_name": "오니코V레이저",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "손발톱무좀, 발톱무좀, 손톱무좀, 무좀증상개선, 동시치료가능",
+      "source": "text"
+    },
+    {
+      "name": "벨로시티7 엑시머",
+      "korean_name": "벨로시티7 엑시머",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "백반증, 건선, 원형탈모, 아토피",
+      "source": "text"
+    },
+    {
+      "name": "UV 8000 N.B",
+      "korean_name": "UV 8000 N.B",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": "건선, 아토피, 접촉성피부염, 백반증",
+      "source": "text"
+    },
+    {
+      "name": "핀포인트",
+      "korean_name": "핀포인트",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "발톱무좀, 손톱무좀, 임산부/수유부손발톱무좀, 간질환보유손발톱무좀",
+      "source": "text"
+    },
+    {
+      "name": "팔라스",
+      "korean_name": "팔라스",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "백반증, 건선, 튼살, 원형탈모, 피부톤개선",
+      "source": "text"
+    },
+    {
+      "name": "전신자외선치료기",
+      "korean_name": "전신자외선치료기",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": "백반증, 건선, 아토피",
+      "source": "text"
+    },
+    {
+      "name": "오니코",
+      "korean_name": "오니코",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "발톱무좀, 손톱무좀, 임산부/수유부손발톱무좀, 손발톱무좀, 무좀균",
+      "source": "text"
+    },
+    {
+      "name": "힐라이트",
+      "korean_name": "힐라이트",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": "상처회복, 콜라겐생성, 피부톤개선, 통증완화, 피부재생촉진",
+      "source": "text"
+    },
+    {
+      "name": "벨라룩스 Lite",
+      "korean_name": "벨라룩스 Lite",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": "색소침착, 여드름, 흑색종, 상처회복, 피부질환치료",
+      "source": "text"
+    },
+    {
+      "name": "엑시머 레이저",
+      "korean_name": "엑시머 레이저",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "백반증, 건선, 튼살, 원형탈모, 유소아/임산부백반증/건선",
+      "source": "text"
+    },
+    {
+      "name": "힐러1064",
+      "korean_name": "힐러1064",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "발톱무좀, 손톱무좀, 무좀균, 곰팡이균사멸, 열에너지전달",
+      "source": "text"
+    },
+    {
+      "name": "N-Pulse",
+      "korean_name": "N-Pulse",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "기미/잡티/주근깨, 잔주름개선, 사마귀/비립종치료, 여드름흉터",
+      "source": "text"
+    },
+    {
+      "name": "헬리오스785",
+      "korean_name": "헬리오스785",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "색소치료, 문신제거, 피부톤/탄력개선, 피부재생",
+      "source": "text"
+    },
+    {
+      "name": "피콜로 프리미엄",
+      "korean_name": "피콜로 프리미엄",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "기미개선, 잡티완화, 문신제거, 색소병변, 피부탄력",
+      "source": "text"
+    },
+    {
+      "name": "피코플러스",
+      "korean_name": "피코플러스",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "타투제거, 여드름완화, 색소침착개선, 기미개선, 토닝",
+      "source": "text"
+    },
+    {
+      "name": "피코케이",
+      "korean_name": "피코케이",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "기미/잡티, 흉터치료, 피부재생, 문신제거",
+      "source": "text"
+    },
+    {
+      "name": "피코케어 마제스티",
+      "korean_name": "피코케어 마제스티",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "기미/잡티, 피부재생, 문신제거, 흉터개선, 멀티파장",
+      "source": "text"
+    },
+    {
+      "name": "스펙트라SP",
+      "korean_name": "스펙트라SP",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "흉터치료, 모공축소, 기미개선, 잡티완화, 사마귀제거",
+      "source": "text"
+    },
+    {
+      "name": "리팟",
+      "korean_name": "리팟",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "흑자제거, 색소침착최소화, 기미잡티, 난치성색소질환, 검버섯",
+      "source": "text"
+    },
+    {
+      "name": "로터스 III",
+      "korean_name": "로터스 III",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "여드름흉터, 모공축소, 잔주름개선, 점/검버섯/한관종, 주근깨/기미/잡티",
+      "source": "text"
+    },
+    {
+      "name": "V 레이저",
+      "korean_name": "V 레이저",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "안면홍조, 여드름흉터, 색소치료, 모공축소, 잡티개선",
+      "source": "text"
+    },
+    {
+      "name": "U-Pulse Dual",
+      "korean_name": "U-Pulse Dual",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "색소, 모공개선, 피부톤개선, 피부결, 듀얼레이저시스템",
+      "source": "text"
+    },
+    {
+      "name": "M22",
+      "korean_name": "M22",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "IPL",
+      "description": "기미·잡티, 미백, 트러블/홍조개선, 피부탄력증진",
+      "source": "text"
+    },
+    {
+      "name": "레블라이트SI",
+      "korean_name": "레블라이트SI",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "기미/잡티, 난치성색소, 미백, 피부탄력/잔주름개선, 모공수축",
+      "source": "text"
+    },
+    {
+      "name": "펜토 9900",
+      "korean_name": "펜토 9900",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "기미/잡티/안면홍조, 난치성색소병변, 피부탄력개선, 리프팅, 피부톤개선",
+      "source": "text"
+    },
+    {
+      "name": "헐리우드 스펙트라",
+      "korean_name": "헐리우드 스펙트라",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "모공축소, 여드름흉터, 홍조개선, 기미/잡티완화",
+      "source": "text"
+    },
+    {
+      "name": "피코웨이",
+      "korean_name": "피코웨이",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "기미/잡티, 모공, 문신제거, 난치성색소, 색소병변",
+      "source": "text"
+    },
+    {
+      "name": "라비앙레이저",
+      "korean_name": "라비앙레이저",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "기미/잡티, 피부미백, 주름개선, 탄력/피부결개선",
+      "source": "text"
+    },
+    {
+      "name": "CO ONE (CO2)",
+      "korean_name": "CO ONE (CO2)",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "점, 비립종, 쥐젖, 한관종, CO2레이저",
+      "source": "text"
+    },
+    {
+      "name": "마크뷰",
+      "korean_name": "마크뷰",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": "DSLR렌즈, 선명한이미지, 피부분석, 피부스캔, 전후비교",
+      "source": "text"
+    },
+    {
+      "name": "3D 메타뷰",
+      "korean_name": "3D 메타뷰",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": "3D분석, 피부분석, 피부스캔, 전후비교, 피부노화시뮬레이션",
+      "source": "text"
+    },
+    {
+      "name": "소노 스타일러",
+      "korean_name": "소노 스타일러",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": "모공개선, 피부탄력, 트러블/홍조개선, 피부진정/재생, 피부보습",
+      "source": "text"
+    },
+    {
+      "name": "크라이오 멀티마스터",
+      "korean_name": "크라이오 멀티마스터",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "cryotherapy",
+      "description": "크라이오, 소노관리, 이온토관리, 스킨스크러버, 이온자임관리",
+      "source": "text"
+    },
+    {
+      "name": "오투덤 LED+",
+      "korean_name": "오투덤 LED+",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": "피부진정/보습, 안티에이징, 콜라겐생성, 피부톤개선, 트러블완화",
+      "source": "text"
+    },
+    {
+      "name": "오메가라이트",
+      "korean_name": "오메가라이트",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": "피부재생, 주름개선, 피부진정, 여드름완화, 재생레이저",
+      "source": "text"
+    },
+    {
+      "name": "더마샤인 프로",
+      "korean_name": "더마샤인 프로",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "microneedle",
+      "description": "약물침투, 강력보습, 약물손실X, 적은통증, 빠른일상복귀",
+      "source": "text"
+    },
+    {
+      "name": "LPL광치료기기",
+      "korean_name": "LPL광치료기기",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": "피부재생, 주름개선, 피부진정, 여드름관리",
+      "source": "text"
+    },
+    {
+      "name": "이온자임",
+      "korean_name": "이온자임",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": "기미/잡티, 제거, 미백, 피부탄력개선, 비타민침투율",
+      "source": "text"
+    },
+    {
+      "name": "씨엘로레이저",
+      "korean_name": "씨엘로레이저",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "피부면역/재생, 저자극, 보습강화, 피부진정, 수분충전",
+      "source": "text"
+    },
+    {
+      "name": "아쿠아필",
+      "korean_name": "아쿠아필",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": "블랙헤드, 각질제거, 피지개선, 피부결개선, 여드름완화",
+      "source": "text"
+    },
+    {
+      "name": "LDM smart Tri",
+      "korean_name": "LDM smart Tri",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "IPL",
+      "description": "보습효과, 피부재생, 초음파관리, 여드름진정, 시너지효과",
+      "source": "text"
+    },
+    {
+      "name": "티파니 멀티웨이브",
+      "korean_name": "티파니 멀티웨이브",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": "피부탄력, 피부톤업, 피부재생, 트러블관리, 피부진정",
+      "source": "text"
+    },
+    {
+      "name": "트리플LDM",
+      "korean_name": "트리플LDM",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "IPL",
+      "description": "피부재생, 피부보습, 트러블관리, 초음파관리, 시너지효과",
+      "source": "text"
+    },
+    {
+      "name": "LDM",
+      "korean_name": "LDM",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "IPL",
+      "description": "피부보습, 트러블방지, 초음파관리, 저자극시술, 시너지효과",
+      "source": "text"
+    },
+    {
+      "name": "이온토",
+      "korean_name": "이온토",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": "주름개선, 탄력개선, 콜라겐생성촉진, 색소침착개선, 잡티완화",
+      "source": "text"
+    },
+    {
+      "name": "하이쿡스 인젝터",
+      "korean_name": "하이쿡스 인젝터",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": "통증감소, 멀티인젝터, 잔주름개선, 탄력개선, 광채피부",
+      "source": "text"
+    },
+    {
+      "name": "쿨쉐이핑",
+      "korean_name": "쿨쉐이핑",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "cryotherapy",
+      "description": "지방분해, 지방파괴, 피부탄력개선, 부종감소, 비만관리케어",
+      "source": "text"
+    },
+    {
+      "name": "악센트프라임",
+      "korean_name": "악센트프라임",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF",
+      "description": "맞춤리프팅, 주름탄력개선, 적은통증, 빠른리프팅효과, 더블리프팅",
+      "source": "text"
+    },
+    {
+      "name": "슈링크 유니버스",
+      "korean_name": "슈링크 유니버스",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": "2세대슈링크, 탄력리프팅, 잔주름개선, 피부재생, HIFU",
+      "source": "text"
+    },
+    {
+      "name": "리브이",
+      "korean_name": "리브이",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF",
+      "description": "고주파, 고전압미세전류, 이중턱, V라인, 눈가주름",
+      "source": "text"
+    },
+    {
+      "name": "리바이브",
+      "korean_name": "리바이브",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF",
+      "description": "윤곽리프팅, 지방파괴, 콜라겐생성, 탄력개선, 리프팅",
+      "source": "text"
+    },
+    {
+      "name": "리니어지",
+      "korean_name": "리니어지",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": "리프팅, 커스텀리프팅, 허벅지탄력개선, 피부층맞춤모드, 리니어/도트타입",
+      "source": "text"
+    },
+    {
+      "name": "네오페이스",
+      "korean_name": "네오페이스",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "EMS_magnetic",
+      "description": "진피층개선, 안면근육강화, 근육리프팅, 3가지주파수",
+      "source": "text"
+    },
+    {
+      "name": "소프웨이브",
+      "korean_name": "소프웨이브",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": "리프팅, 초음파에너지, 피부탄력개선, 전신피부, 쿨링시스템",
+      "source": "text"
+    },
+    {
+      "name": "리니어펌",
+      "korean_name": "리니어펌",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": "탄력리프팅, 처진얼굴리프팅, 윤곽리프팅, 주름개선, 피부재생",
+      "source": "text"
+    },
+    {
+      "name": "ePLUS",
+      "korean_name": "ePLUS",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF",
+      "description": "피부탄력개선, 잔주름개선, 흉터재생/모공축소, 눈가&입가&팔자주름, 피부결개선",
+      "source": "text"
+    },
+    {
+      "name": "오푸스 레이저",
+      "korean_name": "오푸스 레이저",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF",
+      "description": "타이트닝, 모공/흉터개선, 여드름, 피부결개선, 고주파",
+      "source": "text"
+    },
+    {
+      "name": "3DEEP",
+      "korean_name": "3DEEP",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF",
+      "description": "잔주름탄력증대, 눈가/눈꺼풀주름개선, 피부결개선, 모공개선, 리프팅",
+      "source": "text"
+    },
+    {
+      "name": "엠페이스",
+      "korean_name": "엠페이스",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "EMS_magnetic",
+      "description": "리프팅, 콜라겐생성촉진, 근육강화, 주름개선, 볼륨증진",
+      "source": "text"
+    },
+    {
+      "name": "스킨아우라",
+      "korean_name": "스킨아우라",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF",
+      "description": "잔주름탄력개선, 피부타이트닝, 콜라겐볼륨생성, 피부톤/피부결개선, 리프팅",
+      "source": "text"
+    },
+    {
+      "name": "피아모",
+      "korean_name": "피아모",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF",
+      "description": "윤곽리프팅, 지방파괴, 탄력.주름개선, 타이트닝, 피부재생",
+      "source": "text"
+    },
+    {
+      "name": "액션2",
+      "korean_name": "액션2",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "흉터치료, 모공축소, 기미/잡티제거, 검버섯, 색소성질환개선",
+      "source": "text"
+    },
+    {
+      "name": "포토나QX-MAX",
+      "korean_name": "포토나QX-MAX",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "난치성색소, 잔주름개선, 미백, 탄력/피부결개선, 기미잡티",
+      "source": "text"
+    },
+    {
+      "name": "1000 NAIN",
+      "korean_name": "1000 NAIN",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "점제거, 흉터치료, 기미·잡티·검버섯, 통증DOWN",
+      "source": "text"
+    },
+    {
+      "name": "젠틀맥스-PRO",
+      "korean_name": "젠틀맥스-PRO",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "기미·잡티, 탄력/피부결개선, 주름개선, 리프팅, 제모",
+      "source": "text"
+    },
+    {
+      "name": "트리코어 (엔코어3D)",
+      "korean_name": "트리코어 (엔코어3D)",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF",
+      "description": "윤곽리프팅, V라인, 얼굴리프팅, 윤곽개선, 저자극시술",
+      "source": "text"
+    },
+    {
+      "name": "포토나 스타워커",
+      "korean_name": "포토나 스타워커",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "기미·잡티, 난치성색소, 잔주름개선, 피부탄력, 피부결개선",
+      "source": "text"
+    },
+    {
+      "name": "듀얼 악센토",
+      "korean_name": "듀얼 악센토",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "기미/잡티, 탄력/피부결개선, 주름개선, 리프팅, 제모",
+      "source": "text"
+    }
+  ],
+  "treatments": [
+    {
+      "name": "스킨바이브",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "booster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "리쥬란에스",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "booster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "리쥬란아이",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "booster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "리쥬란HB plus",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "booster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "레티젠",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "booster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "쥬베룩볼륨",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "booster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "쥬베룩",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "booster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "리쥬란힐러",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "booster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "레디어스",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "collagen_stimulator",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    

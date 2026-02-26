@@ -23,6 +23,11 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import { createClient } from '@supabase/supabase-js';
 import dotenv from 'dotenv';
+import {
+  Document, Packer, Paragraph, TextRun, Table, TableRow, TableCell,
+  WidthType, AlignmentType, HeadingLevel, BorderStyle, ShadingType,
+  TableLayoutType,
+} from 'docx';
 
 dotenv.config({ path: path.resolve(path.dirname(fileURLToPath(import.meta.url)), '.env') });
 
@@ -526,9 +531,162 @@ function buildMarkdownReport(input: ReportInput, config: ReportConfig): string {
 // ═══════════════════════════════════════════
 
 async function buildDocxReport(markdown: string, outputPath: string): Promise<void> {
-  // TODO: docx 라이브러리로 변환
-  // 현재는 md 내용을 txt로 저장 (placeholder)
-  fs.writeFileSync(outputPath, markdown, 'utf-8');
+  const children: (Paragraph | Table)[] = [];
+  const lines = markdown.split('\n');
+  let i = 0;
+
+  const BORDER_NONE = { style: BorderStyle.NONE, size: 0, color: 'FFFFFF' };
+  const BORDERS_NONE = { top: BORDER_NONE, bottom: BORDER_NONE, left: BORDER_NONE, right: BORDER_NONE };
+  const BORDER_THIN = { style: BorderStyle.SINGLE, size: 1, color: 'CCCCCC' };
+  const BORDERS_TABLE = { top: BORDER_THIN, bottom: BORDER_THIN, left: BORDER_THIN, right: BORDER_THIN };
+
+  function parseInline(text: string): TextRun[] {
+    const runs: TextRun[] = [];
+    const regex = /\*\*(.+?)\*\*/g;
+    let lastIdx = 0;
+    let m: RegExpExecArray | null;
+    while ((m = regex.exec(text)) !== null) {
+      if (m.index > lastIdx) runs.push(new TextRun({ text: text.slice(lastIdx, m.index), size: 20 }));
+      runs.push(new TextRun({ text: m[1], bold: true, size: 20 }));
+      lastIdx = regex.lastIndex;
+    }
+    if (lastIdx < text.length) runs.push(new TextRun({ text: text.slice(lastIdx), size: 20 }));
+    if (runs.length === 0) runs.push(new TextRun({ text, size: 20 }));
+    return runs;
+  }
+
+  function parseTableBlock(startIdx: number): { table: Table; endIdx: number } {
+    const rows: string[][] = [];
+    let idx = startIdx;
+    while (idx < lines.length && lines[idx].trim().startsWith('|')) {
+      const line = lines[idx].trim();
+      if (line.includes('---')) { idx++; continue; }
+      const cells = line.split('|').slice(1, -1).map(c => c.trim());
+      rows.push(cells);
+      idx++;
+    }
+    const colCount = rows.length > 0 ? rows[0].length : 1;
+    const tableRows = rows.map((row, ri) =>
+      new TableRow({
+        children: row.map(cell =>
+          new TableCell({
+            borders: BORDERS_TABLE,
+            width: { size: Math.floor(9000 / colCount), type: WidthType.DXA },
+            shading: ri === 0 ? { type: ShadingType.SOLID, color: 'F0F0F0', fill: 'F0F0F0' } : undefined,
+            children: [new Paragraph({
+              children: parseInline(cell),
+              spacing: { before: 40, after: 40 },
+            })],
+          })
+        ),
+      })
+    );
+    return {
+      table: new Table({
+        rows: tableRows,
+        width: { size: 9000, type: WidthType.DXA },
+        layout: TableLayoutType.FIXED,
+      }),
+      endIdx: idx,
+    };
+  }
+
+  while (i < lines.length) {
+    const line = lines[i];
+    const trimmed = line.trim();
+
+    // 빈 줄
+    if (!trimmed) { i++; continue; }
+
+    // 구분선
+    if (trimmed === '---') {
+      children.push(new Paragraph({
+        children: [new TextRun({ text: '' })],
+        spacing: { before: 100, after: 100 },
+        border: { bottom: { style: BorderStyle.SINGLE, size: 1, color: 'CCCCCC' } },
+      }));
+      i++; continue;
+    }
+
+    // H1
+    if (trimmed.startsWith('# ') && !trimmed.startsWith('## ')) {
+      children.push(new Paragraph({
+        children: [new TextRun({ text: trimmed.replace(/^# /, ''), bold: true, size: 36, color: '1a1a1a' })],
+        heading: HeadingLevel.HEADING_1,
+        spacing: { after: 200 },
+      }));
+      i++; continue;
+    }
+
+    // H2
+    if (trimmed.startsWith('## ')) {
+      children.push(new Paragraph({
+        children: [new TextRun({ text: trimmed.replace(/^## /, ''), bold: true, size: 28, color: '2c3e50' })],
+        heading: HeadingLevel.HEADING_2,
+        spacing: { before: 300, after: 150 },
+      }));
+      i++; continue;
+    }
+
+    // H3
+    if (trimmed.startsWith('### ')) {
+      children.push(new Paragraph({
+        children: [new TextRun({ text: trimmed.replace(/^### /, ''), bold: true, size: 24, color: '34495e' })],
+        heading: HeadingLevel.HEADING_3,
+        spacing: { before: 200, after: 100 },
+      }));
+      i++; continue;
+    }
+
+    // 테이블
+    if (trimmed.startsWith('|')) {
+      const { table, endIdx } = parseTableBlock(i);
+      children.push(table);
+      children.push(new Paragraph({ children: [], spacing: { after: 100 } }));
+      i = endIdx; continue;
+    }
+
+    // 리스트 아이템
+    if (trimmed.startsWith('- ')) {
+      children.push(new Paragraph({
+        children: parseInline(trimmed.replace(/^- /, '')),
+        bullet: { level: 0 },
+        spacing: { before: 40, after: 40 },
+      }));
+      i++; continue;
+    }
+
+    // 이탤릭 (푸터)
+    if (trimmed.startsWith('*') && trimmed.endsWith('*') && !trimmed.startsWith('**')) {
+      children.push(new Paragraph({
+        children: [new TextRun({ text: trimmed.replace(/^\*|\*$/g, ''), italics: true, size: 18, color: '888888' })],
+        spacing: { before: 200 },
+        alignment: AlignmentType.CENTER,
+      }));
+      i++; continue;
+    }
+
+    // 일반 텍스트
+    children.push(new Paragraph({
+      children: parseInline(trimmed),
+      spacing: { before: 60, after: 60 },
+    }));
+    i++;
+  }
+
+  const doc = new Document({
+    sections: [{ children }],
+    styles: {
+      default: {
+        document: {
+          run: { font: 'Malgun Gothic', size: 20 },
+        },
+      },
+    },
+  });
+
+  const buffer = await Packer.toBuffer(doc);
+  fs.writeFileSync(outputPath, buffer);
 }
 
 // ═══════════════════════════════════════════

@@ -1,0 +1,225 @@
+{
+  "hospital_name": "바노바기피부과",
+  "doctors": [
+    {
+      "name": "반재용",
+      "title": "대표원장",
+      "specialty": "피부과 전문의",
+      "career": [
+        "태국 왓슨스 3년 연속 마스크팩 1위",
+        "바노바기 코스메틱 개발",
+        "세계 10여 개 국 코스메틱 수출",
+        "치료 후 효과적인 데일리 케어를 위한 기능성 화장품 개발"
+      ],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "전희대",
+      "title": "대표원장",
+      "specialty": "피부과 전문의",
+      "career": [
+        "인디언주름 필러, 목주름 리프팅, 이미지 필러 3개 특허기술",
+        "국내외 유수 강연 및 학술대회 발표 스타 강사",
+        "끝없는 기술 연마로 최신 뷰티 트랜드 선도",
+        "바노바기피부과 전희대 대표원장 공동저술 논문으로 입증한 효과 IFU, CPMHA, 보톡스를 활용한 목주름 치료 연구 논문",
+        "텐텍 Key Opinion Leader 선정"
+      ],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "김민석",
+      "title": "대표원장",
+      "specialty": "피부과 전문의",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "김석현",
+      "title": "원장",
+      "specialty": "피부과 전문의",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "이재민",
+      "title": "원장",
+      "specialty": "피부과 전문의",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    }
+  ],
+  "academic_activities": [
+    {
+      "type": "수상",
+      "title": "2025 텐써마 그랜드 히어로 어워즈",
+      "year": 2025,
+      "doctor_name": null,
+      "source_text": "\[EVENT\] 바노바기피부과의원, ‘2025 텐써마 그랜드 히어로 어워즈’ 수상"
+    },
+    {
+      "type": "학회발표",
+      "title": "벨로테로 리바이브 스킨부스터 더마 심포지엄 좌장 활동",
+      "year": null,
+      "doctor_name": "전희대",
+      "source_text": "\[NEWS\] 전희대 대표원장, ‘벨로테로 리바이브 스킨부스터 더마 심포지엄’ 좌장 활동"
+    },
+    {
+      "type": "학회발표",
+      "title": "2025 MEDICON FESTIVAL 참여",
+      "year": 2025,
+      "doctor_name": null,
+      "source_text": "\[NEWS\] 바노바기피부과, 2025 MEDICON FESTIVAL 참여"
+    },
+    {
+      "type": "수상",
+      "title": "텐텍 Key Opinion Leader 선정",
+      "year": null,
+      "doctor_name": "전희대",
+      "source_text": "\[HOT\] 전희대 대표원장, 텐텍 Key Opinion Leader 선정"
+    },
+    {
+      "type": "학회발표",
+      "title": "'컨피던스 투 비(Confidence To Be)' 컨퍼런스 패널 참여",
+      "year": null,
+      "doctor_name": "전희대",
+      "source_text": "\[NEWS\] 바노바기피부과 전희대 대표원장, '컨피던스 투 비(Confidence To Be)' 컨퍼런스 패널 참여"
+    },
+    {
+      "type": "기타",
+      "title": "텐텍코리아와 함께 해외 의료진 트레이닝 진행",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "\[NEWS\] 바노바기피부과, 텐텍코리아와 함께 해외 의료진 트레이닝 진행"
+    },
+    {
+      "type": "기타",
+      "title": "바임글로벌 '쥬베룩 원밀리언 바이알 셀레브레이션' 사회 진행",
+      "year": null,
+      "doctor_name": "전희대",
+      "source_text": "\[NEWS\] 전희대 대표원장, 바임글로벌 '쥬베룩 원밀리언 바이알 셀레브레이션' 사회 진행"
+    },
+    {
+      "type": "논문",
+      "title": "IFU, CPMHA, 보톡스를 활용한 목주름 치료 연구 논문",
+      "year": null,
+      "doctor_name": "전희대",
+      "source_text": "IFU, CPMHA, 보톡스를 활용한 목주름 치료 연구 논문"
+    }
+  ],
+  "medical_devices": [
+    {
+      "name": "Juvelook",
+      "korean_name": "쥬베룩 볼륨",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "collagen_stimulator",
+      "description": "콜라겐 생성 촉진을 돕는 자가 콜라겐 부스터. PLA와 HA 성분을 결합한 자가조직재생 콜라겐 부스터. 4~6주에 걸친 콜라겐 형성 유도로 피부 속 빈 공간을 콜라겐으로 채워 볼륨감, 탄력 있는 피부로 만들어줌.",
+      "source": "text"
+    },
+    {
+      "name": "PLA",
+      "korean_name": "피엘에이",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "collagen_stimulator",
+      "description": "쥬베룩 볼륨의 성분.",
+      "source": "text"
+    },
+    {
+      "name": "Hyaluronic Acid",
+      "korean_name": "히알루론산",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "filler",
+      "description": "쥬베룩 볼륨의 성분. 피부 보습을 유지시키는 역할. 물광주사의 핵심 성분.",
+      "source": "text"
+    },
+    {
+      "name": "Rejuran",
+      "korean_name": "리쥬란 힐러",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "booster",
+      "description": "연어 DNA에서 추출한 폴리뉴클레오티드(PN)를 주성분으로 한 스킨부스터. 얇고 늘어진 진피층의 근본적인 재생을 통해 피부 구조부터 개선하고 피부 속부터 건강하고 탄력 있게 만드는 시술.",
+      "source": "text"
+    },
+    {
+      "name": "PN",
+      "korean_name": "폴리뉴클레오티드",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "booster",
+      "description": "연어 DNA에서 추출한 생체적합물질. 리쥬란 힐러의 주성분. PDRN보다 분자량이 커 피부 내 오래 잔존하여 근본적이고 장기적인 개선 효과.",
+      "source": "text"
+    },
+    {
+      "name": "PDRN",
+      "korean_name": "피디알엔",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "booster",
+      "description": "폴리뉴클레오티드(PN)와 비교 설명됨. 유스힐의 성분 (철갑상어, 연어 추출 PDRN).",
+      "source": "text"
+    },
+    {
+      "name": "Skinvive",
+      "korean_name": "스킨바이브",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "booster",
+      "description": "일반 히알루론산보다 더 높은 지속력과 보습력을 가진 프리미엄 물광주사. 진피층에 직접 주입하는 히알루론산으로 피부의 건조, 탄력 저하를 개선.",
+      "source": "text"
+    },
+    {
+      "name": "PRP",
+      "korean_name": "PRP",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "other_injectable",
+      "description": "혈액에서 추출한 PRP(Platelet Rich Plasma)를 이용해 피부세포 재생 및 회복. 콜라겐, 엘라스틴을 생성해 피부 재생, 모공, 흉터 개선 등 전반적인 문제 개선.",
+      "source": "text"
+    },
+    {
+      "name": "Youtheal",
+      "korean_name": "유스힐",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "booster",
+      "description": "철갑상어와 연어에서 추출한 듀얼 PDRN과 식물 유래 듀얼 엑소좀의 만남. 다양한 성분으로 피부 재생과 함께 피부톤, 피부결, 모공까지 개선해주는 올인원 스킨 부스터.",
+      "source": "text"
+    },
+    {
+      "name": "Exosome",
+      "korean_name": "엑소좀",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "booster",
+      "description": "식물 유래 듀얼 엑소좀 (유스힐 성분).",
+      "source": "text"
+    },
+    {
+      "name": "Fraxel",
+      "korean_name": "프락셀 듀얼",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "유스힐 성분 흡수를 돕는 전문 장비.",
+      "source": "text"
+    },
+    {
+      "name": "NeedleRF",
+      "korean_name": "니들RF",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "microneedle",
+      "description": "유스힐 성분 흡수를 돕는 전문 장비.",
