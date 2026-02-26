@@ -2,14 +2,14 @@
  * MADMEDSALES 데이터 사전 로더
  * JSON 사전을 한 번만 읽고 캐시하여 Gemini 프롬프트에 주입
  *
- * v1.2 - 2026-02-26
+ * v1.3 - 2026-02-26
  */
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const DICT_PATH = path.resolve(__dirname, 'MADMEDSALES_dictionary_v1.2.json');
+const DICT_PATH = path.resolve(__dirname, 'MADMEDSALES_dictionary_v1.3.json');
 
 // ── 타입 ──
 

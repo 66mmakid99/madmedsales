@@ -1,6 +1,6 @@
 /**
- * v5.6 다병원 교차 검증: 사전 v1.2 + 비급여표 전처리
- * 사용: npx tsx scripts/_test-v56-multi.ts --name "병원명"
+ * v5.6 다병원 교차 검증: 사전 v1.2 + 비급여표 전처리 + OCR
+ * 사용: npx tsx scripts/_test-v56-multi.ts --name "병원명" [--ocr]
  */
 import fs from 'fs';
 import path from 'path';
@@ -9,6 +9,7 @@ import { fileURLToPath } from 'url';
 import dotenv from 'dotenv';
 import { buildClassifyPrompt } from './v5/prompts.js';
 import { getEquipmentNormalizationMap, getEquipmentCategoryMap } from './crawler/dictionary-loader.js';
+import { captureScreenshots, closeBrowser, type ScreenshotResult } from './v5/screenshot-capture.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 dotenv.config({ path: path.resolve(__dirname, '.env') });
@@ -34,6 +35,15 @@ async function getSaToken(): Promise<string> {
   return data.access_token;
 }
 
+function getPagePriority(url: string, text: string): number {
+  const lowered = (url + ' ' + text.slice(0, 500)).toLowerCase();
+  const HIGH = ['시술', '치료', '장비', '의료진', '의사', '가격', '비용', '비급여', '이벤트', '프로모션', '진료', 'device', 'staff', 'doctor', 'procedure', 'treatment', 'price'];
+  const LOW = ['블로그', '후기', '리뷰', '공지', '뉴스', '오시는길', '오시는 길', '개인정보', '이용약관', '사이트맵', 'sitemap', 'privacy', 'terms', 'notice', 'blog', 'review'];
+  if (LOW.some(k => lowered.includes(k))) return 1;
+  if (HIGH.some(k => lowered.includes(k))) return 3;
+  return 2;
+}
+
 function extractNongeubyeoSection(allText: string): { mainText: string; nongeubyeoSection: string | null } {
   const KEYWORDS = ['비급여항목안내', '비급여항목', '비급여안내', '비급여 진료비', '비급여진료비'];
   const lines = allText.split('\n');
@@ -46,15 +56,16 @@ function extractNongeubyeoSection(allText: string): { mainText: string; nongeuby
     const block: string[] = [line];
     let tableStarted = false;
     let emptyCount = 0;
+    let nonTableLines = 0;
 
     for (let j = i + 1; j < Math.min(i + 500, lines.length); j++) {
       const nl = lines[j];
       const isTable = nl.trim().startsWith('|') && nl.includes('|');
       const isSep = /^\|[\s\-|]+\|$/.test(nl.trim());
 
-      if (isTable || isSep) { block.push(nl); tableStarted = true; emptyCount = 0; }
+      if (isTable || isSep) { block.push(nl); tableStarted = true; emptyCount = 0; nonTableLines = 0; }
       else if (nl.trim() === '') { emptyCount++; if (tableStarted && emptyCount > 2) break; block.push(nl); }
-      else if (!tableStarted) { block.push(nl); }
+      else if (!tableStarted) { nonTableLines++; if (nonTableLines > 50) break; block.push(nl); }
       else { break; }
     }
 
@@ -108,17 +119,18 @@ interface TestResult {
   notes: string[];
 }
 
-async function testHospital(hospitalName: string): Promise<TestResult> {
+async function testHospital(hospitalName: string, useOcr: boolean): Promise<TestResult> {
   const SNAPSHOT_DIR = path.resolve(__dirname, '..', 'snapshots', '2026-02-22-v4', hospitalName);
   if (!fs.existsSync(SNAPSHOT_DIR)) throw new Error(`스냅샷 없음: ${SNAPSHOT_DIR}`);
 
   console.log(`\n${'═'.repeat(60)}`);
-  console.log(`  ${hospitalName} — v5.6 테스트`);
+  console.log(`  ${hospitalName} — v5.6 테스트${useOcr ? ' + OCR' : ''}`);
   console.log('═'.repeat(60));
 
-  // 마크다운 읽기
+  // 마크다운 읽기 + 우선순위 정렬
   const entries = fs.readdirSync(SNAPSHOT_DIR).filter(e => e.startsWith('page-')).sort();
-  const markdowns: string[] = [];
+  interface PageData { dir: string; url: string; md: string; priority: number }
+  const pages: PageData[] = [];
   for (const pd of entries) {
     const mdPath = path.join(SNAPSHOT_DIR, pd, 'content.md');
     if (!fs.existsSync(mdPath)) continue;
@@ -126,31 +138,79 @@ async function testHospital(hospitalName: string): Promise<TestResult> {
     if (md.trim().length <= 50) continue;
     let url = '';
     try { const m = JSON.parse(fs.readFileSync(path.join(SNAPSHOT_DIR, pd, 'metadata.json'), 'utf-8')); url = m.sourceURL || m.url || ''; } catch {}
-    markdowns.push(`\n=== PAGE: ${url || pd} ===\n${md}`);
+    const priority = getPagePriority(url, md);
+    pages.push({ dir: pd, url, md, priority });
   }
+  // 높은 우선순위가 앞으로
+  pages.sort((a, b) => b.priority - a.priority);
+  const markdowns = pages.map(p => `\n=== PAGE: ${p.url || p.dir} ===\n${p.md}`);
 
   const rawFull = markdowns.join('\n\n');
-  console.log(`  마크다운: ${markdowns.length}페이지, ${rawFull.length.toLocaleString()}자`);
+  console.log(`  마크다운: ${markdowns.length}페이지, ${rawFull.length.toLocaleString()}자 (정렬: high ${pages.filter(p=>p.priority>=3).length} / mid ${pages.filter(p=>p.priority===2).length} / low ${pages.filter(p=>p.priority<=1).length})`);
 
-  // 비급여표 전처리 (전체 텍스트에서 추출 후 본문 제한)
+  // 비급여표 전처리 (전체 텍스트에서 추출, truncation 없음)
   const { mainText, nongeubyeoSection } = extractNongeubyeoSection(rawFull);
-  const MAX_MAIN_TEXT = 200000;
-  const truncatedMain = mainText.length > MAX_MAIN_TEXT
-    ? mainText.slice(0, MAX_MAIN_TEXT) + '\n\n[... 이하 생략 ...]'
-    : mainText;
-  if (mainText.length > MAX_MAIN_TEXT) {
-    console.log(`  본문 축약: ${mainText.length.toLocaleString()} → ${MAX_MAIN_TEXT.toLocaleString()}자`);
+  const combined = nongeubyeoSection ? mainText + '\n\n' + nongeubyeoSection : mainText;
+
+  // OCR: Playwright 스크린샷 수집
+  const screenshotParts: Array<{ inlineData: { mimeType: string; data: string } }> = [];
+  if (useOcr) {
+    // 스냅샷 metadata에서 고유 URL 추출
+    const urls = new Set<string>();
+    for (const pd of entries) {
+      try {
+        const m = JSON.parse(fs.readFileSync(path.join(SNAPSHOT_DIR, pd, 'metadata.json'), 'utf-8'));
+        const url = m.sourceURL || m.url || '';
+        if (url && url.startsWith('http')) urls.add(url);
+      } catch { /* skip */ }
+    }
+    const uniqueUrls = [...urls];
+    // 주요 페이지만 선별 (최대 10개 URL, 각 최대 5장)
+    const maxUrls = Math.min(uniqueUrls.length, 10);
+    console.log(`  OCR: ${uniqueUrls.length}개 URL 중 ${maxUrls}개 스크린샷 촬영`);
+
+    for (let ui = 0; ui < maxUrls; ui++) {
+      const url = uniqueUrls[ui];
+      try {
+        const sr = await captureScreenshots(url, {
+          viewportWidth: 1280,
+          viewportHeight: 800,
+          maxScreenshots: 5,
+          timeout: 15000,
+          waitAfterScroll: 400,
+        });
+        for (const buf of sr.screenshots) {
+          screenshotParts.push({
+            inlineData: { mimeType: 'image/png', data: buf.toString('base64') },
+          });
+        }
+        console.log(`    [${ui + 1}/${maxUrls}] ${new URL(url).pathname.slice(0, 40)} → ${sr.screenshots.length}장`);
+      } catch (err) {
+        console.log(`    [${ui + 1}/${maxUrls}] 실패: ${(err as Error).message.slice(0, 60)}`);
+      }
+    }
+    console.log(`  OCR 총: ${screenshotParts.length}장 (≈${Math.round(screenshotParts.length * 1290 / 1000)}K 토큰)`);
   }
-  const combined = nongeubyeoSection ? truncatedMain + '\n\n' + nongeubyeoSection : truncatedMain;
 
   // Gemini 호출
   const prompt = buildClassifyPrompt(hospitalName);
-  const fullPrompt = prompt + '\n\n## 웹사이트 텍스트\n' + combined;
-  console.log(`  프롬프트+텍스트: ${fullPrompt.length.toLocaleString()}자`);
+  let fullPrompt = prompt + '\n\n## 웹사이트 텍스트\n' + combined;
+  if (useOcr && screenshotParts.length > 0) {
+    fullPrompt += '\n\n## 추가 지시: 스크린샷 이미지 분석\n'
+      + '- 첨부된 스크린샷 이미지에 보이는 시술명, 가격, 의사 정보, 장비 사진도 분석하세요.\n'
+      + '- 텍스트에서 추출한 정보와 이미지에서 추출한 정보를 합쳐서 최종 결과를 만드세요.\n'
+      + '- 이미지에서만 확인 가능한 정보는 source: "screenshot"으로 표기하세요.\n'
+      + '- 이미지 안의 한국어 텍스트를 정확히 읽어주세요.\n';
+  }
+  console.log(`  프롬프트+텍스트: ${fullPrompt.length.toLocaleString()}자${screenshotParts.length > 0 ? ` + 이미지 ${screenshotParts.length}장` : ''}`);
 
   const model = process.env.GEMINI_MODEL || 'gemini-2.5-flash';
   const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`;
   const token = await getSaToken();
+
+  // parts 구성: 텍스트 + 이미지
+  const parts: Array<Record<string, unknown>> = [{ text: fullPrompt }];
+  for (const sp of screenshotParts) { parts.push(sp); }
 
   console.log('  Gemini 호출 중...');
   const start = Date.now();
@@ -158,7 +218,7 @@ async function testHospital(hospitalName: string): Promise<TestResult> {
     method: 'POST',
     headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` },
     body: JSON.stringify({
-      contents: [{ role: 'user', parts: [{ text: fullPrompt }] }],
+      contents: [{ role: 'user', parts }],
       generationConfig: { temperature: 0.1, maxOutputTokens: 65536, responseMimeType: 'application/json' },
     }),
   });
@@ -182,6 +242,28 @@ async function testHospital(hospitalName: string): Promise<TestResult> {
 
   let result: Record<string, unknown>;
   const cleanJson = (s: string): string => s.replace(/[\x00-\x1f]/g, ' ').replace(/\\(?!["\\/bfnrtu])/g, '\\\\');
+  const repairTruncatedJson = (s: string): string => {
+    // 잘린 JSON 복구: 열린 bracket/brace를 닫아줌
+    let repaired = s.replace(/,\s*$/, ''); // trailing comma 제거
+    const opens: string[] = [];
+    let inString = false;
+    let escape = false;
+    for (const ch of repaired) {
+      if (escape) { escape = false; continue; }
+      if (ch === '\\') { escape = true; continue; }
+      if (ch === '"') { inString = !inString; continue; }
+      if (inString) continue;
+      if (ch === '{' || ch === '[') opens.push(ch);
+      else if (ch === '}' || ch === ']') opens.pop();
+    }
+    if (inString) repaired += '"'; // 열린 문자열 닫기
+    while (opens.length > 0) {
+      const open = opens.pop();
+      repaired += open === '{' ? '}' : ']';
+    }
+    return repaired;
+  };
+
   try {
     result = JSON.parse(text);
   } catch (e1) {
@@ -190,26 +272,59 @@ async function testHospital(hospitalName: string): Promise<TestResult> {
       result = JSON.parse(cleanJson(text));
       console.log('  → 이스케이프 수정 후 성공');
     } catch {
-      // ```json ... ``` 블록 추출 시도
-      const codeBlock = text.match(/```(?:json)?\s*([\s\S]*?)```/);
-      const rawJson = codeBlock ? codeBlock[1] : text;
-      const jsonMatch = rawJson.match(/\{[\s\S]*\}/);
-      if (jsonMatch) {
-        try {
-          result = JSON.parse(cleanJson(jsonMatch[0]));
-          console.log('  → JSON 추출+수정 후 성공');
-        } catch (e3) {
-          console.error(`  ❌ JSON 최종 파싱 실패: ${(e3 as Error).message.slice(0, 80)}`);
-          const debugPath = path.resolve(__dirname, '..', 'output', `v56-debug-${hospitalName}.txt`);
-          fs.writeFileSync(debugPath, text, 'utf-8');
-          console.log(`  원문 저장: ${debugPath} (${text.length}자)`);
+      // 잘린 JSON 복구 시도
+      try {
+        result = JSON.parse(repairTruncatedJson(cleanJson(text)));
+        console.log('  → 잘린 JSON 복구 성공');
+      } catch {
+        // ```json ... ``` 블록 추출 시도
+        const codeBlock = text.match(/```(?:json)?\s*([\s\S]*?)```/);
+        const rawJson = codeBlock ? codeBlock[1] : text;
+        const jsonMatch = rawJson.match(/\{[\s\S]*\}/);
+        if (jsonMatch) {
+          try {
+            result = JSON.parse(repairTruncatedJson(cleanJson(jsonMatch[0])));
+            console.log('  → JSON 추출+복구 후 성공');
+          } catch (e4) {
+            console.error(`  ❌ JSON 최종 파싱 실패: ${(e4 as Error).message.slice(0, 80)}`);
+            const debugPath = path.resolve(__dirname, '..', 'output', `v56-debug-${hospitalName}.txt`);
+            fs.writeFileSync(debugPath, text, 'utf-8');
+            console.log(`  원문 저장: ${debugPath} (${text.length}자)`);
+            result = {};
+          }
+        } else {
+          console.error('  ❌ JSON 객체 미발견');
           result = {};
         }
-      } else {
-        console.error('  ❌ JSON 객체 미발견');
-        result = {};
       }
     }
+  }
+
+  // 장비 후처리: injectable 분리 + 중복 제거
+  const rawDevices = (result.medical_devices || result.equipments || []) as Array<Record<string, unknown>>;
+  if (rawDevices.length > 0) {
+    const INJECTABLE_SUBS = new Set(['booster', 'collagen_stimulator', 'filler', 'botox', 'lipolytic', 'thread']);
+    const actualDevices: Array<Record<string, unknown>> = [];
+    const injectables: Array<Record<string, unknown>> = [];
+    for (const d of rawDevices) {
+      const sub = (d.subcategory || d.device_type || '') as string;
+      if (INJECTABLE_SUBS.has(sub)) { injectables.push(d); } else { actualDevices.push(d); }
+    }
+    if (injectables.length > 0) {
+      console.log(`  주사제/약제 분리: ${injectables.length}건 → treatments로 이동`);
+    }
+    // 중복 제거
+    const seen = new Set<string>();
+    const deduped = actualDevices.filter(d => {
+      const name = ((d.name || d.equipment_name || '') as string).toLowerCase().replace(/[\s\-_.]/g, '');
+      if (!name || seen.has(name)) return false;
+      seen.add(name);
+      return true;
+    });
+    if (deduped.length < actualDevices.length) {
+      console.log(`  장비 중복 제거: ${actualDevices.length} → ${deduped.length}`);
+    }
+    result.medical_devices = deduped;
   }
 
   // 결과 저장
@@ -277,6 +392,9 @@ async function testHospital(hospitalName: string): Promise<TestResult> {
 async function main(): Promise<void> {
   const nameIdx = process.argv.indexOf('--name');
   const targetName = nameIdx >= 0 ? process.argv[nameIdx + 1] : null;
+  const useOcr = process.argv.includes('--ocr');
+
+  if (useOcr) console.log('OCR 모드 활성화: Playwright 스크린샷 + Gemini 멀티모달');
 
   const hospitals = targetName ? [targetName] : ['닥터스피부과신사', '고운세상피부과명동', '톡스앤필강서'];
   const results: TestResult[] = [];
@@ -287,12 +405,15 @@ async function main(): Promise<void> {
       await new Promise(r => setTimeout(r, 10000));
     }
     try {
-      const r = await testHospital(hospitals[i]);
+      const r = await testHospital(hospitals[i], useOcr);
       results.push(r);
     } catch (err) {
       console.error(`  ❌ ${hospitals[i]} 실패: ${(err as Error).message}`);
     }
   }
+
+  // OCR 모드 시 브라우저 종료
+  if (useOcr) await closeBrowser();
 
   if (results.length === 0) return;
 

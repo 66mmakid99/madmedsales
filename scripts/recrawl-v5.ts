@@ -614,10 +614,11 @@ function extractNongeubyeoSection(allText: string): { mainText: string; nongeuby
     const hasNongeubyeoKeyword = NONGEUBYEO_KEYWORDS.some(kw => line.includes(kw));
 
     if (hasNongeubyeoKeyword) {
-      // 비급여 키워드 발견 → 이후 테이블 행 수집 (최대 500줄 탐색)
+      // 비급여 키워드 발견 → 이후 테이블 행 수집 (최대 500줄 탐색, 테이블 전 50줄 제한)
       const block: string[] = [line];
       let tableStarted = false;
       let emptyLineCount = 0;
+      let nonTableLines = 0;
 
       for (let j = i + 1; j < Math.min(i + 500, lines.length); j++) {
         const nextLine = lines[j];
@@ -628,11 +629,14 @@ function extractNongeubyeoSection(allText: string): { mainText: string; nongeuby
           block.push(nextLine);
           tableStarted = true;
           emptyLineCount = 0;
+          nonTableLines = 0;
         } else if (nextLine.trim() === '') {
           emptyLineCount++;
           if (tableStarted && emptyLineCount > 2) break; // 테이블 끝
           block.push(nextLine);
         } else if (!tableStarted) {
+          nonTableLines++;
+          if (nonTableLines > 50) break; // 키워드 후 50줄 내에 테이블 없으면 가짜
           block.push(nextLine); // 테이블 시작 전 맥락
         } else {
           break; // 테이블 중간에 비테이블 행 → 종료
@@ -689,18 +693,13 @@ async function classifyHospitalData(
 
   const prompt = buildClassifyPrompt(hospitalName, navMenuText);
 
-  // [v5.6] 비급여항목표 전처리: truncation 전에 전체 텍스트에서 비급여 섹션 추출
+  // [v5.6] 비급여항목표 전처리: 전체 텍스트에서 비급여 섹션 추출 (truncation 없음)
   const { mainText: preprocessedText, nongeubyeoSection } = extractNongeubyeoSection(allText);
 
-  // 메인 텍스트만 100K자 truncate (비급여표는 별도 유지)
-  const truncatedMain = preprocessedText.length > 100000
-    ? preprocessedText.substring(0, 50000) + '\n\n...(중략)...\n\n' + preprocessedText.substring(preprocessedText.length - 50000)
-    : preprocessedText;
-
-  // 비급여표를 텍스트 끝에 별도 섹션으로 삽입
+  // 비급여표를 텍스트 끝에 별도 섹션으로 삽입 (본문 truncation 제거 — long context 허용)
   const truncated = nongeubyeoSection
-    ? truncatedMain + '\n\n' + nongeubyeoSection
-    : truncatedMain;
+    ? preprocessedText + '\n\n' + nongeubyeoSection
+    : preprocessedText;
 
   // parts 구성: 텍스트 + (있으면) 스크린샷 이미지
   const parts: Array<Record<string, unknown>> = [];
@@ -3144,8 +3143,17 @@ async function main(): Promise<void> {
       console.log(`\n  📝 [v5.4 Step 1] OCR — 이미지 텍스트 추출`);
       let allText = '';
 
-      // 크롤 마크다운 수집
-      for (const p of pages) {
+      // 크롤 마크다운 수집 (우선순위 정렬: 시술/장비/의료진 > 일반 > 약관/후기)
+      const HIGH_KW = ['시술', '치료', '장비', '의료진', '의사', '가격', '비용', '비급여', '이벤트', '프로모션', '진료', 'device', 'staff', 'doctor', 'procedure', 'treatment', 'price'];
+      const LOW_KW = ['블로그', '후기', '리뷰', '공지', '뉴스', '오시는길', '오시는 길', '개인정보', '이용약관', '사이트맵', 'sitemap', 'privacy', 'terms', 'notice', 'blog', 'review'];
+      const sortedPages = [...pages].sort((a, b) => {
+        const aText = (a.url + ' ' + a.markdown.slice(0, 500)).toLowerCase();
+        const bText = (b.url + ' ' + b.markdown.slice(0, 500)).toLowerCase();
+        const aPri = LOW_KW.some(k => aText.includes(k)) ? 1 : HIGH_KW.some(k => aText.includes(k)) ? 3 : 2;
+        const bPri = LOW_KW.some(k => bText.includes(k)) ? 1 : HIGH_KW.some(k => bText.includes(k)) ? 3 : 2;
+        return bPri - aPri;
+      });
+      for (const p of sortedPages) {
         const cleaned = cleanMarkdown(p.markdown);
         if (cleaned.length >= MIN_PAGE_CHARS) {
           allText += `\n\n--- [${p.pageType}] ${p.url} ---\n\n` + cleaned;
