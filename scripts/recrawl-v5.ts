@@ -29,7 +29,8 @@
  * 20. [v5.4] 보고서 자동 생성 (REPORT-FORMAT-RULE-v2 형식)
  *
  * 실행: npx tsx scripts/recrawl-v5.ts --limit 3
- * 옵션: --dry-run | --limit N | --start-from N | --skip-gemini | --only-gemini | --name "병원명" | --no-screenshot | --playwright-only
+ * 옵션: --dry-run | --limit N | --start-from N | --skip-gemini | --only-gemini | --name "병원명" | --no-screenshot | --playwright-only | --ocr
+ * --ocr: 추가 라이브 URL 스크린샷 촬영 → Gemini 멀티모달 분석 (이미지 기반 사이트에서 시술/장비 추출 10~100배 향상)
  */
 
 import FirecrawlApp from '@mendable/firecrawl-js';
@@ -704,17 +705,17 @@ async function classifyHospitalData(
   // parts 구성: 텍스트 + (있으면) 스크린샷 이미지
   const parts: Array<Record<string, unknown>> = [];
 
-  // 스크린샷 이미지 추가 (최대 30장, Gemini 토큰 한도 대응)
+  // 스크린샷 이미지 추가 (최대 50장 — OCR 모드 시 추가 스크린샷 대응)
   if (screenshotBuffers && screenshotBuffers.length > 0) {
-    const maxImages = 30;
+    const maxImages = 50;
     const images = screenshotBuffers.length <= maxImages
       ? screenshotBuffers
-      : [...screenshotBuffers.slice(0, 25), ...screenshotBuffers.slice(-5)]; // 앞 25장 + 뒤 5장
+      : [...screenshotBuffers.slice(0, 40), ...screenshotBuffers.slice(-10)]; // 앞 40장 + 뒤 10장
     for (const buf of images) {
       const optimized = await optimizeScreenshot(buf);
       parts.push({ inlineData: { mimeType: 'image/webp', data: optimized.toString('base64') } });
     }
-    parts.push({ text: `[위 이미지 ${images.length}장은 병원 웹사이트 스크린샷입니다. 이미지에 보이는 장비명, 시술명, 가격표, 이벤트 배너, 의사 이름 등을 텍스트와 함께 분석하세요.]\n\n` + prompt + '\n\n---\n\n## 분석 대상 텍스트:\n\n' + truncated });
+    parts.push({ text: `[위 이미지 ${images.length}장은 병원 웹사이트 스크린샷입니다. 이미지에 보이는 장비명, 시술명, 가격표, 이벤트 배너, 의사 이름 등을 텍스트와 함께 분석하세요.\n- 텍스트에서 추출한 정보와 이미지에서 추출한 정보를 합쳐서 최종 결과를 만드세요.\n- 이미지에서만 확인 가능한 정보는 source: "screenshot"으로 표기하세요.\n- 이미지 안의 한국어 텍스트를 정확히 읽어주세요.]\n\n` + prompt + '\n\n---\n\n## 분석 대상 텍스트:\n\n' + truncated });
   } else {
     parts.push({ text: prompt + '\n\n---\n\n## 분석 대상 텍스트:\n\n' + truncated });
   }
@@ -764,7 +765,29 @@ async function classifyHospitalData(
   return robustJsonParse<HospitalAnalysisV54>(rawText, 'Step 2');
 }
 
-/** 3단계 JSON 파싱 fallback */
+/** [v5.7] 잘린 JSON 자동 복구 — 열린 bracket/brace/string 닫기 */
+function repairTruncatedJson(s: string): string {
+  let repaired = s.replace(/,\s*$/, '');
+  const opens: string[] = [];
+  let inString = false;
+  let escape = false;
+  for (const ch of repaired) {
+    if (escape) { escape = false; continue; }
+    if (ch === '\\') { escape = true; continue; }
+    if (ch === '"') { inString = !inString; continue; }
+    if (inString) continue;
+    if (ch === '{' || ch === '[') opens.push(ch);
+    else if (ch === '}' || ch === ']') opens.pop();
+  }
+  if (inString) repaired += '"';
+  while (opens.length > 0) {
+    const open = opens.pop();
+    repaired += open === '{' ? '}' : ']';
+  }
+  return repaired;
+}
+
+/** 4단계 JSON 파싱 fallback (3단계 + 잘린 JSON 복구) */
 function robustJsonParse<T>(rawText: string, label: string): T {
   const text = rawText.replace(/```json\s*/g, '').replace(/```\s*/g, '').trim();
 
@@ -797,9 +820,19 @@ function robustJsonParse<T>(rawText: string, label: string): T {
     }
   }
 
-  console.log(`    ❌ ${label} JSON 파싱 3단계 전부 실패 (${text.length}자)`);
+  // 4차: [v5.7] 잘린 JSON 복구 시도 (Gemini maxOutputTokens 초과 시)
+  if (firstBrace >= 0) {
+    const fromBrace = text.substring(firstBrace);
+    try {
+      const repaired = repairTruncatedJson(fromBrace);
+      console.log(`    🔧 [v5.7] 잘린 JSON 복구 시도 (${fromBrace.length}→${repaired.length}자)`);
+      return JSON.parse(repaired);
+    } catch { /* continue */ }
+  }
+
+  console.log(`    ❌ ${label} JSON 파싱 4단계 전부 실패 (${text.length}자)`);
   console.log(`    원문 시작: ${text.substring(0, 200)}`);
-  throw new Error(`${label} JSON parse failed after 3 attempts`);
+  throw new Error(`${label} JSON parse failed after 4 attempts`);
 }
 
 // ============================================================
@@ -2787,6 +2820,7 @@ async function main(): Promise<void> {
   const onlyGemini = args.includes('--only-gemini');
   const noScreenshot = args.includes('--no-screenshot');
   const playwrightOnly = args.includes('--playwright-only');
+  const ocrMode = args.includes('--ocr');
   const limitIdx = args.indexOf('--limit');
   const limit = limitIdx >= 0 ? parseInt(args[limitIdx + 1]) : 999;
   const startIdx = args.indexOf('--start-from');
@@ -2805,7 +2839,7 @@ async function main(): Promise<void> {
     : allTargets.slice(startFrom, startFrom + limit);
 
   console.log(`📋 이번 실행: ${targets.length}개${nameFilter ? ` (필터: "${nameFilter}")` : ` (${startFrom}번째부터)`}`);
-  console.log(`🔧 모드: ${dryRun ? 'DRY RUN' : playwrightOnly ? 'Playwright Only (Firecrawl 건너뜀)' : skipGemini ? '크롤링만' : onlyGemini ? 'Gemini분석만' : '풀 파이프라인'}`);
+  console.log(`🔧 모드: ${dryRun ? 'DRY RUN' : playwrightOnly ? 'Playwright Only (Firecrawl 건너뜀)' : skipGemini ? '크롤링만' : onlyGemini ? 'Gemini분석만' : '풀 파이프라인'}${ocrMode ? ' + OCR' : ''}`);
   console.log(`📐 Gemini 모델: ${getGeminiModel()}`);
 
   if (dryRun) {
@@ -3187,6 +3221,36 @@ async function main(): Promise<void> {
         }
       }
       console.log(`    OCR 결과: 성공 ${ocrSuccess}장, 텍스트없음 ${ocrEmpty}장`);
+
+      // ── [v5.7] --ocr 모드: 추가 라이브 URL 스크린샷 촬영 ──
+      if (ocrMode) {
+        const ocrUrls = new Set<string>();
+        for (const p of pages) {
+          if (p.url && p.url.startsWith('http')) ocrUrls.add(p.url);
+        }
+        const ocrUrlList = [...ocrUrls];
+        const ocrMaxUrls = Math.min(ocrUrlList.length, 10);
+        console.log(`\n  📷 [v5.7 OCR] 추가 라이브 스크린샷: ${ocrUrlList.length}개 URL 중 ${ocrMaxUrls}개 촬영`);
+
+        let ocrSsCount = 0;
+        for (let oi = 0; oi < ocrMaxUrls; oi++) {
+          const ocrUrl = ocrUrlList[oi];
+          try {
+            const ocrSr = await captureScreenshots(ocrUrl, {
+              viewportWidth: 1280, viewportHeight: 800,
+              maxScreenshots: 5, timeout: 10000, waitAfterScroll: 400,
+            });
+            for (const buf of ocrSr.screenshots) {
+              playwrightScreenshots.push(buf);
+            }
+            ocrSsCount += ocrSr.screenshots.length;
+            console.log(`    [${oi + 1}/${ocrMaxUrls}] ${new URL(ocrUrl).pathname.slice(0, 40)} → ${ocrSr.screenshots.length}장`);
+          } catch (ocrErr) {
+            console.log(`    [${oi + 1}/${ocrMaxUrls}] 실패: ${(ocrErr as Error).message.slice(0, 60)}`);
+          }
+        }
+        console.log(`  📷 OCR 추가: ${ocrSsCount}장 (총 ${playwrightScreenshots.length}장, ≈${Math.round(playwrightScreenshots.length * 1290 / 1000)}K 토큰)`);
+      }
 
       // ── [v5.5] 네비게이션 메뉴 텍스트 구성 ──
       const navMenuText = navTreatments.length > 0

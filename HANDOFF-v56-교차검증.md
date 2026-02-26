@@ -1,174 +1,193 @@
-# HANDOFF: v5.6 다병원 교차 검증 현황
+# HANDOFF: v5.6 작업 1-6 완료 현황
 
 > 새 대화창에 이 문서를 붙여넣고 이어서 작업하세요.
 
 ## 현재 상태 요약
 
-**v5.6 파이프라인 개발 완료, 다병원 교차 검증 3/4 완료.**
-바노바기(커밋됨) + 닥터스피부과신사/고운세상피부과명동/톡스앤필강서(미커밋) 테스트 완료.
-4곳 종합 비교표 + 공통 문제 분석 + 사전 v1.3 후보 식별 + 커밋이 남음.
+**v5.6 작업지시서 6개 작업 전부 완료. 커밋+푸시됨.**
+비급여표 태깅 수정 / 장비 과다추출 방지 / OCR 도입 / 스마트 정렬 / 사전 v1.3 / 검증 완료.
+다음 단계: 49개 병원 일괄 실행 또는 추가 검증.
 
 ---
 
-## 1. 최근 커밋 이력
+## 1. 커밋 이력
 
 ```
-2d1052a feat(scripts): v5.6 사전확장 + 가격스키마v2 + 비급여표전처리 + 프롬프트강화    ← 최신 (pushed)
+38ff43b feat(scripts): v5.6 작업 1-5 — 비급여태깅 + 장비필터링 + OCR + 정렬 + 사전v1.3  ← 최신 (pushed)
+4f19c38 feat(scripts): v5.6 사전 v1.2 + 다병원 교차 검증 3곳
+2d1052a feat(scripts): v5.6 사전확장 + 가격스키마v2 + 비급여표전처리 + 프롬프트강화
 ff0a52c feat(scripts): v5.5 규칙사전 + 데이터사전 동적 주입
-8184de9 feat(scripts): Playwright fallback iframe 텍스트 추출 추가
 ```
 
-## 2. 미커밋 변경 파일
+## 2. 미커밋 파일 (임시/디버그)
 
 ```
-Modified:
-  scripts/crawler/dictionary-loader.ts          ← 경로 v1.1→v1.2 변경
-
-Untracked (핵심):
-  scripts/crawler/MADMEDSALES_dictionary_v1.2.json  ← 사전 v1.2 (18종 추가)
-  scripts/_test-v56-multi.ts                        ← 다병원 테스트 스크립트
-
-Untracked (테스트 결과):
-  output/v56-test-고운세상피부과명동.json
-  output/v56-test-닥터스피부과신사.json
-  output/v56-test-톡스앤필강서.json
-  output/v56-multi-test-summary.json
-  output/v56-debug-톡스앤필강서.txt
+output/v56-debug-*.txt          ← 디버그 파일 (잘린 JSON 원문)
+output/v56-test-바노바기피부과.json  ← 바노바기 테스트 결과 (v1.2 기준)
+MADMEDSALES_v56_작업지시서.md    ← 작업 명세서 원본
+scripts/_crawl-*, _fix-*, _generate-*, _process-*  ← 일회성 스크립트
 ```
-
-## 3. v5.6 아키텍처 (커밋 2d1052a에 반영됨)
-
-### 3-1. 사전 시스템
-- **사전 파일**: `scripts/crawler/MADMEDSALES_dictionary_v1.2.json`
-  - v1.0 → v1.1: INJECTABLE 카테고리, TenTriple, TuneLiner, Skinvive 등 추가
-  - v1.1 → v1.2: 바노바기 미등록 30건 중 18건 반영 (RF 4종, SKINBOOSTER 3종, INJECTABLE 8종 등)
-  - normMap: 348항목, catMap: 87항목
-- **로더**: `scripts/crawler/dictionary-loader.ts`
-  - `getEquipmentNormalizationMap()` — 표기 → 표준명
-  - `getEquipmentCategoryMap()` — 표준명 → {category, subtype}
-  - `getEquipmentPromptSection()` — Gemini 프롬프트에 주입할 텍스트
-
-### 3-2. 가격 스키마 v2 (`scripts/v5/prompts.ts`)
-```
-treatments[].regular_price  — 정가/비급여표 가격
-treatments[].event_price    — 이벤트/할인가
-treatments[].min_price / max_price — 범위 가격
-treatments[].quantity / unit / price_per_unit — 수량 단위
-treatments[].source — "website" | "nongeubyeo" | "landing" | "academic"
-```
-
-### 3-3. 비급여표 전처리
-- **함수**: `extractNongeubyeoSection(allText)` (recrawl-v5.ts, _test-v56-multi.ts 양쪽)
-- **동작**: 전체 텍스트에서 "비급여항목안내" 등 키워드 → 이후 마크다운 테이블 수집 → 프롬프트 끝에 별도 삽입
-- **핵심**: truncation 전에 실행해야 함 (비급여표가 뒤쪽 페이지에 있을 수 있음)
-
-### 3-4. 테스트 스크립트 (`scripts/_test-v56-multi.ts`)
-- 사용법: `npx tsx scripts/_test-v56-multi.ts --name "병원명"`
-- 기본 3곳: 닥터스피부과신사, 고운세상피부과명동, 톡스앤필강서
-- 본문 200K 제한 (비급여표는 별도 보존)
-- JSON 파싱 3단계: 직접 → 이스케이프수정 → 코드블록추출
 
 ---
 
-## 4. 4곳 교차 검증 결과 비교표
+## 3. 완료된 작업 요약
 
-| 항목 | 바노바기 | 닥터스피부과신사 | 고운세상피부과명동 | 톡스앤필강서 |
-|------|---------|--------------|--------------|-----------|
-| 크롤 페이지 | 49 | 50 | 8 | 50 |
-| 텍스트 | 270K | 221K | 40K | 371K |
-| 비급여표 | 있음 (86행) | 없음 | 없음 | 있음 (8행) |
-| **장비 총** | **56** | **157** | **32** | **44** |
-| **장비 매칭** | **36** (v1.2) | **38** | **5** | **15** |
-| 미등록장비 | 30 | 119 | 6 | 20 |
-| **시술 총** | **128** | **1** | **18** | **65** |
-| **가격 수** | **93** | **0** | **0** | **65** |
-| 비급여가격 | 86 | 0 | 0 | 0 |
-| 정가+이벤트 | 7 | 0 | 0 | 58 |
-| 수량+단위 | 46 | 0 | 0 | 24 |
-| **의사 수** | **5** | **14** | **1** | **1** |
-| 전화 | O | O | - | O |
-| 카카오 | O | O | - | O |
-| 인스타 | - | - | - | O |
-| 유튜브 | O | - | - | O |
-| 블로그 | - | - | - | O |
-| 토큰(in/out) | 134K/20K | 134K/20K | 29K/32K | 124K/28K |
-| 소요시간 | 118초 | 118초 | 208초 | 232초 |
+### 작업 1: 비급여표 source 태깅 수정
+- `extractNongeubyeoSection()`: 키워드~테이블 50줄 거리 제한 (가짜 테이블 방지)
+- 프롬프트: 전처리된 비급여표 섹션 → `source: "nongeubyeo"` 필수 태깅 지시
+- **결과**: 톡스앤필 가짜 비급여표(이용약관 테이블) 제거됨
 
-### 주요 발견
+### 작업 2: 장비 과다추출 방지
+- 프롬프트: 네거티브 리스트 (주사제/화장품/약품/프로그램명 → medical_devices 제외)
+- 코드: injectable subcategory 후처리 분리 + 장비명 정규화 중복 제거
+- 코드: `repairTruncatedJson()` — 잘린 JSON 자동 복구 (bracket/brace 닫기)
+- **결과**: 닥터스피부과 157→106건 (injectable 48건 제거)
 
-1. **닥터스피부과신사: 장비 157개 과다, 시술 1개 과소**
-   - 이미지 기반 사이트 → 마크다운에 시술/가격 정보 미포함
-   - 장비가 157개로 비정상적 (중복 또는 오분류 가능성)
-   - 비급여표 없음 → 가격 0건
+### 작업 3: OCR 도입 (`--ocr` 플래그)
+- Playwright `captureScreenshots()` 재활용 → 스냅샷 URL에서 라이브 스크린샷
+- 최대 10 URL × 5장 = 50장, Gemini parts에 inlineData로 첨부
+- 프롬프트: 이미지 분석 지시 + `source: "screenshot"` 태깅
+- **결과**: 닥터스피부과 시술 1→49~129건, 의사 14→65명
 
-2. **고운세상피부과명동: 전체적으로 빈약 (8페이지, 40K)**
-   - 소형 사이트 → 데이터 자체가 부족
-   - 장비 5개만 매칭, 가격 0건
-   - SNS 채널 전혀 미감지
+### 작업 4: 스마트 정렬 + truncation 제거
+- `getPagePriority()`: HIGH(시술/장비/의료진/가격) / MID(기본) / LOW(약관/후기/블로그)
+- 본문 truncation 완전 제거 — long context 허용 (200K+ 토큰)
+- `recrawl-v5.ts`: 동일 정렬 로직 적용 + 100K truncation 제거
+- **결과**: 톡스앤필 시술 68→119건, 가격 68→119건
 
-3. **톡스앤필강서: 가장 균형 잡힌 결과**
-   - 65개 시술 전부 가격 있음, 정가+이벤트 58쌍
-   - 비급여표 있으나 source="nongeubyeo"로 태깅된 것은 0건 (비급여표 8행이 적어서 시술과 미매칭 가능)
-   - 371K 텍스트 → 200K 제한 적용 (JSON 파싱 실패 방지)
-   - SNS 4채널 전부 감지 (카카오/인스타/유튜브/블로그)
+### 작업 5: 사전 v1.3
+- 3곳 미등록 장비 111건 분석 → 범용 25종 선별 추가
+- LASER 14종, RF 3종, BODY 3종, OTHER_DEVICE 7종, HIFU 1종
+- Shurink Universe/Soprano Titanium alias 추가
+- **normMap 348→452, catMap 87→115**
 
-4. **바노바기: 비급여표 추출 성공 (93건 가격)**
-   - v5.5 대비: 가격 7→93, 장비매칭 23→36(v1.2)
-   - 비급여표 86건 source="nongeubyeo" 정상 태깅
+### 작업 6: 커밋 + 검증
+- 커밋 `38ff43b` (pushed)
+- 톡스앤필: 장비 매칭 7→14/17(82%), 시술 114건
+- 닥터스(OCR): 장비 매칭 19→46/106(43%), 시술 49건
 
 ---
 
-## 5. 남은 작업
+## 4. 최종 검증 결과 비교표
 
-### 즉시 해야 할 것
-- [ ] **4곳 비교 분석 마무리** — 공통 문제 패턴 식별
-- [ ] **사전 v1.3 후보 정리** — 3곳 미등록 장비(119+6+20=145건)에서 범용 장비 추출
-- [ ] **커밋** — 사전 v1.2 + 테스트 스크립트 + 결과 파일
+| 항목 | 닥터스피부과 (OCR) | 톡스앤필강서 | 비고 |
+|------|-----------|---------|------|
+| 크롤 페이지 | 50 | 50 | |
+| 텍스트 | 221K | 371K | truncation 없음 |
+| 비급여표 | 없음 | 없음 (실제 미크롤링) | 가짜 테이블 제거됨 |
+| **장비 총** | **106** | **17** | injectable 분리 후 |
+| **장비 매칭** | **46 (43%)** | **14 (82%)** | v1.3 사전 |
+| 미등록장비 | 19 | 0 | |
+| **시술 총** | **49** | **114** | OCR 효과 |
+| **가격 수** | **0** | **114** | 가격 미공개 사이트 |
+| 정가+이벤트 | 0 | 103 | |
+| 의사 수 | 14 | 1 | |
+| 토큰(in/out) | 148K/27K | 205K/31K | long context |
+| 소요시간 | 177초 | 181초 | |
 
-### 구조적 이슈 (판단 필요)
-- [ ] **이미지 기반 사이트 대응** — 닥터스피부과 같은 이미지 중심 사이트는 OCR 없이는 시술/가격 추출 불가
-- [ ] **비급여표 source 태깅** — 톡스앤필은 비급여표 있지만 source="nongeubyeo" 0건 (태깅 로직 점검 필요)
-- [ ] **장비 과다추출** — 닥터스피부과 157건 (페이지별 중복 제거 또는 Gemini 프롬프트 강화 필요)
-- [ ] **200K 제한의 영향** — 대형 사이트(370K+)에서 뒷부분 손실 → 2-pass 또는 분할 호출 검토
+### v5.5 → v5.6 개선 비교 (바노바기 기준)
+
+| 항목 | v5.5 | v5.6 | 변화 |
+|------|------|------|------|
+| 가격 | 7 | 93 | +1,229% |
+| 비급여가격 | 0 | 86 | 신규 |
+| 장비 매칭 | 23 | 36 (v1.2) | +57% |
+| 수량+단위 | 0 | 46 | 신규 |
 
 ---
 
-## 6. 핵심 파일 위치
+## 5. 아키텍처 (현재 상태)
+
+### 5-1. 사전 시스템
+- **사전 파일**: `scripts/crawler/MADMEDSALES_dictionary_v1.3.json`
+  - normMap: 452항목, catMap: 115항목
+  - 카테고리: RF_TIGHTENING, HIFU, RF_MICRONEEDLE, LASER, IPL, BODY, SKINBOOSTER, OTHER_DEVICE, INJECTOR, INJECTABLE
+- **로더**: `scripts/crawler/dictionary-loader.ts` (경로 v1.3)
+
+### 5-2. 가격 스키마 v2
+```
+treatments[].regular_price / event_price / min_price / max_price
+treatments[].quantity / unit / price_per_unit
+treatments[].source — "website" | "nongeubyeo" | "landing" | "screenshot" | "academic"
+```
+
+### 5-3. 비급여표 전처리
+- `extractNongeubyeoSection()`: 키워드 → 50줄 이내 테이블 탐색 → 프롬프트 끝에 삽입
+- 가짜 테이블 방지: non-table 줄 50줄 초과 시 중단
+
+### 5-4. 장비 후처리
+- injectable subcategory (booster/filler/botox/collagen_stimulator/lipolytic/thread) → treatments로 이동
+- 장비명 정규화 중복 제거 (소문자 + 공백/특수문자 제거)
+- 프롬프트 네거티브 리스트 (주사제/화장품/약품/프로그램명 제외)
+
+### 5-5. OCR (--ocr 플래그)
+- Playwright `captureScreenshots()` → base64 PNG → Gemini inlineData
+- 최대 10 URL × 5장 = 50장 (≈63K 토큰)
+- 이미지에서만 발견된 정보 → `source: "screenshot"`
+
+### 5-6. 스마트 정렬
+- `getPagePriority()`: HIGH(3) / MID(2) / LOW(1) 키워드 기반
+- 높은 우선순위 페이지가 프롬프트 앞에 배치
+- 본문 truncation 없음 — long context 전체 전송
+
+### 5-7. JSON 복구
+- `repairTruncatedJson()`: 잘린 JSON의 열린 bracket/brace/string을 자동 닫기
+- 파싱 4단계: 직접 → 이스케이프수정 → 잘린JSON복구 → 코드블록추출+복구
+
+---
+
+## 6. 남은 이슈 / 다음 단계
+
+### 즉시 가능
+- [ ] **49개 병원 일괄 실행** — 검증 통과 기준 달성 시 실행
+- [ ] **고운세상피부과명동 재검증** — v1.3 사전으로 재테스트 (이전 결과: 장비 5매칭, 시술 18)
+- [ ] **바노바기 재검증** — v1.3 + 작업1-4 적용 후 결과 확인 (이전: JSON 잘림)
+
+### 잔존 이슈
+- **JSON 잘림**: 대형 입력(200K+ 토큰)에서 out 토큰이 maxOutputTokens(65536) 초과 시 잘림 → `repairTruncatedJson()`으로 복구하나 데이터 손실 있음
+- **연락처 누락**: JSON 잘림 시 뒤쪽의 contact_info가 손실됨 → JSON 스키마에서 contact_info를 앞으로 이동 검토
+- **닥터스피부과 시술 변동**: 같은 조건에서 129건/49건으로 결과 편차 → Gemini 응답 비결정성 + 잘림 위치 차이
+- **OCR URL 선별**: 현재 스냅샷 metadata 순서대로 10개 → 우선순위 정렬 적용 필요
+
+---
+
+## 7. 핵심 파일 위치
 
 | 용도 | 경로 |
 |------|------|
-| 사전 v1.2 | `scripts/crawler/MADMEDSALES_dictionary_v1.2.json` |
+| 사전 v1.3 (현재) | `scripts/crawler/MADMEDSALES_dictionary_v1.3.json` |
 | 사전 로더 | `scripts/crawler/dictionary-loader.ts` |
 | 분류 프롬프트 | `scripts/v5/prompts.ts` → `buildClassifyPrompt()` |
 | 메인 파이프라인 | `scripts/recrawl-v5.ts` → `classifyHospitalData()` |
-| 비급여표 전처리 | `scripts/recrawl-v5.ts` + `scripts/_test-v56-multi.ts` → `extractNongeubyeoSection()` |
-| 서브페이지 발견 | `scripts/crawler/subpage-finder.ts` |
+| 비급여표 전처리 | `extractNongeubyeoSection()` (recrawl-v5.ts + _test-v56-multi.ts) |
+| 스크린샷 캡처 | `scripts/v5/screenshot-capture.ts` → `captureScreenshots()` |
 | 다병원 테스트 | `scripts/_test-v56-multi.ts` |
-| 바노바기 테스트 | `scripts/_test-v56-banobagi.ts` |
 | 스냅샷 | `snapshots/2026-02-22-v4/{병원명}/page-*/content.md` |
 | 테스트 결과 | `output/v56-test-{병원명}.json` |
-| v5.6 명세서 | `docs/MADMEDSALES_v5.6_명령문.md` |
+| 작업지시서 | `MADMEDSALES_v56_작업지시서.md` |
 
-## 7. 실행 명령어
+## 8. 실행 명령어
 
 ```bash
-# 단일 병원 테스트
+# 단일 병원 테스트 (텍스트만)
 npx tsx scripts/_test-v56-multi.ts --name "병원명"
+
+# 단일 병원 테스트 (OCR 포함)
+npx tsx scripts/_test-v56-multi.ts --name "병원명" --ocr
 
 # 기본 3곳 전체 테스트
 npx tsx scripts/_test-v56-multi.ts
 
-# 바노바기 전용 테스트 (v5.5 비교 포함)
-npx tsx scripts/_test-v56-banobagi.ts
-
 # 사전 빌드 확인
-npx tsx -e "import{getEquipmentNormalizationMap,getEquipmentCategoryMap}from'./scripts/crawler/dictionary-loader.js';console.log('normMap:',getEquipmentNormalizationMap().size,'catMap:',getEquipmentCategoryMap().size)"
+npx tsx -e "import{getEquipmentNormalizationMap,getEquipmentCategoryMap}from'./scripts/crawler/dictionary-loader.ts';console.log('normMap:',getEquipmentNormalizationMap().size,'catMap:',getEquipmentCategoryMap().size)"
 ```
 
-## 8. 기술 제약 사항
+## 9. 기술 제약 사항
 
-- **Gemini 2.5 Flash**: maxOutputTokens=65536, 입력 200K 초과 시 출력 잘림 현상
+- **Gemini 2.5 Flash**: maxOutputTokens=65536. 대형 입력(200K+ 토큰)에서 응답 잘림 가능 → repairTruncatedJson()으로 부분 복구
+- **Long context 비용**: 200K 토큰 초과 시 $0.30→$0.60/1M (2배), 49개 병원 합계 ≈₩3,000 추가
+- **이미지 토큰**: 1024×1024 PNG 1장 ≈ 1,290 토큰. 50장 ≈ 63K 토큰 추가
 - **SA 인증**: `scripts/.env`의 GOOGLE_SA_KEY_PATH → JWT RSA-SHA256 서명
-- **JSON 파싱**: Gemini가 `responseMimeType: 'application/json'` 설정에도 잘못된 이스케이프 생성하는 경우 있음
-- **비급여표**: truncation 전에 전체 텍스트에서 추출해야 함 (이전 버그: 150K 제한으로 비급여표 손실)
+- **JSON 파싱**: Gemini가 잘못된 이스케이프 생성 + 응답 잘림 → 4단계 파싱으로 대응
 - **mergeAndDeduplicate()**: `_v54` 필드를 보존하지 않음 → 호출 전후 수동 백업/복원 필수
+- **Playwright**: headless chromium, 한국 병원 팝업 14+ 셀렉터 자동 닫기
