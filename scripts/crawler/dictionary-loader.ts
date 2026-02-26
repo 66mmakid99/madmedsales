@@ -2,14 +2,14 @@
  * MADMEDSALES 데이터 사전 로더
  * JSON 사전을 한 번만 읽고 캐시하여 Gemini 프롬프트에 주입
  *
- * v1.3 - 2026-02-26
+ * v1.4 - 2026-02-26
  */
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const DICT_PATH = path.resolve(__dirname, 'MADMEDSALES_dictionary_v1.3.json');
+const DICT_PATH = path.resolve(__dirname, 'MADMEDSALES_dictionary_v1.4.json');
 
 // ── 타입 ──
 
@@ -32,6 +32,10 @@ interface ExcludeRules {
   noise_patterns: string[];
   blacklist_domains: string[];
   non_content_signals: string[];
+  non_aesthetic_devices?: string[];
+  too_generic_terms?: string[];
+  manufacturer_names?: string[];
+  ambiguous_conflation?: string[];
 }
 
 interface DictionaryData {
@@ -90,6 +94,7 @@ export function getEquipmentPromptSection(): string {
     BODY: '바디 장비',
     SKINBOOSTER: '스킨부스터',
     INJECTOR: '약물주입 장비',
+    OTHER_DEVICE: '기타 장비',
     INJECTABLE: '약제 (보톡스/필러)',
   };
   for (const [category, entries] of Object.entries(d.equipment)) {
