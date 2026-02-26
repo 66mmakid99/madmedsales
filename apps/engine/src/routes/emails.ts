@@ -33,7 +33,7 @@ app.post('/generate', async (c) => {
     // Fetch lead + hospital data
     const { data: lead, error: leadErr } = await supabase
       .from('leads')
-      .select('id, hospital_id, grade, contact_email, current_sequence_step, email_sequence_id')
+      .select('id, hospital_id, product_id, grade, contact_email, current_sequence_step, email_sequence_id')
       .eq('id', body.lead_id)
       .single();
 
@@ -43,6 +43,30 @@ app.post('/generate', async (c) => {
         error: { code: 'LEAD_NOT_FOUND', message: '리드를 찾을 수 없습니다.' },
       }, 404);
     }
+
+    // Fetch product info (동적 주입 — 하드코딩 금지)
+    const { data: product, error: productErr } = await supabase
+      .from('products')
+      .select('name, manufacturer, category, description, email_guide')
+      .eq('id', lead.product_id)
+      .single();
+
+    if (productErr || !product) {
+      return c.json({
+        success: false,
+        error: { code: 'PRODUCT_NOT_FOUND', message: '제품 정보를 찾을 수 없습니다.' },
+      }, 404);
+    }
+
+    const productInfo = {
+      name: product.name,
+      manufacturer: product.manufacturer,
+      category: product.category,
+      valueProposition: (product.email_guide as Record<string, string> | null)?.value_proposition
+        ?? product.description
+        ?? product.name,
+      emailGuide: (product.email_guide as Record<string, string> | null)?.guide_text ?? null,
+    };
 
     const { data: hospital } = await supabase
       .from('hospitals')
@@ -104,6 +128,7 @@ app.post('/generate', async (c) => {
 
     const result = await generateEmail(c.env, {
       grade,
+      product: productInfo,
       hospitalName: hospital?.name ?? '병원',
       doctorName: hospital?.doctor_name ?? null,
       department: hospital?.department ?? null,
@@ -194,7 +219,10 @@ app.post('/send', async (c) => {
       }, 404);
     }
 
-    const leadData = email.leads as { grade: string | null } | null;
+    const leadsRaw = email.leads;
+    const leadData = Array.isArray(leadsRaw)
+      ? (leadsRaw[0] as { grade: string | null } | undefined) ?? null
+      : leadsRaw as { grade: string | null } | null;
 
     const externalId = await sendEmail(
       {

@@ -1,5 +1,5 @@
-// v1.0 - 2026-02-20
-// B-grade email prompt: 잠재 병원용 이메일 생성 (업계 트렌드 + 가벼운 터치)
+// v2.0 - 2026-02-27
+// B-grade email prompt: 잠재 병원용 이메일 생성 (업계 트렌드 + 가벼운 터치, product 동적 주입)
 
 import type { EmailPromptInput } from './email-s';
 
@@ -10,15 +10,19 @@ export function buildBGradePrompt(input: EmailPromptInput): string {
         .join('\n')
     : '  없음 (첫 이메일)';
 
+  const emailGuideSection = input.product.emailGuide
+    ? `\n## 제품 이메일 가이드\n${input.product.emailGuide}`
+    : '';
+
   return `당신은 한국 피부과/성형외과 업계 트렌드에 정통한 컨설턴트입니다.
 아래 병원 정보를 바탕으로 업계 정보 공유 형식의 가벼운 이메일을 작성하세요.
 
 ## 제품 정보
-- 제품명: TORR RF
-- 브랜드: BRITZMEDI (브릿츠메디)
-- 카테고리: RF 리프팅 장비
+- 제품명: ${input.product.name}
+- 제조사/브랜드: ${input.product.manufacturer}
+- 카테고리: ${input.product.category}
 - 접근 방식: 직접적인 영업보다는 업계 트렌드 공유 + 자연스러운 제품 언급
-- 가격대: 이메일에 가격을 절대 언급하지 마세요
+- 가격: 이메일에 절대 언급하지 마세요${emailGuideSection}
 
 ## 병원 정보
 - 병원명: ${input.hospitalName}
@@ -45,7 +49,7 @@ ${previousContext}
 5. 수신거부 링크 필수: ${input.unsubscribeUrl}
 6. 가격 언급 금지
 7. 자연스러운 한국어 사용
-8. B등급: 업계 트렌드 + RF 시장 동향 중심, 제품 직접 영업 최소화
+8. B등급: 업계 트렌드 + ${input.product.category} 시장 동향 중심, 제품 직접 영업 최소화
 
 ## 응답 형식 (JSON만 출력)
 {

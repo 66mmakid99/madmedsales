@@ -99,7 +99,7 @@ export async function runSingleScoring(
   const scoringOutput: ScoringOutput = { scores, totalScore, grade };
 
   // 7. AI analysis
-  const aiAnalysis = await generateAIAnalysis(env, {
+  const aiAnalysis = await generateAIAnalysis(env as unknown as Parameters<typeof generateAIAnalysis>[0], {
     hospital: {
       name: hospital.name,
       address: hospital.address,

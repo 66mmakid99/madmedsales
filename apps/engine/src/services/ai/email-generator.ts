@@ -1,7 +1,7 @@
 // v1.0 - 2026-02-20
 // Main email generation service using Claude AI
 
-import type { EmailPromptInput } from './prompts/email-s';
+import type { EmailPromptInput, ProductInfo } from './prompts/email-s';
 import { buildSGradePrompt } from './prompts/email-s';
 import { buildAGradePrompt } from './prompts/email-a';
 import { buildBGradePrompt } from './prompts/email-b';
@@ -18,6 +18,7 @@ const MAX_TOKENS = 1500;
 
 export interface GenerateEmailInput {
   grade: 'S' | 'A' | 'B';
+  product: ProductInfo;
   hospitalName: string;
   doctorName: string | null;
   department: string | null;
@@ -130,6 +131,7 @@ export async function generateEmail(
   const unsubscribeUrl = `${env.WEB_URL}/api/public/unsubscribe?lead=${input.leadId}&token=${await generateUnsubscribeToken(input.leadId, env.RESEND_API_KEY)}`;
 
   const promptInput: EmailPromptInput = {
+    product: input.product,
     hospitalName: input.hospitalName,
     doctorName: input.doctorName,
     department: input.department,

@@ -102,7 +102,6 @@ async function updateLeadFromEvent(
 
   switch (eventType) {
     case 'opened':
-      updates['open_count'] = supabase.rpc ? undefined : undefined;
       updates['last_email_opened_at'] = new Date().toISOString();
       break;
     case 'clicked':
