@@ -1,0 +1,17 @@
+{
+  "missing_equipments": [],
+  "missing_treatments": [
+    "고도안검하수 재수술",
+    "고도 안검하수 교정",
+    "안면분석"
+  ],
+  "missing_doctors": [],
+  "missing_prices": [],
+  "coverage_score": {
+    "equipment": 100,
+    "treatment": 62.5,
+    "doctor": 100,
+    "overall": 85
+  },
+  "issues": []
+}

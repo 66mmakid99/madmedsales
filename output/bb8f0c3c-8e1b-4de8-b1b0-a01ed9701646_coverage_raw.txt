@@ -1,0 +1,22 @@
+{
+  "missing_equipments": [
+    "콜샤인"
+  ],
+  "missing_treatments": [
+    "콜샤인",
+    "코필러",
+    "TAN 시술",
+    "부스터 칵테일"
+  ],
+  "missing_doctors": [],
+  "missing_prices": [],
+  "coverage_score": {
+    "equipment": 100,
+    "treatment": 80,
+    "doctor": 100,
+    "overall": 92
+  },
+  "issues": [
+    "장비/시술 '콜샤인'이 추출 결과에서 '쿨사인'으로 오기되었습니다."
+  ]
+}

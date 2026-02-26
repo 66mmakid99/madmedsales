@@ -1,0 +1,42 @@
+{
+  "missing_equipments": [
+    "Cynergy",
+    "LOTUS III",
+    "A+ Laser",
+    "Intense Ultra",
+    "HS40",
+    "G-Wave",
+    "Ole wave"
+  ],
+  "missing_treatments": [],
+  "missing_doctors": [],
+  "missing_prices": [
+    "점, 비립종, 쥐젖 (1mm 기준)",
+    "여드름 압출 (전체)",
+    "여드름 압출 (1개 + 처방전)",
+    "여드름 염증주사 (5개까지)",
+    "사마귀 (손, 발 제외) (1mm 기준)",
+    "피부 초음파 (한 병변 당)",
+    "영수증, 세부 내역서 의뢰서",
+    "초진, 재진 차트 (5장부터는 장당 100원)",
+    "진료 확인서 (진단명 없음)",
+    "진단서, 수술 확인서, 영문 진단서, 영문 처방전",
+    "병사용 진단서",
+    "상해 진단서 (3주 미만)",
+    "상해 진단서 (3주 이상)",
+    "향후 추전 진단서 (천만원 미만)",
+    "향후 추전 진단서 (천만원 이상)",
+    "자문료"
+  ],
+  "coverage_score": {
+    "equipment": 68,
+    "treatment": 100,
+    "doctor": 100,
+    "overall": 90
+  },
+  "issues": [
+    "Botox, Juvelook, Filler가 장비로 잘못 분류됨.",
+    "비급여 항목의 가격 정보가 추출되지 않음.",
+    "일부 장비명(GentleMax Pro, Shurink Universe, Hyperlux LDM)이 부분적으로 추출됨."
+  ]
+}

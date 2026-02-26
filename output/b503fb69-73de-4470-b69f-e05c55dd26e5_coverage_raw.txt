@@ -1,0 +1,21 @@
+{
+  "missing_equipments": [
+    "하이드라페이셜",
+    "브이올렛"
+  ],
+  "missing_treatments": [
+    "하이드라페이셜",
+    "브이올렛",
+    "리프팅 피부 비만 심부복합 1년 프리미엄패키지",
+    "산소토닝"
+  ],
+  "missing_doctors": [],
+  "missing_prices": [],
+  "coverage_score": {
+    "equipment": 60,
+    "treatment": 78,
+    "doctor": 100,
+    "overall": 79
+  },
+  "issues": []
+}

@@ -1,0 +1,20 @@
+{
+  "missing_equipments": [
+    "LED"
+  ],
+  "missing_treatments": [
+    "필링",
+    "스케일링"
+  ],
+  "missing_doctors": [],
+  "missing_prices": [],
+  "coverage_score": {
+    "equipment": 83.33,
+    "treatment": 88.89,
+    "doctor": 100.00,
+    "overall": 90.56
+  },
+  "issues": [
+    "\"장비\" 추출 결과에 \"윤곽주사, 필러, 보톡스, 실, 체형조각주사\" 등 시술 또는 재료로 분류될 수 있는 항목들이 포함되어 있어 장비 정의와의 일관성이 부족합니다."
+  ]
+}

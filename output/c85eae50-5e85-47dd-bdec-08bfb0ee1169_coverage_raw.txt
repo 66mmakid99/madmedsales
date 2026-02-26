@@ -1,0 +1,20 @@
+{
+  "missing_equipments": [],
+  "missing_treatments": [
+    "기능코",
+    "첫코성형",
+    "매부리코 교정법",
+    "연입주사"
+  ],
+  "missing_doctors": [],
+  "missing_prices": [],
+  "coverage_score": {
+    "equipment": 100,
+    "treatment": 73,
+    "doctor": 100,
+    "overall": 89
+  },
+  "issues": [
+    "'연골입자'와 'Rejuran'이 의료 장비로 추출되었으나, 이는 시술에 사용되는 재료/제품으로 의료기기(장비)의 정의와 다릅니다."
+  ]
+}

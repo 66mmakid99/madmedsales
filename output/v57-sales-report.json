@@ -1,0 +1,2093 @@
+[
+  {
+    "hospitalId": "015db514-9d76-4636-92ee-5997d166790f",
+    "hospitalName": "청담아티젠의원",
+    "axisScores": {
+      "investment": 60,
+      "portfolio": 49,
+      "scale": 22,
+      "marketing": 24
+    },
+    "overallScore": 42,
+    "grade": "B",
+    "salesAngles": [
+      {
+        "angle": "upgrade",
+        "score": 100,
+        "reason": "RF 장비 보유 (Thermage FLX, Volnewmer) → TORR RF로 업그레이드 제안. 구형 모델 교체 시급."
+      },
+      {
+        "angle": "premium",
+        "score": 50,
+        "reason": "투자성향 60점/포트폴리오 49점 — 프리미엄 시장 포지셔닝에 적합"
+      }
+    ],
+    "primaryAngle": {
+      "angle": "upgrade",
+      "score": 100,
+      "reason": "RF 장비 보유 (Thermage FLX, Volnewmer) → TORR RF로 업그레이드 제안. 구형 모델 교체 시급."
+    },
+    "briefing": "■ 청담아티젠의원 — B등급 (42점)\n  4축: 투자60 | 포트폴리오49 | 규모22 | 마케팅24\n  RF 장비: Thermage FLX, Volnewmer\n  HIFU 장비: Ulthera, Shurink Universe\n  시술 12건 (리프팅 11건)\n  의사 1명 | SNS 3채널\n\n  ★ 추천 앵글: 🔄 업그레이드\n    RF 장비 보유 (Thermage FLX, Volnewmer) → TORR RF로 업그레이드 제안. 구형 모델 교체 시급.\n  ☆ 보조 앵글: 👑 프리미엄 포지셔닝\n    투자성향 60점/포트폴리오 49점 — 프리미엄 시장 포지셔닝에 적합",
+    "deviceCount": 5,
+    "rfDevices": [
+      "Thermage FLX",
+      "Volnewmer"
+    ],
+    "hifuDevices": [
+      "Ulthera",
+      "Shurink Universe"
+    ],
+    "treatmentCount": 12,
+    "liftingTreatmentCount": 11,
+    "avgPrice": null,
+    "doctorCount": 1,
+    "snsChannels": [
+      "카카오",
+      "인스타",
+      "유튜브"
+    ],
+    "hasOldRf": true,
+    "hasTorrRf": false
+  },
+  {
+    "hospitalId": "085ce8c7-879f-49ad-91b7-1885f5b57bf2",
+    "hospitalName": "더웰피부과 관저점",
+    "axisScores": {
+      "investment": 5,
+      "portfolio": 6,
+      "scale": 18,
+      "marketing": 16
+    },
+    "overallScore": 10,
+    "grade": "C",
+    "salesAngles": [
+      {
+        "angle": "new_adoption",
+        "score": 90,
+        "reason": "장비 0개로 초기/소규모 병원 — 첫 RF 장비로 TORR RF 도입 제안"
+      }
+    ],
+    "primaryAngle": {
+      "angle": "new_adoption",
+      "score": 90,
+      "reason": "장비 0개로 초기/소규모 병원 — 첫 RF 장비로 TORR RF 도입 제안"
+    },
+    "briefing": "■ 더웰피부과 관저점 — C등급 (10점)\n  4축: 투자5 | 포트폴리오6 | 규모18 | 마케팅16\n  시술 11건 (리프팅 0건)\n  의사 1명 | SNS 2채널\n\n  ★ 추천 앵글: 🆕 신규 도입\n    장비 0개로 초기/소규모 병원 — 첫 RF 장비로 TORR RF 도입 제안",
+    "deviceCount": 0,
+    "rfDevices": [],
+    "hifuDevices": [],
+    "treatmentCount": 11,
+    "liftingTreatmentCount": 0,
+    "avgPrice": null,
+    "doctorCount": 1,
+    "snsChannels": [
+      "카카오",
+      "블로그"
+    ],
+    "hasOldRf": false,
+    "hasTorrRf": false
+  },
+  {
+    "hospitalId": "0b8c4070-7e9f-4011-9987-7c66461b02fe",
+    "hospitalName": "청담리브의원",
+    "axisScores": {
+      "investment": 70,
+      "portfolio": 50,
+      "scale": 40,
+      "marketing": 0
+    },
+    "overallScore": 47,
+    "grade": "B",
+    "salesAngles": [
+      {
+        "angle": "premium",
+        "score": 70,
+        "reason": "투자성향 70점/포트폴리오 50점 — 프리미엄 시장 포지셔닝에 적합"
+      }
+    ],
+    "primaryAngle": {
+      "angle": "premium",
+      "score": 70,
+      "reason": "투자성향 70점/포트폴리오 50점 — 프리미엄 시장 포지셔닝에 적합"
+    },
+    "briefing": "■ 청담리브의원 — B등급 (47점)\n  4축: 투자70 | 포트폴리오50 | 규모40 | 마케팅0\n  RF 장비: Eve Titan, Denserty, InMode, Tensera, TORR RF, Titanium\n  HIFU 장비: Shurink, Ulfit\n  시술 84건 (리프팅 13건)\n  의사 3명 | SNS 0채널\n\n  ★ 추천 앵글: 👑 프리미엄 포지셔닝\n    투자성향 70점/포트폴리오 50점 — 프리미엄 시장 포지셔닝에 적합",
+    "deviceCount": 21,
+    "rfDevices": [
+      "Eve Titan",
+      "Denserty",
+      "InMode",
+      "Tensera",
+      "TORR RF",
+      "Titanium"
+    ],
+    "hifuDevices": [
+      "Shurink",
+      "Ulfit"
+    ],
+    "treatmentCount": 84,
+    "liftingTreatmentCount": 13,
+    "avgPrice": null,
+    "doctorCount": 3,
+    "snsChannels": [],
+    "hasOldRf": false,
+    "hasTorrRf": true
+  },
+  {
+    "hospitalId": "0f4d0567-1852-49a7-a2ac-4eccedf09db0",
+    "hospitalName": "메이린클리닉 청담",
+    "axisScores": {
+      "investment": 90,
+      "portfolio": 46,
+      "scale": 30,
+      "marketing": 16
+    },
+    "overallScore": 53,
+    "grade": "B",
+    "salesAngles": [
+      {
+        "angle": "upgrade",
+        "score": 100,
+        "reason": "RF 장비 보유 (Thermage FLX, 3DEEP, InMode, ePlus, Opus, Density, Sunny) → TORR RF로 업그레이드 제안. 구형 모델 교체 시급."
+      },
+      {
+        "angle": "premium",
+        "score": 70,
+        "reason": "투자성향 90점/포트폴리오 46점 — 프리미엄 시장 포지셔닝에 적합"
+      }
+    ],
+    "primaryAngle": {
+      "angle": "upgrade",
+      "score": 100,
+      "reason": "RF 장비 보유 (Thermage FLX, 3DEEP, InMode, ePlus, Opus, Density, Sunny) → TORR RF로 업그레이드 제안. 구형 모델 교체 시급."
+    },
+    "briefing": "■ 메이린클리닉 청담 — B등급 (53점)\n  4축: 투자90 | 포트폴리오46 | 규모30 | 마케팅16\n  RF 장비: Thermage FLX, 3DEEP, InMode, ePlus, Opus, Density, Sunny\n  HIFU 장비: Ultherapy, Sofwave, LinearZ\n  시술 78건 (리프팅 3건)\n  의사 1명 | SNS 2채널\n\n  ★ 추천 앵글: 🔄 업그레이드\n    RF 장비 보유 (Thermage FLX, 3DEEP, InMode, ePlus, Opus, Density, Sunny) → TORR RF로 업그레이드 제안. 구형 모델 교체 시급.\n  ☆ 보조 앵글: 👑 프리미엄 포지셔닝\n    투자성향 90점/포트폴리오 46점 — 프리미엄 시장 포지셔닝에 적합",
+    "deviceCount": 62,
+    "rfDevices": [
+      "Thermage FLX",
+      "3DEEP",
+      "InMode",
+      "ePlus",
+      "Opus",
+      "Density",
+      "Sunny"
+    ],
+    "hifuDevices": [
+      "Ultherapy",
+      "Sofwave",
+      "LinearZ"
+    ],
+    "treatmentCount": 78,
+    "liftingTreatmentCount": 3,
+    "avgPrice": null,
+    "doctorCount": 1,
+    "snsChannels": [
+      "유튜브",
+      "블로그"
+    ],
+    "hasOldRf": true,
+    "hasTorrRf": false
+  },
+  {
+    "hospitalId": "116ffba3-586e-478d-99d7-5d2dfe0d7ebd",
+    "hospitalName": "베러미의원 울산 삼산점",
+    "axisScores": {
+      "investment": 80,
+      "portfolio": 56,
+      "scale": 30,
+      "marketing": 30
+    },
+    "overallScore": 54,
+    "grade": "B",
+    "salesAngles": [
+      {
+        "angle": "upgrade",
+        "score": 80,
+        "reason": "RF 장비 보유 (InMode, Onda, Tensera) → TORR RF로 업그레이드 제안. 추가 RF로 시술 확대."
+      },
+      {
+        "angle": "premium",
+        "score": 70,
+        "reason": "투자성향 80점/포트폴리오 56점 — 프리미엄 시장 포지셔닝에 적합"
+      },
+      {
+        "angle": "cost_efficiency",
+        "score": 70,
+        "reason": "중소규모 병원 (규모 30점) — 소모품 비용 절감으로 마진 개선 제안"
+      }
+    ],
+    "primaryAngle": {
+      "angle": "upgrade",
+      "score": 80,
+      "reason": "RF 장비 보유 (InMode, Onda, Tensera) → TORR RF로 업그레이드 제안. 추가 RF로 시술 확대."
+    },
+    "briefing": "■ 베러미의원 울산 삼산점 — B등급 (54점)\n  4축: 투자80 | 포트폴리오56 | 규모30 | 마케팅30\n  RF 장비: InMode, Onda, Tensera\n  HIFU 장비: Shurink Universe, Liftera\n  시술 16건 (리프팅 4건)\n  평균 가격: 644,500원\n  의사 1명 | SNS 1채널\n\n  ★ 추천 앵글: 🔄 업그레이드\n    RF 장비 보유 (InMode, Onda, Tensera) → TORR RF로 업그레이드 제안. 추가 RF로 시술 확대.\n  ☆ 보조 앵글: 👑 프리미엄 포지셔닝\n    투자성향 80점/포트폴리오 56점 — 프리미엄 시장 포지셔닝에 적합",
+    "deviceCount": 12,
+    "rfDevices": [
+      "InMode",
+      "Onda",
+      "Tensera"
+    ],
+    "hifuDevices": [
+      "Shurink Universe",
+      "Liftera"
+    ],
+    "treatmentCount": 16,
+    "liftingTreatmentCount": 4,
+    "avgPrice": 644500,
+    "doctorCount": 1,
+    "snsChannels": [
+      "카카오"
+    ],
+    "hasOldRf": false,
+    "hasTorrRf": false
+  },
+  {
+    "hospitalId": "11f323ca-8674-43ab-ac6c-3c98c7e0e7a8",
+    "hospitalName": "웰스킨의원",
+    "axisScores": {
+      "investment": 70,
+      "portfolio": 38,
+      "scale": 30,
+      "marketing": 0
+    },
+    "overallScore": 42,
+    "grade": "B",
+    "salesAngles": [
+      {
+        "angle": "upgrade",
+        "score": 80,
+        "reason": "RF 장비 보유 (고주파) → TORR RF로 업그레이드 제안. 추가 RF로 시술 확대."
+      },
+      {
+        "angle": "premium",
+        "score": 70,
+        "reason": "투자성향 70점/포트폴리오 38점 — 프리미엄 시장 포지셔닝에 적합"
+      }
+    ],
+    "primaryAngle": {
+      "angle": "upgrade",
+      "score": 80,
+      "reason": "RF 장비 보유 (고주파) → TORR RF로 업그레이드 제안. 추가 RF로 시술 확대."
+    },
+    "briefing": "■ 웰스킨의원 — B등급 (42점)\n  4축: 투자70 | 포트폴리오38 | 규모30 | 마케팅0\n  RF 장비: 고주파\n  HIFU 장비: 초음파, Ulthera, 울트라셀\n  시술 34건 (리프팅 7건)\n  의사 1명 | SNS 0채널\n\n  ★ 추천 앵글: 🔄 업그레이드\n    RF 장비 보유 (고주파) → TORR RF로 업그레이드 제안. 추가 RF로 시술 확대.\n  ☆ 보조 앵글: 👑 프리미엄 포지셔닝\n    투자성향 70점/포트폴리오 38점 — 프리미엄 시장 포지셔닝에 적합",
+    "deviceCount": 18,
+    "rfDevices": [
+      "고주파"
+    ],
+    "hifuDevices": [
+      "초음파",
+      "Ulthera",
+      "울트라셀"
+    ],
+    "treatmentCount": 34,
+    "liftingTreatmentCount": 7,
+    "avgPrice": null,
+    "doctorCount": 1,
+    "snsChannels": [],
+    "hasOldRf": false,
+    "hasTorrRf": false
+  },
+  {
+    "hospitalId": "1267b395-1132-4511-a8ba-1afc228a8867",
+    "hospitalName": "엠비의원",
+    "axisScores": {
+      "investment": 5,
+      "portfolio": 9,
+      "scale": 30,
+      "marketing": 16
+    },
+    "overallScore": 14,
+    "grade": "C",
+    "salesAngles": [
+      {
+        "angle": "new_adoption",
+        "score": 90,
+        "reason": "장비 0개로 초기/소규모 병원 — 첫 RF 장비로 TORR RF 도입 제안"
+      },
+      {
+        "angle": "portfolio_expand",
+        "score": 70,
+        "reason": "RF 장비 미보유이나 리프팅 시술 진행 중 → RF 라인업 추가로 시술 범위 확대"
+      }
+    ],
+    "primaryAngle": {
+      "angle": "new_adoption",
+      "score": 90,
+      "reason": "장비 0개로 초기/소규모 병원 — 첫 RF 장비로 TORR RF 도입 제안"
+    },
+    "briefing": "■ 엠비의원 — C등급 (14점)\n  4축: 투자5 | 포트폴리오9 | 규모30 | 마케팅16\n  시술 13건 (리프팅 1건)\n  의사 1명 | SNS 2채널\n\n  ★ 추천 앵글: 🆕 신규 도입\n    장비 0개로 초기/소규모 병원 — 첫 RF 장비로 TORR RF 도입 제안\n  ☆ 보조 앵글: 📈 포트폴리오 확장\n    RF 장비 미보유이나 리프팅 시술 진행 중 → RF 라인업 추가로 시술 범위 확대",
+    "deviceCount": 0,
+    "rfDevices": [],
+    "hifuDevices": [],
+    "treatmentCount": 13,
+    "liftingTreatmentCount": 1,
+    "avgPrice": null,
+    "doctorCount": 1,
+    "snsChannels": [
+      "카카오",
+      "유튜브"
+    ],
+    "hasOldRf": false,
+    "hasTorrRf": false
+  },
+  {
+    "hospitalId": "1d7b3678-c3aa-4f03-aba6-d1deb2e3845d",
+    "hospitalName": "러블리피부과의원",
+    "axisScores": {
+      "investment": 80,
+      "portfolio": 22,
+      "scale": 40,
+      "marketing": 32
+    },
+    "overallScore": 48,
+    "grade": "B",
+    "salesAngles": [
+      {
+        "angle": "portfolio_expand",
+        "score": 85,
+        "reason": "RF 장비 미보유이나 리프팅 시술 진행 중 → RF 라인업 추가로 시술 범위 확대"
+      },
+      {
+        "angle": "premium",
+        "score": 70,
+        "reason": "투자성향 80점/포트폴리오 22점 — 프리미엄 시장 포지셔닝에 적합"
+      },
+      {
+        "angle": "cost_efficiency",
+        "score": 70,
+        "reason": "중소규모 병원 (규모 40점) — 소모품 비용 절감으로 마진 개선 제안"
+      }
+    ],
+    "primaryAngle": {
+      "angle": "portfolio_expand",
+      "score": 85,
+      "reason": "RF 장비 미보유이나 리프팅 시술 진행 중 → RF 라인업 추가로 시술 범위 확대"
+    },
+    "briefing": "■ 러블리피부과의원 — B등급 (48점)\n  4축: 투자80 | 포트폴리오22 | 규모40 | 마케팅32\n  HIFU 장비: Sofwave, Shurink\n  시술 32건 (리프팅 1건)\n  평균 가격: 48,625원\n  의사 2명 | SNS 3채널\n\n  ★ 추천 앵글: 📈 포트폴리오 확장\n    RF 장비 미보유이나 리프팅 시술 진행 중 → RF 라인업 추가로 시술 범위 확대\n  ☆ 보조 앵글: 👑 프리미엄 포지셔닝\n    투자성향 80점/포트폴리오 22점 — 프리미엄 시장 포지셔닝에 적합",
+    "deviceCount": 15,
+    "rfDevices": [],
+    "hifuDevices": [
+      "Sofwave",
+      "Shurink"
+    ],
+    "treatmentCount": 32,
+    "liftingTreatmentCount": 1,
+    "avgPrice": 48625,
+    "doctorCount": 2,
+    "snsChannels": [
+      "카카오",
+      "유튜브",
+      "블로그"
+    ],
+    "hasOldRf": false,
+    "hasTorrRf": true
+  },
+  {
+    "hospitalId": "3bedb0f1-a950-4235-8376-a6ad9dbc1790",
+    "hospitalName": "아가파의원",
+    "axisScores": {
+      "investment": 34,
+      "portfolio": 8,
+      "scale": 22,
+      "marketing": 24
+    },
+    "overallScore": 23,
+    "grade": "C",
+    "salesAngles": [
+      {
+        "angle": "portfolio_expand",
+        "score": 70,
+        "reason": "RF 장비 미보유이나 리프팅 시술 진행 중 → RF 라인업 추가로 시술 범위 확대"
+      },
+      {
+        "angle": "new_adoption",
+        "score": 70,
+        "reason": "장비 3개로 초기/소규모 병원 — 첫 RF 장비로 TORR RF 도입 제안"
+      }
+    ],
+    "primaryAngle": {
+      "angle": "portfolio_expand",
+      "score": 70,
+      "reason": "RF 장비 미보유이나 리프팅 시술 진행 중 → RF 라인업 추가로 시술 범위 확대"
+    },
+    "briefing": "■ 아가파의원 — C등급 (23점)\n  4축: 투자34 | 포트폴리오8 | 규모22 | 마케팅24\n  HIFU 장비: Shurink\n  시술 6건 (리프팅 1건)\n  의사 1명 | SNS 3채널\n\n  ★ 추천 앵글: 📈 포트폴리오 확장\n    RF 장비 미보유이나 리프팅 시술 진행 중 → RF 라인업 추가로 시술 범위 확대\n  ☆ 보조 앵글: 🆕 신규 도입\n    장비 3개로 초기/소규모 병원 — 첫 RF 장비로 TORR RF 도입 제안",
+    "deviceCount": 3,
+    "rfDevices": [],
+    "hifuDevices": [
+      "Shurink"
+    ],
+    "treatmentCount": 6,
+    "liftingTreatmentCount": 1,
+    "avgPrice": null,
+    "doctorCount": 1,
+    "snsChannels": [
+      "인스타",
+      "유튜브",
+      "블로그"
+    ],
+    "hasOldRf": false,
+    "hasTorrRf": false
+  },
+  {
+    "hospitalId": "4e1214e6-14ff-456c-a853-2c56a14e813c",
+    "hospitalName": "포에버의원",
+    "axisScores": {
+      "investment": 65,
+      "portfolio": 48,
+      "scale": 20,
+      "marketing": 24
+    },
+    "overallScore": 43,
+    "grade": "B",
+    "salesAngles": [
+      {
+        "angle": "upgrade",
+        "score": 80,
+        "reason": "RF 장비 보유 (Onda, Titanium, Density) → TORR RF로 업그레이드 제안. 추가 RF로 시술 확대."
+      },
+      {
+        "angle": "premium",
+        "score": 50,
+        "reason": "투자성향 65점/포트폴리오 48점 — 프리미엄 시장 포지셔닝에 적합"
+      }
+    ],
+    "primaryAngle": {
+      "angle": "upgrade",
+      "score": 80,
+      "reason": "RF 장비 보유 (Onda, Titanium, Density) → TORR RF로 업그레이드 제안. 추가 RF로 시술 확대."
+    },
+    "briefing": "■ 포에버의원 — B등급 (43점)\n  4축: 투자65 | 포트폴리오48 | 규모20 | 마케팅24\n  RF 장비: Onda, Titanium, Density\n  HIFU 장비: Ulthera\n  시술 70건 (리프팅 8건)\n  의사 2명 | SNS 3채널\n\n  ★ 추천 앵글: 🔄 업그레이드\n    RF 장비 보유 (Onda, Titanium, Density) → TORR RF로 업그레이드 제안. 추가 RF로 시술 확대.\n  ☆ 보조 앵글: 👑 프리미엄 포지셔닝\n    투자성향 65점/포트폴리오 48점 — 프리미엄 시장 포지셔닝에 적합",
+    "deviceCount": 11,
+    "rfDevices": [
+      "Onda",
+      "Titanium",
+      "Density"
+    ],
+    "hifuDevices": [
+      "Ulthera"
+    ],
+    "treatmentCount": 70,
+    "liftingTreatmentCount": 8,
+    "avgPrice": null,
+    "doctorCount": 2,
+    "snsChannels": [
+      "카카오",
+      "인스타",
+      "유튜브"
+    ],
+    "hasOldRf": false,
+    "hasTorrRf": false
+  },
+  {
+    "hospitalId": "4e407837-d85c-4607-989a-2368e1033f8b",
+    "hospitalName": "세마그린재활요양병원",
+    "axisScores": {
+      "investment": 26,
+      "portfolio": 20,
+      "scale": 46,
+      "marketing": 8
+    },
+    "overallScore": 27,
+    "grade": "C",
+    "salesAngles": [
+      {
+        "angle": "new_adoption",
+        "score": 30,
+        "reason": "RF 및 리프팅 정보 부족 — 신규 도입 앵글 (기본 배정)"
+      }
+    ],
+    "primaryAngle": {
+      "angle": "new_adoption",
+      "score": 30,
+      "reason": "RF 및 리프팅 정보 부족 — 신규 도입 앵글 (기본 배정)"
+    },
+    "briefing": "■ 세마그린재활요양병원 — C등급 (27점)\n  4축: 투자26 | 포트폴리오20 | 규모46 | 마케팅8\n  시술 39건 (리프팅 0건)\n  의사 7명 | SNS 1채널\n\n  ★ 추천 앵글: 🆕 신규 도입\n    RF 및 리프팅 정보 부족 — 신규 도입 앵글 (기본 배정)",
+    "deviceCount": 7,
+    "rfDevices": [],
+    "hifuDevices": [],
+    "treatmentCount": 39,
+    "liftingTreatmentCount": 0,
+    "avgPrice": null,
+    "doctorCount": 7,
+    "snsChannels": [
+      "블로그"
+    ],
+    "hasOldRf": false,
+    "hasTorrRf": false
+  },
+  {
+    "hospitalId": "59608f91-6357-405f-9fa5-d5674a27d9ba",
+    "hospitalName": "바롬 클리닉",
+    "axisScores": {
+      "investment": 68,
+      "portfolio": 40,
+      "scale": 30,
+      "marketing": 24
+    },
+    "overallScore": 45,
+    "grade": "B",
+    "salesAngles": [
+      {
+        "angle": "upgrade",
+        "score": 100,
+        "reason": "RF 장비 보유 (Thermage FLX, Onda, Oligio, Density) → TORR RF로 업그레이드 제안. 구형 모델 교체 시급."
+      },
+      {
+        "angle": "premium",
+        "score": 50,
+        "reason": "투자성향 68점/포트폴리오 40점 — 프리미엄 시장 포지셔닝에 적합"
+      }
+    ],
+    "primaryAngle": {
+      "angle": "upgrade",
+      "score": 100,
+      "reason": "RF 장비 보유 (Thermage FLX, Onda, Oligio, Density) → TORR RF로 업그레이드 제안. 구형 모델 교체 시급."
+    },
+    "briefing": "■ 바롬 클리닉 — B등급 (45점)\n  4축: 투자68 | 포트폴리오40 | 규모30 | 마케팅24\n  RF 장비: Thermage FLX, Onda, Oligio, Density\n  HIFU 장비: Ulthera, Shurink Universe\n  시술 31건 (리프팅 9건)\n  의사 1명 | SNS 2채널\n\n  ★ 추천 앵글: 🔄 업그레이드\n    RF 장비 보유 (Thermage FLX, Onda, Oligio, Density) → TORR RF로 업그레이드 제안. 구형 모델 교체 시급.\n  ☆ 보조 앵글: 👑 프리미엄 포지셔닝\n    투자성향 68점/포트폴리오 40점 — 프리미엄 시장 포지셔닝에 적합",
+    "deviceCount": 6,
+    "rfDevices": [
+      "Thermage FLX",
+      "Onda",
+      "Oligio",
+      "Density"
+    ],
+    "hifuDevices": [
+      "Ulthera",
+      "Shurink Universe"
+    ],
+    "treatmentCount": 31,
+    "liftingTreatmentCount": 9,
+    "avgPrice": null,
+    "doctorCount": 1,
+    "snsChannels": [
+      "카카오",
+      "블로그"
+    ],
+    "hasOldRf": true,
+    "hasTorrRf": false
+  },
+  {
+    "hospitalId": "5f4f1c21-6e6b-4f81-a988-a8207a6d1091",
+    "hospitalName": "라뷰티의원",
+    "axisScores": {
+      "investment": 61,
+      "portfolio": 26,
+      "scale": 26,
+      "marketing": 16
+    },
+    "overallScore": 37,
+    "grade": "B",
+    "salesAngles": [
+      {
+        "angle": "upgrade",
+        "score": 80,
+        "reason": "RF 장비 보유 (Titanium, TuneFace) → TORR RF로 업그레이드 제안. 추가 RF로 시술 확대."
+      },
+      {
+        "angle": "premium",
+        "score": 50,
+        "reason": "투자성향 61점/포트폴리오 26점 — 프리미엄 시장 포지셔닝에 적합"
+      }
+    ],
+    "primaryAngle": {
+      "angle": "upgrade",
+      "score": 80,
+      "reason": "RF 장비 보유 (Titanium, TuneFace) → TORR RF로 업그레이드 제안. 추가 RF로 시술 확대."
+    },
+    "briefing": "■ 라뷰티의원 — B등급 (37점)\n  4축: 투자61 | 포트폴리오26 | 규모26 | 마케팅16\n  RF 장비: Titanium, TuneFace\n  HIFU 장비: Ulthera Prime\n  시술 11건 (리프팅 2건)\n  의사 1명 | SNS 2채널\n\n  ★ 추천 앵글: 🔄 업그레이드\n    RF 장비 보유 (Titanium, TuneFace) → TORR RF로 업그레이드 제안. 추가 RF로 시술 확대.\n  ☆ 보조 앵글: 👑 프리미엄 포지셔닝\n    투자성향 61점/포트폴리오 26점 — 프리미엄 시장 포지셔닝에 적합",
+    "deviceCount": 7,
+    "rfDevices": [
+      "Titanium",
+      "TuneFace"
+    ],
+    "hifuDevices": [
+      "Ulthera Prime"
+    ],
+    "treatmentCount": 11,
+    "liftingTreatmentCount": 2,
+    "avgPrice": null,
+    "doctorCount": 1,
+    "snsChannels": [
+      "카카오",
+      "블로그"
+    ],
+    "hasOldRf": false,
+    "hasTorrRf": false
+  },
+  {
+    "hospitalId": "62f6b752-3473-45d0-afc1-b0eaf6593596",
+    "hospitalName": "인앤아웃의원",
+    "axisScores": {
+      "investment": 5,
+      "portfolio": 5,
+      "scale": 0,
+      "marketing": 0
+    },
+    "overallScore": 3,
+    "grade": "C",
+    "salesAngles": [
+      {
+        "angle": "new_adoption",
+        "score": 90,
+        "reason": "장비 0개로 초기/소규모 병원 — 첫 RF 장비로 TORR RF 도입 제안"
+      }
+    ],
+    "primaryAngle": {
+      "angle": "new_adoption",
+      "score": 90,
+      "reason": "장비 0개로 초기/소규모 병원 — 첫 RF 장비로 TORR RF 도입 제안"
+    },
+    "briefing": "■ 인앤아웃의원 — C등급 (3점)\n  4축: 투자5 | 포트폴리오5 | 규모0 | 마케팅0\n  시술 0건 (리프팅 0건)\n  의사 0명 | SNS 0채널\n\n  ★ 추천 앵글: 🆕 신규 도입\n    장비 0개로 초기/소규모 병원 — 첫 RF 장비로 TORR RF 도입 제안",
+    "deviceCount": 0,
+    "rfDevices": [],
+    "hifuDevices": [],
+    "treatmentCount": 0,
+    "liftingTreatmentCount": 0,
+    "avgPrice": null,
+    "doctorCount": 0,
+    "snsChannels": [],
+    "hasOldRf": false,
+    "hasTorrRf": false
+  },
+  {
+    "hospitalId": "6eee9138-ec9a-4adc-86a1-a68c2f130811",
+    "hospitalName": "분당오라클피부과",
+    "axisScores": {
+      "investment": 80,
+      "portfolio": 38,
+      "scale": 30,
+      "marketing": 16
+    },
+    "overallScore": 47,
+    "grade": "B",
+    "salesAngles": [
+      {
+        "angle": "upgrade",
+        "score": 80,
+        "reason": "RF 장비 보유 (듀엣RF) → TORR RF로 업그레이드 제안. 추가 RF로 시술 확대."
+      },
+      {
+        "angle": "premium",
+        "score": 70,
+        "reason": "투자성향 80점/포트폴리오 38점 — 프리미엄 시장 포지셔닝에 적합"
+      }
+    ],
+    "primaryAngle": {
+      "angle": "upgrade",
+      "score": 80,
+      "reason": "RF 장비 보유 (듀엣RF) → TORR RF로 업그레이드 제안. 추가 RF로 시술 확대."
+    },
+    "briefing": "■ 분당오라클피부과 — B등급 (47점)\n  4축: 투자80 | 포트폴리오38 | 규모30 | 마케팅16\n  RF 장비: 듀엣RF\n  HIFU 장비: Ulthera, Doublo\n  시술 42건 (리프팅 3건)\n  의사 2명 | SNS 2채널\n\n  ★ 추천 앵글: 🔄 업그레이드\n    RF 장비 보유 (듀엣RF) → TORR RF로 업그레이드 제안. 추가 RF로 시술 확대.\n  ☆ 보조 앵글: 👑 프리미엄 포지셔닝\n    투자성향 80점/포트폴리오 38점 — 프리미엄 시장 포지셔닝에 적합",
+    "deviceCount": 11,
+    "rfDevices": [
+      "듀엣RF"
+    ],
+    "hifuDevices": [
+      "Ulthera",
+      "Doublo"
+    ],
+    "treatmentCount": 42,
+    "liftingTreatmentCount": 3,
+    "avgPrice": null,
+    "doctorCount": 2,
+    "snsChannels": [
+      "카카오",
+      "블로그"
+    ],
+    "hasOldRf": false,
+    "hasTorrRf": false
+  },
+  {
+    "hospitalId": "6f121739-5144-45ee-91e6-d2fb28adf137",
+    "hospitalName": "메이린의원 울산점",
+    "axisScores": {
+      "investment": 8,
+      "portfolio": 12,
+      "scale": 36,
+      "marketing": 21
+    },
+    "overallScore": 18,
+    "grade": "C",
+    "salesAngles": [
+      {
+        "angle": "new_adoption",
+        "score": 80,
+        "reason": "장비 1개로 초기/소규모 병원 — 첫 RF 장비로 TORR RF 도입 제안"
+      }
+    ],
+    "primaryAngle": {
+      "angle": "new_adoption",
+      "score": 80,
+      "reason": "장비 1개로 초기/소규모 병원 — 첫 RF 장비로 TORR RF 도입 제안"
+    },
+    "briefing": "■ 메이린의원 울산점 — C등급 (18점)\n  4축: 투자8 | 포트폴리오12 | 규모36 | 마케팅21\n  시술 14건 (리프팅 0건)\n  평균 가격: 18,833원\n  의사 1명 | SNS 1채널\n\n  ★ 추천 앵글: 🆕 신규 도입\n    장비 1개로 초기/소규모 병원 — 첫 RF 장비로 TORR RF 도입 제안",
+    "deviceCount": 1,
+    "rfDevices": [],
+    "hifuDevices": [],
+    "treatmentCount": 14,
+    "liftingTreatmentCount": 0,
+    "avgPrice": 18833,
+    "doctorCount": 1,
+    "snsChannels": [
+      "카카오"
+    ],
+    "hasOldRf": false,
+    "hasTorrRf": false
+  },
+  {
+    "hospitalId": "70de466c-cf9c-431c-b26f-c9fe3d290540",
+    "hospitalName": "탐클리닉",
+    "axisScores": {
+      "investment": 80,
+      "portfolio": 36,
+      "scale": 30,
+      "marketing": 8
+    },
+    "overallScore": 46,
+    "grade": "B",
+    "salesAngles": [
+      {
+        "angle": "upgrade",
+        "score": 100,
+        "reason": "RF 장비 보유 (InMode, Thermage, TuneFace) → TORR RF로 업그레이드 제안. 구형 모델 교체 시급."
+      },
+      {
+        "angle": "premium",
+        "score": 70,
+        "reason": "투자성향 80점/포트폴리오 36점 — 프리미엄 시장 포지셔닝에 적합"
+      }
+    ],
+    "primaryAngle": {
+      "angle": "upgrade",
+      "score": 100,
+      "reason": "RF 장비 보유 (InMode, Thermage, TuneFace) → TORR RF로 업그레이드 제안. 구형 모델 교체 시급."
+    },
+    "briefing": "■ 탐클리닉 — B등급 (46점)\n  4축: 투자80 | 포트폴리오36 | 규모30 | 마케팅8\n  RF 장비: InMode, Thermage, TuneFace\n  HIFU 장비: Shurink, 울트라포커스\n  시술 31건 (리프팅 5건)\n  의사 2명 | SNS 1채널\n\n  ★ 추천 앵글: 🔄 업그레이드\n    RF 장비 보유 (InMode, Thermage, TuneFace) → TORR RF로 업그레이드 제안. 구형 모델 교체 시급.\n  ☆ 보조 앵글: 👑 프리미엄 포지셔닝\n    투자성향 80점/포트폴리오 36점 — 프리미엄 시장 포지셔닝에 적합",
+    "deviceCount": 11,
+    "rfDevices": [
+      "InMode",
+      "Thermage",
+      "TuneFace"
+    ],
+    "hifuDevices": [
+      "Shurink",
+      "울트라포커스"
+    ],
+    "treatmentCount": 31,
+    "liftingTreatmentCount": 5,
+    "avgPrice": null,
+    "doctorCount": 2,
+    "snsChannels": [
+      "카카오"
+    ],
+    "hasOldRf": true,
+    "hasTorrRf": false
+  },
+  {
+    "hospitalId": "719a13ea-6843-45f8-a444-29525f67ef3e",
+    "hospitalName": "라마르프리미어의원",
+    "axisScores": {
+      "investment": 100,
+      "portfolio": 51,
+      "scale": 40,
+      "marketing": 8
+    },
+    "overallScore": 59,
+    "grade": "A",
+    "salesAngles": [
+      {
+        "angle": "upgrade",
+        "score": 80,
+        "reason": "RF 장비 보유 (CERP, InMode, Oligio, Ulthermage, Volnewmer) → TORR RF로 업그레이드 제안. 추가 RF로 시술 확대."
+      },
+      {
+        "angle": "premium",
+        "score": 70,
+        "reason": "투자성향 100점/포트폴리오 51점 — 프리미엄 시장 포지셔닝에 적합"
+      }
+    ],
+    "primaryAngle": {
+      "angle": "upgrade",
+      "score": 80,
+      "reason": "RF 장비 보유 (CERP, InMode, Oligio, Ulthermage, Volnewmer) → TORR RF로 업그레이드 제안. 추가 RF로 시술 확대."
+    },
+    "briefing": "■ 라마르프리미어의원 — A등급 (59점)\n  4축: 투자100 | 포트폴리오51 | 규모40 | 마케팅8\n  RF 장비: CERP, InMode, Oligio, Ulthermage, Volnewmer\n  HIFU 장비: Ulthera PRIME, NEW 뉴테라, Ulthera, Shrink Universe\n  시술 90건 (리프팅 19건)\n  의사 4명 | SNS 1채널\n\n  ★ 추천 앵글: 🔄 업그레이드\n    RF 장비 보유 (CERP, InMode, Oligio, Ulthermage, Volnewmer) → TORR RF로 업그레이드 제안. 추가 RF로 시술 확대.\n  ☆ 보조 앵글: 👑 프리미엄 포지셔닝\n    투자성향 100점/포트폴리오 51점 — 프리미엄 시장 포지셔닝에 적합",
+    "deviceCount": 23,
+    "rfDevices": [
+      "CERP",
+      "InMode",
+      "Oligio",
+      "Ulthermage",
+      "Volnewmer"
+    ],
+    "hifuDevices": [
+      "Ulthera PRIME",
+      "NEW 뉴테라",
+      "Ulthera",
+      "Shrink Universe"
+    ],
+    "treatmentCount": 90,
+    "liftingTreatmentCount": 19,
+    "avgPrice": null,
+    "doctorCount": 4,
+    "snsChannels": [
+      "카카오"
+    ],
+    "hasOldRf": false,
+    "hasTorrRf": false
+  },
+  {
+    "hospitalId": "7b169807-6d76-4796-a31b-7b35f0437899",
+    "hospitalName": "7b169807-6d76-4796-a31b-7b35f0437899",
+    "axisScores": {
+      "investment": 5,
+      "portfolio": 5,
+      "scale": 0,
+      "marketing": 0
+    },
+    "overallScore": 3,
+    "grade": "C",
+    "salesAngles": [
+      {
+        "angle": "new_adoption",
+        "score": 90,
+        "reason": "장비 0개로 초기/소규모 병원 — 첫 RF 장비로 TORR RF 도입 제안"
+      }
+    ],
+    "primaryAngle": {
+      "angle": "new_adoption",
+      "score": 90,
+      "reason": "장비 0개로 초기/소규모 병원 — 첫 RF 장비로 TORR RF 도입 제안"
+    },
+    "briefing": "■ 7b169807-6d76-4796-a31b-7b35f0437899 — C등급 (3점)\n  4축: 투자5 | 포트폴리오5 | 규모0 | 마케팅0\n  시술 0건 (리프팅 0건)\n  의사 0명 | SNS 0채널\n\n  ★ 추천 앵글: 🆕 신규 도입\n    장비 0개로 초기/소규모 병원 — 첫 RF 장비로 TORR RF 도입 제안",
+    "deviceCount": 0,
+    "rfDevices": [],
+    "hifuDevices": [],
+    "treatmentCount": 0,
+    "liftingTreatmentCount": 0,
+    "avgPrice": null,
+    "doctorCount": 0,
+    "snsChannels": [],
+    "hasOldRf": false,
+    "hasTorrRf": false
+  },
+  {
+    "hospitalId": "7d8e512e-e608-4e91-a40f-57cdf3b898e5",
+    "hospitalName": "다인피부과",
+    "axisScores": {
+      "investment": 5,
+      "portfolio": 5,
+      "scale": 0,
+      "marketing": 0
+    },
+    "overallScore": 3,
+    "grade": "C",
+    "salesAngles": [
+      {
+        "angle": "new_adoption",
+        "score": 90,
+        "reason": "장비 0개로 초기/소규모 병원 — 첫 RF 장비로 TORR RF 도입 제안"
+      }
+    ],
+    "primaryAngle": {
+      "angle": "new_adoption",
+      "score": 90,
+      "reason": "장비 0개로 초기/소규모 병원 — 첫 RF 장비로 TORR RF 도입 제안"
+    },
+    "briefing": "■ 다인피부과 — C등급 (3점)\n  4축: 투자5 | 포트폴리오5 | 규모0 | 마케팅0\n  시술 0건 (리프팅 0건)\n  의사 0명 | SNS 0채널\n\n  ★ 추천 앵글: 🆕 신규 도입\n    장비 0개로 초기/소규모 병원 — 첫 RF 장비로 TORR RF 도입 제안",
+    "deviceCount": 0,
+    "rfDevices": [],
+    "hifuDevices": [],
+    "treatmentCount": 0,
+    "liftingTreatmentCount": 0,
+    "avgPrice": null,
+    "doctorCount": 0,
+    "snsChannels": [],
+    "hasOldRf": false,
+    "hasTorrRf": false
+  },
+  {
+    "hospitalId": "89e147b3-0197-42b5-a7cb-f88a4e897273",
+    "hospitalName": "청담글래시피부과의원",
+    "axisScores": {
+      "investment": 41,
+      "portfolio": 15,
+      "scale": 26,
+      "marketing": 8
+    },
+    "overallScore": 26,
+    "grade": "C",
+    "salesAngles": [
+      {
+        "angle": "portfolio_expand",
+        "score": 85,
+        "reason": "RF 장비 미보유이나 리프팅 시술 진행 중 → RF 라인업 추가로 시술 범위 확대"
+      }
+    ],
+    "primaryAngle": {
+      "angle": "portfolio_expand",
+      "score": 85,
+      "reason": "RF 장비 미보유이나 리프팅 시술 진행 중 → RF 라인업 추가로 시술 범위 확대"
+    },
+    "briefing": "■ 청담글래시피부과의원 — C등급 (26점)\n  4축: 투자41 | 포트폴리오15 | 규모26 | 마케팅8\n  시술 20건 (리프팅 3건)\n  의사 2명 | SNS 0채널\n\n  ★ 추천 앵글: 📈 포트폴리오 확장\n    RF 장비 미보유이나 리프팅 시술 진행 중 → RF 라인업 추가로 시술 범위 확대",
+    "deviceCount": 7,
+    "rfDevices": [],
+    "hifuDevices": [],
+    "treatmentCount": 20,
+    "liftingTreatmentCount": 3,
+    "avgPrice": null,
+    "doctorCount": 2,
+    "snsChannels": [],
+    "hasOldRf": false,
+    "hasTorrRf": false
+  },
+  {
+    "hospitalId": "8e532e46-33ce-42b8-94d5-6be854ec37f1",
+    "hospitalName": "디데이의원",
+    "axisScores": {
+      "investment": 100,
+      "portfolio": 42,
+      "scale": 50,
+      "marketing": 40
+    },
+    "overallScore": 64,
+    "grade": "A",
+    "salesAngles": [
+      {
+        "angle": "upgrade",
+        "score": 100,
+        "reason": "RF 장비 보유 (Thermage FLX, Thermage, Oligio, InMode, Volnewmer) → TORR RF로 업그레이드 제안. 구형 모델 교체 시급."
+      },
+      {
+        "angle": "premium",
+        "score": 85,
+        "reason": "투자성향 100점/포트폴리오 42점 — 프리미엄 시장 포지셔닝에 적합"
+      }
+    ],
+    "primaryAngle": {
+      "angle": "upgrade",
+      "score": 100,
+      "reason": "RF 장비 보유 (Thermage FLX, Thermage, Oligio, InMode, Volnewmer) → TORR RF로 업그레이드 제안. 구형 모델 교체 시급."
+    },
+    "briefing": "■ 디데이의원 — A등급 (64점)\n  4축: 투자100 | 포트폴리오42 | 규모50 | 마케팅40\n  RF 장비: Thermage FLX, Thermage, Oligio, InMode, Volnewmer\n  HIFU 장비: Ulthera, Shurink Universe, Sofwave\n  시술 25건 (리프팅 3건)\n  평균 가격: 113,075원\n  의사 4명 | SNS 2채널\n\n  ★ 추천 앵글: 🔄 업그레이드\n    RF 장비 보유 (Thermage FLX, Thermage, Oligio, InMode, Volnewmer) → TORR RF로 업그레이드 제안. 구형 모델 교체 시급.\n  ☆ 보조 앵글: 👑 프리미엄 포지셔닝\n    투자성향 100점/포트폴리오 42점 — 프리미엄 시장 포지셔닝에 적합",
+    "deviceCount": 22,
+    "rfDevices": [
+      "Thermage FLX",
+      "Thermage",
+      "Oligio",
+      "InMode",
+      "Volnewmer"
+    ],
+    "hifuDevices": [
+      "Ulthera",
+      "Shurink Universe",
+      "Sofwave"
+    ],
+    "treatmentCount": 25,
+    "liftingTreatmentCount": 3,
+    "avgPrice": 113075,
+    "doctorCount": 4,
+    "snsChannels": [
+      "카카오",
+      "유튜브"
+    ],
+    "hasOldRf": true,
+    "hasTorrRf": false
+  },
+  {
+    "hospitalId": "92f7b52a-66e9-4b1c-a118-6058f89db92e",
+    "hospitalName": "포에버의원 안산점",
+    "axisScores": {
+      "investment": 80,
+      "portfolio": 69,
+      "scale": 60,
+      "marketing": 64
+    },
+    "overallScore": 70,
+    "grade": "A",
+    "salesAngles": [
+      {
+        "angle": "premium",
+        "score": 85,
+        "reason": "투자성향 80점/포트폴리오 69점 — 프리미엄 시장 포지셔닝에 적합"
+      },
+      {
+        "angle": "upgrade",
+        "score": 80,
+        "reason": "RF 장비 보유 (Tensera, Onda, InMode) → TORR RF로 업그레이드 제안. 추가 RF로 시술 확대."
+      }
+    ],
+    "primaryAngle": {
+      "angle": "premium",
+      "score": 85,
+      "reason": "투자성향 80점/포트폴리오 69점 — 프리미엄 시장 포지셔닝에 적합"
+    },
+    "briefing": "■ 포에버의원 안산점 — A등급 (70점)\n  4축: 투자80 | 포트폴리오69 | 규모60 | 마케팅64\n  RF 장비: Tensera, Onda, InMode\n  HIFU 장비: Ulthera, Shurink, Shurink Universe\n  시술 80건 (리프팅 23건)\n  평균 가격: 344,023원\n  의사 2명 | SNS 3채널\n\n  ★ 추천 앵글: 👑 프리미엄 포지셔닝\n    투자성향 80점/포트폴리오 69점 — 프리미엄 시장 포지셔닝에 적합\n  ☆ 보조 앵글: 🔄 업그레이드\n    RF 장비 보유 (Tensera, Onda, InMode) → TORR RF로 업그레이드 제안. 추가 RF로 시술 확대.",
+    "deviceCount": 12,
+    "rfDevices": [
+      "Tensera",
+      "Onda",
+      "InMode"
+    ],
+    "hifuDevices": [
+      "Ulthera",
+      "Shurink",
+      "Shurink Universe"
+    ],
+    "treatmentCount": 80,
+    "liftingTreatmentCount": 23,
+    "avgPrice": 344023,
+    "doctorCount": 2,
+    "snsChannels": [
+      "카카오",
+      "인스타",
+      "유튜브"
+    ],
+    "hasOldRf": false,
+    "hasTorrRf": false
+  },
+  {
+    "hospitalId": "9b244327-3980-4a6b-bdf7-982b013cb3e3",
+    "hospitalName": "나의미래피부과의원",
+    "axisScores": {
+      "investment": 37,
+      "portfolio": 38,
+      "scale": 50,
+      "marketing": 16
+    },
+    "overallScore": 37,
+    "grade": "B",
+    "salesAngles": [
+      {
+        "angle": "portfolio_expand",
+        "score": 70,
+        "reason": "RF 장비 미보유이나 리프팅 시술 진행 중 → RF 라인업 추가로 시술 범위 확대"
+      },
+      {
+        "angle": "new_adoption",
+        "score": 70,
+        "reason": "장비 4개로 초기/소규모 병원 — 첫 RF 장비로 TORR RF 도입 제안"
+      }
+    ],
+    "primaryAngle": {
+      "angle": "portfolio_expand",
+      "score": 70,
+      "reason": "RF 장비 미보유이나 리프팅 시술 진행 중 → RF 라인업 추가로 시술 범위 확대"
+    },
+    "briefing": "■ 나의미래피부과의원 — B등급 (37점)\n  4축: 투자37 | 포트폴리오38 | 규모50 | 마케팅16\n  HIFU 장비: Ulthera, Liftera\n  시술 17건 (리프팅 2건)\n  평균 가격: 1,000,000원\n  의사 2명 | SNS 0채널\n\n  ★ 추천 앵글: 📈 포트폴리오 확장\n    RF 장비 미보유이나 리프팅 시술 진행 중 → RF 라인업 추가로 시술 범위 확대\n  ☆ 보조 앵글: 🆕 신규 도입\n    장비 4개로 초기/소규모 병원 — 첫 RF 장비로 TORR RF 도입 제안",
+    "deviceCount": 4,
+    "rfDevices": [],
+    "hifuDevices": [
+      "Ulthera",
+      "Liftera"
+    ],
+    "treatmentCount": 17,
+    "liftingTreatmentCount": 2,
+    "avgPrice": 1000000,
+    "doctorCount": 2,
+    "snsChannels": [],
+    "hasOldRf": false,
+    "hasTorrRf": false
+  },
+  {
+    "hospitalId": "a14b1f07-d9be-4f40-b3cc-8528e0487567",
+    "hospitalName": "샤인빔의원 홍대",
+    "axisScores": {
+      "investment": 61,
+      "portfolio": 12,
+      "scale": 20,
+      "marketing": 8
+    },
+    "overallScore": 31,
+    "grade": "C",
+    "salesAngles": [
+      {
+        "angle": "portfolio_expand",
+        "score": 85,
+        "reason": "RF 장비 미보유이나 리프팅 시술 진행 중 → RF 라인업 추가로 시술 범위 확대"
+      },
+      {
+        "angle": "premium",
+        "score": 50,
+        "reason": "투자성향 61점/포트폴리오 12점 — 프리미엄 시장 포지셔닝에 적합"
+      }
+    ],
+    "primaryAngle": {
+      "angle": "portfolio_expand",
+      "score": 85,
+      "reason": "RF 장비 미보유이나 리프팅 시술 진행 중 → RF 라인업 추가로 시술 범위 확대"
+    },
+    "briefing": "■ 샤인빔의원 홍대 — C등급 (31점)\n  4축: 투자61 | 포트폴리오12 | 규모20 | 마케팅8\n  HIFU 장비: Ulthera, Shurink Universe\n  시술 15건 (리프팅 2건)\n  의사 0명 | SNS 1채널\n\n  ★ 추천 앵글: 📈 포트폴리오 확장\n    RF 장비 미보유이나 리프팅 시술 진행 중 → RF 라인업 추가로 시술 범위 확대\n  ☆ 보조 앵글: 👑 프리미엄 포지셔닝\n    투자성향 61점/포트폴리오 12점 — 프리미엄 시장 포지셔닝에 적합",
+    "deviceCount": 7,
+    "rfDevices": [],
+    "hifuDevices": [
+      "Ulthera",
+      "Shurink Universe"
+    ],
+    "treatmentCount": 15,
+    "liftingTreatmentCount": 2,
+    "avgPrice": null,
+    "doctorCount": 0,
+    "snsChannels": [
+      "카카오"
+    ],
+    "hasOldRf": false,
+    "hasTorrRf": false
+  },
+  {
+    "hospitalId": "a3a0db02-9a56-48ee-9a90-dc6c313b3494",
+    "hospitalName": "울산제일병원",
+    "axisScores": {
+      "investment": 8,
+      "portfolio": 5,
+      "scale": 0,
+      "marketing": 0
+    },
+    "overallScore": 4,
+    "grade": "C",
+    "salesAngles": [
+      {
+        "angle": "new_adoption",
+        "score": 80,
+        "reason": "장비 1개로 초기/소규모 병원 — 첫 RF 장비로 TORR RF 도입 제안"
+      }
+    ],
+    "primaryAngle": {
+      "angle": "new_adoption",
+      "score": 80,
+      "reason": "장비 1개로 초기/소규모 병원 — 첫 RF 장비로 TORR RF 도입 제안"
+    },
+    "briefing": "■ 울산제일병원 — C등급 (4점)\n  4축: 투자8 | 포트폴리오5 | 규모0 | 마케팅0\n  시술 0건 (리프팅 0건)\n  의사 0명 | SNS 0채널\n\n  ★ 추천 앵글: 🆕 신규 도입\n    장비 1개로 초기/소규모 병원 — 첫 RF 장비로 TORR RF 도입 제안",
+    "deviceCount": 1,
+    "rfDevices": [],
+    "hifuDevices": [],
+    "treatmentCount": 0,
+    "liftingTreatmentCount": 0,
+    "avgPrice": null,
+    "doctorCount": 0,
+    "snsChannels": [],
+    "hasOldRf": false,
+    "hasTorrRf": false
+  },
+  {
+    "hospitalId": "aa7b39b9-44db-4720-97fe-336e868be247",
+    "hospitalName": "벨버티의원",
+    "axisScores": {
+      "investment": 70,
+      "portfolio": 48,
+      "scale": 30,
+      "marketing": 0
+    },
+    "overallScore": 44,
+    "grade": "B",
+    "salesAngles": [
+      {
+        "angle": "upgrade",
+        "score": 80,
+        "reason": "RF 장비 보유 (InMode, LinearFirm, Denserty, Onda, Linearge, Pacella) → TORR RF로 업그레이드 제안. 추가 RF로 시술 확대."
+      },
+      {
+        "angle": "premium",
+        "score": 70,
+        "reason": "투자성향 70점/포트폴리오 48점 — 프리미엄 시장 포지셔닝에 적합"
+      }
+    ],
+    "primaryAngle": {
+      "angle": "upgrade",
+      "score": 80,
+      "reason": "RF 장비 보유 (InMode, LinearFirm, Denserty, Onda, Linearge, Pacella) → TORR RF로 업그레이드 제안. 추가 RF로 시술 확대."
+    },
+    "briefing": "■ 벨버티의원 — B등급 (44점)\n  4축: 투자70 | 포트폴리오48 | 규모30 | 마케팅0\n  RF 장비: InMode, LinearFirm, Denserty, Onda, Linearge, Pacella\n  HIFU 장비: Shurink Universe, Doublo Gold\n  시술 69건 (리프팅 8건)\n  의사 1명 | SNS 0채널\n\n  ★ 추천 앵글: 🔄 업그레이드\n    RF 장비 보유 (InMode, LinearFirm, Denserty, Onda, Linearge, Pacella) → TORR RF로 업그레이드 제안. 추가 RF로 시술 확대.\n  ☆ 보조 앵글: 👑 프리미엄 포지셔닝\n    투자성향 70점/포트폴리오 48점 — 프리미엄 시장 포지셔닝에 적합",
+    "deviceCount": 32,
+    "rfDevices": [
+      "InMode",
+      "LinearFirm",
+      "Denserty",
+      "Onda",
+      "Linearge",
+      "Pacella"
+    ],
+    "hifuDevices": [
+      "Shurink Universe",
+      "Doublo Gold"
+    ],
+    "treatmentCount": 69,
+    "liftingTreatmentCount": 8,
+    "avgPrice": null,
+    "doctorCount": 1,
+    "snsChannels": [],
+    "hasOldRf": false,
+    "hasTorrRf": false
+  },
+  {
+    "hospitalId": "ae5bcbfa-7a63-413f-a1bf-ff01dd541ee2",
+    "hospitalName": "로빈의원",
+    "axisScores": {
+      "investment": 26,
+      "portfolio": 4,
+      "scale": 22,
+      "marketing": 0
+    },
+    "overallScore": 16,
+    "grade": "C",
+    "salesAngles": [
+      {
+        "angle": "upgrade",
+        "score": 60,
+        "reason": "RF 장비 보유 (고주파) → TORR RF로 업그레이드 제안. 추가 RF로 시술 확대."
+      }
+    ],
+    "primaryAngle": {
+      "angle": "upgrade",
+      "score": 60,
+      "reason": "RF 장비 보유 (고주파) → TORR RF로 업그레이드 제안. 추가 RF로 시술 확대."
+    },
+    "briefing": "■ 로빈의원 — C등급 (16점)\n  4축: 투자26 | 포트폴리오4 | 규모22 | 마케팅0\n  RF 장비: 고주파\n  시술 8건 (리프팅 0건)\n  의사 2명 | SNS 0채널\n\n  ★ 추천 앵글: 🔄 업그레이드\n    RF 장비 보유 (고주파) → TORR RF로 업그레이드 제안. 추가 RF로 시술 확대.",
+    "deviceCount": 2,
+    "rfDevices": [
+      "고주파"
+    ],
+    "hifuDevices": [],
+    "treatmentCount": 8,
+    "liftingTreatmentCount": 0,
+    "avgPrice": null,
+    "doctorCount": 2,
+    "snsChannels": [],
+    "hasOldRf": false,
+    "hasTorrRf": false
+  },
+  {
+    "hospitalId": "b3026a44-e61a-4666-9b4f-93064632750c",
+    "hospitalName": "삼성웰내과의원",
+    "axisScores": {
+      "investment": 19,
+      "portfolio": 13,
+      "scale": 22,
+      "marketing": 24
+    },
+    "overallScore": 19,
+    "grade": "C",
+    "salesAngles": [
+      {
+        "angle": "new_adoption",
+        "score": 70,
+        "reason": "장비 3개로 초기/소규모 병원 — 첫 RF 장비로 TORR RF 도입 제안"
+      }
+    ],
+    "primaryAngle": {
+      "angle": "new_adoption",
+      "score": 70,
+      "reason": "장비 3개로 초기/소규모 병원 — 첫 RF 장비로 TORR RF 도입 제안"
+    },
+    "briefing": "■ 삼성웰내과의원 — C등급 (19점)\n  4축: 투자19 | 포트폴리오13 | 규모22 | 마케팅24\n  HIFU 장비: 무빙하이푸 바디레이저\n  시술 26건 (리프팅 0건)\n  의사 2명 | SNS 3채널\n\n  ★ 추천 앵글: 🆕 신규 도입\n    장비 3개로 초기/소규모 병원 — 첫 RF 장비로 TORR RF 도입 제안",
+    "deviceCount": 3,
+    "rfDevices": [],
+    "hifuDevices": [
+      "무빙하이푸 바디레이저"
+    ],
+    "treatmentCount": 26,
+    "liftingTreatmentCount": 0,
+    "avgPrice": null,
+    "doctorCount": 2,
+    "snsChannels": [
+      "카카오",
+      "인스타",
+      "블로그"
+    ],
+    "hasOldRf": false,
+    "hasTorrRf": false
+  },
+  {
+    "hospitalId": "b503fb69-73de-4470-b69f-e05c55dd26e5",
+    "hospitalName": "파라다이스의원",
+    "axisScores": {
+      "investment": 80,
+      "portfolio": 75,
+      "scale": 30,
+      "marketing": 46
+    },
+    "overallScore": 61,
+    "grade": "A",
+    "salesAngles": [
+      {
+        "angle": "premium",
+        "score": 85,
+        "reason": "투자성향 80점/포트폴리오 75점 — 프리미엄 시장 포지셔닝에 적합"
+      },
+      {
+        "angle": "cost_efficiency",
+        "score": 70,
+        "reason": "중소규모 병원 (규모 30점) — 소모품 비용 절감으로 마진 개선 제안"
+      }
+    ],
+    "primaryAngle": {
+      "angle": "premium",
+      "score": 85,
+      "reason": "투자성향 80점/포트폴리오 75점 — 프리미엄 시장 포지셔닝에 적합"
+    },
+    "briefing": "■ 파라다이스의원 — A등급 (61점)\n  4축: 투자80 | 포트폴리오75 | 규모30 | 마케팅46\n  RF 장비: 버츄RF, InMode, TORR RF, Volnewmer, Titanium, 엔커브, RF고주파, 듀엣RF, 고주파\n  HIFU 장비: Shurink Universe, Doublo Gold, Ulthera\n  시술 49건 (리프팅 16건)\n  평균 가격: 848,710원\n  의사 2명 | SNS 1채널\n\n  ★ 추천 앵글: 👑 프리미엄 포지셔닝\n    투자성향 80점/포트폴리오 75점 — 프리미엄 시장 포지셔닝에 적합\n  ☆ 보조 앵글: 💰 비용 효율\n    중소규모 병원 (규모 30점) — 소모품 비용 절감으로 마진 개선 제안",
+    "deviceCount": 50,
+    "rfDevices": [
+      "버츄RF",
+      "InMode",
+      "TORR RF",
+      "Volnewmer",
+      "Titanium",
+      "엔커브",
+      "RF고주파",
+      "듀엣RF",
+      "고주파"
+    ],
+    "hifuDevices": [
+      "Shurink Universe",
+      "Doublo Gold",
+      "Ulthera"
+    ],
+    "treatmentCount": 49,
+    "liftingTreatmentCount": 16,
+    "avgPrice": 848710,
+    "doctorCount": 2,
+    "snsChannels": [
+      "카카오"
+    ],
+    "hasOldRf": false,
+    "hasTorrRf": true
+  },
+  {
+    "hospitalId": "bb0c991c-be3d-45d0-9b22-b60b395669b6",
+    "hospitalName": "빈센트의원",
+    "axisScores": {
+      "investment": 43,
+      "portfolio": 45,
+      "scale": 30,
+      "marketing": 32
+    },
+    "overallScore": 39,
+    "grade": "B",
+    "salesAngles": [
+      {
+        "angle": "cost_efficiency",
+        "score": 70,
+        "reason": "중소규모 병원 (규모 30점) — 소모품 비용 절감으로 마진 개선 제안"
+      }
+    ],
+    "primaryAngle": {
+      "angle": "cost_efficiency",
+      "score": 70,
+      "reason": "중소규모 병원 (규모 30점) — 소모품 비용 절감으로 마진 개선 제안"
+    },
+    "briefing": "■ 빈센트의원 — B등급 (39점)\n  4축: 투자43 | 포트폴리오45 | 규모30 | 마케팅32\n  시술 88건 (리프팅 0건)\n  평균 가격: 371,208원\n  의사 1명 | SNS 2채널\n\n  ★ 추천 앵글: 💰 비용 효율\n    중소규모 병원 (규모 30점) — 소모품 비용 절감으로 마진 개선 제안",
+    "deviceCount": 6,
+    "rfDevices": [],
+    "hifuDevices": [],
+    "treatmentCount": 88,
+    "liftingTreatmentCount": 0,
+    "avgPrice": 371208,
+    "doctorCount": 1,
+    "snsChannels": [
+      "카카오",
+      "블로그"
+    ],
+    "hasOldRf": false,
+    "hasTorrRf": false
+  },
+  {
+    "hospitalId": "bb8f0c3c-8e1b-4de8-b1b0-a01ed9701646",
+    "hospitalName": "연세팜스의원 은평점",
+    "axisScores": {
+      "investment": 60,
+      "portfolio": 24,
+      "scale": 26,
+      "marketing": 16
+    },
+    "overallScore": 36,
+    "grade": "B",
+    "salesAngles": [
+      {
+        "angle": "upgrade",
+        "score": 80,
+        "reason": "RF 장비 보유 (써니RF, RF바이오, MPR) → TORR RF로 업그레이드 제안. 추가 RF로 시술 확대."
+      },
+      {
+        "angle": "premium",
+        "score": 50,
+        "reason": "투자성향 60점/포트폴리오 24점 — 프리미엄 시장 포지셔닝에 적합"
+      }
+    ],
+    "primaryAngle": {
+      "angle": "upgrade",
+      "score": 80,
+      "reason": "RF 장비 보유 (써니RF, RF바이오, MPR) → TORR RF로 업그레이드 제안. 추가 RF로 시술 확대."
+    },
+    "briefing": "■ 연세팜스의원 은평점 — B등급 (36점)\n  4축: 투자60 | 포트폴리오24 | 규모26 | 마케팅16\n  RF 장비: 써니RF, RF바이오, MPR\n  HIFU 장비: CLASSYS\n  시술 13건 (리프팅 1건)\n  의사 2명 | SNS 2채널\n\n  ★ 추천 앵글: 🔄 업그레이드\n    RF 장비 보유 (써니RF, RF바이오, MPR) → TORR RF로 업그레이드 제안. 추가 RF로 시술 확대.\n  ☆ 보조 앵글: 👑 프리미엄 포지셔닝\n    투자성향 60점/포트폴리오 24점 — 프리미엄 시장 포지셔닝에 적합",
+    "deviceCount": 23,
+    "rfDevices": [
+      "써니RF",
+      "RF바이오",
+      "MPR"
+    ],
+    "hifuDevices": [
+      "CLASSYS"
+    ],
+    "treatmentCount": 13,
+    "liftingTreatmentCount": 1,
+    "avgPrice": null,
+    "doctorCount": 2,
+    "snsChannels": [
+      "카카오",
+      "블로그"
+    ],
+    "hasOldRf": false,
+    "hasTorrRf": false
+  },
+  {
+    "hospitalId": "bc32fe01-911d-4e34-aae9-8d4be40238a8",
+    "hospitalName": "노벨의원",
+    "axisScores": {
+      "investment": 26,
+      "portfolio": 21,
+      "scale": 30,
+      "marketing": 30
+    },
+    "overallScore": 26,
+    "grade": "C",
+    "salesAngles": [
+      {
+        "angle": "new_adoption",
+        "score": 80,
+        "reason": "장비 2개로 초기/소규모 병원 — 첫 RF 장비로 TORR RF 도입 제안"
+      },
+      {
+        "angle": "portfolio_expand",
+        "score": 70,
+        "reason": "RF 장비 미보유이나 리프팅 시술 진행 중 → RF 라인업 추가로 시술 범위 확대"
+      },
+      {
+        "angle": "cost_efficiency",
+        "score": 70,
+        "reason": "중소규모 병원 (규모 30점) — 소모품 비용 절감으로 마진 개선 제안"
+      }
+    ],
+    "primaryAngle": {
+      "angle": "new_adoption",
+      "score": 80,
+      "reason": "장비 2개로 초기/소규모 병원 — 첫 RF 장비로 TORR RF 도입 제안"
+    },
+    "briefing": "■ 노벨의원 — C등급 (26점)\n  4축: 투자26 | 포트폴리오21 | 규모30 | 마케팅30\n  HIFU 장비: Ulthera\n  시술 14건 (리프팅 2건)\n  평균 가격: 64,320원\n  의사 1명 | SNS 1채널\n\n  ★ 추천 앵글: 🆕 신규 도입\n    장비 2개로 초기/소규모 병원 — 첫 RF 장비로 TORR RF 도입 제안\n  ☆ 보조 앵글: 📈 포트폴리오 확장\n    RF 장비 미보유이나 리프팅 시술 진행 중 → RF 라인업 추가로 시술 범위 확대",
+    "deviceCount": 2,
+    "rfDevices": [],
+    "hifuDevices": [
+      "Ulthera"
+    ],
+    "treatmentCount": 14,
+    "liftingTreatmentCount": 2,
+    "avgPrice": 64320,
+    "doctorCount": 1,
+    "snsChannels": [
+      "카카오"
+    ],
+    "hasOldRf": false,
+    "hasTorrRf": false
+  },
+  {
+    "hospitalId": "c2a11bee-1d9b-4020-b2e4-67a2a1ced420",
+    "hospitalName": "리노보의원 압구정",
+    "axisScores": {
+      "investment": 80,
+      "portfolio": 31,
+      "scale": 30,
+      "marketing": 8
+    },
+    "overallScore": 44,
+    "grade": "B",
+    "salesAngles": [
+      {
+        "angle": "upgrade",
+        "score": 100,
+        "reason": "RF 장비 보유 (Thermage, InMode) → TORR RF로 업그레이드 제안. 구형 모델 교체 시급."
+      },
+      {
+        "angle": "premium",
+        "score": 70,
+        "reason": "투자성향 80점/포트폴리오 31점 — 프리미엄 시장 포지셔닝에 적합"
+      }
+    ],
+    "primaryAngle": {
+      "angle": "upgrade",
+      "score": 100,
+      "reason": "RF 장비 보유 (Thermage, InMode) → TORR RF로 업그레이드 제안. 구형 모델 교체 시급."
+    },
+    "briefing": "■ 리노보의원 압구정 — B등급 (44점)\n  4축: 투자80 | 포트폴리오31 | 규모30 | 마케팅8\n  RF 장비: Thermage, InMode\n  HIFU 장비: Ultra Duo, Shurink Universe\n  시술 22건 (리프팅 4건)\n  의사 1명 | SNS 1채널\n\n  ★ 추천 앵글: 🔄 업그레이드\n    RF 장비 보유 (Thermage, InMode) → TORR RF로 업그레이드 제안. 구형 모델 교체 시급.\n  ☆ 보조 앵글: 👑 프리미엄 포지셔닝\n    투자성향 80점/포트폴리오 31점 — 프리미엄 시장 포지셔닝에 적합",
+    "deviceCount": 18,
+    "rfDevices": [
+      "Thermage",
+      "InMode"
+    ],
+    "hifuDevices": [
+      "Ultra Duo",
+      "Shurink Universe"
+    ],
+    "treatmentCount": 22,
+    "liftingTreatmentCount": 4,
+    "avgPrice": null,
+    "doctorCount": 1,
+    "snsChannels": [
+      "카카오"
+    ],
+    "hasOldRf": true,
+    "hasTorrRf": false
+  },
+  {
+    "hospitalId": "c3a0581a-f1d9-4312-8a96-7276cec7422c",
+    "hospitalName": "메이린의원",
+    "axisScores": {
+      "investment": 71,
+      "portfolio": 47,
+      "scale": 70,
+      "marketing": 15
+    },
+    "overallScore": 56,
+    "grade": "A",
+    "salesAngles": [
+      {
+        "angle": "upgrade",
+        "score": 100,
+        "reason": "RF 장비 보유 (Titanium, Thermage, RF) → TORR RF로 업그레이드 제안. 구형 모델 교체 시급."
+      },
+      {
+        "angle": "premium",
+        "score": 85,
+        "reason": "투자성향 71점/포트폴리오 47점 — 프리미엄 시장 포지셔닝에 적합"
+      }
+    ],
+    "primaryAngle": {
+      "angle": "upgrade",
+      "score": 100,
+      "reason": "RF 장비 보유 (Titanium, Thermage, RF) → TORR RF로 업그레이드 제안. 구형 모델 교체 시급."
+    },
+    "briefing": "■ 메이린의원 — A등급 (56점)\n  4축: 투자71 | 포트폴리오47 | 규모70 | 마케팅15\n  RF 장비: Titanium, Thermage, RF\n  HIFU 장비: Ulthera, HIFU\n  시술 42건 (리프팅 8건)\n  평균 가격: 12,510원\n  의사 17명 | SNS 1채널\n\n  ★ 추천 앵글: 🔄 업그레이드\n    RF 장비 보유 (Titanium, Thermage, RF) → TORR RF로 업그레이드 제안. 구형 모델 교체 시급.\n  ☆ 보조 앵글: 👑 프리미엄 포지셔닝\n    투자성향 71점/포트폴리오 47점 — 프리미엄 시장 포지셔닝에 적합",
+    "deviceCount": 7,
+    "rfDevices": [
+      "Titanium",
+      "Thermage",
+      "RF"
+    ],
+    "hifuDevices": [
+      "Ulthera",
+      "HIFU"
+    ],
+    "treatmentCount": 42,
+    "liftingTreatmentCount": 8,
+    "avgPrice": 12510,
+    "doctorCount": 17,
+    "snsChannels": [
+      "카카오"
+    ],
+    "hasOldRf": true,
+    "hasTorrRf": false
+  },
+  {
+    "hospitalId": "c85eae50-5e85-47dd-bdec-08bfb0ee1169",
+    "hospitalName": "바로코의원",
+    "axisScores": {
+      "investment": 5,
+      "portfolio": 6,
+      "scale": 22,
+      "marketing": 0
+    },
+    "overallScore": 9,
+    "grade": "C",
+    "salesAngles": [
+      {
+        "angle": "new_adoption",
+        "score": 90,
+        "reason": "장비 0개로 초기/소규모 병원 — 첫 RF 장비로 TORR RF 도입 제안"
+      }
+    ],
+    "primaryAngle": {
+      "angle": "new_adoption",
+      "score": 90,
+      "reason": "장비 0개로 초기/소규모 병원 — 첫 RF 장비로 TORR RF 도입 제안"
+    },
+    "briefing": "■ 바로코의원 — C등급 (9점)\n  4축: 투자5 | 포트폴리오6 | 규모22 | 마케팅0\n  시술 11건 (리프팅 0건)\n  의사 1명 | SNS 0채널\n\n  ★ 추천 앵글: 🆕 신규 도입\n    장비 0개로 초기/소규모 병원 — 첫 RF 장비로 TORR RF 도입 제안",
+    "deviceCount": 0,
+    "rfDevices": [],
+    "hifuDevices": [],
+    "treatmentCount": 11,
+    "liftingTreatmentCount": 0,
+    "avgPrice": null,
+    "doctorCount": 1,
+    "snsChannels": [],
+    "hasOldRf": false,
+    "hasTorrRf": false
+  },
+  {
+    "hospitalId": "d05a3be4-6158-428c-a23b-3aeec484fef2",
+    "hospitalName": "이젠의원",
+    "axisScores": {
+      "investment": 34,
+      "portfolio": 15,
+      "scale": 30,
+      "marketing": 8
+    },
+    "overallScore": 24,
+    "grade": "C",
+    "salesAngles": [
+      {
+        "angle": "portfolio_expand",
+        "score": 70,
+        "reason": "RF 장비 미보유이나 리프팅 시술 진행 중 → RF 라인업 추가로 시술 범위 확대"
+      },
+      {
+        "angle": "new_adoption",
+        "score": 70,
+        "reason": "장비 3개로 초기/소규모 병원 — 첫 RF 장비로 TORR RF 도입 제안"
+      }
+    ],
+    "primaryAngle": {
+      "angle": "portfolio_expand",
+      "score": 70,
+      "reason": "RF 장비 미보유이나 리프팅 시술 진행 중 → RF 라인업 추가로 시술 범위 확대"
+    },
+    "briefing": "■ 이젠의원 — C등급 (24점)\n  4축: 투자34 | 포트폴리오15 | 규모30 | 마케팅8\n  HIFU 장비: Ulthera\n  시술 25건 (리프팅 2건)\n  의사 1명 | SNS 1채널\n\n  ★ 추천 앵글: 📈 포트폴리오 확장\n    RF 장비 미보유이나 리프팅 시술 진행 중 → RF 라인업 추가로 시술 범위 확대\n  ☆ 보조 앵글: 🆕 신규 도입\n    장비 3개로 초기/소규모 병원 — 첫 RF 장비로 TORR RF 도입 제안",
+    "deviceCount": 3,
+    "rfDevices": [],
+    "hifuDevices": [
+      "Ulthera"
+    ],
+    "treatmentCount": 25,
+    "liftingTreatmentCount": 2,
+    "avgPrice": null,
+    "doctorCount": 1,
+    "snsChannels": [
+      "카카오"
+    ],
+    "hasOldRf": false,
+    "hasTorrRf": false
+  },
+  {
+    "hospitalId": "d38b82be-8f50-431d-8f9d-2a6fa06f99df",
+    "hospitalName": "엠레드의원",
+    "axisScores": {
+      "investment": 100,
+      "portfolio": 48,
+      "scale": 30,
+      "marketing": 16
+    },
+    "overallScore": 57,
+    "grade": "A",
+    "salesAngles": [
+      {
+        "angle": "premium",
+        "score": 70,
+        "reason": "투자성향 100점/포트폴리오 48점 — 프리미엄 시장 포지셔닝에 적합"
+      }
+    ],
+    "primaryAngle": {
+      "angle": "premium",
+      "score": 70,
+      "reason": "투자성향 100점/포트폴리오 48점 — 프리미엄 시장 포지셔닝에 적합"
+    },
+    "briefing": "■ 엠레드의원 — A등급 (57점)\n  4축: 투자100 | 포트폴리오48 | 규모30 | 마케팅16\n  RF 장비: Thermage FLX, Accent Prime, Tune Confier, Titanium, InMode, TORR RF, Onda, Alltite\n  HIFU 장비: Ulthera Prime, Shurink Universe, Sofwave\n  시술 48건 (리프팅 14건)\n  의사 2명 | SNS 2채널\n\n  ★ 추천 앵글: 👑 프리미엄 포지셔닝\n    투자성향 100점/포트폴리오 48점 — 프리미엄 시장 포지셔닝에 적합",
+    "deviceCount": 18,
+    "rfDevices": [
+      "Thermage FLX",
+      "Accent Prime",
+      "Tune Confier",
+      "Titanium",
+      "InMode",
+      "TORR RF",
+      "Onda",
+      "Alltite"
+    ],
+    "hifuDevices": [
+      "Ulthera Prime",
+      "Shurink Universe",
+      "Sofwave"
+    ],
+    "treatmentCount": 48,
+    "liftingTreatmentCount": 14,
+    "avgPrice": null,
+    "doctorCount": 2,
+    "snsChannels": [
+      "인스타",
+      "유튜브"
+    ],
+    "hasOldRf": true,
+    "hasTorrRf": true
+  },
+  {
+    "hospitalId": "d54031ad-29bf-42b0-9112-2d625c05a0a3",
+    "hospitalName": "강남타임의원",
+    "axisScores": {
+      "investment": 100,
+      "portfolio": 52,
+      "scale": 50,
+      "marketing": 0
+    },
+    "overallScore": 61,
+    "grade": "A",
+    "salesAngles": [
+      {
+        "angle": "upgrade",
+        "score": 100,
+        "reason": "RF 장비 보유 (Onda, Tensera, TuneFace, Thermage FLX, Titanium, InMode, Linearge, Volnewmer, Oligio X, Tensera High, CERP) → TORR RF로 업그레이드 제안. 구형 모델 교체 시급."
+      },
+      {
+        "angle": "premium",
+        "score": 85,
+        "reason": "투자성향 100점/포트폴리오 52점 — 프리미엄 시장 포지셔닝에 적합"
+      }
+    ],
+    "primaryAngle": {
+      "angle": "upgrade",
+      "score": 100,
+      "reason": "RF 장비 보유 (Onda, Tensera, TuneFace, Thermage FLX, Titanium, InMode, Linearge, Volnewmer, Oligio X, Tensera High, CERP) → TORR RF로 업그레이드 제안. 구형 모델 교체 시급."
+    },
+    "briefing": "■ 강남타임의원 — A등급 (61점)\n  4축: 투자100 | 포트폴리오52 | 규모50 | 마케팅0\n  RF 장비: Onda, Tensera, TuneFace, Thermage FLX, Titanium, InMode, Linearge, Volnewmer, Oligio X, Tensera High, CERP\n  HIFU 장비: Ulthera Prime, Shurink, Sofwave, Scizer, Shurink Universe\n  시술 61건 (리프팅 15건)\n  의사 5명 | SNS 0채널\n\n  ★ 추천 앵글: 🔄 업그레이드\n    RF 장비 보유 (Onda, Tensera, TuneFace, Thermage FLX, Titanium, InMode, Linearge, Volnewmer, Oligio X, Tensera High, CERP) → TORR RF로 업그레이드 제안. 구형 모델 교체 시급.\n  ☆ 보조 앵글: 👑 프리미엄 포지셔닝\n    투자성향 100점/포트폴리오 52점 — 프리미엄 시장 포지셔닝에 적합",
+    "deviceCount": 43,
+    "rfDevices": [
+      "Onda",
+      "Tensera",
+      "TuneFace",
+      "Thermage FLX",
+      "Titanium",
+      "InMode",
+      "Linearge",
+      "Volnewmer",
+      "Oligio X",
+      "Tensera High",
+      "CERP"
+    ],
+    "hifuDevices": [
+      "Ulthera Prime",
+      "Shurink",
+      "Sofwave",
+      "Scizer",
+      "Shurink Universe"
+    ],
+    "treatmentCount": 61,
+    "liftingTreatmentCount": 15,
+    "avgPrice": null,
+    "doctorCount": 5,
+    "snsChannels": [],
+    "hasOldRf": true,
+    "hasTorrRf": false
+  },
+  {
+    "hospitalId": "dcef8c87-c305-4354-9dc9-54fea9d79479",
+    "hospitalName": "클럽미즈라미체의원",
+    "axisScores": {
+      "investment": 100,
+      "portfolio": 40,
+      "scale": 30,
+      "marketing": 16
+    },
+    "overallScore": 55,
+    "grade": "A",
+    "salesAngles": [
+      {
+        "angle": "premium",
+        "score": 70,
+        "reason": "투자성향 100점/포트폴리오 40점 — 프리미엄 시장 포지셔닝에 적합"
+      }
+    ],
+    "primaryAngle": {
+      "angle": "premium",
+      "score": 70,
+      "reason": "투자성향 100점/포트폴리오 40점 — 프리미엄 시장 포지셔닝에 적합"
+    },
+    "briefing": "■ 클럽미즈라미체의원 — A등급 (55점)\n  4축: 투자100 | 포트폴리오40 | 규모30 | 마케팅16\n  RF 장비: InMode, Thermage FLX/CPT, TORR RF, Oligio\n  HIFU 장비: Ulthera, Shurink, Doublo\n  시술 37건 (리프팅 7건)\n  의사 1명 | SNS 2채널\n\n  ★ 추천 앵글: 👑 프리미엄 포지셔닝\n    투자성향 100점/포트폴리오 40점 — 프리미엄 시장 포지셔닝에 적합",
+    "deviceCount": 12,
+    "rfDevices": [
+      "InMode",
+      "Thermage FLX/CPT",
+      "TORR RF",
+      "Oligio"
+    ],
+    "hifuDevices": [
+      "Ulthera",
+      "Shurink",
+      "Doublo"
+    ],
+    "treatmentCount": 37,
+    "liftingTreatmentCount": 7,
+    "avgPrice": null,
+    "doctorCount": 1,
+    "snsChannels": [
+      "카카오",
+      "유튜브"
+    ],
+    "hasOldRf": true,
+    "hasTorrRf": true
+  },
+  {
+    "hospitalId": "e3307cfe-f830-41ad-9753-7355eec879b1",
+    "hospitalName": "뮤즈의원 안산",
+    "axisScores": {
+      "investment": 100,
+      "portfolio": 35,
+      "scale": 30,
+      "marketing": 0
+    },
+    "overallScore": 51,
+    "grade": "B",
+    "salesAngles": [
+      {
+        "angle": "upgrade",
+        "score": 100,
+        "reason": "RF 장비 보유 (Oligio, Thermage FLX, InMode, Tensera) → TORR RF로 업그레이드 제안. 구형 모델 교체 시급."
+      },
+      {
+        "angle": "premium",
+        "score": 70,
+        "reason": "투자성향 100점/포트폴리오 35점 — 프리미엄 시장 포지셔닝에 적합"
+      }
+    ],
+    "primaryAngle": {
+      "angle": "upgrade",
+      "score": 100,
+      "reason": "RF 장비 보유 (Oligio, Thermage FLX, InMode, Tensera) → TORR RF로 업그레이드 제안. 구형 모델 교체 시급."
+    },
+    "briefing": "■ 뮤즈의원 안산 — B등급 (51점)\n  4축: 투자100 | 포트폴리오35 | 규모30 | 마케팅0\n  RF 장비: Oligio, Thermage FLX, InMode, Tensera\n  HIFU 장비: Shurink Universe, Ulthera Prime\n  시술 21건 (리프팅 6건)\n  의사 1명 | SNS 0채널\n\n  ★ 추천 앵글: 🔄 업그레이드\n    RF 장비 보유 (Oligio, Thermage FLX, InMode, Tensera) → TORR RF로 업그레이드 제안. 구형 모델 교체 시급.\n  ☆ 보조 앵글: 👑 프리미엄 포지셔닝\n    투자성향 100점/포트폴리오 35점 — 프리미엄 시장 포지셔닝에 적합",
+    "deviceCount": 13,
+    "rfDevices": [
+      "Oligio",
+      "Thermage FLX",
+      "InMode",
+      "Tensera"
+    ],
+    "hifuDevices": [
+      "Shurink Universe",
+      "Ulthera Prime"
+    ],
+    "treatmentCount": 21,
+    "liftingTreatmentCount": 6,
+    "avgPrice": null,
+    "doctorCount": 1,
+    "snsChannels": [],
+    "hasOldRf": true,
+    "hasTorrRf": false
+  },
+  {
+    "hospitalId": "e8b3c5a1-1955-434a-bb8e-548d12461e2a",
+    "hospitalName": "파스텔휴먼피부과",
+    "axisScores": {
+      "investment": 90,
+      "portfolio": 47,
+      "scale": 40,
+      "marketing": 8
+    },
+    "overallScore": 54,
+    "grade": "B",
+    "salesAngles": [
+      {
+        "angle": "upgrade",
+        "score": 100,
+        "reason": "RF 장비 보유 (Thermage FLX, InMode) → TORR RF로 업그레이드 제안. 구형 모델 교체 시급."
+      },
+      {
+        "angle": "premium",
+        "score": 70,
+        "reason": "투자성향 90점/포트폴리오 47점 — 프리미엄 시장 포지셔닝에 적합"
+      }
+    ],
+    "primaryAngle": {
+      "angle": "upgrade",
+      "score": 100,
+      "reason": "RF 장비 보유 (Thermage FLX, InMode) → TORR RF로 업그레이드 제안. 구형 모델 교체 시급."
+    },
+    "briefing": "■ 파스텔휴먼피부과 — B등급 (54점)\n  4축: 투자90 | 포트폴리오47 | 규모40 | 마케팅8\n  RF 장비: Thermage FLX, InMode\n  HIFU 장비: Ulthera, Shurink\n  시술 95건 (리프팅 7건)\n  의사 3명 | SNS 1채널\n\n  ★ 추천 앵글: 🔄 업그레이드\n    RF 장비 보유 (Thermage FLX, InMode) → TORR RF로 업그레이드 제안. 구형 모델 교체 시급.\n  ☆ 보조 앵글: 👑 프리미엄 포지셔닝\n    투자성향 90점/포트폴리오 47점 — 프리미엄 시장 포지셔닝에 적합",
+    "deviceCount": 16,
+    "rfDevices": [
+      "Thermage FLX",
+      "InMode"
+    ],
+    "hifuDevices": [
+      "Ulthera",
+      "Shurink"
+    ],
+    "treatmentCount": 95,
+    "liftingTreatmentCount": 7,
+    "avgPrice": null,
+    "doctorCount": 3,
+    "snsChannels": [
+      "유튜브"
+    ],
+    "hasOldRf": true,
+    "hasTorrRf": false
+  },
+  {
+    "hospitalId": "f04c6443-ee1c-4727-9528-7b6c36c1d918",
+    "hospitalName": "이에스청담성형외과의원",
+    "axisScores": {
+      "investment": 5,
+      "portfolio": 25,
+      "scale": 30,
+      "marketing": 32
+    },
+    "overallScore": 20,
+    "grade": "C",
+    "salesAngles": [
+      {
+        "angle": "new_adoption",
+        "score": 90,
+        "reason": "장비 0개로 초기/소규모 병원 — 첫 RF 장비로 TORR RF 도입 제안"
+      },
+      {
+        "angle": "portfolio_expand",
+        "score": 70,
+        "reason": "RF 장비 미보유이나 리프팅 시술 진행 중 → RF 라인업 추가로 시술 범위 확대"
+      },
+      {
+        "angle": "cost_efficiency",
+        "score": 55,
+        "reason": "중소규모 병원 (규모 30점) — 소모품 비용 절감으로 마진 개선 제안"
+      }
+    ],
+    "primaryAngle": {
+      "angle": "new_adoption",
+      "score": 90,
+      "reason": "장비 0개로 초기/소규모 병원 — 첫 RF 장비로 TORR RF 도입 제안"
+    },
+    "briefing": "■ 이에스청담성형외과의원 — C등급 (20점)\n  4축: 투자5 | 포트폴리오25 | 규모30 | 마케팅32\n  시술 48건 (리프팅 2건)\n  의사 1명 | SNS 4채널\n\n  ★ 추천 앵글: 🆕 신규 도입\n    장비 0개로 초기/소규모 병원 — 첫 RF 장비로 TORR RF 도입 제안\n  ☆ 보조 앵글: 📈 포트폴리오 확장\n    RF 장비 미보유이나 리프팅 시술 진행 중 → RF 라인업 추가로 시술 범위 확대",
+    "deviceCount": 0,
+    "rfDevices": [],
+    "hifuDevices": [],
+    "treatmentCount": 48,
+    "liftingTreatmentCount": 2,
+    "avgPrice": null,
+    "doctorCount": 1,
+    "snsChannels": [
+      "카카오",
+      "인스타",
+      "유튜브",
+      "블로그"
+    ],
+    "hasOldRf": false,
+    "hasTorrRf": false
+  },
+  {
+    "hospitalId": "fbd22e90-0155-46a6-a7b4-54840d430e22",
+    "hospitalName": "디에이성형외과의원",
+    "axisScores": {
+      "investment": 70,
+      "portfolio": 70,
+      "scale": 60,
+      "marketing": 10
+    },
+    "overallScore": 59,
+    "grade": "A",
+    "salesAngles": [
+      {
+        "angle": "premium",
+        "score": 100,
+        "reason": "투자성향 70점/포트폴리오 70점 — 프리미엄 시장 포지셔닝에 적합"
+      },
+      {
+        "angle": "upgrade",
+        "score": 80,
+        "reason": "RF 장비 보유 (고주파 & 초음파 관리) → TORR RF로 업그레이드 제안. 추가 RF로 시술 확대."
+      }
+    ],
+    "primaryAngle": {
+      "angle": "premium",
+      "score": 100,
+      "reason": "투자성향 70점/포트폴리오 70점 — 프리미엄 시장 포지셔닝에 적합"
+    },
+    "briefing": "■ 디에이성형외과의원 — A등급 (59점)\n  4축: 투자70 | 포트폴리오70 | 규모60 | 마케팅10\n  RF 장비: 고주파 & 초음파 관리\n  HIFU 장비: Ulthera\n  시술 128건 (리프팅 2건)\n  평균 가격: 2,113,333원\n  의사 42명 | SNS 0채널\n\n  ★ 추천 앵글: 👑 프리미엄 포지셔닝\n    투자성향 70점/포트폴리오 70점 — 프리미엄 시장 포지셔닝에 적합\n  ☆ 보조 앵글: 🔄 업그레이드\n    RF 장비 보유 (고주파 & 초음파 관리) → TORR RF로 업그레이드 제안. 추가 RF로 시술 확대.",
+    "deviceCount": 17,
+    "rfDevices": [
+      "고주파 & 초음파 관리"
+    ],
+    "hifuDevices": [
+      "Ulthera"
+    ],
+    "treatmentCount": 128,
+    "liftingTreatmentCount": 2,
+    "avgPrice": 2113333,
+    "doctorCount": 42,
+    "snsChannels": [],
+    "hasOldRf": false,
+    "hasTorrRf": false
+  },
+  {
+    "hospitalId": "fd90dd69-6f06-4d9d-8630-e6cef1b02931",
+    "hospitalName": "엔의원",
+    "axisScores": {
+      "investment": 77,
+      "portfolio": 39,
+      "scale": 30,
+      "marketing": 8
+    },
+    "overallScore": 45,
+    "grade": "B",
+    "salesAngles": [
+      {
+        "angle": "premium",
+        "score": 70,
+        "reason": "투자성향 77점/포트폴리오 39점 — 프리미엄 시장 포지셔닝에 적합"
+      }
+    ],
+    "primaryAngle": {
+      "angle": "premium",
+      "score": 70,
+      "reason": "투자성향 77점/포트폴리오 39점 — 프리미엄 시장 포지셔닝에 적합"
+    },
+    "briefing": "■ 엔의원 — B등급 (45점)\n  4축: 투자77 | 포트폴리오39 | 규모30 | 마케팅8\n  RF 장비: InMode, TORR RF, TunePort Dual\n  HIFU 장비: Ulthera, Shurink Universe\n  시술 31건 (리프팅 8건)\n  의사 1명 | SNS 1채널\n\n  ★ 추천 앵글: 👑 프리미엄 포지셔닝\n    투자성향 77점/포트폴리오 39점 — 프리미엄 시장 포지셔닝에 적합",
+    "deviceCount": 9,
+    "rfDevices": [
+      "InMode",
+      "TORR RF",
+      "TunePort Dual"
+    ],
+    "hifuDevices": [
+      "Ulthera",
+      "Shurink Universe"
+    ],
+    "treatmentCount": 31,
+    "liftingTreatmentCount": 8,
+    "avgPrice": null,
+    "doctorCount": 1,
+    "snsChannels": [
+      "카카오"
+    ],
+    "hasOldRf": false,
+    "hasTorrRf": true
+  },
+  {
+    "hospitalId": "ff920bcb-f391-4666-9bf7-4f395cb59f9d",
+    "hospitalName": "에어리어88성형외과",
+    "axisScores": {
+      "investment": 8,
+      "portfolio": 3,
+      "scale": 18,
+      "marketing": 0
+    },
+    "overallScore": 8,
+    "grade": "C",
+    "salesAngles": [
+      {
+        "angle": "new_adoption",
+        "score": 80,
+        "reason": "장비 1개로 초기/소규모 병원 — 첫 RF 장비로 TORR RF 도입 제안"
+      }
+    ],
+    "primaryAngle": {
+      "angle": "new_adoption",
+      "score": 80,
+      "reason": "장비 1개로 초기/소규모 병원 — 첫 RF 장비로 TORR RF 도입 제안"
+    },
+    "briefing": "■ 에어리어88성형외과 — C등급 (8점)\n  4축: 투자8 | 포트폴리오3 | 규모18 | 마케팅0\n  시술 5건 (리프팅 0건)\n  의사 1명 | SNS 0채널\n\n  ★ 추천 앵글: 🆕 신규 도입\n    장비 1개로 초기/소규모 병원 — 첫 RF 장비로 TORR RF 도입 제안",
+    "deviceCount": 1,
+    "rfDevices": [],
+    "hifuDevices": [],
+    "treatmentCount": 5,
+    "liftingTreatmentCount": 0,
+    "avgPrice": null,
+    "doctorCount": 1,
+    "snsChannels": [],
+    "hasOldRf": false,
+    "hasTorrRf": false
+  }
+]

@@ -1,0 +1,1227 @@
+{
+  "hospital_name": "러블리피부과의원",
+  "doctors": [
+    {
+      "name": "김진아",
+      "title": "대표원장",
+      "specialty": "피부과전문의",
+      "career": [
+        "서울성모병원 피부과 전공의 수련",
+        "전) 더웰피부과 유성점 원장"
+      ],
+      "education": [
+        "대전과학고등학교 졸업",
+        "가톨릭의과대학 졸업"
+      ],
+      "certifications": [
+        "대한피부과학회 정회원",
+        "대한피부과의사회 정회원",
+        "대한피부항노화학회 정회원",
+        "대한피부레이저학회 정회원"
+      ],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "이용민",
+      "title": "대표원장",
+      "specialty": null,
+      "career": [],
+      "education": [
+        "대전과학고등학교 졸업",
+        "카이스트 졸업",
+        "충남대학교의학전문대학원 졸업"
+      ],
+      "certifications": [
+        "대한미용성형레이저의학회 정회원",
+        "대한레이저피부모발학회 정회원",
+        "대한미용외과학회 정회원",
+        "대한필러학회 정회원"
+      ],
+      "confidence": "confirmed"
+    }
+  ],
+  "academic_activities": [],
+  "medical_devices": [
+    {
+      "name": "CO2 Laser",
+      "korean_name": "Co2레이저",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "다양한 피부 병변 치료에 사용",
+      "source": "text"
+    },
+    {
+      "name": "CryoCell",
+      "korean_name": "크라이오셀",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "cryotherapy",
+      "description": "열감과 통증 진정 효과",
+      "source": "text"
+    },
+    {
+      "name": "PicoSure",
+      "korean_name": "피코슈어",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "문신 및 색소제거는 물론 얼굴 전체 주름 개선에도 효과",
+      "source": "text"
+    },
+    {
+      "name": "RevLite",
+      "korean_name": "레블라이트 SI",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "PTP 기술을 사용하여 다양한 피부 병변에 효과적",
+      "source": "text"
+    },
+    {
+      "name": "GentleMax",
+      "korean_name": "젠틀맥스 프로",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "피부 진피층에 효과적으로 에너지를 전달",
+      "source": "text"
+    },
+    {
+      "name": "PicoPlus",
+      "korean_name": "피코플러스",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "6종의 핸드피스를 이용하여 폭넓은 임상적인 활용 가능",
+      "source": "text"
+    },
+    {
+      "name": "Mirajet",
+      "korean_name": "미라젯",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": "피부 노화 방지와 흉터 치료 등 안티에이징 및 진피 재생",
+      "source": "text"
+    },
+    {
+      "name": "Potenza",
+      "korean_name": "포텐자",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_microneedle",
+      "description": "효과적인 고주파 에너지 사용",
+      "source": "text"
+    },
+    {
+      "name": "Sofwave",
+      "korean_name": "소프웨이브",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": "비침습적 치료로 진행",
+      "source": "text"
+    },
+    {
+      "name": "Tensera",
+      "korean_name": "텐써마",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_tightening",
+      "description": "고주파 에너지를 정교하게 피부 진피층에 방사",
+      "source": "text"
+    },
+    {
+      "name": "Shurink",
+      "korean_name": "슈링크 유니버스",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": "콜라겐 재생 및 타이트닝 효과",
+      "source": "text"
+    },
+    {
+      "name": "TORR RF",
+      "korean_name": "토르 RF",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_tightening",
+      "description": "탄력있는 피부와 바디라인을 만들어주는 시술",
+      "source": "text"
+    },
+    {
+      "name": "MarkVu",
+      "korean_name": "마크뷰 피부진단기",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": "총 4가지 광원의 개별 촬영",
+      "source": "text"
+    },
+    {
+      "name": "LDM",
+      "korean_name": "하이퍼럭스 LDM",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "IPL",
+      "description": "피부 내 염증물질 배출",
+      "source": "text"
+    },
+    {
+      "name": "AquaPeel",
+      "korean_name": "아쿠아필",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": "모공 속 피지, 블랙헤드,노폐물을 배출",
+      "source": "text"
+    },
+    {
+      "name": "Botox",
+      "korean_name": "보톡스",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "botox",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Juvelook",
+      "korean_name": "쥬베룩",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "booster",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Filler",
+      "korean_name": "필러",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "filler",
+      "description": null,
+      "source": "text"
+    }
+  ],
+  "treatments": [
+    {
+      "name": "피부 질환",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "hifu",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "기미/색소",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "혈관/홍조",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "여드름/흉터/모공",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "보톡스",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "botox",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "필러/쥬베룩",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "filler",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "문신 제거",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "제모",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "점",
+      "regular_price": 22000,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "regular",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [
+        "개당 비용 측정",
+        "크기에 따라 비용 추가"
+      ],
+      "is_package": false,
+      "is_addon": false,
+      "source": "nongeubyeo",
+      "category": "other",
+      "price_display": "22,000원",
+      "session_info": "1mm 기준",
+      "body_part": null
+    },
+    {
+      "name": "비립종",
+      "regular_price": 22000,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "regular",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [
+        "개당 비용 측정",
+        "크기에 따라 비용 추가"
+      ],
+      "is_package": false,
+      "is_addon": false,
+      "source": "nongeubyeo",
+      "category": "other",
+      "price_display": "22,000원",
+      "session_info": "1mm 기준",
+      "body_part": null
+    },
+    {
+      "name": "쥐젖",
+      "regular_price": 22000,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "regular",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [
+        "개당 비용 측정",
+        "크기에 따라 비용 추가"
+      ],
+      "is_package": false,
+      "is_addon": false,
+      "source": "nongeubyeo",
+      "category": "other",
+      "price_display": "22,000원",
+      "session_info": "1mm 기준",
+      "body_part": null
+    },
+    {
+      "name": "여드름 압출",
+      "regular_price": 165000,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "regular",
+      "quantity": null,
+      "unit": "session",
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "nongeubyeo",
+      "category": "other",
+      "price_display": "165,000원",
+      "session_info": "1회당",
+      "body_part": "전체"
+    },
+    {
+      "name": "여드름 압출 (1개 + 처방전)",
+      "regular_price": 44000,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "regular",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [
+        "이후 개당 11,000원씩 추가"
+      ],
+      "is_package": false,
+      "is_addon": false,
+      "source": "nongeubyeo",
+      "category": "other",
+      "price_display": "44,000원",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "여드름 염증주사",
+      "regular_price": 44000,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "regular",
+      "quantity": 5,
+      "unit": null,
+      "price_per_unit": 8800,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "nongeubyeo",
+      "category": "skinbooster",
+      "price_display": "44,000원",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "사마귀 (손, 발 제외)",
+      "regular_price": 20000,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "regular",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [
+        "개당 비용 측정",
+        "크기에 따라 비용 추가"
+      ],
+      "is_package": false,
+      "is_addon": false,
+      "source": "nongeubyeo",
+      "category": "other",
+      "price_display": "20,000원",
+      "session_info": "1mm 기준",
+      "body_part": null
+    },
+    {
+      "name": "피부 초음파 검사",
+      "regular_price": 50000,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "regular",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "nongeubyeo",
+      "category": "other",
+      "price_display": "50,000원",
+      "session_info": "한 병변 당",
+      "body_part": null
+    },
+    {
+      "name": "아토피",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "두드러기",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "습진",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "만성 손/발 습진",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "양성종양",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "종기",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "대상포진",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "무좀",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "사마귀/티눈",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "손/발톱 질환",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "찰과상",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "창상 봉합",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "화상",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "탈모",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "주사",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    }
+  ],
+  "events": [
+    {
+      "title": "2월 이벤트",
+      "type": "시즌",
+      "period": "2월",
+      "discount_info": null,
+      "original_price": null,
+      "event_price": null,
+      "conditions": null,
+      "source": "popup"
+    }
+  ],
+  "clinic_categories": [
+    {
+      "name": "피부 질환",
+      "treatments": [
+        "피부 질환",
+        "아토피",
+        "두드러기",
+        "습진",
+        "만성 손/발 습진",
+        "양성종양",
+        "종기",
+        "대상포진",
+        "무좀",
+        "사마귀 (손, 발 제외)",
+        "사마귀/티눈",
+        "손/발톱 질환",
+        "찰과상",
+        "창상 봉합",
+        "화상"
+      ]
+    },
+    {
+      "name": "리프팅",
+      "treatments": [
+        "리프팅"
+      ]
+    },
+    {
+      "name": "기미/색소",
+      "treatments": [
+        "기미/색소"
+      ]
+    },
+    {
+      "name": "혈관/홍조",
+      "treatments": [
+        "혈관/홍조"
+      ]
+    },
+    {
+      "name": "여드름/흉터/모공",
+      "treatments": [
+        "여드름/흉터/모공",
+        "여드름 압출",
+        "여드름 압출 (1개 + 처방전)",
+        "여드름 염증주사"
+      ]
+    },
+    {
+      "name": "보톡스",
+      "treatments": [
+        "보톡스"
+      ]
+    },
+    {
+      "name": "필러/쥬베룩",
+      "treatments": [
+        "필러/쥬베룩"
+      ]
+    },
+    {
+      "name": "문신 제거",
+      "treatments": [
+        "문신 제거"
+      ]
+    },
+    {
+      "name": "제모",
+      "treatments": [
+        "제모"
+      ]
+    },
+    {
+      "name": "레이저 클리닉",
+      "treatments": [
+        "기미/색소",
+        "혈관/홍조"
+      ]
+    },
+    {
+      "name": "필러 · 보톡스 클리닉",
+      "treatments": [
+        "필러/쥬베룩",
+        "보톡스"
+      ]
+    },
+    {
+      "name": "리프팅 클리닉",
+      "treatments": [
+        "리프팅"
+      ]
+    },
+    {
+      "name": "흉터 · 모공 클리닉",
+      "treatments": [
+        "여드름/흉터/모공"
+      ]
+    },
+    {
+      "name": "피부 관리 프로그램",
+      "treatments": [
+        "피부 관리 프로그램"
+      ]
+    }
+  ],
+  "contact_info": {
+    "email": [
+      {
+        "address": "lovely.dermatology@gmail.com",
+        "type": "대표",
+        "source": "footer"
+      }
+    ],
+    "phone": [
+      {
+        "number": "042-721-8575",
+        "type": "예약"
+      }
+    ],
+    "address": {
+      "full_address": "대전광역시 서구 둔산남로 107, 명문빌딩 2층",
+      "sido": "대전광역시",
+      "sigungu": "서구"
+    },
+    "kakao_channel": "https://pf.kakao.com/_acxjxaxj",
+    "naver_booking": null,
+    "naver_place": "https://map.kakao.com/?urlX=587411.9999999981&urlY=792181.9999999995&itemId=2076766630&q=%EB%9F%AC%EB%B8%94%EB%A6%AC%ED%94%BC%EB%B6%80%EA%B3%BC%EC%9D%98%EC%9B%90&srcid=2076766630&map_type=TYPE_MAP&from=roughmap",
+    "instagram": null,
+    "facebook": null,
+    "youtube": "https://www.youtube.com/channel/UCi5XlX1OyQFfNkuq6tJqbOQ",
+    "blog": "https://blog.naver.com/doctor_lovely",
+    "website_url": "http://lovelyclinic.kr/default",
+    "operating_hours": {
+      "weekday": "10:00 - 19:30",
+      "saturday": "09:00 - 14:00",
+      "sunday": "휴진",
+      "lunch_break": "13:00~14:00 (평일)"
+    }
+  },
+  "unregistered_equipment": [
+    {
+      "name": "Cynergy",
+      "korean_name": "시너지",
+      "suggested_category": "LASER",
+      "source": "website",
+      "reason": "Known laser for vascular lesions, but not in the provided LASER list."
+    },
+    {
+      "name": "LOTUS III",
+      "korean_name": "로터스3",
+      "suggested_category": "LASER",
+      "source": "website",
+      "reason": "Known fractional CO2 laser, but not in the provided LASER list."
+    },
+    {
+      "name": "A+ Laser",
+      "korean_name": "애플레이저",
+      "suggested_category": "LASER",
+      "source": "website",
+      "reason": "Name includes \"Laser\" and description implies laser function, but not in the provided LASER list."
+    },
+    {
+      "name": "Intense Ultra",
+      "korean_name": "인텐스 울트라",
+      "suggested_category": "OTHER_DEVICE",
+      "source": "website",
+      "reason": "Generic name, not in dictionary, description is vague."
+    },
+    {
+      "name": "HS40",
+      "korean_name": "초음파",
+      "suggested_category": "OTHER_DEVICE",
+      "source": "website",
+      "reason": "Diagnostic ultrasound, not a therapeutic device in the dictionary."
+    },
+    {
+      "name": "G-Wave",
+      "korean_name": "G-Wave",
+      "suggested_category": "RF_TIGHTENING",
+      "source": "website",
+      "reason": "Described as high-frequency deep heat, which is RF, but not in the provided RF_TIGHTENING list."
+    },
+    {
+      "name": "Ole wave",
+      "korean_name": "올레웨이브",
+      "suggested_category": "OTHER_DEVICE",
+      "source": "website",
+      "reason": "Generic name, not in dictionary, description is vague."
+    }
+  ],
+  "unregistered_treatments": [
+    {
+      "name": "피부 질환",
+      "source": "text",
+      "context": "러블리 진료항목"
+    },
+    {
+      "name": "기미/색소",
+      "source": "text",
+      "context": "러블리 진료항목"
+    },
+    {
+      "name": "혈관/홍조",
+      "source": "text",
+      "context": "러블리 진료항목"
+    },
+    {
+      "name": "여드름/흉터/모공",
+      "source": "text",
+      "context": "러블리 진료항목"
+    },
+    {
+      "name": "문신 제거",
+      "source": "text",
+      "context": "러블리 진료항목"
+    },
+    {
+      "name": "제모",
+      "source": "text",
+      "context": "러블리 진료항목"
+    },
+    {
+      "name": "점",
+      "source": "nongeubyeo",
+      "context": "비급여 항목"
+    },
+    {
+      "name": "비립종",
+      "source": "nongeubyeo",
+      "context": "비급여 항목"
+    },
+    {
+      "name": "쥐젖",
+      "source": "nongeubyeo",
+      "context": "비급여 항목"
+    },
+    {
+      "name": "여드름 압출",
+      "source": "nongeubyeo",
+      "context": "비급여 항목"
+    },
+    {
+      "name": "여드름 압출 (1개 + 처방전)",
+      "source": "nongeubyeo",
+      "context": "비급여 항목"
+    },
+    {
+      "name": "사마귀 (손, 발 제외)",
+      "source": "nongeubyeo",
+      "context": "비급여 항목"
+    },
+    {
+      "name": "피부 초음파 검사",
+      "source": "nongeubyeo",
+      "context": "비급여 항목"
+    },
+    {
+      "name": "아토피",
+      "source": "text",
+      "context": "진료안내"
+    },
+    {
+      "name": "두드러기",
+      "source": "text",
+      "context": "진료안내"
+    },
+    {
+      "name": "습진",
+      "source": "text",
+      "context": "진료안내"
+    },
+    {
+      "name": "만성 손/발 습진",
+      "source": "text",
+      "context": "진료안내"
+    },
+    {
+      "name": "양성종양",
+      "source": "text",
+      "context": "진료안내"
+    },
+    {
+      "name": "종기",
+      "source": "text",
+      "context": "진료안내"
+    },
+    {
+      "name": "대상포진",
+      "source": "text",
+      "context": "진료안내"
+    },
+    {
+      "name": "무좀",
+      "source": "text",
+      "context": "진료안내"
+    },
+    {
+      "name": "사마귀/티눈",
+      "source": "text",
+      "context": "진료안내"
+    },
+    {
+      "name": "손/발톱 질환",
+      "source": "text",
+      "context": "진료안내"
+    },
+    {
+      "name": "찰과상",
+      "source": "text",
+      "context": "진료안내"
+    },
+    {
+      "name": "창상 봉합",
+      "source": "text",
+      "context": "진료안내"
+    },
+    {
+      "name": "화상",
+      "source": "text",
+      "context": "진료안내"
+    },
+    {
+      "name": "탈모",
+      "source": "text",
+      "context": "진료안내"
+    },
+    {
+      "name": "주사",
+      "source": "text",
+      "context": "진료안내"
+    }
+  ],
+  "raw_price_texts": [],
+  "extraction_summary": {
+    "total_doctors": 2,
+    "total_academic": 0,
+    "total_equipment": 18,
+    "total_devices": 15,
+    "total_injectables": 3,
+    "total_treatments": 30,
+    "total_events": 1,
+    "total_categories": 14,
+    "total_contact_channels": 6,
+    "has_email": true,
+    "has_phone": true,
+    "has_kakao": true,
+    "has_sns": true,
+    "price_available_ratio": "8/30",
+    "unregistered_equipment_count": 7,
+    "unregistered_treatments_count": 27
+  }
+}

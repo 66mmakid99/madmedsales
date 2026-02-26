@@ -1,0 +1,15 @@
+{
+  "missing_equipments": [],
+  "missing_treatments": [],
+  "missing_doctors": [],
+  "missing_prices": [],
+  "coverage_score": {
+    "equipment": 100,
+    "treatment": 100,
+    "doctor": 100,
+    "overall": 100
+  },
+  "issues": [
+    "원본 마크다운은 'Forbidden' 에러 페이지로, 의료 장비, 시술, 의사 정보가 전혀 포함되어 있지 않습니다. 추출 결과는 다른 페이지에서 수집된 것으로 보입니다."
+  ]
+}

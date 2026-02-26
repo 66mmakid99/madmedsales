@@ -1,0 +1,16 @@
+{
+  "missing_equipments": [],
+  "missing_treatments": [
+    "Fotona QX-MAX",
+    "엠스컬프"
+  ],
+  "missing_doctors": [],
+  "missing_prices": [],
+  "coverage_score": {
+    "equipment": 100,
+    "treatment": 97,
+    "doctor": 100,
+    "overall": 99
+  },
+  "issues": []
+}

@@ -1,21 +1,459 @@
 [
   {
-    "no": 16,
-    "name": "동안중심의원",
-    "pages": 12,
-    "credits": 51,
-    "geminiCalls": 28,
-    "equip": 32,
-    "treat": 23,
+    "no": 38,
+    "name": "파라다이스의원(부산)",
+    "pages": 7,
+    "credits": 15,
+    "geminiCalls": 19,
+    "equip": 50,
+    "treat": 40,
     "doctors": 2,
     "events": 2,
-    "coverage": 43,
-    "status": "manual_review",
+    "coverage": 79,
+    "status": "pass",
     "v4": {
-      "equip": 28,
-      "treat": 139,
-      "doctors": 3,
-      "events": 3
+      "equip": 0,
+      "treat": 1,
+      "doctors": 0,
+      "events": 0
+    }
+  },
+  {
+    "no": 43,
+    "name": "메이린일산",
+    "pages": 13,
+    "credits": 20,
+    "geminiCalls": 48,
+    "equip": 7,
+    "treat": 44,
+    "doctors": 17,
+    "events": 0,
+    "coverage": 100,
+    "status": "pass",
+    "v4": {
+      "equip": 0,
+      "treat": 2,
+      "doctors": 0,
+      "events": 0
+    }
+  },
+  {
+    "no": 44,
+    "name": "인앤아웃의원(부산)",
+    "pages": 2,
+    "credits": 57,
+    "geminiCalls": 2,
+    "equip": 0,
+    "treat": 0,
+    "doctors": 0,
+    "events": 0,
+    "coverage": 0,
+    "status": "insufficient",
+    "v4": {
+      "equip": 0,
+      "treat": 0,
+      "doctors": 0,
+      "events": 0
+    }
+  },
+  {
+    "no": 45,
+    "name": "라뷰티의원",
+    "pages": 2,
+    "credits": 4,
+    "geminiCalls": 14,
+    "equip": 9,
+    "treat": 8,
+    "doctors": 1,
+    "events": 1,
+    "coverage": 95,
+    "status": "pass",
+    "v4": {
+      "equip": 0,
+      "treat": 1,
+      "doctors": 0,
+      "events": 0
+    }
+  },
+  {
+    "no": 47,
+    "name": "벨버티의원(광주)",
+    "pages": 6,
+    "credits": 11,
+    "geminiCalls": 48,
+    "equip": 45,
+    "treat": 69,
+    "doctors": 1,
+    "events": 21,
+    "coverage": 90,
+    "status": "pass",
+    "v4": {
+      "equip": 0,
+      "treat": 1,
+      "doctors": 0,
+      "events": 0
+    }
+  },
+  {
+    "no": 48,
+    "name": "청담리브의원(광주)",
+    "pages": 47,
+    "credits": 51,
+    "geminiCalls": 28,
+    "equip": 38,
+    "treat": 83,
+    "doctors": 3,
+    "events": 10,
+    "coverage": 100,
+    "status": "pass",
+    "v4": {
+      "equip": 0,
+      "treat": 0,
+      "doctors": 0,
+      "events": 0
+    }
+  },
+  {
+    "no": 50,
+    "name": "이에스청담의원(청담)",
+    "pages": 3,
+    "credits": 4,
+    "geminiCalls": 14,
+    "equip": 3,
+    "treat": 48,
+    "doctors": 1,
+    "events": 0,
+    "coverage": 100,
+    "status": "pass",
+    "v4": {
+      "equip": 0,
+      "treat": 0,
+      "doctors": 0,
+      "events": 0
+    }
+  },
+  {
+    "no": 51,
+    "name": "디데이의원(부산)",
+    "pages": 28,
+    "credits": 50,
+    "geminiCalls": 25,
+    "equip": 30,
+    "treat": 25,
+    "doctors": 4,
+    "events": 3,
+    "coverage": 88,
+    "status": "pass",
+    "v4": {
+      "equip": 0,
+      "treat": 0,
+      "doctors": 0,
+      "events": 0
+    }
+  },
+  {
+    "no": 52,
+    "name": "울산제일병원",
+    "pages": 2,
+    "credits": 38,
+    "geminiCalls": 3,
+    "equip": 1,
+    "treat": 0,
+    "doctors": 1,
+    "events": 0,
+    "coverage": 0,
+    "status": "insufficient",
+    "v4": {
+      "equip": 0,
+      "treat": 0,
+      "doctors": 0,
+      "events": 0
+    }
+  },
+  {
+    "no": 65,
+    "name": "샤인빔의원 홍대",
+    "pages": 5,
+    "credits": 30,
+    "geminiCalls": 10,
+    "equip": 12,
+    "treat": 15,
+    "doctors": 0,
+    "events": 2,
+    "coverage": 0,
+    "status": "insufficient",
+    "v4": {
+      "equip": 0,
+      "treat": 4,
+      "doctors": 0,
+      "events": 0
+    }
+  },
+  {
+    "no": 66,
+    "name": "삼성웰내과의원",
+    "pages": 15,
+    "credits": 18,
+    "geminiCalls": 36,
+    "equip": 8,
+    "treat": 27,
+    "doctors": 2,
+    "events": 0,
+    "coverage": 89,
+    "status": "pass",
+    "v4": {
+      "equip": 0,
+      "treat": 3,
+      "doctors": 0,
+      "events": 0
+    }
+  },
+  {
+    "no": 69,
+    "name": "울산베러미의원",
+    "pages": 2,
+    "credits": 7,
+    "geminiCalls": 6,
+    "equip": 16,
+    "treat": 18,
+    "doctors": 1,
+    "events": 1,
+    "coverage": 100,
+    "status": "pass",
+    "v4": {
+      "equip": 0,
+      "treat": 7,
+      "doctors": 0,
+      "events": 0
+    }
+  },
+  {
+    "no": 3,
+    "name": "라마르프리미어의원",
+    "pages": 10,
+    "credits": 51,
+    "geminiCalls": 33,
+    "equip": 39,
+    "treat": 92,
+    "doctors": 4,
+    "events": 5,
+    "coverage": 87,
+    "status": "pass",
+    "v4": {
+      "equip": 0,
+      "treat": 3,
+      "doctors": 0,
+      "events": 0
+    }
+  },
+  {
+    "no": 6,
+    "name": "연세팜스의원",
+    "pages": 7,
+    "credits": 8,
+    "geminiCalls": 14,
+    "equip": 36,
+    "treat": 13,
+    "doctors": 2,
+    "events": 4,
+    "coverage": 92,
+    "status": "pass",
+    "v4": {
+      "equip": 0,
+      "treat": 0,
+      "doctors": 0,
+      "events": 0
+    }
+  },
+  {
+    "no": 8,
+    "name": "엔의원",
+    "pages": 4,
+    "credits": 6,
+    "geminiCalls": 19,
+    "equip": 28,
+    "treat": 31,
+    "doctors": 1,
+    "events": 5,
+    "coverage": 100,
+    "status": "pass",
+    "v4": {
+      "equip": 0,
+      "treat": 0,
+      "doctors": 0,
+      "events": 0
+    }
+  },
+  {
+    "no": 12,
+    "name": "비에비스나무병원",
+    "pages": 0,
+    "credits": 2,
+    "geminiCalls": 0,
+    "equip": 0,
+    "treat": 0,
+    "doctors": 0,
+    "events": 0,
+    "coverage": 0,
+    "status": "error",
+    "v4": {
+      "equip": 0,
+      "treat": 0,
+      "doctors": 0,
+      "events": 0
+    },
+    "error": "no pages"
+  },
+  {
+    "no": 28,
+    "name": "웰스킨의원",
+    "pages": 10,
+    "credits": 11,
+    "geminiCalls": 27,
+    "equip": 23,
+    "treat": 35,
+    "doctors": 1,
+    "events": 0,
+    "coverage": 91,
+    "status": "pass",
+    "v4": {
+      "equip": 0,
+      "treat": 8,
+      "doctors": 0,
+      "events": 0
+    }
+  },
+  {
+    "no": 30,
+    "name": "나의미래피부과의원",
+    "pages": 2,
+    "credits": 2,
+    "geminiCalls": 13,
+    "equip": 7,
+    "treat": 17,
+    "doctors": 2,
+    "events": 8,
+    "coverage": 98,
+    "status": "pass",
+    "v4": {
+      "equip": 0,
+      "treat": 2,
+      "doctors": 1,
+      "events": 0
+    }
+  },
+  {
+    "no": 33,
+    "name": "청담아티젠의원",
+    "pages": 5,
+    "credits": 7,
+    "geminiCalls": 45,
+    "equip": 5,
+    "treat": 12,
+    "doctors": 3,
+    "events": 2,
+    "coverage": 70,
+    "status": "pass",
+    "v4": {
+      "equip": 0,
+      "treat": 2,
+      "doctors": 0,
+      "events": 0
+    }
+  },
+  {
+    "no": 40,
+    "name": "강남타임의원",
+    "pages": 6,
+    "credits": 52,
+    "geminiCalls": 26,
+    "equip": 43,
+    "treat": 68,
+    "doctors": 5,
+    "events": 10,
+    "coverage": 81,
+    "status": "pass",
+    "v4": {
+      "equip": 0,
+      "treat": 28,
+      "doctors": 0,
+      "events": 0
+    }
+  },
+  {
+    "no": 41,
+    "name": "글래시피부과의원",
+    "pages": 1,
+    "credits": 3,
+    "geminiCalls": 6,
+    "equip": 8,
+    "treat": 20,
+    "doctors": 2,
+    "events": 0,
+    "coverage": 100,
+    "status": "pass",
+    "v4": {
+      "equip": 0,
+      "treat": 0,
+      "doctors": 1,
+      "events": 0
+    }
+  },
+  {
+    "no": 46,
+    "name": "아가파의원",
+    "pages": 10,
+    "credits": 12,
+    "geminiCalls": 24,
+    "equip": 3,
+    "treat": 12,
+    "doctors": 1,
+    "events": 1,
+    "coverage": 96,
+    "status": "pass",
+    "v4": {
+      "equip": 0,
+      "treat": 6,
+      "doctors": 0,
+      "events": 0
+    }
+  },
+  {
+    "no": 62,
+    "name": "리노보의원(부산)",
+    "pages": 2,
+    "credits": 2,
+    "geminiCalls": 7,
+    "equip": 18,
+    "treat": 23,
+    "doctors": 1,
+    "events": 1,
+    "coverage": 100,
+    "status": "pass",
+    "v4": {
+      "equip": 0,
+      "treat": 0,
+      "doctors": 0,
+      "events": 0
+    }
+  },
+  {
+    "no": 64,
+    "name": "뮤즈의원 안산",
+    "pages": 4,
+    "credits": 7,
+    "geminiCalls": 12,
+    "equip": 17,
+    "treat": 22,
+    "doctors": 1,
+    "events": 12,
+    "coverage": 96,
+    "status": "pass",
+    "v4": {
+      "equip": 0,
+      "treat": 5,
+      "doctors": 0,
+      "events": 0
     }
   }
 ]

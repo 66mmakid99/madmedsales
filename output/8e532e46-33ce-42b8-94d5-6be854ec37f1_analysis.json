@@ -1,0 +1,1103 @@
+{
+  "hospital_name": "디데이의원",
+  "doctors": [
+    {
+      "name": "서정효",
+      "title": "대표원장",
+      "specialty": null,
+      "career": [
+        "前) 센텀린의원 원장",
+        "前) 디데이의원 광안점 원장",
+        "現) 디데이의원 남포점 대표원장"
+      ],
+      "education": null,
+      "certifications": [
+        "대한미용의학회",
+        "대한미용성형레이저의학회",
+        "대한비만연구의사회",
+        "대한리프팅연구회"
+      ],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "여진영",
+      "title": "원장",
+      "specialty": null,
+      "career": [
+        "前) 센텀린의원 원장",
+        "前) 센텀 엔클리닉 원장",
+        "前) 연합피부과 원장",
+        "前) 부산대 린의원 원장",
+        "現) 디데이의원 남포점 원장"
+      ],
+      "education": null,
+      "certifications": [
+        "대한미용의학회",
+        "대한리프팅연구회",
+        "대한미용성형레이저의학회",
+        "대한비만연구의사회"
+      ],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "김혜림",
+      "title": "원장",
+      "specialty": null,
+      "career": [
+        "前) 다시봄날의원 원장",
+        "現) 디데이의원 남포점 원장"
+      ],
+      "education": null,
+      "certifications": [
+        "대한미용성형레이저의학회",
+        "대한레이저피부모발학회",
+        "대한미용의학회",
+        "대한비만미용학회"
+      ],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "임서준",
+      "title": "원장",
+      "specialty": null,
+      "career": [
+        "現) 디데이의원 남포점 원장"
+      ],
+      "education": null,
+      "certifications": null,
+      "confidence": "confirmed"
+    }
+  ],
+  "academic_activities": [
+    {
+      "type": "기타",
+      "title": "미국 미용 레이저 수술 학회 정회원",
+      "year": 2023,
+      "doctor_name": "서정효",
+      "source_text": "ASMLS American Society for Laser Medicine & Surgery 미국 미용 레이저 수술 학회 정회원 Junghyo Seo, M.D. has met the criteria of eligibility and has been placed an active member in good standing. ASLMS December 28, 2023"
+    }
+  ],
+  "medical_devices": [
+    {
+      "name": "Thermage FLX",
+      "korean_name": "써마지FLX",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_TIGHTENING",
+      "description": "넓어진 시술면적과 통증 감소, 뛰어난 탄력과 자연스러운 리프팅 효과. 고주파 전류를 이용하여 조직의 응고로 눈가 및 안면상 주름의 비침습적 치료에 사용하는 기구입니다. 진동 핸드피스의 사용으로 통증은 이전보다 50% 감소되었고, 표피를 냉각시키고 진피 조직에 열을 발생 시키는 써마지 원리입니다. 고주파 에너지를 전달하여 콜라겐 섬유의 변성 및 수축을 일으켜 콜라겐 재생, 주름 개선 효과가 있습니다.",
+      "source": "text"
+    },
+    {
+      "name": "Thermage",
+      "korean_name": "써마지 (아이써마지)",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_TIGHTENING",
+      "description": "#피부 탄력 #잔주름개선 #눈가, 눈꺼풀 리프팅 #윤곽선개선",
+      "source": "text"
+    },
+    {
+      "name": "Ulthera",
+      "korean_name": "울쎄라",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": "고강도 집속 초음파 에너지로 피부 속 깊은 곳부터 차오르는 탄력. HIFU 에너지로 SMAS층을 타깃해 처짐을 당겨 얼굴선을 또렷하게 만들어 볼·턱 라인 리프팅과 탄력 개선 효과를 줍니다. 미국식품의약국(FDA)이 승인한 눈썹, 늘어진 턱선, 가슴 윗부분의 리프팅과 주름 개선을 위해 사용하는 기기입니다. 고강도 초음파 에너지를 모아서 생긴 고열을 이용하여 피부 속 4.5mm의 근막층(SMAS)까지 도달하여 조직을 응고시키는 HIFU장비입니다. 기존의 리프팅레이저가 도달하지 못했던 피부 속 표피 및 진피층까지 도달하여 안면거상술로만 가능했던 조직의 리프팅이 가능하고 피부를 중력 반대방향으로 서서히 올려주어 수술 없이 자연스러운 리프팅이 가능합니다.",
+      "source": "text"
+    },
+    {
+      "name": "Oligio",
+      "korean_name": "올리지오",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_TIGHTENING",
+      "description": "3가지 샷모드를 탑재한 스마트 토탈페이스 레이저 리프팅. 고주파 열로 콜라겐 수축·재생을 유도해 탄력과 리프팅을 높여주어 팔자·처짐·넓은 모공 개선에 도움을 줍니다. RF 고주파 에너지를 이용하여 진피층에 열을 가해 노화된 콜라겐을 수축시키고 새로운 콜라겐 생성을 자극하는 레이저입니다. 식품의약품안전처에서 제조허가를 받은 의료기기로써 피부에 고주파를 조사하여 발생하는 열이 조직을 자극시키는 원리를 이용한 장비입니다. RF고주파 에너지를 진피층에 전달하여 노화 되고 손상된 피부의 컨디션을 회복 시켜, 시술 직후 효과는 물론 시간이 지날수록 피부 속 콜라겐 증가로 탄력 및 주름을 개선 시켜 드립니다.",
+      "source": "text"
+    },
+    {
+      "name": "Shurink Universe",
+      "korean_name": "슈링크 유니버스 (아이슈링크)",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": "2개의 핸드피스, 2가지 모드의 빠르고 강한 초음파 에너지. 강한 초음파 에너지(HIFU)를 피부 속에 전달하여 콜라겐 재생을 촉진시켜 탄력 개선과 리프팅에 도움을 주는 시술입니다. ULTRA F, ULTRA BOOSTER 2개의 핸드피스로 기존 슈링크 보다 2배 이상 빨라진 속도로 1샷당 400여개의 열 응고점을 발생시켜 강력한 에너지로 콜라겐을 재생시켜 탄력을 증대시키고, 안티에이징 효과를 볼 수 있으며 굴곡진 부위는 물론 눈가 등 작은 부위까지 섬세한 타이트닝 리프팅 시술이 가능해져 섬세함까지 갖춘 완성형 리프팅입니다.",
+      "source": "text"
+    },
+    {
+      "name": "InMode",
+      "korean_name": "인모드 (바디인모드)",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_TIGHTENING",
+      "description": "불필요한 지방을 감소시키고 콜라겐 재생을 촉진. #지방감소 #피부 타이트닝 #콜라겐재생 #피부탄력",
+      "source": "text"
+    },
+    {
+      "name": "Volnewmer",
+      "korean_name": "볼뉴머 (아이볼뉴머)",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_TIGHTENING",
+      "description": "#지방감소 #콜라겐재생 #리프팅 #피부탄력",
+      "source": "text"
+    },
+    {
+      "name": "Sofwave",
+      "korean_name": "소프웨이브",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": "타이트닝, 리프팅, 주름 개선 효과를 볼 수 있는 프리미엄 리프팅",
+      "source": "text"
+    },
+    {
+      "name": "LDM",
+      "korean_name": "LDM",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "IPL",
+      "description": "#피부보습 #트러블방지 #민감성피부 #예민한피부",
+      "source": "text"
+    },
+    {
+      "name": "Potenza",
+      "korean_name": "포텐자",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_MICRONEEDLE",
+      "description": "#여드름흉터 #모공축소 #피부탄력 #기미색소",
+      "source": "text"
+    },
+    {
+      "name": "RevLite",
+      "korean_name": "레블라이트",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "LASER",
+      "description": "#기미잡티 #색소질환 #난치성색소 #잔주름 #미백 #모공",
+      "source": "text"
+    },
+    {
+      "name": "ExcelV",
+      "korean_name": "엑셀브이",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "LASER",
+      "description": "#색소질환 #기미잡티 #안면홍조 #피부탄력 #피부결",
+      "source": "text"
+    },
+    {
+      "name": "Fraxel",
+      "korean_name": "어븀프락셀",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "LASER",
+      "description": "#여드름흉터 #점,모공 #사마귀 #한관종 #검버섯",
+      "source": "text"
+    },
+    {
+      "name": "CO2 Laser",
+      "korean_name": "CO2",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "LASER",
+      "description": "#잡티개선 #모공축소 #피부결개선 #사마귀 #검버섯",
+      "source": "text"
+    },
+    {
+      "name": "PicoLo",
+      "korean_name": "피코라이트",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "LASER",
+      "description": "#색소제거 #피부톤개선 #기미치료 #모공축소",
+      "source": "text"
+    },
+    {
+      "name": "Agnes",
+      "korean_name": "아그네스",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_MICRONEEDLE",
+      "description": "#여드름치료 #피지선제거 #모공축소 #피부정화",
+      "source": "text"
+    },
+    {
+      "name": "Hyaju",
+      "korean_name": "하이쿡스",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "INJECTOR",
+      "description": "디데이만의 통증완화 진통액과 함께 사용하여 시술 통증 완화. #통증감소 #스킨부스터 #보톡스 #멍과 부기 최소화",
+      "source": "text"
+    },
+    {
+      "name": "Airnox",
+      "korean_name": "에어녹스",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": "통증을 줄여주는 산소를 호흡으로 전달하여 통증의 민감도 감소. #통증감소 #스킨부스터 #리프팅 #필러보톡스",
+      "source": "text"
+    },
+    {
+      "name": "AquaPeel",
+      "korean_name": "아쿠아필",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": "진공 흡입+용액으로 각질·피지·블랙헤드를 제거해 즉각적 클렌징 효과를 주며, 수분 공급으로 촉촉한 피부결과 맑은 톤을 연출합니다. #딥클렌징 #각질제거 #수분공급 #모공관리",
+      "source": "text"
+    },
+    {
+      "name": "MTS",
+      "korean_name": "MTS",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": "#피부재생 #콜라겐재생 #흉터개선 #피부결개선",
+      "source": "text"
+    },
+    {
+      "name": "LED",
+      "korean_name": "LED",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": "#피부진정 #여드름개선 #톤업 #피부재생",
+      "source": "text"
+    },
+    {
+      "name": "O2Derm",
+      "korean_name": "오투덤",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": "#모공축소 #흉터개선 #콜라겐재생 #피부결개선",
+      "source": "text"
+    },
+    {
+      "name": "Rejuran",
+      "korean_name": "리쥬란힐러",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "booster",
+      "description": "PN으로 피부 재생 환경을 강화해 결·탄력·보습을 끌어올려 잔주름·거칠음·손상 피부 컨디션 회복에 도움을 줍니다. 생체복합물질인 폴리뉴클레오타이드를 피부 속 진피까지 전달시켜 손상된 피부 속을 개선하여 깊이감 있는 아름다움을 이끌어내는 신개념 피부 힐러입니다",
+      "source": "text"
+    },
+    {
+      "name": "Botox",
+      "korean_name": "스킨보톡스",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "botox",
+      "description": "얕은층 톡신 확산으로 피지·모공을 조절해 피부결을 매끈하게 만들어 광택감(스킨글로우)과 잔주름 완화에 도움을 줍니다. 주름개선 및 근육의 움직임을 마비시켜 근육을 서서히 축소시키는 원리를 지닌 시술입니다.",
+      "source": "text"
+    },
+    {
+      "name": "Juvelook",
+      "korean_name": "쥬베룩",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "booster",
+      "description": "PDLLA가 콜라겐 생성을 촉진해 점진적 탄력·볼륨 업을 도와주어, 모공·여드름 흉터 결함 완화와 피부 두께감 개선에 유리합니다.",
+      "source": "text"
+    },
+    {
+      "name": "Lipolytic Injection",
+      "korean_name": "지방분해주사",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "lipolytic",
+      "description": "지방세포 분해·배출을 도와 국소 부위 사이즈 감소에 기여합니다. 이중턱·복부 등 라인 정리에 보조적 효과가 있습니다. 대표원장님만의 배합 레시피로 수술없이 빠르게 지방분해를 돕는 디데이핏(바디)은 불필요한 지방세포만을 선택적으로 분해하고 빠르게 체외로 배출될 수 있도록 업그레이드된 비만 주사요법 입니다.",
+      "source": "text"
+    },
+    {
+      "name": "Exosome",
+      "korean_name": "엑소좀",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "booster",
+      "description": "피부 세포의 기능 향상으로 피부의 근본적인 문제를 개선하다. 신개념 줄기세포 테라피인 엑소좀은 줄기세포의 능력을 그대로 가지고 있어 손상된 피부를 효과적으로 개선하고 피부 본연의 에너지가 건강해질 수 있도록 활성화를 도와주는 역할을 합니다.",
+      "source": "text"
+    },
+    {
+      "name": "Hyaluronic Acid",
+      "korean_name": "히알루론산",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "booster",
+      "description": "다량의 수분을 함유하고 있는 히알루론산을 피부 진피층에 직접 주사하여 마치 물을 머금은 듯한 탄력있고 생기있는 피부로 만들어주는 시술법입니다.",
+      "source": "text"
+    },
+    {
+      "name": "Filler",
+      "korean_name": "필러",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "filler",
+      "description": "주름이나 처진 연부조직에 볼륨을 만들어주는 성분으로 주로 히알루론산, 콜라겐 등의 물질을 사용합니다. 시술 결과를 수정 및 보완할 수 있어 부담이 적고 자연스럽습니다.",
+      "source": "text"
+    },
+    {
+      "name": "PDO Thread",
+      "korean_name": "PDO실",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "thread",
+      "description": "녹는실을 돌기에 덧붙여 만든 실을 이용하여 강력한 견인력을 바탕으로 처진 안면윤곽에 변화를 주는 시술로, 체내에서 분해되는 특수한 의료용실을 사용한 비수술적 리프팅 시술입니다.",
+      "source": "text"
+    }
+  ],
+  "treatments": [
+    {
+      "name": "피코토닝",
+      "regular_price": null,
+      "event_price": 9900,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": "9,900원",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "올리지오 100샷",
+      "regular_price": null,
+      "event_price": 99000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": 100,
+      "unit": "shot",
+      "price_per_unit": 990,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "rf",
+      "price_display": "99,000원",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "울쎄라 300샷",
+      "regular_price": null,
+      "event_price": 750000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": 300,
+      "unit": "shot",
+      "price_per_unit": 2500,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "hifu",
+      "price_display": "750,000원",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "리쥬란힐러 2cc",
+      "regular_price": null,
+      "event_price": 189000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": 2,
+      "unit": "cc",
+      "price_per_unit": 94500,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "skinbooster",
+      "price_display": "189,000원",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "얼굴전체 스킨보톡스",
+      "regular_price": null,
+      "event_price": 39000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "botox",
+      "price_display": "39,000원",
+      "session_info": null,
+      "body_part": "얼굴전체"
+    },
+    {
+      "name": "쥬베룩 2cc",
+      "regular_price": null,
+      "event_price": 169000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": 2,
+      "unit": "cc",
+      "price_per_unit": 84500,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "skinbooster",
+      "price_display": "169,000원",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "[D-NPL] 지방분해주사 100cc",
+      "regular_price": null,
+      "event_price": 79000,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": 100,
+      "unit": "cc",
+      "price_per_unit": 790,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "lipolytic",
+      "price_display": "79,000원",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "아쿠아필",
+      "regular_price": null,
+      "event_price": 7900,
+      "min_price": null,
+      "max_price": null,
+      "price_type": "event",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": "7,900원",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "FLEX 리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [
+        "써마지Flx",
+        "올리지오",
+        "울쎄라"
+      ],
+      "is_package": true,
+      "is_addon": false,
+      "source": "website",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "실리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "thread",
+      "price_display": null,
+      "session_info": "6개월 ~ 1년 간격 1회",
+      "body_part": [
+        "이마주름",
+        "팔자주름",
+        "얼굴라인",
+        "볼살/턱살",
+        "목주름"
+      ]
+    },
+    {
+      "name": "물광주사",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "skinbooster",
+      "price_display": null,
+      "session_info": "약 3~4주 간격으로 3회",
+      "body_part": [
+        "눈물골",
+        "관자놀이",
+        "광대(뺨 부위)",
+        "턱선",
+        "입가주름",
+        "팔자주름"
+      ]
+    },
+    {
+      "name": "필러",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "filler",
+      "price_display": null,
+      "session_info": "6개월 ~ 1년 간격 1회",
+      "body_part": [
+        "이마, 미간",
+        "눈밑",
+        "앞광대",
+        "코",
+        "입술, 입꼬리",
+        "무턱",
+        "깊은 주름"
+      ]
+    },
+    {
+      "name": "보톡스",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "botox",
+      "price_display": null,
+      "session_info": "4~6개월 간격",
+      "body_part": [
+        "이마, 미간 주름",
+        "눈가, 눈밑 주름",
+        "사각턱",
+        "승모근",
+        "종아리",
+        "다한증"
+      ]
+    },
+    {
+      "name": "여드름/흉터 치료",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "기미/색소 치료",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": "5~10회 권장",
+      "body_part": null
+    },
+    {
+      "name": "홍조/모세혈관치료",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": "3~5회 권장",
+      "body_part": null
+    },
+    {
+      "name": "엑소좀",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "skinbooster",
+      "price_display": null,
+      "session_info": "한달에 1-3회 권장",
+      "body_part": null
+    },
+    {
+      "name": "리쥬란",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "skinbooster",
+      "price_display": null,
+      "session_info": "3회 이상 권장",
+      "body_part": null
+    },
+    {
+      "name": "모공/탄력 치료",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": "3~5회 권장",
+      "body_part": null
+    },
+    {
+      "name": "디데이핏(바디)",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "lipolytic",
+      "price_display": null,
+      "session_info": "0일~14일 간격, 한부위 최소 3회 권장",
+      "body_part": [
+        "팔뚝",
+        "옆구리",
+        "허벅지",
+        "종아리",
+        "배"
+      ]
+    },
+    {
+      "name": "바디보톡스",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "botox",
+      "price_display": null,
+      "session_info": "2 - 3개월 주기로 시술",
+      "body_part": null
+    },
+    {
+      "name": "일반진단서",
+      "regular_price": 10000,
+      "event_price": null,
+      "min_price": 10000,
+      "max_price": 10000,
+      "price_type": "regular",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "nongeubyeo",
+      "category": "other",
+      "price_display": "10,000",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "진료확인서",
+      "regular_price": 3000,
+      "event_price": null,
+      "min_price": 3000,
+      "max_price": 3000,
+      "price_type": "regular",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "nongeubyeo",
+      "category": "other",
+      "price_display": "3,000",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "진료기록 사본 (1~5매)",
+      "regular_price": 1000,
+      "event_price": null,
+      "min_price": 1000,
+      "max_price": 1000,
+      "price_type": "regular",
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "nongeubyeo",
+      "category": "other",
+      "price_display": "1,000",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "진료기록 사본 6매이상 (1매당)",
+      "regular_price": 100,
+      "event_price": null,
+      "min_price": 100,
+      "max_price": 100,
+      "price_type": "regular",
+      "quantity": 1,
+      "unit": "page",
+      "price_per_unit": 100,
+      "event_period": null,
+      "includes": null,
+      "is_package": false,
+      "is_addon": false,
+      "source": "nongeubyeo",
+      "category": "other",
+      "price_display": "100",
+      "session_info": null,
+      "body_part": null
+    }
+  ],
+  "events": [
+    {
+      "title": "디데이 GRAND OPENING",
+      "type": "시즌",
+      "period": "February, 2026",
+      "discount_info": "디데이 확장기념 균일가 이벤트를 만나보세요!",
+      "original_price": null,
+      "event_price": null,
+      "conditions": null,
+      "source": "text"
+    },
+    {
+      "title": "체험가 핫딜 EVENT!",
+      "type": "할인",
+      "period": null,
+      "discount_info": "부담없이 체험해보세요!",
+      "original_price": null,
+      "event_price": null,
+      "conditions": null,
+      "source": "banner"
+    },
+    {
+      "title": "LUCKY BOX DAY!",
+      "type": "기타",
+      "period": "매주 수·목",
+      "discount_info": "Coming soon",
+      "original_price": null,
+      "event_price": null,
+      "conditions": null,
+      "source": "banner"
+    }
+  ],
+  "clinic_categories": [
+    {
+      "name": "웰에이징 클리닉",
+      "treatments": [
+        "FLEX 리프팅",
+        "울쎄라",
+        "써마지Flx",
+        "올리지오",
+        "슈링크 유니버스"
+      ]
+    },
+    {
+      "name": "쁘띠 클리닉",
+      "treatments": [
+        "실리프팅",
+        "물광주사",
+        "필러",
+        "보톡스"
+      ]
+    },
+    {
+      "name": "메디컬 스킨케어",
+      "treatments": [
+        "여드름/흉터 치료",
+        "기미/색소 치료",
+        "홍조/모세혈관치료",
+        "엑소좀",
+        "리쥬란",
+        "모공/탄력 치료"
+      ]
+    },
+    {
+      "name": "바디 클리닉",
+      "treatments": [
+        "디데이핏(바디)",
+        "바디보톡스"
+      ]
+    }
+  ],
+  "contact_info": {
+    "email": [
+      {
+        "address": "support@mprcorp.kr",
+        "type": "기타",
+        "source": "info_provision_page"
+      }
+    ],
+    "phone": [
+      {
+        "number": "051-245-3210",
+        "type": "대표"
+      }
+    ],
+    "address": {
+      "full_address": "부산광역시 중구 구덕로34번길 4, 2층 201호 (뉴 남포빌딩) 디데이의원",
+      "sido": "부산광역시",
+      "sigungu": "중구"
+    },
+    "kakao_channel": "https://kko.to/MOc6RgmT3Q",
+    "naver_booking": null,
+    "naver_place": "https://naver.me/5LuRvya7",
+    "instagram": null,
+    "facebook": null,
+    "youtube": "https://www.youtube.com/@dr.hyo_beautysecret",
+    "blog": null,
+    "website_url": "https://dday.clinic",
+    "operating_hours": {
+      "weekday": "am 10:00 ~ pm 20:00",
+      "saturday": "am 10:00 ~ pm 15:00",
+      "sunday": "휴무",
+      "lunch_break": "없음"
+    }
+  },
+  "unregistered_equipment": [
+    {
+      "name": "Alltight",
+      "korean_name": "올타이트",
+      "suggested_category": "RF_TIGHTENING",
+      "source": "website",
+      "reason": "Listed among lifting devices, likely an RF device."
+    },
+    {
+      "name": "Winback",
+      "korean_name": "윈백",
+      "suggested_category": "other_device",
+      "source": "website",
+      "reason": "Described as high-frequency management, body management, skin regeneration."
+    },
+    {
+      "name": "Brighton",
+      "korean_name": "브라이톤",
+      "suggested_category": "LASER",
+      "source": "website",
+      "reason": "Listed among laser devices, described as for pigmentation, tone-up."
+    },
+    {
+      "name": "Triderm",
+      "korean_name": "트라이덤",
+      "suggested_category": "LASER",
+      "source": "website",
+      "reason": "Listed among laser devices, described as for cellulite, body slimming."
+    },
+    {
+      "name": "Selec Laser",
+      "korean_name": "셀렉레이저",
+      "suggested_category": "LASER",
+      "source": "website",
+      "reason": "Listed among laser devices, described as for pigmentation, vascular."
+    },
+    {
+      "name": "Dual Accento",
+      "korean_name": "듀얼악센토",
+      "suggested_category": "LASER",
+      "source": "website",
+      "reason": "Listed among laser devices, described as for pigmentation, vascular."
+    },
+    {
+      "name": "Lipot",
+      "korean_name": "리팟",
+      "suggested_category": "LASER",
+      "source": "website",
+      "reason": "Listed among laser devices, described as for pigmentation."
+    },
+    {
+      "name": "Ellie",
+      "korean_name": "엘리",
+      "suggested_category": "LASER",
+      "source": "website",
+      "reason": "Listed among laser devices, described as for vascular, pigmentation."
+    },
+    {
+      "name": "Complex device",
+      "korean_name": "복합기",
+      "suggested_category": "other_device",
+      "source": "website",
+      "reason": "Multi-function device including Cryo, Sono, Scrubber, Ionto."
+    },
+    {
+      "name": "Body Maestro",
+      "korean_name": "바디마에스트로",
+      "suggested_category": "BODY",
+      "source": "website",
+      "reason": "Listed among body management devices, described as for fat breakdown, body slimming."
+    },
+    {
+      "name": "Pangsis",
+      "korean_name": "팡시스",
+      "suggested_category": "other_device",
+      "source": "website",
+      "reason": "Listed among skin management devices, described as for pore reduction, scar improvement."
+    },
+    {
+      "name": "Noble Shape",
+      "korean_name": "노블쉐이프",
+      "suggested_category": "BODY",
+      "source": "website",
+      "reason": "Listed among body management devices, described as for fat breakdown, body slimming."
+    }
+  ],
+  "unregistered_treatments": [],
+  "raw_price_texts": [],
+  "extraction_summary": {
+    "total_doctors": 4,
+    "total_academic": 1,
+    "total_equipment": 30,
+    "total_devices": 22,
+    "total_injectables": 8,
+    "total_treatments": 20,
+    "total_events": 3,
+    "total_categories": 4,
+    "total_contact_channels": 7,
+    "has_email": true,
+    "has_phone": true,
+    "has_kakao": true,
+    "has_sns": true,
+    "price_available_ratio": "12/20",
+    "unregistered_equipment_count": 12,
+    "unregistered_treatments_count": 6
+  }
+}

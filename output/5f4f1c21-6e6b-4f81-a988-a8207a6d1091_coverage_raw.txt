@@ -1,0 +1,17 @@
+{
+  "missing_equipments": [
+    "울쎄라"
+  ],
+  "missing_treatments": [],
+  "missing_doctors": [],
+  "missing_prices": [],
+  "coverage_score": {
+    "equipment": 83,
+    "treatment": 100,
+    "doctor": 100,
+    "overall": 95
+  },
+  "issues": [
+    "추출 결과의 '시술' 목록에 '메디컬 스킨케어', '스킨부스터', 'PROGRAM'과 같이 시술 분류명 또는 섹션명이 포함되어 있습니다. 이는 구체적인 시술 메뉴가 아닌 카테고리이므로, 추출 지침에 따라 제외되어야 합니다."
+  ]
+}

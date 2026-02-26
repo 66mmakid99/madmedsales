@@ -1,0 +1,29 @@
+{
+  "missing_equipments": [
+    "올타이트",
+    "토르RF",
+    "뉴포리덤",
+    "온다PM",
+    "클라리티프로"
+  ],
+  "missing_treatments": [
+    "코어페이셜",
+    "덴서티알파",
+    "바이블주",
+    "레티젠",
+    "위고비",
+    "NDA플러스",
+    "진우패치"
+  ],
+  "missing_doctors": [],
+  "missing_prices": [],
+  "coverage_score": {
+    "equipment": 84,
+    "treatment": 88,
+    "doctor": 100,
+    "overall": 90
+  },
+  "issues": [
+    "추출된 '장비' 목록에 'AquaPeel', 'Botox', 'Rejuran', 'GBR Booster', 'Gold PTT', 'V-Olet', 'Neostem', 'Filmed 135HA', 'Etosome', 'ECMV', 'Wecouno', 'Milk Peel', 'Aladdin Peel', 'LHA Peel' 등 시술 또는 제품으로 분류되어야 할 항목들이 포함되어 있습니다."
+  ]
+}

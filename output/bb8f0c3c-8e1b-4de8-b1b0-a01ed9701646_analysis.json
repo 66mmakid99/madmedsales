@@ -1,0 +1,953 @@
+{
+  "hospital_name": "연세팜스의원 은평점",
+  "doctors": [
+    {
+      "name": "윤정현",
+      "title": "대표원장",
+      "specialty": null,
+      "career": [
+        "한국미용성형의학회 회장",
+        "대한레이저피부모발학회 부회장",
+        "대한미용성형레이저의학회 총무이사",
+        "한국레이저연구회 부회장"
+      ],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "조희숙",
+      "title": "원장님",
+      "specialty": null,
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    }
+  ],
+  "academic_activities": [
+    {
+      "type": "학회발표",
+      "title": "2023 대한레이저피부모발학회 제45차 추계 국제학술대회",
+      "year": 2023,
+      "doctor_name": "윤정현",
+      "source_text": "2023 대한레이저피부모발학회 제45차 추계 국제학술대회"
+    },
+    {
+      "type": "세미나",
+      "title": "Noncontour PDO thread lift and MPR",
+      "year": 2019,
+      "doctor_name": "윤정현",
+      "source_text": "부산세미나 2019 Noncontour PDO thread lift and MPR"
+    },
+    {
+      "type": "세미나",
+      "title": "Basic principles of noncontour PDO thread lift..",
+      "year": null,
+      "doctor_name": "윤정현",
+      "source_text": "부산세미나 Basic principles of noncontour PDO thread lift.."
+    },
+    {
+      "type": "세미나",
+      "title": "Introduce N-Scaffold & N-Fix",
+      "year": 2018,
+      "doctor_name": null,
+      "source_text": "부산세미나 2018 Introduce N-Scaffold & N-Fix"
+    }
+  ],
+  "medical_devices": [
+    {
+      "name": "레이저",
+      "korean_name": "레이저",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": "General category for laser treatments",
+      "source": "text"
+    },
+    {
+      "name": "필러",
+      "korean_name": "필러",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "filler",
+      "description": "General category for filler treatments",
+      "source": "text"
+    },
+    {
+      "name": "보톡스",
+      "korean_name": "보톡스",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "botox",
+      "description": "General category for botox treatments",
+      "source": "text"
+    },
+    {
+      "name": "ASTERASYS",
+      "korean_name": null,
+      "manufacturer": "ASTERASYS",
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "CLASSYS",
+      "korean_name": "클래시스",
+      "manufacturer": "CLASSYS",
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "ilooda",
+      "korean_name": "이루다",
+      "manufacturer": "ilooda",
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "DAEWOONG",
+      "korean_name": "대웅",
+      "manufacturer": "DAEWOONG",
+      "device_type": "injectable",
+      "subcategory": "botox",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "BRPHARM",
+      "korean_name": "비알팜",
+      "manufacturer": "BRPHARM",
+      "device_type": "injectable",
+      "subcategory": "booster",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "LENT",
+      "korean_name": "렌트",
+      "manufacturer": "LENT",
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "파마리서치",
+      "korean_name": "파마리서치",
+      "manufacturer": "파마리서치",
+      "device_type": "injectable",
+      "subcategory": "booster",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "뉴튼 리프팅",
+      "korean_name": "뉴튼 리프팅",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "쿨사인",
+      "korean_name": "쿨사인",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "써니RF",
+      "korean_name": "써니RF",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_TIGHTENING",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "미라젯",
+      "korean_name": "미라젯",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "OTHER_DEVICE",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "reepot 레이저",
+      "korean_name": "reepot 레이저",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "엔파인더스",
+      "korean_name": "엔파인더스",
+      "manufacturer": "엔파인더스",
+      "device_type": "injectable",
+      "subcategory": "thread",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "레젠보겐",
+      "korean_name": "레젠보겐",
+      "manufacturer": "레젠보겐",
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "바즈바이오",
+      "korean_name": "바즈바이오",
+      "manufacturer": "바즈바이오",
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "BMI",
+      "korean_name": null,
+      "manufacturer": "BMI",
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "화인엑",
+      "korean_name": "화인엑",
+      "manufacturer": "화인엑",
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "대화제약",
+      "korean_name": "대화제약",
+      "manufacturer": "대화제약",
+      "device_type": "injectable",
+      "subcategory": "other_injectable",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "프리모리스",
+      "korean_name": "프리모리스",
+      "manufacturer": "프리모리스",
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "유벤타",
+      "korean_name": "유벤타",
+      "manufacturer": "유벤타",
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "유니온",
+      "korean_name": "유니온",
+      "manufacturer": "유니온",
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "아일글로벌",
+      "korean_name": "아일글로벌",
+      "manufacturer": "아일글로벌",
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "메디톡스",
+      "korean_name": "메디톡스",
+      "manufacturer": "메디톡스",
+      "device_type": "injectable",
+      "subcategory": "botox",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "RF바이오",
+      "korean_name": "RF바이오",
+      "manufacturer": "RF바이오",
+      "device_type": "device",
+      "subcategory": "RF_TIGHTENING",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "루트로닉",
+      "korean_name": "루트로닉",
+      "manufacturer": "루트로닉",
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "수도그룹",
+      "korean_name": "수도그룹",
+      "manufacturer": "수도그룹",
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "숲",
+      "korean_name": "숲",
+      "manufacturer": "숲",
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "Noncontour",
+      "korean_name": null,
+      "manufacturer": "Noncontour",
+      "device_type": "injectable",
+      "subcategory": "thread",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "PDO thread",
+      "korean_name": null,
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "thread",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "MPR",
+      "korean_name": null,
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_TIGHTENING",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "PDLA EMULSION",
+      "korean_name": null,
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "collagen_stimulator",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "N-Scaffold",
+      "korean_name": null,
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "thread",
+      "description": null,
+      "source": "ocr"
+    },
+    {
+      "name": "N-Fix",
+      "korean_name": null,
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "thread",
+      "description": null,
+      "source": "ocr"
+    }
+  ],
+  "treatments": [
+    {
+      "name": "뉴튼 리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "ocr",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "쿨사인",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "ocr",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "써니RF",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "ocr",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "미라젯",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "ocr",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "reepot 레이저",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "ocr",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "여드름 치료",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "image_banner",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "기미 치료 솔루션",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "image_banner",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "색소 치료",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "image_banner",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "안티에이징",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "image_banner",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "탈모집중 치료",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "image_banner",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "Noncontour PDO thread lift and MPR",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [
+        "Noncontour PDO thread lift",
+        "MPR"
+      ],
+      "is_package": true,
+      "is_addon": false,
+      "source": "ocr",
+      "category": "thread",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "Basic principles of noncontour PDO thread lift",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "ocr",
+      "category": "thread",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "Introduce N-Scaffold & N-Fix",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [
+        "N-Scaffold",
+        "N-Fix"
+      ],
+      "is_package": true,
+      "is_addon": false,
+      "source": "ocr",
+      "category": "thread",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    }
+  ],
+  "events": [
+    {
+      "title": "연세팜스 BEST 5 프로그램",
+      "type": "패키지",
+      "period": null,
+      "discount_info": "고객만족도가 가장 높은 시술입니다.",
+      "original_price": null,
+      "event_price": null,
+      "conditions": [],
+      "source": "text"
+    },
+    {
+      "title": "부산세미나 2019 Noncontour PDO thread lift and MPR",
+      "type": "기타",
+      "period": "2019.10.05 (토) 오후 6:30",
+      "discount_info": null,
+      "original_price": null,
+      "event_price": null,
+      "conditions": [],
+      "source": "ocr"
+    },
+    {
+      "title": "부산세미나 Basic principles of noncontour PDO thread lift..",
+      "type": "기타",
+      "period": "April 4/3 19:00",
+      "discount_info": null,
+      "original_price": null,
+      "event_price": null,
+      "conditions": [],
+      "source": "ocr"
+    },
+    {
+      "title": "부산세미나 2018 Introduce N-Scaffold & N-Fix",
+      "type": "기타",
+      "period": "2018.06.09 (토) 오후 6:30",
+      "discount_info": null,
+      "original_price": null,
+      "event_price": null,
+      "conditions": [],
+      "source": "ocr"
+    }
+  ],
+  "clinic_categories": [
+    {
+      "name": "피부클리닉",
+      "treatments": [
+        "여드름 치료",
+        "기미 치료 솔루션",
+        "색소 치료"
+      ]
+    },
+    {
+      "name": "주름리프팅",
+      "treatments": [
+        "뉴튼 리프팅",
+        "써니RF",
+        "Noncontour PDO thread lift and MPR",
+        "Basic principles of noncontour PDO thread lift",
+        "Introduce N-Scaffold & N-Fix"
+      ]
+    },
+    {
+      "name": "레이저",
+      "treatments": [
+        "reepot 레이저",
+        "기미 치료 솔루션",
+        "색소 치료"
+      ]
+    },
+    {
+      "name": "부스터 칵테일",
+      "treatments": []
+    },
+    {
+      "name": "탈모",
+      "treatments": [
+        "탈모집중 치료"
+      ]
+    },
+    {
+      "name": "필러/보톡스",
+      "treatments": []
+    },
+    {
+      "name": "스킨케어",
+      "treatments": []
+    },
+    {
+      "name": "안티에이징",
+      "treatments": [
+        "안티에이징"
+      ]
+    }
+  ],
+  "contact_info": {
+    "email": [
+      {
+        "address": "yonseifams@naver.com",
+        "type": "상담",
+        "source": "footer"
+      },
+      {
+        "address": "urohyun@hanmail.net",
+        "type": "대표",
+        "source": "text"
+      },
+      {
+        "address": "chauveau@naver.com",
+        "type": "상담",
+        "source": "text"
+      }
+    ],
+    "phone": [
+      {
+        "number": "02-387-2755",
+        "type": "상담",
+        "source": "text"
+      },
+      {
+        "number": "02-387-2750",
+        "type": "기타",
+        "source": "ocr"
+      }
+    ],
+    "address": {
+      "full_address": "서울특별시 은평구 통일로 767 호반베르디움스테이원 아파트 104동 226호",
+      "sido": "서울특별시",
+      "sigungu": "은평구"
+    },
+    "kakao_channel": "https://pf.kakao.com/_tIFsG",
+    "naver_booking": null,
+    "naver_place": null,
+    "instagram": null,
+    "facebook": null,
+    "youtube": null,
+    "blog": "http://blog.naver.com/polyp99",
+    "website_url": "http://yonseifams.co.kr/",
+    "operating_hours": {
+      "weekday": "월/목 오전 10시 ~ 오후 7시, 화/금 오전 10시 ~ 오후 8시",
+      "saturday": "오전 10시 ~ 오후 3시 (점심시간 없음)",
+      "sunday": "휴진",
+      "lunch_break": "오후 1시 ~ 오후 2시"
+    }
+  },
+  "unregistered_equipment": [
+    {
+      "name": "ASTERASYS",
+      "korean_name": null,
+      "suggested_category": "other_device",
+      "source": "ocr",
+      "reason": "manufacturer, likely device, but specific type unknown"
+    },
+    {
+      "name": "LENT",
+      "korean_name": "렌트",
+      "suggested_category": "other_device",
+      "source": "ocr",
+      "reason": "manufacturer, likely device, but specific type unknown"
+    },
+    {
+      "name": "뉴튼 리프팅",
+      "korean_name": "뉴튼 리프팅",
+      "suggested_category": "DEVICE",
+      "source": "ocr",
+      "reason": "sounds like a device, not in dictionary"
+    },
+    {
+      "name": "쿨사인",
+      "korean_name": "쿨사인",
+      "suggested_category": "DEVICE",
+      "source": "ocr",
+      "reason": "sounds like a device, not in dictionary"
+    },
+    {
+      "name": "reepot 레이저",
+      "korean_name": "reepot 레이저",
+      "suggested_category": "LASER",
+      "source": "ocr",
+      "reason": "contains \"레이저\", not in dictionary"
+    },
+    {
+      "name": "레젠보겐",
+      "korean_name": "레젠보겐",
+      "suggested_category": "other_device",
+      "source": "ocr",
+      "reason": "manufacturer, likely device, but specific type unknown"
+    },
+    {
+      "name": "바즈바이오",
+      "korean_name": "바즈바이오",
+      "suggested_category": "other_device",
+      "source": "ocr",
+      "reason": "manufacturer, likely device, but specific type unknown"
+    },
+    {
+      "name": "BMI",
+      "korean_name": null,
+      "suggested_category": "other_device",
+      "source": "ocr",
+      "reason": "manufacturer, likely device, but specific type unknown"
+    },
+    {
+      "name": "화인엑",
+      "korean_name": "화인엑",
+      "suggested_category": "other_device",
+      "source": "ocr",
+      "reason": "manufacturer, likely device, but specific type unknown"
+    },
+    {
+      "name": "대화제약",
+      "korean_name": "대화제약",
+      "suggested_category": "other_injectable",
+      "source": "ocr",
+      "reason": "manufacturer, likely injectable, but specific type unknown"
+    },
+    {
+      "name": "프리모리스",
+      "korean_name": "프리모리스",
+      "suggested_category": "other_device",
+      "source": "ocr",
+      "reason": "manufacturer, likely device, but specific type unknown"
+    },
+    {
+      "name": "유벤타",
+      "korean_name": "유벤타",
+      "suggested_category": "other_device",
+      "source": "ocr",
+      "reason": "manufacturer, likely device, but specific type unknown"
+    },
+    {
+      "name": "유니온",
+      "korean_name": "유니온",
+      "suggested_category": "other_device",
+      "source": "ocr",
+      "reason": "manufacturer, likely device, but specific type unknown"
+    },
+    {
+      "name": "아일글로벌",
+      "korean_name": "아일글로벌",
+      "suggested_category": "other_device",
+      "source": "ocr",
+      "reason": "manufacturer, likely device, but specific type unknown"
+    },
+    {
+      "name": "수도그룹",
+      "korean_name": "수도그룹",
+      "suggested_category": "other_device",
+      "source": "ocr",
+      "reason": "manufacturer, likely device, but specific type unknown"
+    },
+    {
+      "name": "숲",
+      "korean_name": "숲",
+      "suggested_category": "other_device",
+      "source": "ocr",
+      "reason": "manufacturer, likely device, but specific type unknown"
+    },
+    {
+      "name": "Noncontour",
+      "korean_name": null,
+      "suggested_category": "INJECTABLE",
+      "source": "ocr",
+      "reason": "manufacturer, implied by \"PDO thread lift\""
+    }
+  ],
+  "unregistered_treatments": [
+    {
+      "name": "Noncontour PDO thread lift and MPR",
+      "source": "ocr",
+      "context": "seminar title, package treatment"
+    },
+    {
+      "name": "Basic principles of noncontour PDO thread lift",
+      "source": "ocr",
+      "context": "seminar title, treatment technique"
+    },
+    {
+      "name": "Introduce N-Scaffold & N-Fix",
+      "source": "ocr",
+      "context": "seminar title, package treatment"
+    }
+  ],
+  "raw_price_texts": [],
+  "extraction_summary": {
+    "total_doctors": 2,
+    "total_academic": 4,
+    "total_equipment": 36,
+    "total_devices": 23,
+    "total_injectables": 13,
+    "total_treatments": 13,
+    "total_events": 4,
+    "total_categories": 8,
+    "total_contact_channels": 8,
+    "has_email": true,
+    "has_phone": true,
+    "has_kakao": true,
+    "has_sns": true,
+    "price_available_ratio": "0/13",
+    "unregistered_equipment_count": 17,
+    "unregistered_treatments_count": 3
+  }
+}

@@ -1,0 +1,424 @@
+{
+  "hospital_name": "바로코의원",
+  "doctors": [
+    {
+      "name": "김준",
+      "title": "원장",
+      "specialty": "코성형",
+      "career": [],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    }
+  ],
+  "academic_activities": [
+    {
+      "type": "기타",
+      "title": "기술 특허 출원 10-2024-0031680",
+      "year": 2024,
+      "doctor_name": null,
+      "source_text": "기술 특허 출원 10-2024-0031680"
+    }
+  ],
+  "medical_devices": [
+    {
+      "name": "연골입자",
+      "korean_name": "연골입자",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "other_injectable",
+      "description": "자가연골의 입자화로 안전하게!",
+      "source": "text"
+    },
+    {
+      "name": "Rejuran",
+      "korean_name": "리쥬란",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "booster",
+      "description": null,
+      "source": "text"
+    }
+  ],
+  "treatments": [
+    {
+      "name": "연입코",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "nose_surgery",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "코재수술",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "nose_surgery",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "연골입자 코성형",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "nose_surgery",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "연골입자 코주사",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "nose_injection",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "비염 미용코",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "nose_surgery",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "남자코 바로 세우다",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "nose_surgery",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "연입코[개방]",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "nose_surgery",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "연입주사[비개방]",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "nose_injection",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "연입주사(비개방+코끝 연골묶기 + 귀연골)",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [
+        "코끝 연골묶기",
+        "귀연골"
+      ],
+      "is_package": true,
+      "is_addon": false,
+      "source": "website",
+      "category": "nose_injection",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "연입코(개방 + 재수술 + 자가늑연골)",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [
+        "코재수술",
+        "자가늑연골"
+      ],
+      "is_package": true,
+      "is_addon": false,
+      "source": "website",
+      "category": "nose_surgery",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "리쥬란",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "skin_booster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    }
+  ],
+  "events": [
+    {
+      "title": "연입코",
+      "type": "기타",
+      "period": null,
+      "discount_info": "기술 특허 출원 10-2024-0031680, 단 10분 이내로 끝나는 빠른 수술, 1일 안에 일상복귀 빠른 회복",
+      "original_price": null,
+      "event_price": null,
+      "conditions": [],
+      "source": "banner"
+    },
+    {
+      "title": "연입주사",
+      "type": "기타",
+      "period": null,
+      "discount_info": "빠른 회복! 간편하지만 확실한",
+      "original_price": null,
+      "event_price": null,
+      "conditions": [],
+      "source": "banner"
+    }
+  ],
+  "clinic_categories": [
+    {
+      "name": "연입코",
+      "treatments": []
+    },
+    {
+      "name": "코재수술",
+      "treatments": []
+    },
+    {
+      "name": "기능코 / 코질환",
+      "treatments": []
+    },
+    {
+      "name": "유형별 코성형",
+      "treatments": []
+    },
+    {
+      "name": "안심수술케어",
+      "treatments": []
+    }
+  ],
+  "contact_info": {
+    "email": [],
+    "phone": [
+      {
+        "number": "02-595-8599",
+        "type": "상담",
+        "source": "website"
+      },
+      {
+        "number": "02-6925-1217",
+        "type": "팩스",
+        "source": "website"
+      }
+    ],
+    "address": {
+      "full_address": "서울특별시 서초구 강남대로 415 (서초동 1306-8) 대동빌딩 12층 (강남역 10번 출구)",
+      "sido": "서울특별시",
+      "sigungu": "서초구"
+    },
+    "kakao_channel": null,
+    "naver_booking": null,
+    "naver_place": null,
+    "instagram": null,
+    "facebook": null,
+    "youtube": null,
+    "blog": null,
+    "website_url": "https://baroko.co.kr",
+    "operating_hours": {
+      "weekday": "AM 10:00 ~ PM 07:00",
+      "saturday": "AM 10:00 ~ PM 04:00",
+      "sunday": "휴진",
+      "lunch_break": null
+    }
+  },
+  "unregistered_equipment": [
+    {
+      "name": "연골입자",
+      "korean_name": "연골입자",
+      "suggested_category": "INJECTABLE",
+      "source": "text",
+      "reason": "Material used for injection/surgery, not a standard device or brand from the list."
+    }
+  ],
+  "unregistered_treatments": [
+    {
+      "name": "연입코",
+      "source": "website",
+      "context": "Navigation menu, main content, event banner"
+    },
+    {
+      "name": "연골입자 코성형",
+      "source": "website",
+      "context": "Main content, signature section"
+    },
+    {
+      "name": "연골입자 코주사",
+      "source": "website",
+      "context": "Main content, banner"
+    },
+    {
+      "name": "비염 미용코",
+      "source": "website",
+      "context": "Main content"
+    },
+    {
+      "name": "남자코 바로 세우다",
+      "source": "website",
+      "context": "Main content"
+    },
+    {
+      "name": "연입코[개방]",
+      "source": "website",
+      "context": "Before & After filter"
+    },
+    {
+      "name": "연입주사[비개방]",
+      "source": "website",
+      "context": "Before & After filter"
+    },
+    {
+      "name": "연입주사(비개방+코끝 연골묶기 + 귀연골)",
+      "source": "website",
+      "context": "Before & After description"
+    },
+    {
+      "name": "연입코(개방 + 재수술 + 자가늑연골)",
+      "source": "website",
+      "context": "Before & After description"
+    }
+  ],
+  "raw_price_texts": [],
+  "extraction_summary": {
+    "total_doctors": 1,
+    "total_academic": 1,
+    "total_equipment": 2,
+    "total_devices": 0,
+    "total_injectables": 2,
+    "total_treatments": 11,
+    "total_events": 2,
+    "total_categories": 5,
+    "total_contact_channels": 4,
+    "has_email": false,
+    "has_phone": true,
+    "has_kakao": true,
+    "has_sns": true,
+    "price_available_ratio": "0/11",
+    "unregistered_equipment_count": 1,
+    "unregistered_treatments_count": 9
+  }
+}

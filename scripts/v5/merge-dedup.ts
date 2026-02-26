@@ -108,6 +108,7 @@ export function mergeAndDeduplicate(results: AnalysisResult[]): AnalysisResult {
   // 의사 중복 제거 (name 기준, 정보 많은 쪽 우선)
   const drMap = new Map<string, typeof merged.doctors[0]>();
   for (const dr of merged.doctors) {
+    if (!dr || !dr.name) continue;
     const key = dr.name.trim();
     if (!drMap.has(key)) {
       drMap.set(key, dr);

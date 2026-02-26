@@ -1,0 +1,19 @@
+{
+  "missing_equipments": [],
+  "missing_treatments": [
+    "양악주사"
+  ],
+  "missing_doctors": [],
+  "missing_prices": [],
+  "coverage_score": {
+    "equipment": 100,
+    "treatment": 97,
+    "doctor": 100,
+    "overall": 99
+  },
+  "issues": [
+    "추출 결과에서 '탐센티주사', 'Botox', 'Filler', 'Rejuran', '뉴양악주사', '핑크주사', 'Sculptra'와 같은 주사 시술/제품이 '장비'로 분류되어 있습니다. 이는 '장비란: 구체적 의료기기 이름'이라는 정의와 일치하지 않습니다.",
+    "추출 결과에 'Sculptra'가 장비로 포함되어 있으나, 원본 마크다운에는 해당 내용이 없습니다.",
+    "추출 결과에 '조아연' 의사가 포함되어 있으나, 원본 마크다운에는 해당 내용이 없습니다."
+  ]
+}

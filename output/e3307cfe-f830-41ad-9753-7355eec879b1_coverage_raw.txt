@@ -1,0 +1,15 @@
+{
+  "missing_equipments": [],
+  "missing_treatments": [
+    "아쿠아필"
+  ],
+  "missing_doctors": [],
+  "missing_prices": [],
+  "coverage_score": {
+    "equipment": 100,
+    "treatment": 91,
+    "doctor": 100,
+    "overall": 96
+  },
+  "issues": []
+}

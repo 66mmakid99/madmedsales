@@ -1,0 +1,24 @@
+{
+  "missing_equipments": [],
+  "missing_treatments": [],
+  "missing_doctors": [],
+  "missing_prices": [
+    "진료확인서",
+    "일반진단서",
+    "영문진단서",
+    "의사소견서",
+    "영문소견서",
+    "비보험진료비",
+    "진료기록부 사본"
+  ],
+  "coverage_score": {
+    "equipment": -1,
+    "treatment": 100,
+    "doctor": 100,
+    "overall": 100
+  },
+  "issues": [
+    "추출 결과에 'POTENZA'가 장비로 포함되어 있으나, 원본 마크다운에는 해당 내용이 없습니다.",
+    "추출 결과에 'Maylin Collagen Booster', 'Maylin Custom Cocktail Injection', 'Maylin Taylor's Filler'가 장비로 분류되어 있으나, 원본 마크다운 내용상 시술 또는 시술에 사용되는 제품으로 판단됩니다."
+  ]
+}

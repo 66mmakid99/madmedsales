@@ -1,0 +1,38 @@
+{
+  "missing_equipments": [],
+  "missing_treatments": [
+    "화이트닝 케어 스타터팩",
+    "물광, 윤광 갖고 싶은 피부 스타터 패키지",
+    "지금부터 준비하는 다이어트패키지",
+    "트러블 피부 고민해결 패키지",
+    "인모드 리프팅",
+    "여드름 재발 방지",
+    "얼굴전체 제모",
+    "코밑 제모",
+    "이마(부분) 제모",
+    "양볼 제모",
+    "이마(3자) 제모",
+    "입주변 제모",
+    "이마(전체) 제모",
+    "턱밑 제모",
+    "구렛나루 제모",
+    "뒷목(헤어라인) 제모",
+    "구렛나루 + 양볼 제모",
+    "겨드랑이 제모",
+    "반팔라인(상완의 절반까지) 제모",
+    "가슴-소(유륜만) 제모"
+  ],
+  "missing_doctors": [],
+  "missing_prices": [],
+  "coverage_score": {
+    "equipment": 100,
+    "treatment": 68,
+    "doctor": 100,
+    "overall": 87
+  },
+  "issues": [
+    "추출 결과의 '장비' 목록에 실제로는 시술, 제품 또는 소독제인 항목들이 포함되어 있습니다 (예: V-OLET, Baby shot, Cinderella shot, Jjongal shot, Rainbow Therapy, Contour shot, Face Extinction shot, Virovitro, Botox, Filler, Rejuran Healer, Sculptra).",
+    "원본 마크다운에는 명시되지 않은 여러 장비 (IPL, Yellow Laser, Intracel, Allegro, Coretox, Ulthermage, Volnewmer) 및 의사 (김하중, 유준환)가 추출 결과에 포함되어 있습니다. 이는 추출 범위가 제공된 마크다운보다 넓거나 다른 소스에서 정보를 가져왔을 수 있음을 시사합니다.",
+    "원본 마크다운에 개별 시술에 대한 명시적인 가격 정보가 없어 'missing_prices' 항목을 판단할 수 없습니다."
+  ]
+}

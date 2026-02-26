@@ -1,0 +1,501 @@
+{
+  "hospital_name": "라뷰티의원",
+  "doctors": [
+    {
+      "name": "유운영",
+      "title": "대표원장",
+      "specialty": null,
+      "career": [
+        "EUNSUNG GLOBAL 자문의",
+        "JEISYS MEDICAL 자문의",
+        "SKINREX 키닥터 & 자문의",
+        "K.L GLOBAL 키닥터 & 자문의",
+        "ULTRA V 키닥터 & 자문의"
+      ],
+      "education": [
+        "이화여자대학교 의학전문대학원 졸업",
+        "이화여자대학교 의학전문대학원 의학박사"
+      ],
+      "certifications": [
+        "한국미용외과의학회(KAAS) 학술이사",
+        "국제미용항노화학회(IA3M) 대외협력이사",
+        "대한레이저피부모발학회(KADAT) 정회원",
+        "대한미용성형레이저의학회(KASLS) 정회원",
+        "대한비만연구의사회(DAOR) 정회원"
+      ],
+      "confidence": "confirmed"
+    }
+  ],
+  "academic_activities": [
+    {
+      "type": "기타",
+      "title": "EUNSUNG GLOBAL 자문의",
+      "year": null,
+      "doctor_name": "유운영",
+      "source_text": "EUNSUNG GLOBAL 자문의"
+    },
+    {
+      "type": "기타",
+      "title": "JEISYS MEDICAL 자문의",
+      "year": null,
+      "doctor_name": "유운영",
+      "source_text": "JEISYS MEDICAL 자문의"
+    },
+    {
+      "type": "기타",
+      "title": "SKINREX 키닥터 & 자문의",
+      "year": null,
+      "doctor_name": "유운영",
+      "source_text": "SKINREX 키닥터 & 자문의"
+    },
+    {
+      "type": "기타",
+      "title": "K.L GLOBAL 키닥터 & 자문의",
+      "year": null,
+      "doctor_name": "유운영",
+      "source_text": "K.L GLOBAL 키닥터 & 자문의"
+    },
+    {
+      "type": "기타",
+      "title": "ULTRA V 키닥터 & 자문의",
+      "year": null,
+      "doctor_name": "유운영",
+      "source_text": "ULTRA V 키닥터 & 자문의"
+    },
+    {
+      "type": "기타",
+      "title": "한국미용외과의학회(KAAS) 학술이사",
+      "year": null,
+      "doctor_name": "유운영",
+      "source_text": "한국미용외과의학회(KAAS) 학술이사"
+    },
+    {
+      "type": "기타",
+      "title": "국제미용항노화학회(IA3M) 대외협력이사",
+      "year": null,
+      "doctor_name": "유운영",
+      "source_text": "국제미용항노화학회(IA3M) 대외협력이사"
+    },
+    {
+      "type": "기타",
+      "title": "대한레이저피부모발학회(KADAT) 정회원",
+      "year": null,
+      "doctor_name": "유운영",
+      "source_text": "대한레이저피부모발학회(KADAT) 정회원"
+    },
+    {
+      "type": "기타",
+      "title": "대한미용성형레이저의학회(KASLS) 정회원",
+      "year": null,
+      "doctor_name": "유운영",
+      "source_text": "대한미용성형레이저의학회(KASLS) 정회원"
+    },
+    {
+      "type": "기타",
+      "title": "대한비만연구의사회(DAOR) 정회원",
+      "year": null,
+      "doctor_name": "유운영",
+      "source_text": "대한비만연구의사회(DAOR) 정회원"
+    }
+  ],
+  "medical_devices": [
+    {
+      "name": "Ulthera Prime",
+      "korean_name": "울쎄라피 프라임",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": "9년만에 업그레이드 된 NEW 울쎄라!",
+      "source": "text"
+    },
+    {
+      "name": "Titanium",
+      "korean_name": "티타늄",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_TIGHTENING",
+      "description": "리프팅, 타이트닝, 화이트닝 3가지 효과를 동시에!",
+      "source": "text"
+    },
+    {
+      "name": "TuneFace",
+      "korean_name": "튠페이스",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_TIGHTENING",
+      "description": "고주파를 이용한 근본적인 탄력 개선",
+      "source": "text"
+    },
+    {
+      "name": "Eve Titan",
+      "korean_name": "이브 타이탄",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": "피부 속 근육까지 당겨주는 중안부 축소 리프팅",
+      "source": "text"
+    },
+    {
+      "name": "Sylfirm X",
+      "korean_name": "실펌-X",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_MICRONEEDLE",
+      "description": "고주파 열을 이용한 저자극 프락셔널 레이저",
+      "source": "text"
+    },
+    {
+      "name": "PICOHI",
+      "korean_name": "PICOHI",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": null,
+      "source": "image_page"
+    },
+    {
+      "name": "AMALIAN",
+      "korean_name": "AMALIAN",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "filler",
+      "description": null,
+      "source": "image_page"
+    },
+    {
+      "name": "LDM",
+      "korean_name": "LDM",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "IPL",
+      "description": null,
+      "source": "image_page"
+    },
+    {
+      "name": "Rejuran",
+      "korean_name": "리쥬란",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "booster",
+      "description": null,
+      "source": "image_page"
+    }
+  ],
+  "treatments": [
+    {
+      "name": "울쎄라피 프라임",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "hifu",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "티타늄",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "튠페이스",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "이브 타이탄",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "실펌-X",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "피부 클리닉",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "리프팅 클리닉",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "쁘띠 클리닉",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "메디컬 스킨케어",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "스킨부스터",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "skinbooster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "바디 클리닉",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    }
+  ],
+  "events": [
+    {
+      "title": "2월 이벤트",
+      "type": "시즌",
+      "period": "2월",
+      "discount_info": "더 알찬 혜택으로 만나보세요.",
+      "original_price": null,
+      "event_price": null,
+      "conditions": [],
+      "source": "text"
+    }
+  ],
+  "clinic_categories": [
+    {
+      "name": "피부 클리닉",
+      "treatments": []
+    },
+    {
+      "name": "리프팅 클리닉",
+      "treatments": []
+    },
+    {
+      "name": "쁘띠 클리닉",
+      "treatments": []
+    },
+    {
+      "name": "메디컬 스킨케어",
+      "treatments": []
+    },
+    {
+      "name": "스킨부스터",
+      "treatments": []
+    },
+    {
+      "name": "바디 클리닉",
+      "treatments": []
+    }
+  ],
+  "contact_info": {
+    "email": [],
+    "phone": [
+      {
+        "number": "031.759.2337",
+        "type": "대표"
+      }
+    ],
+    "address": {
+      "full_address": "경기도 성남시 수정구 위례광장로 300 (창곡동 509) 위례중앙역 중앙타워 7층 704호",
+      "sido": "경기도",
+      "sigungu": "성남시 수정구"
+    },
+    "kakao_channel": "https://pf.kakao.com/_xkmeTxl",
+    "naver_booking": null,
+    "naver_place": null,
+    "instagram": null,
+    "facebook": "https://www.facebook.com/labeauty001/",
+    "youtube": null,
+    "blog": "https://m.blog.naver.com/dryulabeauty",
+    "website_url": "https://labeauty.kr",
+    "operating_hours": {
+      "weekday": "월/수/금 AM 10:00 ~ PM 07:00, 화 AM 10:00 ~ PM 09:00, 목 PM 02:00 ~ PM 09:00",
+      "saturday": "AM 09:00 ~ PM 02:00",
+      "sunday": "휴진",
+      "lunch_break": "PM 01:00 ~ PM 02:00 (토요일 제외)"
+    }
+  },
+  "unregistered_equipment": [
+    {
+      "name": "Eve Titan",
+      "korean_name": "이브 타이탄",
+      "suggested_category": "other_device",
+      "source": "website",
+      "reason": "Described as a lifting device, but not in the predefined list."
+    }
+  ],
+  "unregistered_treatments": [],
+  "raw_price_texts": [],
+  "extraction_summary": {
+    "total_doctors": 1,
+    "total_academic": 10,
+    "total_equipment": 9,
+    "total_devices": 7,
+    "total_injectables": 2,
+    "total_treatments": 11,
+    "total_events": 1,
+    "total_categories": 6,
+    "total_contact_channels": 5,
+    "has_email": false,
+    "has_phone": true,
+    "has_kakao": true,
+    "has_sns": true,
+    "price_available_ratio": "0/11",
+    "unregistered_equipment_count": 1,
+    "unregistered_treatments_count": 0
+  }
+}

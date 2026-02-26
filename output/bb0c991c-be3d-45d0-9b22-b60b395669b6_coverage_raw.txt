@@ -1,0 +1,20 @@
+{
+  "missing_equipments": [
+    "엘씨이밤",
+    "윤곽주사"
+  ],
+  "missing_treatments": [],
+  "missing_doctors": [],
+  "missing_prices": [],
+  "coverage_score": {
+    "equipment": 90,
+    "treatment": 100,
+    "doctor": 100,
+    "overall": 97
+  },
+  "issues": [
+    "추출 결과의 '장비' 목록에 원본 마크다운에 없는 'Dermashine', 'PICO Laser'가 포함되어 있습니다.",
+    "추출 결과의 '시술' 목록에 원본 마크다운에 없는 25개의 시술(예: '상안검 + 하안검 + 지방 재배치', '중, 고등학생 쌍꺼풀 절개', '엘라비에 리뉴얼 6cc + 여우필 1회' 등)이 포함되어 있습니다. 이는 다른 출처에서 추출되었거나 추론된 정보로 보입니다.",
+    "원본 마크다운에 가격 정보가 명시되어 있지 않아 'missing_prices' 항목을 검증할 수 없습니다."
+  ]
+}

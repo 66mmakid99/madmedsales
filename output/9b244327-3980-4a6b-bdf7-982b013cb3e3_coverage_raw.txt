@@ -1,0 +1,18 @@
+{
+  "missing_equipments": [],
+  "missing_treatments": [
+    "나의미래 퀵 눈밑지방제거 수술"
+  ],
+  "missing_doctors": [],
+  "missing_prices": [],
+  "coverage_score": {
+    "equipment": 100,
+    "treatment": 96,
+    "doctor": 100,
+    "overall": 98
+  },
+  "issues": [
+    "추출된 '시술' 목록에 실제 시술 메뉴가 아닌 리뷰 제목(예: '나의미래 울쎄라 후기') 및 섹션/카테고리명(예: '나의미래 시그니처')이 포함되어 있어 시술 정의의 일관성이 부족합니다.",
+    "장비 및 시술명에서 원본과 추출 결과 간에 영문 음차(예: '리팟레이저' -> 'Reepot Laser', '리쥬란' -> 'Rejuran', '보톡스' -> 'Botox') 또는 세부 정보 누락(예: '리프테라2' -> 'Liftera', '리팟레이저 1+1 이벤트' -> '리팟레이저 1+1')이 발견되었습니다."
+  ]
+}

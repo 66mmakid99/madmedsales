@@ -1,77 +1,19 @@
 {
-  "hospital_name": "엔비의원",
+  "hospital_name": "엠비의원",
   "doctors": [
     {
       "name": "기문상",
       "title": "원장",
-      "specialty": [
-        "비만",
-        "탈모",
-        "모발이식"
-      ],
+      "specialty": "비만, 탈모&모발이식",
       "career": [
-        "21년간 꾸준히 걸어왔습니다."
+        "21년간 비만, 탈모 및 모발이식 분야 진료 및 연구"
       ],
       "education": [],
-      "certifications": [
-        "대한미용성형레이저의학회 제 4대 회장역임",
-        "대한비만미용치료학회 학술강연",
-        "대한비만연구의사회 비만정보학술강연",
-        "대한레이저피부모발학회 학술고문"
-      ],
+      "certifications": [],
       "confidence": "confirmed"
     }
   ],
   "academic_activities": [
-    {
-      "type": "교과서집필",
-      "title": "[책 편찬] 대한레이저피부모발학회에서 '모발학' 탈모책 편찬",
-      "year": null,
-      "doctor_name": null,
-      "source_text": "[책 편찬] 대한레이저피부모발학회에서 '모발학' 탈모책 편찬"
-    },
-    {
-      "type": "학회발표",
-      "title": "2025 대한미용성형레이저의학회 미용의료기기 박람회 및 춘계학술대회 학회강연",
-      "year": 2025,
-      "doctor_name": null,
-      "source_text": "2025년 [학회강연]2025 대한미용성형레이저의학회 미용의료기기 박람회 및 춘계학술대회"
-    },
-    {
-      "type": "학회발표",
-      "title": "K-Med Expo Vietnam 2024 제2회 베트남 의료기기 박람회 학회강연",
-      "year": 2024,
-      "doctor_name": null,
-      "source_text": "2024년 [학회강연] K-Med Expo Vietnam 2024 제2회 베트남 의료기기 박람회"
-    },
-    {
-      "type": "학회발표",
-      "title": "AFAS 아시아국제미용의학포럼 제20회 한국미용외과의학회 학술대회",
-      "year": 2024,
-      "doctor_name": null,
-      "source_text": "2024년 AFAS 아시아국제미용의학포럼 제20회 한국미용외과의학회 학술대회"
-    },
-    {
-      "type": "학회발표",
-      "title": "2025 ASLS와 ICAP 학술대회 참가 및 강연",
-      "year": 2025,
-      "doctor_name": null,
-      "source_text": "2025 ASLS와 ICAP 학술대회 참가 및 강연"
-    },
-    {
-      "type": "학회발표",
-      "title": "2025 ASLS TOKYO 학술대회",
-      "year": 2025,
-      "doctor_name": null,
-      "source_text": "2025 ASLS TOKYO 학술대회"
-    },
-    {
-      "type": "학회발표",
-      "title": "2025 안산시의사회 춘계학술대회",
-      "year": 2025,
-      "doctor_name": null,
-      "source_text": "2025 안산시의사회 춘계학술대회"
-    },
     {
       "type": "기타",
       "title": "대한미용성형레이저의학회 제 4대 회장역임",
@@ -80,14 +22,7 @@
       "source_text": "대한미용성형레이저의학회 제 4대 회장역임"
     },
     {
-      "type": "기타",
-      "title": "대한비만미용치료학회 학술강연",
-      "year": null,
-      "doctor_name": "기문상",
-      "source_text": "대한비만미용치료학회 학술강연"
-    },
-    {
-      "type": "기타",
+      "type": "학회발표",
       "title": "대한비만연구의사회 비만정보학술강연",
       "year": null,
       "doctor_name": "기문상",
@@ -99,119 +34,330 @@
       "year": null,
       "doctor_name": "기문상",
       "source_text": "대한레이저피부모발학회 학술고문"
-    }
-  ],
-  "medical_devices": [
-    {
-      "name": "윤곽조각주사",
-      "korean_name": "윤곽조각주사",
-      "manufacturer": null,
-      "device_type": "injectable",
-      "subcategory": "lipolytic",
-      "description": "불필요한 두툼한 볼살의 지방을 파괴함과 동시에 피부탄력 개선과 얼굴라인의 밸런스를 매끄럽게 개선",
-      "source": "image_banner"
     },
     {
-      "name": "스킨부스터",
-      "korean_name": "스킨부스터",
-      "manufacturer": null,
-      "device_type": "injectable",
-      "subcategory": "booster",
-      "description": null,
-      "source": "image_banner"
+      "type": "교과서집필",
+      "title": "대한레이저피부모발학회에서 '모발학' 탈모책 편찬",
+      "year": null,
+      "doctor_name": "기문상",
+      "source_text": "[책 편찬] 대한레이저피부모발학회에서 '모발학' 탈모책 편찬"
+    },
+    {
+      "type": "학회발표",
+      "title": "ASLS와 ICAP 학술대회 참가 및 강연",
+      "year": 2025,
+      "doctor_name": "기문상",
+      "source_text": "2025 ASLS와 ICAP 학술대회 참가 및 강연"
+    },
+    {
+      "type": "학회발표",
+      "title": "ASLS TOKYO 학술대회",
+      "year": 2025,
+      "doctor_name": "기문상",
+      "source_text": "2025 ASLS TOKYO 학술대회"
+    },
+    {
+      "type": "학회발표",
+      "title": "안산시의사회 춘계학술대회",
+      "year": 2025,
+      "doctor_name": "기문상",
+      "source_text": "2025 안산시의사회 춘계학술대회"
+    },
+    {
+      "type": "학회발표",
+      "title": "대한미용성형레이저의학회 미용의료기기 박람회 및 춘계학술대회",
+      "year": 2025,
+      "doctor_name": "기문상",
+      "source_text": "2025년 [학회강연]2025 대한미용성형레이저의학회 미용의료기기 박람회 및 춘계학술대회"
+    },
+    {
+      "type": "학회발표",
+      "title": "K-Med Expo Vietnam 2024 제2회 베트남 의료기기 박람회",
+      "year": 2024,
+      "doctor_name": "기문상",
+      "source_text": "2024년 [학회강연] K-Med Expo Vietnam 2024 제2회 베트남 의료기기 박람회"
+    },
+    {
+      "type": "학회발표",
+      "title": "AFAS 아시아국제미용의학포럼 제20회 한국미용외과의학회 학술대회",
+      "year": 2024,
+      "doctor_name": "기문상",
+      "source_text": "2024년 AFAS 아시아국제미용의학포럼 제20회 한국미용외과의학회 학술대회"
     }
   ],
+  "medical_devices": [],
   "treatments": [
     {
       "name": "윤곽조각주사",
-      "price": null,
-      "price_display": null,
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
       "is_package": false,
-      "package_detail": null,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "other",
+      "price_display": "상담필요",
       "session_info": null,
-      "body_part": "얼굴",
-      "category": "얼굴윤곽"
-    },
-    {
-      "name": "스킨부스터",
-      "price": null,
-      "price_display": null,
-      "is_package": false,
-      "package_detail": null,
-      "session_info": null,
-      "body_part": null,
-      "category": "피부개선"
-    },
-    {
-      "name": "G팡 DIET",
-      "price": null,
-      "price_display": null,
-      "is_package": false,
-      "package_detail": null,
-      "session_info": null,
-      "body_part": null,
-      "category": "비만"
-    },
-    {
-      "name": "모발이식",
-      "price": null,
-      "price_display": null,
-      "is_package": false,
-      "package_detail": null,
-      "session_info": null,
-      "body_part": null,
-      "category": "탈모"
-    },
-    {
-      "name": "두피문신",
-      "price": null,
-      "price_display": null,
-      "is_package": false,
-      "package_detail": null,
-      "session_info": null,
-      "body_part": "두피",
-      "category": "탈모"
+      "body_part": "V라인 얼굴, 볼살"
     },
     {
       "name": "NB 여드름 실속 패키지",
-      "price": null,
-      "price_display": null,
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
       "is_package": true,
-      "package_detail": {
-        "included_treatments": [
-          "여드름 치료"
-        ],
-        "estimated_unit_prices": null,
-        "estimation_method": "패키지명에서 추정"
-      },
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "other",
+      "price_display": "상담필요",
       "session_info": null,
-      "body_part": null,
-      "category": "피부개선"
+      "body_part": null
+    },
+    {
+      "name": "NB 반영구 두피문신 EVENT",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "screenshot",
+      "category": "scalp_tattoo",
+      "price_display": "상담필요",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "탈모 치료",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "hair_loss",
+      "price_display": "상담필요",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "모발이식",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "hair_loss",
+      "price_display": "상담필요",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "두피문신",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "scalp_tattoo",
+      "price_display": "상담필요",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "색소 치료",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "pigmentation",
+      "price_display": "상담필요",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "주름 치료",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "wrinkle_treatment",
+      "price_display": "상담필요",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "흉터 치료",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "scar_treatment",
+      "price_display": "상담필요",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "lifting",
+      "price_display": "상담필요",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "스킨부스터",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "skinbooster",
+      "price_display": "상담필요",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "맞춤 체형 시술",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "body_shaping",
+      "price_display": "상담필요",
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "G팡 DIET",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "obesity",
+      "price_display": "상담필요",
+      "session_info": null,
+      "body_part": null
     }
   ],
   "events": [
     {
-      "title": "PROMOTION",
+      "title": "3월 휴진 안내",
       "type": "기타",
-      "period": null,
-      "discount_info": null,
+      "period": "3월 2일 (월)",
+      "discount_info": "대체공휴일 휴진",
       "original_price": null,
       "event_price": null,
       "conditions": [],
-      "source": "image_banner"
-    },
-    {
-      "title": "NB 반영구 두피문신 EVENT",
-      "type": "기타",
-      "period": null,
-      "discount_info": null,
-      "original_price": null,
-      "event_price": null,
-      "conditions": [
-        "매일 모자나 가발로 탈모를 가리시는 분!",
-        "매일 아침 흑채로 두피를 커버하시는 분!"
-      ],
-      "source": "image_banner"
+      "source": "screenshot"
     },
     {
       "title": "NB 여드름 실속 패키지",
@@ -221,7 +367,17 @@
       "original_price": null,
       "event_price": null,
       "conditions": [],
-      "source": "image_banner"
+      "source": "screenshot"
+    },
+    {
+      "title": "NB 반영구 두피문신 EVENT",
+      "type": "기타",
+      "period": null,
+      "discount_info": null,
+      "original_price": null,
+      "event_price": null,
+      "conditions": [],
+      "source": "screenshot"
     }
   ],
   "clinic_categories": [
@@ -240,22 +396,14 @@
         "주름 치료",
         "흉터 치료",
         "리프팅",
-        "스킨부스터",
-        "여드름 치료"
+        "스킨부스터"
       ]
     },
     {
       "name": "비만 클리닉",
       "treatments": [
         "맞춤 체형 시술",
-        "비만 치료",
         "G팡 DIET"
-      ]
-    },
-    {
-      "name": "여드름 클리닉",
-      "treatments": [
-        "여드름 치료"
       ]
     }
   ],
@@ -269,16 +417,16 @@
       {
         "number": "031-485-7550",
         "type": "상담",
-        "specific_for": "비만클리닉"
+        "description": "비만클리닉"
       },
       {
         "number": "031-485-7570",
         "type": "상담",
-        "specific_for": "탈모, 모발이식"
+        "description": "탈모.모발이식"
       }
     ],
     "address": {
-      "full_address": "경기도 안산시 단원구 고잔로 76 영풍프라자 2층 (고잔동 533-3 영풍프라자 213,214호)",
+      "full_address": "경기도 안산시 단원구 고잔로 76 영풍빌딩 2층",
       "sido": "경기도",
       "sigungu": "안산시 단원구"
     },
@@ -287,30 +435,56 @@
     "naver_place": null,
     "instagram": null,
     "facebook": null,
-    "youtube": null,
+    "youtube": "https://www.youtube.com/channel/UCdfR-lwsCdvllhlrDPhTYzA",
     "blog": null,
     "website_url": "http://talmostop.com",
     "operating_hours": {
-      "weekday": "월-금 AM 10:00 ~ PM 07:00",
-      "saturday": "AM 10:00 ~ PM 02:00 (점심시간 없음)",
+      "weekday": "AM 10:00 ~ PM 07:00",
+      "saturday": "AM 10:00 ~ PM 02:00",
       "sunday": "휴무",
       "lunch_break": "PM 01:00 ~ PM 02:00 (토요일 제외)"
     }
   },
+  "unregistered_equipment": [],
+  "unregistered_treatments": [
+    {
+      "name": "윤곽조각주사",
+      "source": "screenshot",
+      "context": "작고 가름한 V라인 얼굴 윤곽조각주사"
+    },
+    {
+      "name": "NB 여드름 실속 패키지",
+      "source": "screenshot",
+      "context": "NB 여드름 실속 패키지"
+    },
+    {
+      "name": "NB 반영구 두피문신 EVENT",
+      "source": "screenshot",
+      "context": "NB 반영구 두피문신 EVENT"
+    },
+    {
+      "name": "G팡 DIET",
+      "source": "text",
+      "context": "G팡 DIET"
+    }
+  ],
+  "raw_price_texts": [],
   "extraction_summary": {
     "total_doctors": 1,
-    "total_academic": 11,
+    "total_academic": 10,
     "total_equipment": 0,
     "total_devices": 0,
-    "total_injectables": 2,
-    "total_treatments": 6,
+    "total_injectables": 0,
+    "total_treatments": 13,
     "total_events": 3,
-    "total_categories": 4,
-    "total_contact_channels": 4,
+    "total_categories": 3,
+    "total_contact_channels": 6,
     "has_email": false,
     "has_phone": true,
     "has_kakao": true,
-    "has_sns": false,
-    "price_available_ratio": "0/6"
+    "has_sns": true,
+    "price_available_ratio": "0/13",
+    "unregistered_equipment_count": 0,
+    "unregistered_treatments_count": 4
   }
 }

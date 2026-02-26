@@ -1,0 +1,15 @@
+{
+  "missing_equipments": [],
+  "missing_treatments": [],
+  "missing_doctors": [],
+  "missing_prices": [],
+  "coverage_score": {
+    "equipment": 100,
+    "treatment": 100,
+    "doctor": 100,
+    "overall": 100
+  },
+  "issues": [
+    "'리프팅'은 시술 분류명으로, 개별 시술이 아니므로 추출 결과에서 제외되어야 합니다."
+  ]
+}

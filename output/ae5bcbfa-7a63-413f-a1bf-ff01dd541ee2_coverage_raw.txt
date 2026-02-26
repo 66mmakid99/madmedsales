@@ -1,0 +1,23 @@
+{
+  "missing_equipments": [],
+  "missing_treatments": [
+    "주름필러",
+    "필러제거",
+    "이물질제거",
+    "스킨부스터",
+    "녹는실",
+    "로빈리프팅",
+    "레이져리프팅"
+  ],
+  "missing_doctors": [],
+  "missing_prices": [],
+  "coverage_score": {
+    "equipment": 100,
+    "treatment": 53,
+    "doctor": 100,
+    "overall": 81
+  },
+  "issues": [
+    "추출된 '장비' 목록에 '양악필러, 수술코필러, 엉덩이필러, 눈두덩이필러, 주름필러' 등 시술로 분류되어야 할 항목들이 포함되어 있습니다. 원본 마크다운에는 구체적인 의료기기(예: 써마지 FLX) 명칭이 없습니다."
+  ]
+}

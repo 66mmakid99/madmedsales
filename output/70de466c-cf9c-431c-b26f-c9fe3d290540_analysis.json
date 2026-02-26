@@ -1,0 +1,1132 @@
+{
+  "hospital_name": "탐클리닉",
+  "doctors": [
+    {
+      "name": "권혜석",
+      "title": "원장님",
+      "specialty": null,
+      "career": [
+        "대한비만미용치료학회 학술대회에 연자로 나서 스킨 타이트닝/고주파를 이용한 비만치료의 원리 이해하기 등에 대한 주제로 강의"
+      ],
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    },
+    {
+      "name": "조아연",
+      "title": "원장",
+      "specialty": null,
+      "career": null,
+      "education": [],
+      "certifications": [],
+      "confidence": "confirmed"
+    }
+  ],
+  "academic_activities": [
+    {
+      "type": "학회발표",
+      "title": "스킨 타이트닝/고주파를 이용한 비만치료의 원리 이해하기 등에 대한 주제로 강의",
+      "year": null,
+      "doctor_name": "권혜석",
+      "source_text": "권혜석 원장님이 회장을 맡고 있는 대한비만미용치료학회학술대회에 연자로 나서 스킨 타이트닝/고주파를 이용한 비만치료의 원리 이해하기 등에 대한 주제로 강의를.."
+    },
+    {
+      "type": "기타",
+      "title": "탐센티주사 특허청 상표등록",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "탐센티주사 특허청 상표등록"
+    }
+  ],
+  "medical_devices": [
+    {
+      "name": "InMode",
+      "korean_name": "인모드",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_TIGHTENING",
+      "description": null,
+      "source": "image_banner"
+    },
+    {
+      "name": "Thermage",
+      "korean_name": "써마지",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_TIGHTENING",
+      "description": null,
+      "source": "image_banner"
+    },
+    {
+      "name": "TuneFace",
+      "korean_name": "튠페이스",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF_TIGHTENING",
+      "description": null,
+      "source": "image_banner"
+    },
+    {
+      "name": "Shurink",
+      "korean_name": "슈링크",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": null,
+      "source": "image_banner"
+    },
+    {
+      "name": "그린셀레이저",
+      "korean_name": "그린셀레이저",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Fraxel",
+      "korean_name": "더블프락셀",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "바큐메드",
+      "korean_name": "바큐메드",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "탐센티주사",
+      "korean_name": "탐센티주사",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "lipolytic",
+      "description": "등살, 옆구리살, 팔뚝살, 복부, 허벅지 등 내가 원하는 부위의 지방제거를 위한 탐센티주사는 가벼운 주사시술이자 다양하에 전신 어느부위나 적용이 가능하기때문에 다이어트의 훌륭한 도우미가 될 수 있고..",
+      "source": "text"
+    },
+    {
+      "name": "탐포소닉",
+      "korean_name": "탐포소닉",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "슬리머스",
+      "korean_name": "슬리머스",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "사이저",
+      "korean_name": "사이저",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "울트라포커스",
+      "korean_name": "울트라포커스",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "SilhouetteSoft",
+      "korean_name": "실루엣소프트",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "thread",
+      "description": "스컬트라와 리프팅의 콜라보레이션! 원하는 대로 채우고 당기는 페이스 리모델링",
+      "source": "text"
+    },
+    {
+      "name": "Botox",
+      "korean_name": "보톡스",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "botox",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Filler",
+      "korean_name": "필러",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "filler",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Rejuran",
+      "korean_name": "리쥬란힐러",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "booster",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "뉴양악주사",
+      "korean_name": "뉴양악주사",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "lipolytic",
+      "description": "양악주사의 원조, 탐클리닉 수술 없이 작고 가름한 얼굴라인 완성!!",
+      "source": "image_page"
+    },
+    {
+      "name": "핑크주사",
+      "korean_name": "핑크주사",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "booster",
+      "description": "셀럽들의 First Choice! 자연스럽게 빛나는 피부 솔루션 프리미엄 안티에이징의 시작!",
+      "source": "image_page"
+    },
+    {
+      "name": "Sculptra",
+      "korean_name": "스컬트라",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "collagen_stimulator",
+      "description": null,
+      "source": "text"
+    }
+  ],
+  "treatments": [
+    {
+      "name": "뉴양악주사",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "lipolytic",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "옴므패키지",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": true,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "VIP올인원레이저",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": true,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "콰트로리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [
+        "인모드",
+        "써마지",
+        "튠페이스",
+        "슈링크"
+      ],
+      "is_package": true,
+      "is_addon": false,
+      "source": "website",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "미백 그린셀레이저",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "다이나믹 여드름파괴술",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "여드름흉터 더블프락셀",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "난치성 기미 클리어",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "안면홍조 클리어",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "DMT 모공클리어",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "튠바디",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "바큐메드",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "탐센티주사",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "lipolytic",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "탐포소닉",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "슬리머스",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "사이저",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "울트라포커스",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "hifu",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "원데이 더블 스키니",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "lipolytic",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "맞춤 비만 약처방",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "튠페이스",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "인모드",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "써마지",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "rf",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "슈링크",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "hifu",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "실루엣소프트",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "thread",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "볼륨리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "보톡스",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "botox",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "필러",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "filler",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "아가주사",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "skinbooster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "리쥬란힐러",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "skinbooster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "핑크주사",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "image_page",
+      "category": "skinbooster",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "얼굴 리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "text",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": "얼굴"
+    }
+  ],
+  "events": [
+    {
+      "title": "이달의 핫이슈",
+      "type": "시즌",
+      "period": "이달",
+      "discount_info": null,
+      "original_price": null,
+      "event_price": null,
+      "conditions": [],
+      "source": "banner"
+    }
+  ],
+  "clinic_categories": [
+    {
+      "name": "TAM CLINIC",
+      "treatments": []
+    },
+    {
+      "name": "TAM No.1 BEST",
+      "treatments": [
+        "뉴양악주사",
+        "옴므패키지",
+        "VIP올인원레이저",
+        "콰트로리프팅"
+      ]
+    },
+    {
+      "name": "TAM SKIN",
+      "treatments": [
+        "미백 그린셀레이저",
+        "다이나믹 여드름파괴술",
+        "여드름흉터 더블프락셀",
+        "난치성 기미 클리어",
+        "안면홍조 클리어",
+        "DMT 모공클리어"
+      ]
+    },
+    {
+      "name": "TAM BODY",
+      "treatments": [
+        "튠바디",
+        "바큐메드",
+        "탐센티주사",
+        "탐포소닉",
+        "슬리머스",
+        "사이저",
+        "울트라포커스",
+        "원데이 더블 스키니",
+        "맞춤 비만 약처방"
+      ]
+    },
+    {
+      "name": "LIFTING",
+      "treatments": [
+        "튠페이스",
+        "인모드",
+        "써마지",
+        "슈링크",
+        "실루엣소프트",
+        "볼륨리프팅"
+      ]
+    },
+    {
+      "name": "ANTI-AGING",
+      "treatments": [
+        "뉴양악주사",
+        "아가주사",
+        "리쥬란힐러"
+      ]
+    },
+    {
+      "name": "줄기세포클리닉",
+      "treatments": []
+    },
+    {
+      "name": "바이어간츠힐링센터",
+      "treatments": []
+    },
+    {
+      "name": "메디컬 에스테틱",
+      "treatments": []
+    }
+  ],
+  "contact_info": {
+    "email": [],
+    "phone": [
+      {
+        "number": "02.3444.5975",
+        "type": "대표"
+      },
+      {
+        "number": "02.3444.5974",
+        "type": "대표"
+      }
+    ],
+    "address": {
+      "full_address": "서울 강남구 도산대로57길 6(청담동) 에덴5빌딩 2F/B1",
+      "sido": "서울",
+      "sigungu": "강남구"
+    },
+    "kakao_channel": "tamclinic862",
+    "naver_booking": null,
+    "naver_place": null,
+    "instagram": null,
+    "facebook": null,
+    "youtube": null,
+    "blog": null,
+    "website_url": "http://www.tamclinic.co.kr/",
+    "operating_hours": {
+      "weekday": "월, 화, 수: 오전 10:00 ~ 오후 07:00, 금요일: 오전 10:00 ~ 오후 09:00",
+      "saturday": "오전 10:00 ~ 오후 02:00",
+      "sunday": "휴무",
+      "lunch_break": null,
+      "other_notes": "목요일 휴진, 공휴일 휴무"
+    }
+  },
+  "unregistered_equipment": [
+    {
+      "name": "그린셀레이저",
+      "korean_name": "그린셀레이저",
+      "suggested_category": "LASER",
+      "source": "text",
+      "reason": "사전에 없는 레이저 장비"
+    },
+    {
+      "name": "바큐메드",
+      "korean_name": "바큐메드",
+      "suggested_category": "OTHER_DEVICE",
+      "source": "text",
+      "reason": "사전에 없는 바디 관리 장비"
+    },
+    {
+      "name": "탐포소닉",
+      "korean_name": "탐포소닉",
+      "suggested_category": "OTHER_DEVICE",
+      "source": "text",
+      "reason": "사전에 없는 바디 관리 장비"
+    },
+    {
+      "name": "슬리머스",
+      "korean_name": "슬리머스",
+      "suggested_category": "OTHER_DEVICE",
+      "source": "text",
+      "reason": "사전에 없는 바디 관리 장비"
+    },
+    {
+      "name": "사이저",
+      "korean_name": "사이저",
+      "suggested_category": "OTHER_DEVICE",
+      "source": "text",
+      "reason": "사전에 없는 바디 관리 장비"
+    },
+    {
+      "name": "울트라포커스",
+      "korean_name": "울트라포커스",
+      "suggested_category": "HIFU",
+      "source": "text",
+      "reason": "사전에 없는 HIFU 유사 장비"
+    }
+  ],
+  "unregistered_treatments": [
+    {
+      "name": "뉴양악주사",
+      "source": "website",
+      "context": "탐 No.1 베스트시술"
+    },
+    {
+      "name": "옴므패키지",
+      "source": "website",
+      "context": "탐 No.1 베스트시술"
+    },
+    {
+      "name": "VIP올인원레이저",
+      "source": "website",
+      "context": "탐 No.1 베스트시술"
+    },
+    {
+      "name": "콰트로리프팅",
+      "source": "website",
+      "context": "탐 No.1 베스트시술"
+    },
+    {
+      "name": "미백 그린셀레이저",
+      "source": "website",
+      "context": "탐나는 피부"
+    },
+    {
+      "name": "다이나믹 여드름파괴술",
+      "source": "website",
+      "context": "탐나는 피부"
+    },
+    {
+      "name": "여드름흉터 더블프락셀",
+      "source": "website",
+      "context": "탐나는 피부"
+    },
+    {
+      "name": "난치성 기미 클리어",
+      "source": "website",
+      "context": "탐나는 피부"
+    },
+    {
+      "name": "안면홍조 클리어",
+      "source": "website",
+      "context": "탐나는 피부"
+    },
+    {
+      "name": "DMT 모공클리어",
+      "source": "website",
+      "context": "탐나는 피부"
+    },
+    {
+      "name": "튠바디",
+      "source": "website",
+      "context": "탐나는 바디"
+    },
+    {
+      "name": "바큐메드",
+      "source": "website",
+      "context": "탐나는 바디"
+    },
+    {
+      "name": "탐센티주사",
+      "source": "website",
+      "context": "탐나는 바디"
+    },
+    {
+      "name": "탐포소닉",
+      "source": "website",
+      "context": "탐나는 바디"
+    },
+    {
+      "name": "슬리머스",
+      "source": "website",
+      "context": "탐나는 바디"
+    },
+    {
+      "name": "사이저",
+      "source": "website",
+      "context": "탐나는 바디"
+    },
+    {
+      "name": "울트라포커스",
+      "source": "website",
+      "context": "탐나는 바디"
+    },
+    {
+      "name": "원데이 더블 스키니",
+      "source": "website",
+      "context": "탐나는 바디"
+    },
+    {
+      "name": "맞춤 비만 약처방",
+      "source": "website",
+      "context": "탐나는 바디"
+    },
+    {
+      "name": "볼륨리프팅",
+      "source": "website",
+      "context": "리프팅"
+    },
+    {
+      "name": "아가주사",
+      "source": "website",
+      "context": "안티에이징"
+    },
+    {
+      "name": "얼굴 리프팅",
+      "source": "text",
+      "context": "온라인상담"
+    }
+  ],
+  "raw_price_texts": [],
+  "extraction_summary": {
+    "total_doctors": 2,
+    "total_academic": 2,
+    "total_equipment": 19,
+    "total_devices": 11,
+    "total_injectables": 8,
+    "total_treatments": 31,
+    "total_events": 1,
+    "total_categories": 9,
+    "total_contact_channels": 4,
+    "has_email": false,
+    "has_phone": true,
+    "has_kakao": true,
+    "has_sns": false,
+    "price_available_ratio": "0/31",
+    "unregistered_equipment_count": 6,
+    "unregistered_treatments_count": 22
+  }
+}

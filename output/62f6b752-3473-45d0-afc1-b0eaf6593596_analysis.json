@@ -1,0 +1,57 @@
+{
+  "hospital_name": "인앤아웃의원",
+  "doctors": [],
+  "academic_activities": [],
+  "medical_devices": [],
+  "treatments": [],
+  "events": [],
+  "clinic_categories": [
+    {
+      "name": "레이저클리닉",
+      "treatments": []
+    },
+    {
+      "name": "쁘띠클리닉",
+      "treatments": []
+    },
+    {
+      "name": "피부관리클리닉",
+      "treatments": []
+    }
+  ],
+  "contact_info": {
+    "email": [],
+    "phone": [],
+    "address": null,
+    "kakao_channel": null,
+    "naver_booking": null,
+    "naver_place": null,
+    "instagram": null,
+    "facebook": null,
+    "youtube": null,
+    "blog": null,
+    "website_url": null,
+    "operating_hours": null
+  },
+  "unregistered_equipment": [],
+  "unregistered_treatments": [],
+  "raw_price_texts": [],
+  "extraction_summary": {
+    "total_doctors": 0,
+    "total_academic": 0,
+    "total_equipment": 0,
+    "total_devices": 0,
+    "total_injectables": 0,
+    "total_treatments": 0,
+    "total_events": 0,
+    "total_categories": 3,
+    "total_contact_channels": 0,
+    "has_email": false,
+    "has_phone": false,
+    "has_kakao": false,
+    "has_sns": false,
+    "price_available_ratio": "0/0",
+    "unregistered_equipment_count": 0,
+    "unregistered_treatments_count": 0
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "missing_equipments": [],
+  "missing_treatments": [],
+  "missing_doctors": [],
+  "missing_prices": [],
+  "coverage_score": {
+    "equipment": -1,
+    "treatment": -1,
+    "doctor": 100,
+    "overall": 100
+  },
+  "issues": [
+    "추출 결과의 '시술' 항목들이 '구체적 시술 메뉴'가 아닌 '시술 분류명' 수준으로 추출되어 있습니다. (예: '여드름 치료'는 분류명이며, '아그네스 여드름 치료 1회'와 같은 구체적인 시술 메뉴가 아닙니다.)"
+  ]
+}

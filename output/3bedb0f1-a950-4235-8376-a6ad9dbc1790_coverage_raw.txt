@@ -1,0 +1,27 @@
+{
+  "missing_equipments": [],
+  "missing_treatments": [
+    "점빼기"
+  ],
+  "missing_doctors": [],
+  "missing_prices": [
+    "기미",
+    "안면홍조",
+    "잡티",
+    "주근깨",
+    "검버섯",
+    "엠투투 (M22)",
+    "슈링크 리프팅",
+    "윤곽주사"
+  ],
+  "coverage_score": {
+    "equipment": 100,
+    "treatment": 89,
+    "doctor": 100,
+    "overall": 96
+  },
+  "issues": [
+    "추출 결과에 '미아점', '광명점', '주안점', '성남점', '김포점', '계양점' 등 지점명이 시술로 잘못 분류되어 있습니다.",
+    "추출 결과에 있는 장비 'ULTRA DREAM PICO'는 원본 마크다운 텍스트에 명시적으로 언급되어 있지 않습니다."
+  ]
+}

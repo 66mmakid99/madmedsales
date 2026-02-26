@@ -1,0 +1,27 @@
+{
+  "missing_equipments": [
+    "VBEAM PERFECTA",
+    "10THERMA"
+  ],
+  "missing_treatments": [
+    "스킨 토닝",
+    "여드름 및 흉터 제로 프로젝트",
+    "매끈한 피부 톤업! 색조 및 홍조 개선",
+    "탄력 강화 및 리프팅 프로그램",
+    "탈모 관리의 새로운 트렌드"
+  ],
+  "missing_doctors": [],
+  "missing_prices": [],
+  "coverage_score": {
+    "equipment": 71,
+    "treatment": 83,
+    "doctor": 100,
+    "overall": 85
+  },
+  "issues": [
+    "원본 마크다운에 'PASTEL HUMAN DERMATOLOGY CLINIC (파스텔휴먼 피부과)'와 'yonsei pastel dermatology clinic (연세파스텔피부과)' 두 가지 다른 병원 이름이 혼용되어 사용되었습니다. 이는 데이터 출처의 불일치 또는 명칭의 일관성 부족을 나타낼 수 있습니다.",
+    "장비 'VBEAM PERFECTA'는 추출 결과에 'Vbeam'으로 부분적으로만 추출되어 'Perfecta' 부분이 누락되었습니다.",
+    "장비 '10THERMA'는 추출 결과에 'Tensera'로 추출되어 공식 명칭과 철자 차이가 있습니다.",
+    "일부 시술 프로그램 ('여드름 및 흉터 제로 프로젝트', '매끈한 피부 톤업! 색조 및 홍조 개선', '탄력 강화 및 리프팅 프로그램', '탈모 관리의 새로운 트렌드')은 추출 결과에 핵심 시술명(예: '여드름 치료', '흉터 치료')만 포함되고 전체 프로그램 명칭은 누락되었습니다."
+  ]
+}
