@@ -4,7 +4,7 @@
     "updated": "2026-02-26",
     "description": "MADMEDSALES 데이터 분류 사전 - 코드에서 로드하여 Gemini 프롬프트에 주입",
     "usage": "이 파일의 내용을 Gemini 프롬프트 system instruction에 포함시켜 분류 정확도를 높임",
-    "changelog": "v1.4: v57-unmatched-devices 263개 분석 → 147개 신규 장비 추가 (총 115→262). RF_TIGHTENING +15, HIFU +7, RF_MICRONEEDLE +6, LASER +46, IPL +7, BODY +13, SKINBOOSTER +1, OTHER_DEVICE +47, INJECTOR +5, INJECTABLE +1. 재활/진단/비장비 67개 제외 (non_aesthetic_devices 39, too_generic 16, manufacturer 10, ambiguous 2). Korean/English 변형 병합 (에어젯=airjet, 코레지=corege, 버츄rf=VirtueRF, denserty=Density 등)"
+    "changelog": "v1.4.1: 미등록 75종 재분석 → 10개 신규 추가 + 3개 변형 보강 + 7개 exclude 추가 (총 262→272). v1.4: v57-unmatched-devices 263개 분석 → 147개 신규 장비 추가 (총 115→262)."
   },
 
   "equipment": {
@@ -67,7 +67,9 @@
       { "standard": "UltraDuo", "ko": ["울트라듀오"], "en": ["Ultra Duo", "ultra duo"], "gen": [] },
       { "standard": "UltraCell", "ko": ["울트라셀"], "en": ["UltraCell", "Ultracell"], "gen": [] },
       { "standard": "UlFace", "ko": ["울페이스"], "en": ["Ul Face", "UlFace"], "gen": [] },
-      { "standard": "Tamposonic", "ko": ["탐포소닉"], "en": ["Tamposonic", "tamposonic"], "gen": [] }
+      { "standard": "Tamposonic", "ko": ["탐포소닉"], "en": ["Tamposonic", "tamposonic"], "gen": [] },
+      { "standard": "NewTera", "ko": ["뉴테라", "NEW 뉴테라", "new 뉴테라"], "en": ["NewTera", "New Tera", "new tera"], "gen": [] },
+      { "standard": "MovingHIFU", "ko": ["무빙하이푸", "무빙하이푸 바디레이저"], "en": ["Moving HIFU", "moving hifu"], "gen": [] }
     ],
 
     "RF_MICRONEEDLE": [
@@ -93,7 +95,7 @@
       { "standard": "PicoSure", "ko": ["피코슈어"], "en": ["PicoSure", "PICOSURE", "picosure laser"], "gen": [] },
       { "standard": "PicoWay", "ko": ["피코웨이"], "en": ["PicoWay", "PICOWAY"], "gen": [] },
       { "standard": "PicoPlus", "ko": ["피코플러스"], "en": ["PicoPlus"], "gen": [] },
-      { "standard": "RevLite", "ko": ["레블라이트"], "en": ["RevLite", "REVLITE"], "gen": [] },
+      { "standard": "RevLite", "ko": ["레블라이트"], "en": ["RevLite", "REVLITE", "Revlite Laser Toning", "revlite laser toning"], "gen": [] },
       { "standard": "Fraxel", "ko": ["프락셀"], "en": ["Fraxel", "FRAXEL"], "gen": ["Dual"] },
       { "standard": "Clarity", "ko": ["클라리티"], "en": ["Clarity", "CLARITY", "Clarity Pro", "clarity pro"], "gen": ["II", "Pro"] },
       { "standard": "GentleMax", "ko": ["젠틀맥스"], "en": ["GentleMax", "GENTLEMAX", "GentleMax Pro Plus", "gentlemax pro plus"], "gen": ["Pro", "Pro Plus"] },
@@ -145,7 +147,7 @@
       { "standard": "EllieLaser", "ko": ["엘리레이저"], "en": ["Ellie Laser", "ellie laser"], "gen": [] },
       { "standard": "GVLaser", "ko": ["GV레이저"], "en": ["GV Laser", "gv laser"], "gen": [] },
       { "standard": "TheRubyQ", "ko": ["더루비큐"], "en": ["The Ruby Q", "the ruby q"], "gen": [] },
-      { "standard": "RepotLaser", "ko": ["리팟레이저"], "en": ["Repot", "repot", "Reepot Laser", "reepot laser", "Re;epot", "re;epot"], "gen": [] },
+      { "standard": "RepotLaser", "ko": ["리팟레이저", "리팟 레이저", "reepot 레이저"], "en": ["Repot", "repot", "Reepot Laser", "reepot laser", "Re;epot", "re;epot", "Reepot", "reepot"], "gen": [] },
       { "standard": "Frexa", "ko": ["프렉사"], "en": ["Frexa", "frexa"], "gen": [] },
       { "standard": "PLJetLaser", "ko": ["피엘젯레이저"], "en": ["PLJet Laser", "pljet laser"], "gen": [] },
       { "standard": "Encore", "ko": ["앙코르"], "en": ["Encore", "encore"], "gen": [] },
@@ -159,7 +161,11 @@
       { "standard": "OnychovLaser", "ko": ["오니코브레이저"], "en": ["Onychov Laser", "onychov laser"], "gen": [] },
       { "standard": "OpusPlasma", "ko": ["오퍼스"], "en": ["Opus", "opus", "Opus Plasma"], "gen": [] },
       { "standard": "AcneToning", "ko": ["아크네토닝"], "en": ["Acne Toning"], "gen": [] },
-      { "standard": "SoftPeelingLaser", "ko": ["소프트필링레이저"], "en": ["Soft Peeling Laser"], "gen": [] }
+      { "standard": "SoftPeelingLaser", "ko": ["소프트필링레이저"], "en": ["Soft Peeling Laser"], "gen": [] },
+      { "standard": "BlackHoleLaser", "ko": ["블랙홀", "블랙홀 여드름 레이저", "블랙홀레이저"], "en": ["BlackHole Laser", "blackhole laser"], "gen": [] },
+      { "standard": "DualVascularLaser", "ko": ["듀얼 홍조 레이저", "듀얼홍조레이저"], "en": ["Dual Vascular Laser", "dual vascular laser"], "gen": [] },
+      { "standard": "FineX", "ko": ["화인엑", "파인엑스"], "en": ["FineX", "Fine-X", "fine-x"], "gen": [] },
+      { "standard": "Primoris", "ko": ["프리모리스"], "en": ["Primoris", "primoris"], "gen": [] }
     ],
 
     "IPL": [
@@ -172,7 +178,7 @@
       { "standard": "Eplus", "ko": ["이플러스"], "en": ["Eplus", "eplus", "E+"], "gen": [] },
       { "standard": "i3PL", "ko": ["아이쓰리피엘"], "en": ["i3PL", "i3pl"], "gen": [] },
       { "standard": "PhotoQ", "ko": ["포토큐"], "en": ["PhotoQ"], "gen": [] },
-      { "standard": "JeisysIPL", "ko": ["제이시스"], "en": ["Jeisys IPL"], "gen": [] }
+      { "standard": "JeisysIPL", "ko": ["제이시스", "제이시스(ipl)"], "en": ["Jeisys IPL", "Jeisys", "jeisys"], "gen": [] }
     ],
 
     "BODY": [
@@ -195,7 +201,8 @@
       { "standard": "CoturaPlus", "ko": ["코트라플러스"], "en": ["Cotra Plus", "cotra plus", "Cotura Plus"], "gen": [] },
       { "standard": "Corege", "ko": ["코레지"], "en": ["Corege", "corege", "Corege 2.0", "corege 2.0", "Corege Cellfit", "corege cellfit"], "gen": ["2.0", "Cellfit"] },
       { "standard": "CoolSign", "ko": ["쿨사인"], "en": ["CoolSign", "coolsign"], "gen": [] },
-      { "standard": "VacuMed", "ko": ["바큐메드"], "en": ["VacuMed", "vacumed", "Vacumed"], "gen": [] }
+      { "standard": "VacuMed", "ko": ["바큐메드"], "en": ["VacuMed", "vacumed", "Vacumed"], "gen": [] },
+      { "standard": "3MAX", "ko": ["쓰리맥스"], "en": ["3MAX", "3max", "3-MAX"], "gen": [] }
     ],
 
     "SKINBOOSTER": [
@@ -212,7 +219,8 @@
       { "standard": "Hyaju", "ko": ["히알주"], "en": ["Hyaju"], "gen": [] },
       { "standard": "PDRN", "ko": ["피디알엔", "연어주사"], "en": ["PDRN"], "gen": [] },
       { "standard": "PN", "ko": ["피엔", "폴리뉴클레오타이드"], "en": ["PN"], "gen": [] },
-      { "standard": "RedermPlasma", "ko": ["리덤플라즈마"], "en": ["Rederm Plasma", "rederm plasma"], "gen": [] }
+      { "standard": "RedermPlasma", "ko": ["리덤플라즈마"], "en": ["Rederm Plasma", "rederm plasma"], "gen": [] },
+      { "standard": "Juventa", "ko": ["유벤타"], "en": ["Juventa", "juventa"], "gen": [] }
     ],
 
     "OTHER_DEVICE": [
@@ -269,7 +277,10 @@
       { "standard": "Acnepeel", "ko": ["아크네필"], "en": ["Acnepeel", "acnepeel"], "gen": [] },
       { "standard": "TuneportDual", "ko": ["튠포트듀얼"], "en": ["Tuneport Dual", "tuneport dual"], "gen": [] },
       { "standard": "Zetrovix", "ko": ["제트로빅스"], "en": ["Zetrovix", "zetrovix"], "gen": [] },
-      { "standard": "Regenbogen", "ko": ["레젠보겐"], "en": ["Regenbogen"], "gen": [] }
+      { "standard": "Regenbogen", "ko": ["레젠보겐"], "en": ["Regenbogen"], "gen": [] },
+      { "standard": "OxyToning", "ko": ["산소토닝", "산소토닝조아"], "en": ["Oxy Toning", "oxy toning"], "gen": [] },
+      { "standard": "Iontoson", "ko": ["이온토손"], "en": ["Iontoson", "iontoson"], "gen": [] },
+      { "standard": "PrismUS", "ko": ["프리즌초음파", "프리즘초음파"], "en": ["Prism US", "prism us"], "gen": [] }
     ],
 
     "INJECTOR": [
@@ -334,7 +345,7 @@
     "noise_patterns": ["전후 사진", "효과를 확인", "영상으로 보는", "지금 예약", "이벤트 진행중"],
     "blacklist_domains": ["sungyesa.com", "modoodoc.com", "babitalk.com", "gangnamunni.com", "yeoshin.co.kr", "goodoc.co.kr"],
     "non_content_signals": ["자동등록방지", "Please prove that you are human", "보안절차", "서비스를 종료하였습니다"],
-    "non_aesthetic_devices": ["TENS", "tens", "CPM", "cpm", "infra red", "ultra sound", "X-ray", "x-ray", "3D-CT", "3d-ct", "심전도검사", "초음파검사 장비", "고해상도 초음파", "etco2 모니터링", "심장충격기", "UPS", "ups", "웜에어", "가상성형 스캐너", "요로결석 쇄석기", "capsulitis prevention device", "epi-expire", "고압 산소 챔버", "고주파 & 초음파 관리", "BMI", "bmi", "HRV", "hrv", "NK 활성도 측정기", "nk 활성도 측정기", "면역 호르몬 측정기", "AGE 측정기", "age 측정기", "ICT", "ict", "EST", "est", "레이져치료기", "HS50"],
+    "non_aesthetic_devices": ["TENS", "tens", "CPM", "cpm", "infra red", "ultra sound", "X-ray", "x-ray", "3D-CT", "3d-ct", "심전도검사", "초음파검사 장비", "고해상도 초음파", "etco2 모니터링", "심장충격기", "심장충격기 및 응급키트", "UPS", "ups", "웜에어", "가상성형 스캐너", "요로결석 쇄석기", "capsulitis prevention device", "epi-expire", "고압 산소 챔버", "고압산소", "고주파 & 초음파 관리", "BMI", "bmi", "HRV", "hrv", "NK 활성도 측정기", "nk 활성도 측정기", "면역 호르몬 측정기", "AGE 측정기", "age 측정기", "ICT", "ict", "EST", "est", "레이져치료기", "HS50", "TMS Therapy", "tms therapy", "RE-H", "re-h", "Kobayashi Needle", "kobayashi needle", "FRM Device", "frm device", "UV Light", "uv light"],
     "too_generic_terms": ["레이저", "laser", "고주파", "rf", "hifu", "초음파", "co2 laser", "pico", "led", "rf고주파", "니들 고주파", "rf needle", "laser toning", "pico toning", "pico laser", "rf바이오"],
     "manufacturer_names": ["classys", "ilooda", "루트로닉", "asterasys", "바즈바이오", "수도그룹", "아일글로벌", "숲", "유니온", "lent"],
     "ambiguous_conflation": ["ulthermage", "thermage flx/cpt"]

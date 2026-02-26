@@ -80,9 +80,9 @@
     "totalDevices": 62,
     "deviceOnly": 62,
     "injectableOnly": 0,
-    "matchedDevices": 54,
-    "unmatchedDevices": 8,
-    "matchRate": "87%",
+    "matchedDevices": 55,
+    "unmatchedDevices": 7,
+    "matchRate": "89%",
     "totalTreatments": 78,
     "pricedTreatments": 0,
     "nongeubyeoTreatments": 0,
@@ -103,7 +103,6 @@
       "면역 호르몬 측정기",
       "고압산소",
       "TMS Therapy",
-      "RevLite Laser Toning",
       "Re-H"
     ]
   },
@@ -441,9 +440,9 @@
     "totalDevices": 39,
     "deviceOnly": 23,
     "injectableOnly": 16,
-    "matchedDevices": 19,
-    "unmatchedDevices": 4,
-    "matchRate": "83%",
+    "matchedDevices": 21,
+    "unmatchedDevices": 2,
+    "matchRate": "91%",
     "totalTreatments": 90,
     "pricedTreatments": 0,
     "nongeubyeoTreatments": 0,
@@ -459,9 +458,7 @@
       "text": 3
     },
     "unmatchedList": [
-      "NEW 뉴테라",
       "Pico Laser",
-      "3MAX",
       "Ulthermage"
     ]
   },
@@ -513,9 +510,9 @@
     "totalDevices": 8,
     "deviceOnly": 7,
     "injectableOnly": 1,
-    "matchedDevices": 4,
-    "unmatchedDevices": 3,
-    "matchRate": "57%",
+    "matchedDevices": 6,
+    "unmatchedDevices": 1,
+    "matchRate": "86%",
     "totalTreatments": 20,
     "pricedTreatments": 0,
     "nongeubyeoTreatments": 0,
@@ -530,8 +527,6 @@
       "text": 3
     },
     "unmatchedList": [
-      "블랙홀 여드름 레이저",
-      "듀얼 홍조 레이저",
       "Pico Laser"
     ]
   },
@@ -712,9 +707,9 @@
     "totalDevices": 8,
     "deviceOnly": 3,
     "injectableOnly": 5,
-    "matchedDevices": 0,
-    "unmatchedDevices": 3,
-    "matchRate": "0%",
+    "matchedDevices": 1,
+    "unmatchedDevices": 2,
+    "matchRate": "33%",
     "totalTreatments": 26,
     "pricedTreatments": 0,
     "nongeubyeoTreatments": 0,
@@ -729,8 +724,7 @@
     },
     "unmatchedList": [
       "초음파검사 장비",
-      "HS50",
-      "무빙하이푸 바디레이저"
+      "HS50"
     ]
   },
   {
@@ -739,9 +733,9 @@
     "totalDevices": 50,
     "deviceOnly": 50,
     "injectableOnly": 0,
-    "matchedDevices": 44,
-    "unmatchedDevices": 6,
-    "matchRate": "88%",
+    "matchedDevices": 48,
+    "unmatchedDevices": 2,
+    "matchRate": "96%",
     "totalTreatments": 49,
     "pricedTreatments": 31,
     "nongeubyeoTreatments": 0,
@@ -756,12 +750,8 @@
       "text": 11
     },
     "unmatchedList": [
-      "제이시스(IPL)",
       "RF고주파",
-      "산소토닝조아",
-      "고주파",
-      "이온토손",
-      "프리즌초음파"
+      "고주파"
     ]
   },
   {
@@ -797,9 +787,9 @@
     "totalDevices": 36,
     "deviceOnly": 23,
     "injectableOnly": 13,
-    "matchedDevices": 6,
-    "unmatchedDevices": 17,
-    "matchRate": "26%",
+    "matchedDevices": 10,
+    "unmatchedDevices": 13,
+    "matchRate": "43%",
     "totalTreatments": 13,
     "pricedTreatments": 0,
     "nongeubyeoTreatments": 0,
@@ -819,12 +809,8 @@
       "CLASSYS",
       "ilooda",
       "LENT",
-      "reepot 레이저",
       "바즈바이오",
       "BMI",
-      "화인엑",
-      "프리모리스",
-      "유벤타",
       "유니온",
       "아일글로벌",
       "RF바이오",

@@ -102,13 +102,6 @@
     ]
   },
   {
-    "device": "revlite laser toning",
-    "count": 1,
-    "hospitals": [
-      "메이린클리닉 청담"
-    ]
-  },
-  {
     "device": "re-h",
     "count": 1,
     "hospitals": [
@@ -207,38 +200,10 @@
     ]
   },
   {
-    "device": "new 뉴테라",
-    "count": 1,
-    "hospitals": [
-      "라마르프리미어의원"
-    ]
-  },
-  {
-    "device": "3max",
-    "count": 1,
-    "hospitals": [
-      "라마르프리미어의원"
-    ]
-  },
-  {
     "device": "ulthermage",
     "count": 1,
     "hospitals": [
       "라마르프리미어의원"
-    ]
-  },
-  {
-    "device": "블랙홀 여드름 레이저",
-    "count": 1,
-    "hospitals": [
-      "청담글래시피부과의원"
-    ]
-  },
-  {
-    "device": "듀얼 홍조 레이저",
-    "count": 1,
-    "hospitals": [
-      "청담글래시피부과의원"
     ]
   },
   {
@@ -263,42 +228,7 @@
     ]
   },
   {
-    "device": "무빙하이푸 바디레이저",
-    "count": 1,
-    "hospitals": [
-      "삼성웰내과의원"
-    ]
-  },
-  {
-    "device": "제이시스(ipl)",
-    "count": 1,
-    "hospitals": [
-      "파라다이스의원"
-    ]
-  },
-  {
     "device": "rf고주파",
-    "count": 1,
-    "hospitals": [
-      "파라다이스의원"
-    ]
-  },
-  {
-    "device": "산소토닝조아",
-    "count": 1,
-    "hospitals": [
-      "파라다이스의원"
-    ]
-  },
-  {
-    "device": "이온토손",
-    "count": 1,
-    "hospitals": [
-      "파라다이스의원"
-    ]
-  },
-  {
-    "device": "프리즌초음파",
     "count": 1,
     "hospitals": [
       "파라다이스의원"
@@ -333,13 +263,6 @@
     ]
   },
   {
-    "device": "reepot 레이저",
-    "count": 1,
-    "hospitals": [
-      "연세팜스의원 은평점"
-    ]
-  },
-  {
     "device": "바즈바이오",
     "count": 1,
     "hospitals": [
@@ -348,27 +271,6 @@
   },
   {
     "device": "bmi",
-    "count": 1,
-    "hospitals": [
-      "연세팜스의원 은평점"
-    ]
-  },
-  {
-    "device": "화인엑",
-    "count": 1,
-    "hospitals": [
-      "연세팜스의원 은평점"
-    ]
-  },
-  {
-    "device": "프리모리스",
-    "count": 1,
-    "hospitals": [
-      "연세팜스의원 은평점"
-    ]
-  },
-  {
-    "device": "유벤타",
     "count": 1,
     "hospitals": [
       "연세팜스의원 은평점"
