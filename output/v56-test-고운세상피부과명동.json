@@ -1,0 +1,2606 @@
+{
+  "hospital_name": "고운세상피부과명동",
+  "doctors": [
+    {
+      "name": null,
+      "title": "원장",
+      "specialty": "피부과",
+      "career": [
+        "중앙대학교 피부과 외래교수",
+        "대한 피부과학회 회원",
+        "대한 피부연구학회 회원",
+        "대한 피부미용학회 회원",
+        "대한 피부외과학회 회원",
+        "대한 여드름학회 회원",
+        "대한 의진균학회 회원",
+        "명동 고운세상피부과 원장"
+      ],
+      "education": [
+        "의학박사"
+      ],
+      "certifications": [
+        "대한 피부과학회 회원",
+        "대한 피부연구학회 회원",
+        "대한 피부미용학회 회원",
+        "대한 피부외과학회 회원",
+        "대한 여드름학회 회원",
+        "대한 의진균학회 회원"
+      ],
+      "confidence": "uncertain"
+    }
+  ],
+  "academic_activities": [
+    {
+      "type": "학회발표",
+      "title": "Three cases of trichotilomania",
+      "year": 1996,
+      "doctor_name": null,
+      "source_text": "Three cases of trichotilomania (96년 대한 피부과 학회 추계학술대회)"
+    },
+    {
+      "type": "학회발표",
+      "title": "위장관의 혈관염을 동반한 Henoch-schonlein purpura",
+      "year": 1997,
+      "doctor_name": null,
+      "source_text": "위장관의 혈관염을 동반한 Henoch-schonlein purpura (97년 대한피부과학회 춘계학술대회)"
+    },
+    {
+      "type": "학회발표",
+      "title": "M plasty로 치료한 trichilemmoma",
+      "year": 1998,
+      "doctor_name": null,
+      "source_text": "M plasty로 치료한 trichilemmoma (98년 대한피부과학회 춘계학술대회)"
+    },
+    {
+      "type": "기타",
+      "title": "남성형 탈모증의 임상적 고찰 등 다수",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "남성형 탈모증의 임상적 고찰 등 다수"
+    },
+    {
+      "type": "논문",
+      "title": "후천성 말단성 섬유 각화종",
+      "year": 1998,
+      "doctor_name": null,
+      "source_text": "후천성 말단성 섬유 각화종(98년 대한 피부과학회지)"
+    },
+    {
+      "type": "논문",
+      "title": "배양된 정상 인체 각질 형성 세포에서 자외선 B 조사에 의한 아포프토시스와 P53 의 발현",
+      "year": 1999,
+      "doctor_name": null,
+      "source_text": "배양된 정상 인체 각질 형성 세포에서 자외선 B 조사에 의한 아포프토시스와 P53 의 발현 (99년 대한피부과학회지)"
+    },
+    {
+      "type": "논문",
+      "title": "피부 미만성 거대 B 세포 림프종",
+      "year": 1999,
+      "doctor_name": null,
+      "source_text": "피부 미만성 거대 B 세포 림프종 (99년 대한피부과학회지)"
+    },
+    {
+      "type": "논문",
+      "title": "Generalized lichen nitidus",
+      "year": 1999,
+      "doctor_name": null,
+      "source_text": "Generalized lichen nitidus (99년 대한피부과학회지)"
+    },
+    {
+      "type": "논문",
+      "title": "백반증 환자의 탈색반에서 Stem cell factor 에 의한 멜라닌 형성",
+      "year": 1999,
+      "doctor_name": null,
+      "source_text": "백반증 환자의 탈색반에서 Stem cell factor 에 의한 멜라닌 형성 (99년 대한피부과연구학회지)"
+    },
+    {
+      "type": "학회발표",
+      "title": "아포지 레이저를 이용한 한국인의 제모결과",
+      "year": 2000,
+      "doctor_name": null,
+      "source_text": "아포지 레이저를 이용한 한국인의 제모결과 (2000년 춘계피부과학회)"
+    },
+    {
+      "type": "학회발표",
+      "title": "다크서클과 눈밑지방 원인과 치료",
+      "year": 2002,
+      "doctor_name": null,
+      "source_text": "다크서클과 눈밑지방 원인과 치료 (2002년 피부미용치료 심포지움)"
+    },
+    {
+      "type": "학회발표",
+      "title": "Invisible face lift (Fomier & Serdev method)",
+      "year": 2004,
+      "doctor_name": null,
+      "source_text": "Invisible face lift (Fomier & Serdev method) (2004년 9월 부경 피부미용치료 전국 심포지움)"
+    },
+    {
+      "type": "학회발표",
+      "title": "드림리프트를 이용한 반영구 주름제거",
+      "year": 2004,
+      "doctor_name": null,
+      "source_text": "드림리프트를 이용한 반영구 주름제거 (2004년 10월 대한 피부과 추계학술대회)"
+    },
+    {
+      "type": "학회발표",
+      "title": "실을 이용한 흉터없는 주름제거술",
+      "year": 2005,
+      "doctor_name": null,
+      "source_text": "실을 이용한 흉터없는 주름제거술(2005년 7월 대한피부과학회 치료심포지움)"
+    },
+    {
+      "type": "논문",
+      "title": "건선 치료에 Calcipotriol연고와 Desoxymethasone연고의 비교연구",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "건선 치료에 Calcipotriol연고와 Desoxymethasone연고의 비교연구"
+    },
+    {
+      "type": "논문",
+      "title": "표피성장인자의 창상치유에 대한 효과",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "표피성장인자의 창상치유에 대한 효과"
+    },
+    {
+      "type": "논문",
+      "title": "비전형적 임상양상을 보인 아토피 피부염",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "비전형적 임상양상을 보인 아토피 피부염"
+    },
+    {
+      "type": "논문",
+      "title": "간암의 피부전이 2예",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "간암의 피부전이 2예"
+    },
+    {
+      "type": "교과서집필",
+      "title": "미운털 뿌리뽑기",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "미운털 뿌리뽑기"
+    },
+    {
+      "type": "교과서집필",
+      "title": "피부과학(대학교재)",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "피부과학(대학교재)"
+    },
+    {
+      "type": "교과서집필",
+      "title": "'굿바이 여드름' 저술",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "'굿바이 여드름' 저술"
+    },
+    {
+      "type": "교과서집필",
+      "title": "'미의 변천사' 저술",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "'미의 변천사' 저술"
+    },
+    {
+      "type": "논문",
+      "title": "Three Cases of Generalized Lichen Nitidus",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "Three Cases of Generalized Lichen Nitidus"
+    },
+    {
+      "type": "논문",
+      "title": "원형 탈모증에서 모낭세포에 대한 자가항체의 변화",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "원형 탈모증에서 모낭세포에 대한 자가항체의 변화"
+    },
+    {
+      "type": "논문",
+      "title": "One Case of Tinea Capitis in sisters",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "One Case of Tinea Capitis in sisters"
+    },
+    {
+      "type": "논문",
+      "title": "Two Cases of Twenty-Nail dystrophy",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "Two Cases of Twenty-Nail dystrophy"
+    },
+    {
+      "type": "논문",
+      "title": "A Case of Disseminated Cutaneous Metastatic Carcinoma from Stomach Carcinoma",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "A Case of Disseminated Cutaneous Metastatic Carcinoma from Stomach Carcinoma"
+    },
+    {
+      "type": "학회발표",
+      "title": "다발성 모낭종 1예",
+      "year": 1997,
+      "doctor_name": null,
+      "source_text": "다발성 모낭종 1예 (1997 서울 집담회)"
+    },
+    {
+      "type": "학회발표",
+      "title": "결핵균으로 야기된 봉소직염 1 예",
+      "year": 1998,
+      "doctor_name": null,
+      "source_text": "결핵균으로 야기된 봉소직염 1 예 (1998 서울 집담회)"
+    },
+    {
+      "type": "학회발표",
+      "title": "피지선 분화를 보인 아포크린 한공종",
+      "year": 1998,
+      "doctor_name": null,
+      "source_text": "피지선 분화를 보인 아포크린 한공종 (1998 추계학술대회 )"
+    },
+    {
+      "type": "학회발표",
+      "title": "Aquamid를 이용한 코 성형술",
+      "year": 2004,
+      "doctor_name": null,
+      "source_text": "Aquamid를 이용한 코 성형술 (2004년 5월 대한피부과개원의 신치료세미나)"
+    },
+    {
+      "type": "학회발표",
+      "title": "Aquamid를 이용한 주름살 제거 및 코 성형술",
+      "year": 2004,
+      "doctor_name": null,
+      "source_text": "Aquamid를 이용한 주름살 제거 및 코 성형술 (2004년 9월 부경 피부미용치료 전국 심포지움)"
+    },
+    {
+      "type": "학회발표",
+      "title": "필러의 사용시 주의점",
+      "year": 2004,
+      "doctor_name": null,
+      "source_text": "필러의 사용시 주의점 (2004년 10월 피부과개원의 추계학술대회)"
+    },
+    {
+      "type": "학회발표",
+      "title": "폴리아크릴 아마이드를 이용한 코성형 100예",
+      "year": 2004,
+      "doctor_name": null,
+      "source_text": "폴리아크릴 아마이드를 이용한 코성형 100예 (2004년 10월 대한 피부과 추계학술대회)"
+    },
+    {
+      "type": "학회발표",
+      "title": "반영구적 필러의 임상적 사용",
+      "year": 2005,
+      "doctor_name": null,
+      "source_text": "반영구적 필러의 임상적 사용 (2005년 4월 춘계피부과학회)"
+    },
+    {
+      "type": "학회발표",
+      "title": "Aquamid를 이용한 코성형 100 예",
+      "year": 2006,
+      "doctor_name": null,
+      "source_text": "Aquamid를 이용한 코성형 100 예(2006-3월 파리세계 항노화학회(AAWC))"
+    },
+    {
+      "type": "학회발표",
+      "title": "대한미용피부외과학회 제12차 심포지움",
+      "year": 2006,
+      "doctor_name": null,
+      "source_text": "대한미용피부외과학회 제12차 심포지움 (2006-11)"
+    },
+    {
+      "type": "학회발표",
+      "title": "필러를 이용한 코 성형술",
+      "year": 2008,
+      "doctor_name": null,
+      "source_text": "필러를 이용한 코 성형술 (2008-07 서울 치료심포지엄)"
+    },
+    {
+      "type": "학회발표",
+      "title": "제 12회 대한피부과의사회 추계심포지엄 발표",
+      "year": 2009,
+      "doctor_name": null,
+      "source_text": "제 12회 대한피부과의사회 추계심포지엄 발표 (2009-10)"
+    },
+    {
+      "type": "학회발표",
+      "title": "필러 시술 시 필요한 해부학의 이해",
+      "year": 2010,
+      "doctor_name": null,
+      "source_text": "필러 시술 시 필요한 해부학의 이해 (2010-03 대한피부과개원의 보톡스, 필러연구회 발표)"
+    },
+    {
+      "type": "학회발표",
+      "title": "에스텔리스를 이용한 하이드로리프팅",
+      "year": 2010,
+      "doctor_name": null,
+      "source_text": "에스텔리스를 이용한 하이드로리프팅(2010-04 제12회 대한피부과의사회 춘계심포지엄)"
+    },
+    {
+      "type": "학회발표",
+      "title": "제8회 모나코 세계 항노화학회(AMWC)참석",
+      "year": 2010,
+      "doctor_name": null,
+      "source_text": "제8회 모나코 세계 항노화학회(AMWC)참석 (2010-04)"
+    },
+    {
+      "type": "학회발표",
+      "title": "필러 부작용의 예방법 및 치료법",
+      "year": 2010,
+      "doctor_name": null,
+      "source_text": "필러 부작용의 예방법 및 치료법 (2010-05 제8차 대경 피부미용치료 학술대회 발표)"
+    },
+    {
+      "type": "학회발표",
+      "title": "필러를 이용한 팔자주름의 교정",
+      "year": 2010,
+      "doctor_name": null,
+      "source_text": "필러를 이용한 팔자주름의 교정 (2010-09 제2회 국제최소침습성형학회 발표)"
+    },
+    {
+      "type": "학회발표",
+      "title": "새로운 HA 필러인 Skinfill을 이용한 안면교정술",
+      "year": 2010,
+      "doctor_name": null,
+      "source_text": "새로운 HA 필러인 Skinfill을 이용한 안면교정술 (2010-11 제13회 대한피부과의사회 추계 심포지엄 발표)"
+    },
+    {
+      "type": "학회발표",
+      "title": "Botulex를 이용한 종아리 퇴축술",
+      "year": 2011,
+      "doctor_name": null,
+      "source_text": "Botulex를 이용한 종아리 퇴축술 (2011-03 제 13회 대한피부과의사회 춘계심포지엄)"
+    },
+    {
+      "type": "학회발표",
+      "title": "안면 윤곽술에 있어 래디어스의 다양한 사용",
+      "year": 2011,
+      "doctor_name": null,
+      "source_text": "안면 윤곽술에 있어 래디어스의 다양한 사용(2011-06 제9차 대경피부미용치료 학술대회 발표)"
+    },
+    {
+      "type": "학회발표",
+      "title": "Filler Master Session : Overview fo filler",
+      "year": 2011,
+      "doctor_name": null,
+      "source_text": "Filler Master Session : Overview fo filler (2011-09 제3회 상해 국제최소침습성형학회 발표)"
+    },
+    {
+      "type": "학회발표",
+      "title": "필러 동영상 세션 moderator",
+      "year": 2011,
+      "doctor_name": null,
+      "source_text": "필러 동영상 세션 moderator (2011-11 제14회 대한피부과의사회 추계심포지엄 발표)"
+    },
+    {
+      "type": "학회발표",
+      "title": "Max-G의 다양한 활용",
+      "year": 2012,
+      "doctor_name": null,
+      "source_text": "Max-G의 다양한 활용 (2012-03 제14회 대한피부과의사회 춘계 심포지엄 발표 )"
+    },
+    {
+      "type": "학회발표",
+      "title": "Max-G의 다양한 활용",
+      "year": 2012,
+      "doctor_name": null,
+      "source_text": "Max-G의 다양한 활용 (2012-06 제10차 대경피부미용치료 학술대회)"
+    },
+    {
+      "type": "학회발표",
+      "title": "프린세스 필러를 이용한 이마교정",
+      "year": 2013,
+      "doctor_name": null,
+      "source_text": "프린세스 필러를 이용한 이마교정(2013-3-24 제 15회 춘계심포지엄)"
+    },
+    {
+      "type": "학회발표",
+      "title": "보톨리눔 독소를 이용한 상안면치료(동영상강의)",
+      "year": 2013,
+      "doctor_name": null,
+      "source_text": "보톨리눔 독소를 이용한 상안면치료(동영상강의) (2013-3-24 제 15회 춘계심포지엄)"
+    },
+    {
+      "type": "학회발표",
+      "title": "필러 부작용의 관리 및 예방",
+      "year": 2013,
+      "doctor_name": null,
+      "source_text": "필러 부작용의 관리 및 예방(2013-5 제17회 광주-전남지부회 춘계학술심포지엄)"
+    },
+    {
+      "type": "학회발표",
+      "title": "쉽고 안전하게 시행하는 이마필러 시술",
+      "year": 2014,
+      "doctor_name": null,
+      "source_text": "쉽고 안전하게 시행하는 이마필러 시술(2014-1-11 제 3회 대한피부항노화연구회)"
+    },
+    {
+      "type": "학회발표",
+      "title": "실을 이용한 안면리프팅",
+      "year": 2014,
+      "doctor_name": null,
+      "source_text": "실을 이용한 안면리프팅 (2014-3-30 제 16회 대한피부과의사회 춘계심포지엄)"
+    },
+    {
+      "type": "학회발표",
+      "title": "필러를 이용하여 예쁜이마 만들기",
+      "year": 2014,
+      "doctor_name": null,
+      "source_text": "필러를 이용하여 예쁜이마 만들기 (2014-6-15 제 12차 대경피부치료학술대회)"
+    },
+    {
+      "type": "학회발표",
+      "title": "실을 이용한 안면리프팅",
+      "year": 2014,
+      "doctor_name": null,
+      "source_text": "실을 이용한 안면리프팅 (2014-7-5 대전 교육 심포지움)"
+    },
+    {
+      "type": "학회발표",
+      "title": "녹는실을 이용한 안면윤곽술",
+      "year": 2014,
+      "doctor_name": null,
+      "source_text": "녹는실을 이용한 안면윤곽술 (2014-9-17 대한피부과학회 인천지부회)"
+    },
+    {
+      "type": "학회발표",
+      "title": "Cog실과 필러를 이용한 안면윤곽술",
+      "year": 2014,
+      "doctor_name": null,
+      "source_text": "Cog실과 필러를 이용한 안면윤곽술 (2014-9-21 제11회 부울경피부치료심포지엄)"
+    },
+    {
+      "type": "학회발표",
+      "title": "리포소닉을 이용한 체형교정",
+      "year": 2014,
+      "doctor_name": null,
+      "source_text": "리포소닉을 이용한 체형교정 (2014-11-2 제17회 대한피부과의사회 추계심포지엄)"
+    },
+    {
+      "type": "학회발표",
+      "title": "실과 필러를 이용한 안면윤곽술",
+      "year": 2014,
+      "doctor_name": null,
+      "source_text": "실과 필러를 이용한 안면윤곽술 (2014-11-2 제17회 대한피부과의사회 추계심포지엄)"
+    },
+    {
+      "type": "학회발표",
+      "title": "레이저와 실을 이용한 ONE-DAY SKIN REJUVENATION",
+      "year": 2015,
+      "doctor_name": null,
+      "source_text": "레이저와 실을 이용한 ONE-DAY SKIN REJUVENATION (2015-3-29 제17회 대한피부과의사회 춘계심포지엄)"
+    },
+    {
+      "type": "학회발표",
+      "title": "필러를 이용한 관자놀이와 이마교정",
+      "year": 2015,
+      "doctor_name": null,
+      "source_text": "필러를 이용한 관자놀이와 이마교정(2015-8-9 제5회 대한피부항노화연구회 Summer Workshop)"
+    },
+    {
+      "type": "학회발표",
+      "title": "다양한 치료를 이용한ONE-DAY SKIN REJUVENATION",
+      "year": 2015,
+      "doctor_name": null,
+      "source_text": "다양한 치료를 이용한ONE-DAY SKIN REJUVENATION(2015-11-1 제18회 대한피부과의사회 추계심포지엄)"
+    },
+    {
+      "type": "학회발표",
+      "title": "부위별 필러의 선택과 치료법",
+      "year": 2016,
+      "doctor_name": null,
+      "source_text": "부위별 필러의 선택과 치료법(2016-4-30 대구경북 교육심포지엄)"
+    },
+    {
+      "type": "학회발표",
+      "title": "다양한 레이저를 이용한 기미치료",
+      "year": 2016,
+      "doctor_name": null,
+      "source_text": "다양한 레이저를 이용한 기미치료(2016-6-12 대한의학레이저학회 제5차 연수교육)"
+    },
+    {
+      "type": "학회발표",
+      "title": "필러를 이용한 팔자주름의 교정(필러 주입법의 최신 지견)",
+      "year": 2016,
+      "doctor_name": null,
+      "source_text": "필러를 이용한 팔자주름의 교정(필러 주입법의 최신 지견)(2016-6-19 제14차 대경피부치료 학술대회)"
+    },
+    {
+      "type": "학회발표",
+      "title": "환하고 봉긋한 눈 밑 만들기(눈물도랑, 앞광대)",
+      "year": 2016,
+      "doctor_name": null,
+      "source_text": "환하고 봉긋한 눈 밑 만들기(눈물도랑, 앞광대)(2016-8-7 제6회 대한피부항노화연구회 Summer Workshop)"
+    },
+    {
+      "type": "학회발표",
+      "title": "필러의 혈관부작용과 그 해결법",
+      "year": 2017,
+      "doctor_name": null,
+      "source_text": "필러의 혈관부작용과 그 해결법(2017-1-22 제6회 대한피부항노화연구회 Winter Workshop)"
+    },
+    {
+      "type": "논문",
+      "title": "One case of tuberculous cellulites (Clinical and Experimental Dermatol. 2000)",
+      "year": 2000,
+      "doctor_name": null,
+      "source_text": "One case of tuberculous cellulites (Clinical and Experimental Dermatol. 2000)"
+    },
+    {
+      "type": "논문",
+      "title": "Maffucci's syndrome with oral and intestinal haemangioma ( Br J Dermatology. 1999 )",
+      "year": 1999,
+      "doctor_name": null,
+      "source_text": "Maffucci's syndrome with oral and intestinal haemangioma ( Br J Dermatology. 1999 )"
+    },
+    {
+      "type": "논문",
+      "title": "A case of pre-Sezary syndrome preceded by hand lesions (Journal of Dermatology. 1999)",
+      "year": 1999,
+      "doctor_name": null,
+      "source_text": "A case of pre-Sezary syndrome preceded by hand lesions (Journal of Dermatology. 1999)"
+    },
+    {
+      "type": "논문",
+      "title": "피부섬유종의 임상양상과 유병기간에 따른 고찰 (대한피부과학회지. 2000)",
+      "year": 2000,
+      "doctor_name": null,
+      "source_text": "피부섬유종의 임상양상과 유병기간에 따른 고찰 (대한피부과학회지. 2000)"
+    },
+    {
+      "type": "논문",
+      "title": "주위조직을 침윤한 모낭 악성종양 1예 (대한피부과학회지. 1999)",
+      "year": 1999,
+      "doctor_name": null,
+      "source_text": "주위조직을 침윤한 모낭 악성종양 1예 (대한피부과학회지. 1999)"
+    },
+    {
+      "type": "논문",
+      "title": "모낭피지선 낭성 과오종 2예 (대한피부과학회지. 1999)",
+      "year": 1999,
+      "doctor_name": null,
+      "source_text": "모낭피지선 낭성 과오종 2예 (대한피부과학회지. 1999)"
+    },
+    {
+      "type": "논문",
+      "title": "1% Triclsan과 0.5% 고삼추출물을 함유한 세안제의여드름에 대한 효과 (대한피부과학회지. 1998)",
+      "year": 1998,
+      "doctor_name": null,
+      "source_text": "1% Triclsan과 0.5% 고삼추출물을 함유한 세안제의여드름에 대한 효과 (대한피부과학회지. 1998)"
+    },
+    {
+      "type": "논문",
+      "title": "A case of multiple trichilemmal cysts (Annals of Dermatology. 1997 가족성 흑색 극세포증 1예 (대한피부과학회지. 1997)",
+      "year": 1997,
+      "doctor_name": null,
+      "source_text": "A case of multiple trichilemmal cysts (Annals of Dermatology. 1997 가족성 흑색 극세포증 1예 (대한피부과학회지. 1997)"
+    },
+    {
+      "type": "학회발표",
+      "title": "일본 동경 준텐도 의과대학 최신 피부미용시술 특강",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "일본 동경 준텐도 의과대학 최신 피부미용시술 특강"
+    },
+    {
+      "type": "기타",
+      "title": "대한피부과의사회 신치료위원회 위원장으로 레이저와 노화치료 연구 및 발전",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "대한피부과의사회 신치료위원회 위원장으로 레이저와 노화치료 연구 및 발전"
+    },
+    {
+      "type": "임상연구",
+      "title": "아시아 태평양 보톡스 전문가 모임 : 메조 보톡스 치료에 대한 전향적인 연구",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "아시아 태평양 보톡스 전문가 모임 : 메조 보톡스 치료에 대한 전향적인 연구"
+    },
+    {
+      "type": "교과서집필",
+      "title": "‘피부과학’ 저술",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "‘피부과학’ 저술"
+    },
+    {
+      "type": "교과서집필",
+      "title": "'피부미용외과학' 공동저술",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "'피부미용외과학' 공동저술"
+    },
+    {
+      "type": "교과서집필",
+      "title": "‘임상피부과학’ 저술",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "‘임상피부과학’ 저술"
+    },
+    {
+      "type": "교과서집필",
+      "title": "‘굿바이 여드름’ 저술",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "‘굿바이 여드름’ 저술"
+    },
+    {
+      "type": "논문",
+      "title": "국내 논문; 50여편",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "국내 논문; 50여편"
+    },
+    {
+      "type": "논문",
+      "title": "외국 논문; Journal of Investigative Dermatology",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "외국 논문; Journal of Investigative Dermatology"
+    },
+    {
+      "type": "논문",
+      "title": "외국 논문; British Journal of Dermatology",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "외국 논문; British Journal of Dermatology"
+    },
+    {
+      "type": "논문",
+      "title": "외국 논문; Annals of Dermatology 등에 피부 미용을 포함한 논문",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "외국 논문; Annals of Dermatology 등에 피부 미용을 포함한 논문"
+    },
+    {
+      "type": "수상",
+      "title": "대한의학회회장 표창",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "대한의학회회장 표창"
+    },
+    {
+      "type": "수상",
+      "title": "대한피부과학회 춘계학술대회 Hot Debating Poster Award 수상",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "대한피부과학회 춘계학술대회 Hot Debating Poster Award 수상"
+    },
+    {
+      "type": "수상",
+      "title": "대한피부과학회 서울지부회 최우수연제상 수상",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "대한피부과학회 서울지부회 최우수연제상 수상"
+    },
+    {
+      "type": "수상",
+      "title": "서울대학교병원 해외학술지 우수논문상 수상",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "서울대학교병원 해외학술지 우수논문상 수상"
+    },
+    {
+      "type": "수상",
+      "title": "서울대학교병원 우수 전공의 표창",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "서울대학교병원 우수 전공의 표창"
+    },
+    {
+      "type": "수상",
+      "title": "서울대학교병원 우수 전공의 해외연수 프로그램 선정",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "서울대학교병원 우수 전공의 해외연수 프로그램 선정"
+    },
+    {
+      "type": "수상",
+      "title": "서울대학교병원 친절 전공의 표창",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "서울대학교병원 친절 전공의 표창"
+    },
+    {
+      "type": "기타",
+      "title": "미국 University of Pennsylvania 피부과 연수",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "미국 University of Pennsylvania 피부과 연수"
+    },
+    {
+      "type": "기타",
+      "title": "미국 Washington University in St. Louis 피부과 연수",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "미국 Washington University in St. Louis 피부과 연수"
+    },
+    {
+      "type": "기타",
+      "title": "호주Women’s& Children's Hospital, Adelaide 연수",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "호주Women’s& Children's Hospital, Adelaide 연수"
+    },
+    {
+      "type": "학회발표",
+      "title": "보톡스를 이용한 미용시술법 워크샵 및 심포지움 연수",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "보톡스를 이용한 미용시술법 워크샵 및 심포지움 연수"
+    },
+    {
+      "type": "학회발표",
+      "title": "Kikuchi disease associated with SLE 보고",
+      "year": 2001,
+      "doctor_name": null,
+      "source_text": "Kikuchi disease associated with SLE 보고 (American Academy of Dermatology in Washington D.C.,2001)"
+    },
+    {
+      "type": "기타",
+      "title": "Mycology School 연수",
+      "year": 2002,
+      "doctor_name": null,
+      "source_text": "Mycology School 연수(Manila, 2002)"
+    },
+    {
+      "type": "학회발표",
+      "title": "skin care를 이용한 여드름 붉은자국 치료",
+      "year": 2011,
+      "doctor_name": null,
+      "source_text": "skin care를 이용한 여드름 붉은자국 치료 (2011년 제 13회 대한 피부과의사회 춘계 심포지엄)"
+    },
+    {
+      "type": "학회발표",
+      "title": "여드름의 다양한 접근",
+      "year": 2011,
+      "doctor_name": null,
+      "source_text": "여드름의 다양한 접근 (2011년 9월 부울경 학술대회)"
+    },
+    {
+      "type": "학회발표",
+      "title": "skin care를 이용한 여드름 자국치료",
+      "year": 2014,
+      "doctor_name": null,
+      "source_text": "skin care를 이용한 여드름 자국치료 (2014년 제 17회 대한 피부과 의사회 추계학술대회)"
+    },
+    {
+      "type": "논문",
+      "title": "성인형 여드름 환자와 사춘기 여드름환자의 지질도 및 P. acne수의 비교",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "성인형 여드름 환자와 사춘기 여드름환자의 지질도 및 P. acne수의 비교"
+    },
+    {
+      "type": "논문",
+      "title": "Cyclosporine 복용중에 발생한 원형탈모증",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "Cyclosporine 복용중에 발생한 원형탈모증"
+    },
+    {
+      "type": "논문",
+      "title": "메밀 Allergy",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "메밀 Allergy"
+    },
+    {
+      "type": "논문",
+      "title": "아토피 피부염의 얼굴병변에 대한 Tacrolimus 연고의 치료효과",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "아토피 피부염의 얼굴병변에 대한 Tacrolimus 연고의 치료효과"
+    },
+    {
+      "type": "학회발표",
+      "title": "Congenital Cafe-au-Lait Spot and Sequentially Occurred Nevus Spilus(제56차 춘계학술대회 및 총회 : 일반포스터)",
+      "year": null,
+      "doctor_name": null,
+      "source_text": ". Congenital Cafe-au-Lait Spot and Sequentially Occurred Nevus Spilus(제56차 춘계학술대회 및 총회 : 일반포스터)"
+    },
+    {
+      "type": "학회발표",
+      "title": "The Role of Fibroblast-Derived Cytokines on Melasma(제56차 추계학술대회 및 총회 : 일반연제)",
+      "year": null,
+      "doctor_name": null,
+      "source_text": ". The Role of Fibroblast-Derived Cytokines on Melasma(제56차 추계학술대회 및 총회 : 일반연제)"
+    },
+    {
+      "type": "학회발표",
+      "title": "두경부에 발생한 다발성 홍반성 결절 1예(제56차 추계학술대회 및 총회 : 피부병리 심포지엄)",
+      "year": null,
+      "doctor_name": null,
+      "source_text": ". 두경부에 발생한 다발성 홍반성 결절 1예(제56차 추계학술대회 및 총회 : 피부병리 심포지엄)"
+    },
+    {
+      "type": "학회발표",
+      "title": "Cutaneous Plasmacytosis(제57차 춘계학술대회 : 일반포스터)",
+      "year": null,
+      "doctor_name": null,
+      "source_text": ". Cutaneous Plasmacytosis(제57차 춘계학술대회 : 일반포스터)"
+    },
+    {
+      "type": "학회발표",
+      "title": "Topical 5-aminolaevulinic Acid Photodynamic Therapy for Recalcitrant Palmoplantar Pustular Psoriasis(제57차 춘계학술대회 : 치료심포지엄)",
+      "year": null,
+      "doctor_name": null,
+      "source_text": ". Topical 5-aminolaevulinic Acid Photodynamic Therapy for Recalcitrant Palmoplantar Pustular Psoriasis(제57차 춘계학술대회 : 치료심포지엄)"
+    },
+    {
+      "type": "학회발표",
+      "title": "Topical 5-aminolaevulinic Acid Photodynamic Therapy for Intractable Palmoplantar Psoriasis(제58차 춘계학술대회 : 일반포스터)",
+      "year": null,
+      "doctor_name": null,
+      "source_text": ". Topical 5-aminolaevulinic Acid Photodynamic Therapy for Intractable Palmoplantar Psoriasis(제58차 춘계학술대회 : 일반포스터)"
+    },
+    {
+      "type": "논문",
+      "title": "Case Reports : Congenital Cafe-au-Lait Spot and Sequentially Occurred Nevus Spilus(Annals of dermatology, 2004)",
+      "year": 2004,
+      "doctor_name": null,
+      "source_text": "· Case Reports : Congenital Cafe-au-Lait Spot and Sequentially Occurred Nevus Spilus(Annals of dermatology, 2004)"
+    },
+    {
+      "type": "논문",
+      "title": "피부 형질세포증 1예(대한피부과학과학회지, 2005)",
+      "year": 2005,
+      "doctor_name": null,
+      "source_text": "· 피부 형질세포증 1예(대한피부과학과학회지, 2005)"
+    },
+    {
+      "type": "논문",
+      "title": "특발성 적상 저색소증이 동반된 아디손병 1예(대한피부과학과학회지, 2005)",
+      "year": 2005,
+      "doctor_name": null,
+      "source_text": "· 특발성 적상 저색소증이 동반된 아디손병 1예(대한피부과학과학회지, 2005)"
+    },
+    {
+      "type": "논문",
+      "title": "기미에서 섬유아 세포 기원 사이토카인의 발현(대한피부과학과학회지, 2005)",
+      "year": 2005,
+      "doctor_name": null,
+      "source_text": "· 기미에서 섬유아 세포 기원 사이토카인의 발현(대한피부과학과학회지, 2005)"
+    },
+    {
+      "type": "논문",
+      "title": "Precursor B-cell lymphoblastic lymphoma involving the skin.(J Cutan Pathol. 2006)",
+      "year": 2006,
+      "doctor_name": null,
+      "source_text": "· Precursor B-cell lymphoblastic lymphoma involving the skin.(J Cutan Pathol. 2006)"
+    },
+    {
+      "type": "논문",
+      "title": "Induction of repigmentation in vitiligo after burn injury caused by oral psoralen and ultraviolet A therapy.(Eur J Dermatol. 2006)",
+      "year": 2006,
+      "doctor_name": null,
+      "source_text": "· Induction of repigmentation in vitiligo after burn injury caused by oral psoralen and ultraviolet A therapy.(Eur J Dermatol. 2006)"
+    },
+    {
+      "type": "논문",
+      "title": "Topical 5-aminolaevulinic acid photodynamic therapy for intractable palmoplantar psoriasis.(J Dermatol. 2007)",
+      "year": 2007,
+      "doctor_name": null,
+      "source_text": "· Topical 5-aminolaevulinic acid photodynamic therapy for intractable palmoplantar psoriasis.(J Dermatol. 2007)"
+    },
+    {
+      "type": "논문",
+      "title": "Solitary eccrine syringofibroadenoma with prominent plasma cell infiltration.(J Dermatol. 2007)",
+      "year": 2007,
+      "doctor_name": null,
+      "source_text": "· Solitary eccrine syringofibroadenoma with prominent plasma cell infiltration.(J Dermatol. 2007)"
+    },
+    {
+      "type": "학회발표",
+      "title": "파리 메조쎄라피 학회 수료",
+      "year": 2004,
+      "doctor_name": null,
+      "source_text": "2004. 파리 메조쎄라피 학회 수료"
+    },
+    {
+      "type": "학회발표",
+      "title": "세계 노화피부치료 학회(AAWC) 수료",
+      "year": 2005,
+      "doctor_name": null,
+      "source_text": "2005. 세계 노화피부치료 학회(AAWC) 수료"
+    },
+    {
+      "type": "학회발표",
+      "title": "폴라리스 유저 세미나 발표",
+      "year": 2005,
+      "doctor_name": null,
+      "source_text": "2005. 폴라리스 유저 세미나 발표"
+    },
+    {
+      "type": "학회발표",
+      "title": "코스메틱 피부과학회 \"써마지, 폴라리스, 릴렉스에프 비교\" 발표",
+      "year": 2005,
+      "doctor_name": null,
+      "source_text": "2005. 코스메틱 피부과학회 \"써마지, 폴라리스, 릴렉스에프 비교\" 발표"
+    },
+    {
+      "type": "논문",
+      "title": "‘다형홍반증’의 면역학적 고찰 보고",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "‘다형홍반증’의 면역학적 고찰 보고"
+    },
+    {
+      "type": "논문",
+      "title": "Dermatopathia pigmentosa reticularis 1예 보고",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "Dermatopathia pigmentosa reticularis 1예 보고"
+    },
+    {
+      "type": "논문",
+      "title": "Ganglion 희귀사례보고",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "Ganglion 희귀사례보고"
+    },
+    {
+      "type": "논문",
+      "title": "희귀색소질환 ‘망상색소피부증’ 보고",
+      "year": 1996,
+      "doctor_name": null,
+      "source_text": "희귀색소질환 ‘망상색소피부증’ 보고 (96년 Journal of Dermatology. 일본)"
+    },
+    {
+      "type": "교과서집필",
+      "title": "‘굿바이 여드름’ 저술",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "‘굿바이 여드름’ 저술"
+    },
+    {
+      "type": "기타",
+      "title": "University of Southern California",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "University of Southern California"
+    },
+    {
+      "type": "임상연구",
+      "title": "Norris Comprehensive Cancer Center, 피부암 연구",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "Norris Comprehensive Cancer Center, 피부암 연구"
+    },
+    {
+      "type": "논문",
+      "title": "Efficacy and safety of retinaldehyde 0.1% and 0.05% creams used to treat photoaged skin: A randomized double-blind controlled trial. .J Cosmet Dermatol. 17(3):471-476",
+      "year": 2018,
+      "doctor_name": [
+        "권혁선",
+        "이지혜",
+        "김경문",
+        "배정민"
+      ],
+      "source_text": "Efficacy and safety of retinaldehyde 0.1% and 0.05% creams used to treat photoaged skin: A randomized double-blind controlled trial. .J Cosmet Dermatol. 17(3):471-476 (2018) . 권혁선, 이지혜, 김경문, 배정민"
+    },
+    {
+      "type": "논문",
+      "title": "Topical evening primrose oil as a possible therapeutic alternative in children with molluscum contagiosum. Clin Exp Dermatol. 42(8):923-925",
+      "year": 2017,
+      "doctor_name": [
+        "권혁선",
+        "이지혜",
+        "김경문",
+        "최응호",
+        "배정민"
+      ],
+      "source_text": "Topical evening primrose oil as a possible therapeutic alternative in children with molluscum contagiosum. Clin Exp Dermatol. 42(8):923-925 (2017). 권혁선, 이지혜, 김경문, 최응호, 배정민"
+    },
+    {
+      "type": "논문",
+      "title": "Image Gallery: Subcutaneous fat necrosis of the newborn. Br J Dermatol 176(4):e32",
+      "year": 2017,
+      "doctor_name": [
+        "권혁선",
+        "이지혜",
+        "김경문",
+        "배정민"
+      ],
+      "source_text": "Image Gallery: Subcutaneous fat necrosis of the newborn. Br J Dermatol 176(4):e32 (2017). 권혁선, 이지혜, 김경문, 배정민"
+    },
+    {
+      "type": "논문",
+      "title": "Cibrobacter koseri에 의한 피부 농양 1예. 대한피부과학회지 vol.55 No5:310-311",
+      "year": 2017,
+      "doctor_name": [
+        "권혁선",
+        "이지혜",
+        "배정민",
+        "김경문"
+      ],
+      "source_text": "Cibrobacter koseri에 의한 피부 농양 1예. 대한피부과학회지 vol.55 No5:310-311 (2017). 권혁선, 이지혜, 배정민, 김경문"
+    },
+    {
+      "type": "논문",
+      "title": "Case of linear bullous aplasia cutis congenita. J Dermatol 44(11):e310-e311",
+      "year": 2017,
+      "doctor_name": [
+        "권혁선",
+        "이지혜",
+        "배정민",
+        "김경문"
+      ],
+      "source_text": "Case of linear bullous aplasia cutis congenita. J Dermatol 44(11):e310-e311 (2017). 권혁선,이지혜, 배정민, 김경문"
+    },
+    {
+      "type": "논문",
+      "title": "A Case of Segmental Vitiligo Along Blaschko’s Lines. Ann Dermatol. Dec;30(6):747-748.",
+      "year": 2018,
+      "doctor_name": [
+        "권혁선",
+        "정한미",
+        "이지혜",
+        "김경문",
+        "배정민"
+      ],
+      "source_text": "A Case of Segmental Vitiligo Along Blaschko’s Lines. Ann Dermatol. Dec;30(6):747-748. (2018). 권혁선,정한미,이지혜, 김경문,배정민"
+    },
+    {
+      "type": "논문",
+      "title": "Motorized 0.8-mm micropunch grafting for refractory vitiligo: A retrospective study of 230 cases. J Am Acad Dermatol 79(4):720-727",
+      "year": 2018,
+      "doctor_name": [
+        "배정민",
+        "이지혜",
+        "권혁선",
+        "김지훈",
+        "김동석"
+      ],
+      "source_text": "Motorized 0.8-mm micropunch grafting for refractory vitiligo: A retrospective study of 230 cases. J Am Acad Dermatol 79(4):720-727 (2018). 배정민,이지혜,권혁선,김지훈, 김동석"
+    },
+    {
+      "type": "학회발표",
+      "title": "Hailey-Hailey병 1예",
+      "year": 1994,
+      "doctor_name": null,
+      "source_text": "Hailey-Hailey병 1예(94년 대한피부과학회 춘계학술대회)"
+    },
+    {
+      "type": "학회발표",
+      "title": "안드로겐성 탈모증",
+      "year": 1995,
+      "doctor_name": null,
+      "source_text": "안드로겐성 탈모증(1995년 대한피부과학회 춘계학술대회)"
+    },
+    {
+      "type": "학회발표",
+      "title": "청피반성 혈관염의 임상 및 병리조직학적 고찰",
+      "year": 1995,
+      "doctor_name": null,
+      "source_text": "청피반성 혈관염의 임상 및 병리조직학적 고찰 (1995년 대한피부과학회 춘계학술대회)"
+    },
+    {
+      "type": "학회발표",
+      "title": "A clinical and psychological study of alopecia in children",
+      "year": 1995,
+      "doctor_name": null,
+      "source_text": "A clinical and psychological study of alopecia in children (1995년 제1차 3대륙모발연구학회)"
+    },
+    {
+      "type": "학회발표",
+      "title": "레티노인산이 Endothelin-1에 의해 자극된 멜라닌세포의 멜라닌생성과 수상돌기의 변화에 미치는 영향",
+      "year": 1996,
+      "doctor_name": null,
+      "source_text": "레티노인산이 Endothelin-1에 의해 자극된 멜라닌세포의 멜라닌생성과 수상돌기의 변화에 미치는 영향(1996년 대한피부과학회 추계학술대회)"
+    },
+    {
+      "type": "학회발표",
+      "title": "A prospective study of the effect of botulinum toxin A on masseter muscle",
+      "year": 2002,
+      "doctor_name": null,
+      "source_text": "A prospective study of the effect of botulinum toxin A on masseter muscle(2002년 The 3rd Asian\nAcademy of Plastic & Cosmetic Surgery)"
+    },
+    {
+      "type": "학회발표",
+      "title": "사각턱에서의 Botulinum Toxin의 이용",
+      "year": 2002,
+      "doctor_name": null,
+      "source_text": "사각턱에서의 Botulinum Toxin의 이용 (2002년 대한미용피부외과학회 심포지움)"
+    },
+    {
+      "type": "학회발표",
+      "title": "사각턱 보톡스 치료",
+      "year": 2003,
+      "doctor_name": null,
+      "source_text": "사각턱 보톡스 치료 (2003년 추계피부과학회)"
+    },
+    {
+      "type": "학회발표",
+      "title": "Xeo를 이용한 미용피부과적 치료",
+      "year": 2004,
+      "doctor_name": null,
+      "source_text": "Xeo를 이용한 미용피부과적 치료 (2004년 부경피부미용 전국 심포지움)"
+    },
+    {
+      "type": "학회발표",
+      "title": "타이탄을 이용한 리프트",
+      "year": 2004,
+      "doctor_name": null,
+      "source_text": "타이탄을 이용한 리프트 (2004년 10월 추계피부과학회)"
+    },
+    {
+      "type": "학회발표",
+      "title": "타이탄과 제네시스를 이용한 내츄럴리프트",
+      "year": 2005,
+      "doctor_name": null,
+      "source_text": "타이탄과 제네시스를 이용한 내츄럴리프트 (2005년 1월 광의학 학술대회)"
+    },
+    {
+      "type": "학회발표",
+      "title": "타이탄과 제네시스를 이용한 내츄럴리프트",
+      "year": 2005,
+      "doctor_name": null,
+      "source_text": "타이탄과 제네시스를 이용한 내츄럴리프트(2005년 5월 대경피부미용치료 심포지움)"
+    },
+    {
+      "type": "학회발표",
+      "title": "임상사진의 관리 및 보관",
+      "year": 2005,
+      "doctor_name": null,
+      "source_text": "임상사진의 관리 및 보관 (2005년 6월 대한코스메틱피부과학회 학술대회)"
+    },
+    {
+      "type": "논문",
+      "title": "가족성 양성 만성 천포창의 1예",
+      "year": 1995,
+      "doctor_name": null,
+      "source_text": "가족성 양성 만성 천포창의 1예(95년, 한국의과학)"
+    },
+    {
+      "type": "논문",
+      "title": "청피반성 혈관염의 임상 및 병리조직학적 관찰",
+      "year": 1996,
+      "doctor_name": null,
+      "source_text": "청피반성 혈관염의 임상 및 병리조직학적 관찰 (96년 대한피부과학회지)"
+    },
+    {
+      "type": "논문",
+      "title": "A clinical and psychological study of alopecia in children",
+      "year": 1996,
+      "doctor_name": null,
+      "source_text": "A clinical and psychological study of alopecia in children (96년 Hair Research for Next Millenium)"
+    },
+    {
+      "type": "논문",
+      "title": "레티노인산이 Endothelin-1에 의해 자극된 멜라닌세포의 멜라닌생성과 수상돌기의 변화에 미치는 영향",
+      "year": 1996,
+      "doctor_name": null,
+      "source_text": "레티노인산이 Endothelin-1에 의해 자극된 멜라닌세포의 멜라닌생성과 수상돌기의 변화에 미치는 영향(96년 대한피부연구학회지)"
+    },
+    {
+      "type": "논문",
+      "title": "후천성 말단성 섬유각화종",
+      "year": 1997,
+      "doctor_name": null,
+      "source_text": "후천성 말단성 섬유각화종(97년 대한피부과학회지)"
+    },
+    {
+      "type": "교과서집필",
+      "title": "굿바이 여드름 공저",
+      "year": 2002,
+      "doctor_name": null,
+      "source_text": "굿바이 여드름 공저(02년 웅진출판)"
+    },
+    {
+      "type": "논문",
+      "title": "보톡스를 이용한 저작근(사각턱) 교정법",
+      "year": 2005,
+      "doctor_name": null,
+      "source_text": "보톡스를 이용한 저작근(사각턱) 교정법 (2005년 5월호 \"미국 피부외과\"지 cover issue)"
+    },
+    {
+      "type": "학회발표",
+      "title": "레이저 모발이식술",
+      "year": 1997,
+      "doctor_name": null,
+      "source_text": "레이저 모발이식술(97년 춘계 대한피부과 학술대회)"
+    },
+    {
+      "type": "학회발표",
+      "title": "고출력 탄산가스 레이저와 어비움-야그 레이저로 병용하여 치료한 안면 피부재생술",
+      "year": 1997,
+      "doctor_name": null,
+      "source_text": "고출력 탄산가스 레이저와 어비움-야그 레이저로 병용하여 치료한 안면 피부재생술 (97년 미국 미용 레이저학회)"
+    },
+    {
+      "type": "학회발표",
+      "title": "에피라이트 취한증 치료용 고바야시 절연침을 병용하여 치료한 취한증 40차례",
+      "year": 1998,
+      "doctor_name": null,
+      "source_text": "에피라이트 취한증 치료용 고바야시 절연침을 병용하여 치료한 취한증 40차례 (98년 춘계 대한피부과 학술대회)"
+    },
+    {
+      "type": "학회발표",
+      "title": "미용피부과, 한국에서의 미용피부과",
+      "year": 2003,
+      "doctor_name": null,
+      "source_text": "미용피부과, 한국에서의 미용피부과 (2003년 10월 일본 피부과 학회)"
+    },
+    {
+      "type": "학회발표",
+      "title": "안티에이징",
+      "year": 2003,
+      "doctor_name": null,
+      "source_text": "안티에이징 (2003년 10월 아시안 아카데미)"
+    },
+    {
+      "type": "학회발표",
+      "title": "CRM 마케팅과 고객관리",
+      "year": 2004,
+      "doctor_name": null,
+      "source_text": "CRM 마케팅과 고객관리 (2004년 11월 지식경영 심포지엄 의료부문)"
+    },
+    {
+      "type": "학회발표",
+      "title": "서마지, 폴라리스, 릴렉스F 등을 이용한 안티에이징",
+      "year": 2005,
+      "doctor_name": null,
+      "source_text": "서마지, 폴라리스, 릴렉스F 등을 이용한 안티에이징 (2005년 1월 제15차 광의학 학술대회)"
+    },
+    {
+      "type": "학회발표",
+      "title": "국내 병원들의 외국진출",
+      "year": 2005,
+      "doctor_name": null,
+      "source_text": "국내 병원들의 외국진출 (2005년 4월 춘계피부과학회)"
+    },
+    {
+      "type": "논문",
+      "title": "Pathogenesis and Treatments of Intractable Skin Diseases",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "Pathogenesis and Treatments of Intractable Skin Diseases"
+    },
+    {
+      "type": "교과서집필",
+      "title": "‘미운털 뿌리뽑기’ 저술",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "‘미운털 뿌리뽑기’ 저술"
+    },
+    {
+      "type": "교과서집필",
+      "title": "‘굿바이 여드름’ 저술",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "‘굿바이 여드름’ 저술"
+    },
+    {
+      "type": "학회발표",
+      "title": "Clinical Study of Consulted Patients with Drug Eruption During a 10-Year Period",
+      "year": 2004,
+      "doctor_name": null,
+      "source_text": "Clinical Study of Consulted Patients with Drug Eruption During a 10-Year Period (2004 대한피부과학회 추계학술대회)"
+    },
+    {
+      "type": "학회발표",
+      "title": "하구순에 발생한 편평상피세포암을 Mohs 미세도식수술 후 Modified Abbe Flap으로 복원한 1예",
+      "year": 2005,
+      "doctor_name": null,
+      "source_text": "하구순에 발생한 편평상피세포암을 Mohs 미세도식수술 후 Modified Abbe Flap으로 복원한 1예 (2005 대한피부과학회 추계학술대회)"
+    },
+    {
+      "type": "학회발표",
+      "title": "성인기 여드름의 임상적 관찰 및 청소년기 여드름과의 비교 분석",
+      "year": 2005,
+      "doctor_name": null,
+      "source_text": "성인기 여드름의 임상적 관찰 및 청소년기 여드름과의 비교 분석 (2005 대한피부과학회 추계학술대회)"
+    },
+    {
+      "type": "학회발표",
+      "title": "기저세포암의 석회화 병변에서의 β-catenin과 Bone Morphogenetic Protein (BMP) -4 발현에 대한 면역조직화학적 연구",
+      "year": 2006,
+      "doctor_name": null,
+      "source_text": "기저세포암의 석회화 병변에서의 β-catenin과 Bone Morphogenetic Protein (BMP) -4 발현에 대한 면역조직화학적 연구 (2006 대한피부과학회 추계학술대회)"
+    },
+    {
+      "type": "학회발표",
+      "title": "A Case of Disseminated Cutaneous Metastatic Carcinoma from Stomach Carcinoma",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "A Case of Disseminated Cutaneous Metastatic Carcinoma from Stomach Carcinoma"
+    },
+    {
+      "type": "논문",
+      "title": "경표피 배출 소견을 보이는 유두상 한선종 1예",
+      "year": 2005,
+      "doctor_name": null,
+      "source_text": "경표피 배출 소견을 보이는 유두상 한선종 1예 (2005 대한피부과학회지)"
+    },
+    {
+      "type": "논문",
+      "title": "Papular elastorrhexis",
+      "year": 2007,
+      "doctor_name": null,
+      "source_text": "Papular elastorrhexis (2007 Annals of Dematology)"
+    },
+    {
+      "type": "논문",
+      "title": "Generalized lichen nitidus sucessfully treated with Narrow-band UVB phototherapy: Two cases report",
+      "year": 2007,
+      "doctor_name": null,
+      "source_text": "Generalized lichen nitidus sucessfully treated with Narrow-band UVB phototherapy: Two cases report (2007 Journal of Korean Medical Science)"
+    },
+    {
+      "type": "논문",
+      "title": "W-modification of Abbe flap after Mohs surgery of squamous cell carcinoma on the lower lip Dermatologic surgery",
+      "year": 2007,
+      "doctor_name": null,
+      "source_text": "W-modification of Abbe flap after Mohs surgery of squamous cell carcinoma on the lower lip Dermatologic surgery (2007 Dermatologic surgery)"
+    },
+    {
+      "type": "논문",
+      "title": "석회화된 기저세포암의 석회화 관련인자의 발현",
+      "year": 2007,
+      "doctor_name": null,
+      "source_text": "석회화된 기저세포암의 석회화 관련인자의 발현 (2007 대한피부과학회지)"
+    },
+    {
+      "type": "학회발표",
+      "title": "The comparative photodynamic effects on tumor cells:different levels of phototoxicity and photosensitization",
+      "year": 1998,
+      "doctor_name": null,
+      "source_text": "The comparative photodynamic effects on tumor cells:different levels of phototoxicity and photosensitization (1998년 The first joint meeting of Korean-Japanese Society for Dermatologic Surgery, Cheju, Korea)"
+    },
+    {
+      "type": "학회발표",
+      "title": "아토피 피부염 치료에 대한 에포감의 효과",
+      "year": 1997,
+      "doctor_name": null,
+      "source_text": "아토피 피부염 치료에 대한 에포감의 효과 (1997년 대한 피부과학회 추계학술대회)"
+    },
+    {
+      "type": "학회발표",
+      "title": "타이탄을 이용한 노화피부의 치료",
+      "year": 2005,
+      "doctor_name": null,
+      "source_text": "타이탄을 이용한 노화피부의 치료 (대한 피부과 개원의학회, 부경 시포지움2005년)"
+    },
+    {
+      "type": "학회발표",
+      "title": "타이탄과 제네시스를 이용한 모공치료 효과",
+      "year": 2006,
+      "doctor_name": null,
+      "source_text": "타이탄과 제네시스를 이용한 모공치료 효과 (대한 피부과 학회 춘계학술대회. 부산 2006년)"
+    },
+    {
+      "type": "학회발표",
+      "title": "아쿠아미드를 이용한 코필러 성형술",
+      "year": 2006,
+      "doctor_name": null,
+      "source_text": "아쿠아미드를 이용한 코필러 성형술 (세계 미용학회, 파리, 2006년)"
+    },
+    {
+      "type": "논문",
+      "title": "Localized intradermal injection of tranexamic acid for treatment of melasma in asian patients: A preliminary clinical trial. Dermatol Surg 2006; 32: 626-631",
+      "year": 2006,
+      "doctor_name": null,
+      "source_text": "Localized intradermal injection of tranexamic acid for treatment of melasma in asian patients: A preliminary clinical trial. Dermatol Surg 2006; 32: 626-631"
+    },
+    {
+      "type": "논문",
+      "title": "The change of bacillary index during WHO standard multi-drug theraphy in multi-bacillary leprosy-among the patients in the national sorokdo hospital. Korean J Dermatol 2001;39(9)：319-322",
+      "year": 2001,
+      "doctor_name": null,
+      "source_text": "The change of bacillary index during WHO standard multi-drug theraphy in multi-bacillary leprosy-among the patients in the national sorokdo hospital. Korean J Dermatol 2001;39(9)：319-322"
+    },
+    {
+      "type": "논문",
+      "title": "Generalized atrophic benign epidermaolysis bullosa- poor prognosis associated with chronic renal failure. Clin Exp Dermatol 2000; 25: 212-214",
+      "year": 2000,
+      "doctor_name": null,
+      "source_text": "Generalized atrophic benign epidermaolysis bullosa- poor prognosis associated with chronic renal failure. Clin Exp Dermatol 2000; 25: 212-214"
+    },
+    {
+      "type": "논문",
+      "title": "Angiodermatits associated with congenital arteriovenous malformation on the elbow. Acta Derm Venereol (Stockh) 1999; 79: 238-239",
+      "year": 1999,
+      "doctor_name": null,
+      "source_text": "Angiodermatits associated with congenital arteriovenous malformation on the elbow. Acta Derm Venereol (Stockh) 1999; 79: 238-239"
+    },
+    {
+      "type": "논문",
+      "title": "A Case of Malignant Peripheral Nerve Sheath Tumor in Neurofibromatosis. Korean J Dermatol 1999;37(10)：1535~1537",
+      "year": 1999,
+      "doctor_name": null,
+      "source_text": "A Case of Malignant Peripheral Nerve Sheath Tumor in Neurofibromatosis. Korean J Dermatol 1999;37(10)：1535~1537"
+    },
+    {
+      "type": "논문",
+      "title": "A comparative study on skin thickness between an old aged group and a young aged group by 20MHz-high frequency ultrasonography. Korean J Dermatol. 1999; 37(6) 719-725",
+      "year": 1999,
+      "doctor_name": null,
+      "source_text": "A comparative study on skin thickness between an old aged group and a young aged group by 20MHz-high frequency ultrasonography. Korean J Dermatol. 1999; 37(6) 719-725"
+    },
+    {
+      "type": "논문",
+      "title": "A case of edematous striae distensae in lupus nephritis. J Dermatol. 1999; 26: 122-124",
+      "year": 1999,
+      "doctor_name": null,
+      "source_text": "A case of edematous striae distensae in lupus nephritis. J Dermatol. 1999; 26: 122-124"
+    },
+    {
+      "type": "논문",
+      "title": "Relationship between constitutive skin color and ultraviolet light sensitivity in Koreans. Photodermatol photoimmunol Photomed 1999; 15: 231-235",
+      "year": 1999,
+      "doctor_name": null,
+      "source_text": "Relationship between constitutive skin color and ultraviolet light sensitivity in Koreans. Photodermatol photoimmunol Photomed 1999; 15: 231-235"
+    },
+    {
+      "type": "논문",
+      "title": "Five cases of shiitake dermatitis. Korean J Dermatol. 1998;36(3) 477-481",
+      "year": 1998,
+      "doctor_name": null,
+      "source_text": "Five cases of shiitake dermatitis. Korean J Dermatol. 1998;36(3) 477-481"
+    },
+    {
+      "type": "논문",
+      "title": "A Case of Allergic Contact Cheilitis from Propyl Gallate. Korean J Dermatol. 1997;35(2) 374-378",
+      "year": 1997,
+      "doctor_name": null,
+      "source_text": "A Case of Allergic Contact Cheilitis from Propyl Gallate. Korean J Dermatol. 1997;35(2) 374-378"
+    },
+    {
+      "type": "논문",
+      "title": "A case of Sjogren's Syndrome that presented with alcohol-induced purpura",
+      "year": 2010,
+      "doctor_name": null,
+      "source_text": "A case of Sjogren's Syndrome that presented with alcohol-induced purpura (2010년, Annals of Dermatology)"
+    },
+    {
+      "type": "논문",
+      "title": "비후성 반흔과 켈로이드에 대한 intense pulsed light의 치료효과",
+      "year": 2009,
+      "doctor_name": null,
+      "source_text": "비후성 반흔과 켈로이드에 대한 intense pulsed light의 치료효과(2009년, 대한피부과학회지)"
+    },
+    {
+      "type": "논문",
+      "title": "Mycobacterium abscessus에 의한 피부감염 1예",
+      "year": 2008,
+      "doctor_name": null,
+      "source_text": "Mycobacterium abscessus에 의한 피부감염 1예(2008년, 대한피부과학회지)"
+    },
+    {
+      "type": "논문",
+      "title": "A case of dermatitis neglecta",
+      "year": 2008,
+      "doctor_name": null,
+      "source_text": "A case of dermatitis neglecta(2008년, Annals of Dermatology)"
+    },
+    {
+      "type": "학회발표",
+      "title": "Sibutramine(Reductil)복용 후 발생한 괴사성 혈관염 1예",
+      "year": 2009,
+      "doctor_name": null,
+      "source_text": "Sibutramine(Reductil)복용 후 발생한 괴사성 혈관염 1예(2009년 대한피부과학회 춘계학술대회)"
+    },
+    {
+      "type": "학회발표",
+      "title": "다리에 발생한 고름이 배출되는 홍반성 피하결절",
+      "year": 2008,
+      "doctor_name": null,
+      "source_text": "다리에 발생한 고름이 배출되는 홍반성 피하결절(2008년 피부병리 심포지움)"
+    },
+    {
+      "type": "학회발표",
+      "title": "A case of correcting facial asymmetry due to facial nerve palsy induced by MACS lift with a new-V line barbed thread(APTOS) lift",
+      "year": 2008,
+      "doctor_name": null,
+      "source_text": "A case of correcting facial asymmetry due to facial nerve palsy induced by MACS lift with a new-V line barbed thread(APTOS) lift (2008년 대한피부과학회 춘계학술대회)"
+    },
+    {
+      "type": "학회발표",
+      "title": "다수의 구진을 주소로 내원한 성인과 소아의 유육종증",
+      "year": 2008,
+      "doctor_name": null,
+      "source_text": "다수의 구진을 주소로 내원한 성인과 소아의 유육종증 (2008년 대한피부과학회 춘계학술대회)"
+    },
+    {
+      "type": "학회발표",
+      "title": "A case of Hailey-Hailey disease improved with topical tacrolimus",
+      "year": 2007,
+      "doctor_name": null,
+      "source_text": "A case of Hailey-Hailey disease improved with topical tacrolimus (2007년 대한피부과학회 춘계학술대회)"
+    },
+    {
+      "type": "학회발표",
+      "title": "피부외과적 수술연습을 위한 삼차원적 입체얼굴 모형: 마네킹과 폴리우레탄제제의 이용",
+      "year": 2006,
+      "doctor_name": null,
+      "source_text": "피부외과적 수술연습을 위한 삼차원적 입체얼굴 모형: 마네킹과 폴리우레탄제제의 이용 (2006년 대한피부과학회 춘계학술대회)"
+    },
+    {
+      "type": "학회발표",
+      "title": "유두 미란성 선종증",
+      "year": 2006,
+      "doctor_name": null,
+      "source_text": "유두 미란성 선종증(2006년 대한피부과학회 춘계학술대회)"
+    },
+    {
+      "type": "학회발표",
+      "title": "자가지방이식술로 치료한 위축성 화상흉터",
+      "year": 2006,
+      "doctor_name": null,
+      "source_text": "자가지방이식술로 치료한 위축성 화상흉터 (2006년 대한피부과학회 춘계학술대회)"
+    },
+    {
+      "type": "교과서집필",
+      "title": "Surgery of the Skin: Procedural Dermatology, 3e. Saunders. (chapter 50. Assessment and treatment of Photoaging-related Mottled Pigmentation)",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "Surgery of the Skin: Procedural Dermatology, 3e. Saunders.\n(chapter 50. Assessment and treatment of Photoaging-related Mottled Pigmentation)"
+    },
+    {
+      "type": "논문",
+      "title": "Recent statistics on atopic dermatitis in Korea: five-year nationwide analysis from 2008 to 2012. J Clin Investigat Dermatol. 2014 Apr;2(2):4.",
+      "year": 2014,
+      "doctor_name": null,
+      "source_text": "Recent statistics on atopic dermatitis in Korea: five-year nationwide analysis from 2008 to 2012. J Clin Investigat Dermatol. 2014 Apr;2(2):4."
+    },
+    {
+      "type": "논문",
+      "title": "Iron plays a certain role in patterned hair loss. J Korean Med Sci. 2013 Jun;28(6):934-8.",
+      "year": 2013,
+      "doctor_name": null,
+      "source_text": "Iron plays a certain role in patterned hair loss. J Korean Med Sci. 2013 Jun;28(6):934-8."
+    },
+    {
+      "type": "논문",
+      "title": "Better clinical results with long term benefits in melasma patients. J Dermatolog Treat. 2013 Apr;24(2):112-8.",
+      "year": 2013,
+      "doctor_name": null,
+      "source_text": "Better clinical results with long term benefits in melasma patients. J Dermatolog Treat. 2013 Apr;24(2):112-8."
+    },
+    {
+      "type": "논문",
+      "title": "Intense Pulsed Light and Low-Fluence Q-Switched Nd:YAG Laser Treatment in Melasma Patients. Ann Dermatol. 2012 Aug;24(3):267-73.",
+      "year": 2012,
+      "doctor_name": null,
+      "source_text": "Intense Pulsed Light and Low-Fluence Q-Switched Nd:YAG Laser Treatment in Melasma Patients. Ann Dermatol. 2012 Aug;24(3):267-73."
+    },
+    {
+      "type": "논문",
+      "title": "Relation between treatment efficacy and cumulative dose of 3% topical minoxidil in male pattern baldness. J Am Acad Dermatol. 2012 Jan;66(1):e10-2.",
+      "year": 2012,
+      "doctor_name": null,
+      "source_text": "Relation between treatment efficacy and cumulative dose of 3% topical minoxidil in male pattern baldness. J Am Acad Dermatol. 2012 Jan;66(1):e10-2."
+    },
+    {
+      "type": "논문",
+      "title": "Congenital Bednar tumor over 10 years. J Dermatol. 2012 Oct;39(10):872-3.",
+      "year": 2012,
+      "doctor_name": null,
+      "source_text": "Congenital Bednar tumor over 10 years. J Dermatol. 2012 Oct;39(10):872-3."
+    },
+    {
+      "type": "논문",
+      "title": "Pigmentation above the constitutive level: an indicator of excimer laser radiation-induced erythema in Koreans. J Dermatol. 2012 Jul;39(7):608-12",
+      "year": 2012,
+      "doctor_name": null,
+      "source_text": "Pigmentation above the constitutive level: an indicator of excimer laser radiation-induced erythema in Koreans. J Dermatol. 2012 Jul;39(7):608-12"
+    },
+    {
+      "type": "논문",
+      "title": "Effects of murine dermal cells on the regulation of hair growth is dependent on the cell number and post-natal age of newborn mice. Ann Dermatol. 2012 Feb;24(1):94-8",
+      "year": 2012,
+      "doctor_name": null,
+      "source_text": "Effects of murine dermal cells on the regulation of hair growth is dependent on the cell number and post-natal age of newborn mice. Ann Dermatol. 2012 Feb;24(1):94-8"
+    },
+    {
+      "type": "논문",
+      "title": "Low level light could work on skin inflammatory disease: a case report on refractory acrodermatitis continua. J Korean Med Sci. 2011 Mar;26(3):454-6",
+      "year": 2011,
+      "doctor_name": null,
+      "source_text": "Low level light could work on skin inflammatory disease: a case report on refractory acrodermatitis continua. J Korean Med Sci. 2011 Mar;26(3):454-6"
+    },
+    {
+      "type": "논문",
+      "title": "Unilateral psoriasis in a woman with ipsilateral post-mastectomy lymphedema. Ann Dermatol. 2011 Dec;23(Suppl 3):S303-5",
+      "year": 2011,
+      "doctor_name": null,
+      "source_text": "Unilateral psoriasis in a woman with ipsilateral post-mastectomy lymphedema. Ann Dermatol. 2011 Dec;23(Suppl 3):S303-5"
+    },
+    {
+      "type": "논문",
+      "title": "Penicillamine-induced Elastosis Perforans Serpiginosa and Cutis Laxa in a Patient with Wilson's Disease. Ann Dermatol. 2010 Nov;22(4):468-71.",
+      "year": 2010,
+      "doctor_name": null,
+      "source_text": "Penicillamine-induced Elastosis Perforans Serpiginosa and Cutis Laxa in a Patient with Wilson's Disease. Ann Dermatol. 2010 Nov;22(4):468-71."
+    },
+    {
+      "type": "논문",
+      "title": "Two cases of palmoplantar lichen planus with various clinical features. J Dermatol. 2010 Nov;37(11):985-9.",
+      "year": 2010,
+      "doctor_name": null,
+      "source_text": "Two cases of palmoplantar lichen planus with various clinical features. J Dermatol. 2010 Nov;37(11):985-9."
+    },
+    {
+      "type": "논문",
+      "title": "Metformin: A Potential Treatment for Acne, Hidradenitis Suppurativa and Rosacea. Acta Derm Venereol. 2023; 103:adv18392.",
+      "year": 2023,
+      "doctor_name": null,
+      "source_text": "Metformin: A Potential Treatment for Acne, Hidradenitis Suppurativa and Rosacea. Acta Derm Venereol. 2023; 103:adv18392."
+    },
+    {
+      "type": "논문",
+      "title": "Evolution in Allergen Sensitization in Korean Patients with Atopic Dermatitis: A 10-Year Retrospective Study Based on the Multiple Allergen Simultaneous Test. Korean J Dermatol. 2022;60(6):350-363.",
+      "year": 2022,
+      "doctor_name": null,
+      "source_text": "Evolution in Allergen Sensitization in Korean Patients with Atopic Dermatitis: A 10-Year Retrospective Study Based on the Multiple Allergen Simultaneous Test. Korean J Dermatol. 2022;60(6):350-363."
+    },
+    {
+      "type": "논문",
+      "title": "A survey on the cosmetic use of injectable polynucleotide: The pattern of practice among Korean Dermatologists. J Cosmet Dermatol. 2024;23(4):1243-1252.",
+      "year": 2024,
+      "doctor_name": null,
+      "source_text": "A survey on the cosmetic use of injectable polynucleotide: The pattern of practice among Korean Dermatologists. J Cosmet Dermatol. 2024;23(4):1243-1252."
+    },
+    {
+      "type": "논문",
+      "title": "Clinical and histological evaluation of microneedle fractional radiofrequency treatment on facial fine lines and skin laxity in Koreans. J Cosmet Dermatol. 2023;22(5):1507-1512.",
+      "year": 2023,
+      "doctor_name": null,
+      "source_text": "Clinical and histological evaluation of microneedle fractional radiofrequency treatment on facial fine lines and skin laxity in Koreans. J Cosmet Dermatol. 2023;22(5):1507-1512."
+    },
+    {
+      "type": "논문",
+      "title": "Investigating Distinct Skin Microbial Communities and Skin Metabolome Profiles in Atopic Dermatitis. Int J Mol Sci. 2024;25(10):5211.",
+      "year": 2024,
+      "doctor_name": null,
+      "source_text": "Investigating Distinct Skin Microbial Communities and Skin Metabolome Profiles in Atopic Dermatitis. Int J Mol Sci. 2024;25(10):5211."
+    },
+    {
+      "type": "논문",
+      "title": "Ocular Comorbidities in Rosacea: A Case-Control Study Based on Seven Institutions. J Clin Med. 2021;10(13):2897.",
+      "year": 2021,
+      "doctor_name": null,
+      "source_text": "Ocular Comorbidities in Rosacea: A Case-Control Study Based on Seven Institutions. J Clin Med. 2021;10(13):2897."
+    },
+    {
+      "type": "논문",
+      "title": "Atopic Dermatitis and the Risk of Myocardial Infarction and All-Cause Mortality: A Nationwide Population-Based Cohort Study. Allergy Asthma Immunol Res. 2023;15(5):636-646.",
+      "year": 2023,
+      "doctor_name": null,
+      "source_text": "Atopic Dermatitis and the Risk of Myocardial Infarction and All-Cause Mortality: A Nationwide Population-Based Cohort Study. Allergy Asthma Immunol Res. 2023;15(5):636-646."
+    },
+    {
+      "type": "논문",
+      "title": "Characterization of Distinct Microbiota Associated with Scalp Dermatitis in Patients with Atopic Dermatitis. J Clin Med. 2022;11(6):1735.",
+      "year": 2022,
+      "doctor_name": null,
+      "source_text": "Characterization of Distinct Microbiota Associated with Scalp Dermatitis in Patients with Atopic Dermatitis. J Clin Med. 2022;11(6):1735."
+    },
+    {
+      "type": "논문",
+      "title": "Traumatic Neuromas of the Penis: A Case Report. Ann Dermatol. 2023;35 (Suppl 2):S364-S365.",
+      "year": 2023,
+      "doctor_name": null,
+      "source_text": "Traumatic Neuromas of the Penis: A Case Report. Ann Dermatol. 2023;35 (Suppl 2):S364-S365."
+    },
+    {
+      "type": "논문",
+      "title": "A Case of Verruca Plana Spreaded after Tattoo Procedure. Korean J Dermatol. 2022 ;60(4):268-269",
+      "year": 2022,
+      "doctor_name": null,
+      "source_text": "A Case of Verruca Plana Spreaded after Tattoo Procedure. Korean J Dermatol. 2022 ;60(4):268-269"
+    },
+    {
+      "type": "논문",
+      "title": "A Case of Multiple Bowen’s Disease in a Patient with Crohn’s Disease. Korean J Dermatol. 2021 ;59(10):793-796.",
+      "year": 2021,
+      "doctor_name": null,
+      "source_text": "A Case of Multiple Bowen’s Disease in a Patient with Crohn’s Disease. Korean J Dermatol. 2021 ;59(10):793-796."
+    },
+    {
+      "type": "논문",
+      "title": "A Case of Diffuse Dermal Angiomatosis on the Chest Wall. . Korean J Dermatol. 2023:61(5):328-330.",
+      "year": 2023,
+      "doctor_name": null,
+      "source_text": "A Case of Diffuse Dermal Angiomatosis on the Chest Wall. . Korean J Dermatol. 2023:61(5):328-330."
+    },
+    {
+      "type": "논문",
+      "title": "A Case of Scabies in a 6-Week-Old Infant Treated with 5% Permethrin Cream. Korean J Dermatol. 2022 ;60(4):270-271.",
+      "year": 2022,
+      "doctor_name": null,
+      "source_text": "A Case of Scabies in a 6-Week-Old Infant Treated with 5% Permethrin Cream. Korean J Dermatol. 2022 ;60(4):270-271."
+    },
+    {
+      "type": "논문",
+      "title": "Crusted Scabies in a Patient With Intellectual Disability. J Korean Med Sci. 2022;37(19):e151.",
+      "year": 2022,
+      "doctor_name": null,
+      "source_text": "Crusted Scabies in a Patient With Intellectual Disability. J Korean Med Sci. 2022;37(19):e151."
+    },
+    {
+      "type": "논문",
+      "title": "A case of late-onset granuloma 10 years after illegal filler injection. J Cosmet Dermatol. 2022;21(11):6515-6517.",
+      "year": 2022,
+      "doctor_name": null,
+      "source_text": "A case of late-onset granuloma 10 years after illegal filler injection. J Cosmet Dermatol. 2022;21(11):6515-6517."
+    },
+    {
+      "type": "학회발표",
+      "title": "Clinical evaluation of adult atopic dermatitis in Korea",
+      "year": 2000,
+      "doctor_name": null,
+      "source_text": "Clinical evaluation of adult atopic dermatitis in Korea(Academy 2000, Nashville, TN, U.S.A )"
+    },
+    {
+      "type": "학회발표",
+      "title": "수종 계면활성제 첩포에 의해 유발된 피부독성도의 육안적 관찰 및 비침습기기적 측정간의 비교분석",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "수종 계면활성제 첩포에 의해 유발된 피부독성도의 육안적 관찰 및 비침습기기적 측정간의 비교분석(제16회 접촉피부염 및 피부알레르기 심포지움)"
+    },
+    {
+      "type": "학회발표",
+      "title": "심부정맥 이형성을 동반한 색소혈관모반증",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "심부정맥 이형성을 동반한 색소혈관모반증 (제50차 대한피부과학회 춘계학술대회)"
+    },
+    {
+      "type": "학회발표",
+      "title": "에폭시 수지에 의한 공기매개성 알레르기성 접촉피부염 1예 외 증례보고 다수",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "에폭시 수지에 의한 공기매개성 알레르기성 접촉피부염 1예 (제15회 접촉피부염 및 피부알레르기 심포지움) 외 증례보고 다수"
+    },
+    {
+      "type": "논문",
+      "title": "한국인 피부색의 연령, 성별 및 계절에 따른 차이와 특성",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "한국인 피부색의 연령, 성별 및 계절에 따른 차이와 특성 (대한피부과학회지)"
+    },
+    {
+      "type": "논문",
+      "title": "p53 Gene Mutations in Bowens Disease in Korean",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "p53 Gene Mutations in Bowens Disease in Korean (대한피부연구학회지)"
+    },
+    {
+      "type": "논문",
+      "title": "아토피피부염 말초혈액 단핵구에서의 IL-10, GM-CSF 및 TNF-a mRNA의 자발적 발현",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "아토피피부염 말초혈액 단핵구에서의 IL-10, GM-CSF 및 TNF-a mRNA의 자발적 발현 (천식 및 알레르기)"
+    },
+    {
+      "type": "교과서집필",
+      "title": "‘굿바이 여드름’ 저술",
+      "year": null,
+      "doctor_name": null,
+      "source_text": "‘굿바이 여드름’ 저술"
+    }
+  ],
+  "medical_devices": [
+    {
+      "name": "Zeltiq",
+      "korean_name": "젤틱",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "cryotherapy",
+      "description": null,
+      "source": "image_banner"
+    },
+    {
+      "name": "Shurink Universe",
+      "korean_name": "슈링크 유니버스",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": null,
+      "source": "image_banner"
+    },
+    {
+      "name": "Pallas Premium",
+      "korean_name": "팔라스 프리미엄",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": null,
+      "source": "image_banner"
+    },
+    {
+      "name": "Affinite",
+      "korean_name": "아피니트",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "other_device",
+      "description": null,
+      "source": "text"
+    },
+    {
+      "name": "Apogee Laser",
+      "korean_name": "아포지 레이저",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": null,
+      "source": "academic"
+    },
+    {
+      "name": "Aquamid",
+      "korean_name": null,
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "filler",
+      "description": null,
+      "source": "academic"
+    },
+    {
+      "name": "Polyacrylamide",
+      "korean_name": "폴리아크릴 아마이드",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "filler",
+      "description": null,
+      "source": "academic"
+    },
+    {
+      "name": "Esthelis",
+      "korean_name": null,
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "filler",
+      "description": null,
+      "source": "academic"
+    },
+    {
+      "name": "Skinfill",
+      "korean_name": null,
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "filler",
+      "description": null,
+      "source": "academic"
+    },
+    {
+      "name": "Botulax",
+      "korean_name": null,
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "botox",
+      "description": null,
+      "source": "academic"
+    },
+    {
+      "name": "Radiesse",
+      "korean_name": "래디어스",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "collagen_stimulator",
+      "description": null,
+      "source": "academic"
+    },
+    {
+      "name": "Max-G",
+      "korean_name": null,
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "IPL",
+      "description": null,
+      "source": "academic"
+    },
+    {
+      "name": "Princess",
+      "korean_name": "프린세스",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "filler",
+      "description": null,
+      "source": "academic"
+    },
+    {
+      "name": "Botulinum Toxin",
+      "korean_name": "보톨리눔 독소",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "botox",
+      "description": null,
+      "source": "academic"
+    },
+    {
+      "name": "Cog Thread",
+      "korean_name": "코그실",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "thread",
+      "description": null,
+      "source": "academic"
+    },
+    {
+      "name": "Liposonic",
+      "korean_name": "리포소닉",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "HIFU",
+      "description": null,
+      "source": "academic"
+    },
+    {
+      "name": "Thermage",
+      "korean_name": "써마지",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF",
+      "description": null,
+      "source": "academic"
+    },
+    {
+      "name": "Polaris",
+      "korean_name": "폴라리스",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF",
+      "description": null,
+      "source": "academic"
+    },
+    {
+      "name": "Relax-F",
+      "korean_name": "릴렉스에프",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF",
+      "description": null,
+      "source": "academic"
+    },
+    {
+      "name": "Botox",
+      "korean_name": "보톡스",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "botox",
+      "description": null,
+      "source": "academic"
+    },
+    {
+      "name": "Xeo",
+      "korean_name": null,
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": null,
+      "source": "academic"
+    },
+    {
+      "name": "Titan",
+      "korean_name": "타이탄",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "RF",
+      "description": null,
+      "source": "academic"
+    },
+    {
+      "name": "Genesis",
+      "korean_name": "제네시스",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": null,
+      "source": "academic"
+    },
+    {
+      "name": "CO2 Laser",
+      "korean_name": "탄산가스 레이저",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": null,
+      "source": "academic"
+    },
+    {
+      "name": "Erbium-YAG Laser",
+      "korean_name": "어비움-야그 레이저",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": null,
+      "source": "academic"
+    },
+    {
+      "name": "Epilight",
+      "korean_name": null,
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "IPL",
+      "description": null,
+      "source": "academic"
+    },
+    {
+      "name": "Intense Pulsed Light",
+      "korean_name": "IPL",
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "IPL",
+      "description": null,
+      "source": "academic"
+    },
+    {
+      "name": "Q-Switched Nd:YAG Laser",
+      "korean_name": null,
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": null,
+      "source": "academic"
+    },
+    {
+      "name": "Excimer Laser",
+      "korean_name": null,
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "laser",
+      "description": null,
+      "source": "academic"
+    },
+    {
+      "name": "Polynucleotide",
+      "korean_name": "폴리뉴클레오타이드",
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "booster",
+      "description": null,
+      "source": "academic"
+    },
+    {
+      "name": "Microneedle Fractional Radiofrequency",
+      "korean_name": null,
+      "manufacturer": null,
+      "device_type": "device",
+      "subcategory": "microneedle",
+      "description": null,
+      "source": "academic"
+    },
+    {
+      "name": "APTOS",
+      "korean_name": null,
+      "manufacturer": null,
+      "device_type": "injectable",
+      "subcategory": "thread",
+      "description": null,
+      "source": "academic"
+    }
+  ],
+  "treatments": [
+    {
+      "name": "젤틱 쿨스컬프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "cryotherapy",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "슈링크 유니버스",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "hifu",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "여드름치료 솔루션",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "팔라스 프리미엄",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "핌클케어",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "acne",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "여드름",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "acne",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "여드름흉터",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "acne",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "기미/색소",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "laser",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "백반증",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "편평사마귀",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "손발톱무좀",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "3D 동안 리프팅",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "hifu",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "아피니트",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "액취증/다한증",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "젤틱 체형관리",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "cryotherapy",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "메디컬 스킨케어",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "핌클케어 Real story",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    },
+    {
+      "name": "여드름 Real story",
+      "regular_price": null,
+      "event_price": null,
+      "min_price": null,
+      "max_price": null,
+      "price_type": null,
+      "quantity": null,
+      "unit": null,
+      "price_per_unit": null,
+      "event_period": null,
+      "includes": [],
+      "is_package": false,
+      "is_addon": false,
+      "source": "website",
+      "category": "other",
+      "price_display": null,
+      "session_info": null,
+      "body_part": null
+    }
+  ],
+  "events": [
+    {
+      "title": "슈링크유니버스 이벤트",
+      "type": "할인",
+      "period": null,
+      "discount_info": null,
+      "original_price": null,
+      "event_price": null,
+      "conditions": [],
+      "source": "banner"
+    }
+  ],
+  "clinic_categories": [
+    {
+      "name": "핌클케어",
+      "treatments": [
+        "핌클케어",
+        "핌클케어 Real story"
+      ]
+    },
+    {
+      "name": "여드름",
+      "treatments": [
+        "여드름",
+        "여드름치료 솔루션",
+        "여드름 Real story"
+      ]
+    },
+    {
+      "name": "여드름흉터",
+      "treatments": [
+        "여드름흉터"
+      ]
+    },
+    {
+      "name": "기미/색소",
+      "treatments": [
+        "기미/색소"
+      ]
+    },
+    {
+      "name": "백반증",
+      "treatments": [
+        "백반증"
+      ]
+    },
+    {
+      "name": "편평사마귀",
+      "treatments": [
+        "편평사마귀"
+      ]
+    },
+    {
+      "name": "손발톱무좀",
+      "treatments": [
+        "손발톱무좀"
+      ]
+    },
+    {
+      "name": "3D 동안 리프팅",
+      "treatments": [
+        "3D 동안 리프팅"
+      ]
+    },
+    {
+      "name": "아피니트",
+      "treatments": [
+        "아피니트"
+      ]
+    },
+    {
+      "name": "액취증/다한증",
+      "treatments": [
+        "액취증/다한증"
+      ]
+    },
+    {
+      "name": "젤틱 체형관리",
+      "treatments": [
+        "젤틱 체형관리"
+      ]
+    },
+    {
+      "name": "메디컬 스킨케어",
+      "treatments": [
+        "메디컬 스킨케어"
+      ]
+    }
+  ],
+  "contact_info": {
+    "email": [],
+    "phone": [],
+    "address": null,
+    "kakao_channel": null,
+    "naver_booking": null,
+    "naver_place": null,
+    "instagram": null,
+    "facebook": null,
+    "youtube": null,
+    "blog": null,
+    "website_url": "http://www.gowoonss.com/",
+    "operating_hours": null
+  },
+  "unregistered_equipment": [
+    {
+      "name": "Pallas Premium",
+      "korean_name": "팔라스 프리미엄",
+      "suggested_category": "laser",
+      "source": "image_banner",
+      "reason": "Banner text, likely a laser device"
+    },
+    {
+      "name": "Affinite",
+      "korean_name": "아피니트",
+      "suggested_category": "other_device",
+      "source": "website",
+      "reason": "Navigation menu item, sounds like a device/treatment"
+    },
+    {
+      "name": "Max-G",
+      "korean_name": null,
+      "suggested_category": "IPL",
+      "source": "academic_paper",
+      "reason": "Mentioned in academic activity, likely an IPL/laser device"
+    },
+    {
+      "name": "Relax-F",
+      "korean_name": "릴렉스에프",
+      "suggested_category": "RF",
+      "source": "academic_paper",
+      "reason": "Mentioned in academic activity with Thermage and Polaris, likely an RF device"
+    },
+    {
+      "name": "Xeo",
+      "korean_name": null,
+      "suggested_category": "laser",
+      "source": "academic_paper",
+      "reason": "Mentioned in academic activity, likely a laser platform"
+    },
+    {
+      "name": "Epilight",
+      "korean_name": null,
+      "suggested_category": "IPL",
+      "source": "academic_paper",
+      "reason": "Mentioned in academic activity, likely an IPL device"
+    }
+  ],
+  "unregistered_treatments": [],
+  "raw_price_texts": [],
+  "extraction_summary": {
+    "total_doctors": 1,
+    "total_academic": 108,
+    "total_equipment": 31,
+    "total_devices": 22,
+    "total_injectables": 9,
+    "total_treatments": 18,
+    "total_events": 1,
+    "total_categories": 12,
+    "total_contact_channels": 1,
+    "has_email": false,
+    "has_phone": false,
+    "has_kakao": false,
+    "has_sns": false,
+    "price_available_ratio": "0/18",
+    "unregistered_equipment_count": 6,
+    "unregistered_treatments_count": 0
+  }
+}
