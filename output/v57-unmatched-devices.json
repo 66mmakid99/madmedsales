@@ -20,34 +20,6 @@
     ]
   },
   {
-    "device": "o2derm",
-    "count": 4,
-    "hospitals": [
-      "디데이의원",
-      "리노보의원 압구정",
-      "벨버티의원",
-      "샤인빔의원 홍대"
-    ]
-  },
-  {
-    "device": "density",
-    "count": 3,
-    "hospitals": [
-      "메이린클리닉 청담",
-      "바롬 클리닉",
-      "포에버의원"
-    ]
-  },
-  {
-    "device": "smartlux",
-    "count": 3,
-    "hospitals": [
-      "디에이성형외과의원",
-      "메이린클리닉 청담",
-      "벨버티의원"
-    ]
-  },
-  {
     "device": "고주파",
     "count": 3,
     "hospitals": [
@@ -66,104 +38,6 @@
     ]
   },
   {
-    "device": "intracel",
-    "count": 3,
-    "hospitals": [
-      "강남타임의원",
-      "라마르프리미어의원",
-      "리노보의원 압구정"
-    ]
-  },
-  {
-    "device": "airnox",
-    "count": 3,
-    "hospitals": [
-      "디데이의원",
-      "엔의원",
-      "포에버의원 안산점"
-    ]
-  },
-  {
-    "device": "eve titan",
-    "count": 2,
-    "hospitals": [
-      "라뷰티의원",
-      "청담리브의원"
-    ]
-  },
-  {
-    "device": "denserty",
-    "count": 2,
-    "hospitals": [
-      "벨버티의원",
-      "청담리브의원"
-    ]
-  },
-  {
-    "device": "micool",
-    "count": 2,
-    "hospitals": [
-      "강남타임의원",
-      "청담리브의원"
-    ]
-  },
-  {
-    "device": "cryotherapy",
-    "count": 2,
-    "hospitals": [
-      "메이린클리닉 청담",
-      "청담글래시피부과의원"
-    ]
-  },
-  {
-    "device": "pladuo",
-    "count": 2,
-    "hospitals": [
-      "메이린클리닉 청담",
-      "벨버티의원"
-    ]
-  },
-  {
-    "device": "virtuerf",
-    "count": 2,
-    "hospitals": [
-      "메이린클리닉 청담",
-      "벨버티의원"
-    ]
-  },
-  {
-    "device": "neobeam",
-    "count": 2,
-    "hospitals": [
-      "베러미의원 울산 삼산점",
-      "벨버티의원"
-    ]
-  },
-  {
-    "device": "v-ro",
-    "count": 2,
-    "hospitals": [
-      "베러미의원 울산 삼산점",
-      "파스텔휴먼피부과"
-    ]
-  },
-  {
-    "device": "airjet",
-    "count": 2,
-    "hospitals": [
-      "분당오라클피부과",
-      "엔의원"
-    ]
-  },
-  {
-    "device": "듀엣rf",
-    "count": 2,
-    "hospitals": [
-      "분당오라클피부과",
-      "파라다이스의원"
-    ]
-  },
-  {
     "device": "laser",
     "count": 2,
     "hospitals": [
@@ -172,63 +46,7 @@
     ]
   },
   {
-    "device": "genius",
-    "count": 1,
-    "hospitals": [
-      "청담아티젠의원"
-    ]
-  },
-  {
-    "device": "neogen plasma",
-    "count": 1,
-    "hospitals": [
-      "청담리브의원"
-    ]
-  },
-  {
     "device": "laser toning",
-    "count": 1,
-    "hospitals": [
-      "청담리브의원"
-    ]
-  },
-  {
-    "device": "corege cellfit",
-    "count": 1,
-    "hospitals": [
-      "청담리브의원"
-    ]
-  },
-  {
-    "device": "t-wave",
-    "count": 1,
-    "hospitals": [
-      "청담리브의원"
-    ]
-  },
-  {
-    "device": "core sculpt",
-    "count": 1,
-    "hospitals": [
-      "청담리브의원"
-    ]
-  },
-  {
-    "device": "accento edge toning",
-    "count": 1,
-    "hospitals": [
-      "청담리브의원"
-    ]
-  },
-  {
-    "device": "silk wave",
-    "count": 1,
-    "hospitals": [
-      "청담리브의원"
-    ]
-  },
-  {
-    "device": "mosaic fraxel",
     "count": 1,
     "hospitals": [
       "청담리브의원"
@@ -242,21 +60,7 @@
     ]
   },
   {
-    "device": "rederm plasma",
-    "count": 1,
-    "hospitals": [
-      "청담리브의원"
-    ]
-  },
-  {
     "device": "hrv",
-    "count": 1,
-    "hospitals": [
-      "메이린클리닉 청담"
-    ]
-  },
-  {
-    "device": "omnifit",
     "count": 1,
     "hospitals": [
       "메이린클리닉 청담"
@@ -291,91 +95,7 @@
     ]
   },
   {
-    "device": "vacumed",
-    "count": 1,
-    "hospitals": [
-      "메이린클리닉 청담"
-    ]
-  },
-  {
-    "device": "photon therapy",
-    "count": 1,
-    "hospitals": [
-      "메이린클리닉 청담"
-    ]
-  },
-  {
-    "device": "emsella",
-    "count": 1,
-    "hospitals": [
-      "메이린클리닉 청담"
-    ]
-  },
-  {
     "device": "tms therapy",
-    "count": 1,
-    "hospitals": [
-      "메이린클리닉 청담"
-    ]
-  },
-  {
-    "device": "dermio facial",
-    "count": 1,
-    "hospitals": [
-      "메이린클리닉 청담"
-    ]
-  },
-  {
-    "device": "sciton bbl hero",
-    "count": 1,
-    "hospitals": [
-      "메이린클리닉 청담"
-    ]
-  },
-  {
-    "device": "eravity",
-    "count": 1,
-    "hospitals": [
-      "메이린클리닉 청담"
-    ]
-  },
-  {
-    "device": "fortra",
-    "count": 1,
-    "hospitals": [
-      "메이린클리닉 청담"
-    ]
-  },
-  {
-    "device": "eplus",
-    "count": 1,
-    "hospitals": [
-      "메이린클리닉 청담"
-    ]
-  },
-  {
-    "device": "opus",
-    "count": 1,
-    "hospitals": [
-      "메이린클리닉 청담"
-    ]
-  },
-  {
-    "device": "sunny",
-    "count": 1,
-    "hospitals": [
-      "메이린클리닉 청담"
-    ]
-  },
-  {
-    "device": "re;epot",
-    "count": 1,
-    "hospitals": [
-      "메이린클리닉 청담"
-    ]
-  },
-  {
-    "device": "fotona qx-max",
     "count": 1,
     "hospitals": [
       "메이린클리닉 청담"
@@ -389,34 +109,6 @@
     ]
   },
   {
-    "device": "red touch",
-    "count": 1,
-    "hospitals": [
-      "메이린클리닉 청담"
-    ]
-  },
-  {
-    "device": "gv laser",
-    "count": 1,
-    "hospitals": [
-      "메이린클리닉 청담"
-    ]
-  },
-  {
-    "device": "nanolaserpeel",
-    "count": 1,
-    "hospitals": [
-      "메이린클리닉 청담"
-    ]
-  },
-  {
-    "device": "halo",
-    "count": 1,
-    "hospitals": [
-      "메이린클리닉 청담"
-    ]
-  },
-  {
     "device": "re-h",
     "count": 1,
     "hospitals": [
@@ -424,147 +116,7 @@
     ]
   },
   {
-    "device": "double tite",
-    "count": 1,
-    "hospitals": [
-      "메이린클리닉 청담"
-    ]
-  },
-  {
-    "device": "hydrafacial",
-    "count": 1,
-    "hospitals": [
-      "메이린클리닉 청담"
-    ]
-  },
-  {
-    "device": "geneo-x",
-    "count": 1,
-    "hospitals": [
-      "메이린클리닉 청담"
-    ]
-  },
-  {
-    "device": "eporex",
-    "count": 1,
-    "hospitals": [
-      "메이린클리닉 청담"
-    ]
-  },
-  {
-    "device": "ldm triple",
-    "count": 1,
-    "hospitals": [
-      "메이린클리닉 청담"
-    ]
-  },
-  {
-    "device": "ionzyme",
-    "count": 1,
-    "hospitals": [
-      "메이린클리닉 청담"
-    ]
-  },
-  {
-    "device": "acnepeel",
-    "count": 1,
-    "hospitals": [
-      "메이린클리닉 청담"
-    ]
-  },
-  {
-    "device": "affinite",
-    "count": 1,
-    "hospitals": [
-      "메이린클리닉 청담"
-    ]
-  },
-  {
-    "device": "cielo",
-    "count": 1,
-    "hospitals": [
-      "메이린클리닉 청담"
-    ]
-  },
-  {
-    "device": "du:pla",
-    "count": 1,
-    "hospitals": [
-      "메이린클리닉 청담"
-    ]
-  },
-  {
-    "device": "tda",
-    "count": 1,
-    "hospitals": [
-      "메이린클리닉 청담"
-    ]
-  },
-  {
-    "device": "lhala jet",
-    "count": 1,
-    "hospitals": [
-      "메이린클리닉 청담"
-    ]
-  },
-  {
-    "device": "transkin",
-    "count": 1,
-    "hospitals": [
-      "메이린클리닉 청담"
-    ]
-  },
-  {
-    "device": "u-cell",
-    "count": 1,
-    "hospitals": [
-      "메이린클리닉 청담"
-    ]
-  },
-  {
-    "device": "plasma touch",
-    "count": 1,
-    "hospitals": [
-      "메이린클리닉 청담"
-    ]
-  },
-  {
-    "device": "3d facial vectra",
-    "count": 1,
-    "hospitals": [
-      "메이린클리닉 청담"
-    ]
-  },
-  {
-    "device": "visia",
-    "count": 1,
-    "hospitals": [
-      "메이린클리닉 청담"
-    ]
-  },
-  {
-    "device": "cristal",
-    "count": 1,
-    "hospitals": [
-      "메이린클리닉 청담"
-    ]
-  },
-  {
-    "device": "virtu",
-    "count": 1,
-    "hospitals": [
-      "베러미의원 울산 삼산점"
-    ]
-  },
-  {
     "device": "초음파",
-    "count": 1,
-    "hospitals": [
-      "웰스킨의원"
-    ]
-  },
-  {
-    "device": "pulsed dye laser",
     "count": 1,
     "hospitals": [
       "웰스킨의원"
@@ -585,34 +137,6 @@
     ]
   },
   {
-    "device": "리텐스",
-    "count": 1,
-    "hospitals": [
-      "웰스킨의원"
-    ]
-  },
-  {
-    "device": "울트라셀",
-    "count": 1,
-    "hospitals": [
-      "웰스킨의원"
-    ]
-  },
-  {
-    "device": "amts",
-    "count": 1,
-    "hospitals": [
-      "웰스킨의원"
-    ]
-  },
-  {
-    "device": "어븀",
-    "count": 1,
-    "hospitals": [
-      "웰스킨의원"
-    ]
-  },
-  {
     "device": "니들 고주파",
     "count": 1,
     "hospitals": [
@@ -627,42 +151,7 @@
     ]
   },
   {
-    "device": "ultra dream pico",
-    "count": 1,
-    "hospitals": [
-      "아가파의원"
-    ]
-  },
-  {
-    "device": "m22",
-    "count": 1,
-    "hospitals": [
-      "아가파의원"
-    ]
-  },
-  {
-    "device": "리팟레이저",
-    "count": 1,
-    "hospitals": [
-      "포에버의원"
-    ]
-  },
-  {
     "device": "pico",
-    "count": 1,
-    "hospitals": [
-      "포에버의원"
-    ]
-  },
-  {
-    "device": "accento",
-    "count": 1,
-    "hospitals": [
-      "포에버의원"
-    ]
-  },
-  {
-    "device": "lavieen",
     "count": 1,
     "hospitals": [
       "포에버의원"
@@ -718,126 +207,7 @@
     ]
   },
   {
-    "device": "picohi",
-    "count": 1,
-    "hospitals": [
-      "라뷰티의원"
-    ]
-  },
-  {
-    "device": "xtrac velocity",
-    "count": 1,
-    "hospitals": [
-      "분당오라클피부과"
-    ]
-  },
-  {
-    "device": "pinpointe footlaser",
-    "count": 1,
-    "hospitals": [
-      "분당오라클피부과"
-    ]
-  },
-  {
-    "device": "skin tyte",
-    "count": 1,
-    "hospitals": [
-      "분당오라클피부과"
-    ]
-  },
-  {
-    "device": "bbl laser",
-    "count": 1,
-    "hospitals": [
-      "분당오라클피부과"
-    ]
-  },
-  {
-    "device": "소프트필링레이저",
-    "count": 1,
-    "hospitals": [
-      "분당오라클피부과"
-    ]
-  },
-  {
-    "device": "그린셀레이저",
-    "count": 1,
-    "hospitals": [
-      "탐클리닉"
-    ]
-  },
-  {
-    "device": "바큐메드",
-    "count": 1,
-    "hospitals": [
-      "탐클리닉"
-    ]
-  },
-  {
-    "device": "탐포소닉",
-    "count": 1,
-    "hospitals": [
-      "탐클리닉"
-    ]
-  },
-  {
-    "device": "슬리머스",
-    "count": 1,
-    "hospitals": [
-      "탐클리닉"
-    ]
-  },
-  {
-    "device": "사이저",
-    "count": 1,
-    "hospitals": [
-      "탐클리닉"
-    ]
-  },
-  {
-    "device": "울트라포커스",
-    "count": 1,
-    "hospitals": [
-      "탐클리닉"
-    ]
-  },
-  {
     "device": "new 뉴테라",
-    "count": 1,
-    "hospitals": [
-      "라마르프리미어의원"
-    ]
-  },
-  {
-    "device": "excelv plus",
-    "count": 1,
-    "hospitals": [
-      "라마르프리미어의원"
-    ]
-  },
-  {
-    "device": "onychov laser",
-    "count": 1,
-    "hospitals": [
-      "라마르프리미어의원"
-    ]
-  },
-  {
-    "device": "smoothcool",
-    "count": 1,
-    "hospitals": [
-      "라마르프리미어의원"
-    ]
-  },
-  {
-    "device": "yellow laser",
-    "count": 1,
-    "hospitals": [
-      "라마르프리미어의원"
-    ]
-  },
-  {
-    "device": "allegro",
     "count": 1,
     "hospitals": [
       "라마르프리미어의원"
@@ -851,42 +221,7 @@
     ]
   },
   {
-    "device": "virovitro",
-    "count": 1,
-    "hospitals": [
-      "라마르프리미어의원"
-    ]
-  },
-  {
     "device": "ulthermage",
-    "count": 1,
-    "hospitals": [
-      "라마르프리미어의원"
-    ]
-  },
-  {
-    "device": "comfort dual",
-    "count": 1,
-    "hospitals": [
-      "라마르프리미어의원"
-    ]
-  },
-  {
-    "device": "frexa",
-    "count": 1,
-    "hospitals": [
-      "라마르프리미어의원"
-    ]
-  },
-  {
-    "device": "rainbow therapy",
-    "count": 1,
-    "hospitals": [
-      "라마르프리미어의원"
-    ]
-  },
-  {
-    "device": "pljet laser",
     "count": 1,
     "hospitals": [
       "라마르프리미어의원"
@@ -907,143 +242,10 @@
     ]
   },
   {
-    "device": "led",
-    "count": 1,
-    "hospitals": [
-      "디데이의원"
-    ]
-  },
-  {
-    "device": "reepot laser",
-    "count": 1,
-    "hospitals": [
-      "나의미래피부과의원"
-    ]
-  },
-  {
-    "device": "힐로웨이브",
-    "count": 1,
-    "hospitals": [
-      "나의미래피부과의원"
-    ]
-  },
-  {
     "device": "요로결석 쇄석기",
     "count": 1,
     "hospitals": [
       "울산제일병원"
-    ]
-  },
-  {
-    "device": "ultraclear",
-    "count": 1,
-    "hospitals": [
-      "벨버티의원"
-    ]
-  },
-  {
-    "device": "curas hybrid",
-    "count": 1,
-    "hospitals": [
-      "벨버티의원"
-    ]
-  },
-  {
-    "device": "repot",
-    "count": 1,
-    "hospitals": [
-      "벨버티의원"
-    ]
-  },
-  {
-    "device": "clare",
-    "count": 1,
-    "hospitals": [
-      "벨버티의원"
-    ]
-  },
-  {
-    "device": "coresculpt",
-    "count": 1,
-    "hospitals": [
-      "벨버티의원"
-    ]
-  },
-  {
-    "device": "evatitan",
-    "count": 1,
-    "hospitals": [
-      "벨버티의원"
-    ]
-  },
-  {
-    "device": "corege 2.0",
-    "count": 1,
-    "hospitals": [
-      "벨버티의원"
-    ]
-  },
-  {
-    "device": "accento n",
-    "count": 1,
-    "hospitals": [
-      "벨버티의원"
-    ]
-  },
-  {
-    "device": "enderm",
-    "count": 1,
-    "hospitals": [
-      "벨버티의원"
-    ]
-  },
-  {
-    "device": "trifill pro",
-    "count": 1,
-    "hospitals": [
-      "벨버티의원"
-    ]
-  },
-  {
-    "device": "purening",
-    "count": 1,
-    "hospitals": [
-      "벨버티의원"
-    ]
-  },
-  {
-    "device": "encore",
-    "count": 1,
-    "hospitals": [
-      "벨버티의원"
-    ]
-  },
-  {
-    "device": "airjet 2",
-    "count": 1,
-    "hospitals": [
-      "벨버티의원"
-    ]
-  },
-  {
-    "device": "multi ion cool",
-    "count": 1,
-    "hospitals": [
-      "벨버티의원"
-    ]
-  },
-  {
-    "device": "cotra plus",
-    "count": 1,
-    "hospitals": [
-      "벨버티의원"
-    ]
-  },
-  {
-    "device": "emerge",
-    "count": 1,
-    "hospitals": [
-      "벨버티의원"
     ]
   },
   {
@@ -1068,154 +270,7 @@
     ]
   },
   {
-    "device": "에어젯",
-    "count": 1,
-    "hospitals": [
-      "파라다이스의원"
-    ]
-  },
-  {
-    "device": "코레지",
-    "count": 1,
-    "hospitals": [
-      "파라다이스의원"
-    ]
-  },
-  {
-    "device": "버츄rf",
-    "count": 1,
-    "hospitals": [
-      "파라다이스의원"
-    ]
-  },
-  {
-    "device": "브이로리프팅",
-    "count": 1,
-    "hospitals": [
-      "파라다이스의원"
-    ]
-  },
-  {
-    "device": "울페이스",
-    "count": 1,
-    "hospitals": [
-      "파라다이스의원"
-    ]
-  },
-  {
-    "device": "써니",
-    "count": 1,
-    "hospitals": [
-      "파라다이스의원"
-    ]
-  },
-  {
-    "device": "아꼴레이드",
-    "count": 1,
-    "hospitals": [
-      "파라다이스의원"
-    ]
-  },
-  {
     "device": "제이시스(ipl)",
-    "count": 1,
-    "hospitals": [
-      "파라다이스의원"
-    ]
-  },
-  {
-    "device": "아이콘",
-    "count": 1,
-    "hospitals": [
-      "파라다이스의원"
-    ]
-  },
-  {
-    "device": "엘리제모",
-    "count": 1,
-    "hospitals": [
-      "파라다이스의원"
-    ]
-  },
-  {
-    "device": "아크네토닝",
-    "count": 1,
-    "hospitals": [
-      "파라다이스의원"
-    ]
-  },
-  {
-    "device": "카프리",
-    "count": 1,
-    "hospitals": [
-      "파라다이스의원"
-    ]
-  },
-  {
-    "device": "어븀야그",
-    "count": 1,
-    "hospitals": [
-      "파라다이스의원"
-    ]
-  },
-  {
-    "device": "포토큐",
-    "count": 1,
-    "hospitals": [
-      "파라다이스의원"
-    ]
-  },
-  {
-    "device": "네오젠",
-    "count": 1,
-    "hospitals": [
-      "파라다이스의원"
-    ]
-  },
-  {
-    "device": "미인레이저",
-    "count": 1,
-    "hospitals": [
-      "파라다이스의원"
-    ]
-  },
-  {
-    "device": "스타워커",
-    "count": 1,
-    "hospitals": [
-      "파라다이스의원"
-    ]
-  },
-  {
-    "device": "엔커브",
-    "count": 1,
-    "hospitals": [
-      "파라다이스의원"
-    ]
-  },
-  {
-    "device": "coolsera",
-    "count": 1,
-    "hospitals": [
-      "파라다이스의원"
-    ]
-  },
-  {
-    "device": "펀치웨이브",
-    "count": 1,
-    "hospitals": [
-      "파라다이스의원"
-    ]
-  },
-  {
-    "device": "버블젯",
-    "count": 1,
-    "hospitals": [
-      "파라다이스의원"
-    ]
-  },
-  {
-    "device": "카복시",
     "count": 1,
     "hospitals": [
       "파라다이스의원"
@@ -1229,35 +284,7 @@
     ]
   },
   {
-    "device": "트리플바디",
-    "count": 1,
-    "hospitals": [
-      "파라다이스의원"
-    ]
-  },
-  {
     "device": "산소토닝조아",
-    "count": 1,
-    "hospitals": [
-      "파라다이스의원"
-    ]
-  },
-  {
-    "device": "led광선",
-    "count": 1,
-    "hospitals": [
-      "파라다이스의원"
-    ]
-  },
-  {
-    "device": "이온자임",
-    "count": 1,
-    "hospitals": [
-      "파라다이스의원"
-    ]
-  },
-  {
-    "device": "바이톤",
     "count": 1,
     "hospitals": [
       "파라다이스의원"
@@ -1275,27 +302,6 @@
     "count": 1,
     "hospitals": [
       "파라다이스의원"
-    ]
-  },
-  {
-    "device": "듀오하이로젠",
-    "count": 1,
-    "hospitals": [
-      "파라다이스의원"
-    ]
-  },
-  {
-    "device": "picosure laser",
-    "count": 1,
-    "hospitals": [
-      "빈센트의원"
-    ]
-  },
-  {
-    "device": "hollywood spectra laser",
-    "count": 1,
-    "hospitals": [
-      "빈센트의원"
     ]
   },
   {
@@ -1327,35 +333,7 @@
     ]
   },
   {
-    "device": "뉴튼 리프팅",
-    "count": 1,
-    "hospitals": [
-      "연세팜스의원 은평점"
-    ]
-  },
-  {
-    "device": "쿨사인",
-    "count": 1,
-    "hospitals": [
-      "연세팜스의원 은평점"
-    ]
-  },
-  {
-    "device": "써니rf",
-    "count": 1,
-    "hospitals": [
-      "연세팜스의원 은평점"
-    ]
-  },
-  {
     "device": "reepot 레이저",
-    "count": 1,
-    "hospitals": [
-      "연세팜스의원 은평점"
-    ]
-  },
-  {
-    "device": "레젠보겐",
     "count": 1,
     "hospitals": [
       "연세팜스의원 은평점"
@@ -1439,69 +417,6 @@
     ]
   },
   {
-    "device": "i3pl",
-    "count": 1,
-    "hospitals": [
-      "노벨의원"
-    ]
-  },
-  {
-    "device": "noblex",
-    "count": 1,
-    "hospitals": [
-      "리노보의원 압구정"
-    ]
-  },
-  {
-    "device": "bb lavieen",
-    "count": 1,
-    "hospitals": [
-      "리노보의원 압구정"
-    ]
-  },
-  {
-    "device": "ultra duo",
-    "count": 1,
-    "hospitals": [
-      "리노보의원 압구정"
-    ]
-  },
-  {
-    "device": "corege",
-    "count": 1,
-    "hospitals": [
-      "리노보의원 압구정"
-    ]
-  },
-  {
-    "device": "venus viva",
-    "count": 1,
-    "hospitals": [
-      "리노보의원 압구정"
-    ]
-  },
-  {
-    "device": "mcl31",
-    "count": 1,
-    "hospitals": [
-      "리노보의원 압구정"
-    ]
-  },
-  {
-    "device": "triple body",
-    "count": 1,
-    "hospitals": [
-      "리노보의원 압구정"
-    ]
-  },
-  {
-    "device": "ellie laser",
-    "count": 1,
-    "hospitals": [
-      "리노보의원 압구정"
-    ]
-  },
-  {
     "device": "hifu",
     "count": 1,
     "hospitals": [
@@ -1516,188 +431,6 @@
     ]
   },
   {
-    "device": "splendor x",
-    "count": 1,
-    "hospitals": [
-      "이젠의원"
-    ]
-  },
-  {
-    "device": "density alpha",
-    "count": 1,
-    "hospitals": [
-      "이젠의원"
-    ]
-  },
-  {
-    "device": "tune confier",
-    "count": 1,
-    "hospitals": [
-      "엠레드의원"
-    ]
-  },
-  {
-    "device": "tune light",
-    "count": 1,
-    "hospitals": [
-      "엠레드의원"
-    ]
-  },
-  {
-    "device": "gentlemax pro plus",
-    "count": 1,
-    "hospitals": [
-      "엠레드의원"
-    ]
-  },
-  {
-    "device": "alltite",
-    "count": 1,
-    "hospitals": [
-      "엠레드의원"
-    ]
-  },
-  {
-    "device": "nanopiloti",
-    "count": 1,
-    "hospitals": [
-      "엠레드의원"
-    ]
-  },
-  {
-    "device": "discovery pico laser",
-    "count": 1,
-    "hospitals": [
-      "강남타임의원"
-    ]
-  },
-  {
-    "device": "legato",
-    "count": 1,
-    "hospitals": [
-      "강남타임의원"
-    ]
-  },
-  {
-    "device": "shumax",
-    "count": 1,
-    "hospitals": [
-      "강남타임의원"
-    ]
-  },
-  {
-    "device": "cellect",
-    "count": 1,
-    "hospitals": [
-      "강남타임의원"
-    ]
-  },
-  {
-    "device": "scizer",
-    "count": 1,
-    "hospitals": [
-      "강남타임의원"
-    ]
-  },
-  {
-    "device": "duet rf",
-    "count": 1,
-    "hospitals": [
-      "강남타임의원"
-    ]
-  },
-  {
-    "device": "green cell",
-    "count": 1,
-    "hospitals": [
-      "강남타임의원"
-    ]
-  },
-  {
-    "device": "bubble jet",
-    "count": 1,
-    "hospitals": [
-      "강남타임의원"
-    ]
-  },
-  {
-    "device": "lightsheer",
-    "count": 1,
-    "hospitals": [
-      "강남타임의원"
-    ]
-  },
-  {
-    "device": "quattrostar yellow",
-    "count": 1,
-    "hospitals": [
-      "강남타임의원"
-    ]
-  },
-  {
-    "device": "skin aura",
-    "count": 1,
-    "hospitals": [
-      "강남타임의원"
-    ]
-  },
-  {
-    "device": "quattrobeam",
-    "count": 1,
-    "hospitals": [
-      "강남타임의원"
-    ]
-  },
-  {
-    "device": "tune laser",
-    "count": 1,
-    "hospitals": [
-      "강남타임의원"
-    ]
-  },
-  {
-    "device": "v-ro advance",
-    "count": 1,
-    "hospitals": [
-      "강남타임의원"
-    ]
-  },
-  {
-    "device": "clarity pro",
-    "count": 1,
-    "hospitals": [
-      "강남타임의원"
-    ]
-  },
-  {
-    "device": "tensera high",
-    "count": 1,
-    "hospitals": [
-      "강남타임의원"
-    ]
-  },
-  {
-    "device": "diamond lifting",
-    "count": 1,
-    "hospitals": [
-      "강남타임의원"
-    ]
-  },
-  {
-    "device": "ultratight",
-    "count": 1,
-    "hospitals": [
-      "강남타임의원"
-    ]
-  },
-  {
-    "device": "the ruby q",
-    "count": 1,
-    "hospitals": [
-      "강남타임의원"
-    ]
-  },
-  {
     "device": "thermage flx/cpt",
     "count": 1,
     "hospitals": [
@@ -1705,42 +438,7 @@
     ]
   },
   {
-    "device": "joule bbl",
-    "count": 1,
-    "hospitals": [
-      "클럽미즈라미체의원"
-    ]
-  },
-  {
-    "device": "plasmajet",
-    "count": 1,
-    "hospitals": [
-      "클럽미즈라미체의원"
-    ]
-  },
-  {
-    "device": "pallas premium",
-    "count": 1,
-    "hospitals": [
-      "파스텔휴먼피부과"
-    ]
-  },
-  {
     "device": "uv light",
-    "count": 1,
-    "hospitals": [
-      "파스텔휴먼피부과"
-    ]
-  },
-  {
-    "device": "hollywood spectra",
-    "count": 1,
-    "hospitals": [
-      "파스텔휴먼피부과"
-    ]
-  },
-  {
-    "device": "dual accento-n",
     "count": 1,
     "hospitals": [
       "파스텔휴먼피부과"
@@ -1810,13 +508,6 @@
     ]
   },
   {
-    "device": "zetrovix",
-    "count": 1,
-    "hospitals": [
-      "디에이성형외과의원"
-    ]
-  },
-  {
     "device": "가상성형 스캐너",
     "count": 1,
     "hospitals": [
@@ -1825,13 +516,6 @@
   },
   {
     "device": "epi-expire",
-    "count": 1,
-    "hospitals": [
-      "디에이성형외과의원"
-    ]
-  },
-  {
-    "device": "cryo-jet",
     "count": 1,
     "hospitals": [
       "디에이성형외과의원"
@@ -1849,27 +533,6 @@
     "count": 1,
     "hospitals": [
       "디에이성형외과의원"
-    ]
-  },
-  {
-    "device": "ldm triple gold",
-    "count": 1,
-    "hospitals": [
-      "엔의원"
-    ]
-  },
-  {
-    "device": "tuneport dual",
-    "count": 1,
-    "hospitals": [
-      "엔의원"
-    ]
-  },
-  {
-    "device": "astrodome",
-    "count": 1,
-    "hospitals": [
-      "엔의원"
     ]
   }
 ]
