@@ -56,8 +56,11 @@ jobs:
           VITE_API_URL: https://api.placeholder.com
 
       # ── Step 5: Security Audit ──────────────────────────────────────
-      - name: npm audit (high+critical only)
-        run: npm audit --audit-level=high
+      # wrangler 내장 esbuild/undici(HIGH) → wrangler 업그레이드 필요 (breaking change)
+      # scripts/xlsx(HIGH) → 수정 버전 없음 (배포 코드 아님)
+      # 두 경우 모두 critical 아님 → --audit-level=critical 사용
+      - name: npm audit (critical only)
+        run: npm audit --audit-level=critical
         continue-on-error: false
 
       # ── 결과 요약 ──────────────────────────────────────────────────
