@@ -125,6 +125,48 @@ app.get('/:id/activities', async (c) => {
   }
 });
 
+// GET /:id/emails — 리드 이메일 목록 (본문 + 열람/클릭 여부 포함)
+app.get('/:id/emails', async (c) => {
+  try {
+    const supabase = createSupabaseClient(c.env);
+    const id = c.req.param('id');
+
+    const { data, error } = await supabase
+      .from(T.emails)
+      .select(`
+        id, lead_id, subject, body_html, body_text,
+        status, sent_at, step_number, created_at,
+        sales_email_events(event_type, created_at)
+      `)
+      .eq('lead_id', id)
+      .order('created_at', { ascending: false });
+
+    if (error) throw new Error(error.message);
+
+    const emails = (data ?? []).map((email) => {
+      const events = (email.sales_email_events ?? []) as { event_type: string; created_at: string }[];
+      return {
+        id: email.id,
+        lead_id: email.lead_id,
+        subject: email.subject,
+        body_html: email.body_html,
+        body_text: email.body_text,
+        status: email.status,
+        sent_at: email.sent_at,
+        step_number: email.step_number,
+        created_at: email.created_at,
+        opened_at: events.find((e) => e.event_type === 'opened')?.created_at ?? null,
+        clicked_at: events.find((e) => e.event_type === 'clicked')?.created_at ?? null,
+      };
+    });
+
+    return c.json({ success: true, data: { emails } });
+  } catch (err) {
+    const message = err instanceof Error ? err.message : 'Unknown error';
+    return c.json({ success: false, error: { code: 'LEAD_EMAILS_ERROR', message } }, 500);
+  }
+});
+
 // PATCH /:id/stage — 리드 단계 변경
 app.patch('/:id/stage', async (c) => {
   try {

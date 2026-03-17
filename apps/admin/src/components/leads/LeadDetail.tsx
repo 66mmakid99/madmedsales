@@ -2,7 +2,7 @@ import type { ReactNode } from 'react';
 import { useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useLeadDetail } from '../../hooks/use-leads';
-import { LeadTimeline } from './LeadTimeline';
+import { LeadCommunicationView } from './LeadCommunicationView';
 import { apiFetch } from '../../lib/api';
 
 const GRADE_COLORS: Record<string, string> = {
@@ -420,10 +420,7 @@ export function LeadDetail(): ReactNode {
             </div>
           )}
 
-          <div className="rounded-lg border bg-white p-5">
-            <h3 className="mb-3 text-sm font-semibold text-gray-700">타임라인</h3>
-            {id && <LeadTimeline leadId={id} />}
-          </div>
+          {id && <LeadCommunicationView leadId={id} />}
         </div>
 
         {/* 우측: 액션 */}
