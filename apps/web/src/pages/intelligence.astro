@@ -1,0 +1,17 @@
+---
+// C:\medcode\madmedsales\apps\web\src\pages\intelligence.astro
+import Layout from '../layouts/Layout.astro';
+import IntelligenceTabs from '../components/IntelligenceTabs';
+---
+
+<Layout title="의료기기 인텔리전스 | MadMedSales">
+  <main class="container mx-auto max-w-7xl py-10 px-4 sm:px-6 lg:px-8">
+    <div class="mb-8">
+      <h1 class="text-3xl font-extrabold text-slate-900 tracking-tight">Intelligence DB</h1>
+      <p class="text-slate-500 mt-2 text-lg">경쟁사 현황 및 자사 장비 마스터 데이터 탐색</p>
+    </div>
+    
+    <!-- React 컴포넌트 렌더링 활성화 (client:load 필수) -->
+    <IntelligenceTabs client:load />
+  </main>
+</Layout>

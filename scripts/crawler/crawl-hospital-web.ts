@@ -29,38 +29,46 @@ const log = createLogger('crawl-web');
 const DATA_DIR = path.resolve(__dirname, '../data/web-raw');
 const DELAY_MS = 1000;
 const JITTER_MS = 500;
-const REQUEST_TIMEOUT = 15000;
+const REQUEST_TIMEOUT = 30000;
 const MAX_TEXT_LENGTH = 50000;
 const MAX_TEXT_LENGTH_ENHANCED = 150000;
 
 const RECRAWL_NO_EMAIL = process.argv.includes('--recrawl-no-email');
 const ENHANCED = process.argv.includes('--enhanced');
 
-async function fetchPage(url: string): Promise<string | null> {
-  try {
-    let fullUrl = url;
-    if (!fullUrl.startsWith('http://') && !fullUrl.startsWith('https://')) {
-      fullUrl = `https://${fullUrl}`;
-    }
-
-    const response = await axios.get<string>(fullUrl, {
-      timeout: REQUEST_TIMEOUT,
-      headers: {
-        'User-Agent':
-          'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-        Accept: 'text/html,application/xhtml+xml',
-        'Accept-Language': 'ko-KR,ko;q=0.9',
-      },
-      maxRedirects: 5,
-      responseType: 'text',
-    });
-
-    return typeof response.data === 'string' ? response.data : null;
-  } catch (err) {
-    const message = err instanceof Error ? err.message : String(err);
-    log.warn(`Failed to fetch ${url}: ${message}`);
-    return null;
+async function fetchPage(url: string, retries = 1): Promise<string | null> {
+  let fullUrl = url;
+  if (!fullUrl.startsWith('http://') && !fullUrl.startsWith('https://')) {
+    fullUrl = `https://${fullUrl}`;
   }
+
+  for (let attempt = 0; attempt <= retries; attempt++) {
+    try {
+      const timeout = attempt === 0 ? REQUEST_TIMEOUT : REQUEST_TIMEOUT + 15000;
+      const response = await axios.get<string>(fullUrl, {
+        timeout,
+        headers: {
+          'User-Agent':
+            'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+          Accept: 'text/html,application/xhtml+xml',
+          'Accept-Language': 'ko-KR,ko;q=0.9',
+        },
+        maxRedirects: 5,
+        responseType: 'text',
+      });
+
+      return typeof response.data === 'string' ? response.data : null;
+    } catch (err) {
+      const message = err instanceof Error ? err.message : String(err);
+      if (attempt < retries) {
+        log.warn(`Fetch attempt ${attempt + 1} failed for ${url}: ${message}. Retrying...`);
+        await delayWithJitter(2000, 1000);
+      } else {
+        log.warn(`Failed to fetch ${url} after ${retries + 1} attempts: ${message}`);
+      }
+    }
+  }
+  return null;
 }
 
 interface CrawlResult {

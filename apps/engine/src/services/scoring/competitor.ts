@@ -4,6 +4,7 @@
  */
 import type { SupabaseClient } from '@supabase/supabase-js';
 import type { CompetitorData } from '@madmedsales/shared';
+import { T } from '../../lib/table-names';
 
 const EARTH_RADIUS_KM = 6371;
 const CURRENT_YEAR_THRESHOLD = 3; // "modern RF" = within 3 years
@@ -77,7 +78,7 @@ export async function getCompetitors(
   // Get hospitals in the same sigungu area
   // First, get the sigungu of the target hospital
   const { data: targetHospital } = await supabase
-    .from('hospitals')
+    .from(T.hospitals)
     .select('sigungu')
     .eq('id', hospital.id)
     .single();
@@ -88,7 +89,7 @@ export async function getCompetitors(
 
   // Get all active hospitals in the same sigungu
   const { data: candidates, error } = await supabase
-    .from('hospitals')
+    .from(T.hospitals)
     .select('id, name, latitude, longitude, sigungu')
     .eq('status', 'active')
     .eq('sigungu', targetHospital.sigungu)
@@ -125,14 +126,14 @@ export async function getCompetitors(
   const nearbyIds = nearbyHospitals.map((n) => n.hospital.id);
 
   const { data: equipments } = await supabase
-    .from('hospital_equipments')
+    .from(T.hospital_equipments)
     .select('hospital_id, equipment_category, equipment_name, estimated_year')
     .in('hospital_id', nearbyIds)
     .eq('equipment_category', 'rf');
 
   // Get treatment counts
   const { data: treatmentRows } = await supabase
-    .from('hospital_treatments')
+    .from(T.hospital_treatments)
     .select('hospital_id')
     .in('hospital_id', nearbyIds);
 

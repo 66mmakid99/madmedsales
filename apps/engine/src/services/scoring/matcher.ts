@@ -1,8 +1,8 @@
 /**
- * [2단계] 제품별 매칭 스코어 (v3.1)
+ * [2단계] 제품별 매칭 스코어 (v3.2)
  * products.scoring_criteria의 sales_angles를 동적 평가하여 product_match_scores에 upsert.
  *
- * v3.1 영업 각도 기반:
+ * 영업 각도 기반:
  *   sales_angles 루프 → 키워드 매칭 (공백 제거 + Contains)
  *   normalizer standard_name 기준 매칭
  *   각도별 점수 산출 → weight 가중합 → total_score
@@ -10,127 +10,27 @@
  *   등급: S(75+) / A(55+) / B(35+) / C(<35)
  *   이전 grade와 비교 → 변동 시 scoring_change_history에 기록
  *
- * v3.1 - 2026-02-21
+ * v3.2 - 2026-03-13: DEPRECATED v3.0 코드 제거, V31 접미사 제거
  */
 import type { SupabaseClient } from '@supabase/supabase-js';
 import type {
-  Hospital,
   HospitalEquipment,
   HospitalTreatment,
   HospitalProfile,
   Product,
   ProductMatchScore,
-  ScoringRule,
   ScoringCriteriaV31,
-  ScoringCriteriaLegacy,
   SalesAngle,
   SalesKeyword,
-  CompetitorData,
   Grade,
+  EquipmentBonusRule,
+  ClinicTypeRule,
 } from '@madmedsales/shared';
-import { getCompetitors } from './competitor.js';
-
-// ─── DEPRECATED: v3.0 조건 평가 시스템 (삭제 금지) ──────
-
-// DEPRECATED: replaced by evaluateSalesAngles
-interface EvalContext {
-  hospital: Pick<Hospital, 'id' | 'opened_at' | 'data_quality_score'>;
-  equipments: HospitalEquipment[];
-  treatments: HospitalTreatment[];
-  profile: HospitalProfile;
-  product: Product;
-  competitors: CompetitorData[];
-}
-
-// DEPRECATED: replaced by evaluateSalesAngles
-function evaluateCondition(condition: string, ctx: EvalContext): boolean {
-  const currentYear = new Date().getFullYear();
-  const rfEquips = ctx.equipments.filter((e) => e.equipment_category === 'rf');
-  const hifuEquips = ctx.equipments.filter(
-    (e) => e.equipment_category === 'hifu' || e.equipment_category === 'ultrasound'
-  );
-  switch (condition) {
-    case 'no_rf': return rfEquips.length === 0;
-    case 'has_rf': return rfEquips.length > 0;
-    case 'old_rf_3yr': {
-      if (rfEquips.length === 0) return false;
-      const years = rfEquips.map((e) => e.estimated_year).filter((y): y is number => y != null);
-      if (years.length === 0) return false;
-      return currentYear - Math.min(...years) >= 3;
-    }
-    case 'old_rf_5yr': {
-      if (rfEquips.length === 0) return false;
-      const years = rfEquips.map((e) => e.estimated_year).filter((y): y is number => y != null);
-      if (years.length === 0) return false;
-      return currentYear - Math.min(...years) >= 5;
-    }
-    case 'has_ultrasound': return hifuEquips.length > 0;
-    case 'has_laser': return ctx.equipments.some((e) => e.equipment_category === 'laser');
-    case 'equipment_count_5plus': return ctx.equipments.length >= 5;
-    case 'has_torr_rf': return ctx.equipments.some((e) => e.equipment_name.toLowerCase().includes('torr'));
-    case 'has_any_rf_needle': return ctx.treatments.some((t) => t.treatment_name.includes('니들') || t.treatment_name.includes('needle'));
-    case 'lifting_treatments': return ctx.treatments.some((t) => t.treatment_category != null && ['lifting', 'tightening'].includes(t.treatment_category));
-    case 'high_antiaging_ratio': {
-      const antiAging = ['lifting', 'tightening', 'toning', 'filler', 'botox'];
-      const count = ctx.treatments.filter((t) => t.treatment_category != null && antiAging.includes(t.treatment_category)).length;
-      return count / Math.max(ctx.treatments.length, 1) >= 0.5;
-    }
-    case 'high_price_treatments': {
-      const prices = ctx.treatments.map((t) => t.price_min ?? t.price).filter((p): p is number => p != null && p > 0);
-      if (prices.length === 0) return false;
-      return prices.reduce((a, b) => a + b, 0) / prices.length >= 300000;
-    }
-    case 'opened_2_5yr': {
-      if (!ctx.hospital.opened_at) return false;
-      const years = currentYear - new Date(ctx.hospital.opened_at).getFullYear();
-      return years >= 2 && years <= 5;
-    }
-    case 'recent_investment': return ctx.equipments.some((e) => e.estimated_year != null && currentYear - e.estimated_year <= 2);
-    case 'no_recent_rf_purchase': return !rfEquips.some((e) => e.estimated_year != null && currentYear - e.estimated_year <= 2);
-    case 'competitive_market': return ctx.competitors.length >= 10;
-    case 'prime_profile': return ctx.profile.profile_grade === 'PRIME';
-    case 'high_profile': return ctx.profile.profile_grade === 'PRIME' || ctx.profile.profile_grade === 'HIGH';
-    case 'has_competing_equipment': {
-      const kws = ctx.product.competing_keywords ?? [];
-      return ctx.equipments.some((e) => kws.some((k) => e.equipment_name.includes(k)));
-    }
-    case 'has_synergy_equipment': {
-      const kws = ctx.product.synergy_keywords ?? [];
-      return ctx.equipments.some((e) => kws.some((k) => e.equipment_name.includes(k)));
-    }
-    case 'has_required_equipment': {
-      const kws = ctx.product.requires_equipment_keywords ?? [];
-      return ctx.equipments.some((e) => kws.some((k) => e.equipment_name.includes(k)));
-    }
-    case 'regular_reorder': return false;
-    default: return false;
-  }
-}
-
-// DEPRECATED: replaced by evaluateSalesAngles
-function evaluateRules(rules: ScoringRule[], ctx: EvalContext): number {
-  if (!rules || rules.length === 0) return 0;
-  let totalPossible = 0;
-  let earned = 0;
-  for (const rule of rules) {
-    totalPossible += rule.score;
-    if (evaluateCondition(rule.condition, ctx)) earned += rule.score;
-  }
-  if (totalPossible === 0) return 0;
-  return Math.min(Math.round((earned / totalPossible) * 100), 100);
-}
-
-// DEPRECATED: v3.0 Need/Fit/Timing 평가 (삭제 금지)
-export function evaluateNeed(rules: ScoringRule[], ctx: EvalContext): number { return evaluateRules(rules, ctx); }
-export function evaluateFit(rules: ScoringRule[], ctx: EvalContext): number { return evaluateRules(rules, ctx); }
-export function evaluateTiming(rules: ScoringRule[], ctx: EvalContext): number { return evaluateRules(rules, ctx); }
-
-// ─── v3.1 영업 각도 기반 매칭 ─────────────────────────
+import { T } from '../../lib/table-names';
 
 /**
  * 키워드 매칭: 공백 제거 후 Contains 비교.
  * "남성 피부관리" ↔ "남성피부관리" 매칭 가능.
- * normalizer standard_name 기준 (장비명 + 시술명 모두 검색).
  */
 function matchesKeyword(keyword: string, haystack: string): boolean {
   const normalizedKw = keyword.replace(/\s+/g, '').toLowerCase();
@@ -152,9 +52,8 @@ function normalizeSalesKeyword(kw: SalesKeyword | string): SalesKeyword {
 /**
  * 단일 영업 각도의 키워드 매칭 점수 산출 (0~100).
  *
- * v3.1.1: tier/point 기반 배점.
+ * tier/point 기반 배점.
  * 매칭된 키워드의 point 합산 / 전체 point 합 × 100.
- * 예: 총 point=120, 매칭 point=80 → 점수 67
  */
 function scoreAngle(
   angle: SalesAngle,
@@ -179,9 +78,7 @@ function scoreAngle(
   for (const kw of normalizedKeywords) {
     totalPoints += kw.point;
 
-    // 개별 텍스트 매칭 (정밀)
     const matched = allTexts.some((t) => matchesKeyword(kw.term, t));
-    // 결합 텍스트 매칭 (광범위)
     const matchedCombined = matchesKeyword(kw.term, combinedText);
 
     if (matched || matchedCombined) {
@@ -192,7 +89,6 @@ function scoreAngle(
 
   if (totalPoints === 0) return { score: 0, matchedKeywords, matchedPoints: 0, totalPoints: 0 };
 
-  // point 비율 기반 점수 (0~100)
   const score = Math.round((matchedPoints / totalPoints) * 100);
 
   return { score, matchedKeywords, matchedPoints, totalPoints };
@@ -200,10 +96,12 @@ function scoreAngle(
 
 /**
  * exclude_if 조건 확인: 이미 제품을 보유한 경우 제외
+ * v1.1 - 2026-03-16: competing_keywords 파라미터 추가 (경쟁 제품 배제)
  */
 function shouldExclude(
   excludeConditions: string[],
-  equipments: HospitalEquipment[]
+  equipments: HospitalEquipment[],
+  competingKeywords?: string[] | null
 ): boolean {
   for (const condition of excludeConditions) {
     if (condition === 'has_torr_rf') {
@@ -211,12 +109,103 @@ function shouldExclude(
         return true;
       }
     }
-    // 범용 장비명 포함 체크
     if (equipments.some((e) => matchesKeyword(condition.replace('has_', ''), e.equipment_name))) {
       return true;
     }
   }
+  // 경쟁 제품 키워드 배제 (TORR RF: 써마지, 울트라포머 등)
+  if (competingKeywords?.length) {
+    if (equipments.some((e) =>
+      competingKeywords.some((kw) => matchesKeyword(kw, e.equipment_name))
+    )) {
+      return true;
+    }
+  }
   return false;
+}
+
+// ─── v3.3 보너스 레이어 ──────────────────────────────
+
+/**
+ * 보유 장비 기반 보너스 점수 계산.
+ * equipment_bonus_rules의 각 장비를 병원 장비 목록과 매칭 → bonus 합산.
+ * 캡: +25점 상한
+ */
+function applyEquipmentBonus(
+  rules: EquipmentBonusRule[],
+  equipments: HospitalEquipment[]
+): { bonus: number; matchedEquipments: string[] } {
+  const matched: string[] = [];
+  let total = 0;
+
+  for (const rule of rules) {
+    const allTerms = [rule.equipment, ...rule.aliases];
+    const isMatch = allTerms.some((term) =>
+      equipments.some((e) => matchesKeyword(term, e.equipment_name))
+    );
+    if (isMatch) {
+      matched.push(rule.equipment);
+      total += rule.bonus_score;
+    }
+  }
+
+  return {
+    bonus: Math.min(total, 25),
+    matchedEquipments: matched,
+  };
+}
+
+/**
+ * 병원 타입 프로파일 기반 기본 점수 계산.
+ * clinic_type_rules 조건 평가 → 매칭된 타입 중 base_score 최고값 1개만 적용.
+ */
+function applyClinicTypeBonus(
+  rules: ClinicTypeRule[],
+  hospital: { address: string | null; sido: string | null; sigungu: string | null; department: string | null },
+  equipments: HospitalEquipment[],
+  treatments: HospitalTreatment[]
+): { bonus: number; matchedType: string | null } {
+  const locationText = [hospital.address, hospital.sido, hospital.sigungu]
+    .filter(Boolean)
+    .join(' ');
+  const departmentText = hospital.department ?? '';
+
+  let bestScore = 0;
+  let bestType: string | null = null;
+
+  for (const rule of rules) {
+    const dr = rule.detection_rules;
+    const checks: boolean[] = [];
+
+    if (dr.specialty_contains?.length) {
+      checks.push(dr.specialty_contains.some((s) => matchesKeyword(s, departmentText)));
+    }
+    if (dr.menu_contains_any?.length) {
+      checks.push(dr.menu_contains_any.some((kw) =>
+        treatments.some((t) => matchesKeyword(kw, t.treatment_name))
+      ));
+    }
+    if (dr.equipment_contains_any?.length) {
+      checks.push(dr.equipment_contains_any.some((kw) =>
+        equipments.some((e) => matchesKeyword(kw, e.equipment_name))
+      ));
+    }
+    if (dr.equipment_count_gte !== undefined) {
+      checks.push(equipments.length >= dr.equipment_count_gte);
+    }
+    if (dr.location_contains_any?.length) {
+      checks.push(dr.location_contains_any.some((loc) => matchesKeyword(loc, locationText)));
+    }
+
+    const isMatch = checks.length > 0 && checks.every(Boolean);
+
+    if (isMatch && rule.base_score > bestScore) {
+      bestScore = rule.base_score;
+      bestType = rule.type;
+    }
+  }
+
+  return { bonus: bestScore, matchedType: bestType };
 }
 
 export interface AngleScoreDetail {
@@ -231,7 +220,7 @@ export interface AngleScoreDetail {
 }
 
 /**
- * v3.1 핵심: 제품별 영업 각도 평가.
+ * 핵심: 제품별 영업 각도 평가.
  * scoring_criteria.sales_angles를 루프하여 키워드 매칭 → 가중합.
  */
 export function evaluateSalesAngles(
@@ -284,25 +273,7 @@ export function evaluateSalesAngles(
 
 // ─── 매칭 등급 ───────────────────────────────────────
 
-function isV31Criteria(criteria: unknown): criteria is ScoringCriteriaV31 {
-  return (
-    typeof criteria === 'object' &&
-    criteria !== null &&
-    'sales_angles' in criteria &&
-    Array.isArray((criteria as ScoringCriteriaV31).sales_angles)
-  );
-}
-
-export function assignMatchGradeV31(totalScore: number): Grade {
-  if (totalScore >= 75) return 'S';
-  if (totalScore >= 55) return 'A';
-  if (totalScore >= 35) return 'B';
-  return 'C';
-}
-
-// DEPRECATED: v3.0 등급 (data_quality 기반 EXCLUDE 포함)
-export function assignMatchGrade(totalScore: number, dataQuality: number): Grade {
-  if (dataQuality < 50) return 'EXCLUDE';
+export function assignMatchGrade(totalScore: number): Grade {
   if (totalScore >= 75) return 'S';
   if (totalScore >= 55) return 'A';
   if (totalScore >= 35) return 'B';
@@ -321,7 +292,7 @@ async function recordGradeChange(
 ): Promise<void> {
   if (oldGrade === newGrade) return;
 
-  await supabase.from('scoring_change_history').insert({
+  await supabase.from(T.scoring_change_history).insert({
     hospital_id: hospitalId,
     product_id: productId,
     old_match_grade: oldGrade,
@@ -331,7 +302,7 @@ async function recordGradeChange(
   });
 }
 
-// ─── 단건 매칭 (v3.1) ──────────────────────────────
+// ─── 단건 매칭 ──────────────────────────────────────
 
 export interface MatchResult {
   success: boolean;
@@ -344,10 +315,10 @@ export async function matchSingleHospitalProduct(
   hospitalId: string,
   productId: string
 ): Promise<MatchResult> {
-  // 1. 병원 기본 정보
+  // 1. 병원 기본 정보 (v3.3: address, sido, sigungu, department 추가 — 병원 타입/지역 보너스용)
   const { data: hospital, error: hErr } = await supabase
-    .from('hospitals')
-    .select('id, name, opened_at, data_quality_score, latitude, longitude')
+    .from(T.hospitals)
+    .select('id, name, opened_at, data_quality_score, latitude, longitude, address, sido, sigungu, department')
     .eq('id', hospitalId)
     .single();
 
@@ -357,7 +328,7 @@ export async function matchSingleHospitalProduct(
 
   // 2. 제품
   const { data: product, error: pErr } = await supabase
-    .from('products')
+    .from(T.products)
     .select('*')
     .eq('id', productId)
     .single();
@@ -368,7 +339,7 @@ export async function matchSingleHospitalProduct(
 
   // 3. 병원 프로파일
   const { data: profile, error: profErr } = await supabase
-    .from('hospital_profiles')
+    .from(T.hospital_profiles)
     .select('*')
     .eq('hospital_id', hospitalId)
     .single();
@@ -379,22 +350,22 @@ export async function matchSingleHospitalProduct(
 
   // 4. 장비, 시술
   const { data: equipments } = await supabase
-    .from('hospital_equipments')
+    .from(T.hospital_equipments)
     .select('*')
     .eq('hospital_id', hospitalId);
 
   const { data: treatments } = await supabase
-    .from('hospital_treatments')
+    .from(T.hospital_treatments)
     .select('*')
     .eq('hospital_id', hospitalId);
 
   const equips = (equipments ?? []) as HospitalEquipment[];
   const treats = (treatments ?? []) as HospitalTreatment[];
-  const criteria = (product as Product).scoring_criteria;
+  const criteria = (product as Product).scoring_criteria as ScoringCriteriaV31;
 
   // 기존 매칭 결과 조회 (등급 변동 추적용)
   const { data: existingMatch } = await supabase
-    .from('product_match_scores')
+    .from(T.product_match_scores)
     .select('grade')
     .eq('hospital_id', hospitalId)
     .eq('product_id', productId)
@@ -402,87 +373,58 @@ export async function matchSingleHospitalProduct(
 
   const oldGrade = existingMatch?.grade ?? null;
 
-  // v3.1 sales_angles 방식 or v3.0 need/fit/timing 방식
-  if (isV31Criteria(criteria)) {
-    // exclude_if 체크
-    if (shouldExclude(criteria.exclude_if ?? [], equips)) {
-      return { success: false, error: '제외 조건 해당 (이미 제품 보유)' };
-    }
-
-    const { totalScore, angleScores, angleDetails, topPitchPoints } = evaluateSalesAngles(
-      criteria, equips, treats
-    );
-
-    const grade = assignMatchGradeV31(totalScore);
-
-    const matchData = {
-      hospital_id: hospitalId,
-      product_id: productId,
-      need_score: 0,       // v3.1에서는 미사용 (호환성 유지)
-      fit_score: 0,
-      timing_score: 0,
-      total_score: totalScore,
-      grade,
-      sales_angle_scores: angleScores,
-      top_pitch_points: topPitchPoints,
-      scored_at: new Date().toISOString(),
-      scoring_version: 'v3.1',
-    };
-
-    const { data: upserted, error: saveErr } = await supabase
-      .from('product_match_scores')
-      .upsert(matchData, { onConflict: 'hospital_id,product_id' })
-      .select()
-      .single();
-
-    if (saveErr) {
-      return { success: false, error: `매칭 스코어 저장 실패: ${saveErr.message}` };
-    }
-
-    // 등급 변동 기록 (구체적 사유 포함)
-    const detailParts = angleDetails
-      .filter((d) => d.matchedPoints > 0 || d.totalPoints > 0)
-      .map((d) => `${d.angleId}: ${d.matchedPoints}/${d.totalPoints}pt [${d.matchedKeywords.join(',')}]`);
-    const changeReason = `v3.1 매칭: total=${totalScore}, ${detailParts.join('; ')}`;
-    await recordGradeChange(supabase, hospitalId, productId, oldGrade, grade, changeReason);
-
-    return { success: true, matchScore: upserted as ProductMatchScore };
+  // exclude_if + competing_keywords 체크
+  const productTyped = product as Product;
+  if (shouldExclude(criteria.exclude_if ?? [], equips, productTyped.competing_keywords)) {
+    return { success: false, error: '제외 조건 해당 (이미 제품 보유 또는 경쟁 제품 보유)' };
   }
 
-  // v3.0 fallback (need/fit/timing)
-  const competitors = await getCompetitors(supabase, {
-    id: hospitalId,
-    latitude: hospital.latitude,
-    longitude: hospital.longitude,
-  });
+  const { totalScore, angleScores, angleDetails, topPitchPoints } = evaluateSalesAngles(
+    criteria, equips, treats
+  );
 
-  const ctx: EvalContext = {
-    hospital, equipments: equips, treatments: treats,
-    profile: profile as HospitalProfile, product: product as Product, competitors,
-  };
+  // ─── v3.3 보너스 레이어 ──────────────────────────────
+  let equipBonus = 0;
+  let equipMatched: string[] = [];
+  let clinicType: string | null = null;
+  let clinicBonus = 0;
 
-  const legacyCriteria = criteria as ScoringCriteriaLegacy;
-  const needScore = evaluateRules(legacyCriteria.need_rules ?? [], ctx);
-  const fitScore = evaluateRules(legacyCriteria.fit_rules ?? [], ctx);
-  const timingScore = evaluateRules(legacyCriteria.timing_rules ?? [], ctx);
+  if (criteria.equipment_bonus_rules?.length) {
+    const eb = applyEquipmentBonus(criteria.equipment_bonus_rules, equips);
+    equipBonus = eb.bonus;
+    equipMatched = eb.matchedEquipments;
+  }
 
-  const totalScore = Math.round(needScore * 0.40 + fitScore * 0.35 + timingScore * 0.25);
-  const grade = assignMatchGrade(totalScore, hospital.data_quality_score ?? 0);
+  if (criteria.clinic_type_rules?.length) {
+    const cb = applyClinicTypeBonus(criteria.clinic_type_rules, hospital, equips, treats);
+    clinicBonus = cb.bonus;
+    clinicType = cb.matchedType;
+  }
+
+  const totalBonus = Math.min(equipBonus + clinicBonus, 40); // 총 보너스 상한 +40
+  const finalScore = Math.min(totalScore + totalBonus, 100); // 최종 점수 상한 100
+  // ──────────────────────────────────────────────────────
+
+  // 소규모 의원 C등급 강제 하향: 장비 2개 이하 + 시술 5개 이하 (FR-06)
+  const isSmallClinic = equips.length <= 2 && treats.length <= 5;
+  const grade = isSmallClinic ? 'C' as Grade : assignMatchGrade(finalScore);
 
   const matchData = {
     hospital_id: hospitalId,
     product_id: productId,
-    need_score: needScore,
-    fit_score: fitScore,
-    timing_score: timingScore,
-    total_score: totalScore,
+    need_score: 0,
+    fit_score: 0,
+    timing_score: 0,
+    total_score: finalScore,
     grade,
+    sales_angle_scores: angleScores,
+    top_pitch_points: topPitchPoints,
     scored_at: new Date().toISOString(),
-    scoring_version: 'v3.0-legacy',
+    scoring_version: 'v3.3',
   };
 
   const { data: upserted, error: saveErr } = await supabase
-    .from('product_match_scores')
+    .from(T.product_match_scores)
     .upsert(matchData, { onConflict: 'hospital_id,product_id' })
     .select()
     .single();
@@ -491,8 +433,13 @@ export async function matchSingleHospitalProduct(
     return { success: false, error: `매칭 스코어 저장 실패: ${saveErr.message}` };
   }
 
-  await recordGradeChange(supabase, hospitalId, productId, oldGrade, grade,
-    `v3.0-legacy: need=${needScore}, fit=${fitScore}, timing=${timingScore}`);
+  // 등급 변동 기록
+  const detailParts = angleDetails
+    .filter((d) => d.matchedPoints > 0 || d.totalPoints > 0)
+    .map((d) => `${d.angleId}: ${d.matchedPoints}/${d.totalPoints}pt [${d.matchedKeywords.join(',')}]`);
+  const smallClinicNote = isSmallClinic ? ` [소규모의원 C강제: equip=${equips.length}, treat=${treats.length}]` : '';
+  const changeReason = `v3.3 매칭: base=${totalScore}, bonus=${totalBonus}(equip:${equipBonus}[${equipMatched.join(',')}]+type:${clinicBonus}[${clinicType ?? 'none'}]), final=${finalScore}; ${detailParts.join('; ')}${smallClinicNote}`;
+  await recordGradeChange(supabase, hospitalId, productId, oldGrade, grade, changeReason);
 
   return { success: true, matchScore: upserted as ProductMatchScore };
 }

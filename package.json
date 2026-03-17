@@ -31,6 +31,8 @@
   },
   "dependencies": {
     "docx": "^9.6.0",
+    "html-to-docx": "^1.8.0",
+    "marked": "^17.0.4",
     "playwright": "^1.58.2",
     "puppeteer": "^24.37.5",
     "sharp": "^0.34.5"

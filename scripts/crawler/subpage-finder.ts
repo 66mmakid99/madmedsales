@@ -31,7 +31,7 @@ const TEXT_PATTERNS: Record<SubpageType, RegExp> = {
 const URL_PATH_PATTERNS: Record<SubpageType, RegExp> = {
   doctor: /\/(doctor|about|staff|team|인사말|의료진)(\/|$)/i,
   treatment:
-    /\/(procedure|treatment|program|clinic|시술|진료|skin|lifting|laser|filler|botox|contour|wrinkle|acne|pore|scar|hair|body|scalp|fat|volume|hydration|pigment|tone|sagging|neck|face|eye|nose|forehead|cheek|temple|cellulite|leg|weight|hyperhidrosis|tattoo|removal|redness|vessels|sensitive|stem.?cell|double.?chin|landing|special|campaign|event|promotion|이벤트|프로모션|비급여|price|가격)(s?)(\/|$)/i,
+    /\/(procedure|treatment|program|clinic|시술|진료|skin|lifting|laser|filler|botox|contour|wrinkle|acne|pore|scar|hair|body|scalp|fat|volume|hydration|pigment|tone|sagging|neck|face|eye|nose|forehead|cheek|temple|cellulite|leg|weight|hyperhidrosis|tattoo|removal|redness|vessels|sensitive|stem.?cell|double.?chin|landing|special|campaign|event|promotion|이벤트|프로모션|비급여|price|가격)(s?)(\/|view\/|$)/i,
   equipment: /\/(equipment|device|장비|시설|기기)(\/|$)/i,
   contact: /\/(contact|consult|map|location|예약|문의|상담)(\/|$)/i,
 };

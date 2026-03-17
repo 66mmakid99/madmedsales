@@ -102,13 +102,43 @@ const SCREENSHOT_PROMPT = buildScreenshotPrompt();
 // ─── Browser Management ───────────────────────────────────────────────────
 
 let _browser: Browser | null = null;
+let _cleanupRegistered = false;
+
+function registerProcessCleanup(): void {
+  if (_cleanupRegistered) return;
+  _cleanupRegistered = true;
+
+  const cleanup = (): void => {
+    if (_browser) {
+      try { (_browser as any).process?.()?.kill('SIGKILL'); } catch {}
+      _browser = null;
+    }
+  };
+
+  process.on('exit', cleanup);
+  process.on('SIGINT', () => { cleanup(); process.exit(130); });
+  process.on('SIGTERM', () => { cleanup(); process.exit(143); });
+  process.on('uncaughtException', (err) => {
+    console.error('Uncaught exception, closing browser:', err.message);
+    cleanup();
+    process.exit(1);
+  });
+}
 
 async function getBrowser(): Promise<Browser> {
   if (_browser?.isConnected()) return _browser;
 
   // Dynamic import so the module doesn't crash when Playwright is missing
   const pw = await import('playwright');
-  _browser = await pw.chromium.launch({ headless: true });
+  _browser = await pw.chromium.launch({
+    headless: true,
+    args: [
+      '--no-sandbox', '--disable-dev-shm-usage', '--disable-gpu',
+      '--max_old_space_size=256',
+      '--disable-background-timer-throttling',
+    ],
+  });
+  registerProcessCleanup();
   return _browser;
 }
 

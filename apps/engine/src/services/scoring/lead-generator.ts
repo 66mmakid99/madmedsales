@@ -5,6 +5,7 @@
  */
 import type { SupabaseClient } from '@supabase/supabase-js';
 import type { ProductMatchScore } from '@madmedsales/shared';
+import { T } from '../../lib/table-names';
 
 export interface LeadGenerationResult {
   created: boolean;
@@ -32,7 +33,7 @@ export async function autoCreateLeadFromMatch(
 
   // 이메일 확인
   const { data: hospital } = await supabase
-    .from('hospitals')
+    .from(T.hospitals)
     .select('email, name')
     .eq('id', hospital_id)
     .single();
@@ -43,7 +44,7 @@ export async function autoCreateLeadFromMatch(
 
   // 중복 확인 (hospital_id + product_id)
   const { data: existing } = await supabase
-    .from('leads')
+    .from(T.leads)
     .select('id')
     .eq('hospital_id', hospital_id)
     .eq('product_id', product_id)
@@ -62,7 +63,7 @@ export async function autoCreateLeadFromMatch(
     : undefined;
 
   const { data: newLead, error } = await supabase
-    .from('leads')
+    .from(T.leads)
     .insert({
       hospital_id,
       product_id,
@@ -89,7 +90,7 @@ export async function autoCreateLeadFromMatch(
   }
 
   // 활동 기록
-  await supabase.from('lead_activities').insert({
+  await supabase.from(T.lead_activities).insert({
     lead_id: newLead.id,
     activity_type: 'product_matched',
     title: `제품 매칭 리드 자동 생성 (${grade}등급)`,

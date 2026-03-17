@@ -1,6 +1,7 @@
 import type { ReactNode } from 'react';
 import { usePipeline } from '../../hooks/use-dashboard';
 import { useLeads } from '../../hooks/use-leads';
+import { useRealtime } from '../../hooks/use-realtime';
 import { LEAD_STAGES } from '@madmedsales/shared';
 
 const STAGE_LABELS: Record<string, string> = {
@@ -39,8 +40,11 @@ const INTEREST_DOT: Record<string, string> = {
 };
 
 export function PipelineBoard(): ReactNode {
-  const { data: pipelineData, loading: pipelineLoading } = usePipeline();
-  const { data: leadsData, loading: leadsLoading } = useLeads({ limit: 200 });
+  const { data: pipelineData, loading: pipelineLoading, refetch: refetchPipeline } = usePipeline();
+  const { data: leadsData, loading: leadsLoading, refetch: refetchLeads } = useLeads({ limit: 200 });
+
+  // 리드 테이블 변경 시 자동 새로고침
+  useRealtime('leads', () => { refetchPipeline(); refetchLeads(); });
 
   const loading = pipelineLoading || leadsLoading;
   const leads = leadsData?.leads ?? [];

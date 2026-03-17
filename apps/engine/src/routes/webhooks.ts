@@ -5,6 +5,7 @@ import { Hono } from 'hono';
 import { createSupabaseClient } from '../lib/supabase';
 import { processEmailEvent } from '../services/email/tracker';
 import { analyzeReply } from '../services/ai/response-analyzer';
+import { T } from '../lib/table-names';
 
 type Bindings = {
   SUPABASE_URL: string;
@@ -57,7 +58,7 @@ app.post('/email', async (c) => {
     // Find email by external_id (Resend email ID)
     const resendEmailId = payload.data.email_id;
     const { data: email } = await supabase
-      .from('emails')
+      .from(T.emails)
       .select('id, lead_id')
       .eq('external_id', resendEmailId)
       .single();
@@ -97,7 +98,7 @@ app.post('/email-reply', async (c) => {
 
     // Match sender to lead
     const { data: lead } = await supabase
-      .from('leads')
+      .from(T.leads)
       .select('id, hospital_id, contact_email')
       .eq('contact_email', senderEmail)
       .single();
@@ -108,7 +109,7 @@ app.post('/email-reply', async (c) => {
 
     // Get the most recent sent email to this lead
     const { data: lastEmail } = await supabase
-      .from('emails')
+      .from(T.emails)
       .select('id, subject, body_text')
       .eq('lead_id', lead.id)
       .in('status', ['sent', 'delivered'])
@@ -139,7 +140,7 @@ app.post('/email-reply', async (c) => {
     });
 
     await supabase
-      .from('leads')
+      .from(T.leads)
       .update({
         last_replied_at: new Date().toISOString(),
         stage: 'responded',
@@ -147,7 +148,7 @@ app.post('/email-reply', async (c) => {
       .eq('id', lead.id);
 
     // Log activity with analysis
-    await supabase.from('lead_activities').insert({
+    await supabase.from(T.lead_activities).insert({
       lead_id: lead.id,
       activity_type: 'email_replied',
       title: `회신 수신: ${analysis.summary}`,
@@ -167,7 +168,7 @@ app.post('/email-reply', async (c) => {
 
     // Notify admin if needed
     if (analysis.should_notify_admin) {
-      await supabase.from('lead_activities').insert({
+      await supabase.from(T.lead_activities).insert({
         lead_id: lead.id,
         activity_type: 'note_added',
         title: `[관리자 알림] ${analysis.urgency === 'immediate' ? '긴급' : '확인필요'}: ${analysis.summary}`,

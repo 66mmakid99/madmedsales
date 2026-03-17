@@ -26,6 +26,18 @@ export interface Hospital {
   status: string;
   is_target: boolean;
   exclude_reason: string | null;
+  // 심평원 교차검증 (Step 1)
+  hira_specialist_count: number | null;
+  hira_opened_at: string | null;
+  hira_department: string | null;
+  hira_bed_count: number | null;
+  address_normalized: string | null;
+  hira_synced_at: string | null;
+  geocoded_at: string | null;
+  // 연락처 (Step 2)
+  contact_email: string | null;
+  contact_phone: string | null;
+  contact_kakao: string | null;
   created_at: string;
   updated_at: string;
 }
@@ -91,6 +103,34 @@ export interface Product {
   requires_equipment_keywords: string[] | null;
   competing_keywords: string[] | null;
   synergy_keywords: string[] | null;
+  // v4.0 판권 정보
+  distribution_contract_date: string | null;
+  distribution_scope: string | null;
+  distribution_territory: string | null;
+  distribution_margin: Record<string, unknown> | null;
+  manufacturer_contact: Record<string, unknown> | null;
+  contract_renewal_date: string | null;
+  // v4.0 수익성 블록
+  procedure_price_range: Record<string, unknown> | null;
+  session_time_min: number | null;
+  consumable_cost: number | null;
+  breakeven_monthly: number | null;
+  market_maturity: string | null;
+  patient_demand_index: Record<string, unknown> | null;
+  // v4.0 명분 블록
+  papers: Array<Record<string, unknown>> | null;
+  regulatory: Record<string, unknown> | null;
+  conference_presentations: string[] | null;
+  mechanism_summary: string | null;
+  tech_spec_card: Record<string, unknown> | null;
+  comparison_rules: Record<string, unknown> | null;
+  // v4.0 제안 조건
+  list_price: number | null;
+  min_approved_price: number | null;
+  auto_discount_limit: number | null;
+  tradein_eligible: boolean;
+  installment: Record<string, unknown> | null;
+  negotiation_rules: Record<string, unknown> | null;
   status: string;
   sort_order: number;
   created_at: string;
@@ -140,22 +180,50 @@ export interface SalesSignalRule {
   related_angle: string;        // bridge_care, mens_target 등
 }
 
+// ─── Equipment Bonus Rule (v3.3 신규) ────────────────
+export interface EquipmentBonusRule {
+  equipment: string;          // 표준명: "써마지"
+  aliases: string[];          // ["thermage", "써마지FLX"]
+  bonus_score: number;        // +15
+  pitching_angle: string;     // "bridge" | "post_tx" 등 — 이메일 생성 시 활용
+}
+
+// ─── Clinic Type Rule (v3.3 신규) ────────────────────
+export interface ClinicTypeDetectionRules {
+  specialty_contains?: string[];          // hospital.department 포함 검사
+  menu_contains_any?: string[];           // treatments.treatment_name 매칭
+  equipment_contains_any?: string[];      // equipments.equipment_name 매칭
+  equipment_count_gte?: number;           // 보유 장비 수 ≥ N
+  location_contains_any?: string[];       // hospital.address + sido + sigungu 포함 검사
+}
+
+export interface ClinicTypeRule {
+  type: string;               // "A" | "B" | "C" | "D" | "E" | "F"
+  name: string;               // "성형외과형", "비만클리닉형" 등
+  base_score: number;         // +20, +15 등
+  detection_rules: ClinicTypeDetectionRules;
+}
+
+// ─── Combine Therapy Package (v3.3 신규) ─────────────
+export interface CombineTherapyPackage {
+  package_name: string;
+  required_equipment: string[];
+  pitch: string;
+}
+
 export interface ScoringCriteriaV31 {
   sales_angles: SalesAngle[];
   combo_suggestions: ComboSuggestion[];
   max_pitch_points: number;
   exclude_if: string[];
   sales_signals?: SalesSignalRule[];
+  // v3.3 보너스 레이어 (optional — TORR RF 전용, 타 제품 undefined)
+  equipment_bonus_rules?: EquipmentBonusRule[];
+  clinic_type_rules?: ClinicTypeRule[];
+  combine_therapy_packages?: CombineTherapyPackage[];
 }
 
-// DEPRECATED: v3.0 구조 (need/fit/timing). 안정화 후 삭제 예정.
-export interface ScoringCriteriaLegacy {
-  need_rules: ScoringRule[];
-  fit_rules: ScoringRule[];
-  timing_rules: ScoringRule[];
-}
-
-export type ScoringCriteria = ScoringCriteriaV31 | ScoringCriteriaLegacy;
+export type ScoringCriteria = ScoringCriteriaV31;
 
 // ─── Hospital Profile (1단계 스코어링) ──────────────
 export interface HospitalProfile {
@@ -202,63 +270,7 @@ export interface ProductMatchScore {
   scoring_version: string;
 }
 
-// ─── Scoring (legacy) ───────────────────────────────
-export interface ScoringWeights {
-  id: string;
-  version: string;
-  weight_equipment_synergy: number;
-  weight_equipment_age: number;
-  weight_revenue_impact: number;
-  weight_competitive_edge: number;
-  weight_purchase_readiness: number;
-  criteria_details: Record<string, unknown> | null;
-  is_active: boolean;
-  notes: string | null;
-  created_at: string;
-}
-
-export interface ScoringResult {
-  id: string;
-  hospital_id: string;
-  weight_version: string;
-  score_equipment_synergy: number;
-  score_equipment_age: number;
-  score_revenue_impact: number;
-  score_competitive_edge: number;
-  score_purchase_readiness: number;
-  total_score: number;
-  grade: string | null;
-  ai_analysis: string | null;
-  ai_message_direction: string | null;
-  ai_raw_response: Record<string, unknown> | null;
-  scored_at: string;
-}
-
-export interface ScoringInput {
-  hospital: {
-    id: string;
-    name: string;
-    department: string;
-    opened_at: string | null;
-    latitude: number | null;
-    longitude: number | null;
-  };
-  equipments: {
-    equipment_name: string;
-    equipment_brand: string | null;
-    equipment_category: string;
-    estimated_year: number | null;
-  }[];
-  treatments: {
-    treatment_name: string;
-    treatment_category: string;
-    price_min: number | null;
-    price_max: number | null;
-    is_promoted: boolean;
-  }[];
-  competitors: CompetitorData[];
-}
-
+// ─── Competitor ──────────────────────────────────────
 export interface CompetitorData {
   hospital_id: string;
   name: string;
@@ -266,18 +278,6 @@ export interface CompetitorData {
   hasModernRF: boolean;
   rfEquipmentName: string | null;
   treatmentCount: number;
-}
-
-export interface ScoringOutput {
-  scores: {
-    equipmentSynergy: number;
-    equipmentAge: number;
-    revenueImpact: number;
-    competitiveEdge: number;
-    purchaseReadiness: number;
-  };
-  totalScore: number;
-  grade: 'S' | 'A' | 'B' | 'C' | 'EXCLUDE';
 }
 
 // ─── Leads ───────────────────────────────────────────
@@ -335,6 +335,7 @@ export interface EmailSequence {
   id: string;
   name: string;
   target_grade: string;
+  sequence_type: SequenceType;
   description: string | null;
   is_active: boolean;
   created_at: string;
@@ -396,9 +397,10 @@ export interface Demo {
   scheduled_at: string | null;
   completed_at: string | null;
   assigned_to: string | null;
-  prep_scoring_summary: string | null;
+  product_id: string | null;
+  prep_summary: string | null;
   prep_roi_simulation: Record<string, unknown> | null;
-  prep_combo_suggestion: string | null;
+  prep_product_pitch: string | null;
   status: string;
   notes: string | null;
   created_at: string;
@@ -671,3 +673,137 @@ export interface CrmEquipment {
   created_at: string;
   updated_at: string;
 }
+
+// ─── Sales Engine v4.0 신규 타입 ───────────────────
+
+export const DOCTOR_TYPES = ['specialist', 'gp', 'network'] as const;
+export type DoctorType = (typeof DOCTOR_TYPES)[number];
+
+export const CLINIC_AGE_GROUPS = ['newbie', 'established', 'legacy'] as const;
+export type ClinicAgeGroup = (typeof CLINIC_AGE_GROUPS)[number];
+
+export const DATA_CONFIDENCE_LEVELS = ['high', 'medium', 'low'] as const;
+export type DataConfidence = (typeof DATA_CONFIDENCE_LEVELS)[number];
+
+export interface SalesPersona {
+  id: string;
+  hospital_id: string;
+  doctor_type: DoctorType;
+  clinic_age_group: ClinicAgeGroup;
+  is_representative: boolean;
+  specialist_count_scv: number | null;
+  specialist_count_hira: number | null;
+  data_confidence: DataConfidence;
+  pay_doctor_count: number;
+  created_at: string;
+  updated_at: string;
+}
+
+export const INSIGHT_CHANNELS = ['recording', 'existing_customer', 'youtube', 'email_response'] as const;
+export type InsightChannel = (typeof INSIGHT_CHANNELS)[number];
+
+export interface InsightCard {
+  id: string;
+  source_channel: InsightChannel;
+  source_id: string | null;
+  raw_text: string | null;
+  structured: {
+    objection?: string;
+    trigger?: string;
+    angle?: string;
+    persona_hint?: string;
+    confidence?: number;
+  } | null;
+  tags: string[] | null;
+  product_id: string | null;
+  created_at: string;
+}
+
+export const SEQUENCE_TYPES = ['direct_pitch', 'soft_touch', 'hold_probe'] as const;
+export type SequenceType = (typeof SEQUENCE_TYPES)[number];
+
+export const BUYING_STAGES = ['unaware', 'awareness', 'consideration', 'decision'] as const;
+export type BuyingStage = (typeof BUYING_STAGES)[number];
+
+export const PERSONA_TONES = ['명분우선', '돈우선', '균형'] as const;
+export type PersonaTone = (typeof PERSONA_TONES)[number];
+
+export interface SalesScenario {
+  id: string;
+  hospital_id: string;
+  product_id: string;
+  persona_id: string | null;
+  match_grade: string;
+  sequence_type: SequenceType;
+  persona_tone: PersonaTone | null;
+  scenario_layers: Array<{ layer: number; angle: string; content_template: string }> | null;
+  buying_stage: BuyingStage;
+  status: string;
+  created_at: string;
+}
+
+export interface SalesBuyingStage {
+  id: string;
+  hospital_id: string;
+  product_id: string;
+  stage: BuyingStage;
+  signals: Array<{ type: string; detail: string; detected_at: string }>;
+  updated_at: string;
+}
+
+export const REJECTION_CODES = ['R1', 'R2', 'R3', 'R4', 'R5', 'R6'] as const;
+export type RejectionCode = (typeof REJECTION_CODES)[number];
+
+export interface NegativeNote {
+  id: string;
+  hospital_id: string;
+  product_id: string;
+  rejection_code: RejectionCode;
+  rejection_detail: string | null;
+  source: string | null;
+  insight_card_id: string | null;
+  created_at: string;
+}
+
+export interface SalesRule {
+  id: string;
+  product_id: string;
+  rule_type: string;
+  condition: Record<string, unknown>;
+  action: Record<string, unknown>;
+  sample_count: number;
+  response_rate: number;
+  promoted_from: string | null;
+  approved_by: string | null;
+  approved_at: string | null;
+  is_active: boolean;
+  created_at: string;
+}
+
+export interface RegionalCluster {
+  id: string;
+  center_hospital_id: string | null;
+  latitude: number;
+  longitude: number;
+  radius_km: number;
+  total_hospitals: number;
+  crawled_hospitals: number;
+  equipment_summary: Record<string, number> | null;
+  price_band: { min: number; max: number; avg: number } | null;
+  computed_at: string;
+}
+
+export interface FranchiseNetwork {
+  id: string;
+  network_name: string;
+  branch_count: number;
+  headquarters_hospital_id: string | null;
+  member_hospital_ids: string[] | null;
+  enterprise_alert: boolean;
+  alert_triggered_at: string | null;
+  notes: string | null;
+  created_at: string;
+  updated_at: string;
+}
+
+export * from './campaign.js';

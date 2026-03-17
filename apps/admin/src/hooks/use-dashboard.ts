@@ -142,3 +142,79 @@ export function useRecentActivities(): ReturnType<typeof useApi<LeadActivity[]>>
 export function useEmailStats(): ReturnType<typeof useApi<EmailStats>> {
   return useApi<EmailStats>('/api/reports/email-stats');
 }
+
+// ── Revenue 리포트 ──
+
+export interface ProductSummary {
+  productId: string;
+  productName: string;
+  leads: number;
+  hot: number;
+  demos: number;
+  emails: number;
+  won: number;
+}
+
+export interface RevenueReport {
+  totalLeads: number;
+  hotLeads: number;
+  closedWon: number;
+  totalDemos: number;
+  totalEmails: number;
+  productSummary: ProductSummary[];
+  weeklyLeads: { week: string; count: number }[];
+}
+
+export function useRevenueReport(): ReturnType<typeof useApi<RevenueReport>> {
+  return useApi<RevenueReport>('/api/reports/revenue');
+}
+
+// ── 영업 실시간 현황 ──
+
+export type EmailStatus = 'none' | 'queued' | 'sent' | 'opened' | 'clicked' | 'bounced';
+
+export interface SalesLeadStatus {
+  leadId: string;
+  grade: string | null;
+  stage: string;
+  interestLevel: string | null;
+  hospitalName: string;
+  region: string | null;
+  productName: string;
+  contactEmail: string | null;
+  emailCount: number;
+  emailStatus: EmailStatus;
+  latestEmail: {
+    id: string;
+    subject: string | null;
+    status: string;
+    sentAt: string | null;
+    opened: boolean;
+    clicked: boolean;
+  } | null;
+  updatedAt: string;
+}
+
+export interface SalesDashboardKpi {
+  total: number;
+  sentToday: number;
+  opened: number;
+  clicked: number;
+  noEmail: number;
+}
+
+export interface SalesDashboard {
+  leads: SalesLeadStatus[];
+  kpi: SalesDashboardKpi;
+}
+
+export function useSalesDashboard(params?: {
+  stage?: string;
+  grade?: string;
+}): ReturnType<typeof useApi<SalesDashboard>> {
+  const p = new URLSearchParams();
+  if (params?.stage) p.set('stage', params.stage);
+  if (params?.grade) p.set('grade', params.grade);
+  const qs = p.toString();
+  return useApi<SalesDashboard>(`/api/reports/sales-status${qs ? `?${qs}` : ''}`);
+}

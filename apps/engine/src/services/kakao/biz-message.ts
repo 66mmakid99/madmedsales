@@ -3,6 +3,7 @@
 
 import type { SupabaseClient } from '@supabase/supabase-js';
 import { getTemplate, fillTemplateParams, type KakaoButton } from './templates';
+import { T } from '../../lib/table-names';
 
 const KAKAO_ALIMTALK_API = 'https://kapi.kakao.com/v2/api/talk/biz/send';
 
@@ -11,6 +12,8 @@ export interface AlimtalkRequest {
   templateCode: string;
   recipientPhone: string;
   templateParams: Record<string, string>;
+  productName: string;
+  productSlug: string;
 }
 
 interface KakaoEnv {
@@ -51,7 +54,7 @@ export async function sendAlimtalk(
   supabase: SupabaseClient,
   request: AlimtalkRequest
 ): Promise<void> {
-  const template = getTemplate(request.templateCode);
+  const template = getTemplate(request.templateCode, request.productName, request.productSlug);
   if (!template) {
     throw new Error(`Unknown template code: ${request.templateCode}`);
   }
@@ -101,7 +104,7 @@ export async function sendAlimtalk(
     }
 
     // Record to kakao_messages table
-    await supabase.from('kakao_messages').insert({
+    await supabase.from(T.kakao_messages).insert({
       lead_id: request.leadId,
       message_type: 'alimtalk',
       template_code: request.templateCode,
@@ -112,7 +115,7 @@ export async function sendAlimtalk(
     });
 
     // Log activity
-    await supabase.from('lead_activities').insert({
+    await supabase.from(T.lead_activities).insert({
       lead_id: request.leadId,
       activity_type: 'kakao_sent',
       title: `카카오 알림톡 발송: ${template.name}`,
@@ -123,11 +126,14 @@ export async function sendAlimtalk(
     const message = error instanceof Error ? error.message : 'Unknown error';
 
     // Record failed message
-    await supabase.from('kakao_messages').insert({
+    await supabase.from(T.kakao_messages).insert({
       lead_id: request.leadId,
       message_type: 'alimtalk',
       template_code: request.templateCode,
-      content: fillTemplateParams(template.content, paramsWithUrl),
+      content: fillTemplateParams(
+        getTemplate(request.templateCode, request.productName, request.productSlug)?.content ?? '',
+        paramsWithUrl
+      ),
       direction: 'outbound',
       status: 'failed',
     });

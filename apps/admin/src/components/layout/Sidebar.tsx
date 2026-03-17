@@ -40,17 +40,18 @@ const NAV_GROUPS: NavGroup[] = [
   {
     label: '영업',
     items: [
-      { to: '/leads', label: '리드', icon: '👤', disabled: true },
-      { to: '/emails', label: '이메일', icon: '📧', disabled: true },
-      { to: '/pipeline', label: '파이프라인', icon: '📋', disabled: true },
-      { to: '/demos', label: '데모', icon: '📅', disabled: true },
+      { to: '/leads', label: '리드', icon: '👤' },
+      { to: '/pipeline', label: '파이프라인', icon: '📋' },
+      { to: '/emails', label: '이메일', icon: '📧' },
+      { to: '/coldmail', label: '콜드메일', icon: '✉️' },
+      { to: '/demos', label: '데모', icon: '📅' },
     ],
   },
   {
     label: '분석',
     items: [
       { to: '/costs', label: '비용 관리', icon: '💰' },
-      { to: '/reports', label: '리포트', icon: '📈', disabled: true },
+      { to: '/reports', label: '리포트', icon: '📈' },
     ],
   },
   {

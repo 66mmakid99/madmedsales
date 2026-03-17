@@ -1,6 +1,7 @@
 import { Hono } from 'hono';
 import { authMiddleware } from '../middleware/auth';
 import { createSupabaseClient } from '../lib/supabase';
+import { T } from '../lib/table-names';
 
 type Bindings = {
   SUPABASE_URL: string;
@@ -21,22 +22,22 @@ app.get('/dashboard', async (c) => {
     const today = new Date().toISOString().slice(0, 10);
 
     const { count: totalLeads } = await supabase
-      .from('leads')
+      .from(T.leads)
       .select('id', { count: 'exact', head: true });
 
     const { count: todaySends } = await supabase
-      .from('emails')
+      .from(T.emails)
       .select('id', { count: 'exact', head: true })
       .gte('sent_at', `${today}T00:00:00`)
       .lte('sent_at', `${today}T23:59:59`);
 
     const { count: totalSent } = await supabase
-      .from('emails')
+      .from(T.emails)
       .select('id', { count: 'exact', head: true })
       .eq('status', 'sent');
 
     const { count: totalOpened } = await supabase
-      .from('email_events')
+      .from(T.email_events)
       .select('id', { count: 'exact', head: true })
       .eq('event_type', 'opened');
 
@@ -45,7 +46,7 @@ app.get('/dashboard', async (c) => {
       : 0;
 
     const { count: demosScheduled } = await supabase
-      .from('demos')
+      .from(T.demos)
       .select('id', { count: 'exact', head: true })
       .in('status', ['requested', 'confirmed', 'preparing']);
 
@@ -72,7 +73,7 @@ app.get('/pipeline', async (c) => {
     const supabase = createSupabaseClient(c.env);
 
     const { data, error } = await supabase
-      .from('leads')
+      .from(T.leads)
       .select('stage');
 
     if (error) {
@@ -100,7 +101,7 @@ app.get('/activities', async (c) => {
     const supabase = createSupabaseClient(c.env);
 
     const { data, error } = await supabase
-      .from('lead_activities')
+      .from(T.lead_activities)
       .select('id, lead_id, activity_type, title, description, actor, created_at')
       .order('created_at', { ascending: false })
       .limit(50);
@@ -124,27 +125,27 @@ app.get('/email-stats', async (c) => {
     const supabase = createSupabaseClient(c.env);
 
     const { count: sent } = await supabase
-      .from('emails')
+      .from(T.emails)
       .select('id', { count: 'exact', head: true })
       .in('status', ['sent', 'delivered']);
 
     const { count: delivered } = await supabase
-      .from('email_events')
+      .from(T.email_events)
       .select('id', { count: 'exact', head: true })
       .eq('event_type', 'delivered');
 
     const { count: opened } = await supabase
-      .from('email_events')
+      .from(T.email_events)
       .select('id', { count: 'exact', head: true })
       .eq('event_type', 'opened');
 
     const { count: clicked } = await supabase
-      .from('email_events')
+      .from(T.email_events)
       .select('id', { count: 'exact', head: true })
       .eq('event_type', 'clicked');
 
     const { count: replied } = await supabase
-      .from('lead_activities')
+      .from(T.lead_activities)
       .select('id', { count: 'exact', head: true })
       .eq('activity_type', 'email_replied');
 
@@ -199,20 +200,20 @@ app.get('/dashboard/stats', async (c) => {
       leadsResult,
       costResult,
     ] = await Promise.all([
-      supabase.from('hospitals').select('id', { count: 'exact', head: true }).eq('status', 'active'),
-      supabase.from('hospital_profiles').select('hospital_id', { count: 'exact', head: true }),
-      supabase.from('hospital_equipments').select('hospital_id'),
-      supabase.from('hospital_treatments').select('hospital_id'),
-      supabase.from('hospital_pricing').select('hospital_id'),
-      supabase.from('crawl_snapshots').select('id', { count: 'exact', head: true }).gte('crawled_at', weekAgo),
-      supabase.from('crawl_snapshots')
+      supabase.from(T.hospitals).select('id', { count: 'exact', head: true }).eq('status', 'active'),
+      supabase.from(T.hospital_profiles).select('hospital_id', { count: 'exact', head: true }),
+      supabase.from(T.hospital_equipments).select('hospital_id'),
+      supabase.from(T.hospital_treatments).select('hospital_id'),
+      supabase.from(T.hospital_pricing).select('hospital_id'),
+      supabase.from(T.crawl_snapshots).select('id', { count: 'exact', head: true }).gte('crawled_at', weekAgo),
+      supabase.from(T.crawl_snapshots)
         .select('id, hospital_id, crawled_at, tier, equipments_found, treatments_found, pricing_found, diff_summary')
         .order('crawled_at', { ascending: false })
         .limit(10),
-      supabase.from('product_match_scores').select('grade'),
-      supabase.from('hospital_profiles').select('hospital_id, profile_grade, profile_score, analyzed_at'),
-      supabase.from('leads').select('id', { count: 'exact', head: true }),
-      supabase.from('api_usage_logs')
+      supabase.from(T.product_match_scores).select('grade'),
+      supabase.from(T.hospital_profiles).select('hospital_id, profile_grade, profile_score, analyzed_at'),
+      supabase.from(T.leads).select('id', { count: 'exact', head: true }),
+      supabase.from(T.api_usage_logs)
         .select('provider, estimated_cost')
         .gte('created_at', monthStart),
     ]);
@@ -249,7 +250,7 @@ app.get('/dashboard/stats', async (c) => {
     let hospitalNames: Record<string, string> = {};
     if (allIds.length > 0) {
       const { data: hNames } = await supabase
-        .from('hospitals')
+        .from(T.hospitals)
         .select('id, name')
         .in('id', allIds);
       for (const h of hNames ?? []) {
@@ -360,7 +361,7 @@ app.get('/dashboard/matches', async (c) => {
 
     // 매칭 결과 + 병원/제품 JOIN
     const { data: matches, error } = await supabase
-      .from('product_match_scores')
+      .from(T.product_match_scores)
       .select('hospital_id, product_id, total_score, grade, sales_angle_scores, top_pitch_points, scored_at, scoring_version, hospitals(name, sido, sigungu, department), products(name)')
       .order('total_score', { ascending: false });
 
@@ -376,7 +377,7 @@ app.get('/dashboard/matches', async (c) => {
     let profileMap: Record<string, string> = {};
     if (hospitalIds.length > 0) {
       const { data: profiles } = await supabase
-        .from('hospital_profiles')
+        .from(T.hospital_profiles)
         .select('hospital_id, profile_grade')
         .in('hospital_id', hospitalIds);
       for (const p of profiles ?? []) {
@@ -384,9 +385,9 @@ app.get('/dashboard/matches', async (c) => {
       }
     }
 
-    // TORR RF의 sales_angles 정의 조회 (angle label 표시용)
+    // 해당 제품의 sales_angles 정의 조회 (angle label 표시용)
     const { data: products } = await supabase
-      .from('products')
+      .from(T.products)
       .select('id, scoring_criteria');
 
     type AngleMeta = { id: string; label: string; weight: number };
@@ -440,6 +441,292 @@ app.get('/dashboard/matches', async (c) => {
   }
 });
 
+// GET /product/:productId — 제품별 성과 리포트
+app.get('/product/:productId', async (c) => {
+  try {
+    const supabase = createSupabaseClient(c.env);
+    const productId = c.req.param('productId');
+
+    const [productRes, matchRes, leadRes, emailRes, demoRes] = await Promise.all([
+      supabase.from(T.products).select('id, name').eq('id', productId).single(),
+      supabase.from(T.product_match_scores).select('grade, total_score').eq('product_id', productId),
+      supabase.from(T.leads).select('id, stage, grade, interest_level').eq('product_id', productId),
+      supabase.from(T.emails).select('id, status').eq('product_id', productId),
+      supabase.from(T.demos).select('id, status').eq('product_id', productId),
+    ]);
+
+    if (productRes.error || !productRes.data) {
+      return c.json({ success: false, error: { code: 'PRODUCT_NOT_FOUND', message: '제품을 찾을 수 없습니다.' } }, 404);
+    }
+
+    const matches = matchRes.data ?? [];
+    const leads = leadRes.data ?? [];
+    const emails = emailRes.data ?? [];
+    const demos = demoRes.data ?? [];
+
+    const matchGrades: Record<string, number> = { S: 0, A: 0, B: 0, C: 0 };
+    for (const m of matches) {
+      const g = m.grade as string;
+      if (g in matchGrades) matchGrades[g]++;
+    }
+
+    const leadStages: Record<string, number> = {};
+    for (const l of leads) {
+      const s = l.stage as string;
+      leadStages[s] = (leadStages[s] ?? 0) + 1;
+    }
+
+    const emailStats = { total: emails.length, sent: 0, pending: 0 };
+    for (const e of emails) {
+      if (e.status === 'sent' || e.status === 'delivered') emailStats.sent++;
+      else if (e.status === 'pending' || e.status === 'queued') emailStats.pending++;
+    }
+
+    const demoStats = { total: demos.length, completed: 0, evaluated: 0 };
+    for (const d of demos) {
+      if (d.status === 'completed') demoStats.completed++;
+      if (d.status === 'evaluated') demoStats.evaluated++;
+    }
+
+    const avgScore = matches.length > 0
+      ? Math.round(matches.reduce((sum, m) => sum + (m.total_score as number), 0) / matches.length)
+      : 0;
+
+    return c.json({
+      success: true,
+      data: {
+        product: productRes.data,
+        matchCount: matches.length,
+        avgMatchScore: avgScore,
+        matchGrades,
+        leadCount: leads.length,
+        leadStages,
+        emailStats,
+        demoStats,
+        conversionRate: leads.length > 0
+          ? Math.round(((leadStages['closed_won'] ?? 0) / leads.length) * 100)
+          : 0,
+      },
+    });
+  } catch (err) {
+    const message = err instanceof Error ? err.message : 'Unknown error';
+    return c.json({ success: false, error: { code: 'PRODUCT_REPORT_ERROR', message } }, 500);
+  }
+});
+
+// GET /revenue — 매출 파이프라인 리포트
+app.get('/revenue', async (c) => {
+  try {
+    const supabase = createSupabaseClient(c.env);
+
+    const [leadsRes, demosRes, emailsRes] = await Promise.all([
+      supabase.from(T.leads).select('id, stage, grade, product_id, interest_level, updated_at'),
+      supabase.from(T.demos).select('id, status, product_id'),
+      supabase.from(T.emails).select('id, status, product_id'),
+    ]);
+
+    const leads = leadsRes.data ?? [];
+    const demos = demosRes.data ?? [];
+    const emails = emailsRes.data ?? [];
+
+    // 제품별 리드 집계
+    const byProduct: Record<string, { leads: number; hot: number; demos: number; emails: number; won: number }> = {};
+    for (const l of leads) {
+      const pid = l.product_id as string;
+      if (!byProduct[pid]) byProduct[pid] = { leads: 0, hot: 0, demos: 0, emails: 0, won: 0 };
+      byProduct[pid].leads++;
+      if (l.interest_level === 'hot') byProduct[pid].hot++;
+      if (l.stage === 'closed_won') byProduct[pid].won++;
+    }
+    for (const d of demos) {
+      const pid = d.product_id as string;
+      if (pid && byProduct[pid]) byProduct[pid].demos++;
+    }
+    for (const e of emails) {
+      const pid = e.product_id as string;
+      if (pid && byProduct[pid]) byProduct[pid].emails++;
+    }
+
+    // 주간 리드 추세 (최근 4주)
+    const weeklyLeads: { week: string; count: number }[] = [];
+    const now = new Date();
+    for (let w = 3; w >= 0; w--) {
+      const weekStart = new Date(now.getTime() - (w + 1) * 7 * 86400000);
+      const weekEnd = new Date(now.getTime() - w * 7 * 86400000);
+      const label = `${weekStart.getMonth() + 1}/${weekStart.getDate()}~`;
+      const count = leads.filter((l) => {
+        const d = new Date(l.updated_at);
+        return d >= weekStart && d < weekEnd;
+      }).length;
+      weeklyLeads.push({ week: label, count });
+    }
+
+    // 제품명 조회
+    const productIds = Object.keys(byProduct);
+    let productNames: Record<string, string> = {};
+    if (productIds.length > 0) {
+      const { data: prods } = await supabase.from(T.products).select('id, name').in('id', productIds);
+      for (const p of prods ?? []) productNames[p.id] = p.name;
+    }
+
+    const productSummary = Object.entries(byProduct).map(([pid, stats]) => ({
+      productId: pid,
+      productName: productNames[pid] ?? '알 수 없음',
+      ...stats,
+    }));
+
+    return c.json({
+      success: true,
+      data: {
+        totalLeads: leads.length,
+        hotLeads: leads.filter((l) => l.interest_level === 'hot').length,
+        closedWon: leads.filter((l) => l.stage === 'closed_won').length,
+        totalDemos: demos.length,
+        totalEmails: emails.length,
+        productSummary,
+        weeklyLeads,
+      },
+    });
+  } catch (err) {
+    const message = err instanceof Error ? err.message : 'Unknown error';
+    return c.json({ success: false, error: { code: 'REVENUE_REPORT_ERROR', message } }, 500);
+  }
+});
+
+// ── 영업 실시간 현황 ──
+
+// GET /sales-status — 개별 영업건별 이메일 발송현황 (실시간 대시보드용)
+app.get('/sales-status', async (c) => {
+  try {
+    const supabase = createSupabaseClient(c.env);
+    const stageFilter = c.req.query('stage'); // '' = 전체, 'active' = 활성만
+    const gradeFilter = c.req.query('grade');
+    const limit = Math.min(parseInt(c.req.query('limit') ?? '200', 10), 500);
+
+    // 1) 리드 + 병원 + 제품 조회
+    let leadsQuery = supabase
+      .from(T.leads)
+      .select('id, grade, stage, interest_level, hospital_id, product_id, contact_email, updated_at, hospitals(name, sido, sigungu), products(name)')
+      .order('updated_at', { ascending: false })
+      .limit(limit);
+
+    if (stageFilter === 'active') {
+      leadsQuery = leadsQuery.not('stage', 'in', '("closed_won","closed_lost")');
+    } else if (stageFilter) {
+      leadsQuery = leadsQuery.eq('stage', stageFilter);
+    }
+    if (gradeFilter) {
+      leadsQuery = leadsQuery.eq('grade', gradeFilter);
+    }
+
+    const { data: leads, error: leadsErr } = await leadsQuery;
+    if (leadsErr) throw new Error(leadsErr.message);
+    if (!leads || leads.length === 0) {
+      return c.json({ success: true, data: [] });
+    }
+
+    const leadIds = leads.map(l => l.id);
+
+    // 2) 해당 리드들의 이메일 전체 조회 (발송일 역순)
+    const { data: allEmails } = await supabase
+      .from(T.emails)
+      .select('id, lead_id, subject, status, sent_at, created_at')
+      .in('lead_id', leadIds)
+      .order('created_at', { ascending: false });
+
+    const emails = allEmails ?? [];
+
+    // 3) 이메일 이벤트 조회 (오픈/클릭)
+    const emailIds = emails.map(e => e.id);
+    const { data: allEvents } = emailIds.length > 0
+      ? await supabase.from(T.email_events).select('email_id, event_type').in('email_id', emailIds)
+      : { data: [] };
+
+    // 4) 오늘의 KPI용 집계
+    const today = new Date().toISOString().slice(0, 10);
+
+    // 5) 맵 구성
+    // 리드별 최신 이메일
+    const latestByLead: Record<string, typeof emails[0]> = {};
+    // 리드별 이메일 총 발송 수
+    const countByLead: Record<string, number> = {};
+    for (const email of emails) {
+      if (!latestByLead[email.lead_id]) latestByLead[email.lead_id] = email;
+      countByLead[email.lead_id] = (countByLead[email.lead_id] ?? 0) + 1;
+    }
+
+    // 이메일별 이벤트 셋
+    const eventsByEmail: Record<string, Set<string>> = {};
+    for (const ev of allEvents ?? []) {
+      if (!eventsByEmail[ev.email_id]) eventsByEmail[ev.email_id] = new Set();
+      eventsByEmail[ev.email_id].add(ev.event_type as string);
+    }
+
+    // 6) 결과 조립
+    const result = leads.map(lead => {
+      const hospital = lead.hospitals as unknown as { name: string; sido: string | null; sigungu: string | null } | null;
+      const product = lead.products as unknown as { name: string } | null;
+      const latestEmail = latestByLead[lead.id] ?? null;
+      const evSet = latestEmail ? (eventsByEmail[latestEmail.id] ?? new Set()) : new Set();
+
+      // 이메일 현황 요약
+      let emailStatus: 'none' | 'queued' | 'sent' | 'opened' | 'clicked' | 'bounced' = 'none';
+      if (latestEmail) {
+        if (evSet.has('clicked')) emailStatus = 'clicked';
+        else if (evSet.has('opened')) emailStatus = 'opened';
+        else if (latestEmail.status === 'sent' || latestEmail.status === 'delivered') emailStatus = 'sent';
+        else if (latestEmail.status === 'bounced' || latestEmail.status === 'failed') emailStatus = 'bounced';
+        else emailStatus = 'queued';
+      }
+
+      return {
+        leadId: lead.id,
+        grade: lead.grade as string | null,
+        stage: lead.stage as string,
+        interestLevel: lead.interest_level as string | null,
+        hospitalName: hospital?.name ?? '알 수 없음',
+        region: [hospital?.sido, hospital?.sigungu].filter(Boolean).join(' ') || null,
+        productName: product?.name ?? '알 수 없음',
+        contactEmail: lead.contact_email as string | null,
+        emailCount: countByLead[lead.id] ?? 0,
+        emailStatus,
+        latestEmail: latestEmail ? {
+          id: latestEmail.id,
+          subject: latestEmail.subject as string | null,
+          status: latestEmail.status as string,
+          sentAt: latestEmail.sent_at as string | null,
+          opened: evSet.has('opened'),
+          clicked: evSet.has('clicked'),
+        } : null,
+        updatedAt: lead.updated_at as string,
+      };
+    });
+
+    // 7) KPI 요약
+    const sentToday = result.filter(r => r.latestEmail?.sentAt?.startsWith(today)).length;
+    const openedCount = result.filter(r => r.latestEmail?.opened).length;
+    const clickedCount = result.filter(r => r.latestEmail?.clicked).length;
+    const noEmailCount = result.filter(r => r.emailStatus === 'none').length;
+
+    return c.json({
+      success: true,
+      data: {
+        leads: result,
+        kpi: {
+          total: result.length,
+          sentToday,
+          opened: openedCount,
+          clicked: clickedCount,
+          noEmail: noEmailCount,
+        },
+      },
+    });
+  } catch (err) {
+    const message = err instanceof Error ? err.message : 'Unknown error';
+    return c.json({ success: false, error: { code: 'SALES_STATUS_ERROR', message } }, 500);
+  }
+});
+
 // ── 크롤 관리 엔드포인트 ──
 
 app.get('/crawls/stats', async (c) => {
@@ -448,8 +735,8 @@ app.get('/crawls/stats', async (c) => {
     const monthStart = new Date().toISOString().slice(0, 7) + '-01T00:00:00';
 
     const [totalResult, costResult] = await Promise.all([
-      supabase.from('crawl_snapshots').select('id', { count: 'exact', head: true }),
-      supabase.from('api_usage_logs')
+      supabase.from(T.crawl_snapshots).select('id', { count: 'exact', head: true }),
+      supabase.from(T.api_usage_logs)
         .select('estimated_cost')
         .eq('provider', 'gemini')
         .gte('created_at', monthStart),
@@ -482,7 +769,7 @@ app.get('/crawls', async (c) => {
     const offset = (page - 1) * limit;
 
     const { data: crawls, count } = await supabase
-      .from('crawl_snapshots')
+      .from(T.crawl_snapshots)
       .select('id, hospital_id, crawled_at, tier, equipments_found, treatments_found, pricing_found, diff_summary', { count: 'exact' })
       .order('crawled_at', { ascending: false })
       .range(offset, offset + limit - 1);
@@ -491,7 +778,7 @@ app.get('/crawls', async (c) => {
     const hospitalIds = [...new Set(crawlData.map(r => r.hospital_id))];
     let names: Record<string, string> = {};
     if (hospitalIds.length > 0) {
-      const { data: hNames } = await supabase.from('hospitals').select('id, name').in('id', hospitalIds);
+      const { data: hNames } = await supabase.from(T.hospitals).select('id, name').in('id', hospitalIds);
       for (const h of hNames ?? []) names[h.id] = h.name;
     }
 

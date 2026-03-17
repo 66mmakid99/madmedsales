@@ -2,6 +2,7 @@
 // Action executor: handles trigger actions for leads
 
 import type { SupabaseClient } from '@supabase/supabase-js';
+import { T } from '../../lib/table-names';
 
 export interface TriggerAction {
   type:
@@ -19,6 +20,7 @@ export interface TriggerAction {
 interface LeadRef {
   id: string;
   hospital_id: string;
+  product_id?: string;
   contact_email: string | null;
   grade: string | null;
 }
@@ -76,9 +78,21 @@ async function handleSendEmail(
 
   const trigger = action.params['trigger'] as string | undefined;
 
+  // product_id 조회 (리드에서)
+  let productId = lead.product_id;
+  if (!productId) {
+    const { data: leadData } = await supabase
+      .from(T.leads)
+      .select('product_id')
+      .eq('id', lead.id)
+      .single();
+    productId = (leadData?.product_id as string) ?? undefined;
+  }
+
   // Create a queued email record for the follow-up
-  const { error } = await supabase.from('emails').insert({
+  const { error } = await supabase.from(T.emails).insert({
     lead_id: lead.id,
+    product_id: productId ?? null,
     subject: `[자동] ${trigger ?? 'followup'} 트리거 이메일`,
     body_html: '<p>AI 생성 대기중</p>',
     body_text: 'AI 생성 대기중',
@@ -102,7 +116,7 @@ async function handleUpdateInterest(
   if (!level) return;
 
   const { error } = await supabase
-    .from('leads')
+    .from(T.leads)
     .update({ interest_level: level })
     .eq('id', lead.id);
 
@@ -120,7 +134,7 @@ async function handleUpdateStage(
   if (!stage) return;
 
   const { error } = await supabase
-    .from('leads')
+    .from(T.leads)
     .update({ stage })
     .eq('id', lead.id);
 
@@ -128,7 +142,7 @@ async function handleUpdateStage(
     throw new Error(`Failed to update stage: ${error.message}`);
   }
 
-  await supabase.from('lead_activities').insert({
+  await supabase.from(T.lead_activities).insert({
     lead_id: lead.id,
     activity_type: 'stage_changed',
     title: `단계 변경: ${stage}`,
@@ -141,7 +155,7 @@ async function handleKakaoConnect(
   lead: LeadRef
 ): Promise<void> {
   // Mark lead as needing kakao connection (admin action required)
-  await supabase.from('lead_activities').insert({
+  await supabase.from(T.lead_activities).insert({
     lead_id: lead.id,
     activity_type: 'note_added',
     title: '카카오톡 채널 연결 추천',
@@ -157,7 +171,7 @@ async function handleNotifyAdmin(
 ): Promise<void> {
   const reason = action.params['reason'] as string ?? '관리자 확인 필요';
 
-  await supabase.from('lead_activities').insert({
+  await supabase.from(T.lead_activities).insert({
     lead_id: lead.id,
     activity_type: 'note_added',
     title: `[알림] ${reason}`,
@@ -172,18 +186,27 @@ async function handleScheduleReapproach(
   lead: LeadRef,
   action: TriggerAction
 ): Promise<void> {
-  const delayDays = (action.params['delay_days'] as number) ?? 14;
+  // 설계 기준: 부정 회신 → 90일, 시퀀스 완료 무반응 → 180일
+  const delayDays = (action.params['delay_days'] as number) ?? 90;
+  const reason = (action.params['reason'] as string) ?? 'scheduled';
   const reapproachAt = new Date(
     Date.now() + delayDays * 24 * 60 * 60 * 1000
   ).toISOString();
 
-  await supabase.from('lead_activities').insert({
+  await supabase.from(T.lead_activities).insert({
     lead_id: lead.id,
     activity_type: 'note_added',
     title: `재접근 예정: ${reapproachAt.split('T')[0]}`,
-    metadata: { reapproach_at: reapproachAt, delay_days: delayDays },
+    description: `사유: ${reason}, ${delayDays}일 후 재접근`,
+    metadata: { reapproach_at: reapproachAt, delay_days: delayDays, reason },
     actor: 'system',
   });
+
+  // 시퀀스 일시 중지 (재접근 전까지 이메일 발송 차단)
+  await supabase
+    .from(T.leads)
+    .update({ sequence_paused: true, sequence_paused_reason: reason })
+    .eq('id', lead.id);
 }
 
 async function handlePauseSequence(
@@ -191,11 +214,11 @@ async function handlePauseSequence(
   lead: LeadRef
 ): Promise<void> {
   await supabase
-    .from('leads')
+    .from(T.leads)
     .update({ email_sequence_id: null })
     .eq('id', lead.id);
 
-  await supabase.from('lead_activities').insert({
+  await supabase.from(T.lead_activities).insert({
     lead_id: lead.id,
     activity_type: 'note_added',
     title: '이메일 시퀀스 일시 중지',
@@ -209,7 +232,7 @@ async function logActionActivity(
   leadId: string,
   action: TriggerAction
 ): Promise<void> {
-  await supabase.from('lead_activities').insert({
+  await supabase.from(T.lead_activities).insert({
     lead_id: leadId,
     activity_type: 'ai_analysis',
     title: `트리거 액션 실행: ${action.type}`,

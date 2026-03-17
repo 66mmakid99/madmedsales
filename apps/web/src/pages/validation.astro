@@ -1,0 +1,23 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ValidationDashboard from '../components/ValidationDashboard';
+---
+
+<Layout title="데이터 검증 센터 | MadMedSales">
+  <main class="container mx-auto max-w-7xl py-10 px-4 sm:px-6 lg:px-8">
+    <div class="mb-8 flex items-center justify-between">
+      <div>
+        <h1 class="text-3xl font-extrabold text-slate-900 tracking-tight flex items-center gap-3">
+          <span class="text-rose-600">🛡️</span> Data Validation Center
+        </h1>
+        <p class="text-slate-500 mt-2 text-lg">의료기기, 논문, 특허 마스터 데이터 무결성 모니터링 및 정화 관제소</p>
+      </div>
+      <a href="/intelligence" class="px-4 py-2 bg-slate-100 text-slate-700 font-semibold rounded-lg hover:bg-slate-200 transition-colors text-sm">
+        ← 돌아가기
+      </a>
+    </div>
+    
+    <!-- React 검증 대시보드 마운트 -->
+    <ValidationDashboard client:load />
+  </main>
+</Layout>

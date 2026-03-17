@@ -56,6 +56,30 @@ const POPUP_CLOSE_SELECTORS = [
 ];
 
 let _browser: Browser | null = null;
+let _cleanupRegistered = false;
+
+function registerProcessCleanup(): void {
+  if (_cleanupRegistered) return;
+  _cleanupRegistered = true;
+
+  const cleanup = (): void => {
+    if (_browser) {
+      try { (_browser as any).process?.()?.kill('SIGKILL'); } catch {}
+      _browser = null;
+    }
+  };
+
+  process.on('exit', cleanup);
+  process.on('SIGINT', () => { cleanup(); process.exit(130); });
+  process.on('SIGTERM', () => { cleanup(); process.exit(143); });
+  // 주의: uncaughtException에서 process.exit()하면 메인 배치도 죽음
+  // 브라우저 정리만 하고, exit 판단은 메인 프로세스 핸들러에 위임
+  process.on('uncaughtException', (err) => {
+    console.error('Uncaught exception, closing browser:', err.message);
+    cleanup();
+    // process.exit(1) 제거 — 메인 프로세스 핸들러가 판단
+  });
+}
 
 async function getBrowser(): Promise<Browser> {
   if (!_browser || !_browser.isConnected()) {
@@ -67,8 +91,11 @@ async function getBrowser(): Promise<Browser> {
         '--disable-dev-shm-usage',
         '--disable-gpu',
         '--disable-web-security',
+        '--max_old_space_size=256',
+        '--disable-background-timer-throttling',
       ],
     });
+    registerProcessCleanup();
   }
   return _browser;
 }
@@ -133,10 +160,11 @@ export async function captureScreenshots(
   };
 
   let page: Page | null = null;
+  let context: Awaited<ReturnType<Browser['newContext']>> | null = null;
 
   try {
     const browser = await getBrowser();
-    const context = await browser.newContext({
+    context = await browser.newContext({
       viewport: { width: opts.viewportWidth, height: opts.viewportHeight },
       userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
       locale: 'ko-KR',
@@ -258,6 +286,7 @@ export async function captureScreenshots(
     await context.close();
 
   } catch (err) {
+    if (context) await context.close().catch(() => {});
     const msg = err instanceof Error ? err.message : String(err);
     result.errors.push(msg);
   }
@@ -322,9 +351,9 @@ if (import.meta.url === `file:///${process.argv[1]?.replace(/\\/g, '/')}` ||
     console.log(`   저장: ${outDir}/test_*.png (${result.screenshots.length}장)`);
 
     await closeBrowser();
-  }).catch(err => {
+  }).catch(async (err) => {
     console.error('❌ 실패:', err);
-    closeBrowser();
+    await closeBrowser();
     process.exit(1);
   });
 }

@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react';
+import { useState } from 'react';
 import { useDashboardStats, useMatchDetails } from '../hooks/use-dashboard';
 import { DataKpiCards } from '../components/dashboard/DataKpiCards';
 import { PipelineFunnel } from '../components/dashboard/PipelineFunnel';
@@ -6,8 +7,13 @@ import { RecentActivityFeed } from '../components/dashboard/RecentActivityFeed';
 import { MonthlyCostCard } from '../components/dashboard/MonthlyCostCard';
 import { GradeDistributionChart } from '../components/dashboard/GradeDistributionChart';
 import { MatchDetailTable } from '../components/dashboard/MatchDetailTable';
+import { HotLeadAlerts } from '../components/dashboard/HotLeadAlerts';
+import { ProductPipelineSummary } from '../components/dashboard/ProductPipelineSummary';
+import { ProductFilter } from '../components/dashboard/ProductFilter';
+import { SalesDashboard } from '../components/dashboard/SalesDashboard';
 
 export function Dashboard(): ReactNode {
+  const [productFilter, setProductFilter] = useState('');
   const { data, loading, error } = useDashboardStats();
   const { data: matchData, loading: matchLoading } = useMatchDetails();
 
@@ -51,13 +57,22 @@ export function Dashboard(): ReactNode {
   return (
     <div className="space-y-6">
       {/* 헤더 */}
-      <div>
-        <h2 className="text-lg font-bold text-slate-800">대시보드</h2>
-        <p className="mt-1 text-sm text-slate-500">데이터 수집 · 분석 · 영업 현황</p>
+      <div className="flex items-center justify-between">
+        <div>
+          <h2 className="text-lg font-bold text-slate-800">대시보드</h2>
+          <p className="mt-1 text-sm text-slate-500">데이터 수집 · 분석 · 영업 현황</p>
+        </div>
+        <ProductFilter value={productFilter} onChange={setProductFilter} />
       </div>
 
       {/* Row 1: KPI 카드 4개 */}
       <DataKpiCards kpi={data.kpi} />
+
+      {/* Row 1.5: HOT 알림 + 제품별 파이프라인 */}
+      <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
+        <HotLeadAlerts />
+        <ProductPipelineSummary />
+      </div>
 
       {/* Row 2: 영업 퍼널 + 최근 활동 */}
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
@@ -71,11 +86,19 @@ export function Dashboard(): ReactNode {
         <GradeDistributionChart grades={data.profileGradeDistribution} />
       </div>
 
-      {/* Row 4: 매칭 상세 */}
+      {/* Row 4: 영업건별 이메일 현황 실시간 */}
+      <SalesDashboard />
+
+      {/* Row 5: 매칭 상세 */}
       {matchLoading ? (
         <div className="h-64 animate-pulse rounded-lg bg-gray-200" />
       ) : (
-        <MatchDetailTable matches={matchData ?? []} />
+        <MatchDetailTable
+          matches={productFilter
+            ? (matchData ?? []).filter((m) => m.productName === productFilter)
+            : matchData ?? []
+          }
+        />
       )}
     </div>
   );

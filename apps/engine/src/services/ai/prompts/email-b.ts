@@ -35,7 +35,7 @@ export function buildBGradePrompt(input: EmailPromptInput): string {
 - 현재 단계: ${input.stepNumber}회차
 - 목적: ${input.stepPurpose}
 - 톤앤매너: ${input.stepTone ?? 'casual'}
-- 핵심 메시지: ${input.stepKeyMessage ?? 'RF 리프팅 업계 동향'}
+- 핵심 메시지: ${input.stepKeyMessage ?? `${input.product.category} 업계 동향`}
 - 개인화 포커스: ${input.personalizationFocus ?? '업계 트렌드'}
 
 ## 이전 발송 이메일

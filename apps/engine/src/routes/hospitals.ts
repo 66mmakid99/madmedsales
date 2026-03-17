@@ -1,6 +1,7 @@
 import { Hono } from 'hono';
 import type { Context } from 'hono';
 import { createSupabaseClient } from '../lib/supabase.js';
+import { T } from '../lib/table-names';
 
 type Bindings = {
   SUPABASE_URL: string;
@@ -44,9 +45,9 @@ hospitals.get('/summary', async (c) => {
     { data: crawledRows },
     { data: profiledRows },
   ] = await Promise.all([
-    supabase.from('hospitals').select('id', { count: 'exact', head: true }),
-    supabase.from('crawl_snapshots').select('hospital_id'),
-    supabase.from('hospital_profiles').select('hospital_id'),
+    supabase.from(T.hospitals).select('id', { count: 'exact', head: true }),
+    supabase.from(T.crawl_snapshots).select('hospital_id'),
+    supabase.from(T.hospital_profiles).select('hospital_id'),
   ]);
 
   const crawledIds = new Set((crawledRows ?? []).map((r) => r.hospital_id));
@@ -87,7 +88,7 @@ hospitals.get('/', async (c) => {
   }
 
   let query = supabase
-    .from('hospitals')
+    .from(T.hospitals)
     .select(
       'id, name, address, sido, sigungu, department, hospital_type, phone, email, website, data_quality_score, status, is_target, opened_at, created_at',
       { count: 'exact' }
@@ -119,7 +120,7 @@ hospitals.get('/', async (c) => {
     const hospitalIds = filteredData.map((h) => h.id);
     if (hospitalIds.length > 0) {
       const { data: equipHospitals } = await supabase
-        .from('hospital_equipments')
+        .from(T.hospital_equipments)
         .select('hospital_id')
         .in('hospital_id', hospitalIds);
 
@@ -139,7 +140,7 @@ hospitals.get('/', async (c) => {
   if (enrich === 'true' && filteredData.length > 0) {
     const hospitalIds = filteredData.map((h) => h.id);
     const { data: profileRows } = await supabase
-      .from('hospital_profiles')
+      .from(T.hospital_profiles)
       .select('hospital_id')
       .in('hospital_id', hospitalIds);
     const profiledSet = new Set((profileRows ?? []).map((r) => r.hospital_id));
@@ -177,7 +178,7 @@ async function handleProfiledList(
 ): Promise<Response> {
   // 1) 프로파일링된 병원 ID 조회
   const { data: profileRows } = await supabase
-    .from('hospital_profiles')
+    .from(T.hospital_profiles)
     .select('hospital_id, profile_grade');
 
   if (!profileRows || profileRows.length === 0) {
@@ -193,7 +194,7 @@ async function handleProfiledList(
 
   // 2) 해당 병원 기본 정보 (필터 적용)
   let query = supabase
-    .from('hospitals')
+    .from(T.hospitals)
     .select(
       'id, name, address, sido, sigungu, department, hospital_type, phone, email, website, data_quality_score, status, is_target, created_at',
       { count: 'exact' }
@@ -236,11 +237,11 @@ async function handleProfiledList(
     { data: matchRows },
     { data: crawlRows },
   ] = await Promise.all([
-    supabase.from('hospital_equipments').select('hospital_id').in('hospital_id', pageIds),
-    supabase.from('hospital_treatments').select('hospital_id').in('hospital_id', pageIds),
-    supabase.from('hospital_pricing').select('hospital_id').in('hospital_id', pageIds),
-    supabase.from('product_match_scores').select('hospital_id, grade').in('hospital_id', pageIds),
-    supabase.from('crawl_snapshots').select('hospital_id, crawled_at').in('hospital_id', pageIds).order('crawled_at', { ascending: false }),
+    supabase.from(T.hospital_equipments).select('hospital_id').in('hospital_id', pageIds),
+    supabase.from(T.hospital_treatments).select('hospital_id').in('hospital_id', pageIds),
+    supabase.from(T.hospital_pricing).select('hospital_id').in('hospital_id', pageIds),
+    supabase.from(T.product_match_scores).select('hospital_id, grade').in('hospital_id', pageIds),
+    supabase.from(T.crawl_snapshots).select('hospital_id, crawled_at').in('hospital_id', pageIds).order('crawled_at', { ascending: false }),
   ]);
 
   // 집계
@@ -301,7 +302,7 @@ hospitals.get('/stats', async (c) => {
   const supabase = createSupabaseClient(c.env);
 
   const { data: byRegion, error: regionErr } = await supabase
-    .from('hospitals')
+    .from(T.hospitals)
     .select('sido')
     .eq('status', 'active');
 
@@ -319,7 +320,7 @@ hospitals.get('/stats', async (c) => {
   }
 
   const { data: byDept, error: deptErr } = await supabase
-    .from('hospitals')
+    .from(T.hospitals)
     .select('department')
     .eq('status', 'active');
 
@@ -337,12 +338,12 @@ hospitals.get('/stats', async (c) => {
   }
 
   const { count: totalCount } = await supabase
-    .from('hospitals')
+    .from(T.hospitals)
     .select('id', { count: 'exact', head: true })
     .eq('status', 'active');
 
   const { count: emailCount } = await supabase
-    .from('hospitals')
+    .from(T.hospitals)
     .select('id', { count: 'exact', head: true })
     .eq('status', 'active')
     .not('email', 'is', null);
@@ -593,7 +594,7 @@ hospitals.get('/:id', async (c) => {
   const id = c.req.param('id');
 
   const { data: hospital, error } = await supabase
-    .from('hospitals')
+    .from(T.hospitals)
     .select('*')
     .eq('id', id)
     .single();
@@ -618,37 +619,37 @@ hospitals.get('/:id', async (c) => {
     { data: crawlHistory },
   ] = await Promise.all([
     supabase
-      .from('hospital_equipments')
+      .from(T.hospital_equipments)
       .select('id, equipment_name, equipment_brand, equipment_category, equipment_model, estimated_year, is_confirmed, source')
       .eq('hospital_id', id)
       .order('created_at', { ascending: false }),
     supabase
-      .from('hospital_treatments')
+      .from(T.hospital_treatments)
       .select('id, treatment_name, treatment_category, price_min, price_max, is_promoted, source')
       .eq('hospital_id', id)
       .order('created_at', { ascending: false }),
     supabase
-      .from('hospital_doctors')
+      .from(T.hospital_doctors)
       .select('id, name, title, specialty')
       .eq('hospital_id', id),
     supabase
-      .from('hospital_profiles')
+      .from(T.hospital_profiles)
       .select('investment_score, portfolio_diversity_score, practice_scale_score, marketing_activity_score, profile_score, profile_grade, ai_summary, main_focus, target_audience, analyzed_at')
       .eq('hospital_id', id)
       .maybeSingle(),
     supabase
-      .from('product_match_scores')
+      .from(T.product_match_scores)
       .select('product_id, total_score, grade, sales_angle_scores, top_pitch_points, scored_at, scoring_version, products(name)')
       .eq('hospital_id', id)
       .order('total_score', { ascending: false }),
     supabase
-      .from('hospital_pricing')
+      .from(T.hospital_pricing)
       .select('treatment_name, standard_name, total_price, unit_price, unit_type, is_event_price, event_label, confidence_level, crawled_at')
       .eq('hospital_id', id)
       .order('crawled_at', { ascending: false })
       .limit(50),
     supabase
-      .from('crawl_snapshots')
+      .from(T.crawl_snapshots)
       .select('crawled_at, tier, equipments_found, treatments_found, pricing_found, diff_summary')
       .eq('hospital_id', id)
       .order('crawled_at', { ascending: false })
@@ -738,7 +739,7 @@ hospitals.put('/:id', async (c) => {
   updates.updated_at = new Date().toISOString();
 
   const { data, error } = await supabase
-    .from('hospitals')
+    .from(T.hospitals)
     .update(updates)
     .eq('id', id)
     .select()
@@ -778,7 +779,7 @@ hospitals.post('/search', async (c) => {
   const searchLimit = Math.min(rawLimit ?? 20, 100);
 
   const { data, error } = await supabase
-    .from('hospitals')
+    .from(T.hospitals)
     .select('id, name, address, sido, sigungu, department, email, data_quality_score, status')
     .or(`name.ilike.%${query}%,address.ilike.%${query}%`)
     .eq('status', 'active')

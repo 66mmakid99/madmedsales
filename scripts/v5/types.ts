@@ -17,6 +17,19 @@ export interface DoctorV54 {
   confidence?: 'confirmed' | 'uncertain';
   name_source?: 'web_verified' | 'web_corrected' | 'ocr_only' | 'ocr_confirmed';
   notes?: string | null;
+  photo_url?: string | null;
+  structured_academic?: StructuredAcademic[];
+}
+
+export type AcademicType =
+  | '논문' | '학회임원' | '학회정회원' | '수상'
+  | '교과서집필' | '편집위원' | '임상연구' | '강연' | '기타';
+
+export interface StructuredAcademic {
+  type: AcademicType;
+  title: string;
+  year: string | null;
+  source_text: string;
 }
 
 export interface AcademicActivity {
@@ -181,6 +194,8 @@ export interface AnalysisResult {
     name: string; title: string; specialty?: string | null;
     education?: string | null; career?: string | null;
     academic_activity?: string | null; notes?: string | null;
+    photo_url?: string | null;
+    structured_academic?: StructuredAcademic[];
   }>;
   events: Array<{
     title: string; description?: string | null;

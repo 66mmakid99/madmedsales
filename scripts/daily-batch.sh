@@ -8,6 +8,8 @@
 #   bash scripts/daily-batch.sh --dry-run          # 미리보기
 #   bash scripts/daily-batch.sh --skip-validate    # 검증 스킵
 #   bash scripts/daily-batch.sh --count 50 --phase 1  # 조합
+#   bash scripts/daily-batch.sh --count 97 --phase 2 --sigungu 강남구  # 시군구 필터
+#   bash scripts/daily-batch.sh --skip-done                           # 완료 병원 스킵
 
 set -euo pipefail
 
@@ -27,14 +29,18 @@ BATCH_SIZE=100
 PHASE=2
 DRY_RUN=false
 SKIP_VALIDATE=false
+SIGUNGU=""
+SKIP_DONE=false
 
 # 인수 파싱
 while [[ $# -gt 0 ]]; do
   case $1 in
     --count)    BATCH_SIZE="$2"; shift 2 ;;
     --phase)    PHASE="$2"; shift 2 ;;
+    --sigungu)  SIGUNGU="$2"; shift 2 ;;
     --dry-run)  DRY_RUN=true; shift ;;
     --skip-validate) SKIP_VALIDATE=true; shift ;;
+    --skip-done) SKIP_DONE=true; shift ;;
     *)          echo "Unknown option: $1"; exit 1 ;;
   esac
 done
@@ -64,7 +70,7 @@ check_disk() {
 # 시작
 # ============================================================
 log "=== daily-batch: ${DATE} ==="
-log "  count: ${BATCH_SIZE} | phase: ${PHASE}"
+log "  count: ${BATCH_SIZE} | phase: ${PHASE}${SIGUNGU:+ | sigungu: ${SIGUNGU}}"
 
 check_disk
 
@@ -77,11 +83,17 @@ log "[1/5] batch-selector..."
 TARGETS_FILE="$LOG_DIR/targets.json"
 cd "$SCRIPT_DIR"
 
+SIGUNGU_ARGS=()
+if [[ -n "$SIGUNGU" ]]; then
+  SIGUNGU_ARGS=(--sigungu "$SIGUNGU")
+fi
+
 if [[ "$DRY_RUN" == "true" ]]; then
   npx tsx batch-selector.ts \
     --count "$BATCH_SIZE" \
     --phase "$PHASE" \
     --output "$TARGETS_FILE" \
+    "${SIGUNGU_ARGS[@]}" \
     --dry-run
   log "DRY RUN done"
   exit 0
@@ -91,6 +103,7 @@ npx tsx batch-selector.ts \
   --count "$BATCH_SIZE" \
   --phase "$PHASE" \
   --output "$TARGETS_FILE" \
+  "${SIGUNGU_ARGS[@]}" \
   2>&1 | tee -a "$LOG_DIR/batch.log"
 
 if [[ ! -f "$TARGETS_FILE" ]]; then
@@ -116,10 +129,16 @@ CRAWL_LOG="$LOG_DIR/crawl.log"
 CRAWL_START=$(date +%s)
 
 cd "$SCRIPT_DIR"
+
+SKIP_DONE_ARGS=()
+if [[ "$SKIP_DONE" == "true" ]]; then
+  SKIP_DONE_ARGS=(--skip-done)
+fi
+
 set +e
 npx tsx recrawl-v5.ts \
   --input "$TARGETS_FILE" \
-  --skip-done \
+  "${SKIP_DONE_ARGS[@]}" \
   --ocr \
   2>&1 | tee "$CRAWL_LOG"
 CRAWL_EXIT=$?

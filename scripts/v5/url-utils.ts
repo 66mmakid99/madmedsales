@@ -16,11 +16,12 @@ const INCLUDE_PATTERNS = [
 ];
 
 const EXCLUDE_PATTERNS = [
-  /blog|후기|리뷰|review|공지|notice|개인정보|privacy/i,
+  /후기|리뷰|review|공지|notice|개인정보|privacy/i,
   /채용|recruit|오시는길|map|location|contact/i,
   /\.pdf|\.jpg|\.png|login|admin|board|gallery/i,
   /예약|booking|reservation|sitemap/i,
-  /카카오|kakao|naver\.com|instagram|youtube|facebook/i,
+  /카카오|kakao|instagram|youtube|facebook/i,
+  /cafe\.naver\.com|booking\.naver\.com|map\.naver\.com|shopping\.naver\.com/i,
 ];
 
 // ============================================================
@@ -35,10 +36,10 @@ export function filterRelevantUrls(urls: string[], mainUrl: string): string[] {
       const target = new URL(url);
       // 같은 도메인만
       if (target.hostname !== mainHostname) return false;
+      // 메인 URL은 제외 패턴보다 우선
+      if (url === mainUrl || url === mainUrl + '/' || url + '/' === mainUrl) return true;
       // 제외 패턴
       if (EXCLUDE_PATTERNS.some(p => p.test(url))) return false;
-      // 메인 URL
-      if (url === mainUrl || url === mainUrl + '/' || url + '/' === mainUrl) return true;
       // 포함 패턴
       if (INCLUDE_PATTERNS.some(p => p.test(url))) return true;
       // ★ 짧은 경로(depth 2 이하)는 통과 (사이트 주요 페이지일 가능성 높음)

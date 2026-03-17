@@ -1,0 +1,222 @@
+[
+  {
+    "hospital_id": "3733c349-5bf3-48d9-bc6d-e128a0bd4f09",
+    "hospital_name": "청담비엘에스의원",
+    "hospital_type_actual": "large",
+    "actual_equipment_count": 0,
+    "actual_treatment_count": 0,
+    "actual_doctor_count": 3,
+    "has_price_info": false,
+    "actual_quality": "partial",
+    "notes": ""
+  },
+  {
+    "hospital_id": "f65d451d-b868-4a73-99f0-d1de7a5cccbd",
+    "hospital_name": "바노바기피부과의원",
+    "hospital_type_actual": "large",
+    "actual_equipment_count": 0,
+    "actual_treatment_count": 0,
+    "actual_doctor_count": 17,
+    "has_price_info": false,
+    "actual_quality": "partial",
+    "notes": ""
+  },
+  {
+    "hospital_id": "e8b3c5a1-1955-434a-bb8e-548d12461e2a",
+    "hospital_name": "파스텔휴먼피부과의원",
+    "hospital_type_actual": "large",
+    "actual_equipment_count": 0,
+    "actual_treatment_count": 0,
+    "actual_doctor_count": 10,
+    "has_price_info": false,
+    "actual_quality": "partial",
+    "notes": ""
+  },
+  {
+    "hospital_id": "18fa600c-dcb4-4adf-b19b-6d398ac3ad9e",
+    "hospital_name": "닥터스피부과 신사",
+    "hospital_type_actual": "large",
+    "actual_equipment_count": 0,
+    "actual_treatment_count": 0,
+    "actual_doctor_count": 26,
+    "has_price_info": false,
+    "actual_quality": "partial",
+    "notes": ""
+  },
+  {
+    "hospital_id": "7227db30-2664-448c-bc67-edb6e6c8b7b1",
+    "hospital_name": "블리비의원 강남역점",
+    "hospital_type_actual": "large",
+    "actual_equipment_count": 0,
+    "actual_treatment_count": 0,
+    "actual_doctor_count": 0,
+    "has_price_info": false,
+    "actual_quality": "partial",
+    "notes": ""
+  },
+  {
+    "hospital_id": "a01d990d-d7cd-4a10-a098-036c2c190fb7",
+    "hospital_name": "VS라인의원 강남점",
+    "hospital_type_actual": "large",
+    "actual_equipment_count": 0,
+    "actual_treatment_count": 0,
+    "actual_doctor_count": 1,
+    "has_price_info": false,
+    "actual_quality": "partial",
+    "notes": ""
+  },
+  {
+    "hospital_id": "2e0888a5-92da-483b-a98f-084d8dfff6c3",
+    "hospital_name": "차앤박피부과의원",
+    "hospital_type_actual": "large",
+    "actual_equipment_count": 0,
+    "actual_treatment_count": 0,
+    "actual_doctor_count": 46,
+    "has_price_info": false,
+    "actual_quality": "partial",
+    "notes": ""
+  },
+  {
+    "hospital_id": "87b4023e-e2f3-488b-9c7f-f36862c88cd3",
+    "hospital_name": "프리마피부과의원 강서",
+    "hospital_type_actual": "medium",
+    "actual_equipment_count": 0,
+    "actual_treatment_count": 0,
+    "actual_doctor_count": 6,
+    "has_price_info": false,
+    "actual_quality": "partial",
+    "notes": ""
+  },
+  {
+    "hospital_id": "f55cb8ed-f2dc-4740-94c8-e70c616cdf15",
+    "hospital_name": "이지함피부과 망우",
+    "hospital_type_actual": "medium",
+    "actual_equipment_count": 0,
+    "actual_treatment_count": 0,
+    "actual_doctor_count": 0,
+    "has_price_info": false,
+    "actual_quality": "partial",
+    "notes": ""
+  },
+  {
+    "hospital_id": "1a4a2e5b-49c5-4f90-8f9b-2e4ed7d0aae2",
+    "hospital_name": "베스트웰피부과의원",
+    "hospital_type_actual": "medium",
+    "actual_equipment_count": 0,
+    "actual_treatment_count": 0,
+    "actual_doctor_count": 3,
+    "has_price_info": false,
+    "actual_quality": "partial",
+    "notes": ""
+  },
+  {
+    "hospital_id": "c5f29c35-dbfa-4e47-a973-c798b5297070",
+    "hospital_name": "시그니처피부과의원",
+    "hospital_type_actual": "medium",
+    "actual_equipment_count": 0,
+    "actual_treatment_count": 0,
+    "actual_doctor_count": 2,
+    "has_price_info": false,
+    "actual_quality": "partial",
+    "notes": ""
+  },
+  {
+    "hospital_id": "654d8a62-2b20-4ad6-9175-b3a958889941",
+    "hospital_name": "청담끌레어의원",
+    "hospital_type_actual": "medium",
+    "actual_equipment_count": 0,
+    "actual_treatment_count": 0,
+    "actual_doctor_count": 1,
+    "has_price_info": false,
+    "actual_quality": "partial",
+    "notes": ""
+  },
+  {
+    "hospital_id": "101695e3-5581-49ba-a9f6-73f416c484aa",
+    "hospital_name": "초이스피부과의원 신사",
+    "hospital_type_actual": "medium",
+    "actual_equipment_count": 0,
+    "actual_treatment_count": 0,
+    "actual_doctor_count": 1,
+    "has_price_info": false,
+    "actual_quality": "partial",
+    "notes": ""
+  },
+  {
+    "hospital_id": "3eed0fa1-bff5-4c92-8b94-ec1f8c321de3",
+    "hospital_name": "다시봄날의원 의정부",
+    "hospital_type_actual": "medium",
+    "actual_equipment_count": 0,
+    "actual_treatment_count": 0,
+    "actual_doctor_count": 0,
+    "has_price_info": false,
+    "actual_quality": "partial",
+    "notes": ""
+  },
+  {
+    "hospital_id": "09bdeaf8-0f13-40f5-95df-a9d8d9536c26",
+    "hospital_name": "815의원",
+    "hospital_type_actual": "small",
+    "actual_equipment_count": 0,
+    "actual_treatment_count": 0,
+    "actual_doctor_count": 0,
+    "has_price_info": false,
+    "actual_quality": "partial",
+    "notes": ""
+  },
+  {
+    "hospital_id": "5fb5f2e8-f129-4bf6-9911-2d34d64eeb98",
+    "hospital_name": "뷰티라운지 의원",
+    "hospital_type_actual": "small",
+    "actual_equipment_count": 0,
+    "actual_treatment_count": 0,
+    "actual_doctor_count": 0,
+    "has_price_info": false,
+    "actual_quality": "partial",
+    "notes": ""
+  },
+  {
+    "hospital_id": "1963063e-b457-40e2-9699-ab56e373f44b",
+    "hospital_name": "설레임의원 강남",
+    "hospital_type_actual": "small",
+    "actual_equipment_count": 0,
+    "actual_treatment_count": 0,
+    "actual_doctor_count": 0,
+    "has_price_info": false,
+    "actual_quality": "partial",
+    "notes": ""
+  },
+  {
+    "hospital_id": "1c3c433b-0189-4456-980b-cdd19f0a5134",
+    "hospital_name": "참좋은소아청소년과의원",
+    "hospital_type_actual": "small",
+    "actual_equipment_count": 0,
+    "actual_treatment_count": 0,
+    "actual_doctor_count": 1,
+    "has_price_info": false,
+    "actual_quality": "partial",
+    "notes": ""
+  },
+  {
+    "hospital_id": "0c4ca377-48fb-4d12-ba58-0074b0d93e46",
+    "hospital_name": "톤즈의원 의정부",
+    "hospital_type_actual": "small",
+    "actual_equipment_count": 0,
+    "actual_treatment_count": 0,
+    "actual_doctor_count": 4,
+    "has_price_info": false,
+    "actual_quality": "partial",
+    "notes": ""
+  },
+  {
+    "hospital_id": "25d72526-88e7-48ca-94b5-694a40b79b1c",
+    "hospital_name": "리멤버피부과의원",
+    "hospital_type_actual": "small",
+    "actual_equipment_count": 0,
+    "actual_treatment_count": 0,
+    "actual_doctor_count": 0,
+    "has_price_info": false,
+    "actual_quality": "partial",
+    "notes": ""
+  }
+]

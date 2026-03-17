@@ -1,6 +1,7 @@
 import { Hono } from 'hono';
 import { createSupabaseClient } from '../lib/supabase';
 import { verifyUnsubscribeToken } from '../services/ai/email-generator';
+import { T } from '../lib/table-names';
 
 type Bindings = {
   SUPABASE_URL: string;
@@ -48,7 +49,7 @@ app.post('/demos/request', async (c) => {
     const supabase = createSupabaseClient(c.env);
 
     const { data: existingHospital } = await supabase
-      .from('hospitals')
+      .from(T.hospitals)
       .select('id')
       .eq('name', body.hospital_name)
       .maybeSingle();
@@ -59,7 +60,7 @@ app.post('/demos/request', async (c) => {
       hospitalId = existingHospital.id;
     } else {
       const { data: newHospital, error: hospitalErr } = await supabase
-        .from('hospitals')
+        .from(T.hospitals)
         .insert({
           name: body.hospital_name,
           doctor_name: body.doctor_name,
@@ -83,7 +84,7 @@ app.post('/demos/request', async (c) => {
     }
 
     const { data: existingLead } = await supabase
-      .from('leads')
+      .from(T.leads)
       .select('id')
       .eq('hospital_id', hospitalId)
       .maybeSingle();
@@ -93,7 +94,7 @@ app.post('/demos/request', async (c) => {
     if (existingLead) {
       leadId = existingLead.id;
       await supabase
-        .from('leads')
+        .from(T.leads)
         .update({
           stage: 'demo_scheduled',
           interest_level: 'hot',
@@ -104,7 +105,7 @@ app.post('/demos/request', async (c) => {
         .eq('id', leadId);
     } else {
       const { data: newLead, error: leadErr } = await supabase
-        .from('leads')
+        .from(T.leads)
         .insert({
           hospital_id: hospitalId,
           stage: 'demo_scheduled',
@@ -134,7 +135,7 @@ app.post('/demos/request', async (c) => {
     }
 
     const { data: demo, error: demoErr } = await supabase
-      .from('demos')
+      .from(T.demos)
       .insert({
         lead_id: leadId,
         hospital_id: hospitalId,
@@ -158,7 +159,7 @@ app.post('/demos/request', async (c) => {
       );
     }
 
-    await supabase.from('lead_activities').insert({
+    await supabase.from(T.lead_activities).insert({
       lead_id: leadId,
       activity_type: 'demo_requested',
       title: '데모 요청 접수',
@@ -201,7 +202,7 @@ app.post('/demos/:id/evaluate', async (c) => {
     const supabase = createSupabaseClient(c.env);
 
     const { data: demo, error: demoErr } = await supabase
-      .from('demos')
+      .from(T.demos)
       .select('id, lead_id, status')
       .eq('id', demoId)
       .single();
@@ -213,7 +214,7 @@ app.post('/demos/:id/evaluate', async (c) => {
       );
     }
 
-    const { error: evalErr } = await supabase.from('demo_evaluations').insert({
+    const { error: evalErr } = await supabase.from(T.demo_evaluations).insert({
       demo_id: demoId,
       lead_id: demo.lead_id,
       satisfaction_score: body.satisfaction_score,
@@ -232,7 +233,7 @@ app.post('/demos/:id/evaluate', async (c) => {
     }
 
     await supabase
-      .from('demos')
+      .from(T.demos)
       .update({ status: 'evaluated', updated_at: new Date().toISOString() })
       .eq('id', demoId);
 
@@ -250,10 +251,10 @@ app.post('/demos/:id/evaluate', async (c) => {
 
     if (Object.keys(interestUpdate).length > 0) {
       interestUpdate.updated_at = new Date().toISOString();
-      await supabase.from('leads').update(interestUpdate).eq('id', demo.lead_id);
+      await supabase.from(T.leads).update(interestUpdate).eq('id', demo.lead_id);
     }
 
-    await supabase.from('lead_activities').insert({
+    await supabase.from(T.lead_activities).insert({
       lead_id: demo.lead_id,
       activity_type: 'demo_evaluated',
       title: '데모 평가 완료',
@@ -301,7 +302,7 @@ app.get('/unsubscribe', async (c) => {
     const supabase = createSupabaseClient(c.env);
 
     const { data: lead } = await supabase
-      .from('leads')
+      .from(T.leads)
       .select('id, contact_email, hospital_id')
       .eq('id', leadId)
       .single();
@@ -311,7 +312,7 @@ app.get('/unsubscribe', async (c) => {
     }
 
     const { data: existing } = await supabase
-      .from('unsubscribes')
+      .from(T.unsubscribes)
       .select('id')
       .eq('email', lead.contact_email)
       .limit(1);
@@ -323,7 +324,7 @@ app.get('/unsubscribe', async (c) => {
       );
     }
 
-    await supabase.from('unsubscribes').insert({
+    await supabase.from(T.unsubscribes).insert({
       email: lead.contact_email,
       hospital_id: lead.hospital_id,
       reason: '이메일 내 수신거부 링크 클릭',
@@ -331,11 +332,11 @@ app.get('/unsubscribe', async (c) => {
     });
 
     await supabase
-      .from('leads')
+      .from(T.leads)
       .update({ stage: 'closed_lost', lost_reason: '수신거부', lost_at: new Date().toISOString() })
       .eq('id', leadId);
 
-    await supabase.from('lead_activities').insert({
+    await supabase.from(T.lead_activities).insert({
       lead_id: leadId,
       activity_type: 'email_unsubscribed',
       title: '수신거부 처리',
@@ -368,7 +369,7 @@ app.post('/unsubscribe', async (c) => {
 
     const supabase = createSupabaseClient(c.env);
 
-    await supabase.from('unsubscribes').insert({
+    await supabase.from(T.unsubscribes).insert({
       email: body.email,
       hospital_id: null,
       reason: body.reason ?? null,
@@ -376,7 +377,7 @@ app.post('/unsubscribe', async (c) => {
     });
 
     if (body.lead_id) {
-      await supabase.from('lead_activities').insert({
+      await supabase.from(T.lead_activities).insert({
         lead_id: body.lead_id,
         activity_type: 'email_unsubscribed',
         title: '수신 거부',

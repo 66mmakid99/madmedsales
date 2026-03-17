@@ -2,6 +2,7 @@ import { Hono } from 'hono';
 import { cors } from 'hono/cors';
 import hospitalsRoute from './routes/hospitals.js';
 import scoringRoute from './routes/scoring.js';
+import leadsRoute from './routes/leads';
 import demosRoute from './routes/demos';
 import publicRoute from './routes/public';
 import reportsRoute from './routes/reports';
@@ -12,6 +13,8 @@ import emailsRoute from './routes/emails';
 import sequencesRoute from './routes/sequences';
 import webhooksRoute from './routes/webhooks';
 import kakaoRoute from './routes/kakao';
+import scenariosRoute from './routes/scenarios';
+import campaignsRoute from './routes/campaigns';
 import { processEmailQueue } from './services/email/queue';
 import { processAllTriggers } from './services/automation/trigger-engine';
 
@@ -56,6 +59,7 @@ app.onError((err, c) => {
 });
 
 // Health check
+app.get('/', (c) => c.json({ status: 'ok', service: 'madmedsales-engine', timestamp: new Date().toISOString() }));
 app.get('/health', (c) => c.json({ status: 'ok', timestamp: new Date().toISOString() }));
 
 
@@ -64,6 +68,8 @@ app.get('/health', (c) => c.json({ status: 'ok', timestamp: new Date().toISOStri
 app.route('/api/hospitals', hospitalsRoute);
 // Phase 2: Scoring
 app.route('/api/scoring', scoringRoute);
+// Leads
+app.route('/api/leads', leadsRoute);
 // Phase 3: Email Automation
 app.route('/api/emails', emailsRoute);
 app.route('/api/sequences', sequencesRoute);
@@ -81,6 +87,9 @@ app.route('/api/costs', costsRoute);
 app.route('/api/networks', networksRoute);
 // CRM
 app.route('/api/crm', crmRoute);
+// Scenarios & Rules (v4.0)
+app.route('/api/scenarios', scenariosRoute);
+app.route('/api/campaigns', campaignsRoute);
 
 export default {
   fetch: app.fetch,

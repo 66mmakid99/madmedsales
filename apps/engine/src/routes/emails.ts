@@ -6,6 +6,7 @@ import { createSupabaseClient } from '../lib/supabase';
 import { generateEmail } from '../services/ai/email-generator';
 import { sendEmail } from '../services/email/sender';
 import { enqueueEmail } from '../services/email/queue';
+import { T } from '../lib/table-names';
 
 type Bindings = {
   SUPABASE_URL: string;
@@ -32,7 +33,7 @@ app.post('/generate', async (c) => {
 
     // Fetch lead + hospital data
     const { data: lead, error: leadErr } = await supabase
-      .from('leads')
+      .from(T.leads)
       .select('id, hospital_id, product_id, grade, contact_email, current_sequence_step, email_sequence_id')
       .eq('id', body.lead_id)
       .single();
@@ -46,7 +47,7 @@ app.post('/generate', async (c) => {
 
     // Fetch product info (동적 주입 — 하드코딩 금지)
     const { data: product, error: productErr } = await supabase
-      .from('products')
+      .from(T.products)
       .select('name, manufacturer, category, description, email_guide')
       .eq('id', lead.product_id)
       .single();
@@ -69,23 +70,23 @@ app.post('/generate', async (c) => {
     };
 
     const { data: hospital } = await supabase
-      .from('hospitals')
+      .from(T.hospitals)
       .select('name, doctor_name, department')
       .eq('id', lead.hospital_id)
       .single();
 
     const { data: equipments } = await supabase
-      .from('hospital_equipments')
+      .from(T.hospital_equipments)
       .select('equipment_name')
       .eq('hospital_id', lead.hospital_id);
 
     const { data: treatments } = await supabase
-      .from('hospital_treatments')
+      .from(T.hospital_treatments)
       .select('treatment_name')
       .eq('hospital_id', lead.hospital_id);
 
     const { data: scoring } = await supabase
-      .from('scoring_results')
+      .from(T.scoring_results)
       .select('ai_analysis, ai_message_direction')
       .eq('hospital_id', lead.hospital_id)
       .order('scored_at', { ascending: false })
@@ -93,7 +94,7 @@ app.post('/generate', async (c) => {
       .single();
 
     const { data: prevEmails } = await supabase
-      .from('emails')
+      .from(T.emails)
       .select('subject, sent_at')
       .eq('lead_id', lead.id)
       .in('status', ['sent', 'delivered'])
@@ -108,7 +109,7 @@ app.post('/generate', async (c) => {
 
     if (lead.email_sequence_id) {
       const { data: step } = await supabase
-        .from('email_sequence_steps')
+        .from(T.email_sequence_steps)
         .select('purpose, tone, key_message, personalization_focus')
         .eq('sequence_id', lead.email_sequence_id)
         .eq('step_number', stepNumber)
@@ -150,7 +151,7 @@ app.post('/generate', async (c) => {
 
     // Save to DB
     const { data: savedEmail, error: saveErr } = await supabase
-      .from('emails')
+      .from(T.emails)
       .insert({
         lead_id: lead.id,
         sequence_id: lead.email_sequence_id,
@@ -207,7 +208,7 @@ app.post('/send', async (c) => {
 
     const supabase = createSupabaseClient(c.env);
     const { data: email, error } = await supabase
-      .from('emails')
+      .from(T.emails)
       .select('id, lead_id, subject, body_html, body_text, to_email, step_number, leads(grade)')
       .eq('id', (body as Record<string, string>).email_id)
       .single();
@@ -239,7 +240,7 @@ app.post('/send', async (c) => {
     );
 
     await supabase
-      .from('emails')
+      .from(T.emails)
       .update({ status: 'sent', sent_at: new Date().toISOString(), external_id: externalId })
       .eq('id', email.id);
 
@@ -272,7 +273,7 @@ app.post('/send-batch', async (c) => {
         if (!genResponse) throw new Error('Missing API key');
 
         // Queue for later processing
-        await supabase.from('emails').insert({
+        await supabase.from(T.emails).insert({
           lead_id: leadId,
           subject: '[대기] AI 생성 예정',
           body_html: '<p>생성 대기중</p>',
@@ -310,7 +311,7 @@ app.get('/', async (c) => {
     const offset = parseInt(c.req.query('offset') ?? '0', 10);
 
     let query = supabase
-      .from('emails')
+      .from(T.emails)
       .select('id, lead_id, subject, status, sent_at, created_at, step_number', { count: 'exact' })
       .order('created_at', { ascending: false })
       .range(offset, offset + limit - 1);
@@ -340,17 +341,17 @@ app.get('/stats', async (c) => {
     const supabase = createSupabaseClient(c.env);
 
     const { count: totalSent } = await supabase
-      .from('emails')
+      .from(T.emails)
       .select('id', { count: 'exact', head: true })
       .in('status', ['sent', 'delivered']);
 
     const { count: totalOpened } = await supabase
-      .from('email_events')
+      .from(T.email_events)
       .select('id', { count: 'exact', head: true })
       .eq('event_type', 'opened');
 
     const { count: totalClicked } = await supabase
-      .from('email_events')
+      .from(T.email_events)
       .select('id', { count: 'exact', head: true })
       .eq('event_type', 'clicked');
 
@@ -381,7 +382,7 @@ app.get('/:id', async (c) => {
     const id = c.req.param('id');
 
     const { data: email, error } = await supabase
-      .from('emails')
+      .from(T.emails)
       .select('*')
       .eq('id', id)
       .single();
@@ -394,7 +395,7 @@ app.get('/:id', async (c) => {
     }
 
     const { data: events } = await supabase
-      .from('email_events')
+      .from(T.email_events)
       .select('*')
       .eq('email_id', id)
       .order('created_at', { ascending: true });

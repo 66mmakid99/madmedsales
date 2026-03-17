@@ -1,261 +1,436 @@
 [
   {
     "no": 1,
-    "name": "안산엔비의원",
-    "region": "안산",
-    "url": "http://talmostop.com",
-    "source": "existing_crawl"
-  },
-  {
-    "no": 16,
-    "name": "동안중심의원",
-    "region": "신사",
-    "url": "http://www.dongancenter.com/",
-    "source": "existing_crawl"
-  },
-  {
-    "no": 24,
-    "name": "포에버의원(신사)",
-    "region": "신사",
-    "url": "https://as.4-ever.co.kr",
-    "source": "existing_crawl"
-  },
-  {
-    "no": 36,
-    "name": "클럽미즈라미체의원",
-    "region": "잠실",
-    "url": "http://www.lamiche.co.kr/index.php",
-    "source": "existing_crawl"
-  },
-  {
-    "no": 42,
-    "name": "디에이성형외과의원",
-    "region": "강남",
-    "url": "https://daprs.com/",
-    "source": "existing_crawl"
-  },
-  {
-    "no": 49,
-    "name": "노벨의원(신촌)",
-    "region": "마포",
-    "url": "http://novelclinic1.com/",
-    "source": "existing_crawl"
-  },
-  {
-    "no": 53,
-    "name": "엠레드의원",
-    "region": "청담",
-    "url": "https://amredclinic.com/ko",
-    "source": "existing_crawl"
-  },
-  {
-    "no": 57,
-    "name": "빈센트의원",
-    "region": "강서",
-    "url": "http://vincent.kr/",
-    "source": "existing_crawl"
-  },
-  {
-    "no": 59,
-    "name": "휴먼피부과(평택)",
-    "region": "평택",
-    "url": "http://pastelskin.com/",
-    "source": "existing_crawl"
-  },
-  {
-    "no": 70,
-    "name": "다인피부과",
-    "region": "신사",
-    "url": "http://www.dainskin.co.kr/",
-    "source": "existing_crawl"
-  },
-  {
-    "no": 71,
-    "name": "휴먼피부과(용산)",
-    "region": "용산",
-    "url": "http://pastelskin.com/",
-    "source": "existing_crawl"
+    "name": "나나성형외과의원",
+    "region": "서울특별시 강남구",
+    "url": "https://www.nanaprs.com",
+    "source": "db"
   },
   {
     "no": 2,
-    "name": "러블리피부과의원",
-    "region": "대전",
-    "url": "http://lovelyclinic.kr/default/",
-    "source": "step1_search"
+    "name": "닥터스피부과의원",
+    "region": "경기도 남양주시",
+    "url": "https://sinsa.doctors365.co.kr",
+    "source": "db"
+  },
+  {
+    "no": 3,
+    "name": "뷰티라운지의원",
+    "region": "서울특별시 용산구",
+    "url": "http://daechi.beautyloungeclinic.com/",
+    "source": "db"
+  },
+  {
+    "no": 4,
+    "name": "도곡리더스피부과의원",
+    "region": "서울특별시 강남구",
+    "url": "https://leaders-dogok.com/",
+    "source": "db"
+  },
+  {
+    "no": 5,
+    "name": "디엠피부과의원",
+    "region": "서울특별시 강남구",
+    "url": "http://dmdermatology.co.kr/",
+    "source": "db"
+  },
+  {
+    "no": 6,
+    "name": "라이트성형외과의원",
+    "region": "서울특별시 강남구",
+    "url": "http://www.lightps.co.kr",
+    "source": "db"
   },
   {
     "no": 7,
-    "name": "부평포에버의원",
-    "region": "부평",
-    "url": "https://www.4-ever.co.kr/",
-    "source": "step1_search"
+    "name": "레어피부과의원",
+    "region": "서울특별시 강남구",
+    "url": "http://dermarare.com",
+    "source": "db"
+  },
+  {
+    "no": 8,
+    "name": "청담아티젠의원",
+    "region": "서울특별시 강남구",
+    "url": "http://www.artisanclinic.co.kr",
+    "source": "db"
   },
   {
     "no": 9,
-    "name": "메이린 압구정",
-    "region": "압구정",
-    "url": "https://maylincheongdam.com/",
-    "source": "step1_search"
+    "name": "닥터스피부과 신사",
+    "region": "미상",
+    "url": "https://www.doctors365.co.kr/branch/sinsa.php",
+    "source": "db"
   },
   {
     "no": 10,
-    "name": "더웰피부과",
-    "region": "대전",
-    "url": "http://www.wellpibu.net",
-    "source": "step1_search"
+    "name": "안산엔비의원",
+    "region": "미상",
+    "url": "http://talmostop.com",
+    "source": "db"
   },
   {
     "no": 11,
-    "name": "분당오라클피부과",
-    "region": "성남",
-    "url": "https://oracle2u.com/",
-    "source": "step1_search"
+    "name": "러블리피부과의원",
+    "region": "미상",
+    "url": "http://lovelyclinic.kr/default/",
+    "source": "db"
+  },
+  {
+    "no": 12,
+    "name": "더웰피부과",
+    "region": "미상",
+    "url": "http://www.wellpibu.net",
+    "source": "db"
+  },
+  {
+    "no": 13,
+    "name": "메이린 압구정",
+    "region": "미상",
+    "url": "https://maylincheongdam.com/",
+    "source": "db"
   },
   {
     "no": 14,
-    "name": "탐클리닉",
-    "region": "압구정",
-    "url": "http://www.tamclinic.co.kr/",
-    "source": "step1_search"
+    "name": "210정형외과의원",
+    "region": "서울특별시 양천구",
+    "url": "https://orthopedics210.com/",
+    "source": "db"
   },
   {
     "no": 15,
-    "name": "에어리어88성형외과",
-    "region": "신사",
-    "url": "https://area88ps.com/ko/",
-    "source": "step1_search"
+    "name": "천안이젠의원",
+    "region": "미상",
+    "url": "http://www.ezenskin.co.kr/",
+    "source": "db"
+  },
+  {
+    "no": 16,
+    "name": "세마그린요양병원",
+    "region": "미상",
+    "url": "http://semagreen.com/",
+    "source": "db"
   },
   {
     "no": 17,
-    "name": "천안이젠의원",
-    "region": "천안",
-    "url": "http://www.ezenskin.co.kr/",
-    "source": "step1_search"
+    "name": "가산본튼튼의원",
+    "region": "서울특별시 금천구",
+    "url": "http://bonetntn.com/",
+    "source": "db"
   },
   {
     "no": 18,
-    "name": "세마그린요양병원",
-    "region": "오산",
-    "url": "http://semagreen.com/",
-    "source": "step1_search"
+    "name": "바로코의원",
+    "region": "미상",
+    "url": "https://baroko.co.kr",
+    "source": "db"
+  },
+  {
+    "no": 19,
+    "name": "강남바롬의원",
+    "region": "미상",
+    "url": "https://www.varomclinic.co.kr/",
+    "source": "db"
+  },
+  {
+    "no": 20,
+    "name": "가산퍼스트정형외과의원",
+    "region": "서울특별시 금천구",
+    "url": "https://www.gasanfirstos.co.kr",
+    "source": "db"
+  },
+  {
+    "no": 21,
+    "name": "청담리브의원(광주)",
+    "region": "미상",
+    "url": "http://www.reev.co.kr",
+    "source": "db"
   },
   {
     "no": 22,
-    "name": "울산메이린의원",
-    "region": "울산",
-    "url": "https://maylin.co.kr/ulsan/",
-    "source": "step1_search"
+    "name": "디데이의원(부산)",
+    "region": "미상",
+    "url": "https://dday.clinic",
+    "source": "db"
   },
   {
     "no": 23,
-    "name": "강남바롬의원",
-    "region": "강남",
-    "url": "https://www.varomclinic.co.kr/",
-    "source": "step1_search"
+    "name": "강남리더스정형외과의원",
+    "region": "서울특별시 서초구",
+    "url": "https://blog.naver.com/osdoctoryong",
+    "source": "db"
+  },
+  {
+    "no": 24,
+    "name": "강남본정형외과의원",
+    "region": "서울특별시 송파구",
+    "url": "http://gangnambon.com/",
+    "source": "db"
   },
   {
     "no": 25,
-    "name": "닥터로빈의원",
-    "region": "대치",
-    "url": "http://robbin.co.kr",
-    "source": "step1_search"
+    "name": "울산베러미의원",
+    "region": "미상",
+    "url": "https://ulsansamsan.bettermeclinic.co.kr/",
+    "source": "db"
   },
   {
     "no": 26,
-    "name": "바로코의원",
-    "region": "강남",
-    "url": "https://baroko.co.kr",
-    "source": "step1_search"
+    "name": "강남성모정형외과의원",
+    "region": "서울특별시 강남구",
+    "url": "http://knsmos.com/",
+    "source": "db"
+  },
+  {
+    "no": 27,
+    "name": "강남세란의원",
+    "region": "서울특별시 서초구",
+    "url": "https://www.seranclinic.co.kr/intro",
+    "source": "db"
+  },
+  {
+    "no": 28,
+    "name": "강남삼성신경외과의원",
+    "region": "서울특별시 구로구",
+    "url": "https://blog.naver.com/gsamsungnsguro01",
+    "source": "db"
   },
   {
     "no": 29,
-    "name": "세인트의원",
-    "region": "의정부",
-    "url": "https://www.saintclinic.com/",
-    "source": "step1_search"
+    "name": "강남연세재활의학과의원",
+    "region": "서울특별시 서초구",
+    "url": "https://ksspine.co.kr/",
+    "source": "db"
+  },
+  {
+    "no": 30,
+    "name": "CL성형외과의원",
+    "region": "서울특별시 노원구",
+    "url": "https://clps6522.co.kr/",
+    "source": "db"
+  },
+  {
+    "no": 31,
+    "name": "가산곧바로의원",
+    "region": "서울특별시 금천구",
+    "url": "https://www.godbaro.com",
+    "source": "db"
+  },
+  {
+    "no": 32,
+    "name": "가산시그니처정형외과의원",
+    "region": "서울특별시 금천구",
+    "url": "https://www.signatureos.co.kr/",
+    "source": "db"
+  },
+  {
+    "no": 33,
+    "name": "가양메트로정형외과의원",
+    "region": "서울특별시 강서구",
+    "url": "http://gayangmetro.com/",
+    "source": "db"
+  },
+  {
+    "no": 34,
+    "name": "강남삼성정형외과의원",
+    "region": "서울특별시 관악구",
+    "url": "https://www.snu-os.kr",
+    "source": "db"
+  },
+  {
+    "no": 35,
+    "name": "청담글래시피부과의원",
+    "region": "서울특별시 강남구",
+    "url": "https://booking.naver.com/booking/13/bizes/695390",
+    "source": "db"
+  },
+  {
+    "no": 36,
+    "name": "신사루비의원",
+    "region": "서울특별시 강남구",
+    "url": "https://www.rubyclinic-sinsa.com/",
+    "source": "db"
+  },
+  {
+    "no": 37,
+    "name": "아가파의원",
+    "region": "경기도 성남시 수정구",
+    "url": "http://www.agafarclinic.com/",
+    "source": "db"
   },
   {
     "no": 38,
-    "name": "파라다이스의원(부산)",
-    "region": "부산",
-    "url": "http://paradiseclinic.co.kr/",
-    "source": "step1_search"
+    "name": "디에이피부과의원",
+    "region": "서울특별시 강남구",
+    "url": "https://www.daderma.com/",
+    "source": "db"
+  },
+  {
+    "no": 39,
+    "name": "프리마피부과의원 강서",
+    "region": "서울특별시 강서구",
+    "url": "https://www.primaderma.co.kr",
+    "source": "db"
+  },
+  {
+    "no": 40,
+    "name": "파스텔휴먼피부과의원",
+    "region": "서울특별시 성동구",
+    "url": "http://pastelskin.com/",
+    "source": "db"
+  },
+  {
+    "no": 41,
+    "name": "레지움피부과의원",
+    "region": "서울특별시 강남구",
+    "url": "http://lasium.co.kr/",
+    "source": "db"
+  },
+  {
+    "no": 42,
+    "name": "리멤버피부과의원",
+    "region": "서울특별시 노원구",
+    "url": "https://rememberno1.com/",
+    "source": "db"
   },
   {
     "no": 43,
-    "name": "메이린일산",
-    "region": "일산",
-    "url": "https://maylin.co.kr/",
-    "source": "step1_search"
+    "name": "247외과의원",
+    "region": "서울특별시 강남구",
+    "url": "http://247clinic.co.kr/",
+    "source": "db"
   },
   {
     "no": 44,
-    "name": "인앤아웃의원(부산)",
-    "region": "부산",
-    "url": "http://innoutclinic.co.kr/",
-    "source": "step1_search"
+    "name": "815의원",
+    "region": "서울특별시 강남구",
+    "url": "https://www.815clinic.co.kr/",
+    "source": "db"
   },
   {
     "no": 45,
-    "name": "라뷰티의원",
-    "region": "성남",
-    "url": "https://labeauty.kr",
-    "source": "step1_search"
+    "name": "갤러리아피부과의원 개포도곡점",
+    "region": "서울특별시 강남구",
+    "url": "http://galleriaskin3.com/",
+    "source": "db"
+  },
+  {
+    "no": 46,
+    "name": "강한피부과의원",
+    "region": "서울특별시 서초구",
+    "url": "http://www.kangskin.co.kr/",
+    "source": "db"
   },
   {
     "no": 47,
-    "name": "벨버티의원(광주)",
-    "region": "광주",
-    "url": "http://velvety.co.kr/",
-    "source": "step1_search"
+    "name": "광피부과의원",
+    "region": "서울특별시 강남구",
+    "url": "https://glowderm.kr/",
+    "source": "db"
   },
   {
     "no": 48,
-    "name": "청담리브의원(광주)",
-    "region": "광주",
-    "url": "http://www.reev.co.kr",
-    "source": "step1_search"
+    "name": "클럽미즈라미체의원",
+    "region": "서울특별시 송파구",
+    "url": "http://www.lamiche.co.kr/index.php",
+    "source": "db"
+  },
+  {
+    "no": 49,
+    "name": "뮤즈의원 안산",
+    "region": "경기도 안산시 단원구",
+    "url": "http://ansan.museclinic.co.kr/",
+    "source": "db"
   },
   {
     "no": 50,
-    "name": "이에스청담의원(청담)",
-    "region": "청담",
-    "url": "http://www.escheongdam.co.kr/",
-    "source": "step1_search"
+    "name": "365열린가정의학과의원",
+    "region": "서울특별시 강남구",
+    "url": "https://blog.naver.com/mdkks1004",
+    "source": "db"
   },
   {
     "no": 51,
-    "name": "디데이의원(부산)",
-    "region": "부산",
-    "url": "https://dday.clinic",
-    "source": "step1_search"
+    "name": "강남바롬의원",
+    "region": "미상",
+    "url": "https://www.varomclinic.co.kr/",
+    "source": "db"
   },
   {
     "no": 52,
-    "name": "울산제일병원",
-    "region": "울산",
-    "url": "http://www.ujh.co.kr/",
-    "source": "step1_search"
+    "name": "분당오라클피부과",
+    "region": "미상",
+    "url": "https://oracle2u.com/",
+    "source": "db"
   },
   {
-    "no": 65,
-    "name": "샤인빔의원 홍대",
-    "region": "홍대",
-    "url": "http://hongdae.shinebeam.co.kr/",
-    "source": "step1_search"
+    "no": 53,
+    "name": "울산메이린의원",
+    "region": "미상",
+    "url": "https://maylin.co.kr/ulsan/",
+    "source": "db"
   },
   {
-    "no": 66,
-    "name": "삼성웰내과의원",
-    "region": "옥수",
-    "url": "http://sswellclinic.co.kr",
-    "source": "step1_search"
+    "no": 54,
+    "name": "탐클리닉",
+    "region": "미상",
+    "url": "http://www.tamclinic.co.kr/",
+    "source": "db"
   },
   {
-    "no": 69,
-    "name": "울산베러미의원",
-    "region": "울산",
-    "url": "https://ulsansamsan.bettermeclinic.co.kr/",
-    "source": "step1_search"
+    "no": 55,
+    "name": "365미소내과의원",
+    "region": "서울특별시 동작구",
+    "url": "http://365miso.co.kr/",
+    "source": "db"
+  },
+  {
+    "no": 56,
+    "name": "닥터로빈의원",
+    "region": "미상",
+    "url": "http://robbin.co.kr",
+    "source": "db"
+  },
+  {
+    "no": 57,
+    "name": "파라다이스의원(부산)",
+    "region": "미상",
+    "url": "http://paradiseclinic.co.kr/",
+    "source": "db"
+  },
+  {
+    "no": 58,
+    "name": "메이린일산",
+    "region": "미상",
+    "url": "https://maylin.co.kr/",
+    "source": "db"
+  },
+  {
+    "no": 59,
+    "name": "에어리어88성형외과",
+    "region": "미상",
+    "url": "https://area88ps.com/ko/",
+    "source": "db"
+  },
+  {
+    "no": 60,
+    "name": "가양바른성모정형외과의원",
+    "region": "서울특별시 강서구",
+    "url": "http://gybarunsmos.com/",
+    "source": "db"
+  },
+  {
+    "no": 61,
+    "name": "강남센트럴의원",
+    "region": "서울특별시 서초구",
+    "url": "https://www.gcpainclinic.com",
+    "source": "db"
+  },
+  {
+    "no": 62,
+    "name": "나의미래피부과의원",
+    "region": "서울특별시 영등포구",
+    "url": "http://mymirae.co.kr/",
+    "source": "db"
   }
 ]

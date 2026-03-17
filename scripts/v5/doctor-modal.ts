@@ -8,12 +8,14 @@ import puppeteer from 'puppeteer';
 import sharp from 'sharp';
 import { supabase } from '../utils/supabase.js';
 import type { AnalysisResult } from './types.js';
+import { extractModalDoctorPhoto } from './doctor-photo.js';
 
 interface ModalCaptureResult {
   index: number;
   buffer: Buffer;
   doctorName: string;
   publicUrl: string;
+  photoUrl?: string;
 }
 
 // ============================================================
@@ -145,8 +147,11 @@ export async function crawlDoctorModals(
           publicUrl = supabase.storage.from('hospital-screenshots').getPublicUrl(storagePath).data.publicUrl;
         }
 
-        captures.push({ index: i, buffer: optimized, doctorName: nameText, publicUrl });
-        console.log(`  ✅ ${i + 1}/${buttonCount} ${nameText} 모달 캡처`);
+        // 모달에서 프로필 사진 추출
+        const photoUrl = await extractModalDoctorPhoto(page, hospitalId, nameText, i);
+
+        captures.push({ index: i, buffer: optimized, doctorName: nameText, publicUrl, photoUrl: photoUrl || undefined });
+        console.log(`  ✅ ${i + 1}/${buttonCount} ${nameText} 모달 캡처${photoUrl ? ' + 사진' : ''}`);
 
         // 모달 닫기
         let closed = false;

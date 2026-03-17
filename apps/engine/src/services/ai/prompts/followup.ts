@@ -10,7 +10,15 @@ export type FollowupTrigger =
   | 'no_response'
   | 're_approach';
 
+export interface FollowupProductInfo {
+  name: string;
+  manufacturer: string;
+  category: string;
+  emailGuide: string | null;
+}
+
 export interface FollowupPromptInput {
+  product: FollowupProductInfo;
   hospitalName: string;
   doctorName: string | null;
   trigger: FollowupTrigger;
@@ -49,8 +57,8 @@ ${input.replyContent ? `\n## 원장님 회신 내용\n${input.replyContent}` : '
 ## 이전 발송 이력
 ${previousContext || '  없음'}
 
-## 제품: TORR RF (BRITZMEDI)
-- RF 리프팅 장비, 가격 절대 언급 금지
+## 제품: ${input.product.name} (${input.product.manufacturer})
+- ${input.product.category}, 가격 절대 언급 금지${input.product.emailGuide ? `\n\n## 제품 이메일 가이드\n${input.product.emailGuide}` : ''}
 
 ## 작성 규칙
 1. 제목: 30자 이내, 병원명 포함

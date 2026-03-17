@@ -3,7 +3,8 @@
  * Logs token usage to Supabase api_usage_logs table.
  */
 import type { SupabaseClient } from '@supabase/supabase-js';
-import { calculateCost } from '@madmedsales/shared/src/ai-cost.js';
+import { calculateCost } from '../../lib/ai-cost';
+import { T } from '../../lib/table-names';
 
 export interface LogAiUsageParams {
   service: 'gemini' | 'claude';
@@ -26,7 +27,7 @@ export async function logAiUsage(
     params.outputTokens
   );
 
-  const { error } = await supabase.from('api_usage_logs').insert({
+  const { error } = await supabase.from(T.api_usage_logs).insert({
     service: params.service,
     model: params.model,
     purpose: params.purpose,

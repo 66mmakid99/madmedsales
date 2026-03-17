@@ -1,13 +1,18 @@
 /**
- * AI Analysis using Claude Haiku
+ * AI Analysis using Claude Haiku (v3.2)
  * Generates sales analysis memo for each hospital.
+ *
+ * v3.2 - 2026-03-13: 프로파일 4축 + 매칭 각도별 결과 기반
  */
-import type { CompetitorData, ScoringOutput } from '@madmedsales/shared';
-import { SCORING_ANALYSIS_PROMPT } from '../ai/prompts/scoring-analysis.js';
+import type { CompetitorData, ProfileGrade, Grade } from '@madmedsales/shared';
+import type { AngleScoreDetail } from './matcher';
+import { buildScoringAnalysisPrompt } from '../ai/prompts/scoring-analysis.js';
 import { logAiUsage } from '../ai/usage-logger';
 import { createSupabaseClient } from '../../lib/supabase';
 
 interface AIAnalysisInput {
+  productName: string;
+  productDescription: string;
   hospital: {
     name: string;
     address: string | null;
@@ -22,12 +27,25 @@ interface AIAnalysisInput {
   }[];
   treatments: {
     treatment_name: string;
-    treatment_category: string;
+    treatment_category: string | null;
     price_min: number | null;
     price_max: number | null;
     is_promoted: boolean;
   }[];
-  scores: ScoringOutput;
+  profile: {
+    investmentScore: number;
+    portfolioScore: number;
+    scaleTrustScore: number;
+    marketingScore: number;
+    profileScore: number;
+    profileGrade: ProfileGrade;
+  };
+  matchResult: {
+    totalScore: number;
+    grade: Grade;
+    angleDetails: AngleScoreDetail[];
+    topPitchPoints: string[];
+  };
   competitors: CompetitorData[];
 }
 
@@ -45,11 +63,6 @@ interface Env {
   SUPABASE_SERVICE_ROLE_KEY: string;
 }
 
-interface ClaudeMessage {
-  role: string;
-  content: string;
-}
-
 interface ClaudeContentBlock {
   type: string;
   text?: string;
@@ -57,6 +70,7 @@ interface ClaudeContentBlock {
 
 interface ClaudeResponse {
   content: ClaudeContentBlock[];
+  usage?: { input_tokens?: number; output_tokens?: number };
 }
 
 function fillTemplate(template: string, input: AIAnalysisInput): string {
@@ -75,14 +89,12 @@ function fillTemplate(template: string, input: AIAnalysisInput): string {
       ? input.treatments
           .map(
             (t) =>
-              `- ${t.treatment_name} (${t.treatment_category}${t.price_min ? ', ' + t.price_min.toLocaleString() + '원~' : ''}${t.is_promoted ? ', 주력' : ''})`
+              `- ${t.treatment_name} (${t.treatment_category ?? '미분류'}${t.price_min ? ', ' + t.price_min.toLocaleString() + '원~' : ''}${t.is_promoted ? ', 주력' : ''})`
           )
           .join('\n')
       : '- 시술 정보 없음';
 
-  const modernRfCount = input.competitors.filter(
-    (c) => c.hasModernRF
-  ).length;
+  const modernRfCount = input.competitors.filter((c) => c.hasModernRF).length;
 
   const competitorsList =
     input.competitors.length > 0
@@ -95,6 +107,13 @@ function fillTemplate(template: string, input: AIAnalysisInput): string {
           .join('\n')
       : '- 상권 데이터 없음';
 
+  const angleDetailsList = input.matchResult.angleDetails
+    .map(
+      (d) =>
+        `- ${d.angleName}: ${d.score}/100 (가중 ${d.weightedScore}점, 매칭: ${d.matchedKeywords.join(', ') || '없음'})`
+    )
+    .join('\n');
+
   return template
     .replace('{{hospital_name}}', input.hospital.name)
     .replace('{{address}}', input.hospital.address ?? '정보 없음')
@@ -102,28 +121,16 @@ function fillTemplate(template: string, input: AIAnalysisInput): string {
     .replace('{{opened_at}}', input.hospital.opened_at ?? '정보 없음')
     .replace('{{equipments_list}}', equipmentsList)
     .replace('{{treatments_list}}', treatmentsList)
-    .replace(
-      '{{score_equipment_synergy}}',
-      String(input.scores.scores.equipmentSynergy)
-    )
-    .replace(
-      '{{score_equipment_age}}',
-      String(input.scores.scores.equipmentAge)
-    )
-    .replace(
-      '{{score_revenue_impact}}',
-      String(input.scores.scores.revenueImpact)
-    )
-    .replace(
-      '{{score_competitive_edge}}',
-      String(input.scores.scores.competitiveEdge)
-    )
-    .replace(
-      '{{score_purchase_readiness}}',
-      String(input.scores.scores.purchaseReadiness)
-    )
-    .replace('{{total_score}}', String(input.scores.totalScore))
-    .replace('{{grade}}', input.scores.grade)
+    .replace('{{investment_score}}', String(input.profile.investmentScore))
+    .replace('{{portfolio_score}}', String(input.profile.portfolioScore))
+    .replace('{{scale_trust_score}}', String(input.profile.scaleTrustScore))
+    .replace('{{marketing_score}}', String(input.profile.marketingScore))
+    .replace('{{profile_score}}', String(input.profile.profileScore))
+    .replace('{{profile_grade}}', input.profile.profileGrade)
+    .replace('{{match_total_score}}', String(input.matchResult.totalScore))
+    .replace('{{match_grade}}', input.matchResult.grade)
+    .replace('{{top_pitch_points}}', input.matchResult.topPitchPoints.join(', ') || '없음')
+    .replace('{{angle_details}}', angleDetailsList)
     .replace('{{competitor_count}}', String(input.competitors.length))
     .replace('{{modern_rf_count}}', String(modernRfCount))
     .replace('{{competitors_list}}', competitorsList);
@@ -148,13 +155,12 @@ export async function generateAIAnalysis(
   env: Env,
   input: AIAnalysisInput
 ): Promise<AIAnalysisResult> {
-  const prompt = fillTemplate(SCORING_ANALYSIS_PROMPT, input);
+  const prompt = fillTemplate(
+    buildScoringAnalysisPrompt(input.productName, input.productDescription),
+    input
+  );
 
   try {
-    const messages: ClaudeMessage[] = [
-      { role: 'user', content: prompt },
-    ];
-
     const response = await fetch('https://api.anthropic.com/v1/messages', {
       method: 'POST',
       headers: {
@@ -165,7 +171,7 @@ export async function generateAIAnalysis(
       body: JSON.stringify({
         model: 'claude-haiku-4-5-20251001',
         max_tokens: 500,
-        messages,
+        messages: [{ role: 'user', content: prompt }],
       }),
     });
 
@@ -174,10 +180,8 @@ export async function generateAIAnalysis(
       throw new Error(`Claude API error ${response.status}: ${errorText}`);
     }
 
-    const rawResult: unknown = await response.json();
-    const result = rawResult as ClaudeResponse & { usage?: { input_tokens?: number; output_tokens?: number } };
+    const result = (await response.json()) as ClaudeResponse;
 
-    // Log token usage
     if (result.usage) {
       const supabase = createSupabaseClient(env);
       await logAiUsage(supabase, {
@@ -202,16 +206,14 @@ export async function generateAIAnalysis(
 
     return parsed;
   } catch (err) {
-    // Return fallback analysis on error
-    const message =
-      err instanceof Error ? err.message : 'Unknown error';
+    const message = err instanceof Error ? err.message : 'Unknown error';
     console.error('AI analysis failed:', message);
 
     return {
       key_selling_points: ['데이터 기반 분석 필요'],
       risks: ['AI 분석 실패 - 수동 검토 필요'],
       recommended_message_direction:
-        '일반적인 TORR RF 도입 제안으로 시작하세요.',
+        `일반적인 ${input.productName} 도입 제안으로 시작하세요.`,
       recommended_payment: 'installment',
       persona_notes: 'AI 분석 실패로 수동 확인이 필요합니다.',
     };

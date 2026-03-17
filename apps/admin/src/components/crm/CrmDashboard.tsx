@@ -1,6 +1,7 @@
 import type { ReactNode } from 'react';
 import { Link } from 'react-router-dom';
 import { useCrmHospitalSummary } from '../../hooks/use-crm-hospitals';
+import { useMultiRealtime } from '../../hooks/use-realtime';
 
 function StatCard({ label, value, accent, sub }: { label: string; value: number; accent?: string; sub?: string }): ReactNode {
   return (
@@ -13,7 +14,10 @@ function StatCard({ label, value, accent, sub }: { label: string; value: number;
 }
 
 export function CrmDashboard(): ReactNode {
-  const { data: summary, loading, error } = useCrmHospitalSummary();
+  const { data: summary, loading, error, refetch } = useCrmHospitalSummary();
+
+  // 리드/이메일/데모 테이블 변경 시 통계 자동 새로고침
+  useMultiRealtime(['leads', 'emails', 'sales_demos'], refetch);
 
   if (loading) {
     return (

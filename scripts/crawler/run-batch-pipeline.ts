@@ -57,7 +57,7 @@ dotenv.config({ path: path.resolve(__dirname, '../.env') });
 const log = createLogger('batch-pipeline');
 const DATA_DIR = path.resolve(__dirname, '../data/web-raw');
 const MAX_TEXT = 150000;
-const REQUEST_TIMEOUT = 15000;
+const REQUEST_TIMEOUT = 30000;
 const DELAY_BETWEEN_HOSPITALS = 3000;
 const PROXY_URL = process.env.PROXY_URL ?? null;
 
@@ -93,35 +93,39 @@ function shouldCrawl(tier: string, lastCrawledAt: string | null): boolean {
   }
 }
 
-async function fetchPage(url: string): Promise<string | null> {
-  try {
-    let fullUrl = url;
-    if (!fullUrl.startsWith('http')) fullUrl = `https://${fullUrl}`;
+async function fetchPage(url: string, retries = 1): Promise<string | null> {
+  let fullUrl = url;
+  if (!fullUrl.startsWith('http')) fullUrl = `https://${fullUrl}`;
 
-    const axiosConfig: Record<string, unknown> = {
-      timeout: REQUEST_TIMEOUT,
-      headers: {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
-        Accept: 'text/html,application/xhtml+xml',
-        'Accept-Language': 'ko-KR,ko;q=0.9',
-      },
-      maxRedirects: 5,
-      responseType: 'text',
-    };
+  for (let attempt = 0; attempt <= retries; attempt++) {
+    try {
+      const timeout = attempt === 0 ? REQUEST_TIMEOUT : REQUEST_TIMEOUT + 15000;
+      const axiosConfig: Record<string, unknown> = {
+        timeout,
+        headers: {
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+          Accept: 'text/html,application/xhtml+xml',
+          'Accept-Language': 'ko-KR,ko;q=0.9',
+        },
+        maxRedirects: 5,
+        responseType: 'text',
+      };
 
-    // 프록시 설정 (환경변수 PROXY_URL 사용)
-    if (PROXY_URL) {
-      axiosConfig.proxy = false; // axios 기본 프록시 비활성
-      axiosConfig.httpsAgent = undefined; // 프록시 에이전트는 별도 설정 필요
-      // 프록시 로테이션: PROXY_URL이 설정되면 axios-https-proxy-agent 등 사용
-      // 현재는 placeholder — 실제 프록시 에이전트 라이브러리 연결 필요
+      if (PROXY_URL) {
+        axiosConfig.proxy = false;
+        axiosConfig.httpsAgent = undefined;
+      }
+
+      const response = await axios.get<string>(fullUrl, axiosConfig);
+      return typeof response.data === 'string' ? response.data : null;
+    } catch (err) {
+      if (attempt < retries) {
+        log.warn(`Fetch attempt ${attempt + 1} failed for ${url}. Retrying...`);
+        await delayWithJitter(2000, 1000);
+      }
     }
-
-    const response = await axios.get<string>(fullUrl, axiosConfig);
-    return typeof response.data === 'string' ? response.data : null;
-  } catch {
-    return null;
   }
+  return null;
 }
 
 interface BatchStats {
@@ -153,32 +157,41 @@ async function processHospital(
     // Stage 1: 수집 (2-Pass)
     // ═══════════════════════════════════════════════════════════════
 
-    // Clear old data
-    await supabase.from('hospital_doctors').delete().eq('hospital_id', hospitalId);
-    await supabase.from('hospital_equipments').delete().eq('hospital_id', hospitalId);
-    await supabase.from('hospital_treatments').delete().eq('hospital_id', hospitalId).eq('source', 'web_analysis');
-    await supabase.from('hospital_pricing').delete().eq('hospital_id', hospitalId);
+    // Clear old data (sales_ prefix 테이블 — 실제 DB 테이블명)
+    await supabase.from('sales_hospital_doctors').delete().eq('hospital_id', hospitalId);
+    await supabase.from('sales_hospital_equipments').delete().eq('hospital_id', hospitalId);
+    await supabase.from('sales_hospital_treatments').delete().eq('hospital_id', hospitalId).eq('source', 'web_analysis');
+    await supabase.from('sales_hospital_pricing').delete().eq('hospital_id', hospitalId);
 
     // PASS 1: Text crawl
-    const mainHtml = await fetchPage(website);
-    if (!mainHtml) return false;
-
-    const textParts = [extractTextFromHtml(mainHtml, MAX_TEXT)];
-    let allEmails = extractEmailsFromHtml(mainHtml);
-    const phones = extractPhonesFromHtml(mainHtml);
-    const allImages: string[] = extractImageUrls(mainHtml, website);
-
-    const subpages = findSubpageUrls(mainHtml, website);
+    let textCrawlSuccess = false;
+    const textParts: string[] = [];
+    let allEmails: string[] = [];
+    let phones: string[] = [];
+    const allImages: string[] = [];
     const crawledUrls: string[] = [];
 
-    for (const sp of subpages.slice(0, 10)) {
-      const spHtml = await fetchPage(sp.url);
-      if (!spHtml) continue;
-      crawledUrls.push(sp.url);
-      textParts.push(extractTextFromHtml(spHtml, MAX_TEXT));
-      allEmails = [...allEmails, ...extractEmailsFromHtml(spHtml)];
-      allImages.push(...extractImageUrls(spHtml, sp.url));
-      await delayWithJitter(300, 200);
+    const mainHtml = await fetchPage(website);
+    if (!mainHtml) {
+      log.warn(`  텍스트 크롤링 실패 → 스크린샷 OCR로 대체 시도`);
+    } else {
+      textCrawlSuccess = true;
+      textParts.push(extractTextFromHtml(mainHtml, MAX_TEXT));
+      allEmails = extractEmailsFromHtml(mainHtml);
+      phones = extractPhonesFromHtml(mainHtml);
+      allImages.push(...extractImageUrls(mainHtml, website));
+
+      const subpages = findSubpageUrls(mainHtml, website);
+
+      for (const sp of subpages.slice(0, 10)) {
+        const spHtml = await fetchPage(sp.url);
+        if (!spHtml) continue;
+        crawledUrls.push(sp.url);
+        textParts.push(extractTextFromHtml(spHtml, MAX_TEXT));
+        allEmails = [...allEmails, ...extractEmailsFromHtml(spHtml)];
+        allImages.push(...extractImageUrls(spHtml, sp.url));
+        await delayWithJitter(300, 200);
+      }
     }
 
     const combinedText = textParts.join('\n\n').slice(0, MAX_TEXT);
@@ -189,15 +202,17 @@ async function processHospital(
     const equipmentNames = extractKnownKeywords(combinedText).map((k) => k.standardName);
     const changeResult = await detectChanges(hospitalId, combinedText, null, equipmentNames, []);
 
-    if (!changeResult.isFirstCrawl && !changeResult.hasTextChanged) {
+    if (!changeResult.isFirstCrawl && !changeResult.hasTextChanged && textCrawlSuccess) {
       stats.skippedNoChange++;
       log.info(`  → 텍스트 변동 없음 (skip)`);
       return true;
     }
 
-    // Gemini text analysis
-    const textAnalysis = await analyzeWithGemini(combinedText, hospitalId);
-    if (!textAnalysis) return false;
+    // Gemini text analysis (텍스트가 있을 때만)
+    const emptyAnalysis = { doctors: [], equipments: [], treatments: [], hospital_profile: { main_focus: '', target_audience: '' }, contact_info: { emails: [], phones: [], contact_page_url: null } };
+    const textAnalysis = combinedText.length > 100
+      ? (await analyzeWithGemini(combinedText, hospitalId)) ?? emptyAnalysis
+      : emptyAnalysis;
 
     // Image OCR
     let finalAnalysis = textAnalysis;
@@ -212,7 +227,7 @@ async function processHospital(
     // PASS 2: Screenshot OCR (변동 감지 기반 선택적 실행)
     let p2NewEq = 0;
     let p2NewTr = 0;
-    const shouldRunOcr = !TEXT_ONLY && changeResult.shouldRunOcr;
+    const shouldRunOcr = !TEXT_ONLY && (changeResult.shouldRunOcr || !textCrawlSuccess);
 
     if (shouldRunOcr) {
       try {
@@ -276,7 +291,7 @@ async function processHospital(
     // DB Upload: doctors
     for (const dr of finalAnalysis.doctors) {
       if (!dr.name) continue;
-      await supabase.from('hospital_doctors').insert({
+      await supabase.from('sales_hospital_doctors').insert({
         hospital_id: hospitalId, name: dr.name, title: dr.title ?? null,
         specialty: dr.specialty ?? null, career: dr.career ?? [], education: [],
         source: 'web_analysis',
@@ -287,7 +302,7 @@ async function processHospital(
     for (let i = 0; i < finalAnalysis.equipments.length; i++) {
       const eq = finalAnalysis.equipments[i];
       const norm = eqNorm.normalized[i];
-      await supabase.from('hospital_equipments').insert({
+      await supabase.from('sales_hospital_equipments').insert({
         hospital_id: hospitalId,
         equipment_name: norm?.standardName ?? eq.equipment_name,
         equipment_brand: eq.equipment_brand, equipment_category: norm?.category ?? eq.equipment_category,
@@ -299,7 +314,7 @@ async function processHospital(
     // DB Upload: treatments
     for (let i = 0; i < finalAnalysis.treatments.length; i++) {
       const t = finalAnalysis.treatments[i];
-      await supabase.from('hospital_treatments').insert({
+      await supabase.from('sales_hospital_treatments').insert({
         hospital_id: hospitalId, treatment_name: t.treatment_name,
         treatment_category: t.treatment_category, price_min: t.price_min,
         price_max: t.price_max, price: t.price ?? null, price_event: t.price_event ?? null,
@@ -312,7 +327,7 @@ async function processHospital(
     for (const price of priceResult.prices) {
       if (price.isOutlier) continue; // 이상치 제외
       const row = toHospitalPricingRow(price, hospitalId);
-      await supabase.from('hospital_pricing').insert(row);
+      await supabase.from('sales_hospital_pricing').insert(row);
     }
 
     // Update hospital contact
@@ -365,7 +380,7 @@ async function processHospital(
 
         // 등록된 모든 제품에 대해 시그널 분류
         const { data: products } = await supabase
-          .from('products')
+          .from('sales_products')
           .select('id, scoring_criteria')
           .eq('status', 'active');
 
@@ -439,7 +454,7 @@ async function main(): Promise<void> {
 
   for (const h of hospitals) {
     const { data: profile } = await supabase
-      .from('hospital_profiles')
+      .from('sales_hospital_profiles')
       .select('profile_grade')
       .eq('hospital_id', h.id)
       .limit(1)

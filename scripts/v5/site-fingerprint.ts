@@ -2,7 +2,7 @@
  * 사이트 유형 핑거프린팅 모듈
  * v5.4 작업 3: 크롤링 단계에서 사이트 유형 자동 감지
  *
- * 감지 유형: wordpress | cafe24 | gnuboard | sixshop | custom_spa | custom_ssr | naver_only | unknown
+ * 감지 유형: wordpress | cafe24 | gnuboard | sixshop | custom_spa | custom_ssr | naver_blog | naver_only | unknown
  */
 
 export interface SiteFingerprint {
@@ -35,6 +35,16 @@ export function detectSiteType(html: string, url: string): SiteFingerprint {
 }
 
 function _detect(html: string, url: string): SiteFingerprint {
+  // ── Naver Blog 감지 (URL 기반, HTML 전에) ──
+  if (/blog\.naver\.com/i.test(url) || /m\.blog\.naver\.com/i.test(url)) {
+    return {
+      siteType: 'naver_blog',
+      confidence: 1,
+      signals: ['naver-blog-url'],
+      traits: ['single_page'],
+    };
+  }
+
   const lower = html.toLowerCase();
   const signals: string[] = [];
   const traits: string[] = [];

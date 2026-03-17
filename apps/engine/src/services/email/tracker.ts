@@ -2,6 +2,7 @@
 // Email event tracking and lead activity logging
 
 import type { SupabaseClient } from '@supabase/supabase-js';
+import { T } from '../../lib/table-names';
 
 export interface EmailEventInput {
   emailId: string;
@@ -41,7 +42,7 @@ export async function processEmailEvent(
     : null;
 
   const { error: eventError } = await supabase
-    .from('email_events')
+    .from(T.email_events)
     .insert({
       email_id: event.emailId,
       lead_id: event.leadId,
@@ -81,7 +82,7 @@ async function updateEmailStatus(
   if (!newStatus) return;
 
   const { error } = await supabase
-    .from('emails')
+    .from(T.emails)
     .update({ status: newStatus })
     .eq('id', emailId);
 
@@ -118,7 +119,7 @@ async function updateLeadFromEvent(
     if (error) {
       // Fallback: direct update if RPC not available
       await supabase
-        .from('leads')
+        .from(T.leads)
         .update({ last_email_opened_at: new Date().toISOString() })
         .eq('id', leadId);
     }
@@ -129,7 +130,7 @@ async function updateLeadFromEvent(
     });
     if (error) {
       await supabase
-        .from('leads')
+        .from(T.leads)
         .update({ last_email_clicked_at: new Date().toISOString() })
         .eq('id', leadId);
     }
@@ -164,7 +165,7 @@ async function logActivity(
   const activity = activityMap[event.eventType];
   if (!activity) return;
 
-  const { error } = await supabase.from('lead_activities').insert({
+  const { error } = await supabase.from(T.lead_activities).insert({
     lead_id: event.leadId,
     activity_type: activity.type,
     title: activity.title,

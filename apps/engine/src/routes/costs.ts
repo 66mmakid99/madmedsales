@@ -1,7 +1,8 @@
 import { Hono } from 'hono';
 import { authMiddleware } from '../middleware/auth';
 import { createSupabaseClient } from '../lib/supabase';
-import { MONTHLY_BUDGET_KRW, USD_TO_KRW } from '@madmedsales/shared/src/ai-cost.js';
+import { T } from '../lib/table-names';
+import { MONTHLY_BUDGET_KRW, USD_TO_KRW } from '../lib/ai-cost';
 
 type Bindings = {
   SUPABASE_URL: string;
@@ -24,7 +25,7 @@ app.get('/summary', async (c) => {
     const monthStart = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-01T00:00:00`;
 
     const { data, error } = await supabase
-      .from('api_usage_logs')
+      .from(T.api_usage_logs)
       .select('service, model, input_tokens, output_tokens, estimated_cost_usd')
       .gte('created_at', monthStart);
 
@@ -91,7 +92,7 @@ app.get('/daily', async (c) => {
     const startStr = startDate.toISOString().slice(0, 10) + 'T00:00:00';
 
     const { data, error } = await supabase
-      .from('api_usage_logs')
+      .from(T.api_usage_logs)
       .select('service, estimated_cost_usd, created_at')
       .gte('created_at', startStr)
       .order('created_at', { ascending: true });
@@ -135,7 +136,7 @@ app.get('/by-purpose', async (c) => {
     const monthStart = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-01T00:00:00`;
 
     const { data, error } = await supabase
-      .from('api_usage_logs')
+      .from(T.api_usage_logs)
       .select('purpose, estimated_cost_usd, input_tokens, output_tokens')
       .gte('created_at', monthStart);
 
@@ -178,7 +179,7 @@ app.get('/budget', async (c) => {
     const daysInMonth = new Date(now.getFullYear(), now.getMonth() + 1, 0).getDate();
 
     const { data, error } = await supabase
-      .from('api_usage_logs')
+      .from(T.api_usage_logs)
       .select('estimated_cost_usd')
       .gte('created_at', monthStart);
 

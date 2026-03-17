@@ -14,6 +14,7 @@ interface SendEmailInput {
   emailId: string;
   grade: string | null;
   stepNumber: number | null;
+  productId?: string | null;
 }
 
 interface SendEmailEnv {
@@ -43,6 +44,9 @@ export async function sendEmail(
   }
   if (input.stepNumber !== null) {
     tags.push({ name: 'sequence_step', value: String(input.stepNumber) });
+  }
+  if (input.productId) {
+    tags.push({ name: 'product', value: input.productId });
   }
 
   const payload = {

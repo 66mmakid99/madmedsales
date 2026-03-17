@@ -1,15 +1,24 @@
 import type { ReactNode } from 'react';
 import { GRADES, LEAD_STAGES, INTEREST_LEVELS } from '@madmedsales/shared';
 
+const SIDO_OPTIONS = [
+  '서울', '경기', '인천', '부산', '대구', '광주', '대전', '울산',
+  '세종', '강원', '충북', '충남', '전북', '전남', '경북', '경남', '제주',
+];
+
 interface LeadFiltersProps {
   grade: string;
   stage: string;
   interestLevel: string;
   search: string;
+  sido?: string;
+  hasEmailActivity?: boolean;
   onGradeChange: (value: string) => void;
   onStageChange: (value: string) => void;
   onInterestLevelChange: (value: string) => void;
   onSearchChange: (value: string) => void;
+  onSidoChange?: (value: string) => void;
+  onHasEmailActivityChange?: (value: boolean) => void;
 }
 
 const STAGE_LABELS: Record<string, string> = {
@@ -38,10 +47,14 @@ export function LeadFilters({
   stage,
   interestLevel,
   search,
+  sido = '',
+  hasEmailActivity = false,
   onGradeChange,
   onStageChange,
   onInterestLevelChange,
   onSearchChange,
+  onSidoChange,
+  onHasEmailActivityChange,
 }: LeadFiltersProps): ReactNode {
   return (
     <div className="flex flex-wrap items-center gap-3">
@@ -82,6 +95,29 @@ export function LeadFilters({
           <option key={l} value={l}>{INTEREST_LABELS[l] ?? l}</option>
         ))}
       </select>
+      {onSidoChange && (
+        <select
+          value={sido}
+          onChange={(e) => onSidoChange(e.target.value)}
+          className="rounded-lg border px-3 py-2 text-sm focus:border-blue-500 focus:outline-none"
+        >
+          <option value="">전체 지역</option>
+          {SIDO_OPTIONS.map((s) => (
+            <option key={s} value={s}>{s}</option>
+          ))}
+        </select>
+      )}
+      {onHasEmailActivityChange && (
+        <label className="flex cursor-pointer items-center gap-1.5 text-sm text-gray-600">
+          <input
+            type="checkbox"
+            checked={hasEmailActivity}
+            onChange={(e) => onHasEmailActivityChange(e.target.checked)}
+            className="rounded"
+          />
+          이메일 반응 있음
+        </label>
+      )}
     </div>
   );
 }

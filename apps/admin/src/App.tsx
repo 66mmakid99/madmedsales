@@ -16,6 +16,16 @@ import { CrmDashboard } from './components/crm/CrmDashboard';
 import { CrmHospitalList } from './components/crm/hospitals/CrmHospitalList';
 import { CrmHospitalDetail } from './components/crm/hospitals/CrmHospitalDetail';
 import { CrmProductList } from './components/crm/products/CrmProductList';
+import IntelligenceTabs from './components/IntelligenceTabs';
+import { LeadList } from './components/leads/LeadList';
+import { LeadDetail } from './components/leads/LeadDetail';
+import { DemoList } from './components/demos/DemoList';
+import { DemoDetail } from './components/demos/DemoDetail';
+import { PipelineBoard } from './components/pipeline/PipelineBoard';
+import { EmailList } from './components/emails/EmailList';
+import { CampaignList } from './components/coldmail/CampaignList';
+import { CampaignDetail } from './components/coldmail/CampaignDetail';
+import { Reports } from './routes/Reports';
 
 export function App(): ReactNode {
   const session = useAuthStore((s) => s.session);
@@ -43,6 +53,9 @@ export function App(): ReactNode {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="/check" element={<IntelligenceTabs />} />
+
+        <Route path="/login" element={session ? <Navigate to="/" /> : <Login />} />
         <Route path="/login" element={session ? <Navigate to="/" /> : <Login />} />
         {session ? (
           <Route element={<AppLayout />}>
@@ -54,23 +67,29 @@ export function App(): ReactNode {
             <Route path="/networks/:id" element={<NetworkDetail />} />
             <Route path="/crawls" element={<CrawlManagement />} />
             <Route path="/costs" element={<CostManagement />} />
-            {/* CRM */}
+
+            {/* CRM & Intelligence */}
             <Route path="/crm" element={<CrmDashboard />} />
             <Route path="/crm/hospitals" element={<CrmHospitalList />} />
             <Route path="/crm/hospitals/:id" element={<CrmHospitalDetail />} />
             <Route path="/crm/products" element={<CrmProductList />} />
+            <Route path="/intelligence" element={<IntelligenceTabs />} /> {/* ← 여기가 추가된 길입니다 */}
+
+            {/* Sales Pipeline */}
+            <Route path="/leads" element={<LeadList />} />
+            <Route path="/leads/:id" element={<LeadDetail />} />
+            <Route path="/pipeline" element={<PipelineBoard />} />
+            <Route path="/demos" element={<DemoList />} />
+            <Route path="/demos/:id" element={<DemoDetail />} />
+            <Route path="/emails" element={<EmailList />} />
+            <Route path="/coldmail" element={<CampaignList />} />
+            <Route path="/coldmail/:id" element={<CampaignDetail />} />
+
+            {/* 나머지 비활성 페이지들 */}
             <Route path="/crm/equipment" element={<InactivePage title="장비/소모품" phase="CRM Phase 2" />} />
             <Route path="/crm/activities" element={<InactivePage title="활동 기록" phase="CRM Phase 2" />} />
             <Route path="/crm/reports" element={<InactivePage title="MADMEDCHECK 리포트" phase="CRM Phase 3" />} />
-            {/* 비활성 메뉴 — Phase 3+ */}
-            <Route path="/leads" element={<InactivePage title="리드 관리" />} />
-            <Route path="/leads/:id" element={<InactivePage title="리드 상세" />} />
-            <Route path="/emails" element={<InactivePage title="이메일 관리" phase="Phase 4" />} />
-            <Route path="/emails/stats" element={<InactivePage title="이메일 통계" phase="Phase 4" />} />
-            <Route path="/pipeline" element={<InactivePage title="파이프라인" />} />
-            <Route path="/demos" element={<InactivePage title="데모 관리" phase="Phase 6" />} />
-            <Route path="/demos/:id" element={<InactivePage title="데모 상세" phase="Phase 6" />} />
-            <Route path="/reports" element={<InactivePage title="리포트" phase="Phase 5" />} />
+            <Route path="/reports" element={<Reports />} />
             <Route path="/settings" element={<InactivePage title="설정" phase="Phase 7" />} />
             <Route path="*" element={<Navigate to="/dashboard" />} />
           </Route>

@@ -19,7 +19,8 @@ dotenv.config({ path: path.resolve(__dirname, '../.env'), override: true });
 // ============================================================
 // API Key 모드 감지
 // ============================================================
-const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
+// SA key 경로가 있으면 API key 무시 (시스템 환경변수의 무료 티어 API key 429 방지)
+const GEMINI_API_KEY = process.env.GOOGLE_SA_KEY_PATH ? undefined : process.env.GEMINI_API_KEY;
 
 /** API Key 모드인지 여부 */
 export function isApiKeyMode(): boolean {

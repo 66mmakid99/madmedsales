@@ -21,6 +21,11 @@ KAKAO_SENDER_KEY = "xxxxx"
 ADMIN_URL = "https://madmedsales.pages.dev"
 WEB_URL = "http://localhost:4321"
 
+# Naver Search API (마케팅 점수 산출용)
+# 프로덕션: wrangler secret put NAVER_CLIENT_ID / NAVER_CLIENT_SECRET
+NAVER_CLIENT_ID = ""
+NAVER_CLIENT_SECRET = ""
+
 # KV (설정 캐시용)
 [[kv_namespaces]]
 binding = "SETTINGS_KV"

@@ -3,10 +3,12 @@ import { authMiddleware } from '../middleware/auth';
 import {
   getDemos,
   getDemoById,
+  createDemo,
   confirmDemo,
   prepareDemoMaterials,
   completeDemo,
   cancelDemo,
+  submitDemoEvaluation,
 } from '../services/demo/demo-service';
 
 type Bindings = {
@@ -39,6 +41,42 @@ app.get('/', async (c) => {
     const message = err instanceof Error ? err.message : 'Unknown error';
     return c.json(
       { success: false, error: { code: 'DEMOS_FETCH_ERROR', message } },
+      500
+    );
+  }
+});
+
+app.post('/', async (c) => {
+  try {
+    const body = await c.req.json<{
+      lead_id: string;
+      hospital_id?: string;
+      product_id?: string;
+      demo_type: string;
+      scheduled_at?: string;
+      assigned_to?: string;
+      notes?: string;
+    }>();
+
+    if (!body.lead_id || !body.demo_type) {
+      return c.json(
+        { success: false, error: { code: 'INVALID_INPUT', message: 'lead_id and demo_type are required' } },
+        400
+      );
+    }
+
+    const demo = await createDemo(c.env, body);
+    return c.json({ success: true, data: demo }, 201);
+  } catch (err) {
+    const message = err instanceof Error ? err.message : 'Unknown error';
+    if (message === 'LEAD_NOT_FOUND') {
+      return c.json(
+        { success: false, error: { code: 'LEAD_NOT_FOUND', message: '해당 리드를 찾을 수 없습니다.' } },
+        404
+      );
+    }
+    return c.json(
+      { success: false, error: { code: 'DEMO_CREATE_ERROR', message } },
       500
     );
   }
@@ -108,6 +146,41 @@ app.put('/:id/complete', async (c) => {
     const message = err instanceof Error ? err.message : 'Unknown error';
     return c.json(
       { success: false, error: { code: 'DEMO_COMPLETE_ERROR', message } },
+      500
+    );
+  }
+});
+
+app.post('/:id/evaluate', async (c) => {
+  try {
+    const id = c.req.param('id');
+    const body = await c.req.json<{
+      satisfaction_score: number;
+      purchase_intent: string;
+      preferred_payment?: string;
+      additional_questions?: string;
+      feedback?: string;
+    }>();
+
+    if (!body.satisfaction_score || !body.purchase_intent) {
+      return c.json(
+        { success: false, error: { code: 'INVALID_INPUT', message: 'satisfaction_score and purchase_intent are required' } },
+        400
+      );
+    }
+
+    const result = await submitDemoEvaluation(c.env, id, body);
+    return c.json({ success: true, data: result });
+  } catch (err) {
+    const message = err instanceof Error ? err.message : 'Unknown error';
+    if (message === 'DEMO_NOT_FOUND') {
+      return c.json(
+        { success: false, error: { code: 'DEMO_NOT_FOUND', message: '해당 데모를 찾을 수 없습니다.' } },
+        404
+      );
+    }
+    return c.json(
+      { success: false, error: { code: 'DEMO_EVALUATE_ERROR', message } },
       500
     );
   }

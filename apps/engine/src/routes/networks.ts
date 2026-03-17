@@ -1,5 +1,6 @@
 import { Hono } from 'hono';
 import { createSupabaseClient } from '../lib/supabase.js';
+import { T } from '../lib/table-names';
 import type { ConfidenceLevel } from '@madmedsales/shared';
 
 type Bindings = {
@@ -17,7 +18,7 @@ networks.get('/', async (c) => {
   const search = c.req.query('search');
 
   let query = supabase
-    .from('networks')
+    .from(T.networks)
     .select('*')
     .order('total_branches', { ascending: false });
 
@@ -37,7 +38,7 @@ networks.get('/', async (c) => {
   if (networkIds.length > 0) {
     // RPC 없이 전체 branches를 가져와서 집계
     const { data: branches } = await supabase
-      .from('network_branches')
+      .from(T.network_branches)
       .select('network_id, confidence')
       .in('network_id', networkIds);
 
@@ -85,7 +86,7 @@ networks.get('/:id', async (c) => {
   const supabase = createSupabaseClient(c.env);
 
   const { data: network, error } = await supabase
-    .from('networks')
+    .from(T.networks)
     .select('*')
     .eq('id', id)
     .single();
@@ -104,7 +105,7 @@ networks.get('/:id/branches', async (c) => {
   const supabase = createSupabaseClient(c.env);
 
   let query = supabase
-    .from('network_branches')
+    .from(T.network_branches)
     .select(`
       *,
       hospital:hospital_id (id, name, address, sido, sigungu, phone, website)
@@ -141,7 +142,7 @@ networks.post('/', async (c) => {
 
   const supabase = createSupabaseClient(c.env);
   const { data, error } = await supabase
-    .from('networks')
+    .from(T.networks)
     .insert({
       name: body.name.trim(),
       category: body.category ?? 'franchise',
@@ -176,7 +177,7 @@ networks.patch('/:id', async (c) => {
 
   const supabase = createSupabaseClient(c.env);
   const { data, error } = await supabase
-    .from('networks')
+    .from(T.networks)
     .update({ ...body, updated_at: new Date().toISOString() })
     .eq('id', id)
     .select()
@@ -212,7 +213,7 @@ networks.patch('/branches/:branchId/verify', async (c) => {
   };
 
   const { data, error } = await supabase
-    .from('network_branches')
+    .from(T.network_branches)
     .update({
       confidence: body.confidence,
       confidence_score: scoreMap[body.confidence],
@@ -233,7 +234,7 @@ networks.patch('/branches/:branchId/verify', async (c) => {
   }
 
   // 검증 로그 기록
-  await supabase.from('network_verification_logs').insert({
+  await supabase.from(T.network_verification_logs).insert({
     network_id: data.network_id,
     branch_id: branchId,
     verification_method: 'manual',
@@ -256,7 +257,7 @@ networks.post('/branches/:branchId/remove', async (c) => {
   const supabase = createSupabaseClient(c.env);
 
   const { data, error } = await supabase
-    .from('network_branches')
+    .from(T.network_branches)
     .update({
       confidence: 'unlikely',
       confidence_score: 0,
@@ -274,7 +275,7 @@ networks.post('/branches/:branchId/remove', async (c) => {
   }
 
   // 검증 로그
-  await supabase.from('network_verification_logs').insert({
+  await supabase.from(T.network_verification_logs).insert({
     network_id: data.network_id,
     branch_id: branchId,
     verification_method: 'manual',
@@ -291,7 +292,7 @@ networks.get('/:id/logs', async (c) => {
   const supabase = createSupabaseClient(c.env);
 
   const { data: logs, error } = await supabase
-    .from('network_verification_logs')
+    .from(T.network_verification_logs)
     .select('*')
     .eq('network_id', id)
     .order('created_at', { ascending: false })
@@ -309,8 +310,8 @@ networks.get('/summary', async (c) => {
   const supabase = createSupabaseClient(c.env);
 
   const [networksRes, branchesRes] = await Promise.all([
-    supabase.from('networks').select('id, status'),
-    supabase.from('network_branches').select('confidence'),
+    supabase.from(T.networks).select('id, status'),
+    supabase.from(T.network_branches).select('confidence'),
   ]);
 
   if (networksRes.error || branchesRes.error) {

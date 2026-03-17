@@ -1,5 +1,6 @@
-// v1.0 - 2026-02-20
+// v2.0 - 2026-03-16
 // Reply analysis service using Claude Haiku
+// Changes: auto_reply_possible + draft_reply 필드 검증 추가
 
 import {
   buildReplyAnalysisPrompt,
@@ -34,6 +35,8 @@ function isValidReplyAnalysis(value: unknown): value is ReplyAnalysisOutput {
     VALID_REPLY_TYPES.includes(obj['reply_type'] as typeof VALID_REPLY_TYPES[number]) &&
     typeof obj['summary'] === 'string' &&
     typeof obj['recommended_response'] === 'string' &&
+    typeof obj['auto_reply_possible'] === 'boolean' &&
+    (obj['draft_reply'] === null || typeof obj['draft_reply'] === 'string') &&
     typeof obj['should_connect_kakao'] === 'boolean' &&
     typeof obj['should_notify_admin'] === 'boolean' &&
     VALID_URGENCIES.includes(obj['urgency'] as typeof VALID_URGENCIES[number])

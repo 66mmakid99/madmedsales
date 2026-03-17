@@ -1,9 +1,103 @@
 import { type ReactNode, useState } from 'react';
 import { useCrmProducts, createCrmProduct, updateCrmProduct } from '../../../hooks/use-crm-products';
+import { useApi } from '../../../hooks/use-api';
 import type { CrmProduct, CrmConsumableSpec } from '@madmedsales/shared';
+
+interface EmailSequence {
+  id: string;
+  name: string;
+  target_grade: string;
+  description: string | null;
+  is_active: boolean;
+}
 
 // 첫 테넌트 BRITZMEDI 고정 (Phase 2+에서 동적 전환)
 const DEFAULT_TENANT_ID = 'a1b2c3d4-0001-4000-8000-000000000001';
+
+const GRADE_COLORS: Record<string, string> = {
+  S: 'bg-red-100 text-red-700',
+  A: 'bg-orange-100 text-orange-700',
+  B: 'bg-blue-100 text-blue-700',
+  C: 'bg-gray-100 text-gray-600',
+};
+
+function ProductDetailModal({ product, onClose }: { product: CrmProduct; onClose: () => void }): ReactNode {
+  const { data: seqData, loading: seqLoading } = useApi<{ sequences: EmailSequence[] }>('/api/sequences');
+  const consumables = (product.consumables ?? []) as CrmConsumableSpec[];
+
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40" onClick={onClose}>
+      <div
+        className="w-full max-w-lg rounded-xl bg-white p-6 shadow-xl"
+        onClick={(e) => e.stopPropagation()}
+      >
+        <div className="mb-4 flex items-start justify-between">
+          <div>
+            <h2 className="text-lg font-bold text-gray-900">{product.name}</h2>
+            {product.model_variants && product.model_variants.length > 0 ? (
+              <p className="text-sm text-gray-500">모델: {product.model_variants.join(', ')}</p>
+            ) : null}
+          </div>
+          <button
+            onClick={onClose}
+            className="ml-4 text-gray-400 hover:text-gray-600"
+          >
+            ✕
+          </button>
+        </div>
+
+        <dl className="mb-4 grid grid-cols-2 gap-3 text-sm">
+          <div>
+            <dt className="text-xs text-gray-400">가격대</dt>
+            <dd className="font-medium text-gray-800">{product.price_range ?? '-'}</dd>
+          </div>
+          <div>
+            <dt className="text-xs text-gray-400">보증기간</dt>
+            <dd className="font-medium text-gray-800">{product.warranty_months}개월</dd>
+          </div>
+        </dl>
+
+        {consumables.length > 0 ? (
+          <div className="mb-4">
+            <p className="mb-1 text-xs text-gray-400">소모품</p>
+            <div className="flex flex-wrap gap-1">
+              {consumables.map((c, i) => (
+                <span key={i} className="rounded-full bg-gray-100 px-2 py-0.5 text-xs text-gray-600">
+                  {c.name}{c.cycle_days ? ` (${c.cycle_days}일)` : ''}
+                </span>
+              ))}
+            </div>
+          </div>
+        ) : null}
+
+        <div className="border-t pt-4">
+          <p className="mb-2 text-xs font-medium text-gray-500">연결된 이메일 시퀀스</p>
+          {seqLoading ? (
+            <p className="text-sm text-gray-400">로딩 중...</p>
+          ) : (seqData?.sequences ?? []).length === 0 ? (
+            <p className="text-sm text-gray-400">등록된 시퀀스 없음</p>
+          ) : (
+            <ul className="space-y-1.5">
+              {(seqData?.sequences ?? []).map((seq) => (
+                <li key={seq.id} className="flex items-center justify-between rounded bg-gray-50 px-3 py-2 text-sm">
+                  <span className="font-medium text-gray-800">{seq.name}</span>
+                  <div className="flex items-center gap-2">
+                    <span className={`rounded-full px-2 py-0.5 text-xs font-medium ${GRADE_COLORS[seq.target_grade] ?? 'bg-gray-100 text-gray-600'}`}>
+                      {seq.target_grade}등급
+                    </span>
+                    <span className={`text-xs ${seq.is_active ? 'text-green-600' : 'text-gray-400'}`}>
+                      {seq.is_active ? '활성' : '비활성'}
+                    </span>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
 
 function ConsumableTag({ spec }: { spec: CrmConsumableSpec }): ReactNode {
   return (
@@ -14,11 +108,14 @@ function ConsumableTag({ spec }: { spec: CrmConsumableSpec }): ReactNode {
   );
 }
 
-function ProductCard({ product, onEdit }: { product: CrmProduct; onEdit: () => void }): ReactNode {
+function ProductCard({ product, onEdit, onDetail }: { product: CrmProduct; onEdit: () => void; onDetail: () => void }): ReactNode {
   const consumables = (product.consumables ?? []) as CrmConsumableSpec[];
 
   return (
-    <div className="rounded-lg bg-white p-5 shadow-sm border border-gray-100">
+    <div
+      className="cursor-pointer rounded-lg bg-white p-5 shadow-sm border border-gray-100 hover:border-blue-200 hover:shadow-md transition-shadow"
+      onClick={onDetail}
+    >
       <div className="flex items-start justify-between">
         <div>
           <h3 className="text-lg font-semibold text-gray-900">{product.name}</h3>
@@ -28,7 +125,12 @@ function ProductCard({ product, onEdit }: { product: CrmProduct; onEdit: () => v
             </p>
           ) : null}
         </div>
-        <button onClick={onEdit} className="text-xs text-blue-600 hover:text-blue-800">편집</button>
+        <button
+          onClick={(e) => { e.stopPropagation(); onEdit(); }}
+          className="text-xs text-blue-600 hover:text-blue-800"
+        >
+          편집
+        </button>
       </div>
 
       <div className="mt-3 grid grid-cols-2 gap-3 text-sm">
@@ -130,6 +232,7 @@ export function CrmProductList(): ReactNode {
   const { data: products, loading, error, refetch } = useCrmProducts();
   const [adding, setAdding] = useState(false);
   const [editingId, setEditingId] = useState<string | null>(null);
+  const [detailProduct, setDetailProduct] = useState<CrmProduct | null>(null);
 
   const handleCreate = async (body: Record<string, unknown>): Promise<void> => {
     await createCrmProduct(body);
@@ -177,7 +280,12 @@ export function CrmProductList(): ReactNode {
               onCancel={() => setEditingId(null)}
             />
           ) : (
-            <ProductCard key={p.id} product={p} onEdit={() => { setEditingId(p.id); setAdding(false); }} />
+            <ProductCard
+              key={p.id}
+              product={p}
+              onEdit={() => { setEditingId(p.id); setAdding(false); }}
+              onDetail={() => { setDetailProduct(p); setEditingId(null); setAdding(false); }}
+            />
           )
         )}
       </div>
@@ -186,6 +294,10 @@ export function CrmProductList(): ReactNode {
         <div className="py-12 text-center text-gray-400">
           등록된 제품이 없습니다.
         </div>
+      ) : null}
+
+      {detailProduct ? (
+        <ProductDetailModal product={detailProduct} onClose={() => setDetailProduct(null)} />
       ) : null}
     </div>
   );

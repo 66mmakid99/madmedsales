@@ -3,6 +3,7 @@
 
 import { Hono } from 'hono';
 import { createSupabaseClient } from '../lib/supabase';
+import { T } from '../lib/table-names';
 
 type Bindings = {
   SUPABASE_URL: string;
@@ -19,7 +20,7 @@ app.get('/', async (c) => {
     const activeOnly = c.req.query('active') === 'true';
 
     let query = supabase
-      .from('email_sequences')
+      .from(T.email_sequences)
       .select('*')
       .order('created_at', { ascending: false });
 
@@ -49,7 +50,7 @@ app.get('/:id', async (c) => {
     const id = c.req.param('id');
 
     const { data: sequence, error } = await supabase
-      .from('email_sequences')
+      .from(T.email_sequences)
       .select('*')
       .eq('id', id)
       .single();
@@ -62,7 +63,7 @@ app.get('/:id', async (c) => {
     }
 
     const { data: steps } = await supabase
-      .from('email_sequence_steps')
+      .from(T.email_sequence_steps)
       .select('*')
       .eq('sequence_id', id)
       .order('step_number', { ascending: true });
@@ -91,7 +92,7 @@ app.post('/', async (c) => {
     const supabase = createSupabaseClient(c.env);
 
     const { data, error } = await supabase
-      .from('email_sequences')
+      .from(T.email_sequences)
       .insert({
         name: body.name,
         target_grade: body.target_grade,
@@ -139,7 +140,7 @@ app.put('/:id', async (c) => {
     updates['updated_at'] = new Date().toISOString();
 
     const { data, error } = await supabase
-      .from('email_sequences')
+      .from(T.email_sequences)
       .update(updates)
       .eq('id', id)
       .select('*')
@@ -174,7 +175,7 @@ app.post('/:id/steps', async (c) => {
     const supabase = createSupabaseClient(c.env);
 
     const { data, error } = await supabase
-      .from('email_sequence_steps')
+      .from(T.email_sequence_steps)
       .insert({
         sequence_id: sequenceId,
         step_number: body.step_number,
@@ -229,7 +230,7 @@ app.put('/:id/steps/:stepId', async (c) => {
     }
 
     const { data, error } = await supabase
-      .from('email_sequence_steps')
+      .from(T.email_sequence_steps)
       .update(updates)
       .eq('id', stepId)
       .select('*')
@@ -283,5 +284,46 @@ function isCreateStepRequest(value: unknown): value is CreateStepRequest {
     typeof obj['purpose'] === 'string'
   );
 }
+
+// PATCH /steps/:stepId - 시퀀스 단계 이메일 가이드 수정 (SequenceEditor용)
+app.patch('/steps/:stepId', async (c) => {
+  try {
+    const supabase = createSupabaseClient(c.env);
+    const stepId = c.req.param('stepId');
+    const body: unknown = await c.req.json();
+
+    if (typeof body !== 'object' || body === null) {
+      return c.json({ success: false, error: { code: 'INVALID_BODY', message: '유효하지 않은 요청입니다.' } }, 400);
+    }
+
+    const allowed = ['delay_days', 'email_guide', 'purpose'] as const;
+    const update: Record<string, unknown> = {};
+    for (const key of allowed) {
+      if (key in (body as Record<string, unknown>)) {
+        update[key] = (body as Record<string, unknown>)[key];
+      }
+    }
+
+    if (Object.keys(update).length === 0) {
+      return c.json({ success: false, error: { code: 'NO_FIELDS', message: '수정할 필드가 없습니다.' } }, 400);
+    }
+
+    const { data, error } = await supabase
+      .from(T.email_sequence_steps)
+      .update(update)
+      .eq('id', stepId)
+      .select()
+      .single();
+
+    if (error) {
+      return c.json({ success: false, error: { code: 'UPDATE_FAILED', message: error.message } }, 500);
+    }
+
+    return c.json({ success: true, data });
+  } catch (error) {
+    const message = error instanceof Error ? error.message : 'Unknown error';
+    return c.json({ success: false, error: { code: 'PATCH_ERROR', message } }, 500);
+  }
+});
 
 export default app;

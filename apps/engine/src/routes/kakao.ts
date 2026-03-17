@@ -5,6 +5,7 @@ import { Hono } from 'hono';
 import { createSupabaseClient } from '../lib/supabase';
 import { sendAlimtalk } from '../services/kakao/biz-message';
 import { getTemplate } from '../services/kakao/templates';
+import { T } from '../lib/table-names';
 
 type Bindings = {
   SUPABASE_URL: string;
@@ -27,7 +28,7 @@ app.post('/send-alimtalk', async (c) => {
       }, 400);
     }
 
-    const template = getTemplate(body.template_code);
+    const template = getTemplate(body.template_code, body.product_name ?? '', body.product_slug ?? '');
     if (!template) {
       return c.json({
         success: false,
@@ -42,6 +43,8 @@ app.post('/send-alimtalk', async (c) => {
       templateCode: body.template_code,
       recipientPhone: body.phone,
       templateParams: body.template_params,
+      productName: body.product_name ?? '',
+      productSlug: body.product_slug ?? '',
     });
 
     return c.json({ success: true, data: { message: '알림톡 발송 완료' } });
@@ -74,18 +77,20 @@ app.post('/send-welcome', async (c) => {
       templateParams: {
         doctorName: body.doctor_name,
       },
+      productName: body.product_name ?? '',
+      productSlug: body.product_slug ?? '',
     });
 
     // Update lead kakao status
     await supabase
-      .from('leads')
+      .from(T.leads)
       .update({
         kakao_connected: true,
         stage: 'kakao_connected',
       })
       .eq('id', body.lead_id);
 
-    await supabase.from('lead_activities').insert({
+    await supabase.from(T.lead_activities).insert({
       lead_id: body.lead_id,
       activity_type: 'kakao_connected',
       title: '카카오 채널 추가 + 환영 메시지 발송',
@@ -118,7 +123,7 @@ app.get('/messages', async (c) => {
     const offset = parseInt(c.req.query('offset') ?? '0', 10);
 
     const { data, error, count } = await supabase
-      .from('kakao_messages')
+      .from(T.kakao_messages)
       .select('*', { count: 'exact' })
       .eq('lead_id', leadId)
       .order('created_at', { ascending: false })
@@ -151,18 +156,18 @@ app.post('/webhooks/kakao', async (c) => {
     if (body.event === 'added') {
       // Find lead by kakao user id or phone
       const { data: lead } = await supabase
-        .from('leads')
+        .from(T.leads)
         .select('id')
         .eq('kakao_channel_user_id', body.user_key)
         .single();
 
       if (lead) {
         await supabase
-          .from('leads')
+          .from(T.leads)
           .update({ kakao_connected: true, stage: 'kakao_connected' })
           .eq('id', lead.id);
 
-        await supabase.from('lead_activities').insert({
+        await supabase.from(T.lead_activities).insert({
           lead_id: lead.id,
           activity_type: 'kakao_connected',
           title: '카카오 채널 추가됨',
@@ -172,18 +177,18 @@ app.post('/webhooks/kakao', async (c) => {
       }
     } else if (body.event === 'removed') {
       const { data: lead } = await supabase
-        .from('leads')
+        .from(T.leads)
         .select('id')
         .eq('kakao_channel_user_id', body.user_key)
         .single();
 
       if (lead) {
         await supabase
-          .from('leads')
+          .from(T.leads)
           .update({ kakao_connected: false })
           .eq('id', lead.id);
 
-        await supabase.from('lead_activities').insert({
+        await supabase.from(T.lead_activities).insert({
           lead_id: lead.id,
           activity_type: 'note_added',
           title: '카카오 채널 차단됨',
@@ -206,6 +211,8 @@ interface SendAlimtalkRequest {
   template_code: string;
   phone: string;
   template_params: Record<string, string>;
+  product_name?: string;
+  product_slug?: string;
 }
 
 function isSendAlimtalkRequest(value: unknown): value is SendAlimtalkRequest {
@@ -224,6 +231,8 @@ interface WelcomeRequest {
   lead_id: string;
   phone: string;
   doctor_name: string;
+  product_name?: string;
+  product_slug?: string;
 }
 
 function isWelcomeRequest(value: unknown): value is WelcomeRequest {

@@ -11,7 +11,7 @@
     "in_db": false,
     "eq_count": 0,
     "tr_count": 0,
-    "search_query": "안산엔비의원 안산 피부과 홈페이지",
+    "search_query": "",
     "url_status": "confirmed"
   },
   {
@@ -21,13 +21,13 @@
     "region": "대전",
     "address": "대전광역시 서구 둔산남로 107 명문빌딩 201호",
     "status": "정상",
-    "website": "",
-    "phase": "FIND_URL",
+    "website": "https://www.lovelyclinic.kr/",
+    "phase": "CRAWL",
     "in_db": false,
     "eq_count": 0,
     "tr_count": 0,
-    "search_query": "러블리피부과의원 대전 피부과 홈페이지",
-    "url_status": "need_search"
+    "search_query": "",
+    "url_status": "confirmed"
   },
   {
     "no": 3,
@@ -56,8 +56,8 @@
     "in_db": false,
     "eq_count": 0,
     "tr_count": 0,
-    "search_query": "부산CF강남의원 부산 피부과 홈페이지",
-    "url_status": "need_search"
+    "search_query": "",
+    "url_status": "not_found"
   },
   {
     "no": 5,
@@ -66,13 +66,13 @@
     "region": "약수",
     "address": "서울특별시 중구 동호로 163(신당동) 3층 301호(신동호빌딩)",
     "status": "정상",
-    "website": null,
-    "phase": "FIND_URL",
+    "website": "https://www.mirabelclinic.co.kr/",
+    "phase": "CRAWL",
     "in_db": true,
     "eq_count": 0,
     "tr_count": 0,
-    "search_query": "미라벨의원 약수 피부과 홈페이지",
-    "url_status": "need_search"
+    "search_query": "",
+    "url_status": "confirmed"
   },
   {
     "no": 6,
@@ -96,13 +96,14 @@
     "region": "부평",
     "address": "인천광역시 부평구 부평대로 16(부평동) 4층",
     "status": "정상",
-    "website": "",
-    "phase": "FIND_URL",
+    "website": "https://www.4-ever.co.kr/",
+    "phase": "CRAWL",
     "in_db": false,
     "eq_count": 0,
     "tr_count": 0,
-    "search_query": "부평포에버의원 부평 피부과 홈페이지",
-    "url_status": "need_search"
+    "search_query": "",
+    "url_status": "confirmed",
+    "note": "포에버 네트워크 부평점"
   },
   {
     "no": 8,
@@ -126,13 +127,13 @@
     "region": "압구정",
     "address": "서울특별시 강남구 압구정로29길 21 (압구정동) 지하1층(압구정동,현대백화점뷰티파크)",
     "status": "정상",
-    "website": "",
-    "phase": "FIND_URL",
+    "website": "https://maylin.co.kr/",
+    "phase": "CRAWL",
     "in_db": false,
     "eq_count": 0,
     "tr_count": 0,
-    "search_query": "메이린 압구정 압구정 피부과 홈페이지",
-    "url_status": "need_search"
+    "search_query": "",
+    "url_status": "confirmed"
   },
   {
     "no": 10,
@@ -141,13 +142,13 @@
     "region": "대전",
     "address": "대전광역시 유성구 온천로 34 (봉명동) 7층",
     "status": "정상",
-    "website": "",
-    "phase": "FIND_URL",
+    "website": "http://wellpibu.com/",
+    "phase": "CRAWL",
     "in_db": false,
     "eq_count": 0,
     "tr_count": 0,
-    "search_query": "더웰피부과 대전 피부과 홈페이지",
-    "url_status": "need_search"
+    "search_query": "",
+    "url_status": "confirmed"
   },
   {
     "no": 11,
@@ -156,13 +157,13 @@
     "region": "성남",
     "address": "경기도 성남시 분당구 서현로180번길 13(서현동) 604(서현프라자)",
     "status": "정상",
-    "website": "",
-    "phase": "FIND_URL",
+    "website": "https://oracle2u.com/",
+    "phase": "CRAWL",
     "in_db": false,
     "eq_count": 0,
     "tr_count": 0,
-    "search_query": "분당오라클피부과 성남 피부과 홈페이지",
-    "url_status": "need_search"
+    "search_query": "",
+    "url_status": "confirmed"
   },
   {
     "no": 12,
@@ -186,13 +187,13 @@
     "region": "학동",
     "address": "서울특별시 강남구 학동로 215 (논현동) 씨엘타워 6층 3호",
     "status": "정상",
-    "website": "https://blog.naver.com/cellinskin",
-    "phase": "FIND_URL_THEN_CRAWL",
+    "website": "https://cellin.kr/",
+    "phase": "CRAWL",
     "in_db": true,
     "eq_count": 0,
     "tr_count": 0,
-    "search_query": "셀린피부과의원 학동 피부과 홈페이지",
-    "url_status": "blog_sns"
+    "search_query": "",
+    "url_status": "confirmed"
   },
   {
     "no": 14,
@@ -201,13 +202,13 @@
     "region": "압구정",
     "address": "서울특별시 강남구 도산대로57길 6, 2층(청담동)",
     "status": "정상",
-    "website": "",
-    "phase": "FIND_URL",
+    "website": "http://www.tamclinic.co.kr/",
+    "phase": "CRAWL",
     "in_db": false,
     "eq_count": 0,
     "tr_count": 0,
-    "search_query": "탐클리닉 압구정 피부과 홈페이지",
-    "url_status": "need_search"
+    "search_query": "",
+    "url_status": "confirmed"
   },
   {
     "no": 15,
@@ -216,13 +217,13 @@
     "region": "신사",
     "address": "서울특별시 강남구 언주로 874(신사동) 5층",
     "status": "정상",
-    "website": "",
-    "phase": "FIND_URL",
+    "website": "https://area88ps.com/",
+    "phase": "CRAWL",
     "in_db": false,
     "eq_count": 0,
     "tr_count": 0,
-    "search_query": "에어리어88성형외과 신사 피부과 홈페이지",
-    "url_status": "need_search"
+    "search_query": "",
+    "url_status": "confirmed"
   },
   {
     "no": 16,
@@ -246,13 +247,13 @@
     "region": "천안",
     "address": "충청남도 천안시 서북구 오성6길 4(두정동) 이젠빌딩 4,5층",
     "status": "정상",
-    "website": "",
-    "phase": "FIND_URL",
+    "website": "http://www.ezenskin.co.kr/",
+    "phase": "CRAWL",
     "in_db": false,
     "eq_count": 0,
     "tr_count": 0,
-    "search_query": "천안이젠의원 천안 피부과 홈페이지",
-    "url_status": "need_search"
+    "search_query": "",
+    "url_status": "confirmed"
   },
   {
     "no": 18,
@@ -261,13 +262,13 @@
     "region": "오산",
     "address": "경기도 오산시 세교동 600-4 오산세교CL타워 7,8,9층",
     "status": "정상",
-    "website": "",
-    "phase": "FIND_URL",
+    "website": "http://www.semagreen.com/",
+    "phase": "CRAWL",
     "in_db": false,
     "eq_count": 0,
     "tr_count": 0,
-    "search_query": "세마그린요양병원 오산 피부과 홈페이지",
-    "url_status": "need_search"
+    "search_query": "",
+    "url_status": "confirmed"
   },
   {
     "no": 19,
@@ -276,13 +277,14 @@
     "region": "강릉",
     "address": "강원도 강릉시 교동광장로 115 (교동) 2층",
     "status": "정상",
-    "website": "",
-    "phase": "FIND_URL",
+    "website": "https://agafarclinic.com/",
+    "phase": "CRAWL",
     "in_db": false,
     "eq_count": 0,
     "tr_count": 0,
-    "search_query": "아가파퍼즐닥터의원 강릉 피부과 홈페이지",
-    "url_status": "need_search"
+    "search_query": "",
+    "url_status": "confirmed",
+    "note": "아가파클리닉 브랜드 (강릉 지점)"
   },
   {
     "no": 20,
@@ -291,13 +293,13 @@
     "region": "청담",
     "address": "서울특별시 강남구 압구정로445 (청담동) 롤스로이스 오토스 2층, 4층 402호",
     "status": "정상",
-    "website": "",
-    "phase": "FIND_URL",
+    "website": "http://www.mhskin.co.kr/",
+    "phase": "CRAWL",
     "in_db": false,
     "eq_count": 0,
     "tr_count": 0,
-    "search_query": "MH의원 청담 피부과 홈페이지",
-    "url_status": "need_search"
+    "search_query": "",
+    "url_status": "confirmed"
   },
   {
     "no": 21,
@@ -306,13 +308,13 @@
     "region": "청담",
     "address": "서울특별시 강남구 도산대로57길 22(청담동) 1층 (K2빌딩)",
     "status": "정상",
-    "website": "",
-    "phase": "FIND_URL",
+    "website": "https://shwclinic.com/",
+    "phase": "CRAWL",
     "in_db": false,
     "eq_count": 0,
     "tr_count": 0,
-    "search_query": "서희원클리닉 청담 피부과 홈페이지",
-    "url_status": "need_search"
+    "search_query": "",
+    "url_status": "confirmed"
   },
   {
     "no": 22,
@@ -321,13 +323,14 @@
     "region": "울산",
     "address": "울산광역시 남구 삼산로 261(삼산동) 울산현대백화점 13층",
     "status": "정상",
-    "website": "",
-    "phase": "FIND_URL",
+    "website": "https://maylin.co.kr/",
+    "phase": "CRAWL",
     "in_db": false,
     "eq_count": 0,
     "tr_count": 0,
-    "search_query": "울산메이린의원 울산 피부과 홈페이지",
-    "url_status": "need_search"
+    "search_query": "",
+    "url_status": "confirmed",
+    "note": "메이린 브랜드 공식 사이트 (지점별 개별 페이지 없음)"
   },
   {
     "no": 23,
@@ -336,13 +339,14 @@
     "region": "강남",
     "address": "서울특별시 서초구 강남대로415 대동빌딩 7층",
     "status": "정상",
-    "website": "",
-    "phase": "FIND_URL",
+    "website": "http://varomclinic.co.kr/new2020/",
+    "phase": "CRAWL",
     "in_db": false,
     "eq_count": 0,
     "tr_count": 0,
-    "search_query": "강남바롬의원 강남 피부과 홈페이지",
-    "url_status": "need_search"
+    "search_query": "",
+    "url_status": "confirmed",
+    "note": "바롬클리닉 강남점"
   },
   {
     "no": 24,
@@ -366,13 +370,14 @@
     "region": "대치",
     "address": "서울특별시 강남구 테헤란로64길 20(대치동) 302호",
     "status": "정상",
-    "website": "",
-    "phase": "FIND_URL",
+    "website": "http://www.robbin.co.kr/",
+    "phase": "CRAWL",
     "in_db": false,
     "eq_count": 0,
     "tr_count": 0,
-    "search_query": "닥터로빈의원 대치 피부과 홈페이지",
-    "url_status": "need_search"
+    "search_query": "",
+    "url_status": "confirmed",
+    "note": "로빈의원 (나공찬 공동대표)"
   },
   {
     "no": 26,
@@ -381,13 +386,14 @@
     "region": "강남",
     "address": "서울특별시 서초구 강남대로 415(서초동) 12층(대동빌딩)",
     "status": "정상",
-    "website": "",
-    "phase": "FIND_URL",
+    "website": "http://baroko.co.kr/",
+    "phase": "CRAWL",
     "in_db": false,
     "eq_count": 0,
     "tr_count": 0,
-    "search_query": "바로코의원 강남 피부과 홈페이지",
-    "url_status": "need_search"
+    "search_query": "",
+    "url_status": "confirmed",
+    "note": "바로코성형외과의원 (이비인후과+성형외과)"
   },
   {
     "no": 27,
@@ -396,13 +402,13 @@
     "region": "역삼",
     "address": "서울특별시 강남구 강남대로 432(역삼동) 804호(점프밀라노)",
     "status": "정상",
-    "website": "",
-    "phase": "FIND_URL",
+    "website": "http://meline.co.kr/",
+    "phase": "CRAWL",
     "in_db": false,
     "eq_count": 0,
     "tr_count": 0,
-    "search_query": "미라인피부과의원 역삼 피부과 홈페이지",
-    "url_status": "need_search"
+    "search_query": "",
+    "url_status": "confirmed"
   },
   {
     "no": 28,
@@ -431,8 +437,8 @@
     "in_db": true,
     "eq_count": 0,
     "tr_count": 0,
-    "search_query": "세인트의원 의정부 피부과 홈페이지",
-    "url_status": "blog_sns"
+    "search_query": "",
+    "url_status": "blog_only"
   },
   {
     "no": 30,
@@ -461,8 +467,8 @@
     "in_db": false,
     "eq_count": 0,
     "tr_count": 0,
-    "search_query": "선이고운여성의원 용인 피부과 홈페이지",
-    "url_status": "need_search"
+    "search_query": "",
+    "url_status": "not_found"
   },
   {
     "no": 32,
@@ -476,8 +482,8 @@
     "in_db": false,
     "eq_count": 0,
     "tr_count": 0,
-    "search_query": "힐링수의원(강릉) 강릉 피부과 홈페이지",
-    "url_status": "need_search"
+    "search_query": "",
+    "url_status": "not_found"
   },
   {
     "no": 33,
@@ -506,8 +512,9 @@
     "in_db": false,
     "eq_count": 0,
     "tr_count": 0,
-    "search_query": "뷰티온메디 부산 피부과 홈페이지",
-    "url_status": "need_search"
+    "search_query": "",
+    "url_status": "not_found",
+    "note": "뷰티온의원 체인(beautyon.co.kr)과 다른 별도 업체"
   },
   {
     "no": 35,
@@ -516,13 +523,13 @@
     "region": "신사",
     "address": "서울특별시 강남구 도산대로 165(신사동) 3층",
     "status": "정상",
-    "website": "",
-    "phase": "FIND_URL",
+    "website": "https://www.freshps.com/",
+    "phase": "CRAWL",
     "in_db": false,
     "eq_count": 0,
     "tr_count": 0,
-    "search_query": "프레쉬성형외과 신사 피부과 홈페이지",
-    "url_status": "need_search"
+    "search_query": "",
+    "url_status": "confirmed"
   },
   {
     "no": 36,
@@ -547,12 +554,13 @@
     "address": "부산광역시 남구 진남로70번길 1(대연동) 401호",
     "status": "정상",
     "website": "",
-    "phase": "FIND_URL",
+    "phase": "N/A",
     "in_db": false,
     "eq_count": 0,
     "tr_count": 0,
-    "search_query": "㈜메이코리아 부산 피부과 홈페이지",
-    "url_status": "need_search"
+    "search_query": "",
+    "url_status": "not_applicable",
+    "note": "의료기기 유통회사 (병원 아님)"
   },
   {
     "no": 38,
@@ -561,13 +569,13 @@
     "region": "부산",
     "address": "부산광역시 부산진구 서면로 66 8층,9층",
     "status": "정상",
-    "website": "",
-    "phase": "FIND_URL",
+    "website": "http://www.paradiseclinic.co.kr/",
+    "phase": "CRAWL",
     "in_db": false,
     "eq_count": 0,
     "tr_count": 0,
-    "search_query": "파라다이스의원(부산) 부산 피부과 홈페이지",
-    "url_status": "need_search"
+    "search_query": "",
+    "url_status": "confirmed"
   },
   {
     "no": 39,
@@ -581,8 +589,8 @@
     "in_db": false,
     "eq_count": 0,
     "tr_count": 0,
-    "search_query": "동백제니스(부산) 부산 피부과 홈페이지",
-    "url_status": "need_search"
+    "search_query": "",
+    "url_status": "not_found"
   },
   {
     "no": 40,
@@ -626,7 +634,7 @@
     "in_db": true,
     "eq_count": 0,
     "tr_count": 0,
-    "search_query": "디에이성형외과의원 강남 피부과 홈페이지",
+    "search_query": "",
     "url_status": "confirmed"
   },
   {
@@ -636,13 +644,14 @@
     "region": "일산",
     "address": "경기도 고양시 일산서구 호수로 817(대화동) 현대백화점 9층",
     "status": "정상",
-    "website": "",
-    "phase": "FIND_URL",
+    "website": "https://maylin.co.kr/",
+    "phase": "CRAWL",
     "in_db": false,
     "eq_count": 0,
     "tr_count": 0,
-    "search_query": "메이린일산 일산 피부과 홈페이지",
-    "url_status": "need_search"
+    "search_query": "",
+    "url_status": "confirmed",
+    "note": "메이린 브랜드 공식 사이트 (지점별 개별 페이지 없음)"
   },
   {
     "no": 44,
@@ -651,13 +660,13 @@
     "region": "부산",
     "address": "부산광역시 부산진구 서면로68번길 52 6층",
     "status": "정상",
-    "website": "",
-    "phase": "FIND_URL",
+    "website": "http://innoutclinic.co.kr/",
+    "phase": "CRAWL",
     "in_db": false,
     "eq_count": 0,
     "tr_count": 0,
-    "search_query": "인앤아웃의원(부산) 부산 피부과 홈페이지",
-    "url_status": "need_search"
+    "search_query": "",
+    "url_status": "confirmed"
   },
   {
     "no": 45,
@@ -666,13 +675,13 @@
     "region": "성남",
     "address": "경기도 성남시 수정구 위례광장로300 위례중앙역 중앙타워 704호",
     "status": "정상",
-    "website": null,
-    "phase": "FIND_URL",
+    "website": "https://labeauty.kr/",
+    "phase": "CRAWL",
     "in_db": true,
     "eq_count": 0,
     "tr_count": 0,
-    "search_query": "라뷰티의원 성남 피부과 홈페이지",
-    "url_status": "need_search"
+    "search_query": "",
+    "url_status": "confirmed"
   },
   {
     "no": 46,
@@ -696,13 +705,13 @@
     "region": "광주",
     "address": "광주광역시 남구 대남대로223번길 10(주월동, 양우 내안애 프레스티지) 112동 2층 205호",
     "status": "정상",
-    "website": "",
-    "phase": "FIND_URL",
+    "website": "http://velvety.co.kr/",
+    "phase": "CRAWL",
     "in_db": false,
     "eq_count": 0,
     "tr_count": 0,
-    "search_query": "벨버티의원(광주) 광주 피부과 홈페이지",
-    "url_status": "need_search"
+    "search_query": "",
+    "url_status": "confirmed"
   },
   {
     "no": 48,
@@ -711,13 +720,13 @@
     "region": "광주",
     "address": "광주광역시 광산구 풍영로230번길 22 2층3층",
     "status": "정상",
-    "website": "",
-    "phase": "FIND_URL",
+    "website": "http://www.reev.co.kr/",
+    "phase": "CRAWL",
     "in_db": false,
     "eq_count": 0,
     "tr_count": 0,
-    "search_query": "청담리브의원(광주) 광주 피부과 홈페이지",
-    "url_status": "need_search"
+    "search_query": "",
+    "url_status": "confirmed"
   },
   {
     "no": 49,
@@ -741,13 +750,13 @@
     "region": "청담",
     "address": "서울특별시 강남구 도산대로435 2, 6층",
     "status": "정상",
-    "website": "",
-    "phase": "FIND_URL",
+    "website": "http://www.escheongdam.co.kr/",
+    "phase": "CRAWL",
     "in_db": false,
     "eq_count": 0,
     "tr_count": 0,
-    "search_query": "이에스청담의원(청담) 청담 피부과 홈페이지",
-    "url_status": "need_search"
+    "search_query": "",
+    "url_status": "confirmed"
   },
   {
     "no": 51,
@@ -756,13 +765,14 @@
     "region": "부산",
     "address": "부산광역시 수영구 광남로 211 1층",
     "status": "정상",
-    "website": "",
-    "phase": "FIND_URL",
+    "website": "https://dday.clinic/",
+    "phase": "CRAWL",
     "in_db": false,
     "eq_count": 0,
     "tr_count": 0,
-    "search_query": "디데이의원(부산) 부산 피부과 홈페이지",
-    "url_status": "need_search"
+    "search_query": "",
+    "url_status": "confirmed",
+    "note": "광안점: https://www.ddayclinic.com"
   },
   {
     "no": 52,
@@ -771,13 +781,13 @@
     "region": "울산",
     "address": "울산광역시 남구 남산로354번길 26",
     "status": "정상",
-    "website": "",
-    "phase": "FIND_URL",
+    "website": "http://ujh.co.kr/",
+    "phase": "CRAWL",
     "in_db": false,
     "eq_count": 0,
     "tr_count": 0,
-    "search_query": "울산제일병원 울산 피부과 홈페이지",
-    "url_status": "need_search"
+    "search_query": "",
+    "url_status": "confirmed"
   },
   {
     "no": 53,
@@ -806,8 +816,8 @@
     "in_db": false,
     "eq_count": 0,
     "tr_count": 0,
-    "search_query": "강남수의원(대구) 대구 피부과 홈페이지",
-    "url_status": "need_search"
+    "search_query": "",
+    "url_status": "not_found"
   },
   {
     "no": 55,
@@ -817,12 +827,13 @@
     "address": "부산광역시 남구 진남로70번길 1(대연동) 401호",
     "status": "정상",
     "website": "",
-    "phase": "FIND_URL",
+    "phase": "N/A",
     "in_db": false,
     "eq_count": 0,
     "tr_count": 0,
-    "search_query": "(주)메이코리아 부산 피부과 홈페이지",
-    "url_status": "need_search"
+    "search_query": "",
+    "url_status": "not_applicable",
+    "note": "#37과 동일 (의료기기 유통회사)"
   },
   {
     "no": 56,
@@ -831,13 +842,13 @@
     "region": "논현",
     "address": "서울특별시 강남구 논현동 201-12 ES 타워 8층",
     "status": "정상",
-    "website": "https://blog.naver.com/femaleuro",
-    "phase": "FIND_URL_THEN_CRAWL",
+    "website": "https://pienaclinic.co.kr/",
+    "phase": "CRAWL",
     "in_db": true,
     "eq_count": 0,
     "tr_count": 0,
-    "search_query": "피어나의원 논현 피부과 홈페이지",
-    "url_status": "blog_sns"
+    "search_query": "",
+    "url_status": "confirmed"
   },
   {
     "no": 57,
@@ -866,8 +877,8 @@
     "in_db": true,
     "eq_count": 0,
     "tr_count": 0,
-    "search_query": "크리미의원(유성) 유성 피부과 홈페이지",
-    "url_status": "blog_sns"
+    "search_query": "",
+    "url_status": "blog_only"
   },
   {
     "no": 59,
@@ -896,8 +907,8 @@
     "in_db": false,
     "eq_count": 0,
     "tr_count": 0,
-    "search_query": "봉선화의원(청주) 청주 피부과 홈페이지",
-    "url_status": "need_search"
+    "search_query": "",
+    "url_status": "not_found"
   },
   {
     "no": 61,
@@ -906,13 +917,14 @@
     "region": "대구",
     "address": "대구광역시 중구 동성로5길 26 동원빌딩 5층",
     "status": "S/N 미확인",
-    "website": "",
-    "phase": "FIND_URL",
+    "website": "https://cd-fnb.co.kr/",
+    "phase": "CRAWL",
     "in_db": false,
     "eq_count": 0,
     "tr_count": 0,
-    "search_query": "청담에프앤비의원(대구) 대구 피부과 홈페이지",
-    "url_status": "need_search"
+    "search_query": "",
+    "url_status": "confirmed",
+    "note": "청담FnB의원"
   },
   {
     "no": 62,
@@ -941,8 +953,8 @@
     "in_db": true,
     "eq_count": 0,
     "tr_count": 0,
-    "search_query": "르벨의원 청담 피부과 홈페이지",
-    "url_status": "blog_sns"
+    "search_query": "",
+    "url_status": "blog_only"
   },
   {
     "no": 64,
@@ -966,13 +978,13 @@
     "region": "홍대",
     "address": "서울시 마포구 양화로 151, 5~7층 (동교동, 욱도빌딩)",
     "status": "S/N 미확인",
-    "website": "",
-    "phase": "FIND_URL",
+    "website": "https://hongdae.shinebeam.co.kr/",
+    "phase": "CRAWL",
     "in_db": false,
     "eq_count": 0,
     "tr_count": 0,
-    "search_query": "샤인빔의원 홍대 홍대 피부과 홈페이지",
-    "url_status": "need_search"
+    "search_query": "",
+    "url_status": "confirmed"
   },
   {
     "no": 66,
@@ -981,13 +993,13 @@
     "region": "옥수",
     "address": "서울특별시 성동구 독서당로 223 래미안 옥수 리버젠 상가 지 211호",
     "status": "S/N 미확인",
-    "website": null,
-    "phase": "FIND_URL",
+    "website": "https://www.sswellclinic.com/",
+    "phase": "CRAWL",
     "in_db": true,
     "eq_count": 0,
     "tr_count": 0,
-    "search_query": "삼성웰내과의원 옥수 피부과 홈페이지",
-    "url_status": "need_search"
+    "search_query": "",
+    "url_status": "confirmed"
   },
   {
     "no": 67,
@@ -996,13 +1008,13 @@
     "region": "미확인",
     "address": "(검색 미확인)",
     "status": "S/N 미확인",
-    "website": null,
+    "website": "",
     "phase": "FIND_URL",
     "in_db": true,
     "eq_count": 0,
     "tr_count": 0,
-    "search_query": "나드라의원 미확인 피부과 홈페이지",
-    "url_status": "need_search"
+    "search_query": "",
+    "url_status": "not_found"
   },
   {
     "no": 68,
@@ -1011,13 +1023,13 @@
     "region": "분당",
     "address": "경기 성남시 분당구 황새울로342번길 21, 대정빌딩 5층",
     "status": "S/N 미확인",
-    "website": "http://pf.kakao.com/_xbsWQj",
-    "phase": "FIND_URL_THEN_CRAWL",
+    "website": "http://resetclinics.co.kr/",
+    "phase": "CRAWL",
     "in_db": true,
     "eq_count": 0,
     "tr_count": 0,
-    "search_query": "리셋의원 분당 피부과 홈페이지",
-    "url_status": "blog_sns"
+    "search_query": "",
+    "url_status": "confirmed"
   },
   {
     "no": 69,
@@ -1026,13 +1038,13 @@
     "region": "울산",
     "address": "울산광역시 남구 삼산로 266, 7층",
     "status": "중고",
-    "website": "",
-    "phase": "FIND_URL",
+    "website": "https://ulsansamsan.bettermeclinic.co.kr/",
+    "phase": "CRAWL",
     "in_db": false,
     "eq_count": 0,
     "tr_count": 0,
-    "search_query": "울산베러미의원 울산 피부과 홈페이지",
-    "url_status": "need_search"
+    "search_query": "",
+    "url_status": "confirmed"
   },
   {
     "no": 70,
