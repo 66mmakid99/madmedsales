@@ -1,0 +1,76 @@
+name: MADMEDSALES CI
+
+on:
+  push:
+    branches: [master, main, develop]
+  pull_request:
+    branches: [master, main]
+
+jobs:
+  ci:
+    name: build · typecheck · audit
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      # ── Step 1: shared 패키지 먼저 빌드 (다른 앱의 의존성) ────────
+      - name: Build shared package
+        run: npm run build --workspace=packages/shared
+
+      # ── Step 2: TypeScript 타입 체크 (각 앱) ───────────────────────
+      - name: TypeScript — engine
+        run: npx tsc --noEmit
+        working-directory: apps/engine
+
+      - name: TypeScript — admin
+        run: npx tsc --noEmit
+        working-directory: apps/admin
+
+      # ── Step 3: engine Wrangler 드라이런 빌드 ──────────────────────
+      - name: Build engine (wrangler dry-run)
+        run: npm run build
+        working-directory: apps/engine
+        env:
+          # dry-run은 CF 인증 불필요. 빌드 아티팩트만 생성
+          CLOUDFLARE_API_TOKEN: placeholder
+
+      # ── Step 4: admin Vite 빌드 ────────────────────────────────────
+      - name: Build admin (vite)
+        run: npm run build
+        working-directory: apps/admin
+        env:
+          VITE_SUPABASE_URL: https://placeholder.supabase.co
+          VITE_SUPABASE_ANON_KEY: placeholder_key
+          VITE_API_URL: https://api.placeholder.com
+
+      # ── Step 5: Security Audit ──────────────────────────────────────
+      - name: npm audit (high+critical only)
+        run: npm audit --audit-level=high
+        continue-on-error: false
+
+      # ── 결과 요약 ──────────────────────────────────────────────────
+      - name: Summary
+        if: always()
+        run: |
+          echo "## MADMEDSALES CI 결과" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "| 단계 | 내용 |" >> $GITHUB_STEP_SUMMARY
+          echo "|------|------|" >> $GITHUB_STEP_SUMMARY
+          echo "| shared build | packages/shared tsc |" >> $GITHUB_STEP_SUMMARY
+          echo "| engine tsc | apps/engine TypeScript |" >> $GITHUB_STEP_SUMMARY
+          echo "| admin tsc | apps/admin TypeScript |" >> $GITHUB_STEP_SUMMARY
+          echo "| engine wrangler | dry-run 빌드 |" >> $GITHUB_STEP_SUMMARY
+          echo "| admin vite | 정적 빌드 |" >> $GITHUB_STEP_SUMMARY
+          echo "| npm audit | 보안 취약점 |" >> $GITHUB_STEP_SUMMARY
