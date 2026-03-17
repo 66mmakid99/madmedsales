@@ -46,7 +46,10 @@ import {
 import { mergeAndDeduplicate } from './v5/merge-dedup.js';
 import puppeteer from 'puppeteer';
 import { needsModalCrawl, crawlDoctorModals } from './v5/doctor-modal.js';
-import type { AnalysisResult, CrawlPageResult, ScreenshotEntry, ValidationResult, HospitalAnalysisV54, OcrResult, ContactInfo, MedicalDeviceV54, DeviceDictionaryEntry } from './v5/types.js';
+import { extractDoctorPhotosFromPage } from './v5/doctor-photo.js';
+import { normalizeDoctorsBatch } from './v5/doctor-normalize.js';
+import { enrichDoctorBatch } from './v5/doctor-enrich.js';
+import type { AnalysisResult, CrawlPageResult, ScreenshotEntry, ValidationResult, HospitalAnalysisV54, OcrResult, ContactInfo, MedicalDeviceV54, DeviceDictionaryEntry, StructuredAcademic } from './v5/types.js';
 import { detectSiteType, classifyCrawlError } from './v5/site-fingerprint.js';
 import type { SiteFingerprint, CrawlFailReason } from './v5/site-fingerprint.js';
 import { detectTorrRf } from './v5/torr-detector.js';
@@ -64,6 +67,49 @@ import { Document, Packer, Paragraph, TextRun, Table, TableRow, TableCell, Width
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 dotenv.config({ path: path.resolve(__dirname, '.env'), override: true });
 
+// [v5.7] Windows Puppeteer EBUSY 에러 무시 (프로세스 종료 시 temp 디렉토리 삭제 실패)
+process.on('uncaughtException', (err: NodeJS.ErrnoException) => {
+  if (err.code === 'EBUSY' && err.path?.includes('puppeteer')) {
+    console.log(`  ⚠️ Puppeteer temp cleanup 무시: ${err.path}`);
+    return;
+  }
+  // [v5.8] EPIPE는 stdout 파이프 닫힘 — 로그 없이 무시 (console.log → EPIPE → 무한루프 방지)
+  if (err.code === 'EPIPE') return;
+  // [v5.8] 네트워크/타임아웃 에러는 크래시 방지 — 로그만 남기고 계속 진행
+  if (err.code === 'ETIMEDOUT' || err.code === 'ECONNRESET' || err.code === 'ECONNREFUSED'
+    || err.code === 'ERR_SOCKET_CONNECTION_TIMEOUT'
+    || err.message?.includes('socket hang up') || err.message?.includes('timeout')) {
+    console.log(`  ⚠️ 네트워크 에러 무시 (계속 진행): ${err.code || err.message}`);
+    return;
+  }
+  console.error('Fatal uncaught exception:', err);
+  process.exit(1);
+});
+
+// [v5.8] unhandledRejection 방어 — 비동기 에러로 인한 갑작스러운 크래시 방지
+process.on('unhandledRejection', (reason: unknown) => {
+  const msg = reason instanceof Error ? reason.message : String(reason);
+  if (msg.includes('timeout') || msg.includes('ETIMEDOUT') || msg.includes('ECONNRESET')
+    || msg.includes('socket hang up') || msg.includes('Navigation timeout')
+    || msg.includes('net::ERR_') || msg.includes('Protocol error')) {
+    console.log(`  ⚠️ unhandledRejection 무시 (계속 진행): ${msg.slice(0, 120)}`);
+    return;
+  }
+  console.error('Unhandled rejection:', reason);
+});
+
+// ============================================================
+// site_type 분류 헬퍼
+// ============================================================
+type SiteTypeLabel = 'website' | 'naver_blog' | 'other_blog';
+
+function classifySiteType(fp: SiteFingerprint | null, url: string): SiteTypeLabel {
+  if (fp?.siteType === 'naver_blog') return 'naver_blog';
+  if (/blog\.naver\.com|m\.blog\.naver\.com/i.test(url)) return 'naver_blog';
+  if (/tistory\.com|blog\.daum\.net|blog\.me/i.test(url)) return 'other_blog';
+  return 'website';
+}
+
 // ============================================================
 // 설정
 // ============================================================
@@ -72,7 +118,7 @@ const SOURCE_TAG = 'firecrawl_gemini_v5';
 const MAX_PAGES = 50;
 const DELAY_BETWEEN_HOSPITALS = 3000;
 const DELAY_BETWEEN_PAGES = 1000;
-const DELAY_BETWEEN_GEMINI = 4500;  // 무료 티어 15 RPM 대응 (4.5초 간격)
+const DELAY_BETWEEN_GEMINI = 2000;  // 무료: 4500, 유료: 2000
 const GEMINI_TIMEOUT = 90000;
 const CHUNK_SIZE = 25000;
 const MIN_PAGE_CHARS = 500;
@@ -92,6 +138,118 @@ const firecrawl = firecrawlApp as unknown as {
 };
 
 const EMPTY_RESULT: AnalysisResult = { equipments: [], treatments: [], doctors: [], events: [] };
+
+// ============================================================
+// [v5.6] 파일 로거 (콘솔 + 파일 동시 기록, UTF-8)
+// ============================================================
+const LOG_DIR = path.resolve(__dirname, '..', 'output', 'logs');
+let logStream: fs.WriteStream | null = null;
+
+function initLogger(): string {
+  fs.mkdirSync(LOG_DIR, { recursive: true });
+  const ts = new Date().toISOString().replace(/[:.]/g, '-').slice(0, 19);
+  const logPath = path.join(LOG_DIR, `run_${ts}.log`);
+  logStream = fs.createWriteStream(logPath, { encoding: 'utf8', flags: 'a' });
+  const origLog = console.log;
+  const origErr = console.error;
+  console.log = (...args: unknown[]) => {
+    const line = args.map(a => typeof a === 'string' ? a : JSON.stringify(a)).join(' ');
+    origLog(...args);
+    logStream?.write(line + '\n');
+  };
+  console.error = (...args: unknown[]) => {
+    const line = args.map(a => typeof a === 'string' ? a : JSON.stringify(a)).join(' ');
+    origErr(...args);
+    logStream?.write('[ERROR] ' + line + '\n');
+  };
+  return logPath;
+}
+
+function closeLogger(): void {
+  logStream?.end();
+  logStream = null;
+}
+
+// ============================================================
+// [v5.6] 사전 점검 (preflight)
+// ============================================================
+async function preflight(options: { skipGemini?: boolean }): Promise<boolean> {
+  console.log('\n🔍 사전 점검 시작...');
+  let allOk = true;
+
+  // 1. Supabase 연결
+  try {
+    const { error } = await supabase.from('hospitals').select('id').limit(1);
+    if (error) throw new Error(error.message);
+    console.log('  ✅ Supabase 연결 OK');
+  } catch (err) {
+    console.error(`  ❌ Supabase 연결 실패: ${err instanceof Error ? err.message : err}`);
+    allOk = false;
+  }
+
+  // 2. Firecrawl 서버 헬스체크
+  const firecrawlUrl = process.env.FIRECRAWL_API_URL || 'http://84.247.154.185:3002';
+  try {
+    const res = await fetch(firecrawlUrl, { method: 'GET', signal: AbortSignal.timeout(10000) });
+    if (!res.ok && res.status !== 404 && res.status !== 405) throw new Error(`HTTP ${res.status}`);
+    console.log(`  ✅ Firecrawl (${firecrawlUrl}) 응답 OK`);
+  } catch (err) {
+    console.error(`  ❌ Firecrawl 연결 실패: ${firecrawlUrl} 응답 없음 — ${err instanceof Error ? err.message : err}`);
+    allOk = false;
+  }
+
+  // 3. Gemini API 인증
+  if (!options.skipGemini) {
+    try {
+      const token = await getAccessToken();
+      if (!token || token.length < 10) throw new Error('토큰 길이 부족');
+      console.log(`  ✅ Gemini API 인증 OK (토큰: ${token.length}자)`);
+    } catch (err) {
+      console.error(`  ❌ Gemini API 인증 실패: ${err instanceof Error ? err.message : err}`);
+      allOk = false;
+    }
+  } else {
+    console.log('  ⏭️ Gemini 점검 스킵 (--skip-gemini)');
+  }
+
+  // 4. 디스크 공간 (output 폴더 기준)
+  try {
+    const outputDir = path.resolve(__dirname, '..', 'output');
+    fs.mkdirSync(outputDir, { recursive: true });
+    const testFile = path.join(outputDir, '.disk-check-tmp');
+    fs.writeFileSync(testFile, 'test');
+    fs.unlinkSync(testFile);
+    console.log('  ✅ 디스크 쓰기 OK');
+  } catch (err) {
+    console.error(`  ❌ 디스크 쓰기 실패: ${err instanceof Error ? err.message : err}`);
+    allOk = false;
+  }
+
+  if (allOk) {
+    console.log('✅ 사전 점검 통과\n');
+  } else {
+    console.error('\n🛑 사전 점검 실패 — 위의 에러를 해결 후 재실행하세요.');
+  }
+  return allOk;
+}
+
+// ============================================================
+// [v5.6] --skip-done: 완료된 병원 스킵
+// ============================================================
+async function getCompletedHospitalIds(): Promise<Set<string>> {
+  const skipStatuses = ['pass', 'partial', 'completed'];
+  const { data, error } = await supabase
+    .from('scv_crawl_validations')
+    .select('hospital_id, status')
+    .in('status', skipStatuses);
+  if (error || !data) return new Set();
+  return new Set(data.map(d => d.hospital_id));
+}
+
+// ============================================================
+// [v5.6] 연속 에러 카운터
+// ============================================================
+const MAX_CONSECUTIVE_ERRORS = 5;
 
 // ============================================================
 // 크롤 대상 빌드
@@ -192,11 +350,74 @@ function buildTargets(): CrawlTarget[] {
   return existing;
 }
 
+// [v5.7] batch-selector.ts가 생성한 targets.json 로드
+function loadExternalTargets(inputPath: string): CrawlTarget[] {
+  const absPath = path.resolve(inputPath);
+  if (!fs.existsSync(absPath)) {
+    console.error(`❌ --input 파일 없음: ${absPath}`);
+    process.exit(1);
+  }
+  const raw = JSON.parse(fs.readFileSync(absPath, 'utf-8'));
+  // batch-selector 형식: { targets: [{ hospitalId, name, region, url, ... }] }
+  const batchTargets: Array<{ hospitalId: string; name: string; region: string | null; url: string }> =
+    Array.isArray(raw) ? raw : (raw.targets ?? []);
+
+  const targets: CrawlTarget[] = batchTargets.map((t, i) => ({
+    no: i + 1,
+    name: t.name,
+    region: t.region ?? '',
+    url: t.url,
+    source: 'batch_selector',
+  }));
+
+  console.log(`📋 외부 입력: ${absPath} → ${targets.length}개 대상`);
+  return targets;
+}
+
 // ============================================================
 // Step 1: URL 수집 (v5 확대)
 // ============================================================
+async function collectBlogUrls(blogMainUrl: string, name: string): Promise<{ urls: string[]; credits: number }> {
+  console.log('  📝 네이버 블로그 감지 — scrapeUrl 전략');
+  let credits = 0;
+  const urls: string[] = [blogMainUrl];
+
+  try {
+    const mobileMain = blogMainUrl.replace('blog.naver.com', 'm.blog.naver.com');
+    const result = await firecrawl.v1.scrapeUrl(mobileMain, {
+      formats: ['markdown'],
+      waitFor: 5000,
+    });
+    credits += 1;
+    const md = (result.markdown as string) || '';
+
+    const postPattern = /https?:\/\/(?:m\.)?blog\.naver\.com\/[^/\s)]+\/(\d{9,})/g;
+    const matches = md.matchAll(postPattern);
+    const postUrls = [...new Set([...matches].map(m => m[0]))];
+
+    const normalizedPosts = postUrls.map(u => u.replace('m.blog.naver.com', 'blog.naver.com'));
+    urls.push(...normalizedPosts);
+    console.log(`  📄 블로그 포스트 ${normalizedPosts.length}개 발견`);
+  } catch (err) {
+    console.log(`  ⚠️ 블로그 메인 scrape 실패: ${err}`);
+  }
+
+  const MAX_BLOG_POSTS = 10;
+  if (urls.length > MAX_BLOG_POSTS + 1) {
+    console.log(`  ✂️ ${urls.length - 1}개 → 최근 ${MAX_BLOG_POSTS}개 포스트로 제한`);
+    return { urls: urls.slice(0, MAX_BLOG_POSTS + 1), credits };
+  }
+
+  return { urls: [...new Set(urls)], credits };
+}
+
 async function collectUrls(mainUrl: string, name: string): Promise<{ urls: string[]; credits: number }> {
   let credits = 0;
+
+  // ★ 네이버 블로그: mapUrl 대신 메인 scrape → 포스트 링크 추출
+  if (/blog\.naver\.com/i.test(mainUrl)) {
+    return await collectBlogUrls(mainUrl, name);
+  }
 
   // 1차: mapUrl (limit: 100)
   let urls: string[] = [mainUrl];
@@ -365,9 +586,11 @@ async function crawlAndSave(hospitalId: string, name: string, mainUrl: string): 
   let credits = mapCredits;
 
   // 기존 crawl_pages 삭제
-  await supabase.from('hospital_crawl_pages').delete().eq('hospital_id', hospitalId);
+  await supabase.from('scv_crawl_pages').delete().eq('hospital_id', hospitalId);
 
-  console.log(`  🔄 ${urls.length}페이지 크롤 (markdown + screenshot × 4)...`);
+  const FIRECRAWL_CONCURRENCY = 3;
+  const totalBatches = Math.ceil(urls.length / FIRECRAWL_CONCURRENCY);
+  console.log(`  🔄 ${urls.length}페이지 크롤 (markdown + screenshot × 4, ${FIRECRAWL_CONCURRENCY}개 병렬)...`);
 
   // [v5.4] 콘텐츠 해시 중복 감지
   const seenHashes = new Set<string>();
@@ -375,85 +598,103 @@ async function crawlAndSave(hospitalId: string, name: string, mainUrl: string): 
   let siteFingerprint: SiteFingerprint | null = null;
   const failedUrls: string[] = [];
 
-  for (const targetUrl of urls) {
-    const shortUrl = targetUrl.length > 70 ? targetUrl.substring(0, 70) + '...' : targetUrl;
-    console.log(`    → ${shortUrl}`);
+  for (let bi = 0; bi < urls.length; bi += FIRECRAWL_CONCURRENCY) {
+    const batch = urls.slice(bi, bi + FIRECRAWL_CONCURRENCY);
+    const batchNum = Math.floor(bi / FIRECRAWL_CONCURRENCY) + 1;
+    console.log(`  [OPTIMIZE] Firecrawl parallel batch ${batchNum}/${totalBatches} (${batch.length} pages)`);
 
-    const { markdown: md, rawHtml, defaultScreenshot, actionScreenshots, success } =
-      await scrapePageWithActions(targetUrl);
-    credits += 1;
+    // 병렬 scrape
+    const scrapeResults = await Promise.allSettled(
+      batch.map(url => scrapePageWithActions(url)),
+    );
+    credits += batch.length;
 
-    if (!success) { console.log(`    ⚠️ 스킵`); failedUrls.push(targetUrl); continue; }
+    // 순차 후처리 (해시 중복, 스크린샷, DB 저장)
+    for (let ri = 0; ri < batch.length; ri++) {
+      const targetUrl = batch[ri];
+      const shortUrl = targetUrl.length > 70 ? targetUrl.substring(0, 70) + '...' : targetUrl;
+      console.log(`    → ${shortUrl}`);
 
-    // [v5.4 작업3] 첫 페이지에서 사이트 유형 핑거프린팅
-    if (siteFingerprint === null && rawHtml) {
-      siteFingerprint = detectSiteType(rawHtml, targetUrl);
-      console.log(`    🏷️ 사이트 유형: ${siteFingerprint.siteType} (${Math.round(siteFingerprint.confidence * 100)}%) [${siteFingerprint.signals.join(', ')}]`);
-      if (siteFingerprint.traits.length > 0) {
-        console.log(`    📐 특성: ${siteFingerprint.traits.join(', ')}`);
+      const settled = scrapeResults[ri];
+      if (settled.status === 'rejected') {
+        console.log(`    ⚠️ 스킵 (${String(settled.reason).substring(0, 80)})`);
+        failedUrls.push(targetUrl);
+        continue;
       }
-    }
 
-    // [v5.4] 콘텐츠 해시 중복 감지
-    const hash = contentHash(md);
-    if (seenHashes.has(hash) && md.length > 200) {
-      hashSkipCount++;
-      console.log(`    🔄 콘텐츠 해시 동일 → SPA 중복 스킵`);
-      continue;
-    }
-    seenHashes.add(hash);
+      const { markdown: md, rawHtml, defaultScreenshot, actionScreenshots, success } = settled.value;
+      if (!success) { console.log(`    ⚠️ 스킵`); failedUrls.push(targetUrl); continue; }
 
-    const pageType = classifyPageType(targetUrl, mainUrl);
-
-    // 다중 스크린샷 처리 → JSONB 배열
-    const positions = ['popup', 'top', 'mid', 'bottom'];
-    const screenshotEntries: ScreenshotEntry[] = [];
-    const screenshotBuffers: Buffer[] = [];
-
-    for (let si = 0; si < actionScreenshots.length && si < positions.length; si++) {
-      const buf = await downloadScreenshotUrl(actionScreenshots[si]);
-      if (buf) {
-        const storageUrl = await uploadScreenshot(hospitalId, pageType, targetUrl, buf, positions[si]);
-        if (storageUrl) {
-          screenshotEntries.push({ url: storageUrl, position: positions[si], order: si });
-          screenshotBuffers.push(buf);
+      // [v5.4 작업3] 첫 페이지에서 사이트 유형 핑거프린팅
+      if (siteFingerprint === null && rawHtml) {
+        siteFingerprint = detectSiteType(rawHtml, targetUrl);
+        console.log(`    🏷️ 사이트 유형: ${siteFingerprint.siteType} (${Math.round(siteFingerprint.confidence * 100)}%) [${siteFingerprint.signals.join(', ')}]`);
+        if (siteFingerprint.traits.length > 0) {
+          console.log(`    📐 특성: ${siteFingerprint.traits.join(', ')}`);
         }
       }
-    }
 
-    // 기본 screenshot도 보관 (actions 실패 시 fallback)
-    if (screenshotEntries.length === 0 && defaultScreenshot) {
-      const buf = await downloadScreenshotUrl(defaultScreenshot);
-      if (buf) {
-        const storageUrl = await uploadScreenshot(hospitalId, pageType, targetUrl, buf, 'default');
-        if (storageUrl) {
-          screenshotEntries.push({ url: storageUrl, position: 'default', order: 0 });
-          screenshotBuffers.push(buf);
+      // [v5.4] 콘텐츠 해시 중복 감지
+      const hash = contentHash(md);
+      if (seenHashes.has(hash) && md.length > 200) {
+        hashSkipCount++;
+        console.log(`    🔄 콘텐츠 해시 동일 → SPA 중복 스킵`);
+        continue;
+      }
+      seenHashes.add(hash);
+
+      const pageType = classifyPageType(targetUrl, mainUrl);
+
+      // 다중 스크린샷 처리 → JSONB 배열
+      const positions = ['popup', 'top', 'mid', 'bottom'];
+      const screenshotEntries: ScreenshotEntry[] = [];
+      const screenshotBuffers: Buffer[] = [];
+
+      for (let si = 0; si < actionScreenshots.length && si < positions.length; si++) {
+        const buf = await downloadScreenshotUrl(actionScreenshots[si]);
+        if (buf) {
+          const storageUrl = await uploadScreenshot(hospitalId, pageType, targetUrl, buf, positions[si]);
+          if (storageUrl) {
+            screenshotEntries.push({ url: storageUrl, position: positions[si], order: si });
+            screenshotBuffers.push(buf);
+          }
         }
       }
-    }
 
-    // DB 저장 (screenshot_url은 JSONB 배열)
-    const { error: insertErr } = await supabase.from('hospital_crawl_pages').insert({
-      hospital_id: hospitalId,
-      url: targetUrl,
-      page_type: pageType,
-      markdown: md,
-      char_count: md.length,
-      screenshot_url: screenshotEntries.length > 0 ? JSON.stringify(screenshotEntries) : '[]',
-      analysis_method: 'pending',
-      tenant_id: TENANT_ID,
-      gemini_analyzed: false,
-    });
+      // 기본 screenshot도 보관 (actions 실패 시 fallback)
+      if (screenshotEntries.length === 0 && defaultScreenshot) {
+        const buf = await downloadScreenshotUrl(defaultScreenshot);
+        if (buf) {
+          const storageUrl = await uploadScreenshot(hospitalId, pageType, targetUrl, buf, 'default');
+          if (storageUrl) {
+            screenshotEntries.push({ url: storageUrl, position: 'default', order: 0 });
+            screenshotBuffers.push(buf);
+          }
+        }
+      }
 
-    if (insertErr) {
-      console.log(`    ⚠️ DB 저장 실패: ${insertErr.message}`);
-    } else {
-      pages.push({
-        url: targetUrl, pageType, markdown: md, charCount: md.length,
-        screenshotEntries, screenshotBuffers,
+      // DB 저장 (screenshot_url은 JSONB 배열)
+      const { error: insertErr } = await supabase.from('scv_crawl_pages').insert({
+        hospital_id: hospitalId,
+        url: targetUrl,
+        page_type: pageType,
+        markdown: md,
+        char_count: md.length,
+        screenshot_url: screenshotEntries.length > 0 ? JSON.stringify(screenshotEntries) : '[]',
+        analysis_method: 'pending',
+        tenant_id: TENANT_ID,
+        gemini_analyzed: false,
       });
-      console.log(`    ✅ ${md.length.toLocaleString()}자 [${pageType}] 📸${screenshotEntries.length}장`);
+
+      if (insertErr) {
+        console.log(`    ⚠️ DB 저장 실패: ${insertErr.message}`);
+      } else {
+        pages.push({
+          url: targetUrl, pageType, markdown: md, charCount: md.length,
+          screenshotEntries, screenshotBuffers,
+        });
+        console.log(`    ✅ ${md.length.toLocaleString()}자 [${pageType}] 📸${screenshotEntries.length}장`);
+      }
     }
 
     await new Promise(r => setTimeout(r, DELAY_BETWEEN_PAGES));
@@ -1409,7 +1650,7 @@ async function supplementaryCrawl(
         }
 
         // DB 저장
-        await supabase.from('hospital_crawl_pages').insert({
+        await supabase.from('scv_crawl_pages').insert({
           hospital_id: hospitalId, url, page_type: type,
           markdown: md, char_count: md.length,
           screenshot_url: JSON.stringify(screenshotEntries),
@@ -1425,7 +1666,7 @@ async function supplementaryCrawl(
         geminiCalls += calls;
         analyses.push(analysisResult);
 
-        await supabase.from('hospital_crawl_pages')
+        await supabase.from('scv_crawl_pages')
           .update({ analysis_method: method }).eq('hospital_id', hospitalId).eq('url', url);
 
         const items = analysisResult.equipments.length + analysisResult.treatments.length +
@@ -1840,14 +2081,17 @@ async function onePageImageEnhancement(
 async function validateCoverage(
   hospitalId: string, name: string,
   analysis: AnalysisResult, allMarkdown: string,
+  siteType?: string,
 ): Promise<ValidationResult> {
-  console.log(`  🔍 자동 검증 (Gemini 커버리지 체크)...`);
+  const isBlog = siteType === 'naver_blog' || siteType === 'other_blog';
+  console.log(`  🔍 자동 검증 (Gemini 커버리지 체크${isBlog ? ' — 블로그 가중치' : ''})...`);
 
   const prompt = buildValidationPrompt(
     allMarkdown,
     analysis.equipments.map(e => e.name),
     analysis.treatments.map(t => t.name),
     analysis.doctors.map(d => d.name),
+    siteType,
   );
 
   try {
@@ -1896,18 +2140,23 @@ async function validateCoverage(
     const drScore = cs.doctor ?? 0;
 
     // -1은 "원본에 해당 정보 없음" → overall에서 제외
+    // 블로그: 장비 15%, 시술 45%, 의사 25%, 나머지(학술) 15% → 장비+시술+의사 = 85% 비례
+    // 일반: 장비 30%, 시술 40%, 의사 30%
+    const wEq = isBlog ? 15 : 30;
+    const wTr = isBlog ? 45 : 40;
+    const wDr = isBlog ? 25 : 30;
     let weightSum = 0;
     let scoreSum = 0;
-    if (eqScore >= 0) { weightSum += 30; scoreSum += eqScore * 30; }
-    if (trScore >= 0) { weightSum += 40; scoreSum += trScore * 40; }
-    if (drScore >= 0) { weightSum += 30; scoreSum += drScore * 30; }
+    if (eqScore >= 0) { weightSum += wEq; scoreSum += eqScore * wEq; }
+    if (trScore >= 0) { weightSum += wTr; scoreSum += trScore * wTr; }
+    if (drScore >= 0) { weightSum += wDr; scoreSum += drScore * wDr; }
 
     const overall = weightSum > 0 ? Math.round(scoreSum / weightSum) : 0;
     cs.overall = overall;
-    // DB에 저장할 때 -1은 0으로 처리
-    const eqDb = eqScore >= 0 ? eqScore : 0;
-    const trDb = trScore >= 0 ? trScore : 0;
-    const drDb = drScore >= 0 ? drScore : 0;
+    // DB에 저장할 때 -1은 0으로 처리, 소수점은 정수로 변환 (integer 컬럼)
+    const eqDb = eqScore >= 0 ? Math.round(eqScore) : 0;
+    const trDb = trScore >= 0 ? Math.round(trScore) : 0;
+    const drDb = drScore >= 0 ? Math.round(drScore) : 0;
 
     if (eqScore < 0) console.log(`    ⚠️ 장비: 원본에 정보 없음 (판정 제외)`);
     if (trScore < 0) console.log(`    ⚠️ 시술: 원본에 정보 없음 (판정 제외)`);
@@ -1919,7 +2168,7 @@ async function validateCoverage(
     else status = 'fail';
 
     // DB 저장
-    await supabase.from('hospital_crawl_validations').upsert({
+    const upsertData: Record<string, unknown> = {
       hospital_id: hospitalId,
       crawl_version: 'v5.4',
       equipment_coverage: eqDb,
@@ -1932,8 +2181,17 @@ async function validateCoverage(
       issues: validation.issues || [],
       status,
       tenant_id: TENANT_ID,
-      created_at: new Date().toISOString(),
-    }, { onConflict: 'hospital_id,crawl_version' });
+      validated_at: new Date().toISOString(),
+    };
+    // site_type + 가중치 메타 저장
+    if (siteType) {
+      upsertData.validation_result = {
+        site_type: siteType,
+        weights: isBlog ? { equipment: 15, treatment: 45, doctor: 25 } : { equipment: 30, treatment: 40, doctor: 30 },
+      };
+    }
+    const { error: upsertErr } = await supabase.from('scv_crawl_validations').upsert(upsertData, { onConflict: 'hospital_id,crawl_version' });
+    if (upsertErr) console.log(`  ⚠️ validation upsert 실패: ${upsertErr.message}`);
 
     validation._status = status;
     validation.coverage_score = cs;
@@ -1993,16 +2251,16 @@ async function reanalyzeWithHints(
 // DB 저장
 // ============================================================
 async function saveAnalysis(hospitalId: string, analysis: AnalysisResult & { _v54?: HospitalAnalysisV54 }, sourceUrl: string): Promise<void> {
-  await supabase.from('hospital_equipments').delete().eq('hospital_id', hospitalId);
-  await supabase.from('hospital_treatments').delete().eq('hospital_id', hospitalId);
-  await supabase.from('hospital_doctors').delete().eq('hospital_id', hospitalId);
-  await supabase.from('hospital_events').delete().eq('hospital_id', hospitalId);
+  await supabase.from('sales_hospital_equipments').delete().eq('hospital_id', hospitalId);
+  await supabase.from('sales_hospital_treatments').delete().eq('hospital_id', hospitalId);
+  await supabase.from('sales_hospital_doctors').delete().eq('hospital_id', hospitalId);
+  await supabase.from('sales_hospital_events').delete().eq('hospital_id', hospitalId);
 
   // [작업4] medical_devices 테이블 저장 (기존 hospital_equipments와 병행)
   const v54 = analysis._v54;
   const medDevices = v54?.medical_devices || [];
   if (medDevices.length > 0) {
-    const { error: delErr } = await supabase.from('medical_devices').delete().eq('hospital_id', hospitalId);
+    const { error: delErr } = await supabase.from('sales_medical_devices').delete().eq('hospital_id', hospitalId);
     if (delErr) { console.log(`  ⚠️ medical_devices 테이블 없음 (마이그레이션 023 미적용): ${delErr.message}`); }
     const deviceRows = medDevices.map(d => ({
       hospital_id: hospitalId,
@@ -2014,7 +2272,7 @@ async function saveAnalysis(hospitalId: string, analysis: AnalysisResult & { _v5
       source: d.source || 'text',
       confidence: 'confirmed',
     }));
-    const { error: devErr } = await supabase.from('medical_devices').insert(deviceRows);
+    const { error: devErr } = await supabase.from('sales_medical_devices').insert(deviceRows);
     if (devErr) console.log(`  ⚠️ medical_devices INSERT: ${devErr.message}`);
   }
 
@@ -2025,7 +2283,7 @@ async function saveAnalysis(hospitalId: string, analysis: AnalysisResult & { _v5
       equipment_category: eq.category || 'other', manufacturer: eq.manufacturer || null,
       source: SOURCE_TAG,
     }));
-    const { error } = await supabase.from('hospital_equipments').insert(rows);
+    const { error } = await supabase.from('sales_hospital_equipments').insert(rows);
     if (error) console.log(`  ⚠️ 장비 INSERT: ${error.message}`);
   }
 
@@ -2036,13 +2294,14 @@ async function saveAnalysis(hospitalId: string, analysis: AnalysisResult & { _v5
       price_note: tr.price_note || null, is_promoted: tr.is_promoted || false,
       combo_with: tr.combo_with || null, source: SOURCE_TAG,
     }));
-    const { error } = await supabase.from('hospital_treatments').insert(rows);
+    const { error } = await supabase.from('sales_hospital_treatments').insert(rows);
     if (error) console.log(`  ⚠️ 시술 INSERT: ${error.message}`);
   }
 
   if (analysis.doctors.length > 0) {
-    const toArray = (s: string | undefined | null): string[] => {
+    const toArray = (s: string | string[] | undefined | null): string[] => {
       if (!s) return [];
+      if (Array.isArray(s)) return s.map(v => v.replace(/\s{2,}/g, ' ').trim()).filter(Boolean);
       return s.split(/\n|,\s*/).map(v => v.replace(/\s{2,}/g, ' ').trim()).filter(Boolean);
     };
     const toText = (s: unknown): string | null => {
@@ -2052,13 +2311,55 @@ async function saveAnalysis(hospitalId: string, analysis: AnalysisResult & { _v5
       return s.replace(/\n/g, ', ').replace(/\s{2,}/g, ' ').trim();
     };
     const rows = analysis.doctors.map(dr => ({
-      hospital_id: hospitalId, name: dr.name.trim(),
+      hospital_id: hospitalId, name: (dr.name || '').trim() || '이름없음',
       title: (dr.title || '원장').trim(), specialty: toText(dr.specialty),
       education: toArray(dr.education), career: toArray(dr.career),
       academic_activity: toText(dr.academic_activity),
+      photo_url: dr.photo_url || null,
+      enrichment_source: (dr as Record<string, unknown>).enrichment_source as string ?? null,
+      enriched_at: (dr as Record<string, unknown>).enrichment_source === 'web_search' ? new Date().toISOString() : null,
     }));
-    const { error } = await supabase.from('hospital_doctors').insert(rows);
-    if (error) console.log(`  ⚠️ 의사 INSERT: ${error.message}`);
+    const { error } = await supabase.from('sales_hospital_doctors').insert(rows);
+    if (error) {
+      console.error(`  ❌ 의사 INSERT 실패 (${rows.length}명, 병원 ${hospitalId}): ${error.message}`);
+    } else {
+      console.log(`  ✅ 의사 ${rows.length}명 저장 완료`);
+    }
+
+    // [v5.6] doctor_academic_activities 구조화 저장
+    const academicRows: Array<{
+      hospital_id: string; doctor_name: string; activity_type: string;
+      title: string; year: string | null; source: string; source_text: string | null;
+    }> = [];
+    for (const dr of analysis.doctors) {
+      const structured = (dr as { structured_academic?: StructuredAcademic[] }).structured_academic;
+      if (!structured || structured.length === 0) continue;
+      for (const a of structured) {
+        academicRows.push({
+          hospital_id: hospitalId,
+          doctor_name: (dr.name || '').trim(),
+          activity_type: a.type,
+          title: a.title,
+          year: a.year,
+          source: 'crawl',
+          source_text: a.source_text || null,
+        });
+      }
+    }
+    if (academicRows.length > 0) {
+      // delete-then-insert 대신 upsert: 병렬 크롤링 시 데이터 유실 방지
+      const { error: aaErr } = await supabase.from('doctor_academic_activities')
+        .upsert(academicRows, {
+          onConflict: 'hospital_id,doctor_name,activity_type,title',
+          ignoreDuplicates: false,
+        });
+      if (aaErr) {
+        // upsert 실패 시 fallback: delete-then-insert
+        await supabase.from('doctor_academic_activities').delete().eq('hospital_id', hospitalId);
+        const { error: fallbackErr } = await supabase.from('doctor_academic_activities').insert(academicRows);
+        if (fallbackErr) console.error(`  ❌ academic_activities INSERT 실패: ${fallbackErr.message}`);
+      }
+    }
   }
 
   if (analysis.events.length > 0) {
@@ -2068,11 +2369,11 @@ async function saveAnalysis(hospitalId: string, analysis: AnalysisResult & { _v5
       discount_value: ev.discount_value || null, related_treatments: ev.related_treatments || [],
       source_url: sourceUrl, source: SOURCE_TAG, tenant_id: TENANT_ID,
     }));
-    const { error } = await supabase.from('hospital_events').insert(rows);
+    const { error } = await supabase.from('sales_hospital_events').insert(rows);
     if (error) console.log(`  ⚠️ 이벤트 INSERT: ${error.message}`);
   }
 
-  await supabase.from('hospital_crawl_pages')
+  await supabase.from('scv_crawl_pages')
     .update({ gemini_analyzed: true }).eq('hospital_id', hospitalId);
 }
 
@@ -2080,10 +2381,34 @@ async function saveAnalysis(hospitalId: string, analysis: AnalysisResult & { _v5
 // Hospital ID 조회
 // ============================================================
 async function resolveHospitalId(name: string, url: string): Promise<string | null> {
+  // 1차: CRM에서 조회 (기존 파일럿 병원)
   const { data: crmH } = await supabase.from('crm_hospitals')
     .select('id, sales_hospital_id').eq('name', name).eq('tenant_id', TENANT_ID).single();
 
-  if (!crmH) { console.log(`  ⚠️ CRM에서 "${name}" 못 찾음`); return null; }
+  if (!crmH) {
+    // [v5.7] CRM에 없으면 hospitals 테이블에서 직접 조회 (2,700개 확장용)
+    const { data: directH } = await supabase.from('hospitals')
+      .select('id').eq('name', name).limit(1).single();
+
+    if (directH) {
+      console.log(`  📌 hospitals 테이블에서 직접 조회: ${name}`);
+      await supabase.from('hospitals').update({ website: url, crawled_at: new Date().toISOString() }).eq('id', directH.id);
+      return directH.id;
+    }
+
+    // ilike 퍼지 매칭 시도
+    const { data: fuzzyH } = await supabase.from('hospitals')
+      .select('id, name').ilike('name', `%${name}%`).limit(1).single();
+
+    if (fuzzyH) {
+      console.log(`  📌 hospitals 퍼지 매칭: "${name}" → "${fuzzyH.name}"`);
+      await supabase.from('hospitals').update({ website: url, crawled_at: new Date().toISOString() }).eq('id', fuzzyH.id);
+      return fuzzyH.id;
+    }
+
+    console.log(`  ⚠️ "${name}" — CRM/hospitals 모두 없음`);
+    return null;
+  }
 
   let hospitalId = crmH.sales_hospital_id;
   if (!hospitalId) {
@@ -2110,10 +2435,10 @@ async function resolveHospitalId(name: string, url: string): Promise<string | nu
 // ============================================================
 async function getV4Counts(hospitalId: string): Promise<{ equip: number; treat: number; doctors: number; events: number }> {
   const [e, t, d, ev] = await Promise.all([
-    supabase.from('hospital_equipments').select('id', { count: 'exact', head: true }).eq('hospital_id', hospitalId),
-    supabase.from('hospital_treatments').select('id', { count: 'exact', head: true }).eq('hospital_id', hospitalId),
-    supabase.from('hospital_doctors').select('id', { count: 'exact', head: true }).eq('hospital_id', hospitalId),
-    supabase.from('hospital_events').select('id', { count: 'exact', head: true }).eq('hospital_id', hospitalId),
+    supabase.from('sales_hospital_equipments').select('id', { count: 'exact', head: true }).eq('hospital_id', hospitalId),
+    supabase.from('sales_hospital_treatments').select('id', { count: 'exact', head: true }).eq('hospital_id', hospitalId),
+    supabase.from('sales_hospital_doctors').select('id', { count: 'exact', head: true }).eq('hospital_id', hospitalId),
+    supabase.from('sales_hospital_events').select('id', { count: 'exact', head: true }).eq('hospital_id', hospitalId),
   ]);
   return { equip: e.count || 0, treat: t.count || 0, doctors: d.count || 0, events: ev.count || 0 };
 }
@@ -2192,6 +2517,7 @@ function buildImageSection(pages: CrawlPageResult[]): Paragraph[] {
 async function generateReport(params: {
   hospitalId: string;
   hospitalName: string;
+  hospitalNo: number;
   region: string;
   url: string;
   pages: CrawlPageResult[];
@@ -2206,7 +2532,7 @@ async function generateReport(params: {
   torrResult?: TorrDetectionResult;
   resolvedRegion?: ResolvedRegion;
 }): Promise<void> {
-  const { hospitalId, hospitalName, region, url, pages, analysis, ocrResults, geminiCalls, credits, coverageOverall, status, v4Counts, elapsedMs, torrResult, resolvedRegion } = params;
+  const { hospitalId, hospitalName, hospitalNo, region, url, pages, analysis, ocrResults, geminiCalls, credits, coverageOverall, status, v4Counts, elapsedMs, torrResult, resolvedRegion } = params;
   const v54 = analysis._v54;
   const ci = v54?.contact_info;
   const now = new Date().toISOString().replace('T', ' ').substring(0, 16);
@@ -2438,16 +2764,20 @@ ${(() => {
 | 전체 커버리지 | ${coverageOverall}% |
 `;
 
-  const reportDir = path.resolve(__dirname, '..', 'output', 'reports');
-  if (!fs.existsSync(reportDir)) fs.mkdirSync(reportDir, { recursive: true });
+  const reportBaseDir = path.resolve(__dirname, '..', 'output', 'reports');
   const dateStr = new Date().toISOString().substring(0, 10).replace(/-/g, '');
-  const reportPath = path.resolve(reportDir, `report_${hospitalId}_${dateStr}.md`);
+  const safeName = hospitalName.replace(/[()]/g, (c: string) => c === '(' ? '_' : '').replace(/ /g, '_');
+  const noPad = String(hospitalNo).padStart(3, '0');
+  const folderName = `${dateStr}-${safeName}-v56-${noPad}`;
+  const reportDir = path.resolve(reportBaseDir, folderName);
+  if (!fs.existsSync(reportDir)) fs.mkdirSync(reportDir, { recursive: true });
+  const reportPath = path.resolve(reportDir, `${folderName}.md`);
   fs.writeFileSync(reportPath, report);
   console.log(`  📄 [v5.5] 보고서 생성: ${reportPath}`);
 
   // ── Word (.docx) 보고서 생성 (v5.5: 포맷 개선) ──
   try {
-    const docxPath = path.resolve(reportDir, `report_${hospitalId}_${dateStr}.docx`);
+    const docxPath = path.resolve(reportDir, `${folderName}.docx`);
     const thinBorder = { style: BorderStyle.SINGLE, size: 1, color: 'CCCCCC' };
     const cellBorders = { top: thinBorder, bottom: thinBorder, left: thinBorder, right: thinBorder };
     const cellMargins = { top: 80, bottom: 80, left: 120, right: 120 };
@@ -2815,53 +3145,81 @@ ${(() => {
 // ============================================================
 async function main(): Promise<void> {
   const args = process.argv.slice(2);
+  const modeIdx = args.indexOf('--mode');
+  const mode = modeIdx >= 0 ? args[modeIdx + 1] : 'crawl';
+  if (mode === 'analyze') { await runAnalyzeMode(args); return; }
   const dryRun = args.includes('--dry-run');
   const skipGemini = args.includes('--skip-gemini');
   const onlyGemini = args.includes('--only-gemini');
   const noScreenshot = args.includes('--no-screenshot');
   const playwrightOnly = args.includes('--playwright-only');
   const ocrMode = args.includes('--ocr');
+  const skipDone = args.includes('--skip-done');
   const limitIdx = args.indexOf('--limit');
   const limit = limitIdx >= 0 ? parseInt(args[limitIdx + 1]) : 999;
   const startIdx = args.indexOf('--start-from');
   const startFrom = startIdx >= 0 ? parseInt(args[startIdx + 1]) : 0;
 
+  // [v5.6] 파일 로거 초기화
+  const logPath = initLogger();
+
   console.log('═══════════════════════════════════════════════════');
-  console.log('  Recrawl v5.5: 2-Step OCR+분류 + TORR감지 + 연락처패턴 + 병원명검증');
+  console.log('  Recrawl v5.6: 2-Step OCR+분류 + TORR감지 + 연락처패턴 + 병원명검증');
   console.log('═══════════════════════════════════════════════════\n');
+  console.log(`📝 로그 파일: ${logPath}`);
+
+  // [v5.6] 사전 점검
+  if (!dryRun) {
+    const ok = await preflight({ skipGemini });
+    if (!ok) { closeLogger(); process.exit(1); }
+  }
 
   const nameIdx = args.indexOf('--name');
   const nameFilter = nameIdx >= 0 ? args[nameIdx + 1] : undefined;
 
-  const allTargets = buildTargets();
-  const targets = nameFilter
+  // [v5.7] --input: 외부 targets.json 파일에서 대상 로드 (batch-selector 연동)
+  const inputIdx = args.indexOf('--input');
+  const inputPath = inputIdx >= 0 ? args[inputIdx + 1] : undefined;
+
+  const allTargets = inputPath ? loadExternalTargets(inputPath) : buildTargets();
+  let targets = nameFilter
     ? allTargets.filter(t => t.name.includes(nameFilter))
     : allTargets.slice(startFrom, startFrom + limit);
 
+  // [v5.6] --skip-done: 완료된 병원 스킵
+  let skippedCount = 0;
+  if (skipDone) {
+    const completedIds = await getCompletedHospitalIds();
+    const before = targets.length;
+    const skippedNames: string[] = [];
+    targets = targets.filter(t => {
+      // resolveHospitalId를 아직 못 쓰므로, name 기반으로 DB 조회 대신 빌드타겟 단계에서는
+      // 추후 루프 내에서 hospitalId 확인 후 스킵하도록 함
+      return true; // 실제 스킵은 루프 내에서 hospitalId 확인 후 처리
+    });
+    console.log(`🔄 --skip-done 활성: 완료 병원 ${completedIds.size}개 감지 (루프 내 스킵 적용)`);
+  }
+
   console.log(`📋 이번 실행: ${targets.length}개${nameFilter ? ` (필터: "${nameFilter}")` : ` (${startFrom}번째부터)`}`);
-  console.log(`🔧 모드: ${dryRun ? 'DRY RUN' : playwrightOnly ? 'Playwright Only (Firecrawl 건너뜀)' : skipGemini ? '크롤링만' : onlyGemini ? 'Gemini분석만' : '풀 파이프라인'}${ocrMode ? ' + OCR' : ''}`);
+  console.log(`🔧 모드: ${dryRun ? 'DRY RUN' : playwrightOnly ? 'Playwright Only (Firecrawl 건너뜀)' : skipGemini ? '크롤링만' : onlyGemini ? 'Gemini분석만' : '풀 파이프라인'}${ocrMode ? ' + OCR' : ''}${skipDone ? ' + skip-done' : ''}`);
   console.log(`📐 Gemini 모델: ${getGeminiModel()}`);
 
   if (dryRun) {
     for (const t of targets) console.log(`  No.${t.no} ${t.name} (${t.region}): ${t.url}`);
+    closeLogger();
     return;
-  }
-
-  // Gemini 연결 테스트
-  if (!skipGemini) {
-    try {
-      const token = await getAccessToken();
-      console.log(`✅ Gemini 인증 확인 (토큰: ${token.length}자)\n`);
-    } catch (err) { console.error(`❌ Gemini 인증 실패: ${err}`); process.exit(1); }
   }
 
   let totalCredits = 0;
   let totalGeminiCalls = 0;
+  let consecutiveErrors = 0;
+  // [v5.6] --skip-done용 completedIds (루프 내에서 사용)
+  const completedHospitalIds = skipDone ? await getCompletedHospitalIds() : new Set<string>();
   const summary: Array<{
     no: number; name: string; pages: number; credits: number; geminiCalls: number;
     equip: number; treat: number; doctors: number; events: number;
     coverage: number; status: string; v4: { equip: number; treat: number; doctors: number; events: number };
-    siteType?: string; error?: string;
+    siteType?: string; error?: string; elapsedMs: number;
   }> = [];
 
   for (let i = 0; i < targets.length; i++) {
@@ -2871,11 +3229,26 @@ async function main(): Promise<void> {
     console.log(`  [${i + 1}/${targets.length}] No.${t.no} ${t.name}`);
     console.log('─'.repeat(60));
 
+    // [v5.8] 병원 단위 try-catch — 한 병원 실패가 전체 배치를 죽이지 않도록 방어
+    try {
+
     const hospitalId = await resolveHospitalId(t.name, t.url);
     if (!hospitalId) {
+      consecutiveErrors++;
       summary.push({ no: t.no, name: t.name, pages: 0, credits: 0, geminiCalls: 0,
         equip: 0, treat: 0, doctors: 0, events: 0, coverage: 0, status: 'error',
-        v4: { equip: 0, treat: 0, doctors: 0, events: 0 }, error: 'CRM not found' });
+        v4: { equip: 0, treat: 0, doctors: 0, events: 0 }, error: 'CRM not found', elapsedMs: Date.now() - hospitalStartTime });
+      if (consecutiveErrors >= MAX_CONSECUTIVE_ERRORS) {
+        console.error(`\n🛑 연속 ${MAX_CONSECUTIVE_ERRORS}회 에러 — 자동 중단`);
+        break;
+      }
+      continue;
+    }
+
+    // [v5.6] --skip-done: 이미 완료된 병원 스킵
+    if (skipDone && completedHospitalIds.has(hospitalId)) {
+      console.log(`  ⏭️ 이미 완료 — 스킵`);
+      skippedCount++;
       continue;
     }
 
@@ -2994,9 +3367,9 @@ async function main(): Promise<void> {
       console.log(`  📸 스크린샷: ${playwrightScreenshots.length}장 (${(totalSsSize / 1024).toFixed(0)}KB)`);
 
       // 기존 crawl_pages 삭제 + DB 저장
-      await supabase.from('hospital_crawl_pages').delete().eq('hospital_id', hospitalId);
+      await supabase.from('scv_crawl_pages').delete().eq('hospital_id', hospitalId);
       for (const p of pages) {
-        const { error: dbErr } = await supabase.from('hospital_crawl_pages').insert({
+        const { error: dbErr } = await supabase.from('scv_crawl_pages').insert({
           hospital_id: hospitalId,
           url: p.url,
           page_type: p.pageType,
@@ -3030,7 +3403,7 @@ async function main(): Promise<void> {
       }
     } else {
       // DB에서 기존 페이지 로드
-      const { data: dbPages } = await supabase.from('hospital_crawl_pages')
+      const { data: dbPages } = await supabase.from('scv_crawl_pages')
         .select('url, page_type, markdown, char_count, screenshot_url')
         .eq('hospital_id', hospitalId).order('crawled_at');
 
@@ -3066,7 +3439,7 @@ async function main(): Promise<void> {
         // 스크린샷 촬영 대상: Firecrawl 성공 URL + 실패 URL (실패 URL은 텍스트도 추출)
         const screenshotUrls = [
           t.url,
-          ...pages.slice(1, 5).map(p => p.url),
+          ...pages.slice(1, 15).map(p => p.url),
           ...firecrawlFailedUrls,
         ].filter((u, i, arr) => arr.indexOf(u) === i);
 
@@ -3194,31 +3567,52 @@ async function main(): Promise<void> {
         }
       }
 
-      // 각 페이지 스크린샷 OCR
+      // 각 페이지 스크린샷 OCR (4장씩 배치 병렬 호출)
       let ocrSuccess = 0;
       let ocrEmpty = 0;
+      const OCR_BATCH_SIZE = 4;
+
+      // 전체 스크린샷을 flat 배열로 수집
+      const allScreenshots: Array<{ buf: Buffer; pageIdx: number; captureIdx: number; pageType: string }> = [];
       for (let j = 0; j < pages.length; j++) {
         const p = pages[j];
-        if (p.screenshotBuffers.length === 0) continue;
-
         for (let k = 0; k < p.screenshotBuffers.length; k++) {
-          try {
-            const ocrText = await extractTextFromImage(p.screenshotBuffers[k]);
-            geminiCalls += 1;
+          allScreenshots.push({ buf: p.screenshotBuffers[k], pageIdx: j, captureIdx: k, pageType: p.pageType });
+        }
+      }
+
+      const totalOcrBatches = Math.ceil(allScreenshots.length / OCR_BATCH_SIZE);
+      for (let obi = 0; obi < allScreenshots.length; obi += OCR_BATCH_SIZE) {
+        const ocrBatch = allScreenshots.slice(obi, obi + OCR_BATCH_SIZE);
+        const ocrBatchNum = Math.floor(obi / OCR_BATCH_SIZE) + 1;
+        console.log(`    [OPTIMIZE] OCR batch ${ocrBatchNum}/${totalOcrBatches} (${ocrBatch.length} images)`);
+
+        const ocrSettled = await Promise.allSettled(
+          ocrBatch.map(item => extractTextFromImage(item.buf)),
+        );
+        geminiCalls += ocrBatch.length;
+
+        for (let ori = 0; ori < ocrBatch.length; ori++) {
+          const item = ocrBatch[ori];
+          const settled = ocrSettled[ori];
+          const source = `page_${item.pageIdx}_${item.pageType}_capture_${item.captureIdx}`;
+
+          if (settled.status === 'fulfilled') {
+            const ocrText = settled.value;
             if (ocrText && ocrText !== '텍스트_없음') {
-              allText += `\n\n--- [OCR: ${p.pageType}_capture_${k}] ---\n\n` + ocrText;
-              ocrResults.push({ source: `page_${j}_${p.pageType}_capture_${k}`, text: ocrText });
+              allText += `\n\n--- [OCR: ${item.pageType}_capture_${item.captureIdx}] ---\n\n` + ocrText;
+              ocrResults.push({ source, text: ocrText });
               ocrSuccess++;
             } else {
-              ocrResults.push({ source: `page_${j}_${p.pageType}_capture_${k}`, text: '텍스트_없음' });
+              ocrResults.push({ source, text: '텍스트_없음' });
               ocrEmpty++;
             }
-          } catch (err) {
-            console.log(`    ⚠️ OCR 실패 [${p.pageType}:${k}]: ${err}`);
-            geminiCalls += 1;
+          } else {
+            console.log(`    ⚠️ OCR 실패 [${item.pageType}:${item.captureIdx}]: ${settled.reason}`);
           }
-          await new Promise(r => setTimeout(r, DELAY_BETWEEN_GEMINI));
         }
+
+        await new Promise(r => setTimeout(r, DELAY_BETWEEN_GEMINI));
       }
       console.log(`    OCR 결과: 성공 ${ocrSuccess}장, 텍스트없음 ${ocrEmpty}장`);
 
@@ -3339,7 +3733,7 @@ async function main(): Promise<void> {
         }
 
         // analysis_method 업데이트
-        await supabase.from('hospital_crawl_pages')
+        await supabase.from('scv_crawl_pages')
           .update({ analysis_method: 'v5.4_2step', gemini_analyzed: true })
           .eq('hospital_id', hospitalId);
       } catch (err) {
@@ -3353,7 +3747,7 @@ async function main(): Promise<void> {
           const { result, method, geminiCalls: calls } = await analyzePage(t.name, p);
           allPageResults.push(result);
           geminiCalls += calls;
-          await supabase.from('hospital_crawl_pages')
+          await supabase.from('scv_crawl_pages')
             .update({ analysis_method: method }).eq('hospital_id', hospitalId).eq('url', p.url);
           if (j < pages.length - 1) await new Promise(r => setTimeout(r, DELAY_BETWEEN_GEMINI));
         }
@@ -3413,10 +3807,17 @@ async function main(): Promise<void> {
                   if (modalDr.career && !existing.career) existing.career = modalDr.career;
                   if (modalDr.academic_activity && !existing.academic_activity) existing.academic_activity = modalDr.academic_activity;
                   if (modalDr.specialty && !existing.specialty) existing.specialty = modalDr.specialty;
+                  if (cap.photoUrl && !existing.photo_url) existing.photo_url = cap.photoUrl;
                 } else {
-                  analysis.doctors.push(modalDr);
+                  analysis.doctors.push({ ...modalDr, photo_url: cap.photoUrl || null });
                 }
               }
+            } else if (cap.photoUrl) {
+              // Vision 분석 결과가 없어도 이름 매칭으로 사진 연결
+              const existing = analysis.doctors.find(d =>
+                cap.doctorName.includes(d.name) || d.name.includes(cap.doctorName)
+              );
+              if (existing && !existing.photo_url) existing.photo_url = cap.photoUrl;
             }
             await new Promise(r => setTimeout(r, DELAY_BETWEEN_GEMINI));
           } catch (err) {
@@ -3432,10 +3833,52 @@ async function main(): Promise<void> {
     }
 
     // ═══════════════════════════════════════════
+    // [v5.8] 프로필 사진 없는 의사 → 페이지에서 직접 추출
+    // ═══════════════════════════════════════════
+    if (analysis.doctors.length > 0) {
+      const doctorsWithoutPhoto = analysis.doctors.filter(d => !d.photo_url);
+      if (doctorsWithoutPhoto.length > 0) {
+        const doctorPages = pages.filter(p => p.pageType === 'doctor');
+        const targetPage = doctorPages.length > 0 ? doctorPages[0] : pages[0];
+        try {
+          const photoResults = await extractDoctorPhotosFromPage(
+            targetPage.url, hospitalId,
+            doctorsWithoutPhoto.map(d => d.name),
+          );
+          for (const pr of photoResults) {
+            if (!pr.photoUrl) continue;
+            const dr = analysis.doctors.find(d => d.name === pr.doctorName);
+            if (dr && !dr.photo_url) dr.photo_url = pr.photoUrl;
+          }
+        } catch (err) {
+          console.log(`    ⚠️ 의사 프로필 사진 직접 추출 실패: ${(err as Error).message}`);
+        }
+      }
+    }
+
+    // ═══════════════════════════════════════════
     // [v5.4] 의사 이름 웹 검증
     // ═══════════════════════════════════════════
     if (!skipGemini && analysis.doctors.length > 0) {
       await verifyDoctorNames(analysis.doctors, t.name);
+    }
+
+    // ═══════════════════════════════════════════
+    // [v5.6] 의사 필드 정규화 (career/education/academic 재분류)
+    // ═══════════════════════════════════════════
+    if (analysis.doctors.length > 0) {
+      console.log(`  🔄 [v5.6] 의사 필드 정규화 (${analysis.doctors.length}명)...`);
+      normalizeDoctorsBatch(analysis.doctors);
+    }
+
+    // ═══════════════════════════════════════════
+    // [v5.6] 의사 데이터 웹 보강
+    // ═══════════════════════════════════════════
+    if (!skipGemini && analysis.doctors.length > 0) {
+      const { enrichedNames } = await enrichDoctorBatch(analysis.doctors, t.name, hospitalId);
+      if (enrichedNames.length > 0) {
+        console.log(`  ✅ [v5.6] 웹 보강 완료: ${enrichedNames.join(', ')}`);
+      }
     }
 
     // ═══════════════════════════════════════════
@@ -3619,7 +4062,7 @@ async function main(): Promise<void> {
                   status = 'insufficient';
                   coverageOverall = 0;
 
-                  await supabase.from('hospital_crawl_validations').upsert({
+                  await supabase.from('scv_crawl_validations').upsert({
                     hospital_id: hospitalId,
                     crawl_version: 'v5.4',
                     status: 'insufficient',
@@ -3630,7 +4073,7 @@ async function main(): Promise<void> {
                       supplementary_found: supplement.pages.length,
                       onepage_enhanced: true,
                     },
-                    created_at: new Date().toISOString(),
+                    validated_at: new Date().toISOString(),
                   }, { onConflict: 'hospital_id,crawl_version' });
 
                   await saveAnalysis(hospitalId, analysis, t.url);
@@ -3653,7 +4096,7 @@ async function main(): Promise<void> {
                 status = 'insufficient';
                 coverageOverall = 0;
 
-                await supabase.from('hospital_crawl_validations').upsert({
+                await supabase.from('scv_crawl_validations').upsert({
                   hospital_id: hospitalId,
                   crawl_version: 'v5.4',
                   status: 'insufficient',
@@ -3663,7 +4106,7 @@ async function main(): Promise<void> {
                     supplementary_tried: sanity.missingTypes,
                     onepage_enhanced: false,
                   },
-                  created_at: new Date().toISOString(),
+                  validated_at: new Date().toISOString(),
                 }, { onConflict: 'hospital_id,crawl_version' });
 
                 await saveAnalysis(hospitalId, analysis, t.url);
@@ -3686,7 +4129,7 @@ async function main(): Promise<void> {
               status = 'insufficient';
               coverageOverall = 0;
 
-              await supabase.from('hospital_crawl_validations').upsert({
+              await supabase.from('scv_crawl_validations').upsert({
                 hospital_id: hospitalId,
                 crawl_version: 'v5.4',
                 status: 'insufficient',
@@ -3696,7 +4139,7 @@ async function main(): Promise<void> {
                   supplementary_tried: sanity.missingTypes,
                   supplementary_found: supplement.pages.length,
                 },
-                created_at: new Date().toISOString(),
+                validated_at: new Date().toISOString(),
               }, { onConflict: 'hospital_id,crawl_version' });
 
               await saveAnalysis(hospitalId, analysis, t.url);
@@ -3739,7 +4182,7 @@ async function main(): Promise<void> {
                 status = 'insufficient';
                 coverageOverall = 0;
 
-                await supabase.from('hospital_crawl_validations').upsert({
+                await supabase.from('scv_crawl_validations').upsert({
                   hospital_id: hospitalId,
                   crawl_version: 'v5.4',
                   status: 'insufficient',
@@ -3749,7 +4192,7 @@ async function main(): Promise<void> {
                     supplementary_tried: sanity.missingTypes,
                     onepage_enhanced: true,
                   },
-                  created_at: new Date().toISOString(),
+                  validated_at: new Date().toISOString(),
                 }, { onConflict: 'hospital_id,crawl_version' });
 
                 await saveAnalysis(hospitalId, analysis, t.url);
@@ -3771,7 +4214,7 @@ async function main(): Promise<void> {
               status = 'insufficient';
               coverageOverall = 0;
 
-              await supabase.from('hospital_crawl_validations').upsert({
+              await supabase.from('scv_crawl_validations').upsert({
                 hospital_id: hospitalId,
                 crawl_version: 'v5.4',
                 status: 'insufficient',
@@ -3781,7 +4224,7 @@ async function main(): Promise<void> {
                   supplementary_tried: sanity.missingTypes,
                   onepage_enhanced: false,
                 },
-                created_at: new Date().toISOString(),
+                validated_at: new Date().toISOString(),
               }, { onConflict: 'hospital_id,crawl_version' });
 
               await saveAnalysis(hospitalId, analysis, t.url);
@@ -3804,7 +4247,7 @@ async function main(): Promise<void> {
             status = 'insufficient';
             coverageOverall = 0;
 
-            await supabase.from('hospital_crawl_validations').upsert({
+            await supabase.from('scv_crawl_validations').upsert({
               hospital_id: hospitalId,
               crawl_version: 'v5.4',
               status: 'insufficient',
@@ -3814,7 +4257,7 @@ async function main(): Promise<void> {
                 supplementary_tried: sanity.missingTypes,
                 supplementary_found: 0,
               },
-              created_at: new Date().toISOString(),
+              validated_at: new Date().toISOString(),
             }, { onConflict: 'hospital_id,crawl_version' });
 
             await saveAnalysis(hospitalId, analysis, t.url);
@@ -3841,7 +4284,8 @@ async function main(): Promise<void> {
       // ──────────────────────────────────
       console.log(`\n  [2단계: 커버리지]`);
       const allMd = pages.map(p => p.markdown).join('\n\n---\n\n');
-      const validation = await validateCoverage(hospitalId, t.name, analysis, allMd);
+      const resolvedSiteType = classifySiteType(siteFingerprint, t.url);
+      const validation = await validateCoverage(hospitalId, t.name, analysis, allMd, resolvedSiteType);
       coverageOverall = validation.coverage_score?.overall || 0;
       status = validation._status || 'error';
       geminiCalls += 1;
@@ -3851,8 +4295,8 @@ async function main(): Promise<void> {
       console.log(`    의사: ${validation.coverage_score?.doctor || 0}%${validation.missing_doctors?.length ? ` — 누락: ${validation.missing_doctors.join(', ')}` : ''}`);
       console.log(`    전체: ${coverageOverall}% → ${status === 'pass' ? '✅ PASS' : status === 'partial' ? '⚠️ PARTIAL' : '❌ FAIL'}`);
 
-      // 커버리지 70% 미만 → 재분석
-      if (coverageOverall < 70 && coverageOverall >= 50) {
+      // 커버리지 70% 미만 → 재분석 (기존: >=50, 변경: >=20 — 이미지 기반 사이트 대응)
+      if (coverageOverall < 70 && coverageOverall >= 20) {
         const reanalysis = await reanalyzeWithHints(t.name, allMd, validation);
         geminiCalls += splitIntoChunks(cleanMarkdown(allMd)).length;
 
@@ -3862,17 +4306,17 @@ async function main(): Promise<void> {
         if (_v54b6) analysis._v54 = _v54b6;
         console.log(`    🔄 재분석 후: 장비 ${analysis.equipments.length} | 시술 ${analysis.treatments.length} | 의사 ${analysis.doctors.length} | 이벤트 ${analysis.events.length}`);
 
-        const reValidation = await validateCoverage(hospitalId, t.name, analysis, allMd);
+        const reValidation = await validateCoverage(hospitalId, t.name, analysis, allMd, resolvedSiteType);
         coverageOverall = reValidation.coverage_score?.overall || coverageOverall;
         status = reValidation._status || status;
         geminiCalls += 1;
         console.log(`    🔄 재검증: ${coverageOverall}% → ${status === 'pass' ? '✅ PASS' : status === 'partial' ? '⚠️ PARTIAL' : '❌ FAIL'}`);
       }
 
-      if (coverageOverall < 50) {
+      if (coverageOverall < 20) {
         status = 'manual_review';
         console.log(`    🚩 manual_review 플래그 설정`);
-        await supabase.from('hospital_crawl_validations')
+        await supabase.from('scv_crawl_validations')
           .update({ status: 'manual_review' }).eq('hospital_id', hospitalId).eq('crawl_version', 'v5.3');
       }
 
@@ -3888,7 +4332,7 @@ async function main(): Promise<void> {
     if (!skipGemini) {
       try {
         await generateReport({
-          hospitalId, hospitalName: t.name, region: t.region, url: t.url,
+          hospitalId, hospitalName: t.name, hospitalNo: t.no, region: t.region, url: t.url,
           pages, analysis, ocrResults, geminiCalls, credits,
           coverageOverall, status, v4Counts,
           elapsedMs: Date.now() - hospitalStartTime,
@@ -3901,66 +4345,326 @@ async function main(): Promise<void> {
     }
 
     totalGeminiCalls += geminiCalls;
+    const hospitalElapsedMs = Date.now() - hospitalStartTime;
     summary.push({
       no: t.no, name: t.name, pages: pages.length, credits, geminiCalls,
       equip: analysis.equipments.length, treat: analysis.treatments.length,
       doctors: analysis.doctors.length, events: analysis.events.length,
-      coverage: coverageOverall, status, v4: v4Counts,
+      coverage: coverageOverall, status, v4: v4Counts, elapsedMs: hospitalElapsedMs,
+      siteType: classifySiteType(siteFingerprint, t.url),
     });
 
+    // [v5.6] 성공 시 연속 에러 카운터 리셋
+    if (status !== 'error') {
+      consecutiveErrors = 0;
+    } else {
+      consecutiveErrors++;
+      if (consecutiveErrors >= MAX_CONSECUTIVE_ERRORS) {
+        console.error(`\n🛑 연속 ${MAX_CONSECUTIVE_ERRORS}회 에러 — 자동 중단`);
+        break;
+      }
+    }
+
     await new Promise(r => setTimeout(r, DELAY_BETWEEN_HOSPITALS));
+
+    // [v5.8] 병원 단위 try-catch 닫기
+    } catch (hospitalErr) {
+      const errMsg = hospitalErr instanceof Error ? hospitalErr.message : String(hospitalErr);
+      console.error(`  💥 [v5.8] 병원 처리 중 예외 발생 (다음 병원으로 계속): ${errMsg.slice(0, 200)}`);
+      consecutiveErrors++;
+      summary.push({
+        no: t.no, name: t.name, pages: 0, credits: 0, geminiCalls: 0,
+        equip: 0, treat: 0, doctors: 0, events: 0, coverage: 0, status: 'error',
+        v4: { equip: 0, treat: 0, doctors: 0, events: 0 },
+        error: errMsg.slice(0, 100), elapsedMs: Date.now() - hospitalStartTime,
+      });
+      if (consecutiveErrors >= MAX_CONSECUTIVE_ERRORS) {
+        console.error(`\n🛑 연속 ${MAX_CONSECUTIVE_ERRORS}회 에러 — 자동 중단`);
+        break;
+      }
+      await new Promise(r => setTimeout(r, DELAY_BETWEEN_HOSPITALS));
+    }
   }
 
-  // 결과 저장
+  // Playwright/Puppeteer 브라우저 정리
+  try { await closePlaywright(); } catch { /* ignore */ }
+
+  // [v5.6] 결과 저장 (기존 + 타임스탬프 버전)
   const outputPath = path.resolve(__dirname, 'data', 'recrawl-v5-results.json');
   fs.writeFileSync(outputPath, JSON.stringify(summary, null, 2));
-
-  // 종합 보고
-  console.log('\n═══════════════════════════════════════════════════');
-  console.log('  v5.4 테스트 종합 결과');
-  console.log('═══════════════════════════════════════════════════\n');
-
-  console.log('| 병원 | 의료기기 | 시술 | 의사 | 이벤트 | 커버리지 | 판정 |');
-  console.log('|------|---------|------|------|--------|----------|------|');
+  const ts = new Date().toISOString().replace(/[:.]/g, '-').slice(0, 19);
+  // [v5.7] site_type별 사전 집계 (JSON 저장 + 종합 보고 공용)
+  const siteTypeBreakdown: Record<string, { count: number; totalCoverage: number; names: string[] }> = {};
   for (const s of summary) {
-    const statusIcon = s.status === 'pass' ? '✅' : s.status === 'partial' ? '⚠️' :
-      s.status === 'insufficient' ? '🔸' : '❌';
-    console.log(`| ${s.name} | ${s.equip} | ${s.treat} | ${s.doctors} | ${s.events} | ${s.coverage}% | ${statusIcon} ${s.status} |`);
+    const st = s.siteType || 'website';
+    if (!siteTypeBreakdown[st]) siteTypeBreakdown[st] = { count: 0, totalCoverage: 0, names: [] };
+    siteTypeBreakdown[st].count++;
+    siteTypeBreakdown[st].totalCoverage += s.coverage;
+    if (st !== 'website') siteTypeBreakdown[st].names.push(`${s.name}(${s.coverage}%)`);
   }
 
+  const summaryPath = path.join(LOG_DIR, `run_${ts}_summary.json`);
+  fs.mkdirSync(LOG_DIR, { recursive: true });
+  const stBreakdown: Record<string, { count: number; avg_score: number }> = {};
+  for (const [st, info] of Object.entries(siteTypeBreakdown)) {
+    stBreakdown[st] = { count: info.count, avg_score: info.count > 0 ? Math.round(info.totalCoverage / info.count) : 0 };
+  }
+  const summaryWithMeta = { hospitals: summary, site_type_breakdown: stBreakdown };
+  fs.writeFileSync(summaryPath, JSON.stringify(summaryWithMeta, null, 2), 'utf8');
+
+  // ═══════════════════════════════════════════════════
+  // [v5.6] 종합 보고 (강화)
+  // ═══════════════════════════════════════════════════
+  console.log('\n═══════════════════════════════════════════════════');
+  console.log('  v5.6 종합 결과');
+  console.log('═══════════════════════════════════════════════════\n');
+
+  // 상태별 분류
+  const passCount = summary.filter(s => s.status === 'pass').length;
+  const partialCount = summary.filter(s => s.status === 'partial').length;
+  const insuffCount = summary.filter(s => s.status === 'insufficient').length;
+  const manualCount = summary.filter(s => s.status === 'manual_review').length;
+  const failCount = summary.filter(s => s.status === 'fail').length;
+  const errorCount = summary.filter(s => s.status === 'error').length;
+
+  console.log(`📊 처리: ${summary.length}개 병원${skippedCount > 0 ? ` (+ ${skippedCount}개 스킵)` : ''}`);
+  console.log(`   ✅ PASS: ${passCount}개 | ⚠️ PARTIAL: ${partialCount}개 | 🔸 INSUFFICIENT: ${insuffCount}개`);
+  console.log(`   🚩 manual_review: ${manualCount}개 | ❌ FAIL: ${failCount}개 | 💥 ERROR: ${errorCount}개`);
+
+  // 테이블
+  console.log('\n| 병원 | 의료기기 | 시술 | 의사 | 이벤트 | 커버리지 | 소요 | 판정 |');
+  console.log('|------|---------|------|------|--------|----------|------|------|');
+  for (const s of summary) {
+    const statusIcon = s.status === 'pass' ? '✅' : s.status === 'partial' ? '⚠️' :
+      s.status === 'insufficient' ? '🔸' : s.status === 'manual_review' ? '🚩' : '❌';
+    const elapsed = `${Math.floor(s.elapsedMs / 60000)}m${Math.round((s.elapsedMs % 60000) / 1000)}s`;
+    console.log(`| ${s.name} | ${s.equip} | ${s.treat} | ${s.doctors} | ${s.events} | ${s.coverage}% | ${elapsed} | ${statusIcon} ${s.status} |`);
+  }
+
+  // 집계
   const totals = summary.reduce((a, s) => ({
     equip: a.equip + s.equip, treat: a.treat + s.treat,
     doctors: a.doctors + s.doctors, events: a.events + s.events,
   }), { equip: 0, treat: 0, doctors: 0, events: 0 });
 
-  console.log(`\n크레딧 소모: 총 ${totalCredits}`);
-  console.log(`Gemini 호출: ${totalGeminiCalls}회`);
-  console.log(`총합: 의료기기 ${totals.equip} | 시술 ${totals.treat} | 의사 ${totals.doctors} | 이벤트 ${totals.events}`);
+  console.log(`\n📈 총합: 의료기기 ${totals.equip} | 시술 ${totals.treat} | 의사 ${totals.doctors} | 이벤트 ${totals.events}`);
+  console.log(`💰 크레딧: Firecrawl ${totalCredits} | Gemini ${totalGeminiCalls}회`);
 
-  const passCount = summary.filter(s => s.status === 'pass').length;
-  const partialCount = summary.filter(s => s.status === 'partial').length;
-  const insuffCount = summary.filter(s => s.status === 'insufficient').length;
-  const failCount = summary.filter(s => s.status === 'fail' || s.status === 'manual_review' || s.status === 'error').length;
-  console.log(`\nPASS: ${passCount}개, PARTIAL: ${partialCount}개, INSUFFICIENT: ${insuffCount}개, FAIL: ${failCount}개`);
-
-  if (passCount === summary.length) {
-    console.log(`\n✅ 전체 PASS — 승인 요청 가능`);
-  } else {
-    console.log(`\n⚠️ PARTIAL/FAIL 있음 — 원인 분석 + 수정 후 재테스트 필요`);
+  // [v5.6] 병원당 소요 시간 통계
+  const times = summary.map(s => s.elapsedMs).filter(t => t > 0);
+  if (times.length > 0) {
+    const minT = Math.min(...times);
+    const maxT = Math.max(...times);
+    const avgT = times.reduce((a, b) => a + b, 0) / times.length;
+    const totalT = times.reduce((a, b) => a + b, 0);
+    const fmt = (ms: number): string => `${Math.floor(ms / 60000)}분 ${Math.round((ms % 60000) / 1000)}초`;
+    console.log(`\n⏱️ 소요 시간: 최소 ${fmt(minT)} / 최대 ${fmt(maxT)} / 평균 ${fmt(avgT)} / 총 ${fmt(totalT)}`);
   }
 
-  // [작업3] 사이트 유형 통계
-  const siteTypes = summary.filter(s => s.siteType).reduce((acc, s) => {
-    const t = s.siteType!;
-    acc[t] = (acc[t] || 0) + 1;
-    return acc;
-  }, {} as Record<string, number>);
-  if (Object.keys(siteTypes).length > 0) {
-    console.log('\n📊 사이트 유형 통계:');
-    for (const [type, count] of Object.entries(siteTypes).sort((a, b) => b[1] - a[1])) {
-      console.log(`  ${type}: ${count}개`);
+  // [v5.6] 에러/실패 병원 상세
+  const errorHospitals = summary.filter(s => s.status === 'error' || s.status === 'fail' || s.status === 'manual_review');
+  if (errorHospitals.length > 0) {
+    console.log('\n🔴 에러/실패/manual_review 병원:');
+    for (const e of errorHospitals) {
+      const statusIcon = e.status === 'error' ? '💥' : e.status === 'fail' ? '❌' : '🚩';
+      console.log(`  ${statusIcon} ${e.name}: ${e.status}${e.error ? ` — ${e.error}` : ''} (커버리지: ${e.coverage}%)`);
     }
   }
+
+  // 최종 판정
+  if (passCount === summary.length) {
+    console.log(`\n✅ 전체 PASS — 승인 요청 가능`);
+  } else if (passCount + partialCount === summary.length) {
+    console.log(`\n⚠️ 전체 PASS+PARTIAL — 수동 검토 후 승인 가능`);
+  } else {
+    console.log(`\n⚠️ FAIL/ERROR 있음 — 원인 분석 + 수정 후 재테스트 필요`);
+  }
+
+  // [v5.7] site_type별 집계 (siteTypeBreakdown은 위에서 이미 계산됨)
+  console.log('\n📊 사이트 유형별 집계:');
+  for (const [st, info] of Object.entries(siteTypeBreakdown).sort((a, b) => b[1].count - a[1].count)) {
+    const avg = info.count > 0 ? Math.round(info.totalCoverage / info.count) : 0;
+    const label = st === 'website' ? '일반 홈페이지' : st === 'naver_blog' ? '네이버 블로그' : '기타 블로그';
+    console.log(`  ${label}: ${info.count}개 (평균 ${avg}%)`);
+    if (st !== 'website' && info.names.length > 0) {
+      console.log(`    └ ${info.names.join(', ')}`);
+    }
+  }
+
+  console.log(`\n📝 로그: ${logPath}`);
+  console.log(`📄 요약: ${summaryPath}`);
+  closeLogger();
+}
+
+// ============================================================
+// --mode=analyze: scv_crawl_pages에서 읽어 Phase 2만 실행
+// ============================================================
+async function runAnalyzeMode(args: string[]): Promise<void> {
+  console.log('═══════════════════════════════════════════════════');
+  console.log('  Recrawl v5.5 — ANALYZE MODE (Phase 2 only)');
+  console.log('  데이터 소스: scv_crawl_pages (madmedscv)');
+  console.log('═══════════════════════════════════════════════════\n');
+
+  const dryRun = args.includes('--dry-run');
+  const nameIdx = args.indexOf('--name');
+  const nameFilter = nameIdx >= 0 ? args[nameIdx + 1] : undefined;
+  const hidIdx = args.indexOf('--hospital-id');
+  const hospitalIdFilter = hidIdx >= 0 ? args[hidIdx + 1] : undefined;
+  const limitIdx = args.indexOf('--limit');
+  const limit = limitIdx >= 0 ? parseInt(args[limitIdx + 1]) : 999;
+
+  // 1. 병원 목록 확보 (--hospital-id 또는 --name 필터)
+  let targets: Array<{ id: string; name: string; website: string | null }>;
+  if (hospitalIdFilter) {
+    const { data: hosps, error: hErr } = await supabase
+      .from('hospitals')
+      .select('id, name, website')
+      .eq('id', hospitalIdFilter);
+    if (hErr || !hosps || hosps.length === 0) {
+      console.error('❌ hospitals에서 id=' + hospitalIdFilter + ' 매칭 없음:', hErr?.message || '');
+      return;
+    }
+    targets = hosps;
+  } else if (nameFilter) {
+    const { data: hosps, error: hErr } = await supabase
+      .from('hospitals')
+      .select('id, name, website')
+      .ilike('name', `%${nameFilter}%`);
+    if (hErr || !hosps || hosps.length === 0) {
+      console.error('❌ hospitals에서 "' + nameFilter + '" 매칭 없음:', hErr?.message || '');
+      return;
+    }
+    targets = hosps.slice(0, limit);
+  } else {
+    // 이름 필터 없으면 scv_crawl_pages에 데이터 있는 병원만
+    const { data: distinctPages, error: dpErr } = await supabase
+      .from('scv_crawl_pages')
+      .select('hospital_id');
+    if (dpErr || !distinctPages || distinctPages.length === 0) {
+      console.error('❌ scv_crawl_pages 비어 있음:', dpErr?.message || '');
+      return;
+    }
+    const uniqueIds = [...new Set(distinctPages.map(p => p.hospital_id))];
+    const { data: hosps } = await supabase
+      .from('hospitals')
+      .select('id, name, website')
+      .in('id', uniqueIds);
+    targets = (hosps || []).slice(0, limit);
+  }
+
+  if (targets.length === 0) {
+    console.error('❌ 분석 대상 병원 없음');
+    return;
+  }
+
+  console.log(`📋 분석 대상: ${targets.length}개 병원`);
+
+  // 2. 대상 병원의 scv_crawl_pages 로드
+  const targetIds = targets.map(t => t.id);
+  const hospitalPages = new Map<string, Array<{ hospital_id: string; url: string; page_type: string; markdown: string | null; char_count: number; gemini_analyzed: boolean }>>();
+
+  for (const tid of targetIds) {
+    const { data: pgs } = await supabase
+      .from('scv_crawl_pages')
+      .select('hospital_id, url, page_type, markdown, char_count, gemini_analyzed')
+      .eq('hospital_id', tid);
+    if (pgs && pgs.length > 0) {
+      hospitalPages.set(tid, pgs);
+      console.log(`  📄 ${targets.find(t => t.id === tid)?.name}: ${pgs.length}페이지 (${pgs.reduce((s, p) => s + (p.char_count || 0), 0).toLocaleString()}자)`);
+    }
+  }
+
+  const summary: Array<{
+    name: string; equip: number; treat: number;
+    doctors: number; events: number; coverage: number; status: string;
+  }> = [];
+
+  for (let i = 0; i < targets.length; i++) {
+    const h = targets[i];
+    const hPages = hospitalPages.get(h.id) || [];
+    console.log(`\n[${ i + 1}/${targets.length}] ${h.name} (${hPages.length}페이지)`);
+
+    // 4. allText 구성 (scv_crawl_pages의 markdown 합산 — Gemini 토큰 절약을 위해 불필요 페이지 필터링)
+    const EXCLUDE_URL_PATTERNS = [
+      /\/member\//i,                   // 약관, 학회정보
+      /\/about\/about\.php/i,          // 병원 인사말
+      /\/about\/info\.php/i,           // 오시는길/진료시간
+    ];
+    const pagesWithMarkdown = hPages.filter(p => p.markdown);
+    const filteredPages = pagesWithMarkdown.filter(p => {
+      // 제외 패턴 매칭
+      if (EXCLUDE_URL_PATTERNS.some(re => re.test(p.url))) return false;
+      // clinicInfoPrima 하위: /special/만 허용, 나머지(wellAging, regeneration, signatureP 등) 제외
+      if (/\/clinicInfoPrima\//i.test(p.url) && !/\/special\//i.test(p.url)) return false;
+      return true;
+    });
+
+    const beforeChars = pagesWithMarkdown.reduce((s, p) => s + (p.markdown as string).length, 0);
+    const afterChars = filteredPages.reduce((s, p) => s + (p.markdown as string).length, 0);
+    const excludedPages = pagesWithMarkdown.filter(p => !filteredPages.includes(p));
+    console.log(`  🔍 Gemini 입력 필터: ${pagesWithMarkdown.length}p (${beforeChars.toLocaleString()}자) → ${filteredPages.length}p (${afterChars.toLocaleString()}자) | 제외 ${excludedPages.length}p`);
+    if (excludedPages.length > 0) {
+      for (const ep of excludedPages) {
+        const shortUrl = ep.url.replace(/^https?:\/\/[^/]+/, '');
+        console.log(`    ✂️ ${shortUrl} (${(ep.char_count || 0).toLocaleString()}자)`);
+      }
+    }
+
+    const allText = filteredPages
+      .map(p => p.markdown as string)
+      .join('\n\n---\n\n');
+
+    if (allText.length < 100) {
+      console.log('  ⚠️ 텍스트 부족 (< 100자), 건너뜀');
+      continue;
+    }
+
+    console.log(`  📄 최종 텍스트: ${allText.length.toLocaleString()}자`);
+
+    if (dryRun) {
+      console.log('  [DRY-RUN] Phase 2 실행 건너뜀');
+      continue;
+    }
+
+    // 5. Phase 2: 분류
+    console.log(`  🧠 분류 시작...`);
+    try {
+      const v54Result = await classifyHospitalData(allText, h.name, 0);
+      const analysis = convertV54ToAnalysis(v54Result);
+
+      console.log(`  ✅ 장비 ${analysis.equipments.length} | 시술 ${analysis.treatments.length} | 의사 ${analysis.doctors.length} | 이벤트 ${analysis.events.length}`);
+
+      // 6. DB 저장 (hospital_equipments, hospital_treatments 등)
+      await saveAnalysis(h.id, analysis, h.website || hPages[0]?.url || '');
+      console.log(`  💾 저장 완료`);
+
+      summary.push({
+        name: h.name,
+        equip: analysis.equipments.length,
+        treat: analysis.treatments.length,
+        doctors: analysis.doctors.length,
+        events: analysis.events.length,
+        coverage: 0,
+        status: 'analyzed',
+      });
+    } catch (err) {
+      console.error(`  ❌ 분류 실패: ${err}`);
+      summary.push({ name: h.name, equip: 0, treat: 0, doctors: 0, events: 0, coverage: 0, status: 'error' });
+    }
+  }
+
+  // 7. 종합 보고
+  console.log('\n═══════════════════════════════════════════════════');
+  console.log('  Analyze Mode 종합 결과');
+  console.log('═══════════════════════════════════════════════════\n');
+
+  console.log('| 병원 | 의료기기 | 시술 | 의사 | 이벤트 | 판정 |');
+  console.log('|------|---------|------|------|--------|------|');
+  for (const s of summary) {
+    console.log(`| ${s.name} | ${s.equip} | ${s.treat} | ${s.doctors} | ${s.events} | ${s.status} |`);
+  }
+
+  console.log(`\n분석 완료: ${summary.filter(s => s.status === 'analyzed').length}/${summary.length}개 병원`);
 }
 
 main().catch(console.error).finally(() => closePlaywright());

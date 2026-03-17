@@ -40,7 +40,7 @@ dotenv.config({ path: path.resolve(__dirname, '../.env') });
 const log = createLogger('single-pipeline');
 const DATA_DIR = path.resolve(__dirname, '../data/web-raw');
 const MAX_TEXT = 150000;
-const REQUEST_TIMEOUT = 15000;
+const REQUEST_TIMEOUT = 30000;
 
 const TEXT_ONLY = process.argv.includes('--text-only');
 
@@ -49,27 +49,37 @@ function getArg(flag: string): string | null {
   return idx !== -1 && process.argv[idx + 1] ? process.argv[idx + 1] : null;
 }
 
-async function fetchPage(url: string): Promise<string | null> {
-  try {
-    let fullUrl = url;
-    if (!fullUrl.startsWith('http://') && !fullUrl.startsWith('https://')) {
-      fullUrl = `https://${fullUrl}`;
-    }
-    const response = await axios.get<string>(fullUrl, {
-      timeout: REQUEST_TIMEOUT,
-      headers: {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
-        Accept: 'text/html,application/xhtml+xml',
-        'Accept-Language': 'ko-KR,ko;q=0.9',
-      },
-      maxRedirects: 5,
-      responseType: 'text',
-    });
-    return typeof response.data === 'string' ? response.data : null;
-  } catch (err) {
-    log.warn(`Failed to fetch ${url}: ${err instanceof Error ? err.message : String(err)}`);
-    return null;
+async function fetchPage(url: string, retries = 1): Promise<string | null> {
+  let fullUrl = url;
+  if (!fullUrl.startsWith('http://') && !fullUrl.startsWith('https://')) {
+    fullUrl = `https://${fullUrl}`;
   }
+
+  for (let attempt = 0; attempt <= retries; attempt++) {
+    try {
+      const timeout = attempt === 0 ? REQUEST_TIMEOUT : REQUEST_TIMEOUT + 15000;
+      const response = await axios.get<string>(fullUrl, {
+        timeout,
+        headers: {
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+          Accept: 'text/html,application/xhtml+xml',
+          'Accept-Language': 'ko-KR,ko;q=0.9',
+        },
+        maxRedirects: 5,
+        responseType: 'text',
+      });
+      return typeof response.data === 'string' ? response.data : null;
+    } catch (err) {
+      const message = err instanceof Error ? err.message : String(err);
+      if (attempt < retries) {
+        log.warn(`Fetch attempt ${attempt + 1} failed for ${url}: ${message}. Retrying...`);
+        await delayWithJitter(2000, 1000);
+      } else {
+        log.warn(`Failed to fetch ${url} after ${retries + 1} attempts: ${message}`);
+      }
+    }
+  }
+  return null;
 }
 
 async function main(): Promise<void> {
@@ -98,9 +108,9 @@ async function main(): Promise<void> {
 
   // 2. Clear old data for this hospital
   log.info('\n--- Clearing old data ---');
-  const { count: delDocs } = await supabase.from('hospital_doctors').delete({ count: 'exact' }).eq('hospital_id', hospital.id);
-  const { count: delEqs } = await supabase.from('hospital_equipments').delete({ count: 'exact' }).eq('hospital_id', hospital.id);
-  const { count: delTrs } = await supabase.from('hospital_treatments').delete({ count: 'exact' }).eq('hospital_id', hospital.id).eq('source', 'web_analysis');
+  const { count: delDocs } = await supabase.from('sales_hospital_doctors').delete({ count: 'exact' }).eq('hospital_id', hospital.id);
+  const { count: delEqs } = await supabase.from('sales_hospital_equipments').delete({ count: 'exact' }).eq('hospital_id', hospital.id);
+  const { count: delTrs } = await supabase.from('sales_hospital_treatments').delete({ count: 'exact' }).eq('hospital_id', hospital.id).eq('source', 'web_analysis');
   log.info(`Deleted: ${delDocs ?? 0} doctors, ${delEqs ?? 0} equipments, ${delTrs ?? 0} web treatments`);
 
   // ═══════════════════════════════════════════════════════════════════
@@ -258,7 +268,7 @@ async function main(): Promise<void> {
   let drCount = 0;
   for (const dr of finalAnalysis.doctors) {
     if (!dr.name) continue;
-    const { error } = await supabase.from('hospital_doctors').insert({
+    const { error } = await supabase.from('sales_hospital_doctors').insert({
       hospital_id: hospital.id, name: dr.name, title: dr.title ?? null,
       specialty: dr.specialty ?? null, career: dr.career ?? [], education: [],
       source: 'web_analysis',
@@ -269,7 +279,7 @@ async function main(): Promise<void> {
 
   let eqCount = 0;
   for (const eq of finalAnalysis.equipments) {
-    const { error } = await supabase.from('hospital_equipments').insert({
+    const { error } = await supabase.from('sales_hospital_equipments').insert({
       hospital_id: hospital.id, equipment_name: eq.equipment_name,
       equipment_brand: eq.equipment_brand, equipment_category: eq.equipment_category,
       equipment_model: eq.equipment_model, estimated_year: eq.estimated_year,
@@ -281,7 +291,7 @@ async function main(): Promise<void> {
 
   let trCount = 0;
   for (const t of finalAnalysis.treatments) {
-    const { error } = await supabase.from('hospital_treatments').insert({
+    const { error } = await supabase.from('sales_hospital_treatments').insert({
       hospital_id: hospital.id, treatment_name: t.treatment_name,
       treatment_category: t.treatment_category, price_min: t.price_min,
       price_max: t.price_max, price: t.price ?? null, price_event: t.price_event ?? null,

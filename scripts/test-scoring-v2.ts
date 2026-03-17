@@ -57,7 +57,7 @@ async function testProfile(hospitalId: string): Promise<void> {
 
   // DB 저장 확인
   const { data: saved } = await supabase
-    .from('hospital_profiles')
+    .from('sales_hospital_profiles')
     .select('id, profile_grade, profile_score')
     .eq('hospital_id', hospitalId)
     .single();
@@ -70,7 +70,7 @@ async function testMatch(hospitalId: string, productCode: string): Promise<strin
 
   // 제품 ID 조회
   const { data: product } = await supabase
-    .from('products')
+    .from('sales_products')
     .select('id, name')
     .eq('code', productCode)
     .single();
@@ -116,7 +116,7 @@ async function testLeadGeneration(hospitalId: string, productCode: string): Prom
   console.log(`\n═══ 리드 자동 생성: ${productCode} ═══`);
 
   const { data: product } = await supabase
-    .from('products')
+    .from('sales_products')
     .select('id')
     .eq('code', productCode)
     .single();

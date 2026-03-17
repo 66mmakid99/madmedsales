@@ -1,3 +1,4 @@
+// @deprecated 구버전 일회성 스크립트. hospital_equipments→sales_hospital_equipments, hospital_treatments→sales_hospital_treatments. 현재 사용 안 함.
 /**
  * V4 테스트 3개 병원 데이터 추출 보고서 (DOCX)
  * 이미지 포함

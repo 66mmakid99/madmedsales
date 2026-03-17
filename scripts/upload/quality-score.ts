@@ -62,7 +62,7 @@ export async function updateDataQualityScores(
 
     // Equipment check
     const { count: equipCount } = await supabase
-      .from('hospital_equipments')
+      .from('sales_hospital_equipments')
       .select('id', { count: 'exact', head: true })
       .eq('hospital_id', hospital.id);
 
@@ -70,7 +70,7 @@ export async function updateDataQualityScores(
 
     // Treatment check
     const { count: treatCount } = await supabase
-      .from('hospital_treatments')
+      .from('sales_hospital_treatments')
       .select('id', { count: 'exact', head: true })
       .eq('hospital_id', hospital.id);
 
@@ -79,7 +79,7 @@ export async function updateDataQualityScores(
     // Treatment price info check
     if (treatCount && treatCount > 0) {
       const { data: priced } = await supabase
-        .from('hospital_treatments')
+        .from('sales_hospital_treatments')
         .select('id')
         .eq('hospital_id', hospital.id)
         .not('price_min', 'is', null)
@@ -90,7 +90,7 @@ export async function updateDataQualityScores(
 
     // Naver place check
     const { count: naverCount } = await supabase
-      .from('hospital_treatments')
+      .from('sales_hospital_treatments')
       .select('id', { count: 'exact', head: true })
       .eq('hospital_id', hospital.id)
       .eq('source', 'naver');

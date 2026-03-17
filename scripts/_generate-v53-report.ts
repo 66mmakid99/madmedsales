@@ -1,3 +1,4 @@
+// @deprecated 구버전 일회성 스크립트. hospital_equipments→sales_hospital_equipments, hospital_treatments→sales_hospital_treatments. 현재 사용 안 함.
 /**
  * v5.3 안산엔비의원 단독 크롤링 보고서 (DOCX)
  * 크롤 데이터 + 스크린샷 이미지 전부 포함

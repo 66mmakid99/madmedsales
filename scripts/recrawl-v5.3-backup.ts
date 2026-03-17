@@ -1,5 +1,11 @@
 /**
- * recrawl-v5.ts
+ * recrawl-v5.3-backup.ts
+ *
+ * @deprecated v5.3 백업본. 현재 사용 안 함.
+ * - hospital_crawl_pages → scv_crawl_pages (테이블 이름 변경됨)
+ * - hospital_equipments/treatments/doctors → sales_hospital_* (테이블 이름 변경됨)
+ * - hospital_events, hospital_crawl_validations → 테이블 삭제됨
+ * 현재 파이프라인: recrawl-v5.ts 사용
  *
  * TORR RF 재크롤링 v5.4 UNIFIED:
  * 1. URL 수집 확대 (mapUrl 100 + HTML 링크 fallback + /landing/ 포함)

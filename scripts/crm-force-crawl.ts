@@ -69,9 +69,9 @@ async function processHospital(hospitalId: string, name: string, website: string
   const emptyAnalysis: WebAnalysisResult = { doctors: [], equipments: [], treatments: [], hospital_profile: { main_focus: '', target_audience: '' }, contact_info: { emails: [], phones: [], contact_page_url: null } };
 
   // Clear old data
-  await supabase.from('hospital_doctors').delete().eq('hospital_id', hospitalId);
-  await supabase.from('hospital_equipments').delete().eq('hospital_id', hospitalId);
-  await supabase.from('hospital_treatments').delete().eq('hospital_id', hospitalId).eq('source', 'web_analysis');
+  await supabase.from('sales_hospital_doctors').delete().eq('hospital_id', hospitalId);
+  await supabase.from('sales_hospital_equipments').delete().eq('hospital_id', hospitalId);
+  await supabase.from('sales_hospital_treatments').delete().eq('hospital_id', hospitalId).eq('source', 'web_analysis');
 
   // Crawl main page
   const mainHtml = await fetchPage(website);
@@ -131,7 +131,7 @@ async function processHospital(hospitalId: string, name: string, website: string
   let drCount = 0;
   for (const dr of finalAnalysis.doctors) {
     if (!dr.name) continue;
-    const { error } = await supabase.from('hospital_doctors').insert({
+    const { error } = await supabase.from('sales_hospital_doctors').insert({
       hospital_id: hospitalId, name: dr.name, title: dr.title ?? null,
       specialty: dr.specialty ?? null, career: dr.career ?? [], education: [],
       source: 'web_analysis',
@@ -141,7 +141,7 @@ async function processHospital(hospitalId: string, name: string, website: string
 
   let eqCount = 0;
   for (const eq of finalAnalysis.equipments) {
-    const { error } = await supabase.from('hospital_equipments').insert({
+    const { error } = await supabase.from('sales_hospital_equipments').insert({
       hospital_id: hospitalId, equipment_name: eq.equipment_name,
       equipment_brand: eq.equipment_brand, equipment_category: eq.equipment_category,
       equipment_model: eq.equipment_model, estimated_year: eq.estimated_year,
@@ -152,7 +152,7 @@ async function processHospital(hospitalId: string, name: string, website: string
 
   let trCount = 0;
   for (const t of finalAnalysis.treatments) {
-    const { error } = await supabase.from('hospital_treatments').insert({
+    const { error } = await supabase.from('sales_hospital_treatments').insert({
       hospital_id: hospitalId, treatment_name: t.treatment_name,
       treatment_category: t.treatment_category, price_min: t.price_min,
       price_max: t.price_max, price: t.price ?? null, price_event: t.price_event ?? null,

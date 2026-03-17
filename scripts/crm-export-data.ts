@@ -53,25 +53,25 @@ async function main(): Promise<void> {
 
   // 3. 장비
   const { data: equips } = await supabase
-    .from('hospital_equipments')
+    .from('sales_hospital_equipments')
     .select('hospital_id, equipment_name, equipment_category, equipment_brand, equipment_model, manufacturer, estimated_year')
     .in('hospital_id', hospitalIds);
 
   // 4. 시술
   const { data: treats } = await supabase
-    .from('hospital_treatments')
+    .from('sales_hospital_treatments')
     .select('hospital_id, treatment_name, treatment_category, price, price_event, price_min, price_max, is_promoted')
     .in('hospital_id', hospitalIds);
 
   // 5. 의사
   const { data: doctors } = await supabase
-    .from('hospital_doctors')
+    .from('sales_hospital_doctors')
     .select('hospital_id, name, title, specialty, career')
     .in('hospital_id', hospitalIds);
 
   // 6. 프로파일
   const { data: profiles } = await supabase
-    .from('hospital_profiles')
+    .from('sales_hospital_profiles')
     .select('hospital_id, profile_score, profile_grade, investment_score, portfolio_diversity_score, practice_scale_score, marketing_activity_score, investment_tendency')
     .in('hospital_id', hospitalIds);
 

@@ -353,9 +353,9 @@ async function saveToSupabase(
   // 3. 분석 결과 저장
   if (analysis) {
     // 기존 데이터 삭제 후 재삽입
-    await supabase.from('hospital_equipments').delete().eq('hospital_id', hospitalId);
-    await supabase.from('hospital_treatments').delete().eq('hospital_id', hospitalId);
-    await supabase.from('hospital_doctors').delete().eq('hospital_id', hospitalId);
+    await supabase.from('sales_hospital_equipments').delete().eq('hospital_id', hospitalId);
+    await supabase.from('sales_hospital_treatments').delete().eq('hospital_id', hospitalId);
+    await supabase.from('sales_hospital_doctors').delete().eq('hospital_id', hospitalId);
 
     // hospital_equipments: equipment_name, equipment_category, equipment_brand, manufacturer
     if (analysis.equipments?.length > 0) {
@@ -366,7 +366,7 @@ async function saveToSupabase(
         manufacturer: eq.manufacturer || null,
         source: 'firecrawl_gemini',
       }));
-      const { error } = await supabase.from('hospital_equipments').insert(eqRows);
+      const { error } = await supabase.from('sales_hospital_equipments').insert(eqRows);
       if (error) console.log(`  ⚠️ 장비 INSERT: ${error.message}`);
     }
 
@@ -380,7 +380,7 @@ async function saveToSupabase(
         is_promoted: tr.is_promoted || false,
         source: 'firecrawl_gemini',
       }));
-      const { error } = await supabase.from('hospital_treatments').insert(trRows);
+      const { error } = await supabase.from('sales_hospital_treatments').insert(trRows);
       if (error) console.log(`  ⚠️ 시술 INSERT: ${error.message}`);
     }
 
@@ -391,7 +391,7 @@ async function saveToSupabase(
         title: dr.title || '원장',
         specialty: dr.specialty || null,
       }));
-      const { error } = await supabase.from('hospital_doctors').insert(drRows);
+      const { error } = await supabase.from('sales_hospital_doctors').insert(drRows);
       if (error) console.log(`  ⚠️ 의사 INSERT: ${error.message}`);
     }
   }

@@ -73,19 +73,19 @@ async function main(): Promise<void> {
 
     // 장비
     const { count: eqCount } = await supabase
-      .from('hospital_equipments')
+      .from('sales_hospital_equipments')
       .select('*', { count: 'exact', head: true })
       .eq('hospital_id', hid);
 
     // 시술
     const { count: trCount } = await supabase
-      .from('hospital_treatments')
+      .from('sales_hospital_treatments')
       .select('*', { count: 'exact', head: true })
       .eq('hospital_id', hid);
 
     // 의사
     const { count: drCount } = await supabase
-      .from('hospital_doctors')
+      .from('sales_hospital_doctors')
       .select('*', { count: 'exact', head: true })
       .eq('hospital_id', hid);
 

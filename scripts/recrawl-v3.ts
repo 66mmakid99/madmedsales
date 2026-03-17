@@ -1,6 +1,12 @@
 /**
  * recrawl-v3.ts
  *
+ * @deprecated 구버전. 현재 사용 안 함.
+ * - hospital_crawl_pages → scv_crawl_pages (테이블 이름 변경됨)
+ * - hospital_equipments/treatments/doctors → sales_hospital_* (테이블 이름 변경됨)
+ * - hospital_events → 테이블 삭제됨
+ * 현재 파이프라인: recrawl-v5.ts 사용
+ *
  * TORR RF 재크롤링 v3: 설계 결함 전면 개선
  * 1. 원본 마크다운 Supabase 페이지별 저장
  * 2. 페이지별 개별 Gemini 분석 (텍스트 자르지 않음, 긴 건 청크 분할)

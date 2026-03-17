@@ -86,7 +86,7 @@ async function main(): Promise<void> {
 
       // equipments
       const { data: eqData } = await supabase
-        .from('hospital_equipments')
+        .from('sales_hospital_equipments')
         .select('equipment_name, equipment_category, manufacturer, source')
         .eq('hospital_id', hid);
       if (eqData) {
@@ -100,7 +100,7 @@ async function main(): Promise<void> {
 
       // treatments
       const { data: trData } = await supabase
-        .from('hospital_treatments')
+        .from('sales_hospital_treatments')
         .select('treatment_name, treatment_category, price, is_promoted, source')
         .eq('hospital_id', hid);
       if (trData) {

@@ -1,4 +1,12 @@
 /**
+ * upload-v4-to-db.ts
+ *
+ * @deprecated v4 E2E 테스트용 구버전. 현재 사용 안 함.
+ * - hospital_equipments → sales_hospital_equipments (테이블 이름 변경됨)
+ * - hospital_treatments → sales_hospital_treatments (테이블 이름 변경됨)
+ * - hospital_pricing → 테이블 삭제됨
+ * 현재 파이프라인: recrawl-v5.ts 사용
+ *
  * 4차 E2E 테스트 결과를 Supabase DB에 업로드
  *
  * 대상 테이블: crawl_snapshots, hospital_equipments, hospital_treatments, hospital_pricing

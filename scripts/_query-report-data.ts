@@ -1,3 +1,4 @@
+// @deprecated 구버전 일회성 스크립트. hospital_equipments→sales_hospital_equipments, hospital_treatments→sales_hospital_treatments. 현재 사용 안 함.
 import 'dotenv/config';
 import { createClient } from '@supabase/supabase-js';
 

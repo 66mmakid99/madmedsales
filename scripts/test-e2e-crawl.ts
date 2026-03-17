@@ -173,12 +173,12 @@ async function runProfileAndMatch(hospitalId: string): Promise<{
     .single();
 
   const { data: equipments } = await supabase
-    .from('hospital_equipments')
+    .from('sales_hospital_equipments')
     .select('*')
     .eq('hospital_id', hospitalId);
 
   const { data: treatments } = await supabase
-    .from('hospital_treatments')
+    .from('sales_hospital_treatments')
     .select('*')
     .eq('hospital_id', hospitalId);
 
@@ -252,7 +252,7 @@ async function runProfileAndMatch(hospitalId: string): Promise<{
     profileScore >= 80 ? 'PRIME' : profileScore >= 60 ? 'HIGH' : profileScore >= 40 ? 'MID' : 'LOW';
 
   // DB 저장
-  await supabase.from('hospital_profiles').upsert({
+  await supabase.from('sales_hospital_profiles').upsert({
     hospital_id: hospitalId,
     investment_score: investmentVal,
     portfolio_diversity_score: portfolioVal,
@@ -275,7 +275,7 @@ async function runProfileAndMatch(hospitalId: string): Promise<{
 
   // ─── 매칭 ───
   const { data: product } = await supabase
-    .from('products')
+    .from('sales_products')
     .select('*')
     .eq('id', TORR_RF_PRODUCT_ID)
     .single();
@@ -465,13 +465,13 @@ async function runSingleTest(target: TestTarget): Promise<HospitalReport> {
   // DB에서 실제 저장된 데이터 조회 (크롤링 성공/부분 성공 모두)
   if (report.hospitalId) {
     const { data: eqs } = await supabase
-      .from('hospital_equipments')
+      .from('sales_hospital_equipments')
       .select('equipment_name')
       .eq('hospital_id', report.hospitalId);
     report.parsing.equipments = (eqs ?? []).map((e: Record<string, unknown>) => e.equipment_name as string);
 
     const { data: trs } = await supabase
-      .from('hospital_treatments')
+      .from('sales_hospital_treatments')
       .select('treatment_name, price, price_min, price_max')
       .eq('hospital_id', report.hospitalId);
     report.parsing.treatments = (trs ?? []).map((t: Record<string, unknown>) => t.treatment_name as string);
@@ -677,7 +677,7 @@ async function main(): Promise<void> {
 
   // TORR RF 제품 존재 확인
   const { data: product } = await supabase
-    .from('products')
+    .from('sales_products')
     .select('id, name')
     .eq('id', TORR_RF_PRODUCT_ID)
     .single();
@@ -685,7 +685,7 @@ async function main(): Promise<void> {
   if (!product) {
     console.log(`❌ TORR RF 제품이 DB에 없습니다 (id=${TORR_RF_PRODUCT_ID})`);
     // 제품 ID 목록 출력
-    const { data: products } = await supabase.from('products').select('id, name');
+    const { data: products } = await supabase.from('sales_products').select('id, name');
     console.log('등록된 제품:', products);
     process.exit(1);
   }

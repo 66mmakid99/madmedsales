@@ -185,7 +185,7 @@ export async function uploadWebData(
   let eqTotal = 0;
   for (let i = 0; i < eqRows.length; i += BATCH_SIZE) {
     const batch = eqRows.slice(i, i + BATCH_SIZE);
-    const { error, count } = await supabase.from('hospital_equipments').insert(batch, { count: 'exact' });
+    const { error, count } = await supabase.from('sales_hospital_equipments').insert(batch, { count: 'exact' });
     if (error) recordError('web-equipment', `batch-${i}`, error.message);
     else eqTotal += count ?? batch.length;
   }
@@ -194,7 +194,7 @@ export async function uploadWebData(
   let trTotal = 0;
   for (let i = 0; i < trRows.length; i += BATCH_SIZE) {
     const batch = trRows.slice(i, i + BATCH_SIZE);
-    const { error, count } = await supabase.from('hospital_treatments').insert(batch, { count: 'exact' });
+    const { error, count } = await supabase.from('sales_hospital_treatments').insert(batch, { count: 'exact' });
     if (error) recordError('web-treatment', `batch-${i}`, error.message);
     else trTotal += count ?? batch.length;
   }

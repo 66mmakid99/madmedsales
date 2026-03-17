@@ -182,7 +182,7 @@ async function uploadNaverData(): Promise<number> {
   for (let i = 0; i < allRows.length; i += BATCH_SIZE) {
     const batch = allRows.slice(i, i + BATCH_SIZE);
     const { error, count } = await supabase
-      .from('hospital_treatments')
+      .from('sales_hospital_treatments')
       .insert(batch, { count: 'exact' });
 
     if (error) {

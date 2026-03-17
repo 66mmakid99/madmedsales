@@ -76,7 +76,7 @@ async function main(): Promise<void> {
 
   // 제품 정보 확인
   const { data: product, error: prodErr } = await supabase
-    .from('products')
+    .from('sales_products')
     .select('id, name, code')
     .eq('id', PRODUCT_ID)
     .single();
